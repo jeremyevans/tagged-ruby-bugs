@@ -1,0 +1,3171 @@
+<html>
+<head>
+<title>Tagged Open Ruby Bugs</title>
+<link rel="stylesheet"  href="app.css" />
+</head>
+<body>
+<p class="filter-buttons">Available Tags: <input type="submit" value="core" />
+<input type="submit" value="patch" />
+<input type="submit" value="win" />
+<input type="submit" value="lib" />
+<input type="submit" value="ext" />
+<input type="submit" value="notbug" />
+<input type="submit" value="maybenotbug" />
+<input type="submit" value="build" />
+<input type="submit" value="encoding" />
+<input type="submit" value="test" />
+<input type="submit" value="thread" />
+<input type="submit" value="cygwin" />
+<input type="submit" value="tracepoint" />
+<input type="submit" value="refine" />
+<input type="submit" value="perf" />
+<input type="submit" value="regexp" />
+<input type="submit" value="arm" />
+<input type="submit" value="openssl" />
+<input type="submit" value="aix" />
+<input type="submit" value="ruby3" />
+<input type="submit" value="unfixable" />
+<input type="submit" value="solaris" />
+<input type="submit" value="haiku" />
+<input type="submit" value="backport" />
+<input type="submit" value="parser" />
+<input type="submit" value="wip-patch" />
+<input type="submit" value="autoload" />
+<input type="submit" value="doc" />
+<input type="submit" value="fiber" />
+<input type="submit" value="linux" />
+<input type="submit" value="mips" />
+<input type="submit" value="other" /></p>
+<label for="filter">Filter Tags:</label>
+<input id="filter" type="text" />
+<table>
+<caption>Tagged Open Ruby Bugs</caption>
+<thead>
+<tr class=" Tags ">
+<th>Bug ID</th>
+<th>Tags</th>
+<th>Subject</th>
+</tr>
+</thead>
+<tbody>
+<tr class=" core notbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;16278">16278</a>
+</td>
+<td>core notbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;16278">Potential memory leak when an hash is used as a key for another hash</a>
+</td>
+</tr>
+<tr class=" win ext maybenotbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;16277">16277</a>
+</td>
+<td>win ext maybenotbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;16277">UNIXServer#listen fails with Errno::EADDRINUSE error under Windows 10 / WSL Ubuntu 18.04</a>
+</td>
+</tr>
+<tr class=" lib notbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;16266">16266</a>
+</td>
+<td>lib notbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;16266">Additional empty folders created in lib/ruby/gems/2.7.0/gems by make install</a>
+</td>
+</tr>
+<tr class=" win thread ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;16265">16265</a>
+</td>
+<td>win thread</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;16265">Test (spec) failure using current MSYS2 tools, related to -fstack-protector and possibly D_FORTIFY_SOURCE=2</a>
+</td>
+</tr>
+<tr class=" core perf  ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;16243">16243</a>
+</td>
+<td>core perf </td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;16243">case/when is slower than if on MRI</a>
+</td>
+</tr>
+<tr class=" patch refine ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;16242">16242</a>
+</td>
+<td>patch refine</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;16242">Refinements method call to failed</a>
+</td>
+</tr>
+<tr class=" patch win encoding ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;16233">16233</a>
+</td>
+<td>patch win encoding</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;16233">winruby UTF8 Fallback for no CodePage</a>
+</td>
+</tr>
+<tr class=" other ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;16195">16195</a>
+</td>
+<td>other</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;16195">Invalid certificate on https://ruby-lang.org/</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;16187">16187</a>
+</td>
+<td>core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;16187">Hash#replace no longer rehashes keys for small (array table) hashes</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;16186">16186</a>
+</td>
+<td>patch core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;16186">Calling Net::HTTP from within an #inspect implementation hang when invoked from p</a>
+</td>
+</tr>
+<tr class=" aix notbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;16185">16185</a>
+</td>
+<td>aix notbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;16185">basictest failure on AIX 6.1 for 64bit build</a>
+</td>
+</tr>
+<tr class=" aix notbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;16179">16179</a>
+</td>
+<td>aix notbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;16179">ruby binaries generate &quot;already initialized constant&quot; warnings on AIX 6.1</a>
+</td>
+</tr>
+<tr class=" test ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;16177">16177</a>
+</td>
+<td>test</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;16177">Some `*.rb` files on builddir cause Segmentation fault</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;16173">16173</a>
+</td>
+<td>patch core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;16173">ENV.delete returns nil when name does not exist and block given</a>
+</td>
+</tr>
+<tr class=" test ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;16159">16159</a>
+</td>
+<td>test</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;16159">Off by 1 errors from time_params tests</a>
+</td>
+</tr>
+<tr class=" regexp notbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;16158">16158</a>
+</td>
+<td>regexp notbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;16158">&quot;st&quot; Character Sequence In Regex Look-Behind Causes Illegal Pattern Error When Combined With POSIX Bracket Expressions And Case Insensitivity Flag</a>
+</td>
+</tr>
+<tr class=" regexp ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;16145">16145</a>
+</td>
+<td>regexp</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;16145">regexp match error if mixing /i, character classes, and utf8</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;16143">16143</a>
+</td>
+<td>patch core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;16143">BOM UTF-8 is not removed after rewind</a>
+</td>
+</tr>
+<tr class=" backport ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;16138">16138</a>
+</td>
+<td>backport</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;16138">Backport Struct.new empty option hash fix to 2.5 and 2.6</a>
+</td>
+</tr>
+<tr class=" win ext ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;16116">16116</a>
+</td>
+<td>win ext</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;16116">ruby2.6.3(x86/x64)  use win32ole could not new Object, return 0x80070057</a>
+</td>
+</tr>
+<tr class=" win core thread ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;16110">16110</a>
+</td>
+<td>win core thread</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;16110">Doesn&#39;t detect deadlock on Ruby 2.4 and 2.5 on Windows</a>
+</td>
+</tr>
+<tr class=" ruby3 ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;16044">16044</a>
+</td>
+<td>ruby3</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;16044">Float::ROUNDS (FLT_ROUNDS) should not be a constant.</a>
+</td>
+</tr>
+<tr class=" backport ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;16034">16034</a>
+</td>
+<td>backport</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;16034">Backport 5d33f787169bcc3594d2264726695d58c4a06899 to Ruby 2.6</a>
+</td>
+</tr>
+<tr class=" core ext maybenotbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;16031">16031</a>
+</td>
+<td>core ext maybenotbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;16031">Inconsistency between Date::strptime and Time::strptime at the end of a month</a>
+</td>
+</tr>
+<tr class=" wip-patch core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;16008">16008</a>
+</td>
+<td>wip-patch core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;16008">Ripper hshptn node drops information</a>
+</td>
+</tr>
+<tr class=" core maybenotbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;16004">16004</a>
+</td>
+<td>core maybenotbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;16004">Kernel#lambda captured with Kernel#method doesn&#39;t create lambdas</a>
+</td>
+</tr>
+<tr class=" win encoding ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15993">15993</a>
+</td>
+<td>win encoding</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15993">&#39;require&#39; doesn&#39;t work if there are Cyrillic chars in the path to Ruby dir</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15980">15980</a>
+</td>
+<td>core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15980">Coverage shows while/until after raise if/unless as uncovered line</a>
+</td>
+</tr>
+<tr class=" lib ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15944">15944</a>
+</td>
+<td>lib</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15944">Simultaneous line feeding and scrolling doesn&#39;t work well with irb on tmux</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15928">15928</a>
+</td>
+<td>core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15928">Constant declaration does not conform to JIS 3017:2013</a>
+</td>
+</tr>
+<tr class=" patch openssl ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15882">15882</a>
+</td>
+<td>patch openssl</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15882">OpenSSL::X509::Name.parse usage</a>
+</td>
+</tr>
+<tr class=" core perf  ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15856">15856</a>
+</td>
+<td>core perf </td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15856">Idempotent performance of Kernel.require with many activated gems is slow</a>
+</td>
+</tr>
+<tr class=" core win ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15852">15852</a>
+</td>
+<td>core win</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15852">APPLICATION_VERIFIER_LOCKS_LOCK_IN_FREED_HEAP on exiting ruby</a>
+</td>
+</tr>
+<tr class=" lib ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15834">15834</a>
+</td>
+<td>lib</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15834">Mutating the result of SortedSet.to_a mutates the original set, potentially violating the set&#39;s guarantees</a>
+</td>
+</tr>
+<tr class=" haiku ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15828">15828</a>
+</td>
+<td>haiku</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15828">DOTfiles and DOTfolders aren&#39;t allowed in $HOME folder on Haiku</a>
+</td>
+</tr>
+<tr class=" haiku openssl ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15827">15827</a>
+</td>
+<td>haiku openssl</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15827">Haiku: SSL tests failing</a>
+</td>
+</tr>
+<tr class=" lib ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15819">15819</a>
+</td>
+<td>lib</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15819">cannot read document of File::NULL with &quot;ri File::NULL&quot;</a>
+</td>
+</tr>
+<tr class=" haiku ext ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15795">15795</a>
+</td>
+<td>haiku ext</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15795">Some test fails on Haiku</a>
+</td>
+</tr>
+<tr class=" core autoload ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15790">15790</a>
+</td>
+<td>core autoload</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15790">Strange interaction between autoload and $LOADED_FEATURES</a>
+</td>
+</tr>
+<tr class=" haiku lib maybenotbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15787">15787</a>
+</td>
+<td>haiku lib maybenotbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15787">LoadError by EPERM on read-only volume</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15779">15779</a>
+</td>
+<td>patch core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15779">After NoMemoryError, ruby freezes and takes 100% CPU</a>
+</td>
+</tr>
+<tr class=" parser ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15764">15764</a>
+</td>
+<td>parser</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15764">Whitespace and control characters should not be permitted in tokens</a>
+</td>
+</tr>
+<tr class=" core thread ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15737">15737</a>
+</td>
+<td>core thread</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15737">Queue#pop randomly hangs forever</a>
+</td>
+</tr>
+<tr class=" core thread ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15735">15735</a>
+</td>
+<td>core thread</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15735">Thread#handle_interrupt does not prevent Thread#kill from interrupting</a>
+</td>
+</tr>
+<tr class=" core thread openssl ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15729">15729</a>
+</td>
+<td>core thread openssl</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15729">OpenSSL::SSL::SSLSocket#connect randomly hangs</a>
+</td>
+</tr>
+<tr class=" ext encoding ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15718">15718</a>
+</td>
+<td>ext encoding</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15718">YAML raises error when dumping strings with UTF32 encoding</a>
+</td>
+</tr>
+<tr class=" backport ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15717">15717</a>
+</td>
+<td>backport</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15717">Backport #15270 to Ruby 2.5.x</a>
+</td>
+</tr>
+<tr class=" ext ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15712">15712</a>
+</td>
+<td>ext</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15712">DateTime#=== should be defined and compare date and time instead of just the date</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15674">15674</a>
+</td>
+<td>core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15674">Regression: ObjectSpace.allocation_sourceline produces the wrong location for allocations, it shows the end of the method instead of the line where the object was created</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15661">15661</a>
+</td>
+<td>core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15661">Disallow concurrent Dir.chdir with block</a>
+</td>
+</tr>
+<tr class=" win encoding ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15655">15655</a>
+</td>
+<td>win encoding</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15655">Unable to handle Russian dirname on Windows</a>
+</td>
+</tr>
+<tr class=" patch ext ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15644">15644</a>
+</td>
+<td>patch ext</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15644">ThreadsWait problems with Thread#report_on_exception</a>
+</td>
+</tr>
+<tr class=" tracepoint ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15634">15634</a>
+</td>
+<td>tracepoint</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15634">TracePoint seems to be skipping some methods.</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15629">15629</a>
+</td>
+<td>patch core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15629">super_method fails on binded/unbinded/cloned methods</a>
+</td>
+</tr>
+<tr class=" win encoding ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15621">15621</a>
+</td>
+<td>win encoding</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15621">system({}, ...) breaks nonascii ENV[&quot;PATH&quot;] on Windows</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15620">15620</a>
+</td>
+<td>core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15620">Block argument usage affects lambda semantic</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15613">15613</a>
+</td>
+<td>patch core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15613">Enumerator::Chain#each doesn&#39;t relay block signature</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15608">15608</a>
+</td>
+<td>patch core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15608">What should be the correct output for Method#inspect with singleton methods?</a>
+</td>
+</tr>
+<tr class=" core autoload ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15599">15599</a>
+</td>
+<td>core autoload</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15599">Mixing autoload and require causes deadlock and incomplete definition.</a>
+</td>
+</tr>
+<tr class=" core autoload ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15598">15598</a>
+</td>
+<td>core autoload</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15598">Deadlock on mutual reference of autoloaded constants</a>
+</td>
+</tr>
+<tr class=" perf ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15589">15589</a>
+</td>
+<td>perf</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15589">`Numeric#zero?` is much slower than `== 0`</a>
+</td>
+</tr>
+<tr class=" win thread ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15587">15587</a>
+</td>
+<td>win thread</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15587">Thread tests failing</a>
+</td>
+</tr>
+<tr class=" aix build ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15579">15579</a>
+</td>
+<td>aix build</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15579">make step when building ruby 2.4.5 on AIX 7.1 results in a Segmentation fault : ruby-2.4.5/lib/rdoc/markup/parser.rb:325</a>
+</td>
+</tr>
+<tr class=" core notbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15576">15576</a>
+</td>
+<td>core notbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15576">Wrong error message from some class methods of `Dir`</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15570">15570</a>
+</td>
+<td>core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15570">rb_int2big signature change #14036 breaks VIM on 32b arches</a>
+</td>
+</tr>
+<tr class=" win thread ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15569">15569</a>
+</td>
+<td>win thread</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15569">TestResolvDNS#test_no_server always fails on usa&#39;s mswin environment</a>
+</td>
+</tr>
+<tr class=" core notbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15551">15551</a>
+</td>
+<td>core notbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15551">The behavior of FIX2INT and FIX2UINT differs by platform</a>
+</td>
+</tr>
+<tr class=" win ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15550">15550</a>
+</td>
+<td>win</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15550">Windows - gem bin files - can&#39;t run from bash shell</a>
+</td>
+</tr>
+<tr class=" lib encoding ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15517">15517</a>
+</td>
+<td>lib encoding</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15517">Net::HTTP not recognizing valid UTF-8</a>
+</td>
+</tr>
+<tr class=" thread ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15507">15507</a>
+</td>
+<td>thread</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15507">Thread#raise is delivered to GC context</a>
+</td>
+</tr>
+<tr class=" cygwin test ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15465">15465</a>
+</td>
+<td>cygwin test</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15465">Tests failed on i386-cygwin</a>
+</td>
+</tr>
+<tr class=" win thread ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15438">15438</a>
+</td>
+<td>win thread</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15438">Threads can&#39;t switch faster than TIME_QUANTUM_(NSEC|USEC|MSEC)</a>
+</td>
+</tr>
+<tr class=" test ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15433">15433</a>
+</td>
+<td>test</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15433">OpenStruct NameError vs NoMethodError spec fails for method_missing</a>
+</td>
+</tr>
+<tr class=" core notbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15428">15428</a>
+</td>
+<td>core notbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15428">Refactor Proc#&gt;&gt; and #&lt;&lt;</a>
+</td>
+</tr>
+<tr class=" build ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15425">15425</a>
+</td>
+<td>build</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15425">Store MJIT header into Ruby versioned directory.</a>
+</td>
+</tr>
+<tr class=" thread ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15423">15423</a>
+</td>
+<td>thread</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15423">fork leapfrog leaks memory on FreeBSD 11.2</a>
+</td>
+</tr>
+<tr class=" ext ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15417">15417</a>
+</td>
+<td>ext</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15417">Pathname case insensitive comparison</a>
+</td>
+</tr>
+<tr class=" ext ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15409">15409</a>
+</td>
+<td>ext</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15409">OpenStruct error when attribute is called &#39;method&#39;</a>
+</td>
+</tr>
+<tr class=" patch parser ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15404">15404</a>
+</td>
+<td>patch parser</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15404">Endless range has inconsistent chaining behaviour</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15386">15386</a>
+</td>
+<td>patch core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15386">[PATCH] io.c (rb_io_check_char_readable): do not io_fflush buffered sockets</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15367">15367</a>
+</td>
+<td>core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15367">IO.select is not resumed when io-object gets closed</a>
+</td>
+</tr>
+<tr class=" lib build ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15359">15359</a>
+</td>
+<td>lib build</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15359">Bundler help is not properly integrated</a>
+</td>
+</tr>
+<tr class=" test ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15334">15334</a>
+</td>
+<td>test</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15334">child_info_fork::abort: address space needed by &#39;emoji_iso2022_kddi.so&#39; on cygwin</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15315">15315</a>
+</td>
+<td>patch core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15315">ec_switch can still lose interrupts</a>
+</td>
+</tr>
+<tr class=" patch tracepoint ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15313">15313</a>
+</td>
+<td>patch tracepoint</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15313">[PATCH] Let debuggers know when a tail call happens</a>
+</td>
+</tr>
+<tr class=" patch thread ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15310">15310</a>
+</td>
+<td>patch thread</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15310">[PATCH] thread_pthread.c: close race from UBF_TIMER and non-GVL-releasing thread</a>
+</td>
+</tr>
+<tr class=" lib notbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15276">15276</a>
+</td>
+<td>lib notbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15276">URI.join behaviour is unintuitive</a>
+</td>
+</tr>
+<tr class=" openssl ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15268">15268</a>
+</td>
+<td>openssl</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15268">Solarisでtest/drb/test_drbssl.rbが落ちる</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15263">15263</a>
+</td>
+<td>patch core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15263">[PATCH] vm_trace.c (postponed_job_register): only hit main thread</a>
+</td>
+</tr>
+<tr class=" ext ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15262">15262</a>
+</td>
+<td>ext</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15262">WeakRef::RefError for object that is still in use</a>
+</td>
+</tr>
+<tr class=" win test ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15247">15247</a>
+</td>
+<td>win test</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15247">Windows - TEMP folder, non 8.3 &amp; drive, fails &amp; errors in test-all (ruby &amp; rdoc)</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15244">15244</a>
+</td>
+<td>patch core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15244">Method #extname return empty string if filename is dot (&#39;.&#39;)</a>
+</td>
+</tr>
+<tr class=" test ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15209">15209</a>
+</td>
+<td>test</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15209">r64925 order-only-prerequisites - make targets - breaking change</a>
+</td>
+</tr>
+<tr class=" patch win  ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15204">15204</a>
+</td>
+<td>patch win </td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15204">globbing should be prevented when wildcard is surrounded by double quotes in the ruby&#39;s command line</a>
+</td>
+</tr>
+<tr class=" patch ext ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15188">15188</a>
+</td>
+<td>patch ext</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15188">Incorrect warning &quot;assigned but unused variable&quot; when using ripper with $VERBOSE = true</a>
+</td>
+</tr>
+<tr class=" patch build ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15178">15178</a>
+</td>
+<td>patch build</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15178">Wrong paramaters passing to pthread_setname_np(3)</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15177">15177</a>
+</td>
+<td>core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15177">起動した後にTZを変更するとTime#utcがずれることがある</a>
+</td>
+</tr>
+<tr class=" cygwin lib ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15097">15097</a>
+</td>
+<td>cygwin lib</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15097">Gem install fails on Ruby 2.5.1 with Cygwin (get_dns_server_list undefined)</a>
+</td>
+</tr>
+<tr class=" cygwin build ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15072">15072</a>
+</td>
+<td>cygwin build</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15072">thread.c:4356:5: error: implicit declaration of function ‘ubf_list_atfork’</a>
+</td>
+</tr>
+<tr class=" encoding ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15044">15044</a>
+</td>
+<td>encoding</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15044">ENV encoding not UTF-8 by default</a>
+</td>
+</tr>
+<tr class=" win build ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15038">15038</a>
+</td>
+<td>win build</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15038">Appveyor MinGW - bundled gems missing?</a>
+</td>
+</tr>
+<tr class=" encoding ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15033">15033</a>
+</td>
+<td>encoding</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15033">Encoding fallback uses wrong character when multiple conversions are required</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15027">15027</a>
+</td>
+<td>core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;15027">When Struct#each method is overriden Struct#select and Struct#to_a use wrong collections</a>
+</td>
+</tr>
+<tr class=" ext ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14997">14997</a>
+</td>
+<td>ext</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14997">Socket connect timeout exceeds the timeout value for </a>
+</td>
+</tr>
+<tr class=" lib ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14972">14972</a>
+</td>
+<td>lib</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14972">Net::HTTP inconsistently raises EOFError when peer closes the connection</a>
+</td>
+</tr>
+<tr class=" cygwin build ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14971">14971</a>
+</td>
+<td>cygwin build</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14971">error: implicit declaration of function ‘rb_vm_call0</a>
+</td>
+</tr>
+<tr class=" solaris thread ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14963">14963</a>
+</td>
+<td>solaris thread</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14963">Since r64107, on Solaris, spec test of rb_io_wait_readable hangs up</a>
+</td>
+</tr>
+<tr class=" win thread ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14957">14957</a>
+</td>
+<td>win thread</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14957">MinGW, gcc 8.2.0, bootstraptest test_thread.rb - failure ?</a>
+</td>
+</tr>
+<tr class=" win core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14906">14906</a>
+</td>
+<td>win core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14906">MinGW failure - TestIO#test_copy_stream_no_busy_wait</a>
+</td>
+</tr>
+<tr class=" core perf  ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14900">14900</a>
+</td>
+<td>core perf </td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14900">Extra allocation in String#byteslice</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14895">14895</a>
+</td>
+<td>core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14895">Inconsistent constant names when using const_set on a singleton class</a>
+</td>
+</tr>
+<tr class=" ext notbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14891">14891</a>
+</td>
+<td>ext notbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14891">Pathname#join has different behaviour to File.join</a>
+</td>
+</tr>
+<tr class=" tracepoint ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14889">14889</a>
+</td>
+<td>tracepoint</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14889">TracePoint for :line never seems to trigger on argument list. Maybe by design?</a>
+</td>
+</tr>
+<tr class=" win ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14884">14884</a>
+</td>
+<td>win</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14884">msys2 mingw32 &#39;rake&#39; has unexpected text at top of file</a>
+</td>
+</tr>
+<tr class=" cygwin ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14874">14874</a>
+</td>
+<td>cygwin</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14874">Segmentation fault under Cygwin</a>
+</td>
+</tr>
+<tr class=" tracepoint ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14870">14870</a>
+</td>
+<td>tracepoint</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14870">Both TracePoint&#39;s :call and :c_call filters seem to skip a lot of builtin methods</a>
+</td>
+</tr>
+<tr class=" ext ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14843">14843</a>
+</td>
+<td>ext</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14843">[BUG] Illegal instruction at 0x000000010c7acc0a</a>
+</td>
+</tr>
+<tr class=" regexp notbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14838">14838</a>
+</td>
+<td>regexp notbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14838">RegexpError with double &quot;s&quot; in look-behind assertion in case-insensitive unicode regexp</a>
+</td>
+</tr>
+<tr class=" tracepoint ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14835">14835</a>
+</td>
+<td>tracepoint</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14835">Impossible to know whether an exception was rescued or not using TracePoint</a>
+</td>
+</tr>
+<tr class=" solaris build ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14826">14826</a>
+</td>
+<td>solaris build</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14826">make: *** [.ext/include/sparc-solaris2.10/rb_mjit_min_header-2.6.0.h] Error 1 on Solaris 10 with very old gcc3</a>
+</td>
+</tr>
+<tr class=" lib ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14824">14824</a>
+</td>
+<td>lib</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14824">Endless Range Support in irb</a>
+</td>
+</tr>
+<tr class=" core maybenotbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14823">14823</a>
+</td>
+<td>core maybenotbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14823">Endless Range Excluding End</a>
+</td>
+</tr>
+<tr class=" tracepoint ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14817">14817</a>
+</td>
+<td>tracepoint</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14817">TracePoint#parameters for bmethod&#39;s return event should return the same value as its Method#parameters</a>
+</td>
+</tr>
+<tr class=" ext ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14804">14804</a>
+</td>
+<td>ext</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14804">GzipReader cannot read Freebase dump (but gzcat/zless can)</a>
+</td>
+</tr>
+<tr class=" solaris thread ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14761">14761</a>
+</td>
+<td>solaris thread</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14761">TestThread#test_join_limits hangs up on Solaris 10 with gcc</a>
+</td>
+</tr>
+<tr class=" arm ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14755">14755</a>
+</td>
+<td>arm</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14755">Aborted (core dumped)</a>
+</td>
+</tr>
+<tr class=" refine ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14744">14744</a>
+</td>
+<td>refine</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14744">Refinements modules have a superclass</a>
+</td>
+</tr>
+<tr class=" doc notbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14743">14743</a>
+</td>
+<td>doc notbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14743">Some links broken in README</a>
+</td>
+</tr>
+<tr class=" build ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14737">14737</a>
+</td>
+<td>build</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14737">Split default gems into separate directory structure</a>
+</td>
+</tr>
+<tr class=" ext ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14732">14732</a>
+</td>
+<td>ext</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14732">CGI.unescape returns different instance between Ruby 2.3 and 2.4</a>
+</td>
+</tr>
+<tr class=" win thread ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14727">14727</a>
+</td>
+<td>win thread</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14727">TestQueue#test_queue_with_trap always timeout on Windows10</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14726">14726</a>
+</td>
+<td>patch core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14726">wrong message when superclass is not a Class</a>
+</td>
+</tr>
+<tr class=" ext ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14716">14716</a>
+</td>
+<td>ext</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14716">SecureRandom throwing an error in Ruby 2.5.1</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14704">14704</a>
+</td>
+<td>core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14704">Module#ancestors looks wrong when a module is both included and prepended in the same class.</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14681">14681</a>
+</td>
+<td>core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14681">`syswrite&#39;: stream closed in another thread (IOError)</a>
+</td>
+</tr>
+<tr class=" lib ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14679">14679</a>
+</td>
+<td>lib</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14679">StdLib gems should properly specify their dependencies</a>
+</td>
+</tr>
+<tr class=" refine ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14671">14671</a>
+</td>
+<td>refine</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14671">Refining Module#refine itself introduces strange state</a>
+</td>
+</tr>
+<tr class=" win core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14640">14640</a>
+</td>
+<td>win core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14640">[win32] File.realpath treats a relative path with a drive letter as an absolute path.</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14635">14635</a>
+</td>
+<td>patch core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14635">Float#round(n) returns a wrong result when n is big</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14607">14607</a>
+</td>
+<td>core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14607">Fix use of the rb_profile_frames start parameter</a>
+</td>
+</tr>
+<tr class=" encoding maybenotbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14591">14591</a>
+</td>
+<td>encoding maybenotbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14591">Files with invalid multi-byte characters will cause Find::find() to raise EINVAL exception</a>
+</td>
+</tr>
+<tr class=" tracepoint ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14582">14582</a>
+</td>
+<td>tracepoint</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14582">Unable to use `method__entry` and `method_return` tracing probes since 2.5</a>
+</td>
+</tr>
+<tr class=" win core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14570">14570</a>
+</td>
+<td>win core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14570">Wired behavior of File.expand_path() on Windows</a>
+</td>
+</tr>
+<tr class=" lib ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14563">14563</a>
+</td>
+<td>lib</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14563">irb in irb raises a FATAL error</a>
+</td>
+</tr>
+<tr class=" core notbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14558">14558</a>
+</td>
+<td>core notbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14558">&quot;Backtrace in reverse order&quot; always upsets my brain!</a>
+</td>
+</tr>
+<tr class=" build ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14543">14543</a>
+</td>
+<td>build</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14543">`make commit` show error of `common-srcs`</a>
+</td>
+</tr>
+<tr class=" core notbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14541">14541</a>
+</td>
+<td>core notbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14541">Class variables have broken semantics, let&#39;s fix them</a>
+</td>
+</tr>
+<tr class=" arm build ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14480">14480</a>
+</td>
+<td>arm build</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14480">miniruby crashing when compiled with -O2 or -O1 on aarch64</a>
+</td>
+</tr>
+<tr class=" tracepoint ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14479">14479</a>
+</td>
+<td>tracepoint</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14479">Exceptions raised from a :call tracepoint can sometimes be &quot;rescued&quot; inside the method</a>
+</td>
+</tr>
+<tr class=" test ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14474">14474</a>
+</td>
+<td>test</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14474">skip &quot;TestException#test_thread_signal_location&quot; as known bug</a>
+</td>
+</tr>
+<tr class=" encoding ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14456">14456</a>
+</td>
+<td>encoding</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14456">Dir.glob with FNM_CASEFOLD gives ArgumentError: invalid byte sequence in UTF-8</a>
+</td>
+</tr>
+<tr class=" core notbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14437">14437</a>
+</td>
+<td>core notbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14437">Integer == doesn&#39;t work with coerce since 2.4 (and != since 1.9). Should it?</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14434">14434</a>
+</td>
+<td>patch core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14434">IO#reopen fails after EPIPE</a>
+</td>
+</tr>
+<tr class=" build ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14422">14422</a>
+</td>
+<td>build</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14422">Ruby configuration options should not be reused for gem builds</a>
+</td>
+</tr>
+<tr class=" regexp perf ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14418">14418</a>
+</td>
+<td>regexp perf</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14418">ruby 2.5 slow regexp execution</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14413">14413</a>
+</td>
+<td>patch core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14413">`-n` and `-p` flags break when stdout is closed</a>
+</td>
+</tr>
+<tr class=" build ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14409">14409</a>
+</td>
+<td>build</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14409">インストール手順の改善</a>
+</td>
+</tr>
+<tr class=" patch doc ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14408">14408</a>
+</td>
+<td>patch doc</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14408">Add hash argument description for GC.stat and GC.latest_gc_info document</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14400">14400</a>
+</td>
+<td>core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14400">IO#ungetc and IO#ungetbyte documentation is inconsistent with the behavior</a>
+</td>
+</tr>
+<tr class=" patch ext perf ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14391">14391</a>
+</td>
+<td>patch ext perf</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14391">Integer#digitsが遅い</a>
+</td>
+</tr>
+<tr class=" core linux ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14387">14387</a>
+</td>
+<td>core linux</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14387">Ruby 2.5 を Alpine Linux で実行すると比較的浅めで SystemStackError 例外になる</a>
+</td>
+</tr>
+<tr class=" win notbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14378">14378</a>
+</td>
+<td>win notbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14378">On windows, RUBY_FIXNUM_MAX of 64 bits ruby  is 32 bits</a>
+</td>
+</tr>
+<tr class=" regexp ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14367">14367</a>
+</td>
+<td>regexp</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14367">Wrong interpretation of backslash C in regexp literals</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14364">14364</a>
+</td>
+<td>core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14364">Regexp last match variable in procs</a>
+</td>
+</tr>
+<tr class=" arm build ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14327">14327</a>
+</td>
+<td>arm build</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14327">Segmentation fault while compiling ruby 2.5 on alpine armhf</a>
+</td>
+</tr>
+<tr class=" patch lib ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14325">14325</a>
+</td>
+<td>patch lib</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14325">Set#reset raise RuntimeError instead of FrozenError</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14275">14275</a>
+</td>
+<td>patch core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14275">GC not aggressive enough</a>
+</td>
+</tr>
+<tr class=" test ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14271">14271</a>
+</td>
+<td>test</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14271">Random TestIO_Console#test_oflush failure</a>
+</td>
+</tr>
+<tr class=" core notbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14267">14267</a>
+</td>
+<td>core notbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14267">Lazy proc allocation introduced in #14045 creates regression</a>
+</td>
+</tr>
+<tr class=" lib ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14266">14266</a>
+</td>
+<td>lib</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14266">Set#clone(freeze: false) makes frozen internal hash</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14241">14241</a>
+</td>
+<td>patch core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14241">Time.strptime() doesn&#39;t support the directive &quot;%W&quot;.</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14240">14240</a>
+</td>
+<td>patch core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14240">warn four special variables: $; $, $/ $\</a>
+</td>
+</tr>
+<tr class=" test ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14175">14175</a>
+</td>
+<td>test</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14175">TestResolvMDNS#test_mdns_each_address fails</a>
+</td>
+</tr>
+<tr class=" patch ext ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14160">14160</a>
+</td>
+<td>patch ext</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14160">JSON#generate documentation wrong/misleading</a>
+</td>
+</tr>
+<tr class=" win regexp ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14137">14137</a>
+</td>
+<td>win regexp</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14137">Windows / MinGW - Regexp - Character Properties - General Category</a>
+</td>
+</tr>
+<tr class=" lib ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14119">14119</a>
+</td>
+<td>lib</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14119">IPAddr#include? does not seem to support the subnet mask</a>
+</td>
+</tr>
+<tr class=" regexp ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14103">14103</a>
+</td>
+<td>regexp</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14103">Regexp absense operator has no chance to ^C</a>
+</td>
+</tr>
+<tr class=" ext ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14096">14096</a>
+</td>
+<td>ext</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14096">Psych allows invalid single quote escape character</a>
+</td>
+</tr>
+<tr class=" lib ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14094">14094</a>
+</td>
+<td>lib</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14094">IRB does not obey frame-level visibility modifiers</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14090">14090</a>
+</td>
+<td>core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14090">`TestGc#test_interrupt_in_finalizer` fails very rarely</a>
+</td>
+</tr>
+<tr class=" refine ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14083">14083</a>
+</td>
+<td>refine</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14083">Refinement in block calling incorrect method</a>
+</td>
+</tr>
+<tr class=" test ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14064">14064</a>
+</td>
+<td>test</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14064">test-all with and without -j - incorrect assertions and missing test methods</a>
+</td>
+</tr>
+<tr class=" win core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14049">14049</a>
+</td>
+<td>win core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14049">SEGV svn 60401 require_relative</a>
+</td>
+</tr>
+<tr class=" ext ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14046">14046</a>
+</td>
+<td>ext</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14046">Ripper loses DATA</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14015">14015</a>
+</td>
+<td>core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14015">Enumerable &amp; Hash yielding arity</a>
+</td>
+</tr>
+<tr class=" refine ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14012">14012</a>
+</td>
+<td>refine</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14012">NameError is raised when use class variables in Refinements</a>
+</td>
+</tr>
+<tr class=" lib ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14004">14004</a>
+</td>
+<td>lib</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;14004">ri confused by method aliases and by Queue versus Thread::Queue</a>
+</td>
+</tr>
+<tr class=" cygwin ext ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13999">13999</a>
+</td>
+<td>cygwin ext</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13999">Cygwin 環境で ripper_state_lex.rb がコアダンプする</a>
+</td>
+</tr>
+<tr class=" build ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13962">13962</a>
+</td>
+<td>build</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13962">Change http://unicode.org to https</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13932">13932</a>
+</td>
+<td>core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13932">[PATCH] Extension libraries take precedence in checks of later Kernel.#require calls for features without file extensions</a>
+</td>
+</tr>
+<tr class=" wip-patch core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13930">13930</a>
+</td>
+<td>wip-patch core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13930">Exception is caught in rescue above ensure</a>
+</td>
+</tr>
+<tr class=" win build ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13918">13918</a>
+</td>
+<td>win build</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13918">Appveyor failure - svn 59961 Use https instead of ftp for libffi downloading</a>
+</td>
+</tr>
+<tr class=" win build ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13891">13891</a>
+</td>
+<td>win build</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13891">Rake - no files in bin folder - 59839</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13882">13882</a>
+</td>
+<td>core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13882">Exception in `ensure` stops threads from exiting</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13876">13876</a>
+</td>
+<td>core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13876">Tempfile&#39;s finalizer can be interrupted by a Timeout exception which can cause the process to hang</a>
+</td>
+</tr>
+<tr class=" test ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13864">13864</a>
+</td>
+<td>test</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13864">Rinda multicast test failures due to missing default route</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13768">13768</a>
+</td>
+<td>core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13768">SIGCHLD and Thread dead-lock problem</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13758">13758</a>
+</td>
+<td>core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13758">TestRubyOptions#test_segv_setproctitle segfaults on AARCH64</a>
+</td>
+</tr>
+<tr class=" ext ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13754">13754</a>
+</td>
+<td>ext</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13754">bigdecimal with lower precision that Float</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13708">13708</a>
+</td>
+<td>core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13708">catastrophic slow compilation of defined-defined sequence has no chance to ^C</a>
+</td>
+</tr>
+<tr class=" patch thread ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13688">13688</a>
+</td>
+<td>patch thread</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13688">Thread overflow hangs ruby (not responding ^C)</a>
+</td>
+</tr>
+<tr class=" patch ext ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13675">13675</a>
+</td>
+<td>patch ext</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13675">Should Zlib::GzipReader#ungetc accept nil?</a>
+</td>
+</tr>
+<tr class=" regexp notbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13671">13671</a>
+</td>
+<td>regexp notbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13671">Regexp with lookbehind and case-insensitivity raises RegexpError only on strings with certain characters</a>
+</td>
+</tr>
+<tr class=" arm core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13670">13670</a>
+</td>
+<td>arm core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13670">[BUG] Bus Error at 0xefce7b (armv7l) (ruby 2.3.4p301)</a>
+</td>
+</tr>
+<tr class=" core notbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13663">13663</a>
+</td>
+<td>core notbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13663">`String#upto` doesn&#39;t work as expected</a>
+</td>
+</tr>
+<tr class=" lib ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13654">13654</a>
+</td>
+<td>lib</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13654">irb save-history extension is not concurrency-safe</a>
+</td>
+</tr>
+<tr class=" win test ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13644">13644</a>
+</td>
+<td>win test</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13644">Windows - Setting Time.now</a>
+</td>
+</tr>
+<tr class=" win encoding ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13571">13571</a>
+</td>
+<td>win encoding</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13571">Script arguments, encoding, windows / MinGW</a>
+</td>
+</tr>
+<tr class=" win test ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13542">13542</a>
+</td>
+<td>win test</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13542">MinGW trunk Builds - Summary of Issues</a>
+</td>
+</tr>
+<tr class=" lib ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13513">13513</a>
+</td>
+<td>lib</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13513">Resolv::DNS::Message.decode hangs after detecting truncation in UDP messages</a>
+</td>
+</tr>
+<tr class=" win test ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13500">13500</a>
+</td>
+<td>win test</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13500">MinGW TestArity#test_proc_err_mess stops testing</a>
+</td>
+</tr>
+<tr class=" win test ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13485">13485</a>
+</td>
+<td>win test</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13485">MinGW TestEnumerable#test_callcc SEGV info</a>
+</td>
+</tr>
+<tr class=" patch refine ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13446">13446</a>
+</td>
+<td>patch refine</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13446">refinements with prepend for module has strange behavior</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13397">13397</a>
+</td>
+<td>patch core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13397">#object_id should not be signed</a>
+</td>
+</tr>
+<tr class=" tracepoint ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13392">13392</a>
+</td>
+<td>tracepoint</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13392">TracePoint doesn&#39;t work correct with monkey patches / aliased methods</a>
+</td>
+</tr>
+<tr class=" ext ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13331">13331</a>
+</td>
+<td>ext</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13331">Inconsistent conversion of Float into Decimal</a>
+</td>
+</tr>
+<tr class=" win core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13298">13298</a>
+</td>
+<td>win core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13298">mingw SEGV TestEnumerable#test_callcc</a>
+</td>
+</tr>
+<tr class=" win test ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13269">13269</a>
+</td>
+<td>win test</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13269">test/readline/test_readline.rb and mingw</a>
+</td>
+</tr>
+<tr class=" core notbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13257">13257</a>
+</td>
+<td>core notbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13257">Symbol#singleton_class should be undef</a>
+</td>
+</tr>
+<tr class=" encoding ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13220">13220</a>
+</td>
+<td>encoding</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13220">Enhance support of Unicode strings manipulation</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13164">13164</a>
+</td>
+<td>core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13164">A second `SystemStackError` exception  results in `Segmentation fault (core dumped)`</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13153">13153</a>
+</td>
+<td>core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13153">Inconsistent sprintf formatting for 0 value</a>
+</td>
+</tr>
+<tr class=" win core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13151">13151</a>
+</td>
+<td>win core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13151">File.writable? doesn&#39;t report correctly if a directory is writable on Windows.</a>
+</td>
+</tr>
+<tr class=" patch lib ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13144">13144</a>
+</td>
+<td>patch lib</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13144">prettyprint doesn&#39;t detect cycles when wrapped inside Delegators</a>
+</td>
+</tr>
+<tr class=" build ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13125">13125</a>
+</td>
+<td>build</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13125">MRI has too much Qtrue : Qfalse;</a>
+</td>
+</tr>
+<tr class=" openssl ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13100">13100</a>
+</td>
+<td>openssl</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13100">OpenSSL::PKey::EC#public_keyでGroup情報がコピーされない。</a>
+</td>
+</tr>
+<tr class=" ext ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13094">13094</a>
+</td>
+<td>ext</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13094">Zlib::GzipReader eof?がfalseなのにgetsでnilが返ってくる</a>
+</td>
+</tr>
+<tr class=" lib notbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13000">13000</a>
+</td>
+<td>lib notbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;13000">Implement Set#include? with Hash#include?</a>
+</td>
+</tr>
+<tr class=" ext win notbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12987">12987</a>
+</td>
+<td>ext win notbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12987">Win32 API.rb can not call function without argument.</a>
+</td>
+</tr>
+<tr class=" lib notbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12919">12919</a>
+</td>
+<td>lib notbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12919">Net::FTP does not have a default open_timeout</a>
+</td>
+</tr>
+<tr class=" lib notbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12852">12852</a>
+</td>
+<td>lib notbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12852">URI.parse can&#39;t handle non-ascii URIs</a>
+</td>
+</tr>
+<tr class=" lib ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12838">12838</a>
+</td>
+<td>lib</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12838">Duplication of UDP packets for DNS responses causing &quot;no address&quot; results for valid hostnames</a>
+</td>
+</tr>
+<tr class=" core maybenotbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12834">12834</a>
+</td>
+<td>core maybenotbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12834">`prepend` getting prepended even if it already exists in the ancestors chain</a>
+</td>
+</tr>
+<tr class=" ext ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12780">12780</a>
+</td>
+<td>ext</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12780">BigDecimal#round returns different types depending on argument</a>
+</td>
+</tr>
+<tr class=" cygwin build ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12725">12725</a>
+</td>
+<td>cygwin build</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12725">Trying to use ./miniruby before it exists</a>
+</td>
+</tr>
+<tr class=" lib ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12708">12708</a>
+</td>
+<td>lib</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12708">Net::IMAP : Mail To address is not correct when uid_fetch is called.</a>
+</td>
+</tr>
+<tr class=" core maybenotbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12706">12706</a>
+</td>
+<td>core maybenotbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12706">Hash#each yields inconsistent number of args</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12689">12689</a>
+</td>
+<td>core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12689">Thread isolation of $~ and $_</a>
+</td>
+</tr>
+<tr class=" core maybenotbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12671">12671</a>
+</td>
+<td>core maybenotbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12671">Hash#to_proc result is not a lambda, but enforces arity</a>
+</td>
+</tr>
+<tr class=" ext ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12666">12666</a>
+</td>
+<td>ext</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12666">Fatal error: glibc detected an invalid stdio handle</a>
+</td>
+</tr>
+<tr class=" patch perf ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12599">12599</a>
+</td>
+<td>patch perf</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12599">For CLang, increase inline-threshold to get 7%-10% speedup of optcarrot</a>
+</td>
+</tr>
+<tr class=" encoding test ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12597">12597</a>
+</td>
+<td>encoding test</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12597">Produce test failure if some tests cannot be executed due to lacking data</a>
+</td>
+</tr>
+<tr class=" core notbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12594">12594</a>
+</td>
+<td>core notbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12594">The class does not inherit from a module the modules that were included after the inclusion</a>
+</td>
+</tr>
+<tr class=" cygwin build ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12590">12590</a>
+</td>
+<td>cygwin build</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12590">Error compiling parse.c on cygwin</a>
+</td>
+</tr>
+<tr class=" openssl ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12582">12582</a>
+</td>
+<td>openssl</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12582">OpenSSL Authenticated Encryption should check for tag length</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12564">12564</a>
+</td>
+<td>core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12564">Sometimes test_settracefunc.rb segfaults in exec_hooks_body (vm_trace.c)</a>
+</td>
+</tr>
+<tr class=" win core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12551">12551</a>
+</td>
+<td>win core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12551">Exception accessing file with long path on windows</a>
+</td>
+</tr>
+<tr class=" core maybenotbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12548">12548</a>
+</td>
+<td>core maybenotbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12548">Rounding modes inconsistency between round versus sprintf</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12547">12547</a>
+</td>
+<td>core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12547">Remove ONIG_UNICODE_VERSION_... in enc/unicode/case-folding.rb, casefold.h</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12540">12540</a>
+</td>
+<td>core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12540">test failures when SHARABLE_MIDDLE_SUBSTRING=1</a>
+</td>
+</tr>
+<tr class=" lib ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12538">12538</a>
+</td>
+<td>lib</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12538">hostsを書き換えてwebrickで書いたプロキシ―に繋いでいるとrubyが落ちる</a>
+</td>
+</tr>
+<tr class=" cygwin ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12506">12506</a>
+</td>
+<td>cygwin</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12506">On cygwin, Feature #5994 does not work</a>
+</td>
+</tr>
+<tr class=" test mips ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12500">12500</a>
+</td>
+<td>test mips</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12500">TestProcess#test_aspawn_too_long_path fails on mips with &quot;argument too big&quot;</a>
+</td>
+</tr>
+<tr class=" patch core maybenotbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12485">12485</a>
+</td>
+<td>patch core maybenotbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12485">Kernel.Rational raises TypeError though given denominator returns 1 by to_int</a>
+</td>
+</tr>
+<tr class=" test ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12473">12473</a>
+</td>
+<td>test</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12473">Test failure on fedora with TestTimeExtension#test_huge_precision</a>
+</td>
+</tr>
+<tr class=" cygwin lib ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12468">12468</a>
+</td>
+<td>cygwin lib</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12468">Logger: Can not rotate (log shifting failed. closed stream)</a>
+</td>
+</tr>
+<tr class=" cygwin thread ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12445">12445</a>
+</td>
+<td>cygwin thread</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12445">Testing TestIO#test_open_fifo_does_not_block_other_threads results in deadlock on cygwin</a>
+</td>
+</tr>
+<tr class=" cygwin core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12444">12444</a>
+</td>
+<td>cygwin core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12444">Segmentation fault when running TestException#test_machine_stackoverflow on cygwin</a>
+</td>
+</tr>
+<tr class=" cygwin core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12442">12442</a>
+</td>
+<td>cygwin core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12442">TestArgf#test_textmode fails on cygwin</a>
+</td>
+</tr>
+<tr class=" cygwin core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12440">12440</a>
+</td>
+<td>cygwin core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12440">make test-all is not working on cygwin</a>
+</td>
+</tr>
+<tr class=" win core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12436">12436</a>
+</td>
+<td>win core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12436">newline argument of File.open seems not respected on Windows</a>
+</td>
+</tr>
+<tr class=" core maybenotbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12416">12416</a>
+</td>
+<td>core maybenotbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12416">struct rb_id_table lacks mark function</a>
+</td>
+</tr>
+<tr class=" test ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12407">12407</a>
+</td>
+<td>test</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12407">2 failures of TestMkmf::TestConvertible</a>
+</td>
+</tr>
+<tr class=" build ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12392">12392</a>
+</td>
+<td>build</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12392">configure --with-sitedir=no --with-sitearchdir=no --with-vendordir=no --with-vendorarchdir=no が機能しない</a>
+</td>
+</tr>
+<tr class=" ext ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12388">12388</a>
+</td>
+<td>ext</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12388">Iterating second dbm enum causes first dbm enum to stop</a>
+</td>
+</tr>
+<tr class=" core notbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12368">12368</a>
+</td>
+<td>core notbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12368">default encoding of Integer#chr</a>
+</td>
+</tr>
+<tr class=" win core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12280">12280</a>
+</td>
+<td>win core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12280">IO.copy_stream(IO, IO) fails with &quot;pread() not implemented&quot;</a>
+</td>
+</tr>
+<tr class=" win maybenotbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12261">12261</a>
+</td>
+<td>win maybenotbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12261">Windows: File.dirname with 2+ / or 2+ \\ will return // or \\\\</a>
+</td>
+</tr>
+<tr class=" lib ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12258">12258</a>
+</td>
+<td>lib</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12258">RDoc bug when handling comments in C code examples</a>
+</td>
+</tr>
+<tr class=" lib notbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12251">12251</a>
+</td>
+<td>lib notbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12251">DelegateClass(OpenStruct) behavior in 2.3.0 different from 2.2</a>
+</td>
+</tr>
+<tr class=" lib maybenotbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12235">12235</a>
+</td>
+<td>lib maybenotbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12235">URI.encode issue with square brackets</a>
+</td>
+</tr>
+<tr class=" build ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12179">12179</a>
+</td>
+<td>build</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12179">Build failure due to VPATH expansion</a>
+</td>
+</tr>
+<tr class=" core maybenotbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12159">12159</a>
+</td>
+<td>core maybenotbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12159">Thread::Backtrace::Location#path returns absolute path for files loaded by require_relative</a>
+</td>
+</tr>
+<tr class=" lib notbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12136">12136</a>
+</td>
+<td>lib notbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12136">OpenStruct.new(format: :bar).send :format # =&gt; too few arguments</a>
+</td>
+</tr>
+<tr class=" patch lib ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12055">12055</a>
+</td>
+<td>patch lib</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12055">`NET::HTTPResponse` is not deflating responses with custom `Content-Range` header</a>
+</td>
+</tr>
+<tr class=" encoding ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12052">12052</a>
+</td>
+<td>encoding</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12052">String#encode with xml option returns wrong result</a>
+</td>
+</tr>
+<tr class=" win core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12040">12040</a>
+</td>
+<td>win core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12040">[Win32] File.stat fails on a mounted volume</a>
+</td>
+</tr>
+<tr class=" build ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12015">12015</a>
+</td>
+<td>build</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;12015">Improving code coverage visibility</a>
+</td>
+</tr>
+<tr class=" core maybenotbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11878">11878</a>
+</td>
+<td>core maybenotbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11878">Comparison of prepended modules</a>
+</td>
+</tr>
+<tr class=" cygwin test ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11840">11840</a>
+</td>
+<td>cygwin test</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11840">Error with &quot;make check&quot; on Cygwin</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11808">11808</a>
+</td>
+<td>core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11808">Different behavior between Enumerable#grep and Array#grep</a>
+</td>
+</tr>
+<tr class=" refine notbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11779">11779</a>
+</td>
+<td>refine notbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11779">Module#using does not make sense as a method</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11778">11778</a>
+</td>
+<td>core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11778">recv_io with mode breaks when klass arg is kind of BasicSocket</a>
+</td>
+</tr>
+<tr class=" encoding notbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11706">11706</a>
+</td>
+<td>encoding notbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11706">Clean up files etc/unicode/name2ctype.{h.blt,kwd,src}</a>
+</td>
+</tr>
+<tr class=" refine maybenotbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11704">11704</a>
+</td>
+<td>refine maybenotbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11704">Refinements only get &quot;used&quot; once in loop</a>
+</td>
+</tr>
+<tr class=" refine ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11669">11669</a>
+</td>
+<td>refine</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11669">inconsitent behavior of refining frozen class</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11636">11636</a>
+</td>
+<td>patch core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11636">super in instance_eval in a method defined in a module is invoked with a wrong receiver</a>
+</td>
+</tr>
+<tr class=" core solaris maybenotbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11582">11582</a>
+</td>
+<td>core solaris maybenotbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11582">On Solaris, Rational#** returns -Infinity for Rational(0) when passed a negative Float</a>
+</td>
+</tr>
+<tr class=" patch ext ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11579">11579</a>
+</td>
+<td>patch ext</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11579">Fiddle.win32_last_error after calling Fiddle::Function#call isn&#39;t GetLastError()</a>
+</td>
+</tr>
+<tr class=" lib aix ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11533">11533</a>
+</td>
+<td>lib aix</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11533">AIX6.1 - Ruby 2.2.3 - TestMkmf::TestConvertible#test_typeof_builtin fails</a>
+</td>
+</tr>
+<tr class=" lib maybenotbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11531">11531</a>
+</td>
+<td>lib maybenotbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11531">IPAddr#== implements wrong logic</a>
+</td>
+</tr>
+<tr class=" patch lib ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11526">11526</a>
+</td>
+<td>patch lib</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11526">Streaming HTTP requests are not idempotent and should not be retried</a>
+</td>
+</tr>
+<tr class=" patch maybenotbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11523">11523</a>
+</td>
+<td>patch maybenotbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11523">optparse short options will match complete options</a>
+</td>
+</tr>
+<tr class=" core aix ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11514">11514</a>
+</td>
+<td>core aix</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11514">AIX6.1 - Ruby 2.2.3 - Segmentation fault in :byteslice</a>
+</td>
+</tr>
+<tr class=" test ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11480">11480</a>
+</td>
+<td>test</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11480">killed by SIGIOT (signal 6) on fork</a>
+</td>
+</tr>
+<tr class=" patch lib ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11450">11450</a>
+</td>
+<td>patch lib</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11450">HTTPHeader.content_range throws error on non-byte units</a>
+</td>
+</tr>
+<tr class=" win thread ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11438">11438</a>
+</td>
+<td>win thread</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11438">native_thread_init_stack() get machine.stack_start unequal to thread&#39;s stack start address, x86 win32</a>
+</td>
+</tr>
+<tr class=" win ext encoding ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11410">11410</a>
+</td>
+<td>win ext encoding</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11410">Win32 Registry enumeration performs unnecessary string re-encoding which cause UndefinedConversionError exceptions</a>
+</td>
+</tr>
+<tr class=" lib ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11335">11335</a>
+</td>
+<td>lib</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11335">`ruby -r debug` catchpoint problem</a>
+</td>
+</tr>
+<tr class=" core maybenotbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11304">11304</a>
+</td>
+<td>core maybenotbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11304">[PATCH] Kernel.global_variables should observe $~.</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11269">11269</a>
+</td>
+<td>core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11269">ruby_init_setproctitle() should be called before require_libraries()</a>
+</td>
+</tr>
+<tr class=" patch lib ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11268">11268</a>
+</td>
+<td>patch lib</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11268">Zlib::DataError: incorrect header check</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11230">11230</a>
+</td>
+<td>core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11230">Should rb_struct_s_members() be public API?</a>
+</td>
+</tr>
+<tr class=" core maybenotbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11213">11213</a>
+</td>
+<td>core maybenotbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11213">defined?(super) ignores respond_to_missing?</a>
+</td>
+</tr>
+<tr class=" core maybenotbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11202">11202</a>
+</td>
+<td>core maybenotbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11202">No warning when a link to an original method body was removed</a>
+</td>
+</tr>
+<tr class=" lib ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11194">11194</a>
+</td>
+<td>lib</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11194">Refactor env-sourced proxy logic for uri/generic</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11189">11189</a>
+</td>
+<td>core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11189">alias prepended module</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11188">11188</a>
+</td>
+<td>patch core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11188">Method#inspect for chaining alias methods</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11183">11183</a>
+</td>
+<td>core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11183">Cumulative error on Complex::I ** 100000000000000000000000000000000</a>
+</td>
+</tr>
+<tr class=" refine ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11182">11182</a>
+</td>
+<td>refine</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11182">Refinement with alias causes strange behavior</a>
+</td>
+</tr>
+<tr class=" ext ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11180">11180</a>
+</td>
+<td>ext</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11180">Missing lines with Zlib::GzipReader</a>
+</td>
+</tr>
+<tr class=" win core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11177">11177</a>
+</td>
+<td>win core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11177">DATAでEOF文字以降が読めない</a>
+</td>
+</tr>
+<tr class=" thread linux ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11174">11174</a>
+</td>
+<td>thread linux</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11174">threads memory leak</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11164">11164</a>
+</td>
+<td>core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11164">Garbage collector in Ruby 2.2 provokes unexpected CoW</a>
+</td>
+</tr>
+<tr class=" win core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11142">11142</a>
+</td>
+<td>win core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11142">Command line argument parser on windows handles double quotes inconsistently.</a>
+</td>
+</tr>
+<tr class=" core maybenotbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11064">11064</a>
+</td>
+<td>core maybenotbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11064">#singleton_methods for objects with special singleton_class returns an empty array</a>
+</td>
+</tr>
+<tr class=" patch core maybenotbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11063">11063</a>
+</td>
+<td>patch core maybenotbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11063">Special singleton class should return true for singleton_class? test</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11055">11055</a>
+</td>
+<td>patch core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11055">autoload resets private_constant</a>
+</td>
+</tr>
+<tr class=" core notbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11022">11022</a>
+</td>
+<td>core notbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11022">opening an eigenclass does not change the class variable definition context</a>
+</td>
+</tr>
+<tr class=" core maybenotbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11014">11014</a>
+</td>
+<td>core maybenotbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;11014">String#partition doesn&#39;t return correct result on zero-width match</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10959">10959</a>
+</td>
+<td>core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10959">rb_iseq_load: problems with hash containing symbolic keys</a>
+</td>
+</tr>
+<tr class=" patch core maybenotbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10929">10929</a>
+</td>
+<td>patch core maybenotbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10929">NilClass#to_proc and &amp; don&#39;t mix?</a>
+</td>
+</tr>
+<tr class=" lib ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10919">10919</a>
+</td>
+<td>lib</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10919">[gem install] installs multipe platforms</a>
+</td>
+</tr>
+<tr class=" lib ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10911">10911</a>
+</td>
+<td>lib</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10911">IPAddr.new should ignore zone identifiers</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10902">10902</a>
+</td>
+<td>core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10902">require(&quot;enumerator&quot;) scans LOAD_PATH 2x on every invocation</a>
+</td>
+</tr>
+<tr class=" patch lib ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10855">10855</a>
+</td>
+<td>patch lib</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10855">[PATCH] Matrix#inverse returns matrix of integers whenever possible</a>
+</td>
+</tr>
+<tr class=" core maybenotbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10845">10845</a>
+</td>
+<td>core maybenotbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10845">Subclassing String</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10749">10749</a>
+</td>
+<td>core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10749">Possible overflow in GC::Profiler report on 2.2.0</a>
+</td>
+</tr>
+<tr class=" core maybenotbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10684">10684</a>
+</td>
+<td>core maybenotbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10684">Block arity changes through Enumerable methods</a>
+</td>
+</tr>
+<tr class=" perf ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10650">10650</a>
+</td>
+<td>perf</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10650">[PERF] bm_hash_keys and  bm_hash_values</a>
+</td>
+</tr>
+<tr class=" lib ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10637">10637</a>
+</td>
+<td>lib</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10637">Puppet orchestration on vagrant fails with Error: Non-HTTP proxy URI</a>
+</td>
+</tr>
+<tr class=" lib notbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10613">10613</a>
+</td>
+<td>lib notbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10613">SNI is not optional when using TLS</a>
+</td>
+</tr>
+<tr class=" encoding maybenotbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10584">10584</a>
+</td>
+<td>encoding maybenotbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10584">String.valid_encoding?, String.ascii_only? fails to account for BOM.</a>
+</td>
+</tr>
+<tr class=" test arm ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10580">10580</a>
+</td>
+<td>test arm</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10580">TestProcess#test_deadlock_by_signal_at_forking fails on ARM</a>
+</td>
+</tr>
+<tr class=" core maybenotbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10561">10561</a>
+</td>
+<td>core maybenotbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10561">Improve function of Thread::Backtrace::Location #path and #absolute_path</a>
+</td>
+</tr>
+<tr class=" build ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10542">10542</a>
+</td>
+<td>build</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10542">out-of-place build from repository builds enc/trans/*.c in the source directory and the build directory </a>
+</td>
+</tr>
+<tr class=" core notbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10534">10534</a>
+</td>
+<td>core notbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10534">Enumerator methods other than &quot;next&quot; do not always respect &quot;peek&quot;</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10495">10495</a>
+</td>
+<td>core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10495">Attaching lldb to a program running `sleep` hangs the VM</a>
+</td>
+</tr>
+<tr class=" ext ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10484">10484</a>
+</td>
+<td>ext</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10484">http response throw error with broken gzip compressed block(but can decompress)</a>
+</td>
+</tr>
+<tr class=" core notbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10475">10475</a>
+</td>
+<td>core notbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10475">Array#flatten should not accept a nil argument</a>
+</td>
+</tr>
+<tr class=" tracepoint ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10470">10470</a>
+</td>
+<td>tracepoint</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10470">TracePoint cannot trace attr_accessor/reader/writer method</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10466">10466</a>
+</td>
+<td>patch core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10466">rb_eval_string_wrap does not actually wrap in a module binding</a>
+</td>
+</tr>
+<tr class=" patch core maybenotbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10453">10453</a>
+</td>
+<td>patch core maybenotbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10453">NUM2CHR() does not perform additional bounds checks</a>
+</td>
+</tr>
+<tr class=" patch ext ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10436">10436</a>
+</td>
+<td>patch ext</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10436">ruby -c and ripper inconsistency: m(&amp;nil) {}</a>
+</td>
+</tr>
+<tr class=" encoding ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10417">10417</a>
+</td>
+<td>encoding</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10417">IO#set_encoding without int_enc doesn&#39;t keep current internal encoding</a>
+</td>
+</tr>
+<tr class=" build ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10416">10416</a>
+</td>
+<td>build</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10416">Create mechanism for updating of Unicode data files downstreams when we want</a>
+</td>
+</tr>
+<tr class=" parser unfixable ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10388">10388</a>
+</td>
+<td>parser unfixable</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10388">Operator precedence problem in multiple assignment (massign)</a>
+</td>
+</tr>
+<tr class=" lib notbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10250">10250</a>
+</td>
+<td>lib notbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10250">User-Agent HTTP header not being set on CONNECT requests</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10248">10248</a>
+</td>
+<td>core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10248">Possible missing test or bug for Module#include and Module#prepend</a>
+</td>
+</tr>
+<tr class=" build notbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10213">10213</a>
+</td>
+<td>build notbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10213">bundled gems ignored by make install</a>
+</td>
+</tr>
+<tr class=" ext ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10203">10203</a>
+</td>
+<td>ext</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10203">TCPServer.new has strange behaviour when EADDRINUSE without specifying hostname</a>
+</td>
+</tr>
+<tr class=" patch lib ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10167">10167</a>
+</td>
+<td>patch lib</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10167">Prime#include?(mod) hangs up</a>
+</td>
+</tr>
+<tr class=" win core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10128">10128</a>
+</td>
+<td>win core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10128">Quoting problem for arguments of Kernel.system, Kernel.exec on Windows</a>
+</td>
+</tr>
+<tr class=" thread perf ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10009">10009</a>
+</td>
+<td>thread perf</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;10009">IO operation is 10x slower in multi-thread environment</a>
+</td>
+</tr>
+<tr class=" win build ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9955">9955</a>
+</td>
+<td>win build</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9955">issue building dll on mingw, library not found</a>
+</td>
+</tr>
+<tr class=" win maybenotbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9944">9944</a>
+</td>
+<td>win maybenotbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9944">in ruby for windows in &quot;system&quot; a redirection to append a file works incorrectly</a>
+</td>
+</tr>
+<tr class=" lib ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9931">9931</a>
+</td>
+<td>lib</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9931">irb: Really weird behavior for x = &quot;#{x\&quot;}&quot; (ex: irb(main:009:-4))</a>
+</td>
+</tr>
+<tr class=" win encoding ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9930">9930</a>
+</td>
+<td>win encoding</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9930">unicode filenames somehow don&#39;t work</a>
+</td>
+</tr>
+<tr class=" build maybenotbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9921">9921</a>
+</td>
+<td>build maybenotbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9921">gmtime_r, win32.h, and &lt;string&gt;</a>
+</td>
+</tr>
+<tr class=" lib maybenotbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9877">9877</a>
+</td>
+<td>lib maybenotbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9877">IRB::OutputMethod defines &quot;pp&quot;, but it&#39;s actually &quot;p&quot;</a>
+</td>
+</tr>
+<tr class=" lib ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9836">9836</a>
+</td>
+<td>lib</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9836">Bad Implementation of Time.strptime</a>
+</td>
+</tr>
+<tr class=" core notbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9815">9815</a>
+</td>
+<td>core notbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9815">attr_reader doesn&#39;t warn on a uninitialized instance variable</a>
+</td>
+</tr>
+<tr class=" lib maybenotbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9806">9806</a>
+</td>
+<td>lib maybenotbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9806">URI#encode doesn&#39;t encode characters &#39;[&#39; and &#39;]&#39;.  They should be encoded as %5B and %5D respectively.</a>
+</td>
+</tr>
+<tr class=" ext ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9790">9790</a>
+</td>
+<td>ext</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9790">Zlib::GzipReader only decompressed the first of concatenated files</a>
+</td>
+</tr>
+<tr class=" build ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9760">9760</a>
+</td>
+<td>build</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9760">mkmf does not allow for linking against custom libraries when a system library is present</a>
+</td>
+</tr>
+<tr class=" wip-patch encoding ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9737">9737</a>
+</td>
+<td>wip-patch encoding</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9737">Non-ASCII characters in the path to ruby executable break require paths</a>
+</td>
+</tr>
+<tr class=" win encoding ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9715">9715</a>
+</td>
+<td>win encoding</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9715">ENV data yield ASCII-8BIT encoded strings under Windows with unicode username</a>
+</td>
+</tr>
+<tr class=" win encoding ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9713">9713</a>
+</td>
+<td>win encoding</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9713">__FILE__ return unexpected encoding - breaks Dir.glob</a>
+</td>
+</tr>
+<tr class=" regexp notbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9693">9693</a>
+</td>
+<td>regexp notbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9693">\x{} in regexp</a>
+</td>
+</tr>
+<tr class=" ext ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9659">9659</a>
+</td>
+<td>ext</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9659">crash in FIPS mode after unchecked algo-&gt;init_func failure</a>
+</td>
+</tr>
+<tr class=" ext ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9595">9595</a>
+</td>
+<td>ext</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9595">Float#to_d inconsistent between 2.0.0 and 2.1.1</a>
+</td>
+</tr>
+<tr class=" refine maybenotbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9580">9580</a>
+</td>
+<td>refine maybenotbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9580">Refinements regression in IRB</a>
+</td>
+</tr>
+<tr class=" core maybenotbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9573">9573</a>
+</td>
+<td>core maybenotbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9573">descendants of a module don&#39;t gain its future ancestors, but descendants of a class, do</a>
+</td>
+</tr>
+<tr class=" lib unfixable ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9542">9542</a>
+</td>
+<td>lib unfixable</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9542">Delegator does not delegate protected methods</a>
+</td>
+</tr>
+<tr class=" core arm ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9507">9507</a>
+</td>
+<td>core arm</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9507">Ruby 2.1.0 is broken on ARMv5: tried to create Proc object without a block</a>
+</td>
+</tr>
+<tr class=" patch ext ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9504">9504</a>
+</td>
+<td>patch ext</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9504">X509 certificate incorrectly loaded (because of try-pem-first-else-asn1)</a>
+</td>
+</tr>
+<tr class=" patch lib ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9459">9459</a>
+</td>
+<td>patch lib</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9459">Net::HTTP initializes openssl library after TCP connection is established</a>
+</td>
+</tr>
+<tr class=" win core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9435">9435</a>
+</td>
+<td>win core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9435">Kernel.system problem</a>
+</td>
+</tr>
+<tr class=" win core maybenotbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9431">9431</a>
+</td>
+<td>win core maybenotbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9431">In windows ruby IO.write returns count of bytes without count of CR character</a>
+</td>
+</tr>
+<tr class=" win encoding maybenotbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9414">9414</a>
+</td>
+<td>win encoding maybenotbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9414">strftime returns incorrectly encoded string</a>
+</td>
+</tr>
+<tr class=" cygwin encoding ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9409">9409</a>
+</td>
+<td>cygwin encoding</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9409">Cygwin で &quot;filesystem&quot; の encoding が正しくないケース</a>
+</td>
+</tr>
+<tr class=" test ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9366">9366</a>
+</td>
+<td>test</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9366">&quot;make -j32 check TESTS=-j32&quot; occasionally fails on rubygems/specification</a>
+</td>
+</tr>
+<tr class=" build notbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9312">9312</a>
+</td>
+<td>build notbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9312">Build the ruby executable in bin/</a>
+</td>
+</tr>
+<tr class=" core notbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9291">9291</a>
+</td>
+<td>core notbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9291">array splatting a nil works, but hash splatting a nil does not</a>
+</td>
+</tr>
+<tr class=" build notbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9287">9287</a>
+</td>
+<td>build notbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9287">&#39;rb_obj_write&#39; discards qualifiers from pointer target type</a>
+</td>
+</tr>
+<tr class=" win core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9274">9274</a>
+</td>
+<td>win core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9274">A lot of SystemStackError on Windows 8.1 with MSVC 2013</a>
+</td>
+</tr>
+<tr class=" ext ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9246">9246</a>
+</td>
+<td>ext</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9246">NoMemoryError is occurred by simple addition of BigDecimal</a>
+</td>
+</tr>
+<tr class=" win encoding ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9245">9245</a>
+</td>
+<td>win encoding</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9245">Kernel::system gives wrong output for utf-8 characters on windows under utf-8 console</a>
+</td>
+</tr>
+<tr class=" patch lib ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9242">9242</a>
+</td>
+<td>patch lib</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9242">Rdoc detection of aliases</a>
+</td>
+</tr>
+<tr class=" patch win core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9208">9208</a>
+</td>
+<td>patch win core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9208">Win32 ANSI color no longer works since revision 43331</a>
+</td>
+</tr>
+<tr class=" win encoding ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9189">9189</a>
+</td>
+<td>win encoding</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9189">Build failure on Windows in case of nonascii TEMP environment.</a>
+</td>
+</tr>
+<tr class=" lib notbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9121">9121</a>
+</td>
+<td>lib notbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9121">[PATCH] Remove rbtree implementation of SortedSet due to performance regression</a>
+</td>
+</tr>
+<tr class=" lib ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9115">9115</a>
+</td>
+<td>lib</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9115">Logger traps all exceptions; breaks Timeout</a>
+</td>
+</tr>
+<tr class=" lib ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9045">9045</a>
+</td>
+<td>lib</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9045">URIに含まれるエンコードされたID/パスワードがデコードされない</a>
+</td>
+</tr>
+<tr class=" win encoding ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9016">9016</a>
+</td>
+<td>win encoding</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9016">String#encoding is lying?</a>
+</td>
+</tr>
+<tr class=" build ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9010">9010</a>
+</td>
+<td>build</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9010">./configure --prefix= cannot handle directories with spaces</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9009">9009</a>
+</td>
+<td>core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;9009">Wrong binding when tracing c-calls</a>
+</td>
+</tr>
+<tr class=" patch build ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;8973">8973</a>
+</td>
+<td>patch build</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;8973">Allow to configure archlibdir for multiarch</a>
+</td>
+</tr>
+<tr class=" doc notbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;8841">8841</a>
+</td>
+<td>doc notbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;8841">Module#included_modules and prepended modules</a>
+</td>
+</tr>
+<tr class=" lib maybenotbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;8836">8836</a>
+</td>
+<td>lib maybenotbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;8836">[BUG] Bus Error with bundler on large Gemfile when resolving dependencies</a>
+</td>
+</tr>
+<tr class=" ext ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;8826">8826</a>
+</td>
+<td>ext</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;8826">BigDecimal#div and #quo different behavior and inconsistencies</a>
+</td>
+</tr>
+<tr class=" ext unfixable ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;8810">8810</a>
+</td>
+<td>ext unfixable</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;8810">GDBM.open内で処理がブロックしたらTimeout.timeout が効かない</a>
+</td>
+</tr>
+<tr class=" ext ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;8782">8782</a>
+</td>
+<td>ext</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;8782">Don&#39;t set rl_getc_function on editline</a>
+</td>
+</tr>
+<tr class=" build ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;8744">8744</a>
+</td>
+<td>build</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;8744">SIZEOF_UNSIGNED___INT128</a>
+</td>
+</tr>
+<tr class=" patch core maybenotbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;8677">8677</a>
+</td>
+<td>patch core maybenotbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;8677">$LOAD_PATH did not encoded into the &quot;internal encoding&quot;</a>
+</td>
+</tr>
+<tr class=" patch core notbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;8507">8507</a>
+</td>
+<td>patch core notbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;8507">Keyword splat does not convert arg to Hash</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;8484">8484</a>
+</td>
+<td>core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;8484">Restoring conditions through the ruby method call during VM processing</a>
+</td>
+</tr>
+<tr class=" ext ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;8446">8446</a>
+</td>
+<td>ext</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;8446">sdbm fails to fetch existing key if many elements in it</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;8445">8445</a>
+</td>
+<td>patch core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;8445">IO.open and IO#set_enconding does not support :fallback option</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;8444">8444</a>
+</td>
+<td>core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;8444">Regexp vars $~ and friends are not thread local</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;8299">8299</a>
+</td>
+<td>core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;8299">Minor error in float parsing</a>
+</td>
+</tr>
+<tr class=" lib ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;8203">8203</a>
+</td>
+<td>lib</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;8203">Rinda: recycled object</a>
+</td>
+</tr>
+<tr class=" thread unfixable ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;8185">8185</a>
+</td>
+<td>thread unfixable</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;8185"> Thread/fork issue</a>
+</td>
+</tr>
+<tr class=" tracepoint notbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;7976">7976</a>
+</td>
+<td>tracepoint notbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;7976">TracePoint call is at call point, not call site</a>
+</td>
+</tr>
+<tr class=" ext perf ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;7968">7968</a>
+</td>
+<td>ext perf</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;7968">Poor UDPSocket#send performance in ruby 2.0.0 on windows</a>
+</td>
+</tr>
+<tr class=" encoding ext ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;7964">7964</a>
+</td>
+<td>encoding ext</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;7964">Writing an ASCII-8BIT String to a StringIO created from a UTF-8 String</a>
+</td>
+</tr>
+<tr class=" ext ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;7892">7892</a>
+</td>
+<td>ext</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;7892">MIME encoding bug of NKF.nkf</a>
+</td>
+</tr>
+<tr class=" ext ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;7859">7859</a>
+</td>
+<td>ext</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;7859">Readline: Incorrect arrow key behavior in vi_editing_mode insert mode with Readline 6.2</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;7844">7844</a>
+</td>
+<td>patch core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;7844">include/prepend satisfiable module dependencies are not satisfied</a>
+</td>
+</tr>
+<tr class=" build ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;7840">7840</a>
+</td>
+<td>build</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;7840">-Wdeclaration-after-statement is valid for C/ObjC but not for C++</a>
+</td>
+</tr>
+<tr class=" win encoding ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;7758">7758</a>
+</td>
+<td>win encoding</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;7758">Ruby on Windows crashes when active codepage is codepage 65001 and outputting unicode character</a>
+</td>
+</tr>
+<tr class=" encoding ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;7742">7742</a>
+</td>
+<td>encoding</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;7742">System encoding (Windows-1258) is not recognized by Ruby to  convert back to UTF-8 </a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;7676">7676</a>
+</td>
+<td>core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;7676">Comparison of Float::NAN in array behaves unexpectedly</a>
+</td>
+</tr>
+<tr class=" win ext ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;6407">6407</a>
+</td>
+<td>win ext</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;6407">Most Test Failure for BigDecimal on 64bit Windows, any GCC parameter needed?</a>
+</td>
+</tr>
+<tr class=" win build ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;6391">6391</a>
+</td>
+<td>win build</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;6391">Segment Fault while execute make_encmake.rb for Ruby 1.9.3 P194 ( MinGW64)</a>
+</td>
+</tr>
+<tr class=" win build ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;6360">6360</a>
+</td>
+<td>win build</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;6360">Debug information build even without requesting it</a>
+</td>
+</tr>
+<tr class=" encoding ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;6351">6351</a>
+</td>
+<td>encoding</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;6351">transcode table generator does not support multi characters of Unicode</a>
+</td>
+</tr>
+<tr class=" build ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;6124">6124</a>
+</td>
+<td>build</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;6124">remove the &quot;spec-only gems&quot; in Ruby 1.9.3 (was What is the purpose of &quot;fake&quot; gems in Ruby)</a>
+</td>
+</tr>
+<tr class=" core ext ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;6120">6120</a>
+</td>
+<td>core ext</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;6120">Float and BigDecimal bug in remainder in corner cases</a>
+</td>
+</tr>
+<tr class=" fiber notbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;6117">6117</a>
+</td>
+<td>fiber notbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;6117">Transfers allowed into Fibers that have resumed into other fibers</a>
+</td>
+</tr>
+<tr class=" core ruby3 ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;6087">6087</a>
+</td>
+<td>core ruby3</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;6087">How should inherited methods deal with return values of their own subclass? </a>
+</td>
+</tr>
+<tr class=" ext maybenotbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;5771">5771</a>
+</td>
+<td>ext maybenotbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;5771">WIN32OLERuntimeError using 1.9.2</a>
+</td>
+</tr>
+<tr class=" test ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;5577">5577</a>
+</td>
+<td>test</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;5577">test/testunit/test_parallel.rb causes NoMethodError when file descriptor is limited to 30.</a>
+</td>
+</tr>
+<tr class=" lib ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;5418">5418</a>
+</td>
+<td>lib</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;5418">Some properties of WEBrick::HTTPRequest could be malformed</a>
+</td>
+</tr>
+<tr class=" ext maybenotbug ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;5334">5334</a>
+</td>
+<td>ext maybenotbug</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;5334">Segmentation fault in InternetExplorer IServiceProvider interface</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;5317">5317</a>
+</td>
+<td>core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;5317">rubyのヘッダファイルを使った拡張を行う際にoff_tの宣言回避をする事が出来ない。</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;5179">5179</a>
+</td>
+<td>patch core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;5179">Complex#rationalize and to_r with approximate zeros</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;4443">4443</a>
+</td>
+<td>core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;4443">odd evaluation order in a multiple assignment</a>
+</td>
+</tr>
+<tr class=" ruby3 lib ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;4436">4436</a>
+</td>
+<td>ruby3 lib</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;4436">FileUtils verbose mode prints output to stderr</a>
+</td>
+</tr>
+<tr class=" thread ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;4434">4434</a>
+</td>
+<td>thread</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;4434">make test-all &quot;-j10000&quot; のように大きな並列数を与えると異常終了</a>
+</td>
+</tr>
+<tr class=" win thread ext ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;4405">4405</a>
+</td>
+<td>win thread ext</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;4405">WIN32OLE &amp; Threads incompatible</a>
+</td>
+</tr>
+<tr class=" ruby3 core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;4352">4352</a>
+</td>
+<td>ruby3 core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;4352">[patch] Fix eval(s, b) backtrace; make eval(s, b) consistent with eval(s)</a>
+</td>
+</tr>
+<tr class=" test ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;4173">4173</a>
+</td>
+<td>test</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;4173">TestProcess#test_wait_and_sigchild が、たまに失敗する</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;4040">4040</a>
+</td>
+<td>core</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;4040">SystemStackError with Hash[*a] for Large _a_</a>
+</td>
+</tr>
+<tr class=" fiber ">
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;595">595</a>
+</td>
+<td>fiber</td>
+<td><a href="https:&#x2F;&#x2F;bugs.ruby-lang.org&#x2F;issues&#x2F;595">Fiber ignores ensure clause</a>
+</td>
+</tr>
+</tbody>
+</table>
+
+<script src="app.js"></script>
+</body>
+</html>
