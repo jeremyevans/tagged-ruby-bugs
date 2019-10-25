@@ -3,11 +3,11 @@
 4173,test,TestProcess#test_wait_and_sigchild が、たまに失敗する
 4352,ruby3 core,"[patch] Fix eval(s, b) backtrace; make eval(s, b) consistent with eval(s)"
 4405,win thread ext,WIN32OLE &amp; Threads incompatible
-4434,thread,make test-all &quot;-j10000&quot; のように大きな並列数を与えると異常終了
+4434,thread maybenotbug,make test-all &quot;-j10000&quot; のように大きな並列数を与えると異常終了
 4436,ruby3 lib,FileUtils verbose mode prints output to stderr
 4443,core,odd evaluation order in a multiple assignment
 5179,patch core,Complex#rationalize and to_r with approximate zeros
-5317,core,rubyのヘッダファイルを使った拡張を行う際にoff_tの宣言回避をする事が出来ない。
+5317,core maybenotbug,rubyのヘッダファイルを使った拡張を行う際にoff_tの宣言回避をする事が出来ない。
 5334,ext maybenotbug,Segmentation fault in InternetExplorer IServiceProvider interface
 5418,lib,Some properties of WEBrick::HTTPRequest could be malformed
 5577,test,test/testunit/test_parallel.rb causes NoMethodError when file descriptor is limited to 30.
@@ -49,7 +49,7 @@
 9009,core,Wrong binding when tracing c-calls
 9010,build,./configure --prefix= cannot handle directories with spaces
 9016,win encoding,String#encoding is lying?
-9045,lib,URIに含まれるエンコードされたID/パスワードがデコードされない
+9045,lib uriencoding,URIに含まれるエンコードされたID/パスワードがデコードされない
 9115,lib,Logger traps all exceptions; breaks Timeout
 9121,lib notbug,[PATCH] Remove rbtree implementation of SortedSet due to performance regression
 9189,win encoding,Build failure on Windows in case of nonascii TEMP environment.
@@ -355,7 +355,7 @@
 15247,win test,"Windows - TEMP folder, non 8.3 &amp; drive, fails &amp; errors in test-all (ruby &amp; rdoc)"
 15262,ext,WeakRef::RefError for object that is still in use
 15263,patch core,[PATCH] vm_trace.c (postponed_job_register): only hit main thread
-15268,openssl,Solarisでtest/drb/test_drbssl.rbが落ちる
+15268,solaris openssl,Solarisでtest/drb/test_drbssl.rbが落ちる
 15276,lib notbug,URI.join behaviour is unintuitive
 15310,patch thread,[PATCH] thread_pthread.c: close race from UBF_TIMER and non-GVL-releasing thread
 15313,patch tracepoint,[PATCH] Let debuggers know when a tail call happens
