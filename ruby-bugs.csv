@@ -1,0 +1,445 @@
+595,fiber,Fiber ignores ensure clause
+4040,core,SystemStackError with Hash[*a] for Large _a_
+4173,test,TestProcess#test_wait_and_sigchild が、たまに失敗する
+4352,ruby3 core,"[patch] Fix eval(s, b) backtrace; make eval(s, b) consistent with eval(s)"
+4405,win thread ext,WIN32OLE &amp; Threads incompatible
+4434,thread,make test-all &quot;-j10000&quot; のように大きな並列数を与えると異常終了
+4436,ruby3 lib,FileUtils verbose mode prints output to stderr
+4443,core,odd evaluation order in a multiple assignment
+5179,patch core,Complex#rationalize and to_r with approximate zeros
+5317,core,rubyのヘッダファイルを使った拡張を行う際にoff_tの宣言回避をする事が出来ない。
+5334,ext maybenotbug,Segmentation fault in InternetExplorer IServiceProvider interface
+5418,lib,Some properties of WEBrick::HTTPRequest could be malformed
+5577,test,test/testunit/test_parallel.rb causes NoMethodError when file descriptor is limited to 30.
+5771,ext maybenotbug,WIN32OLERuntimeError using 1.9.2
+6087,core ruby3,How should inherited methods deal with return values of their own subclass? 
+6117,fiber notbug,Transfers allowed into Fibers that have resumed into other fibers
+6120,core ext,Float and BigDecimal bug in remainder in corner cases
+6124,build,remove the &quot;spec-only gems&quot; in Ruby 1.9.3 (was What is the purpose of &quot;fake&quot; gems in Ruby)
+6351,encoding,transcode table generator does not support multi characters of Unicode
+6360,win build,Debug information build even without requesting it
+6391,win build,Segment Fault while execute make_encmake.rb for Ruby 1.9.3 P194 ( MinGW64)
+6407,win ext,"Most Test Failure for BigDecimal on 64bit Windows, any GCC parameter needed?"
+7676,core,Comparison of Float::NAN in array behaves unexpectedly
+7742,encoding,System encoding (Windows-1258) is not recognized by Ruby to  convert back to UTF-8 
+7758,win encoding,Ruby on Windows crashes when active codepage is codepage 65001 and outputting unicode character
+7840,build,-Wdeclaration-after-statement is valid for C/ObjC but not for C++
+7844,patch core,include/prepend satisfiable module dependencies are not satisfied
+7859,ext,Readline: Incorrect arrow key behavior in vi_editing_mode insert mode with Readline 6.2
+7892,ext,MIME encoding bug of NKF.nkf
+7964,encoding ext,Writing an ASCII-8BIT String to a StringIO created from a UTF-8 String
+7968,ext perf,Poor UDPSocket#send performance in ruby 2.0.0 on windows
+7976,tracepoint notbug,"TracePoint call is at call point, not call site"
+8185,thread unfixable, Thread/fork issue
+8203,lib,Rinda: recycled object
+8299,core,Minor error in float parsing
+8444,core,Regexp vars $~ and friends are not thread local
+8445,patch core,IO.open and IO#set_enconding does not support :fallback option
+8446,ext,sdbm fails to fetch existing key if many elements in it
+8484,core,Restoring conditions through the ruby method call during VM processing
+8507,patch core notbug,Keyword splat does not convert arg to Hash
+8677,patch core maybenotbug,$LOAD_PATH did not encoded into the &quot;internal encoding&quot;
+8744,build,SIZEOF_UNSIGNED___INT128
+8782,ext,Don&#39;t set rl_getc_function on editline
+8810,ext unfixable,GDBM.open内で処理がブロックしたらTimeout.timeout が効かない
+8826,ext,BigDecimal#div and #quo different behavior and inconsistencies
+8836,lib maybenotbug,[BUG] Bus Error with bundler on large Gemfile when resolving dependencies
+8841,doc notbug,Module#included_modules and prepended modules
+8973,patch build,Allow to configure archlibdir for multiarch
+9009,core,Wrong binding when tracing c-calls
+9010,build,./configure --prefix= cannot handle directories with spaces
+9016,win encoding,String#encoding is lying?
+9045,lib,URIに含まれるエンコードされたID/パスワードがデコードされない
+9115,lib,Logger traps all exceptions; breaks Timeout
+9121,lib notbug,[PATCH] Remove rbtree implementation of SortedSet due to performance regression
+9189,win encoding,Build failure on Windows in case of nonascii TEMP environment.
+9208,patch win core,Win32 ANSI color no longer works since revision 43331
+9242,patch lib,Rdoc detection of aliases
+9245,win encoding,Kernel::system gives wrong output for utf-8 characters on windows under utf-8 console
+9246,ext,NoMemoryError is occurred by simple addition of BigDecimal
+9274,win core,A lot of SystemStackError on Windows 8.1 with MSVC 2013
+9287,build notbug,&#39;rb_obj_write&#39; discards qualifiers from pointer target type
+9291,core notbug,"array splatting a nil works, but hash splatting a nil does not"
+9312,build notbug,Build the ruby executable in bin/
+9366,test,&quot;make -j32 check TESTS=-j32&quot; occasionally fails on rubygems/specification
+9409,cygwin encoding,Cygwin で &quot;filesystem&quot; の encoding が正しくないケース
+9414,win encoding maybenotbug,strftime returns incorrectly encoded string
+9431,win core maybenotbug,In windows ruby IO.write returns count of bytes without count of CR character
+9435,win core,Kernel.system problem
+9459,patch lib,Net::HTTP initializes openssl library after TCP connection is established
+9504,patch ext,X509 certificate incorrectly loaded (because of try-pem-first-else-asn1)
+9507,core arm,Ruby 2.1.0 is broken on ARMv5: tried to create Proc object without a block
+9542,lib unfixable,Delegator does not delegate protected methods
+9573,core maybenotbug,"descendants of a module don&#39;t gain its future ancestors, but descendants of a class, do"
+9580,refine maybenotbug,Refinements regression in IRB
+9595,ext,Float#to_d inconsistent between 2.0.0 and 2.1.1
+9659,ext,crash in FIPS mode after unchecked algo-&gt;init_func failure
+9693,regexp notbug,\x{} in regexp
+9713,win encoding,__FILE__ return unexpected encoding - breaks Dir.glob
+9715,win encoding,ENV data yield ASCII-8BIT encoded strings under Windows with unicode username
+9737,wip-patch encoding,Non-ASCII characters in the path to ruby executable break require paths
+9760,build,mkmf does not allow for linking against custom libraries when a system library is present
+9790,ext,Zlib::GzipReader only decompressed the first of concatenated files
+9806,lib maybenotbug,URI#encode doesn&#39;t encode characters &#39;[&#39; and &#39;]&#39;.  They should be encoded as %5B and %5D respectively.
+9815,core notbug,attr_reader doesn&#39;t warn on a uninitialized instance variable
+9836,lib,Bad Implementation of Time.strptime
+9877,lib maybenotbug,"IRB::OutputMethod defines &quot;pp&quot;, but it&#39;s actually &quot;p&quot;"
+9921,build maybenotbug,"gmtime_r, win32.h, and &lt;string&gt;"
+9930,win encoding,unicode filenames somehow don&#39;t work
+9931,lib,irb: Really weird behavior for x = &quot;#{x\&quot;}&quot; (ex: irb(main:009:-4))
+9944,win maybenotbug,in ruby for windows in &quot;system&quot; a redirection to append a file works incorrectly
+9955,win build,"issue building dll on mingw, library not found"
+10009,thread perf,IO operation is 10x slower in multi-thread environment
+10128,win core,"Quoting problem for arguments of Kernel.system, Kernel.exec on Windows"
+10167,patch lib,Prime#include?(mod) hangs up
+10203,ext,TCPServer.new has strange behaviour when EADDRINUSE without specifying hostname
+10213,build notbug,bundled gems ignored by make install
+10248,core,Possible missing test or bug for Module#include and Module#prepend
+10250,lib notbug,User-Agent HTTP header not being set on CONNECT requests
+10388,parser unfixable,Operator precedence problem in multiple assignment (massign)
+10416,build,Create mechanism for updating of Unicode data files downstreams when we want
+10417,encoding,IO#set_encoding without int_enc doesn&#39;t keep current internal encoding
+10436,patch ext,ruby -c and ripper inconsistency: m(&amp;nil) {}
+10453,patch core maybenotbug,NUM2CHR() does not perform additional bounds checks
+10466,patch core,rb_eval_string_wrap does not actually wrap in a module binding
+10470,tracepoint,TracePoint cannot trace attr_accessor/reader/writer method
+10475,core notbug,Array#flatten should not accept a nil argument
+10484,ext,http response throw error with broken gzip compressed block(but can decompress)
+10495,core,Attaching lldb to a program running `sleep` hangs the VM
+10534,core notbug,Enumerator methods other than &quot;next&quot; do not always respect &quot;peek&quot;
+10542,build,out-of-place build from repository builds enc/trans/*.c in the source directory and the build directory 
+10561,core maybenotbug,Improve function of Thread::Backtrace::Location #path and #absolute_path
+10580,test arm,TestProcess#test_deadlock_by_signal_at_forking fails on ARM
+10584,encoding maybenotbug,"String.valid_encoding?, String.ascii_only? fails to account for BOM."
+10613,lib notbug,SNI is not optional when using TLS
+10637,lib,Puppet orchestration on vagrant fails with Error: Non-HTTP proxy URI
+10650,perf,[PERF] bm_hash_keys and  bm_hash_values
+10684,core maybenotbug,Block arity changes through Enumerable methods
+10749,core,Possible overflow in GC::Profiler report on 2.2.0
+10845,core maybenotbug,Subclassing String
+10855,patch lib,[PATCH] Matrix#inverse returns matrix of integers whenever possible
+10902,core,require(&quot;enumerator&quot;) scans LOAD_PATH 2x on every invocation
+10911,lib,IPAddr.new should ignore zone identifiers
+10919,lib,[gem install] installs multipe platforms
+10929,patch core maybenotbug,NilClass#to_proc and &amp; don&#39;t mix?
+10959,core,rb_iseq_load: problems with hash containing symbolic keys
+11014,core maybenotbug,String#partition doesn&#39;t return correct result on zero-width match
+11022,core notbug,opening an eigenclass does not change the class variable definition context
+11055,patch core,autoload resets private_constant
+11063,patch core maybenotbug,Special singleton class should return true for singleton_class? test
+11064,core maybenotbug,#singleton_methods for objects with special singleton_class returns an empty array
+11142,win core,Command line argument parser on windows handles double quotes inconsistently.
+11164,core,Garbage collector in Ruby 2.2 provokes unexpected CoW
+11174,thread linux,threads memory leak
+11177,win core,DATAでEOF文字以降が読めない
+11180,ext,Missing lines with Zlib::GzipReader
+11182,refine,Refinement with alias causes strange behavior
+11183,core,Cumulative error on Complex::I ** 100000000000000000000000000000000
+11188,patch core,Method#inspect for chaining alias methods
+11189,core,alias prepended module
+11194,lib,Refactor env-sourced proxy logic for uri/generic
+11202,core maybenotbug,No warning when a link to an original method body was removed
+11213,core maybenotbug,defined?(super) ignores respond_to_missing?
+11230,core,Should rb_struct_s_members() be public API?
+11268,patch lib,Zlib::DataError: incorrect header check
+11269,core,ruby_init_setproctitle() should be called before require_libraries()
+11304,core maybenotbug,[PATCH] Kernel.global_variables should observe $~.
+11335,lib,`ruby -r debug` catchpoint problem
+11410,win ext encoding,Win32 Registry enumeration performs unnecessary string re-encoding which cause UndefinedConversionError exceptions
+11438,win thread,"native_thread_init_stack() get machine.stack_start unequal to thread&#39;s stack start address, x86 win32"
+11450,patch lib,HTTPHeader.content_range throws error on non-byte units
+11480,test,killed by SIGIOT (signal 6) on fork
+11514,core aix,AIX6.1 - Ruby 2.2.3 - Segmentation fault in :byteslice
+11523,patch maybenotbug,optparse short options will match complete options
+11526,patch lib,Streaming HTTP requests are not idempotent and should not be retried
+11531,lib maybenotbug,IPAddr#== implements wrong logic
+11533,lib aix,AIX6.1 - Ruby 2.2.3 - TestMkmf::TestConvertible#test_typeof_builtin fails
+11579,patch ext,Fiddle.win32_last_error after calling Fiddle::Function#call isn&#39;t GetLastError()
+11582,core solaris maybenotbug,"On Solaris, Rational#** returns -Infinity for Rational(0) when passed a negative Float"
+11636,patch core,super in instance_eval in a method defined in a module is invoked with a wrong receiver
+11669,refine,inconsitent behavior of refining frozen class
+11704,refine maybenotbug,Refinements only get &quot;used&quot; once in loop
+11706,encoding notbug,"Clean up files etc/unicode/name2ctype.{h.blt,kwd,src}"
+11778,core,recv_io with mode breaks when klass arg is kind of BasicSocket
+11779,refine notbug,Module#using does not make sense as a method
+11808,core,Different behavior between Enumerable#grep and Array#grep
+11840,cygwin test,Error with &quot;make check&quot; on Cygwin
+11878,core maybenotbug,Comparison of prepended modules
+12015,build,Improving code coverage visibility
+12040,win core,[Win32] File.stat fails on a mounted volume
+12052,encoding,String#encode with xml option returns wrong result
+12055,patch lib,`NET::HTTPResponse` is not deflating responses with custom `Content-Range` header
+12136,lib notbug,OpenStruct.new(format: :bar).send :format # =&gt; too few arguments
+12159,core maybenotbug,Thread::Backtrace::Location#path returns absolute path for files loaded by require_relative
+12179,build,Build failure due to VPATH expansion
+12235,lib maybenotbug,URI.encode issue with square brackets
+12251,lib notbug,DelegateClass(OpenStruct) behavior in 2.3.0 different from 2.2
+12258,lib,RDoc bug when handling comments in C code examples
+12261,win maybenotbug,Windows: File.dirname with 2+ / or 2+ \\ will return // or \\\\
+12280,win core,"IO.copy_stream(IO, IO) fails with &quot;pread() not implemented&quot;"
+12368,core notbug,default encoding of Integer#chr
+12388,ext,Iterating second dbm enum causes first dbm enum to stop
+12392,build,configure --with-sitedir=no --with-sitearchdir=no --with-vendordir=no --with-vendorarchdir=no が機能しない
+12407,test,2 failures of TestMkmf::TestConvertible
+12416,core maybenotbug,struct rb_id_table lacks mark function
+12436,win core,newline argument of File.open seems not respected on Windows
+12440,cygwin core,make test-all is not working on cygwin
+12442,cygwin core,TestArgf#test_textmode fails on cygwin
+12444,cygwin core,Segmentation fault when running TestException#test_machine_stackoverflow on cygwin
+12445,cygwin thread,Testing TestIO#test_open_fifo_does_not_block_other_threads results in deadlock on cygwin
+12468,cygwin lib,Logger: Can not rotate (log shifting failed. closed stream)
+12473,test,Test failure on fedora with TestTimeExtension#test_huge_precision
+12485,patch core maybenotbug,Kernel.Rational raises TypeError though given denominator returns 1 by to_int
+12500,test mips,TestProcess#test_aspawn_too_long_path fails on mips with &quot;argument too big&quot;
+12506,cygwin,"On cygwin, Feature #5994 does not work"
+12538,lib,hostsを書き換えてwebrickで書いたプロキシ―に繋いでいるとrubyが落ちる
+12540,core,test failures when SHARABLE_MIDDLE_SUBSTRING=1
+12547,core,"Remove ONIG_UNICODE_VERSION_... in enc/unicode/case-folding.rb, casefold.h"
+12548,core maybenotbug,Rounding modes inconsistency between round versus sprintf
+12551,win core,Exception accessing file with long path on windows
+12564,core,Sometimes test_settracefunc.rb segfaults in exec_hooks_body (vm_trace.c)
+12582,openssl,OpenSSL Authenticated Encryption should check for tag length
+12590,cygwin build,Error compiling parse.c on cygwin
+12594,core notbug,The class does not inherit from a module the modules that were included after the inclusion
+12597,encoding test,Produce test failure if some tests cannot be executed due to lacking data
+12599,patch perf,"For CLang, increase inline-threshold to get 7%-10% speedup of optcarrot"
+12666,ext,Fatal error: glibc detected an invalid stdio handle
+12671,core maybenotbug,"Hash#to_proc result is not a lambda, but enforces arity"
+12689,core,Thread isolation of $~ and $_
+12706,core maybenotbug,Hash#each yields inconsistent number of args
+12708,lib,Net::IMAP : Mail To address is not correct when uid_fetch is called.
+12725,cygwin build,Trying to use ./miniruby before it exists
+12780,ext,BigDecimal#round returns different types depending on argument
+12834,core maybenotbug,`prepend` getting prepended even if it already exists in the ancestors chain
+12838,lib,Duplication of UDP packets for DNS responses causing &quot;no address&quot; results for valid hostnames
+12852,lib notbug,URI.parse can&#39;t handle non-ascii URIs
+12919,lib notbug,Net::FTP does not have a default open_timeout
+12987,ext win notbug,Win32 API.rb can not call function without argument.
+13000,lib notbug,Implement Set#include? with Hash#include?
+13094,ext,Zlib::GzipReader eof?がfalseなのにgetsでnilが返ってくる
+13100,openssl,OpenSSL::PKey::EC#public_keyでGroup情報がコピーされない。
+13125,build,MRI has too much Qtrue : Qfalse;
+13144,patch lib,prettyprint doesn&#39;t detect cycles when wrapped inside Delegators
+13151,win core,File.writable? doesn&#39;t report correctly if a directory is writable on Windows.
+13153,core,Inconsistent sprintf formatting for 0 value
+13164,core,A second `SystemStackError` exception  results in `Segmentation fault (core dumped)`
+13220,encoding,Enhance support of Unicode strings manipulation
+13257,core notbug,Symbol#singleton_class should be undef
+13269,win test,test/readline/test_readline.rb and mingw
+13298,win core,mingw SEGV TestEnumerable#test_callcc
+13331,ext,Inconsistent conversion of Float into Decimal
+13392,tracepoint,TracePoint doesn&#39;t work correct with monkey patches / aliased methods
+13397,patch core,#object_id should not be signed
+13446,patch refine,refinements with prepend for module has strange behavior
+13485,win test,MinGW TestEnumerable#test_callcc SEGV info
+13500,win test,MinGW TestArity#test_proc_err_mess stops testing
+13513,lib,Resolv::DNS::Message.decode hangs after detecting truncation in UDP messages
+13542,win test,MinGW trunk Builds - Summary of Issues
+13571,win encoding,"Script arguments, encoding, windows / MinGW"
+13644,win test,Windows - Setting Time.now
+13654,lib,irb save-history extension is not concurrency-safe
+13663,core notbug,`String#upto` doesn&#39;t work as expected
+13670,arm core,[BUG] Bus Error at 0xefce7b (armv7l) (ruby 2.3.4p301)
+13671,regexp notbug,Regexp with lookbehind and case-insensitivity raises RegexpError only on strings with certain characters
+13675,patch ext,Should Zlib::GzipReader#ungetc accept nil?
+13688,patch thread,Thread overflow hangs ruby (not responding ^C)
+13708,core,catastrophic slow compilation of defined-defined sequence has no chance to ^C
+13754,ext,bigdecimal with lower precision that Float
+13758,core,TestRubyOptions#test_segv_setproctitle segfaults on AARCH64
+13768,core,SIGCHLD and Thread dead-lock problem
+13864,test,Rinda multicast test failures due to missing default route
+13876,core,Tempfile&#39;s finalizer can be interrupted by a Timeout exception which can cause the process to hang
+13882,core,Exception in `ensure` stops threads from exiting
+13891,win build,Rake - no files in bin folder - 59839
+13918,win build,Appveyor failure - svn 59961 Use https instead of ftp for libffi downloading
+13930,wip-patch core,Exception is caught in rescue above ensure
+13932,core,[PATCH] Extension libraries take precedence in checks of later Kernel.#require calls for features without file extensions
+13962,build,Change http://unicode.org to https
+13999,cygwin ext,Cygwin 環境で ripper_state_lex.rb がコアダンプする
+14004,lib,ri confused by method aliases and by Queue versus Thread::Queue
+14012,refine,NameError is raised when use class variables in Refinements
+14015,core,Enumerable &amp; Hash yielding arity
+14046,ext,Ripper loses DATA
+14049,win core,SEGV svn 60401 require_relative
+14064,test,test-all with and without -j - incorrect assertions and missing test methods
+14083,refine,Refinement in block calling incorrect method
+14090,core,`TestGc#test_interrupt_in_finalizer` fails very rarely
+14094,lib,IRB does not obey frame-level visibility modifiers
+14096,ext,Psych allows invalid single quote escape character
+14103,regexp,Regexp absense operator has no chance to ^C
+14119,lib,IPAddr#include? does not seem to support the subnet mask
+14137,win regexp,Windows / MinGW - Regexp - Character Properties - General Category
+14160,patch ext,JSON#generate documentation wrong/misleading
+14175,test,TestResolvMDNS#test_mdns_each_address fails
+14240,patch core,"warn four special variables: $; $, $/ $\"
+14241,patch core,Time.strptime() doesn&#39;t support the directive &quot;%W&quot;.
+14266,lib,Set#clone(freeze: false) makes frozen internal hash
+14267,core notbug,Lazy proc allocation introduced in #14045 creates regression
+14271,test,Random TestIO_Console#test_oflush failure
+14275,patch core,GC not aggressive enough
+14325,patch lib,Set#reset raise RuntimeError instead of FrozenError
+14327,arm build,Segmentation fault while compiling ruby 2.5 on alpine armhf
+14364,core,Regexp last match variable in procs
+14367,regexp,Wrong interpretation of backslash C in regexp literals
+14378,win notbug,"On windows, RUBY_FIXNUM_MAX of 64 bits ruby  is 32 bits"
+14387,core linux,Ruby 2.5 を Alpine Linux で実行すると比較的浅めで SystemStackError 例外になる
+14391,patch ext perf,Integer#digitsが遅い
+14400,core,IO#ungetc and IO#ungetbyte documentation is inconsistent with the behavior
+14408,patch doc,Add hash argument description for GC.stat and GC.latest_gc_info document
+14409,build,インストール手順の改善
+14413,patch core,`-n` and `-p` flags break when stdout is closed
+14418,regexp perf,ruby 2.5 slow regexp execution
+14422,build,Ruby configuration options should not be reused for gem builds
+14434,patch core,IO#reopen fails after EPIPE
+14437,core notbug,Integer == doesn&#39;t work with coerce since 2.4 (and != since 1.9). Should it?
+14456,encoding,Dir.glob with FNM_CASEFOLD gives ArgumentError: invalid byte sequence in UTF-8
+14474,test,skip &quot;TestException#test_thread_signal_location&quot; as known bug
+14479,tracepoint,Exceptions raised from a :call tracepoint can sometimes be &quot;rescued&quot; inside the method
+14480,arm build,miniruby crashing when compiled with -O2 or -O1 on aarch64
+14541,core notbug,"Class variables have broken semantics, let&#39;s fix them"
+14543,build,`make commit` show error of `common-srcs`
+14558,core notbug,&quot;Backtrace in reverse order&quot; always upsets my brain!
+14563,lib,irb in irb raises a FATAL error
+14570,win core,Wired behavior of File.expand_path() on Windows
+14582,tracepoint,Unable to use `method__entry` and `method_return` tracing probes since 2.5
+14591,encoding maybenotbug,Files with invalid multi-byte characters will cause Find::find() to raise EINVAL exception
+14607,core,Fix use of the rb_profile_frames start parameter
+14635,patch core,Float#round(n) returns a wrong result when n is big
+14640,win core,[win32] File.realpath treats a relative path with a drive letter as an absolute path.
+14671,refine,Refining Module#refine itself introduces strange state
+14679,lib,StdLib gems should properly specify their dependencies
+14681,core,`syswrite&#39;: stream closed in another thread (IOError)
+14704,core,Module#ancestors looks wrong when a module is both included and prepended in the same class.
+14716,ext,SecureRandom throwing an error in Ruby 2.5.1
+14726,patch core,wrong message when superclass is not a Class
+14727,win thread,TestQueue#test_queue_with_trap always timeout on Windows10
+14732,ext,CGI.unescape returns different instance between Ruby 2.3 and 2.4
+14737,build,Split default gems into separate directory structure
+14743,doc notbug,Some links broken in README
+14744,refine,Refinements modules have a superclass
+14755,arm,Aborted (core dumped)
+14761,solaris thread,TestThread#test_join_limits hangs up on Solaris 10 with gcc
+14804,ext,GzipReader cannot read Freebase dump (but gzcat/zless can)
+14817,tracepoint,TracePoint#parameters for bmethod&#39;s return event should return the same value as its Method#parameters
+14823,core maybenotbug,Endless Range Excluding End
+14824,lib,Endless Range Support in irb
+14826,solaris build,make: *** [.ext/include/sparc-solaris2.10/rb_mjit_min_header-2.6.0.h] Error 1 on Solaris 10 with very old gcc3
+14835,tracepoint,Impossible to know whether an exception was rescued or not using TracePoint
+14838,regexp notbug,RegexpError with double &quot;s&quot; in look-behind assertion in case-insensitive unicode regexp
+14843,ext,[BUG] Illegal instruction at 0x000000010c7acc0a
+14870,tracepoint,Both TracePoint&#39;s :call and :c_call filters seem to skip a lot of builtin methods
+14874,cygwin,Segmentation fault under Cygwin
+14884,win,msys2 mingw32 &#39;rake&#39; has unexpected text at top of file
+14889,tracepoint,TracePoint for :line never seems to trigger on argument list. Maybe by design?
+14891,ext notbug,Pathname#join has different behaviour to File.join
+14895,core,Inconsistent constant names when using const_set on a singleton class
+14900,core perf ,Extra allocation in String#byteslice
+14906,win core,MinGW failure - TestIO#test_copy_stream_no_busy_wait
+14957,win thread,"MinGW, gcc 8.2.0, bootstraptest test_thread.rb - failure ?"
+14963,solaris thread,"Since r64107, on Solaris, spec test of rb_io_wait_readable hangs up"
+14971,cygwin build,error: implicit declaration of function ‘rb_vm_call0
+14972,lib,Net::HTTP inconsistently raises EOFError when peer closes the connection
+14997,ext,Socket connect timeout exceeds the timeout value for 
+15027,core,When Struct#each method is overriden Struct#select and Struct#to_a use wrong collections
+15033,encoding,Encoding fallback uses wrong character when multiple conversions are required
+15038,win build,Appveyor MinGW - bundled gems missing?
+15044,encoding,ENV encoding not UTF-8 by default
+15072,cygwin build,thread.c:4356:5: error: implicit declaration of function ‘ubf_list_atfork’
+15097,cygwin lib,Gem install fails on Ruby 2.5.1 with Cygwin (get_dns_server_list undefined)
+15177,core,起動した後にTZを変更するとTime#utcがずれることがある
+15178,patch build,Wrong paramaters passing to pthread_setname_np(3)
+15188,patch ext,Incorrect warning &quot;assigned but unused variable&quot; when using ripper with $VERBOSE = true
+15204,patch win ,globbing should be prevented when wildcard is surrounded by double quotes in the ruby&#39;s command line
+15209,test,r64925 order-only-prerequisites - make targets - breaking change
+15244,patch core,Method #extname return empty string if filename is dot (&#39;.&#39;)
+15247,win test,"Windows - TEMP folder, non 8.3 &amp; drive, fails &amp; errors in test-all (ruby &amp; rdoc)"
+15262,ext,WeakRef::RefError for object that is still in use
+15263,patch core,[PATCH] vm_trace.c (postponed_job_register): only hit main thread
+15268,openssl,Solarisでtest/drb/test_drbssl.rbが落ちる
+15276,lib notbug,URI.join behaviour is unintuitive
+15310,patch thread,[PATCH] thread_pthread.c: close race from UBF_TIMER and non-GVL-releasing thread
+15313,patch tracepoint,[PATCH] Let debuggers know when a tail call happens
+15315,patch core,ec_switch can still lose interrupts
+15334,test,child_info_fork::abort: address space needed by &#39;emoji_iso2022_kddi.so&#39; on cygwin
+15359,lib build,Bundler help is not properly integrated
+15367,core,IO.select is not resumed when io-object gets closed
+15386,patch core,[PATCH] io.c (rb_io_check_char_readable): do not io_fflush buffered sockets
+15404,patch parser,Endless range has inconsistent chaining behaviour
+15409,ext,OpenStruct error when attribute is called &#39;method&#39;
+15417,ext,Pathname case insensitive comparison
+15423,thread,fork leapfrog leaks memory on FreeBSD 11.2
+15425,build,Store MJIT header into Ruby versioned directory.
+15428,core notbug,Refactor Proc#&gt;&gt; and #&lt;&lt;
+15433,test,OpenStruct NameError vs NoMethodError spec fails for method_missing
+15438,win thread,Threads can&#39;t switch faster than TIME_QUANTUM_(NSEC|USEC|MSEC)
+15465,cygwin test,Tests failed on i386-cygwin
+15507,thread,Thread#raise is delivered to GC context
+15517,lib encoding,Net::HTTP not recognizing valid UTF-8
+15550,win,Windows - gem bin files - can&#39;t run from bash shell
+15551,core notbug,The behavior of FIX2INT and FIX2UINT differs by platform
+15569,win thread,TestResolvDNS#test_no_server always fails on usa&#39;s mswin environment
+15570,core,rb_int2big signature change #14036 breaks VIM on 32b arches
+15576,core notbug,Wrong error message from some class methods of `Dir`
+15579,aix build,make step when building ruby 2.4.5 on AIX 7.1 results in a Segmentation fault : ruby-2.4.5/lib/rdoc/markup/parser.rb:325
+15587,win thread,Thread tests failing
+15589,perf,`Numeric#zero?` is much slower than `== 0`
+15598,core autoload,Deadlock on mutual reference of autoloaded constants
+15599,core autoload,Mixing autoload and require causes deadlock and incomplete definition.
+15608,patch core,What should be the correct output for Method#inspect with singleton methods?
+15613,patch core,Enumerator::Chain#each doesn&#39;t relay block signature
+15620,core,Block argument usage affects lambda semantic
+15621,win encoding,"system({}, ...) breaks nonascii ENV[&quot;PATH&quot;] on Windows"
+15629,patch core,super_method fails on binded/unbinded/cloned methods
+15634,tracepoint,TracePoint seems to be skipping some methods.
+15644,patch ext,ThreadsWait problems with Thread#report_on_exception
+15655,win encoding,Unable to handle Russian dirname on Windows
+15661,core,Disallow concurrent Dir.chdir with block
+15674,core,"Regression: ObjectSpace.allocation_sourceline produces the wrong location for allocations, it shows the end of the method instead of the line where the object was created"
+15712,ext,DateTime#=== should be defined and compare date and time instead of just the date
+15717,backport,Backport #15270 to Ruby 2.5.x
+15718,ext encoding,YAML raises error when dumping strings with UTF32 encoding
+15729,core thread openssl,OpenSSL::SSL::SSLSocket#connect randomly hangs
+15735,core thread,Thread#handle_interrupt does not prevent Thread#kill from interrupting
+15737,core thread,Queue#pop randomly hangs forever
+15764,parser,Whitespace and control characters should not be permitted in tokens
+15779,patch core,"After NoMemoryError, ruby freezes and takes 100% CPU"
+15787,haiku lib maybenotbug,LoadError by EPERM on read-only volume
+15790,core autoload,Strange interaction between autoload and $LOADED_FEATURES
+15795,haiku ext,Some test fails on Haiku
+15819,lib,cannot read document of File::NULL with &quot;ri File::NULL&quot;
+15827,haiku openssl,Haiku: SSL tests failing
+15828,haiku,DOTfiles and DOTfolders aren&#39;t allowed in $HOME folder on Haiku
+15834,lib,"Mutating the result of SortedSet.to_a mutates the original set, potentially violating the set&#39;s guarantees"
+15852,core win,APPLICATION_VERIFIER_LOCKS_LOCK_IN_FREED_HEAP on exiting ruby
+15856,core perf ,Idempotent performance of Kernel.require with many activated gems is slow
+15882,patch openssl,OpenSSL::X509::Name.parse usage
+15928,core,Constant declaration does not conform to JIS 3017:2013
+15944,lib,Simultaneous line feeding and scrolling doesn&#39;t work well with irb on tmux
+15980,core,Coverage shows while/until after raise if/unless as uncovered line
+15993,win encoding,&#39;require&#39; doesn&#39;t work if there are Cyrillic chars in the path to Ruby dir
+16004,core maybenotbug,Kernel#lambda captured with Kernel#method doesn&#39;t create lambdas
+16008,wip-patch core,Ripper hshptn node drops information
+16031,core ext maybenotbug,Inconsistency between Date::strptime and Time::strptime at the end of a month
+16034,backport,Backport 5d33f787169bcc3594d2264726695d58c4a06899 to Ruby 2.6
+16044,ruby3,Float::ROUNDS (FLT_ROUNDS) should not be a constant.
+16110,win core thread,Doesn&#39;t detect deadlock on Ruby 2.4 and 2.5 on Windows
+16116,win ext,"ruby2.6.3(x86/x64)  use win32ole could not new Object, return 0x80070057"
+16138,backport,Backport Struct.new empty option hash fix to 2.5 and 2.6
+16143,patch core,BOM UTF-8 is not removed after rewind
+16145,regexp,"regexp match error if mixing /i, character classes, and utf8"
+16158,regexp notbug,&quot;st&quot; Character Sequence In Regex Look-Behind Causes Illegal Pattern Error When Combined With POSIX Bracket Expressions And Case Insensitivity Flag
+16159,test,Off by 1 errors from time_params tests
+16173,patch core,ENV.delete returns nil when name does not exist and block given
+16177,test,Some `*.rb` files on builddir cause Segmentation fault
+16179,aix notbug,ruby binaries generate &quot;already initialized constant&quot; warnings on AIX 6.1
+16185,aix notbug,basictest failure on AIX 6.1 for 64bit build
+16186,patch core,Calling Net::HTTP from within an #inspect implementation hang when invoked from p
+16187,core,Hash#replace no longer rehashes keys for small (array table) hashes
+16195,other,Invalid certificate on https://ruby-lang.org/
+16233,patch win encoding,winruby UTF8 Fallback for no CodePage
+16242,patch refine,Refinements method call to failed
+16243,core perf ,case/when is slower than if on MRI
+16265,win thread,"Test (spec) failure using current MSYS2 tools, related to -fstack-protector and possibly D_FORTIFY_SOURCE=2"
+16266,lib notbug,Additional empty folders created in lib/ruby/gems/2.7.0/gems by make install
+16277,win ext maybenotbug,UNIXServer#listen fails with Errno::EADDRINUSE error under Windows 10 / WSL Ubuntu 18.04
+16278,core notbug,Potential memory leak when an hash is used as a key for another hash

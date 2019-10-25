@@ -1,0 +1,30 @@
+table, tbody, thead, tr, td, th {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 5px;
+}
+
+tbody tr:nth-child(2n+1) {
+  background-color: #eee;
+}
+
+tbody tr.hide {
+  display: none;
+}
+
+caption {
+  font-size: 22px;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+p.filter-buttons input {
+  background-color: #eee;
+  display: inline-block;
+  padding: 3px;
+  border-radius: 3px;
+  margin: 5px;
+}

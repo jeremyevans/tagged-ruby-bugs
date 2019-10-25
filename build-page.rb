@@ -1,0 +1,37 @@
+#!/usr/local/bin/ruby
+
+require 'csv'
+require 'thamble'
+
+tags = Hash.new(0)
+
+rows = CSV.read("ruby-bugs.csv", encoding: 'UTF-8').each do |a|
+  a[1].split.each do |tag|
+    tags[tag] += 1
+  end
+end
+
+table = Thamble.table(rows.reverse,
+                      :tr=>proc{|row| {:class=>" #{row[1]} "}},
+                      :caption=>'Tagged Open Ruby Bugs',
+                      :headers=>'Bug ID,Tags,Subject') do |row, t| [
+ t.a(row[0], "https://bugs.ruby-lang.org/issues/#{row[0]}"),
+ row[1],
+ t.a(t.raw(row[2]), "https://bugs.ruby-lang.org/issues/#{row[0]}") 
+] end
+
+File.binwrite('public/index.html', <<HTML)
+<html>
+<head>
+<title>Tagged Open Ruby Bugs</title>
+<link rel="stylesheet"  href="app.css" />
+</head>
+<body>
+<p class="filter-buttons">Available Tags: #{tags.sort_by{|_,v| -v}.map{|k,_| "<input type=\"submit\" value=\"#{k}\" />"}.join("\n")}</p>
+<label for="filter">Filter Tags:</label>
+<input id="filter" type="text" />
+#{table}
+<script src="app.js"></script>
+</body>
+</html>
+HTML

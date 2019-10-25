@@ -1,0 +1,3 @@
+This repository contains a list of ruby bugs with tags.  The list is periodically
+updated using Redmine and the included programs, and then new bugs are tagged
+manually.
