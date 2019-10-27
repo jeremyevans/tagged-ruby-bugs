@@ -4,8 +4,10 @@ require 'csv'
 require 'thamble'
 
 tags = Hash.new(0)
+num_bugs = 0
 
 rows = CSV.read("ruby-bugs.csv", encoding: 'UTF-8').each do |a|
+  num_bugs += 1
   a[1].split.each do |tag|
     tags[tag] += 1
   end
@@ -23,7 +25,7 @@ table = Thamble.table(rows.reverse,
 File.binwrite('public/index.html', <<HTML)
 <html>
 <head>
-<title>Tagged Open Ruby Bugs</title>
+<title>#{num_bugs} Tagged Open Ruby Bugs as of #{Time.now}</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
