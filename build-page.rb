@@ -13,9 +13,10 @@ rows = CSV.read("ruby-bugs.csv", encoding: 'UTF-8').each do |a|
   end
 end
 
+title = "#{num_bugs} Tagged Open Ruby Bugs as of #{Time.now}"
 table = Thamble.table(rows.reverse,
                       :tr=>proc{|row| {:class=>" #{row[1]} "}},
-                      :caption=>'Tagged Open Ruby Bugs',
+                      :caption=>title,
                       :headers=>'Bug ID,Tags,Subject') do |row, t| [
  t.a(row[0], "https://bugs.ruby-lang.org/issues/#{row[0]}"),
  row[1],
@@ -25,7 +26,7 @@ table = Thamble.table(rows.reverse,
 File.binwrite('public/index.html', <<HTML)
 <html>
 <head>
-<title>#{num_bugs} Tagged Open Ruby Bugs as of #{Time.now}</title>
+<title>#{title}</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
