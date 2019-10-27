@@ -277,7 +277,6 @@
 14267,core notbug,Lazy proc allocation introduced in #14045 creates regression
 14271,test,Random TestIO_Console#test_oflush failure
 14275,patch core,GC not aggressive enough
-14325,patch lib,Set#reset raise RuntimeError instead of FrozenError
 14327,arm build,Segmentation fault while compiling ruby 2.5 on alpine armhf
 14364,core,Regexp last match variable in procs
 14367,regexp,Wrong interpretation of backslash C in regexp literals
@@ -409,7 +408,7 @@
 15819,lib,cannot read document of File::NULL with &quot;ri File::NULL&quot;
 15827,haiku openssl,Haiku: SSL tests failing
 15828,haiku,DOTfiles and DOTfolders aren&#39;t allowed in $HOME folder on Haiku
-15834,lib,"Mutating the result of SortedSet.to_a mutates the original set, potentially violating the set&#39;s guarantees"
+15834,patch lib,"Mutating the result of SortedSet.to_a mutates the original set, potentially violating the set&#39;s guarantees"
 15852,core win,APPLICATION_VERIFIER_LOCKS_LOCK_IN_FREED_HEAP on exiting ruby
 15856,core perf ,Idempotent performance of Kernel.require with many activated gems is slow
 15882,patch openssl,OpenSSL::X509::Name.parse usage
@@ -434,7 +433,6 @@
 16179,aix notbug,ruby binaries generate &quot;already initialized constant&quot; warnings on AIX 6.1
 16185,aix notbug,basictest failure on AIX 6.1 for 64bit build
 16186,patch core,Calling Net::HTTP from within an #inspect implementation hang when invoked from p
-16187,core,Hash#replace no longer rehashes keys for small (array table) hashes
 16195,other,Invalid certificate on https://ruby-lang.org/
 16233,patch win encoding,winruby UTF8 Fallback for no CodePage
 16242,patch refine,Refinements method call to failed
