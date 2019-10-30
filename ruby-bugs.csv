@@ -273,7 +273,7 @@
 14175,test,TestResolvMDNS#test_mdns_each_address fails
 14240,patch core,"warn four special variables: $; $, $/ $\"
 14241,patch lib,Time.strptime() doesn&#39;t support the directive &quot;%W&quot;.
-14266,lib,Set#clone(freeze: false) makes frozen internal hash
+14266,patch lib,Set#clone(freeze: false) makes frozen internal hash
 14267,core notbug,Lazy proc allocation introduced in #14045 creates regression
 14271,test,Random TestIO_Console#test_oflush failure
 14275,patch core,GC not aggressive enough
