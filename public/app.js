@@ -26,6 +26,7 @@ runFilter = function(e) {
   } else {
     document.querySelectorAll('tbody tr').forEach(function(e){e.classList.remove('hide')});
   }
+  window.location.hash = filter.value.replace(/ /g, '-');
 };
 
 runFilterButton = function(e) {
@@ -59,3 +60,5 @@ document.querySelectorAll('p.filter-buttons input').forEach(function(e){
 });
 
 filter.oninput = runFilter;
+filter.value = window.location.hash.substr(1).replace(/-/g, ' ');
+runFilter();
