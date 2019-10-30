@@ -5,7 +5,13 @@ runFilter = function(e) {
     document.querySelectorAll('tbody tr').forEach(function(e){
       var match = true;
       filter.value.split(' ').forEach(function(tag){
-        if (tag.length >= 3 && !e.classList.contains(tag)) {
+        if (tag[0] == '!') {
+          tag = tag.substr(1);
+          if (tag.length >= 3 && e.classList.contains(tag)) {
+            match = false;
+          }
+        }
+        else if (tag.length >= 3 && !e.classList.contains(tag)) {
           match = false;
         }
       });
@@ -23,16 +29,26 @@ runFilter = function(e) {
 };
 
 runFilterButton = function(e) {
-  if (filter.value.split(' ').includes(e.target.value)) {
-    var newValue = "";
-    filter.value.split(' ').forEach(function(s){
-      if (s.length >= 3 && s != e.target.value) {
+  var filterParts = filter.value.split(' ');
+  var newValue;
+  var value = e.target.value;
+  var negateValue = "!"+value;
+
+  if (filterParts.includes(value)) {
+    newValue = negateValue+" ";
+  } else if (filterParts.includes(negateValue)) {
+    newValue = "";
+  }
+
+  if (typeof(newValue) === "string") {
+    filterParts.forEach(function(s){
+      if (s.length >= 3 && s != value && s != negateValue) {
         newValue += s + ' ';
       }
     });
     filter.value = newValue;
   } else {
-    filter.value += ' '+e.target.value;
+    filter.value += ' '+value;
   }
   runFilter(filter);
 };
