@@ -7,6 +7,10 @@ td {
   padding: 5px;
 }
 
+table {
+ margin-top: 10px;
+}
+
 tbody tr:nth-child(2n+1) {
   background-color: #eee;
 }
