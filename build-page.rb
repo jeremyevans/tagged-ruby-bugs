@@ -13,7 +13,7 @@ rows = CSV.read("ruby-bugs.csv", encoding: 'UTF-8').each do |a|
   end
 end
 
-title = "#{num_bugs} Tagged Open Ruby Bugs as of #{Time.now}"
+title = "#{num_bugs} Tagged Open Ruby Bugs as of #{Time.at(Time.now, :in=>'+09:00')}"
 table = Thamble.table(rows.reverse,
                       :tr=>proc{|row| {:class=>" #{row[1]} "}},
                       :caption=>title,
