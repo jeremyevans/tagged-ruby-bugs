@@ -32,7 +32,7 @@ File.binwrite('public/index.html', <<HTML)
 <body>
 <p class="filter-buttons">Available Tags: #{tags.sort_by{|_,v| -v}.map{|k,_| "<input type=\"submit\" value=\"#{k}\" />"}.join("\n")}</p>
 <label for="filter">Filter Tags:</label>
-<input id="filter" type="text" />
+<input id="filter" type="text" size="80" />
 #{table}
 <script src="app.js"></script>
 </body>
