@@ -119,7 +119,6 @@
 10845,core maybenotbug,Subclassing String
 10855,patch lib,[PATCH] Matrix#inverse returns matrix of integers whenever possible
 10902,core,require(&quot;enumerator&quot;) scans LOAD_PATH 2x on every invocation
-10911,lib,IPAddr.new should ignore zone identifiers
 10919,lib,[gem install] installs multipe platforms
 10929,patch core maybenotbug,NilClass#to_proc and &amp; don&#39;t mix?
 10959,core,rb_iseq_load: problems with hash containing symbolic keys
@@ -440,6 +439,6 @@
 16265,win thread,"Test (spec) failure using current MSYS2 tools, related to -fstack-protector and possibly D_FORTIFY_SOURCE=2"
 16266,lib notbug,Additional empty folders created in lib/ruby/gems/2.7.0/gems by make install
 16277,win ext maybenotbug,UNIXServer#listen fails with Errno::EADDRINUSE error under Windows 10 / WSL Ubuntu 18.04
-16281,patch lib,`irb -w` issues warning
 16284,lib notbug,Net/HTTP consuming multiple times more memory compared to other libraries
 16285,patch ext,Setting mtime to zero on Zlib::GzipWriter does nothing
+16286,lib,DateTime.parse timezone errors
