@@ -82,7 +82,7 @@
 9790,ext,Zlib::GzipReader only decompressed the first of concatenated files
 9806,lib maybenotbug,URI#encode doesn&#39;t encode characters &#39;[&#39; and &#39;]&#39;.  They should be encoded as %5B and %5D respectively.
 9815,core notbug,attr_reader doesn&#39;t warn on a uninitialized instance variable
-9836,lib,Bad Implementation of Time.strptime
+9836,patch lib,Bad Implementation of Time.strptime
 9877,lib maybenotbug,"IRB::OutputMethod defines &quot;pp&quot;, but it&#39;s actually &quot;p&quot;"
 9921,build maybenotbug,"gmtime_r, win32.h, and &lt;string&gt;"
 9930,win encoding,unicode filenames somehow don&#39;t work
