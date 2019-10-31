@@ -440,4 +440,4 @@
 16266,lib notbug,Additional empty folders created in lib/ruby/gems/2.7.0/gems by make install
 16277,win ext maybenotbug,UNIXServer#listen fails with Errno::EADDRINUSE error under Windows 10 / WSL Ubuntu 18.04
 16284,lib notbug,Net/HTTP consuming multiple times more memory compared to other libraries
-16286,ext,DateTime.parse timezone errors
+16286,patch ext,DateTime.parse timezone errors
