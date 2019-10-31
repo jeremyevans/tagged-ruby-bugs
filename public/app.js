@@ -1,6 +1,7 @@
 var filter = document.getElementById('filter');
 
 runFilter = function(e) {
+  var numMatched = 0;
   if (filter.value.length >= 3) {
     document.querySelectorAll('tbody tr').forEach(function(e){
       var match = true;
@@ -18,15 +19,17 @@ runFilter = function(e) {
 
       if (match) {
         e.classList.remove('hide');
+        numMatched++;
       } else {
         e.classList.add('hide');
       }
     });
     document.querySelectorAll('tbody tr')
   } else {
-    document.querySelectorAll('tbody tr').forEach(function(e){e.classList.remove('hide')});
+    document.querySelectorAll('tbody tr').forEach(function(e){numMatched++; e.classList.remove('hide')});
   }
   window.location.hash = filter.value.replace(/ /g, '-');
+  document.getElementById("matched").innerHTML = numMatched;
 };
 
 runFilterButton = function(e) {
