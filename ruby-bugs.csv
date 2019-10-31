@@ -266,7 +266,7 @@
 14094,lib,IRB does not obey frame-level visibility modifiers
 14096,ext,Psych allows invalid single quote escape character
 14103,regexp,Regexp absense operator has no chance to ^C
-14119,lib,IPAddr#include? does not seem to support the subnet mask
+14119,patch lib,IPAddr#include? does not seem to support the subnet mask
 14137,win regexp,Windows / MinGW - Regexp - Character Properties - General Category
 14160,patch ext,JSON#generate documentation wrong/misleading
 14175,test,TestResolvMDNS#test_mdns_each_address fails
