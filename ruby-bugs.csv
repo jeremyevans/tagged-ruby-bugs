@@ -440,4 +440,11 @@
 16266,lib notbug,Additional empty folders created in lib/ruby/gems/2.7.0/gems by make install
 16277,win ext maybenotbug,UNIXServer#listen fails with Errno::EADDRINUSE error under Windows 10 / WSL Ubuntu 18.04
 16284,lib notbug,Net/HTTP consuming multiple times more memory compared to other libraries
-16286,patch ext,DateTime.parse timezone errors
+16288,core,"Segmentation fault with finalizers, threads"
+16334,backport core,Wrong line numbers for multiline method chains 
+16338,build,gemspec stub EOF separators throw warning
+16339,patch lib,Forwardable#def_delegator warns and is incorrect on trunk when passed keyword arguments
+16342,thread,macOS + Ruby 2.6.0 以降で拡張ライブラリ内での waitpid() コールに失敗する
+16344,core,Can be assigned to numbered parameter when after used _1
+16349,patch lib,Logger shift_age of 0 disables shift_size
+16350,core,ArithmeticSequence#member? can result in infinite loop
