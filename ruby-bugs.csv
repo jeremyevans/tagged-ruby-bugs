@@ -82,7 +82,6 @@
 9790,ext,Zlib::GzipReader only decompressed the first of concatenated files
 9806,lib maybenotbug,URI#encode doesn&#39;t encode characters &#39;[&#39; and &#39;]&#39;.  They should be encoded as %5B and %5D respectively.
 9815,core notbug,attr_reader doesn&#39;t warn on a uninitialized instance variable
-9836,patch lib,Bad Implementation of Time.strptime
 9877,lib maybenotbug,"IRB::OutputMethod defines &quot;pp&quot;, but it&#39;s actually &quot;p&quot;"
 9921,build maybenotbug,"gmtime_r, win32.h, and &lt;string&gt;"
 9930,win encoding,unicode filenames somehow don&#39;t work
@@ -271,7 +270,6 @@
 14160,patch ext,JSON#generate documentation wrong/misleading
 14175,test,TestResolvMDNS#test_mdns_each_address fails
 14240,patch core,"warn four special variables: $; $, $/ $\"
-14241,patch lib,Time.strptime() doesn&#39;t support the directive &quot;%W&quot;.
 14266,patch lib,Set#clone(freeze: false) makes frozen internal hash
 14267,core notbug,Lazy proc allocation introduced in #14045 creates regression
 14271,test,Random TestIO_Console#test_oflush failure
@@ -428,7 +426,6 @@
 16158,regexp notbug,&quot;st&quot; Character Sequence In Regex Look-Behind Causes Illegal Pattern Error When Combined With POSIX Bracket Expressions And Case Insensitivity Flag
 16159,test,Off by 1 errors from time_params tests
 16173,patch core,ENV.delete returns nil when name does not exist and block given
-16177,test,Some `*.rb` files on builddir cause Segmentation fault
 16179,aix notbug,ruby binaries generate &quot;already initialized constant&quot; warnings on AIX 6.1
 16185,aix notbug,basictest failure on AIX 6.1 for 64bit build
 16186,patch core,Calling Net::HTTP from within an #inspect implementation hang when invoked from p
@@ -446,5 +443,6 @@
 16339,patch lib,Forwardable#def_delegator warns and is incorrect on trunk when passed keyword arguments
 16342,thread,macOS + Ruby 2.6.0 以降で拡張ライブラリ内での waitpid() コールに失敗する
 16344,core,Can be assigned to numbered parameter when after used _1
-16349,patch lib,Logger shift_age of 0 disables shift_size
 16350,core,ArithmeticSequence#member? can result in infinite loop
+16352,core,Marshal limit of  &gt;= 2 GiB
+16357,backport,`Segmentation fault (core dumped)` or `[BUG] object allocation during garbage collection phase`
