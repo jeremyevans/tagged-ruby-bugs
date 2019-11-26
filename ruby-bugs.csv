@@ -414,7 +414,6 @@
 15980,core,Coverage shows while/until after raise if/unless as uncovered line
 15993,win encoding,&#39;require&#39; doesn&#39;t work if there are Cyrillic chars in the path to Ruby dir
 16004,core maybenotbug,Kernel#lambda captured with Kernel#method doesn&#39;t create lambdas
-16008,wip-patch core,Ripper hshptn node drops information
 16031,core ext maybenotbug,Inconsistency between Date::strptime and Time::strptime at the end of a month
 16034,backport,Backport 5d33f787169bcc3594d2264726695d58c4a06899 to Ruby 2.6
 16044,ruby3,Float::ROUNDS (FLT_ROUNDS) should not be a constant.
@@ -452,3 +451,5 @@
 16367,win encoding,stdin not support ibm866 encoding for windows
 16368,ext,Error in `YAML.load(symbolize_names: true)` with null column YAML
 16369,thread,Segfault : crashed on child side of fork pre-exec thread_pool.rb
+16371,backport maybenotbug,Inconsistent usage of Double splat operator
+16373,lib,RDoc for some of the Kernel methods cannot be found in Kernel module
