@@ -446,3 +446,9 @@
 16350,core,ArithmeticSequence#member? can result in infinite loop
 16352,core,Marshal limit of  &gt;= 2 GiB
 16357,backport,`Segmentation fault (core dumped)` or `[BUG] object allocation during garbage collection phase`
+16361,maybenotbug test,TestEnv#test_fetch failure
+16363,core,Promote did_you_mean to default gem
+16366,patch core,.count on endless range causes infinite loop
+16367,win encoding,stdin not support ibm866 encoding for windows
+16368,ext,Error in `YAML.load(symbolize_names: true)` with null column YAML
+16369,thread,Segfault : crashed on child side of fork pre-exec thread_pool.rb
