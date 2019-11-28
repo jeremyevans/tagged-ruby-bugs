@@ -228,7 +228,6 @@
 13331,ext,Inconsistent conversion of Float into Decimal
 13392,tracepoint,TracePoint doesn&#39;t work correct with monkey patches / aliased methods
 13397,patch core,#object_id should not be signed
-13446,patch refine,refinements with prepend for module has strange behavior
 13485,win test,MinGW TestEnumerable#test_callcc SEGV info
 13500,win test,MinGW TestArity#test_proc_err_mess stops testing
 13513,lib,Resolv::DNS::Message.decode hangs after detecting truncation in UDP messages
@@ -430,7 +429,6 @@
 16186,patch core,Calling Net::HTTP from within an #inspect implementation hang when invoked from p
 16195,other,Invalid certificate on https://ruby-lang.org/
 16233,patch win encoding,winruby UTF8 Fallback for no CodePage
-16242,patch refine,Refinements method call to failed
 16243,core perf ,case/when is slower than if on MRI
 16265,win thread,"Test (spec) failure using current MSYS2 tools, related to -fstack-protector and possibly D_FORTIFY_SOURCE=2"
 16266,lib notbug,Additional empty folders created in lib/ruby/gems/2.7.0/gems by make install
@@ -453,3 +451,4 @@
 16369,thread,Segfault : crashed on child side of fork pre-exec thread_pool.rb
 16371,backport maybenotbug,Inconsistent usage of Double splat operator
 16373,lib,RDoc for some of the Kernel methods cannot be found in Kernel module
+16376,core,Stack-buffer-overflow in renumber_by_map in regcomp.c
