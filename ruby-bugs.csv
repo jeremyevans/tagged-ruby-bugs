@@ -337,7 +337,6 @@
 15097,cygwin lib,Gem install fails on Ruby 2.5.1 with Cygwin (get_dns_server_list undefined)
 15177,core,起動した後にTZを変更するとTime#utcがずれることがある
 15178,patch build,Wrong paramaters passing to pthread_setname_np(3)
-15188,patch ext,Incorrect warning &quot;assigned but unused variable&quot; when using ripper with $VERBOSE = true
 15204,patch win ,globbing should be prevented when wildcard is surrounded by double quotes in the ruby&#39;s command line
 15209,test,r64925 order-only-prerequisites - make targets - breaking change
 15244,patch core,Method #extname return empty string if filename is dot (&#39;.&#39;)
@@ -402,7 +401,6 @@
 15882,patch openssl,OpenSSL::X509::Name.parse usage
 15928,core,Constant declaration does not conform to JIS 3017:2013
 15944,lib,Simultaneous line feeding and scrolling doesn&#39;t work well with irb on tmux
-15980,core,Coverage shows while/until after raise if/unless as uncovered line
 15993,win encoding,&#39;require&#39; doesn&#39;t work if there are Cyrillic chars in the path to Ruby dir
 16004,core maybenotbug,Kernel#lambda captured with Kernel#method doesn&#39;t create lambdas
 16031,core ext maybenotbug,Inconsistency between Date::strptime and Time::strptime at the end of a month
@@ -429,7 +427,6 @@
 16288,core,"Segmentation fault with finalizers, threads"
 16334,backport core,Wrong line numbers for multiline method chains 
 16338,build,gemspec stub EOF separators throw warning
-16339,patch lib,Forwardable#def_delegator warns and is incorrect on trunk when passed keyword arguments
 16342,thread,macOS + Ruby 2.6.0 以降で拡張ライブラリ内での waitpid() コールに失敗する
 16344,core,Can be assigned to numbered parameter when after used _1
 16350,core,ArithmeticSequence#member? can result in infinite loop
@@ -443,9 +440,8 @@
 16371,backport maybenotbug,Inconsistent usage of Double splat operator
 16373,lib,RDoc for some of the Kernel methods cannot be found in Kernel module
 16376,core,Stack-buffer-overflow in renumber_by_map in regcomp.c
-16383,path core,TracePoint does not report calls to attribute reader methods
+16383,patch core,TracePoint does not report calls to attribute reader methods
 16384,build,Cannot cross-compile 2.7: undefined method `each_builtin&#39; for RubyVM:Class (NoMethodError)
 16391,win core,"Dir.pwd, Dir[] pathname case inconsistency"
 16392,win core,test-all failure MinGW - TestEncoding#test_nonascii_library_path
-16397,core,Line coverage is broken for until and while after guard clause
 16398,ext,Active Support unit test error since caac5f777ae288b5982708b8690e712e1cae0cf6
