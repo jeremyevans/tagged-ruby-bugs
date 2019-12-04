@@ -437,10 +437,10 @@
 16367,win encoding,stdin not support ibm866 encoding for windows
 16368,ext,Error in `YAML.load(symbolize_names: true)` with null column YAML
 16369,thread,Segfault : crashed on child side of fork pre-exec thread_pool.rb
-16371,backport maybenotbug,Inconsistent usage of Double splat operator
+16371,backport,Inconsistent usage of Double splat operator
 16373,lib,RDoc for some of the Kernel methods cannot be found in Kernel module
 16376,core,Stack-buffer-overflow in renumber_by_map in regcomp.c
-16383,patch core,TracePoint does not report calls to attribute reader methods
+16383,patch tracepoint,TracePoint does not report calls to attribute reader methods
 16384,build,Cannot cross-compile 2.7: undefined method `each_builtin&#39; for RubyVM:Class (NoMethodError)
 16391,win core,"Dir.pwd, Dir[] pathname case inconsistency"
 16392,win core,test-all failure MinGW - TestEncoding#test_nonascii_library_path
