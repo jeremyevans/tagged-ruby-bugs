@@ -1,12 +1,12 @@
 <html>
 <head>
-<title>454 Tagged Open Ruby Bugs as of 2019-11-29 05:40:45 +0900</title>
+<title>451 Tagged Open Ruby Bugs as of 2019-12-04 09:54:20 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
 <p class="filter-buttons">Available Tags: <input type="submit" value="core" />
-<input type="submit" value="patch" />
 <input type="submit" value="win" />
+<input type="submit" value="patch" />
 <input type="submit" value="lib" />
 <input type="submit" value="ext" />
 <input type="submit" value="maybenotbug" />
@@ -20,28 +20,29 @@
 <input type="submit" value="perf" />
 <input type="submit" value="refine" />
 <input type="submit" value="regexp" />
-<input type="submit" value="backport" />
 <input type="submit" value="openssl" />
 <input type="submit" value="arm" />
-<input type="submit" value="aix" />
+<input type="submit" value="backport" />
 <input type="submit" value="solaris" />
+<input type="submit" value="aix" />
 <input type="submit" value="haiku" />
 <input type="submit" value="ruby3" />
 <input type="submit" value="unfixable" />
+<input type="submit" value="doc" />
 <input type="submit" value="parser" />
 <input type="submit" value="autoload" />
-<input type="submit" value="doc" />
-<input type="submit" value="fiber" />
 <input type="submit" value="linux" />
 <input type="submit" value="wip-patch" />
+<input type="submit" value="fiber" />
 <input type="submit" value="uriencoding" />
 <input type="submit" value="mips" />
-<input type="submit" value="other" /></p>
+<input type="submit" value="other" />
+<input type="submit" value="path" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">454</span> matched)
+(<span id="matched">451</span> matched)
 <table>
-<caption>454 Tagged Open Ruby Bugs as of 2019-11-29 05:40:45 +0900</caption>
+<caption>451 Tagged Open Ruby Bugs as of 2019-12-04 09:54:20 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -50,6 +51,48 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" ext ">
+<td><a href="https://bugs.ruby-lang.org/issues/16398">16398</a>
+</td>
+<td>ext</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16398">Active Support unit test error since caac5f777ae288b5982708b8690e712e1cae0cf6</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/16397">16397</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16397">Line coverage is broken for until and while after guard clause</a>
+</td>
+</tr>
+<tr class=" win core ">
+<td><a href="https://bugs.ruby-lang.org/issues/16392">16392</a>
+</td>
+<td>win core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16392">test-all failure MinGW - TestEncoding#test_nonascii_library_path</a>
+</td>
+</tr>
+<tr class=" win core ">
+<td><a href="https://bugs.ruby-lang.org/issues/16391">16391</a>
+</td>
+<td>win core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16391">Dir.pwd, Dir[] pathname case inconsistency</a>
+</td>
+</tr>
+<tr class=" build ">
+<td><a href="https://bugs.ruby-lang.org/issues/16384">16384</a>
+</td>
+<td>build</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16384">Cannot cross-compile 2.7: undefined method `each_builtin&#39; for RubyVM:Class (NoMethodError)</a>
+</td>
+</tr>
+<tr class=" path core ">
+<td><a href="https://bugs.ruby-lang.org/issues/16383">16383</a>
+</td>
+<td>path core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16383">TracePoint does not report calls to attribute reader methods</a>
+</td>
+</tr>
 <tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/16376">16376</a>
 </td>
@@ -90,13 +133,6 @@
 </td>
 <td>win encoding</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16367">stdin not support ibm866 encoding for windows</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/16366">16366</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16366">.count on endless range causes infinite loop</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -519,13 +555,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/15634">TracePoint seems to be skipping some methods.</a>
 </td>
 </tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/15629">15629</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/15629">super_method fails on binded/unbinded/cloned methods</a>
-</td>
-</tr>
 <tr class=" win encoding ">
 <td><a href="https://bugs.ruby-lang.org/issues/15621">15621</a>
 </td>
@@ -538,13 +567,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/15620">Block argument usage affects lambda semantic</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/15613">15613</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/15613">Enumerator::Chain#each doesn&#39;t relay block signature</a>
 </td>
 </tr>
 <tr class=" patch core ">
@@ -1534,13 +1556,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/13708">catastrophic slow compilation of defined-defined sequence has no chance to ^C</a>
 </td>
 </tr>
-<tr class=" patch thread ">
-<td><a href="https://bugs.ruby-lang.org/issues/13688">13688</a>
-</td>
-<td>patch thread</td>
-<td><a href="https://bugs.ruby-lang.org/issues/13688">Thread overflow hangs ruby (not responding ^C)</a>
-</td>
-</tr>
 <tr class=" patch ext ">
 <td><a href="https://bugs.ruby-lang.org/issues/13675">13675</a>
 </td>
@@ -2346,13 +2361,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/11063">Special singleton class should return true for singleton_class? test</a>
 </td>
 </tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/11055">11055</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/11055">autoload resets private_constant</a>
-</td>
-</tr>
 <tr class=" core notbug ">
 <td><a href="https://bugs.ruby-lang.org/issues/11022">11022</a>
 </td>
@@ -2479,13 +2487,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/10534">Enumerator methods other than &quot;next&quot; do not always respect &quot;peek&quot;</a>
 </td>
 </tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/10495">10495</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/10495">Attaching lldb to a program running `sleep` hangs the VM</a>
-</td>
-</tr>
 <tr class=" ext ">
 <td><a href="https://bugs.ruby-lang.org/issues/10484">10484</a>
 </td>
@@ -2514,13 +2515,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/10466">rb_eval_string_wrap does not actually wrap in a module binding</a>
 </td>
 </tr>
-<tr class=" patch core maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/10453">10453</a>
-</td>
-<td>patch core maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/10453">NUM2CHR() does not perform additional bounds checks</a>
-</td>
-</tr>
 <tr class=" patch ext ">
 <td><a href="https://bugs.ruby-lang.org/issues/10436">10436</a>
 </td>
@@ -2547,13 +2541,6 @@
 </td>
 <td>parser unfixable</td>
 <td><a href="https://bugs.ruby-lang.org/issues/10388">Operator precedence problem in multiple assignment (massign)</a>
-</td>
-</tr>
-<tr class=" lib notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/10250">10250</a>
-</td>
-<td>lib notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/10250">User-Agent HTTP header not being set on CONNECT requests</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -3135,13 +3122,6 @@
 </td>
 <td>ext maybenotbug</td>
 <td><a href="https://bugs.ruby-lang.org/issues/5771">WIN32OLERuntimeError using 1.9.2</a>
-</td>
-</tr>
-<tr class=" test ">
-<td><a href="https://bugs.ruby-lang.org/issues/5577">5577</a>
-</td>
-<td>test</td>
-<td><a href="https://bugs.ruby-lang.org/issues/5577">test/testunit/test_parallel.rb causes NoMethodError when file descriptor is limited to 30.</a>
 </td>
 </tr>
 <tr class=" lib ">
