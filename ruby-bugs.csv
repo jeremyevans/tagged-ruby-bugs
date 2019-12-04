@@ -10,7 +10,6 @@
 5317,core maybenotbug,rubyのヘッダファイルを使った拡張を行う際にoff_tの宣言回避をする事が出来ない。
 5334,ext maybenotbug,Segmentation fault in InternetExplorer IServiceProvider interface
 5418,lib,Some properties of WEBrick::HTTPRequest could be malformed
-5577,test,test/testunit/test_parallel.rb causes NoMethodError when file descriptor is limited to 30.
 5771,ext maybenotbug,WIN32OLERuntimeError using 1.9.2
 6087,core ruby3,How should inherited methods deal with return values of their own subclass? 
 6117,fiber notbug,Transfers allowed into Fibers that have resumed into other fibers
@@ -94,17 +93,14 @@
 10203,ext,TCPServer.new has strange behaviour when EADDRINUSE without specifying hostname
 10213,build notbug,bundled gems ignored by make install
 10248,core,Possible missing test or bug for Module#include and Module#prepend
-10250,lib notbug,User-Agent HTTP header not being set on CONNECT requests
 10388,parser unfixable,Operator precedence problem in multiple assignment (massign)
 10416,build,Create mechanism for updating of Unicode data files downstreams when we want
 10417,encoding,IO#set_encoding without int_enc doesn&#39;t keep current internal encoding
 10436,patch ext,ruby -c and ripper inconsistency: m(&amp;nil) {}
-10453,patch core maybenotbug,NUM2CHR() does not perform additional bounds checks
 10466,patch core,rb_eval_string_wrap does not actually wrap in a module binding
 10470,tracepoint,TracePoint cannot trace attr_accessor/reader/writer method
 10475,core notbug,Array#flatten should not accept a nil argument
 10484,ext,http response throw error with broken gzip compressed block(but can decompress)
-10495,core,Attaching lldb to a program running `sleep` hangs the VM
 10534,core notbug,Enumerator methods other than &quot;next&quot; do not always respect &quot;peek&quot;
 10542,build,out-of-place build from repository builds enc/trans/*.c in the source directory and the build directory 
 10561,core maybenotbug,Improve function of Thread::Backtrace::Location #path and #absolute_path
@@ -123,7 +119,6 @@
 10959,core,rb_iseq_load: problems with hash containing symbolic keys
 11014,core maybenotbug,String#partition doesn&#39;t return correct result on zero-width match
 11022,core notbug,opening an eigenclass does not change the class variable definition context
-11055,patch core,autoload resets private_constant
 11063,patch core maybenotbug,Special singleton class should return true for singleton_class? test
 11064,core maybenotbug,#singleton_methods for objects with special singleton_class returns an empty array
 11142,win core,Command line argument parser on windows handles double quotes inconsistently.
@@ -239,7 +234,6 @@
 13670,arm core,[BUG] Bus Error at 0xefce7b (armv7l) (ruby 2.3.4p301)
 13671,regexp notbug,Regexp with lookbehind and case-insensitivity raises RegexpError only on strings with certain characters
 13675,patch ext,Should Zlib::GzipReader#ungetc accept nil?
-13688,patch thread,Thread overflow hangs ruby (not responding ^C)
 13708,core,catastrophic slow compilation of defined-defined sequence has no chance to ^C
 13754,ext,bigdecimal with lower precision that Float
 13758,core,TestRubyOptions#test_segv_setproctitle segfaults on AARCH64
@@ -381,10 +375,8 @@
 15598,core autoload,Deadlock on mutual reference of autoloaded constants
 15599,core autoload,Mixing autoload and require causes deadlock and incomplete definition.
 15608,patch core,What should be the correct output for Method#inspect with singleton methods?
-15613,patch core,Enumerator::Chain#each doesn&#39;t relay block signature
 15620,core,Block argument usage affects lambda semantic
 15621,win encoding,"system({}, ...) breaks nonascii ENV[&quot;PATH&quot;] on Windows"
-15629,patch core,super_method fails on binded/unbinded/cloned methods
 15634,tracepoint,TracePoint seems to be skipping some methods.
 15644,patch ext,ThreadsWait problems with Thread#report_on_exception
 15655,win encoding,Unable to handle Russian dirname on Windows
@@ -445,10 +437,15 @@
 16357,backport,`Segmentation fault (core dumped)` or `[BUG] object allocation during garbage collection phase`
 16361,maybenotbug test,TestEnv#test_fetch failure
 16363,core,Promote did_you_mean to default gem
-16366,patch core,.count on endless range causes infinite loop
 16367,win encoding,stdin not support ibm866 encoding for windows
 16368,ext,Error in `YAML.load(symbolize_names: true)` with null column YAML
 16369,thread,Segfault : crashed on child side of fork pre-exec thread_pool.rb
 16371,backport maybenotbug,Inconsistent usage of Double splat operator
 16373,lib,RDoc for some of the Kernel methods cannot be found in Kernel module
 16376,core,Stack-buffer-overflow in renumber_by_map in regcomp.c
+16383,path core,TracePoint does not report calls to attribute reader methods
+16384,build,Cannot cross-compile 2.7: undefined method `each_builtin&#39; for RubyVM:Class (NoMethodError)
+16391,win core,"Dir.pwd, Dir[] pathname case inconsistency"
+16392,win core,test-all failure MinGW - TestEncoding#test_nonascii_library_path
+16397,core,Line coverage is broken for until and while after guard clause
+16398,ext,Active Support unit test error since caac5f777ae288b5982708b8690e712e1cae0cf6
