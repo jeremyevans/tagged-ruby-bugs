@@ -97,7 +97,6 @@
 10416,build,Create mechanism for updating of Unicode data files downstreams when we want
 10417,encoding,IO#set_encoding without int_enc doesn&#39;t keep current internal encoding
 10436,patch ext,ruby -c and ripper inconsistency: m(&amp;nil) {}
-10466,patch core,rb_eval_string_wrap does not actually wrap in a module binding
 10470,tracepoint,TracePoint cannot trace attr_accessor/reader/writer method
 10475,core notbug,Array#flatten should not accept a nil argument
 10484,ext,http response throw error with broken gzip compressed block(but can decompress)
@@ -330,9 +329,7 @@
 14972,lib,Net::HTTP inconsistently raises EOFError when peer closes the connection
 14997,ext,Socket connect timeout exceeds the timeout value for 
 15027,core,When Struct#each method is overriden Struct#select and Struct#to_a use wrong collections
-15033,encoding,Encoding fallback uses wrong character when multiple conversions are required
 15038,win build,Appveyor MinGW - bundled gems missing?
-15044,encoding,ENV encoding not UTF-8 by default
 15072,cygwin build,thread.c:4356:5: error: implicit declaration of function ‘ubf_list_atfork’
 15097,cygwin lib,Gem install fails on Ruby 2.5.1 with Cygwin (get_dns_server_list undefined)
 15177,core,起動した後にTZを変更するとTime#utcがずれることがある
@@ -433,7 +430,6 @@
 16352,core,Marshal limit of  &gt;= 2 GiB
 16357,backport,`Segmentation fault (core dumped)` or `[BUG] object allocation during garbage collection phase`
 16361,maybenotbug test,TestEnv#test_fetch failure
-16363,core,Promote did_you_mean to default gem
 16367,win encoding,stdin not support ibm866 encoding for windows
 16368,ext,Error in `YAML.load(symbolize_names: true)` with null column YAML
 16369,thread,Segfault : crashed on child side of fork pre-exec thread_pool.rb
@@ -442,6 +438,6 @@
 16376,core,Stack-buffer-overflow in renumber_by_map in regcomp.c
 16383,patch tracepoint,TracePoint does not report calls to attribute reader methods
 16384,build,Cannot cross-compile 2.7: undefined method `each_builtin&#39; for RubyVM:Class (NoMethodError)
-16391,win core,"Dir.pwd, Dir[] pathname case inconsistency"
 16392,win core,test-all failure MinGW - TestEncoding#test_nonascii_library_path
 16398,ext,Active Support unit test error since caac5f777ae288b5982708b8690e712e1cae0cf6
+16406,core,`(lambda_proc &lt;&lt; normal_proc).lambda?` returns true
