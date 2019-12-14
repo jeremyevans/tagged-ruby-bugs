@@ -1,13 +1,13 @@
 <html>
 <head>
-<title>443 Tagged Open Ruby Bugs as of 2019-12-10 01:00:44 +0900</title>
+<title>444 Tagged Open Ruby Bugs as of 2019-12-15 03:57:03 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
 <p class="filter-buttons">Available Tags: <input type="submit" value="core" />
 <input type="submit" value="win" />
-<input type="submit" value="patch" />
 <input type="submit" value="lib" />
+<input type="submit" value="patch" />
 <input type="submit" value="ext" />
 <input type="submit" value="maybenotbug" />
 <input type="submit" value="notbug" />
@@ -21,13 +21,13 @@
 <input type="submit" value="refine" />
 <input type="submit" value="regexp" />
 <input type="submit" value="backport" />
-<input type="submit" value="openssl" />
 <input type="submit" value="arm" />
 <input type="submit" value="aix" />
-<input type="submit" value="solaris" />
-<input type="submit" value="haiku" />
 <input type="submit" value="ruby3" />
+<input type="submit" value="haiku" />
 <input type="submit" value="unfixable" />
+<input type="submit" value="openssl" />
+<input type="submit" value="solaris" />
 <input type="submit" value="parser" />
 <input type="submit" value="autoload" />
 <input type="submit" value="doc" />
@@ -39,9 +39,9 @@
 <input type="submit" value="other" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">443</span> matched)
+(<span id="matched">444</span> matched)
 <table>
-<caption>443 Tagged Open Ruby Bugs as of 2019-12-10 01:00:44 +0900</caption>
+<caption>444 Tagged Open Ruby Bugs as of 2019-12-15 03:57:03 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -50,11 +50,39 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" patch build ">
+<td><a href="https://bugs.ruby-lang.org/issues/16418">16418</a>
+</td>
+<td>patch build</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16418">when configuring --with-os-version-string=none fails to strip entire version string on MacOS</a>
+</td>
+</tr>
+<tr class=" build ">
+<td><a href="https://bugs.ruby-lang.org/issues/16416">16416</a>
+</td>
+<td>build</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16416">Suspicious include directories.</a>
+</td>
+</tr>
+<tr class=" patch lib ">
+<td><a href="https://bugs.ruby-lang.org/issues/16413">16413</a>
+</td>
+<td>patch lib</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16413">Net::FTP#put で書き込みエラーが発生した時のコネクション切断</a>
+</td>
+</tr>
+<tr class=" test ">
+<td><a href="https://bugs.ruby-lang.org/issues/16410">16410</a>
+</td>
+<td>test</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16410">Spec failure - &quot;File.utime allows Time instances in the far future to set mtime and atime&quot;</a>
+</td>
+</tr>
 <tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/16406">16406</a>
 </td>
 <td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16406">`(lambda_proc &lt;&lt; normal_proc).lambda?` returns true</a>
+<td><a href="https://bugs.ruby-lang.org/issues/16406">`(lambda_proc &lt;&lt; normal_proc).lambda?` should return false</a>
 </td>
 </tr>
 <tr class=" ext ">
@@ -68,7 +96,7 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16392">16392</a>
 </td>
 <td>win core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16392">test-all failure MinGW - TestEncoding#test_nonascii_library_path</a>
+<td><a href="https://bugs.ruby-lang.org/issues/16392">test-all failure Windows - TestEncoding#test_nonascii_library_path</a>
 </td>
 </tr>
 <tr class=" build ">
@@ -363,13 +391,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/15928">Constant declaration does not conform to JIS 3017:2013</a>
-</td>
-</tr>
-<tr class=" patch openssl ">
-<td><a href="https://bugs.ruby-lang.org/issues/15882">15882</a>
-</td>
-<td>patch openssl</td>
-<td><a href="https://bugs.ruby-lang.org/issues/15882">OpenSSL::X509::Name.parse usage</a>
 </td>
 </tr>
 <tr class=" core perf  ">
@@ -748,13 +769,6 @@
 </td>
 <td>lib notbug</td>
 <td><a href="https://bugs.ruby-lang.org/issues/15276">URI.join behaviour is unintuitive</a>
-</td>
-</tr>
-<tr class=" solaris openssl ">
-<td><a href="https://bugs.ruby-lang.org/issues/15268">15268</a>
-</td>
-<td>solaris openssl</td>
-<td><a href="https://bugs.ruby-lang.org/issues/15268">Solarisでtest/drb/test_drbssl.rbが落ちる</a>
 </td>
 </tr>
 <tr class=" patch core ">
@@ -2092,13 +2106,6 @@
 </td>
 <td>refine</td>
 <td><a href="https://bugs.ruby-lang.org/issues/11669">inconsitent behavior of refining frozen class</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/11636">11636</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/11636">super in instance_eval in a method defined in a module is invoked with a wrong receiver</a>
 </td>
 </tr>
 <tr class=" core solaris maybenotbug ">
