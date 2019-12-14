@@ -148,7 +148,6 @@
 11533,lib aix,AIX6.1 - Ruby 2.2.3 - TestMkmf::TestConvertible#test_typeof_builtin fails
 11579,patch ext,Fiddle.win32_last_error after calling Fiddle::Function#call isn&#39;t GetLastError()
 11582,core solaris maybenotbug,"On Solaris, Rational#** returns -Infinity for Rational(0) when passed a negative Float"
-11636,patch core,super in instance_eval in a method defined in a module is invoked with a wrong receiver
 11669,refine,inconsitent behavior of refining frozen class
 11704,refine maybenotbug,Refinements only get &quot;used&quot; once in loop
 11706,encoding notbug,"Clean up files etc/unicode/name2ctype.{h.blt,kwd,src}"
@@ -340,7 +339,6 @@
 15247,win test,"Windows - TEMP folder, non 8.3 &amp; drive, fails &amp; errors in test-all (ruby &amp; rdoc)"
 15262,ext,WeakRef::RefError for object that is still in use
 15263,patch core,[PATCH] vm_trace.c (postponed_job_register): only hit main thread
-15268,solaris openssl,Solarisでtest/drb/test_drbssl.rbが落ちる
 15276,lib notbug,URI.join behaviour is unintuitive
 15310,patch thread,[PATCH] thread_pthread.c: close race from UBF_TIMER and non-GVL-releasing thread
 15313,patch tracepoint,[PATCH] Let debuggers know when a tail call happens
@@ -395,7 +393,6 @@
 15834,patch lib,"Mutating the result of SortedSet.to_a mutates the original set, potentially violating the set&#39;s guarantees"
 15852,core win,APPLICATION_VERIFIER_LOCKS_LOCK_IN_FREED_HEAP on exiting ruby
 15856,core perf ,Idempotent performance of Kernel.require with many activated gems is slow
-15882,patch openssl,OpenSSL::X509::Name.parse usage
 15928,core,Constant declaration does not conform to JIS 3017:2013
 15944,lib,Simultaneous line feeding and scrolling doesn&#39;t work well with irb on tmux
 15993,win encoding,&#39;require&#39; doesn&#39;t work if there are Cyrillic chars in the path to Ruby dir
@@ -438,6 +435,10 @@
 16376,core,Stack-buffer-overflow in renumber_by_map in regcomp.c
 16383,patch tracepoint,TracePoint does not report calls to attribute reader methods
 16384,build,Cannot cross-compile 2.7: undefined method `each_builtin&#39; for RubyVM:Class (NoMethodError)
-16392,win core,test-all failure MinGW - TestEncoding#test_nonascii_library_path
+16392,win core,test-all failure Windows - TestEncoding#test_nonascii_library_path
 16398,ext,Active Support unit test error since caac5f777ae288b5982708b8690e712e1cae0cf6
-16406,core,`(lambda_proc &lt;&lt; normal_proc).lambda?` returns true
+16406,core,`(lambda_proc &lt;&lt; normal_proc).lambda?` should return false
+16410,test,Spec failure - &quot;File.utime allows Time instances in the far future to set mtime and atime&quot;
+16413,patch lib,Net::FTP#put で書き込みエラーが発生した時のコネクション切断
+16416,build,Suspicious include directories.
+16418,patch build,when configuring --with-os-version-string=none fails to strip entire version string on MacOS
