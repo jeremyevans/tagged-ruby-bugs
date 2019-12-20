@@ -36,7 +36,6 @@
 8445,patch core,IO.open and IO#set_enconding does not support :fallback option
 8446,ext,sdbm fails to fetch existing key if many elements in it
 8484,core,Restoring conditions through the ruby method call during VM processing
-8507,patch core notbug,Keyword splat does not convert arg to Hash
 8677,patch core maybenotbug,$LOAD_PATH did not encoded into the &quot;internal encoding&quot;
 8744,build,SIZEOF_UNSIGNED___INT128
 8782,ext,Don&#39;t set rl_getc_function on editline
@@ -58,8 +57,6 @@
 9246,ext,NoMemoryError is occurred by simple addition of BigDecimal
 9274,win core,A lot of SystemStackError on Windows 8.1 with MSVC 2013
 9287,build notbug,&#39;rb_obj_write&#39; discards qualifiers from pointer target type
-9291,core notbug,"array splatting a nil works, but hash splatting a nil does not"
-9312,build notbug,Build the ruby executable in bin/
 9366,test,&quot;make -j32 check TESTS=-j32&quot; occasionally fails on rubygems/specification
 9409,cygwin encoding,Cygwin で &quot;filesystem&quot; の encoding が正しくないケース
 9414,win encoding maybenotbug,strftime returns incorrectly encoded string
@@ -73,7 +70,6 @@
 9580,refine maybenotbug,Refinements regression in IRB
 9595,ext,Float#to_d inconsistent between 2.0.0 and 2.1.1
 9659,ext,crash in FIPS mode after unchecked algo-&gt;init_func failure
-9693,regexp notbug,\x{} in regexp
 9713,win encoding,__FILE__ return unexpected encoding - breaks Dir.glob
 9715,win encoding,ENV data yield ASCII-8BIT encoded strings under Windows with unicode username
 9737,wip-patch encoding,Non-ASCII characters in the path to ruby executable break require paths
@@ -107,7 +103,6 @@
 10584,encoding maybenotbug,"String.valid_encoding?, String.ascii_only? fails to account for BOM."
 10613,lib notbug,SNI is not optional when using TLS
 10637,lib,Puppet orchestration on vagrant fails with Error: Non-HTTP proxy URI
-10650,perf,[PERF] bm_hash_keys and  bm_hash_values
 10684,core maybenotbug,Block arity changes through Enumerable methods
 10749,core,Possible overflow in GC::Profiler report on 2.2.0
 10845,core maybenotbug,Subclassing String
@@ -133,7 +128,6 @@
 11202,core maybenotbug,No warning when a link to an original method body was removed
 11213,core maybenotbug,defined?(super) ignores respond_to_missing?
 11230,core,Should rb_struct_s_members() be public API?
-11268,patch lib,Zlib::DataError: incorrect header check
 11269,core,ruby_init_setproctitle() should be called before require_libraries()
 11304,core maybenotbug,[PATCH] Kernel.global_variables should observe $~.
 11335,lib,`ruby -r debug` catchpoint problem
@@ -156,7 +150,6 @@
 11808,core,Different behavior between Enumerable#grep and Array#grep
 11840,cygwin test,Error with &quot;make check&quot; on Cygwin
 11878,core maybenotbug,Comparison of prepended modules
-12015,build,Improving code coverage visibility
 12040,win core,[Win32] File.stat fails on a mounted volume
 12052,encoding,String#encode with xml option returns wrong result
 12055,patch lib,`NET::HTTPResponse` is not deflating responses with custom `Content-Range` header
@@ -169,9 +162,7 @@
 12261,win maybenotbug,Windows: File.dirname with 2+ / or 2+ \\ will return // or \\\\
 12280,win core,"IO.copy_stream(IO, IO) fails with &quot;pread() not implemented&quot;"
 12368,core notbug,default encoding of Integer#chr
-12388,ext,Iterating second dbm enum causes first dbm enum to stop
 12392,build,configure --with-sitedir=no --with-sitearchdir=no --with-vendordir=no --with-vendorarchdir=no が機能しない
-12407,test,2 failures of TestMkmf::TestConvertible
 12416,core maybenotbug,struct rb_id_table lacks mark function
 12436,win core,newline argument of File.open seems not respected on Windows
 12440,cygwin core,make test-all is not working on cygwin
@@ -210,7 +201,6 @@
 13094,ext,Zlib::GzipReader eof?がfalseなのにgetsでnilが返ってくる
 13100,openssl,OpenSSL::PKey::EC#public_keyでGroup情報がコピーされない。
 13125,build,MRI has too much Qtrue : Qfalse;
-13144,patch lib,prettyprint doesn&#39;t detect cycles when wrapped inside Delegators
 13151,win core,File.writable? doesn&#39;t report correctly if a directory is writable on Windows.
 13153,core,Inconsistent sprintf formatting for 0 value
 13164,core,A second `SystemStackError` exception  results in `Segmentation fault (core dumped)`
@@ -359,7 +349,6 @@
 15507,thread,Thread#raise is delivered to GC context
 15517,lib encoding,Net::HTTP not recognizing valid UTF-8
 15550,win,Windows - gem bin files - can&#39;t run from bash shell
-15551,core notbug,The behavior of FIX2INT and FIX2UINT differs by platform
 15569,win thread,TestResolvDNS#test_no_server always fails on usa&#39;s mswin environment
 15570,core,rb_int2big signature change #14036 breaks VIM on 32b arches
 15576,core notbug,Wrong error message from some class methods of `Dir`
@@ -388,13 +377,10 @@
 15790,core autoload,Strange interaction between autoload and $LOADED_FEATURES
 15795,haiku ext,Some test fails on Haiku
 15819,lib,cannot read document of File::NULL with &quot;ri File::NULL&quot;
-15827,haiku openssl,Haiku: SSL tests failing
-15828,haiku,DOTfiles and DOTfolders aren&#39;t allowed in $HOME folder on Haiku
 15834,patch lib,"Mutating the result of SortedSet.to_a mutates the original set, potentially violating the set&#39;s guarantees"
 15852,core win,APPLICATION_VERIFIER_LOCKS_LOCK_IN_FREED_HEAP on exiting ruby
 15856,core perf ,Idempotent performance of Kernel.require with many activated gems is slow
 15928,core,Constant declaration does not conform to JIS 3017:2013
-15944,lib,Simultaneous line feeding and scrolling doesn&#39;t work well with irb on tmux
 15993,win encoding,&#39;require&#39; doesn&#39;t work if there are Cyrillic chars in the path to Ruby dir
 16004,core maybenotbug,Kernel#lambda captured with Kernel#method doesn&#39;t create lambdas
 16031,core ext maybenotbug,Inconsistency between Date::strptime and Time::strptime at the end of a month
@@ -406,7 +392,6 @@
 16143,patch core,BOM UTF-8 is not removed after rewind
 16145,regexp,"regexp match error if mixing /i, character classes, and utf8"
 16158,regexp notbug,&quot;st&quot; Character Sequence In Regex Look-Behind Causes Illegal Pattern Error When Combined With POSIX Bracket Expressions And Case Insensitivity Flag
-16159,test,Off by 1 errors from time_params tests
 16173,patch core,ENV.delete returns nil when name does not exist and block given
 16179,aix notbug,ruby binaries generate &quot;already initialized constant&quot; warnings on AIX 6.1
 16185,aix notbug,basictest failure on AIX 6.1 for 64bit build
@@ -417,11 +402,9 @@
 16265,win thread,"Test (spec) failure using current MSYS2 tools, related to -fstack-protector and possibly D_FORTIFY_SOURCE=2"
 16266,lib notbug,Additional empty folders created in lib/ruby/gems/2.7.0/gems by make install
 16277,win ext maybenotbug,UNIXServer#listen fails with Errno::EADDRINUSE error under Windows 10 / WSL Ubuntu 18.04
-16284,lib notbug,Net/HTTP consuming multiple times more memory compared to other libraries
 16288,core,"Segmentation fault with finalizers, threads"
 16334,backport core,Wrong line numbers for multiline method chains 
 16338,build,gemspec stub EOF separators throw warning
-16342,thread,macOS + Ruby 2.6.0 以降で拡張ライブラリ内での waitpid() コールに失敗する
 16344,core,Can be assigned to numbered parameter when after used _1
 16350,core,ArithmeticSequence#member? can result in infinite loop
 16352,core,Marshal limit of  &gt;= 2 GiB
@@ -434,11 +417,8 @@
 16373,lib,RDoc for some of the Kernel methods cannot be found in Kernel module
 16376,core,Stack-buffer-overflow in renumber_by_map in regcomp.c
 16383,patch tracepoint,TracePoint does not report calls to attribute reader methods
-16384,build,Cannot cross-compile 2.7: undefined method `each_builtin&#39; for RubyVM:Class (NoMethodError)
-16392,win core,test-all failure Windows - TestEncoding#test_nonascii_library_path
 16398,ext,Active Support unit test error since caac5f777ae288b5982708b8690e712e1cae0cf6
 16406,core,`(lambda_proc &lt;&lt; normal_proc).lambda?` should return false
 16410,test,Spec failure - &quot;File.utime allows Time instances in the far future to set mtime and atime&quot;
-16413,patch lib,Net::FTP#put で書き込みエラーが発生した時のコネクション切断
 16416,build,Suspicious include directories.
-16418,patch build,when configuring --with-os-version-string=none fails to strip entire version string on MacOS
+16423,core notbug,Ruby Crash
