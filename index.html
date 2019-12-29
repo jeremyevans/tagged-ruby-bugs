@@ -1,14 +1,14 @@
 <html>
 <head>
-<title>424 Tagged Open Ruby Bugs as of 2019-12-20 17:09:22 +0900</title>
+<title>428 Tagged Open Ruby Bugs as of 2019-12-30 04:14:44 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
 <p class="filter-buttons">Available Tags: <input type="submit" value="core" />
 <input type="submit" value="win" />
-<input type="submit" value="patch" />
 <input type="submit" value="lib" />
 <input type="submit" value="ext" />
+<input type="submit" value="patch" />
 <input type="submit" value="maybenotbug" />
 <input type="submit" value="notbug" />
 <input type="submit" value="build" />
@@ -20,28 +20,28 @@
 <input type="submit" value="perf" />
 <input type="submit" value="refine" />
 <input type="submit" value="regexp" />
-<input type="submit" value="backport" />
 <input type="submit" value="arm" />
 <input type="submit" value="aix" />
-<input type="submit" value="unfixable" />
 <input type="submit" value="ruby3" />
+<input type="submit" value="unfixable" />
+<input type="submit" value="backport" />
 <input type="submit" value="solaris" />
 <input type="submit" value="parser" />
-<input type="submit" value="openssl" />
 <input type="submit" value="autoload" />
-<input type="submit" value="doc" />
+<input type="submit" value="openssl" />
 <input type="submit" value="fiber" />
+<input type="submit" value="doc" />
+<input type="submit" value="haiku" />
 <input type="submit" value="linux" />
 <input type="submit" value="wip-patch" />
-<input type="submit" value="haiku" />
 <input type="submit" value="mips" />
 <input type="submit" value="uriencoding" />
 <input type="submit" value="other" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">424</span> matched)
+(<span id="matched">428</span> matched)
 <table>
-<caption>424 Tagged Open Ruby Bugs as of 2019-12-20 17:09:22 +0900</caption>
+<caption>428 Tagged Open Ruby Bugs as of 2019-12-30 04:14:44 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -50,6 +50,62 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/16466">16466</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16466">`*args -&gt; *args` delegation should be warned when the last hash has a `ruby2_keywords` flag</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/16465">16465</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16465">False keyword warning against Struct#initialize</a>
+</td>
+</tr>
+<tr class=" core notbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/16462">16462</a>
+</td>
+<td>core notbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16462">Ruby 2.7 autoload not working with $RUBYLIB (maybe circular dependency error)</a>
+</td>
+</tr>
+<tr class=" tracepoint ">
+<td><a href="https://bugs.ruby-lang.org/issues/16459">16459</a>
+</td>
+<td>tracepoint</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16459">&lt;internal:trace_point&gt;:346: [BUG] Segmentation fault at 0x0000000000000008</a>
+</td>
+</tr>
+<tr class=" fiber ">
+<td><a href="https://bugs.ruby-lang.org/issues/16455">16455</a>
+</td>
+<td>fiber</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16455">coroutine ucontext uses deprecated POSIX getcontext/swapcontext/makecontext, absent in musl</a>
+</td>
+</tr>
+<tr class=" lib ">
+<td><a href="https://bugs.ruby-lang.org/issues/16453">16453</a>
+</td>
+<td>lib</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16453">irb crashes when using array literal and heredoc</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/16448">16448</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16448">regex global variables are working differently depending on scope</a>
+</td>
+</tr>
+<tr class=" lib ">
+<td><a href="https://bugs.ruby-lang.org/issues/16439">16439</a>
+</td>
+<td>lib</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16439">Resolv::DNS: timeouts if multiple IPv6 name servers are given and address contains leading zero</a>
+</td>
+</tr>
 <tr class=" core notbug ">
 <td><a href="https://bugs.ruby-lang.org/issues/16423">16423</a>
 </td>
@@ -309,13 +365,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16044">Float::ROUNDS (FLT_ROUNDS) should not be a constant.</a>
 </td>
 </tr>
-<tr class=" backport ">
-<td><a href="https://bugs.ruby-lang.org/issues/16034">16034</a>
-</td>
-<td>backport</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16034">Backport 5d33f787169bcc3594d2264726695d58c4a06899 to Ruby 2.6</a>
-</td>
-</tr>
 <tr class=" core ext maybenotbug ">
 <td><a href="https://bugs.ruby-lang.org/issues/16031">16031</a>
 </td>
@@ -435,13 +484,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/15718">YAML raises error when dumping strings with UTF32 encoding</a>
 </td>
 </tr>
-<tr class=" backport ">
-<td><a href="https://bugs.ruby-lang.org/issues/15717">15717</a>
-</td>
-<td>backport</td>
-<td><a href="https://bugs.ruby-lang.org/issues/15717">Backport #15270 to Ruby 2.5.x</a>
-</td>
-</tr>
 <tr class=" ext ">
 <td><a href="https://bugs.ruby-lang.org/issues/15712">15712</a>
 </td>
@@ -489,13 +531,6 @@
 </td>
 <td>win encoding</td>
 <td><a href="https://bugs.ruby-lang.org/issues/15621">system({}, ...) breaks nonascii ENV[&quot;PATH&quot;] on Windows</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/15620">15620</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/15620">Block argument usage affects lambda semantic</a>
 </td>
 </tr>
 <tr class=" patch core ">
@@ -1245,13 +1280,6 @@
 </td>
 <td>patch lib</td>
 <td><a href="https://bugs.ruby-lang.org/issues/14266">Set#clone(freeze: false) makes frozen internal hash</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/14240">14240</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/14240">warn four special variables: $; $, $/ $\</a>
 </td>
 </tr>
 <tr class=" test ">
