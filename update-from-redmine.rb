@@ -32,7 +32,7 @@ end
 
 existing_rows = CSV.read(BUG_FILE, encoding: 'UTF-8').map{|x| Bug.create(*x)}
 
-body = Net::HTTP.get(URI('https://bugs.ruby-lang.org/projects/ruby-trunk/issues?c%5B%5D=tracker&c%5B%5D=status&c%5B%5D=subject&c%5B%5D=assigned_to&c%5B%5D=updated_on&f%5B%5D=status_id&f%5B%5D=tracker_id&f%5B%5D=&group_by=&op%5Bstatus_id%5D=o&op%5Btracker_id%5D=%3D&per_page=500&set_filter=1&sort=id%3Adesc&utf8=.&v%5Btracker_id%5D%5B%5D=1'))
+body = Net::HTTP.get(URI('https://bugs.ruby-lang.org/projects/ruby-master/issues?c%5B%5D=tracker&c%5B%5D=status&c%5B%5D=subject&c%5B%5D=assigned_to&c%5B%5D=updated_on&f%5B%5D=status_id&f%5B%5D=tracker_id&f%5B%5D=&group_by=&op%5Bstatus_id%5D=o&op%5Btracker_id%5D=%3D&per_page=500&set_filter=1&sort=id%3Adesc&utf8=.&v%5Btracker_id%5D%5B%5D=1'))
 
 body.scan(%r{<td class="subject"><a href="/issues/(\d+)">([^<]+)</a></td>}).each do |id, subject|
   if bug = Bug::MAP[id]
