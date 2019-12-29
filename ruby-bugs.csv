@@ -421,8 +421,8 @@
 16439,lib,Resolv::DNS: timeouts if multiple IPv6 name servers are given and address contains leading zero
 16448,core,regex global variables are working differently depending on scope
 16453,lib,irb crashes when using array literal and heredoc
-16455,fiber,"coroutine ucontext uses deprecated POSIX getcontext/swapcontext/makecontext, absent in musl"
-16459,tracepoint,&lt;internal:trace_point&gt;:346: [BUG] Segmentation fault at 0x0000000000000008
+16455,patch fiber,"coroutine ucontext uses deprecated POSIX getcontext/swapcontext/makecontext, absent in musl"
+16459,patch tracepoint,&lt;internal:trace_point&gt;:346: [BUG] Segmentation fault at 0x0000000000000008
 16462,core notbug,Ruby 2.7 autoload not working with $RUBYLIB (maybe circular dependency error)
-16465,core,False keyword warning against Struct#initialize
-16466,core,`*args -&gt; *args` delegation should be warned when the last hash has a `ruby2_keywords` flag
+16465,patch core,False keyword warning against Struct#initialize
+16466,patch core,`*args -&gt; *args` delegation should be warned when the last hash has a `ruby2_keywords` flag
