@@ -250,7 +250,6 @@
 14137,win regexp,Windows / MinGW - Regexp - Character Properties - General Category
 14160,patch ext,JSON#generate documentation wrong/misleading
 14175,test,TestResolvMDNS#test_mdns_each_address fails
-14240,patch core,"warn four special variables: $; $, $/ $\"
 14266,patch lib,Set#clone(freeze: false) makes frozen internal hash
 14267,core notbug,Lazy proc allocation introduced in #14045 creates regression
 14271,test,Random TestIO_Console#test_oflush failure
@@ -358,7 +357,6 @@
 15598,core autoload,Deadlock on mutual reference of autoloaded constants
 15599,core autoload,Mixing autoload and require causes deadlock and incomplete definition.
 15608,patch core,What should be the correct output for Method#inspect with singleton methods?
-15620,core,Block argument usage affects lambda semantic
 15621,win encoding,"system({}, ...) breaks nonascii ENV[&quot;PATH&quot;] on Windows"
 15634,tracepoint,TracePoint seems to be skipping some methods.
 15644,patch ext,ThreadsWait problems with Thread#report_on_exception
@@ -366,7 +364,6 @@
 15661,core,Disallow concurrent Dir.chdir with block
 15674,core,"Regression: ObjectSpace.allocation_sourceline produces the wrong location for allocations, it shows the end of the method instead of the line where the object was created"
 15712,ext,DateTime#=== should be defined and compare date and time instead of just the date
-15717,backport,Backport #15270 to Ruby 2.5.x
 15718,ext encoding,YAML raises error when dumping strings with UTF32 encoding
 15729,core thread openssl,OpenSSL::SSL::SSLSocket#connect randomly hangs
 15735,core thread,Thread#handle_interrupt does not prevent Thread#kill from interrupting
@@ -384,7 +381,6 @@
 15993,win encoding,&#39;require&#39; doesn&#39;t work if there are Cyrillic chars in the path to Ruby dir
 16004,core maybenotbug,Kernel#lambda captured with Kernel#method doesn&#39;t create lambdas
 16031,core ext maybenotbug,Inconsistency between Date::strptime and Time::strptime at the end of a month
-16034,backport,Backport 5d33f787169bcc3594d2264726695d58c4a06899 to Ruby 2.6
 16044,ruby3,Float::ROUNDS (FLT_ROUNDS) should not be a constant.
 16110,win core thread,Doesn&#39;t detect deadlock on Ruby 2.4 and 2.5 on Windows
 16116,win ext,"ruby2.6.3(x86/x64)  use win32ole could not new Object, return 0x80070057"
@@ -422,3 +418,11 @@
 16410,test,Spec failure - &quot;File.utime allows Time instances in the far future to set mtime and atime&quot;
 16416,build,Suspicious include directories.
 16423,core notbug,Ruby Crash
+16439,lib,Resolv::DNS: timeouts if multiple IPv6 name servers are given and address contains leading zero
+16448,core,regex global variables are working differently depending on scope
+16453,lib,irb crashes when using array literal and heredoc
+16455,fiber,"coroutine ucontext uses deprecated POSIX getcontext/swapcontext/makecontext, absent in musl"
+16459,tracepoint,&lt;internal:trace_point&gt;:346: [BUG] Segmentation fault at 0x0000000000000008
+16462,core notbug,Ruby 2.7 autoload not working with $RUBYLIB (maybe circular dependency error)
+16465,core,False keyword warning against Struct#initialize
+16466,core,`*args -&gt; *args` delegation should be warned when the last hash has a `ruby2_keywords` flag
