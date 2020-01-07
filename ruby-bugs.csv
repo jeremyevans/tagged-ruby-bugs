@@ -1,7 +1,6 @@
 595,fiber,Fiber ignores ensure clause
 4040,core,SystemStackError with Hash[*a] for Large _a_
 4173,test,TestProcess#test_wait_and_sigchild が、たまに失敗する
-4352,ruby3 core,"[patch] Fix eval(s, b) backtrace; make eval(s, b) consistent with eval(s)"
 4405,win thread ext,WIN32OLE &amp; Threads incompatible
 4434,thread maybenotbug,make test-all &quot;-j10000&quot; のように大きな並列数を与えると異常終了
 4436,ruby3 lib,FileUtils verbose mode prints output to stderr
@@ -248,9 +247,7 @@
 14103,regexp,Regexp absense operator has no chance to ^C
 14119,patch lib,IPAddr#include? does not seem to support the subnet mask
 14137,win regexp,Windows / MinGW - Regexp - Character Properties - General Category
-14160,patch ext,JSON#generate documentation wrong/misleading
 14175,test,TestResolvMDNS#test_mdns_each_address fails
-14266,patch lib,Set#clone(freeze: false) makes frozen internal hash
 14267,core notbug,Lazy proc allocation introduced in #14045 creates regression
 14271,test,Random TestIO_Console#test_oflush failure
 14275,patch core,GC not aggressive enough
@@ -400,13 +397,13 @@
 16277,win ext maybenotbug,UNIXServer#listen fails with Errno::EADDRINUSE error under Windows 10 / WSL Ubuntu 18.04
 16288,core,"Segmentation fault with finalizers, threads"
 16334,backport core,Wrong line numbers for multiline method chains 
+16337,"",kernel_gem.rb:68 - ThreadError
 16338,build,gemspec stub EOF separators throw warning
 16344,core,Can be assigned to numbered parameter when after used _1
 16350,core,ArithmeticSequence#member? can result in infinite loop
 16352,core,Marshal limit of  &gt;= 2 GiB
 16357,backport,`Segmentation fault (core dumped)` or `[BUG] object allocation during garbage collection phase`
 16361,maybenotbug test,TestEnv#test_fetch failure
-16367,win encoding,stdin not support ibm866 encoding for windows
 16368,ext,Error in `YAML.load(symbolize_names: true)` with null column YAML
 16369,thread,Segfault : crashed on child side of fork pre-exec thread_pool.rb
 16371,backport,Inconsistent usage of Double splat operator
@@ -414,15 +411,20 @@
 16376,core,Stack-buffer-overflow in renumber_by_map in regcomp.c
 16383,patch tracepoint,TracePoint does not report calls to attribute reader methods
 16398,ext,Active Support unit test error since caac5f777ae288b5982708b8690e712e1cae0cf6
-16406,core,`(lambda_proc &lt;&lt; normal_proc).lambda?` should return false
 16410,test,Spec failure - &quot;File.utime allows Time instances in the far future to set mtime and atime&quot;
 16416,build,Suspicious include directories.
 16423,core notbug,Ruby Crash
 16439,lib,Resolv::DNS: timeouts if multiple IPv6 name servers are given and address contains leading zero
 16448,core,regex global variables are working differently depending on scope
 16453,lib,irb crashes when using array literal and heredoc
-16455,patch fiber,"coroutine ucontext uses deprecated POSIX getcontext/swapcontext/makecontext, absent in musl"
-16459,patch tracepoint,&lt;internal:trace_point&gt;:346: [BUG] Segmentation fault at 0x0000000000000008
+16455,patch fiber,"coroutine ucontext uses deprecated POSIX getcontext/swapcontext/makecontext, absent in musl and uclibc"
 16462,core notbug,Ruby 2.7 autoload not working with $RUBYLIB (maybe circular dependency error)
 16465,patch core,False keyword warning against Struct#initialize
 16466,patch core,`*args -&gt; *args` delegation should be warned when the last hash has a `ruby2_keywords` flag
+16469,patch lib,Wrong warning message at `URI.encode` and `URI.decode`
+16470,core,Issue with nanoseconds in Time#inspect
+16474,core cygwin,[ASYNC BUG]
+16475,build notbug,[Installation process - compiling ruby 2.7.0 from source} &quot;make install&quot; step oddity for ruby 2.7.0 on linux minut (debian base)
+16476,ext maybenotbug,Socket.getaddrinfo cannot be interrupted by Timeout.timeout
+16480,build,"Ruby 2.7, C++, and rb_define_method compilation error"
+16486,core,Hash.ruby2_keywords?(hash) and Hash.ruby2_keywords!(hash)
