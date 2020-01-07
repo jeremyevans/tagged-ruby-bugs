@@ -397,7 +397,7 @@
 16277,win ext maybenotbug,UNIXServer#listen fails with Errno::EADDRINUSE error under Windows 10 / WSL Ubuntu 18.04
 16288,core,"Segmentation fault with finalizers, threads"
 16334,backport core,Wrong line numbers for multiline method chains 
-16337,"",kernel_gem.rb:68 - ThreadError
+16337,lib,kernel_gem.rb:68 - ThreadError
 16338,build,gemspec stub EOF separators throw warning
 16344,core,Can be assigned to numbered parameter when after used _1
 16350,core,ArithmeticSequence#member? can result in infinite loop
