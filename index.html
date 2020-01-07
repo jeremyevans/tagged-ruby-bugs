@@ -1,13 +1,13 @@
 <html>
 <head>
-<title>428 Tagged Open Ruby Bugs as of 2019-12-30 04:15:42 +0900</title>
+<title>430 Tagged Open Ruby Bugs as of 2020-01-08 03:01:02 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
 <p class="filter-buttons">Available Tags: <input type="submit" value="core" />
 <input type="submit" value="win" />
-<input type="submit" value="patch" />
 <input type="submit" value="lib" />
+<input type="submit" value="patch" />
 <input type="submit" value="ext" />
 <input type="submit" value="maybenotbug" />
 <input type="submit" value="notbug" />
@@ -22,13 +22,13 @@
 <input type="submit" value="regexp" />
 <input type="submit" value="arm" />
 <input type="submit" value="aix" />
-<input type="submit" value="ruby3" />
 <input type="submit" value="unfixable" />
 <input type="submit" value="backport" />
 <input type="submit" value="solaris" />
-<input type="submit" value="parser" />
 <input type="submit" value="autoload" />
+<input type="submit" value="parser" />
 <input type="submit" value="openssl" />
+<input type="submit" value="ruby3" />
 <input type="submit" value="fiber" />
 <input type="submit" value="doc" />
 <input type="submit" value="haiku" />
@@ -39,9 +39,9 @@
 <input type="submit" value="other" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">428</span> matched)
+(<span id="matched">430</span> matched)
 <table>
-<caption>428 Tagged Open Ruby Bugs as of 2019-12-30 04:15:42 +0900</caption>
+<caption>430 Tagged Open Ruby Bugs as of 2020-01-08 03:01:02 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -50,6 +50,55 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/16486">16486</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16486">Hash.ruby2_keywords?(hash) and Hash.ruby2_keywords!(hash)</a>
+</td>
+</tr>
+<tr class=" build ">
+<td><a href="https://bugs.ruby-lang.org/issues/16480">16480</a>
+</td>
+<td>build</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16480">Ruby 2.7, C++, and rb_define_method compilation error</a>
+</td>
+</tr>
+<tr class=" ext maybenotbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/16476">16476</a>
+</td>
+<td>ext maybenotbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16476">Socket.getaddrinfo cannot be interrupted by Timeout.timeout</a>
+</td>
+</tr>
+<tr class=" build notbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/16475">16475</a>
+</td>
+<td>build notbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16475">[Installation process - compiling ruby 2.7.0 from source} &quot;make install&quot; step oddity for ruby 2.7.0 on linux minut (debian base)</a>
+</td>
+</tr>
+<tr class=" core cygwin ">
+<td><a href="https://bugs.ruby-lang.org/issues/16474">16474</a>
+</td>
+<td>core cygwin</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16474">[ASYNC BUG]</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/16470">16470</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16470">Issue with nanoseconds in Time#inspect</a>
+</td>
+</tr>
+<tr class=" patch lib ">
+<td><a href="https://bugs.ruby-lang.org/issues/16469">16469</a>
+</td>
+<td>patch lib</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16469">Wrong warning message at `URI.encode` and `URI.decode`</a>
+</td>
+</tr>
 <tr class=" patch core ">
 <td><a href="https://bugs.ruby-lang.org/issues/16466">16466</a>
 </td>
@@ -71,18 +120,11 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16462">Ruby 2.7 autoload not working with $RUBYLIB (maybe circular dependency error)</a>
 </td>
 </tr>
-<tr class=" patch tracepoint ">
-<td><a href="https://bugs.ruby-lang.org/issues/16459">16459</a>
-</td>
-<td>patch tracepoint</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16459">&lt;internal:trace_point&gt;:346: [BUG] Segmentation fault at 0x0000000000000008</a>
-</td>
-</tr>
 <tr class=" patch fiber ">
 <td><a href="https://bugs.ruby-lang.org/issues/16455">16455</a>
 </td>
 <td>patch fiber</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16455">coroutine ucontext uses deprecated POSIX getcontext/swapcontext/makecontext, absent in musl</a>
+<td><a href="https://bugs.ruby-lang.org/issues/16455">coroutine ucontext uses deprecated POSIX getcontext/swapcontext/makecontext, absent in musl and uclibc</a>
 </td>
 </tr>
 <tr class=" lib ">
@@ -125,13 +167,6 @@
 </td>
 <td>test</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16410">Spec failure - &quot;File.utime allows Time instances in the far future to set mtime and atime&quot;</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/16406">16406</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16406">`(lambda_proc &lt;&lt; normal_proc).lambda?` should return false</a>
 </td>
 </tr>
 <tr class=" ext ">
@@ -183,13 +218,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16368">Error in `YAML.load(symbolize_names: true)` with null column YAML</a>
 </td>
 </tr>
-<tr class=" win encoding ">
-<td><a href="https://bugs.ruby-lang.org/issues/16367">16367</a>
-</td>
-<td>win encoding</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16367">stdin not support ibm866 encoding for windows</a>
-</td>
-</tr>
 <tr class=" maybenotbug test ">
 <td><a href="https://bugs.ruby-lang.org/issues/16361">16361</a>
 </td>
@@ -230,6 +258,13 @@
 </td>
 <td>build</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16338">gemspec stub EOF separators throw warning</a>
+</td>
+</tr>
+<tr class="  ">
+<td><a href="https://bugs.ruby-lang.org/issues/16337">16337</a>
+</td>
+<td></td>
+<td><a href="https://bugs.ruby-lang.org/issues/16337">kernel_gem.rb:68 - ThreadError</a>
 </td>
 </tr>
 <tr class=" backport core ">
@@ -1275,25 +1310,11 @@
 <td><a href="https://bugs.ruby-lang.org/issues/14267">Lazy proc allocation introduced in #14045 creates regression</a>
 </td>
 </tr>
-<tr class=" patch lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/14266">14266</a>
-</td>
-<td>patch lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/14266">Set#clone(freeze: false) makes frozen internal hash</a>
-</td>
-</tr>
 <tr class=" test ">
 <td><a href="https://bugs.ruby-lang.org/issues/14175">14175</a>
 </td>
 <td>test</td>
 <td><a href="https://bugs.ruby-lang.org/issues/14175">TestResolvMDNS#test_mdns_each_address fails</a>
-</td>
-</tr>
-<tr class=" patch ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/14160">14160</a>
-</td>
-<td>patch ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/14160">JSON#generate documentation wrong/misleading</a>
 </td>
 </tr>
 <tr class=" win regexp ">
@@ -3016,13 +3037,6 @@
 </td>
 <td>win thread ext</td>
 <td><a href="https://bugs.ruby-lang.org/issues/4405">WIN32OLE &amp; Threads incompatible</a>
-</td>
-</tr>
-<tr class=" ruby3 core ">
-<td><a href="https://bugs.ruby-lang.org/issues/4352">4352</a>
-</td>
-<td>ruby3 core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/4352">[patch] Fix eval(s, b) backtrace; make eval(s, b) consistent with eval(s)</a>
 </td>
 </tr>
 <tr class=" test ">
