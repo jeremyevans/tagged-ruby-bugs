@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>430 Tagged Open Ruby Bugs as of 2020-01-08 03:06:40 +0900</title>
+<title>430 Tagged Open Ruby Bugs as of 2020-01-10 06:13:34 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -13,8 +13,8 @@
 <input type="submit" value="notbug" />
 <input type="submit" value="build" />
 <input type="submit" value="encoding" />
-<input type="submit" value="test" />
 <input type="submit" value="thread" />
+<input type="submit" value="test" />
 <input type="submit" value="cygwin" />
 <input type="submit" value="tracepoint" />
 <input type="submit" value="perf" />
@@ -41,7 +41,7 @@
 <input id="filter" type="text" size="80" />
 (<span id="matched">430</span> matched)
 <table>
-<caption>430 Tagged Open Ruby Bugs as of 2020-01-08 03:06:40 +0900</caption>
+<caption>430 Tagged Open Ruby Bugs as of 2020-01-10 06:13:34 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -50,6 +50,27 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" thread arm ">
+<td><a href="https://bugs.ruby-lang.org/issues/16493">16493</a>
+</td>
+<td>thread arm</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16493">TestThreadQueue#test_thr_kill is flaky on AArch64</a>
+</td>
+</tr>
+<tr class=" test ">
+<td><a href="https://bugs.ruby-lang.org/issues/16492">16492</a>
+</td>
+<td>test</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16492">TestBugReporter#test_bug_reporter_add test failures on s390x</a>
+</td>
+</tr>
+<tr class=" build lib ">
+<td><a href="https://bugs.ruby-lang.org/issues/16490">16490</a>
+</td>
+<td>build lib</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16490">mkmf.rbの非互換な変更</a>
+</td>
+</tr>
 <tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/16486">16486</a>
 </td>
@@ -90,13 +111,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16470">Issue with nanoseconds in Time#inspect</a>
-</td>
-</tr>
-<tr class=" patch lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/16469">16469</a>
-</td>
-<td>patch lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16469">Wrong warning message at `URI.encode` and `URI.decode`</a>
 </td>
 </tr>
 <tr class=" patch core ">
@@ -216,13 +230,6 @@
 </td>
 <td>ext</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16368">Error in `YAML.load(symbolize_names: true)` with null column YAML</a>
-</td>
-</tr>
-<tr class=" maybenotbug test ">
-<td><a href="https://bugs.ruby-lang.org/issues/16361">16361</a>
-</td>
-<td>maybenotbug test</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16361">TestEnv#test_fetch failure</a>
 </td>
 </tr>
 <tr class=" backport ">
@@ -1308,13 +1315,6 @@
 </td>
 <td>core notbug</td>
 <td><a href="https://bugs.ruby-lang.org/issues/14267">Lazy proc allocation introduced in #14045 creates regression</a>
-</td>
-</tr>
-<tr class=" test ">
-<td><a href="https://bugs.ruby-lang.org/issues/14175">14175</a>
-</td>
-<td>test</td>
-<td><a href="https://bugs.ruby-lang.org/issues/14175">TestResolvMDNS#test_mdns_each_address fails</a>
 </td>
 </tr>
 <tr class=" win regexp ">
