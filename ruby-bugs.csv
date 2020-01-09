@@ -247,7 +247,6 @@
 14103,regexp,Regexp absense operator has no chance to ^C
 14119,patch lib,IPAddr#include? does not seem to support the subnet mask
 14137,win regexp,Windows / MinGW - Regexp - Character Properties - General Category
-14175,test,TestResolvMDNS#test_mdns_each_address fails
 14267,core notbug,Lazy proc allocation introduced in #14045 creates regression
 14271,test,Random TestIO_Console#test_oflush failure
 14275,patch core,GC not aggressive enough
@@ -403,7 +402,6 @@
 16350,core,ArithmeticSequence#member? can result in infinite loop
 16352,core,Marshal limit of  &gt;= 2 GiB
 16357,backport,`Segmentation fault (core dumped)` or `[BUG] object allocation during garbage collection phase`
-16361,maybenotbug test,TestEnv#test_fetch failure
 16368,ext,Error in `YAML.load(symbolize_names: true)` with null column YAML
 16369,thread,Segfault : crashed on child side of fork pre-exec thread_pool.rb
 16371,backport,Inconsistent usage of Double splat operator
@@ -421,10 +419,12 @@
 16462,core notbug,Ruby 2.7 autoload not working with $RUBYLIB (maybe circular dependency error)
 16465,patch core,False keyword warning against Struct#initialize
 16466,patch core,`*args -&gt; *args` delegation should be warned when the last hash has a `ruby2_keywords` flag
-16469,patch lib,Wrong warning message at `URI.encode` and `URI.decode`
 16470,core,Issue with nanoseconds in Time#inspect
 16474,core cygwin,[ASYNC BUG]
 16475,build notbug,[Installation process - compiling ruby 2.7.0 from source} &quot;make install&quot; step oddity for ruby 2.7.0 on linux minut (debian base)
 16476,ext maybenotbug,Socket.getaddrinfo cannot be interrupted by Timeout.timeout
 16480,build,"Ruby 2.7, C++, and rb_define_method compilation error"
 16486,core,Hash.ruby2_keywords?(hash) and Hash.ruby2_keywords!(hash)
+16490,build lib,mkmf.rbの非互換な変更
+16492,test,TestBugReporter#test_bug_reporter_add test failures on s390x
+16493,thread arm,TestThreadQueue#test_thr_kill is flaky on AArch64
