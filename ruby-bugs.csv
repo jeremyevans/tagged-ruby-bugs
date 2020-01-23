@@ -41,7 +41,6 @@
 8810,ext unfixable,GDBM.open内で処理がブロックしたらTimeout.timeout が効かない
 8826,ext,BigDecimal#div and #quo different behavior and inconsistencies
 8836,lib maybenotbug,[BUG] Bus Error with bundler on large Gemfile when resolving dependencies
-8841,doc notbug,Module#included_modules and prepended modules
 8973,patch build,Allow to configure archlibdir for multiarch
 9009,core,Wrong binding when tracing c-calls
 9010,build,./configure --prefix= cannot handle directories with spaces
@@ -69,13 +68,11 @@
 9580,refine maybenotbug,Refinements regression in IRB
 9595,ext,Float#to_d inconsistent between 2.0.0 and 2.1.1
 9659,ext,crash in FIPS mode after unchecked algo-&gt;init_func failure
-9713,win encoding,__FILE__ return unexpected encoding - breaks Dir.glob
 9715,win encoding,ENV data yield ASCII-8BIT encoded strings under Windows with unicode username
 9737,wip-patch encoding,Non-ASCII characters in the path to ruby executable break require paths
 9760,build,mkmf does not allow for linking against custom libraries when a system library is present
 9790,ext,Zlib::GzipReader only decompressed the first of concatenated files
 9806,lib maybenotbug,URI#encode doesn&#39;t encode characters &#39;[&#39; and &#39;]&#39;.  They should be encoded as %5B and %5D respectively.
-9815,core notbug,attr_reader doesn&#39;t warn on a uninitialized instance variable
 9877,lib maybenotbug,"IRB::OutputMethod defines &quot;pp&quot;, but it&#39;s actually &quot;p&quot;"
 9921,build maybenotbug,"gmtime_r, win32.h, and &lt;string&gt;"
 9930,win encoding,unicode filenames somehow don&#39;t work
@@ -88,7 +85,6 @@
 10203,ext,TCPServer.new has strange behaviour when EADDRINUSE without specifying hostname
 10213,build notbug,bundled gems ignored by make install
 10248,core,Possible missing test or bug for Module#include and Module#prepend
-10388,parser unfixable,Operator precedence problem in multiple assignment (massign)
 10416,build,Create mechanism for updating of Unicode data files downstreams when we want
 10417,encoding,IO#set_encoding without int_enc doesn&#39;t keep current internal encoding
 10436,patch ext,ruby -c and ripper inconsistency: m(&amp;nil) {}
@@ -108,9 +104,7 @@
 10855,patch lib,[PATCH] Matrix#inverse returns matrix of integers whenever possible
 10902,core,require(&quot;enumerator&quot;) scans LOAD_PATH 2x on every invocation
 10919,lib,[gem install] installs multipe platforms
-10929,patch core maybenotbug,NilClass#to_proc and &amp; don&#39;t mix?
 10959,core,rb_iseq_load: problems with hash containing symbolic keys
-11014,core maybenotbug,String#partition doesn&#39;t return correct result on zero-width match
 11022,core notbug,opening an eigenclass does not change the class variable definition context
 11063,patch core maybenotbug,Special singleton class should return true for singleton_class? test
 11064,core maybenotbug,#singleton_methods for objects with special singleton_class returns an empty array
@@ -148,7 +142,6 @@
 11779,refine notbug,Module#using does not make sense as a method
 11808,core,Different behavior between Enumerable#grep and Array#grep
 11840,cygwin test,Error with &quot;make check&quot; on Cygwin
-11878,core maybenotbug,Comparison of prepended modules
 12040,win core,[Win32] File.stat fails on a mounted volume
 12052,encoding,String#encode with xml option returns wrong result
 12055,patch lib,`NET::HTTPResponse` is not deflating responses with custom `Content-Range` header
@@ -257,7 +250,6 @@
 14387,core linux,Ruby 2.5 を Alpine Linux で実行すると比較的浅めで SystemStackError 例外になる
 14391,patch ext perf,Integer#digitsが遅い
 14400,core,IO#ungetc and IO#ungetbyte documentation is inconsistent with the behavior
-14408,patch doc,Add hash argument description for GC.stat and GC.latest_gc_info document
 14409,build,インストール手順の改善
 14413,patch core,`-n` and `-p` flags break when stdout is closed
 14418,regexp perf,ruby 2.5 slow regexp execution
@@ -322,7 +314,6 @@
 15209,test,r64925 order-only-prerequisites - make targets - breaking change
 15244,patch core,Method #extname return empty string if filename is dot (&#39;.&#39;)
 15247,win test,"Windows - TEMP folder, non 8.3 &amp; drive, fails &amp; errors in test-all (ruby &amp; rdoc)"
-15262,ext,WeakRef::RefError for object that is still in use
 15263,patch core,[PATCH] vm_trace.c (postponed_job_register): only hit main thread
 15276,lib notbug,URI.join behaviour is unintuitive
 15310,patch thread,[PATCH] thread_pthread.c: close race from UBF_TIMER and non-GVL-releasing thread
@@ -342,6 +333,7 @@
 15438,win thread,Threads can&#39;t switch faster than TIME_QUANTUM_(NSEC|USEC|MSEC)
 15465,cygwin test,Tests failed on i386-cygwin
 15507,thread,Thread#raise is delivered to GC context
+15509,"",TCPServer#accept isn&#39;t interrupted
 15517,lib encoding,Net::HTTP not recognizing valid UTF-8
 15550,win,Windows - gem bin files - can&#39;t run from bash shell
 15569,win thread,TestResolvDNS#test_no_server always fails on usa&#39;s mswin environment
@@ -389,7 +381,6 @@
 16185,aix notbug,basictest failure on AIX 6.1 for 64bit build
 16186,patch core,Calling Net::HTTP from within an #inspect implementation hang when invoked from p
 16195,other,Invalid certificate on https://ruby-lang.org/
-16233,patch win encoding,winruby UTF8 Fallback for no CodePage
 16243,core perf ,case/when is slower than if on MRI
 16265,win thread,"Test (spec) failure using current MSYS2 tools, related to -fstack-protector and possibly D_FORTIFY_SOURCE=2"
 16266,lib notbug,Additional empty folders created in lib/ruby/gems/2.7.0/gems by make install
@@ -423,8 +414,15 @@
 16474,core cygwin,[ASYNC BUG]
 16475,build notbug,[Installation process - compiling ruby 2.7.0 from source} &quot;make install&quot; step oddity for ruby 2.7.0 on linux minut (debian base)
 16476,ext maybenotbug,Socket.getaddrinfo cannot be interrupted by Timeout.timeout
-16480,build,"Ruby 2.7, C++, and rb_define_method compilation error"
-16486,core,Hash.ruby2_keywords?(hash) and Hash.ruby2_keywords!(hash)
 16490,build lib,mkmf.rbの非互換な変更
 16492,test,TestBugReporter#test_bug_reporter_add test failures on s390x
 16493,thread arm,TestThreadQueue#test_thr_kill is flaky on AArch64
+16497,ext,StringIO#internal_encoding is broken (more severely in 2.7)
+16500,core,Argument is added to both splat and last &amp;block argument
+16504,core,"`foo(*args, &amp;args.pop)` should pass all elements of args"
+16510,lib,irb crashes when hitting &#39;Home&#39; or &#39;End&#39; keys
+16518,core,Should we rationalize Rational&#39;s numerator automatically?
+16521,build,ST_DEBUG not working
+16522,core,Ruby 2.7 logs deprecation warning when Warning[:deprecated] is set to false.  
+16556,notbug,Showing rails aborted message while running rails s
+16558,build,What is special about GB2312
