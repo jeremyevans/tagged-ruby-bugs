@@ -308,7 +308,6 @@
 15038,win build,Appveyor MinGW - bundled gems missing?
 15072,cygwin build,thread.c:4356:5: error: implicit declaration of function ‘ubf_list_atfork’
 15097,cygwin lib,Gem install fails on Ruby 2.5.1 with Cygwin (get_dns_server_list undefined)
-15177,core,起動した後にTZを変更するとTime#utcがずれることがある
 15178,patch build,Wrong paramaters passing to pthread_setname_np(3)
 15204,patch win ,globbing should be prevented when wildcard is surrounded by double quotes in the ruby&#39;s command line
 15209,test,r64925 order-only-prerequisites - make targets - breaking change
@@ -420,9 +419,9 @@
 16497,ext,StringIO#internal_encoding is broken (more severely in 2.7)
 16500,core,Argument is added to both splat and last &amp;block argument
 16504,core,"`foo(*args, &amp;args.pop)` should pass all elements of args"
-16510,lib,irb crashes when hitting &#39;Home&#39; or &#39;End&#39; keys
 16518,core,Should we rationalize Rational&#39;s numerator automatically?
 16521,build,ST_DEBUG not working
 16522,core,Ruby 2.7 logs deprecation warning when Warning[:deprecated] is set to false.  
 16556,notbug,Showing rails aborted message while running rails s
 16558,build,What is special about GB2312
+16559,patch lib,Net::HTTP#request does not properly close TCP socket if #started? is false
