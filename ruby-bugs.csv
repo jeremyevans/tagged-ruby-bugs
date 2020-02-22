@@ -263,7 +263,6 @@
 14541,core notbug,"Class variables have broken semantics, let&#39;s fix them"
 14543,build,`make commit` show error of `common-srcs`
 14558,core notbug,&quot;Backtrace in reverse order&quot; always upsets my brain!
-14563,lib,irb in irb raises a FATAL error
 14570,win core,Wired behavior of File.expand_path() on Windows
 14582,tracepoint,Unable to use `method__entry` and `method_return` tracing probes since 2.5
 14591,encoding maybenotbug,Files with invalid multi-byte characters will cause Find::find() to raise EINVAL exception
@@ -386,7 +385,6 @@
 16277,win ext maybenotbug,UNIXServer#listen fails with Errno::EADDRINUSE error under Windows 10 / WSL Ubuntu 18.04
 16288,core,"Segmentation fault with finalizers, threads"
 16334,backport core,Wrong line numbers for multiline method chains 
-16337,lib,kernel_gem.rb:68 - ThreadError
 16338,build,gemspec stub EOF separators throw warning
 16344,core,Can be assigned to numbered parameter when after used _1
 16350,core,ArithmeticSequence#member? can result in infinite loop
@@ -404,7 +402,6 @@
 16423,core notbug,Ruby Crash
 16439,lib,Resolv::DNS: timeouts if multiple IPv6 name servers are given and address contains leading zero
 16448,core,regex global variables are working differently depending on scope
-16453,lib,irb crashes when using array literal and heredoc
 16455,patch fiber,"coroutine ucontext uses deprecated POSIX getcontext/swapcontext/makecontext, absent in musl and uclibc"
 16462,core notbug,Ruby 2.7 autoload not working with $RUBYLIB (maybe circular dependency error)
 16465,patch core,False keyword warning against Struct#initialize
@@ -425,3 +422,12 @@
 16556,notbug,Showing rails aborted message while running rails s
 16558,build,What is special about GB2312
 16559,patch lib,Net::HTTP#request does not properly close TCP socket if #started? is false
+16608,ext,ConditionVariable#wait should return false when timeout exceeded
+16612,core,Enumerator::ArithmeticSequence#last with float range produces incorrect value
+16618,core,Ensure called twice when raise in ensure
+16620,notbug,[BUG] Segmentation fault at 0x0000000103bae000
+16622,win build,mswin build was failed with the current master branch #3121
+16623,win enc,Windows ENV encoding
+16641,backport,Backport request: MJIT crashes on a certain flow of branches
+16642,core,Splatted empty hash literal produces frozen hash object
+16647,lib,Redefining $/ causes irb to misbehave
