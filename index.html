@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>427 Tagged Open Ruby Bugs as of 2020-02-02 11:11:19 +0900</title>
+<title>433 Tagged Open Ruby Bugs as of 2020-02-23 04:08:32 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -22,26 +22,27 @@
 <input type="submit" value="regexp" />
 <input type="submit" value="arm" />
 <input type="submit" value="aix" />
-<input type="submit" value="solaris" />
 <input type="submit" value="backport" />
+<input type="submit" value="solaris" />
 <input type="submit" value="fiber" />
 <input type="submit" value="openssl" />
-<input type="submit" value="unfixable" />
 <input type="submit" value="autoload" />
 <input type="submit" value="ruby3" />
+<input type="submit" value="unfixable" />
 <input type="submit" value="linux" />
 <input type="submit" value="haiku" />
 <input type="submit" value="wip-patch" />
 <input type="submit" value="parser" />
-<input type="submit" value="uriencoding" />
-<input type="submit" value="mips" />
 <input type="submit" value="doc" />
-<input type="submit" value="other" /></p>
+<input type="submit" value="mips" />
+<input type="submit" value="uriencoding" />
+<input type="submit" value="other" />
+<input type="submit" value="enc" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">427</span> matched)
+(<span id="matched">433</span> matched)
 <table>
-<caption>427 Tagged Open Ruby Bugs as of 2020-02-02 11:11:19 +0900</caption>
+<caption>433 Tagged Open Ruby Bugs as of 2020-02-23 04:08:32 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -50,6 +51,69 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" lib ">
+<td><a href="https://bugs.ruby-lang.org/issues/16647">16647</a>
+</td>
+<td>lib</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16647">Redefining $/ causes irb to misbehave</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/16642">16642</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16642">Splatted empty hash literal produces frozen hash object</a>
+</td>
+</tr>
+<tr class=" backport ">
+<td><a href="https://bugs.ruby-lang.org/issues/16641">16641</a>
+</td>
+<td>backport</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16641">Backport request: MJIT crashes on a certain flow of branches</a>
+</td>
+</tr>
+<tr class=" win enc ">
+<td><a href="https://bugs.ruby-lang.org/issues/16623">16623</a>
+</td>
+<td>win enc</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16623">Windows ENV encoding</a>
+</td>
+</tr>
+<tr class=" win build ">
+<td><a href="https://bugs.ruby-lang.org/issues/16622">16622</a>
+</td>
+<td>win build</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16622">mswin build was failed with the current master branch #3121</a>
+</td>
+</tr>
+<tr class=" notbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/16620">16620</a>
+</td>
+<td>notbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16620">[BUG] Segmentation fault at 0x0000000103bae000</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/16618">16618</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16618">Ensure called twice when raise in ensure</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/16612">16612</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16612">Enumerator::ArithmeticSequence#last with float range produces incorrect value</a>
+</td>
+</tr>
+<tr class=" ext ">
+<td><a href="https://bugs.ruby-lang.org/issues/16608">16608</a>
+</td>
+<td>ext</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16608">ConditionVariable#wait should return false when timeout exceeded</a>
+</td>
+</tr>
 <tr class=" patch lib ">
 <td><a href="https://bugs.ruby-lang.org/issues/16559">16559</a>
 </td>
@@ -190,13 +254,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16455">coroutine ucontext uses deprecated POSIX getcontext/swapcontext/makecontext, absent in musl and uclibc</a>
 </td>
 </tr>
-<tr class=" lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/16453">16453</a>
-</td>
-<td>lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16453">irb crashes when using array literal and heredoc</a>
-</td>
-</tr>
 <tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/16448">16448</a>
 </td>
@@ -314,13 +371,6 @@
 </td>
 <td>build</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16338">gemspec stub EOF separators throw warning</a>
-</td>
-</tr>
-<tr class=" lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/16337">16337</a>
-</td>
-<td>lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16337">kernel_gem.rb:68 - ThreadError</a>
 </td>
 </tr>
 <tr class=" backport core ">
@@ -1175,13 +1225,6 @@
 </td>
 <td>win core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/14570">Wired behavior of File.expand_path() on Windows</a>
-</td>
-</tr>
-<tr class=" lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/14563">14563</a>
-</td>
-<td>lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/14563">irb in irb raises a FATAL error</a>
 </td>
 </tr>
 <tr class=" core notbug ">
