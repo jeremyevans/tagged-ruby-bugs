@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>433 Tagged Open Ruby Bugs as of 2020-02-23 04:08:32 +0900</title>
+<title>432 Tagged Open Ruby Bugs as of 2020-02-29 09:34:49 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -9,12 +9,12 @@
 <input type="submit" value="lib" />
 <input type="submit" value="ext" />
 <input type="submit" value="patch" />
-<input type="submit" value="maybenotbug" />
 <input type="submit" value="build" />
 <input type="submit" value="notbug" />
+<input type="submit" value="maybenotbug" />
 <input type="submit" value="encoding" />
-<input type="submit" value="thread" />
 <input type="submit" value="test" />
+<input type="submit" value="thread" />
 <input type="submit" value="cygwin" />
 <input type="submit" value="tracepoint" />
 <input type="submit" value="perf" />
@@ -40,9 +40,9 @@
 <input type="submit" value="enc" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">433</span> matched)
+(<span id="matched">432</span> matched)
 <table>
-<caption>433 Tagged Open Ruby Bugs as of 2020-02-23 04:08:32 +0900</caption>
+<caption>432 Tagged Open Ruby Bugs as of 2020-02-29 09:34:49 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -51,18 +51,39 @@
 </tr>
 </thead>
 <tbody>
-<tr class=" lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/16647">16647</a>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/16660">16660</a>
 </td>
-<td>lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16647">Redefining $/ causes irb to misbehave</a>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16660">Struct#deconstruct_keys inconsistent behavior </a>
 </td>
 </tr>
 <tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/16642">16642</a>
+<td><a href="https://bugs.ruby-lang.org/issues/16658">16658</a>
 </td>
 <td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16642">Splatted empty hash literal produces frozen hash object</a>
+<td><a href="https://bugs.ruby-lang.org/issues/16658">`method__cache__clear` DTrace hook was dropped without replacement</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/16654">16654</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16654">Segfault in rb_str_hash</a>
+</td>
+</tr>
+<tr class=" lib ">
+<td><a href="https://bugs.ruby-lang.org/issues/16653">16653</a>
+</td>
+<td>lib</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16653">Weird behaviour of Resolv module</a>
+</td>
+</tr>
+<tr class=" win build ">
+<td><a href="https://bugs.ruby-lang.org/issues/16651">16651</a>
+</td>
+<td>win build</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16651">Extensions Do Not Compile on Mingw64</a>
 </td>
 </tr>
 <tr class=" backport ">
@@ -142,13 +163,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16522">Ruby 2.7 logs deprecation warning when Warning[:deprecated] is set to false.  </a>
 </td>
 </tr>
-<tr class=" build ">
-<td><a href="https://bugs.ruby-lang.org/issues/16521">16521</a>
-</td>
-<td>build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16521">ST_DEBUG not working</a>
-</td>
-</tr>
 <tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/16518">16518</a>
 </td>
@@ -196,13 +210,6 @@
 </td>
 <td>build lib</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16490">mkmf.rbの非互換な変更</a>
-</td>
-</tr>
-<tr class=" ext maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/16476">16476</a>
-</td>
-<td>ext maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16476">Socket.getaddrinfo cannot be interrupted by Timeout.timeout</a>
 </td>
 </tr>
 <tr class=" build notbug ">
@@ -1570,13 +1577,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/13708">catastrophic slow compilation of defined-defined sequence has no chance to ^C</a>
 </td>
 </tr>
-<tr class=" patch ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/13675">13675</a>
-</td>
-<td>patch ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/13675">Should Zlib::GzipReader#ungetc accept nil?</a>
-</td>
-</tr>
 <tr class=" regexp notbug ">
 <td><a href="https://bugs.ruby-lang.org/issues/13671">13671</a>
 </td>
@@ -2037,13 +2037,6 @@
 </td>
 <td>build</td>
 <td><a href="https://bugs.ruby-lang.org/issues/12179">Build failure due to VPATH expansion</a>
-</td>
-</tr>
-<tr class=" core maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/12159">12159</a>
-</td>
-<td>core maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/12159">Thread::Backtrace::Location#path returns absolute path for files loaded by require_relative</a>
 </td>
 </tr>
 <tr class=" lib notbug ">
