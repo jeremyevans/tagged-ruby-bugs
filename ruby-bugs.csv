@@ -146,7 +146,6 @@
 12052,encoding,String#encode with xml option returns wrong result
 12055,patch lib,`NET::HTTPResponse` is not deflating responses with custom `Content-Range` header
 12136,lib notbug,OpenStruct.new(format: :bar).send :format # =&gt; too few arguments
-12159,core maybenotbug,Thread::Backtrace::Location#path returns absolute path for files loaded by require_relative
 12179,build,Build failure due to VPATH expansion
 12235,lib maybenotbug,URI.encode issue with square brackets
 12251,lib notbug,DelegateClass(OpenStruct) behavior in 2.3.0 different from 2.2
@@ -213,7 +212,6 @@
 13663,core notbug,`String#upto` doesn&#39;t work as expected
 13670,arm core,[BUG] Bus Error at 0xefce7b (armv7l) (ruby 2.3.4p301)
 13671,regexp notbug,Regexp with lookbehind and case-insensitivity raises RegexpError only on strings with certain characters
-13675,patch ext,Should Zlib::GzipReader#ungetc accept nil?
 13708,core,catastrophic slow compilation of defined-defined sequence has no chance to ^C
 13754,ext,bigdecimal with lower precision that Float
 13758,core,TestRubyOptions#test_segv_setproctitle segfaults on AARCH64
@@ -409,7 +407,6 @@
 16470,core,Issue with nanoseconds in Time#inspect
 16474,core cygwin,[ASYNC BUG]
 16475,build notbug,[Installation process - compiling ruby 2.7.0 from source} &quot;make install&quot; step oddity for ruby 2.7.0 on linux minut (debian base)
-16476,ext maybenotbug,Socket.getaddrinfo cannot be interrupted by Timeout.timeout
 16490,build lib,mkmf.rbの非互換な変更
 16492,test,TestBugReporter#test_bug_reporter_add test failures on s390x
 16493,thread arm,TestThreadQueue#test_thr_kill is flaky on AArch64
@@ -417,7 +414,6 @@
 16500,core,Argument is added to both splat and last &amp;block argument
 16504,core,"`foo(*args, &amp;args.pop)` should pass all elements of args"
 16518,core,Should we rationalize Rational&#39;s numerator automatically?
-16521,build,ST_DEBUG not working
 16522,core,Ruby 2.7 logs deprecation warning when Warning[:deprecated] is set to false.  
 16556,notbug,Showing rails aborted message while running rails s
 16558,build,What is special about GB2312
@@ -429,5 +425,8 @@
 16622,win build,mswin build was failed with the current master branch #3121
 16623,win enc,Windows ENV encoding
 16641,backport,Backport request: MJIT crashes on a certain flow of branches
-16642,core,Splatted empty hash literal produces frozen hash object
-16647,lib,Redefining $/ causes irb to misbehave
+16651,win build,Extensions Do Not Compile on Mingw64
+16653,lib,Weird behaviour of Resolv module
+16654,core,Segfault in rb_str_hash
+16658,core,`method__cache__clear` DTrace hook was dropped without replacement
+16660,core,Struct#deconstruct_keys inconsistent behavior 
