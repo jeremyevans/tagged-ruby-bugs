@@ -368,7 +368,6 @@
 16044,ruby3,Float::ROUNDS (FLT_ROUNDS) should not be a constant.
 16110,win core thread,Doesn&#39;t detect deadlock on Ruby 2.4 and 2.5 on Windows
 16116,win ext,"ruby2.6.3(x86/x64)  use win32ole could not new Object, return 0x80070057"
-16138,backport,Backport Struct.new empty option hash fix to 2.5 and 2.6
 16143,patch core,BOM UTF-8 is not removed after rewind
 16145,regexp,"regexp match error if mixing /i, character classes, and utf8"
 16158,regexp notbug,&quot;st&quot; Character Sequence In Regex Look-Behind Causes Illegal Pattern Error When Combined With POSIX Bracket Expressions And Case Insensitivity Flag
@@ -424,9 +423,10 @@
 16620,notbug,[BUG] Segmentation fault at 0x0000000103bae000
 16622,win build,mswin build was failed with the current master branch #3121
 16623,win enc,Windows ENV encoding
-16641,backport,Backport request: MJIT crashes on a certain flow of branches
 16651,win build,Extensions Do Not Compile on Mingw64
 16653,lib,Weird behaviour of Resolv module
 16654,core,Segfault in rb_str_hash
 16658,core,`method__cache__clear` DTrace hook was dropped without replacement
 16660,core,Struct#deconstruct_keys inconsistent behavior 
+16668,build,Syntax error in tool/vcs.rb
+16669,core,Rails Action Text unit tests fail since b9007b6c548f91e88fd3f2ffa23de740431fa969
