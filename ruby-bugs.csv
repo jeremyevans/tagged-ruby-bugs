@@ -396,7 +396,6 @@
 16398,ext,Active Support unit test error since caac5f777ae288b5982708b8690e712e1cae0cf6
 16410,test,Spec failure - &quot;File.utime allows Time instances in the far future to set mtime and atime&quot;
 16416,build,Suspicious include directories.
-16423,core notbug,Ruby Crash
 16439,lib,Resolv::DNS: timeouts if multiple IPv6 name servers are given and address contains leading zero
 16448,core,regex global variables are working differently depending on scope
 16455,patch fiber,"coroutine ucontext uses deprecated POSIX getcontext/swapcontext/makecontext, absent in musl and uclibc"
@@ -404,7 +403,6 @@
 16465,patch core,False keyword warning against Struct#initialize
 16466,patch core,`*args -&gt; *args` delegation should be warned when the last hash has a `ruby2_keywords` flag
 16470,core,Issue with nanoseconds in Time#inspect
-16474,core cygwin,[ASYNC BUG]
 16475,build notbug,[Installation process - compiling ruby 2.7.0 from source} &quot;make install&quot; step oddity for ruby 2.7.0 on linux minut (debian base)
 16490,build lib,mkmf.rbの非互換な変更
 16492,test,TestBugReporter#test_bug_reporter_add test failures on s390x
@@ -414,7 +412,6 @@
 16504,core,"`foo(*args, &amp;args.pop)` should pass all elements of args"
 16518,core,Should we rationalize Rational&#39;s numerator automatically?
 16522,core,Ruby 2.7 logs deprecation warning when Warning[:deprecated] is set to false.  
-16556,notbug,Showing rails aborted message while running rails s
 16558,build,What is special about GB2312
 16559,patch lib,Net::HTTP#request does not properly close TCP socket if #started? is false
 16608,ext,ConditionVariable#wait should return false when timeout exceeded
