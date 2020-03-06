@@ -81,7 +81,6 @@
 9955,win build,"issue building dll on mingw, library not found"
 10009,thread perf,IO operation is 10x slower in multi-thread environment
 10128,win core,"Quoting problem for arguments of Kernel.system, Kernel.exec on Windows"
-10167,patch lib,Prime#include?(mod) hangs up
 10203,ext,TCPServer.new has strange behaviour when EADDRINUSE without specifying hostname
 10213,build notbug,bundled gems ignored by make install
 10248,core,Possible missing test or bug for Module#include and Module#prepend
@@ -427,3 +426,5 @@
 16660,core,Struct#deconstruct_keys inconsistent behavior 
 16668,build,Syntax error in tool/vcs.rb
 16669,core,Rails Action Text unit tests fail since b9007b6c548f91e88fd3f2ffa23de740431fa969
+16672,lib,net/http leaves original content-length header intact after inflating response
+16674,build,Build issue of FreeBSD 12
