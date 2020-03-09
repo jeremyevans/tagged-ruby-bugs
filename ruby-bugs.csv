@@ -335,7 +335,6 @@
 15589,perf,`Numeric#zero?` is much slower than `== 0`
 15598,core autoload,Deadlock on mutual reference of autoloaded constants
 15599,core autoload,Mixing autoload and require causes deadlock and incomplete definition.
-15608,patch core,What should be the correct output for Method#inspect with singleton methods?
 15621,win encoding,"system({}, ...) breaks nonascii ENV[&quot;PATH&quot;] on Windows"
 15634,tracepoint,TracePoint seems to be skipping some methods.
 15644,patch ext,ThreadsWait problems with Thread#report_on_exception
@@ -360,7 +359,6 @@
 15993,win encoding,&#39;require&#39; doesn&#39;t work if there are Cyrillic chars in the path to Ruby dir
 16004,core maybenotbug,Kernel#lambda captured with Kernel#method doesn&#39;t create lambdas
 16031,core ext maybenotbug,Inconsistency between Date::strptime and Time::strptime at the end of a month
-16044,ruby3,Float::ROUNDS (FLT_ROUNDS) should not be a constant.
 16110,win core thread,Doesn&#39;t detect deadlock on Ruby 2.4 and 2.5 on Windows
 16116,win ext,"ruby2.6.3(x86/x64)  use win32ole could not new Object, return 0x80070057"
 16143,patch core,BOM UTF-8 is not removed after rewind
@@ -426,3 +424,4 @@
 16677,core,Negative integer powered (**) to a float number results in a complex 
 16679,test,Test of Ruby fails under multiple OS user userland installations
 16680,core,[Breaking Change] Ruby 2.7 not support  symlinks folder in $LOAD_PATH to work with autoload.
+16682,core,Ruby 2.7.0p0 crash on exit if there is an active RUBY_INTERNAL_EVENT_GC_EXIT tracepoint
