@@ -50,7 +50,6 @@
 9121,patch lib notbug,[PATCH] Remove rbtree implementation of SortedSet due to performance regression
 9189,win encoding,Build failure on Windows in case of nonascii TEMP environment.
 9208,patch win core,Win32 ANSI color no longer works since revision 43331
-9242,patch lib,Rdoc detection of aliases
 9245,win encoding,Kernel::system gives wrong output for utf-8 characters on windows under utf-8 console
 9246,ext,NoMemoryError is occurred by simple addition of BigDecimal
 9274,win core,A lot of SystemStackError on Windows 8.1 with MSVC 2013
@@ -121,7 +120,6 @@
 11213,core maybenotbug,defined?(super) ignores respond_to_missing?
 11230,core,Should rb_struct_s_members() be public API?
 11269,core,ruby_init_setproctitle() should be called before require_libraries()
-11304,core maybenotbug,[PATCH] Kernel.global_variables should observe $~.
 11335,lib,`ruby -r debug` catchpoint problem
 11410,win ext encoding,Win32 Registry enumeration performs unnecessary string re-encoding which cause UndefinedConversionError exceptions
 11438,win thread,"native_thread_init_stack() get machine.stack_start unequal to thread&#39;s stack start address, x86 win32"
@@ -235,7 +233,6 @@
 14094,lib,IRB does not obey frame-level visibility modifiers
 14096,ext,Psych allows invalid single quote escape character
 14103,regexp,Regexp absense operator has no chance to ^C
-14119,patch lib,IPAddr#include? does not seem to support the subnet mask
 14137,win regexp,Windows / MinGW - Regexp - Character Properties - General Category
 14267,core notbug,Lazy proc allocation introduced in #14045 creates regression
 14271,test,Random TestIO_Console#test_oflush failure
@@ -307,7 +304,6 @@
 15178,patch build,Wrong paramaters passing to pthread_setname_np(3)
 15204,patch win ,globbing should be prevented when wildcard is surrounded by double quotes in the ruby&#39;s command line
 15209,test,r64925 order-only-prerequisites - make targets - breaking change
-15244,patch core,Method #extname return empty string if filename is dot (&#39;.&#39;)
 15247,win test,"Windows - TEMP folder, non 8.3 &amp; drive, fails &amp; errors in test-all (ruby &amp; rdoc)"
 15263,patch core,[PATCH] vm_trace.c (postponed_job_register): only hit main thread
 15276,lib notbug,URI.join behaviour is unintuitive
@@ -398,7 +394,6 @@
 16439,lib,Resolv::DNS: timeouts if multiple IPv6 name servers are given and address contains leading zero
 16448,core,regex global variables are working differently depending on scope
 16455,patch fiber,"coroutine ucontext uses deprecated POSIX getcontext/swapcontext/makecontext, absent in musl and uclibc"
-16462,core notbug,Ruby 2.7 autoload not working with $RUBYLIB (maybe circular dependency error)
 16465,patch core,False keyword warning against Struct#initialize
 16466,patch core,`*args -&gt; *args` delegation should be warned when the last hash has a `ruby2_keywords` flag
 16470,core,Issue with nanoseconds in Time#inspect
@@ -428,3 +423,6 @@
 16669,core,Rails Action Text unit tests fail since b9007b6c548f91e88fd3f2ffa23de740431fa969
 16672,lib,net/http leaves original content-length header intact after inflating response
 16674,build,Build issue of FreeBSD 12
+16677,core,Negative integer powered (**) to a float number results in a complex 
+16679,test,Test of Ruby fails under multiple OS user userland installations
+16680,core,[Breaking Change] Ruby 2.7 not support  symlinks folder in $LOAD_PATH to work with autoload.
