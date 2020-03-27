@@ -149,8 +149,6 @@
 12258,lib,RDoc bug when handling comments in C code examples
 12261,win maybenotbug,Windows: File.dirname with 2+ / or 2+ \\ will return // or \\\\
 12280,win core,"IO.copy_stream(IO, IO) fails with &quot;pread() not implemented&quot;"
-12368,core notbug,default encoding of Integer#chr
-12392,build,configure --with-sitedir=no --with-sitearchdir=no --with-vendordir=no --with-vendorarchdir=no が機能しない
 12416,core maybenotbug,struct rb_id_table lacks mark function
 12436,win core,newline argument of File.open seems not respected on Windows
 12440,cygwin core,make test-all is not working on cygwin
@@ -165,25 +163,19 @@
 12538,lib,hostsを書き換えてwebrickで書いたプロキシ―に繋いでいるとrubyが落ちる
 12540,core,test failures when SHARABLE_MIDDLE_SUBSTRING=1
 12547,core,"Remove ONIG_UNICODE_VERSION_... in enc/unicode/case-folding.rb, casefold.h"
-12548,core maybenotbug,Rounding modes inconsistency between round versus sprintf
 12551,win core,Exception accessing file with long path on windows
-12564,core,Sometimes test_settracefunc.rb segfaults in exec_hooks_body (vm_trace.c)
 12582,openssl,OpenSSL Authenticated Encryption should check for tag length
 12590,cygwin build,Error compiling parse.c on cygwin
 12594,core notbug,The class does not inherit from a module the modules that were included after the inclusion
 12597,encoding test,Produce test failure if some tests cannot be executed due to lacking data
-12599,patch perf,"For CLang, increase inline-threshold to get 7%-10% speedup of optcarrot"
 12666,ext,Fatal error: glibc detected an invalid stdio handle
-12671,core maybenotbug,"Hash#to_proc result is not a lambda, but enforces arity"
 12689,core,Thread isolation of $~ and $_
-12706,core maybenotbug,Hash#each yields inconsistent number of args
 12708,lib,Net::IMAP : Mail To address is not correct when uid_fetch is called.
 12725,cygwin build,Trying to use ./miniruby before it exists
 12780,ext,BigDecimal#round returns different types depending on argument
 12834,core maybenotbug,`prepend` getting prepended even if it already exists in the ancestors chain
 12838,lib,Duplication of UDP packets for DNS responses causing &quot;no address&quot; results for valid hostnames
 12852,lib notbug,URI.parse can&#39;t handle non-ascii URIs
-12919,lib notbug,Net::FTP does not have a default open_timeout
 12987,ext win notbug,Win32 API.rb can not call function without argument.
 13000,lib notbug,Implement Set#include? with Hash#include?
 13094,ext,Zlib::GzipReader eof?がfalseなのにgetsでnilが返ってくる
@@ -220,7 +212,6 @@
 13918,win build,Appveyor failure - svn 59961 Use https instead of ftp for libffi downloading
 13930,wip-patch core,Exception is caught in rescue above ensure
 13932,core,[PATCH] Extension libraries take precedence in checks of later Kernel.#require calls for features without file extensions
-13962,build,Change http://unicode.org to https
 13999,cygwin ext,Cygwin 環境で ripper_state_lex.rb がコアダンプする
 14004,lib,ri confused by method aliases and by Queue versus Thread::Queue
 14012,refine,NameError is raised when use class variables in Refinements
@@ -393,7 +384,6 @@
 16448,core,regex global variables are working differently depending on scope
 16455,patch fiber,"coroutine ucontext uses deprecated POSIX getcontext/swapcontext/makecontext, absent in musl and uclibc"
 16465,patch core,False keyword warning against Struct#initialize
-16466,patch core,`*args -&gt; *args` delegation should be warned when the last hash has a `ruby2_keywords` flag
 16470,core,Issue with nanoseconds in Time#inspect
 16475,build notbug,[Installation process - compiling ruby 2.7.0 from source} &quot;make install&quot; step oddity for ruby 2.7.0 on linux minut (debian base)
 16490,build lib,mkmf.rbの非互換な変更
@@ -418,10 +408,15 @@
 16658,core,`method__cache__clear` DTrace hook was dropped without replacement
 16660,core,Struct#deconstruct_keys inconsistent behavior 
 16668,build,Syntax error in tool/vcs.rb
-16669,core,Rails Action Text unit tests fail since b9007b6c548f91e88fd3f2ffa23de740431fa969
 16672,lib,net/http leaves original content-length header intact after inflating response
 16674,build,Build issue of FreeBSD 12
-16677,core,Negative integer powered (**) to a float number results in a complex 
 16679,test,Test of Ruby fails under multiple OS user userland installations
 16680,core,[Breaking Change] Ruby 2.7 not support  symlinks folder in $LOAD_PATH to work with autoload.
 16682,core,Ruby 2.7.0p0 crash on exit if there is an active RUBY_INTERNAL_EVENT_GC_EXIT tracepoint
+16685,lib,IRB auto indent does not work for single-line method definitions
+16694,core,JIT vs hardened GCC with PCH
+16695,core,Stack consistency error when using the return value
+16696,openssl,&#39;OpenSSL 1.1.1e  17 Mar 2020&#39; causes failure in Ruby OpenSSL stdlib
+16697,core maybenotbug,Hash.ruby2_keywords_hash?(value) should support any object
+16736,core patch,Prepending blank module breaks super call in aliased method
+16737,core patch,File::BINARY doesn&#39;t work
