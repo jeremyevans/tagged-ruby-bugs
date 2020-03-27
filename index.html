@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>427 Tagged Open Ruby Bugs as of 2020-03-10 01:36:33 +0900</title>
+<title>422 Tagged Open Ruby Bugs as of 2020-03-28 02:33:43 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -17,21 +17,21 @@
 <input type="submit" value="thread" />
 <input type="submit" value="cygwin" />
 <input type="submit" value="tracepoint" />
-<input type="submit" value="perf" />
 <input type="submit" value="refine" />
+<input type="submit" value="perf" />
 <input type="submit" value="regexp" />
 <input type="submit" value="arm" />
 <input type="submit" value="aix" />
+<input type="submit" value="openssl" />
 <input type="submit" value="solaris" />
 <input type="submit" value="fiber" />
-<input type="submit" value="backport" />
-<input type="submit" value="autoload" />
-<input type="submit" value="openssl" />
 <input type="submit" value="unfixable" />
-<input type="submit" value="haiku" />
-<input type="submit" value="wip-patch" />
-<input type="submit" value="ruby3" />
+<input type="submit" value="autoload" />
+<input type="submit" value="backport" />
 <input type="submit" value="linux" />
+<input type="submit" value="haiku" />
+<input type="submit" value="ruby3" />
+<input type="submit" value="wip-patch" />
 <input type="submit" value="parser" />
 <input type="submit" value="doc" />
 <input type="submit" value="mips" />
@@ -40,9 +40,9 @@
 <input type="submit" value="enc" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">427</span> matched)
+(<span id="matched">422</span> matched)
 <table>
-<caption>427 Tagged Open Ruby Bugs as of 2020-03-10 01:36:33 +0900</caption>
+<caption>422 Tagged Open Ruby Bugs as of 2020-03-28 02:33:43 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -51,6 +51,55 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" core patch ">
+<td><a href="https://bugs.ruby-lang.org/issues/16737">16737</a>
+</td>
+<td>core patch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16737">File::BINARY doesn&#39;t work</a>
+</td>
+</tr>
+<tr class=" core patch ">
+<td><a href="https://bugs.ruby-lang.org/issues/16736">16736</a>
+</td>
+<td>core patch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16736">Prepending blank module breaks super call in aliased method</a>
+</td>
+</tr>
+<tr class=" core maybenotbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/16697">16697</a>
+</td>
+<td>core maybenotbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16697">Hash.ruby2_keywords_hash?(value) should support any object</a>
+</td>
+</tr>
+<tr class=" openssl ">
+<td><a href="https://bugs.ruby-lang.org/issues/16696">16696</a>
+</td>
+<td>openssl</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16696">&#39;OpenSSL 1.1.1e  17 Mar 2020&#39; causes failure in Ruby OpenSSL stdlib</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/16695">16695</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16695">Stack consistency error when using the return value</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/16694">16694</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16694">JIT vs hardened GCC with PCH</a>
+</td>
+</tr>
+<tr class=" lib ">
+<td><a href="https://bugs.ruby-lang.org/issues/16685">16685</a>
+</td>
+<td>lib</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16685">IRB auto indent does not work for single-line method definitions</a>
+</td>
+</tr>
 <tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/16682">16682</a>
 </td>
@@ -72,13 +121,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16679">Test of Ruby fails under multiple OS user userland installations</a>
 </td>
 </tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/16677">16677</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16677">Negative integer powered (**) to a float number results in a complex </a>
-</td>
-</tr>
 <tr class=" build ">
 <td><a href="https://bugs.ruby-lang.org/issues/16674">16674</a>
 </td>
@@ -91,13 +133,6 @@
 </td>
 <td>lib</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16672">net/http leaves original content-length header intact after inflating response</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/16669">16669</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16669">Rails Action Text unit tests fail since b9007b6c548f91e88fd3f2ffa23de740431fa969</a>
 </td>
 </tr>
 <tr class=" build ">
@@ -266,13 +301,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16470">Issue with nanoseconds in Time#inspect</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/16466">16466</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16466">`*args -&gt; *args` delegation should be warned when the last hash has a `ruby2_keywords` flag</a>
 </td>
 </tr>
 <tr class=" patch core ">
@@ -1479,13 +1507,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/13999">Cygwin 環境で ripper_state_lex.rb がコアダンプする</a>
 </td>
 </tr>
-<tr class=" build ">
-<td><a href="https://bugs.ruby-lang.org/issues/13962">13962</a>
-</td>
-<td>build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/13962">Change http://unicode.org to https</a>
-</td>
-</tr>
 <tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/13932">13932</a>
 </td>
@@ -1739,13 +1760,6 @@
 </td>
 </tr>
 <tr class=" lib notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/12919">12919</a>
-</td>
-<td>lib notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/12919">Net::FTP does not have a default open_timeout</a>
-</td>
-</tr>
-<tr class=" lib notbug ">
 <td><a href="https://bugs.ruby-lang.org/issues/12852">12852</a>
 </td>
 <td>lib notbug</td>
@@ -1787,13 +1801,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/12708">Net::IMAP : Mail To address is not correct when uid_fetch is called.</a>
 </td>
 </tr>
-<tr class=" core maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/12706">12706</a>
-</td>
-<td>core maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/12706">Hash#each yields inconsistent number of args</a>
-</td>
-</tr>
 <tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/12689">12689</a>
 </td>
@@ -1801,25 +1808,11 @@
 <td><a href="https://bugs.ruby-lang.org/issues/12689">Thread isolation of $~ and $_</a>
 </td>
 </tr>
-<tr class=" core maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/12671">12671</a>
-</td>
-<td>core maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/12671">Hash#to_proc result is not a lambda, but enforces arity</a>
-</td>
-</tr>
 <tr class=" ext ">
 <td><a href="https://bugs.ruby-lang.org/issues/12666">12666</a>
 </td>
 <td>ext</td>
 <td><a href="https://bugs.ruby-lang.org/issues/12666">Fatal error: glibc detected an invalid stdio handle</a>
-</td>
-</tr>
-<tr class=" patch perf ">
-<td><a href="https://bugs.ruby-lang.org/issues/12599">12599</a>
-</td>
-<td>patch perf</td>
-<td><a href="https://bugs.ruby-lang.org/issues/12599">For CLang, increase inline-threshold to get 7%-10% speedup of optcarrot</a>
 </td>
 </tr>
 <tr class=" encoding test ">
@@ -1850,25 +1843,11 @@
 <td><a href="https://bugs.ruby-lang.org/issues/12582">OpenSSL Authenticated Encryption should check for tag length</a>
 </td>
 </tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/12564">12564</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/12564">Sometimes test_settracefunc.rb segfaults in exec_hooks_body (vm_trace.c)</a>
-</td>
-</tr>
 <tr class=" win core ">
 <td><a href="https://bugs.ruby-lang.org/issues/12551">12551</a>
 </td>
 <td>win core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/12551">Exception accessing file with long path on windows</a>
-</td>
-</tr>
-<tr class=" core maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/12548">12548</a>
-</td>
-<td>core maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/12548">Rounding modes inconsistency between round versus sprintf</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -1967,20 +1946,6 @@
 </td>
 <td>core maybenotbug</td>
 <td><a href="https://bugs.ruby-lang.org/issues/12416">struct rb_id_table lacks mark function</a>
-</td>
-</tr>
-<tr class=" build ">
-<td><a href="https://bugs.ruby-lang.org/issues/12392">12392</a>
-</td>
-<td>build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/12392">configure --with-sitedir=no --with-sitearchdir=no --with-vendordir=no --with-vendorarchdir=no が機能しない</a>
-</td>
-</tr>
-<tr class=" core notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/12368">12368</a>
-</td>
-<td>core notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/12368">default encoding of Integer#chr</a>
 </td>
 </tr>
 <tr class=" win core ">
