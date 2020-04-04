@@ -245,7 +245,7 @@
 14474,test,skip &quot;TestException#test_thread_signal_location&quot; as known bug
 14479,tracepoint,Exceptions raised from a :call tracepoint can sometimes be &quot;rescued&quot; inside the method
 14480,arm build,miniruby crashing when compiled with -O2 or -O1 on aarch64
-14541,core notbug,"Class variables have broken semantics, let&#39;s fix them"
+14541,patch core notbug,"Class variables have broken semantics, let&#39;s fix them"
 14543,build,`make commit` show error of `common-srcs`
 14558,core notbug,&quot;Backtrace in reverse order&quot; always upsets my brain!
 14570,win core,Wired behavior of File.expand_path() on Windows
@@ -359,8 +359,7 @@
 16179,aix notbug,ruby binaries generate &quot;already initialized constant&quot; warnings on AIX 6.1
 16185,aix notbug,basictest failure on AIX 6.1 for 64bit build
 16186,patch core,Calling Net::HTTP from within an #inspect implementation hang when invoked from p
-16195,other,Invalid certificate on https://ruby-lang.org/
-16243,core perf ,case/when is slower than if on MRI
+16243,core perf,case/when is slower than if on MRI
 16265,win thread,"Test (spec) failure using current MSYS2 tools, related to -fstack-protector and possibly D_FORTIFY_SOURCE=2"
 16266,lib notbug,Additional empty folders created in lib/ruby/gems/2.7.0/gems by make install
 16277,win ext maybenotbug,UNIXServer#listen fails with Errno::EADDRINUSE error under Windows 10 / WSL Ubuntu 18.04
@@ -395,11 +394,10 @@
 16518,core,Should we rationalize Rational&#39;s numerator automatically?
 16522,core,Ruby 2.7 logs deprecation warning when Warning[:deprecated] is set to false.  
 16558,build,What is special about GB2312
-16559,patch lib,Net::HTTP#request does not properly close TCP socket if #started? is false
+16559,patch lib,"Net::HTTP#request injects &quot;Connection: close&quot; header if #started? is false, wasting HTTP server resources"
 16608,ext,ConditionVariable#wait should return false when timeout exceeded
 16612,core,Enumerator::ArithmeticSequence#last with float range produces incorrect value
 16618,core,Ensure called twice when raise in ensure
-16620,notbug,[BUG] Segmentation fault at 0x0000000103bae000
 16622,win build,mswin build was failed with the current master branch #3121
 16623,win enc,Windows ENV encoding
 16651,win build,Extensions Do Not Compile on Mingw64
@@ -412,11 +410,12 @@
 16674,build,Build issue of FreeBSD 12
 16679,test,Test of Ruby fails under multiple OS user userland installations
 16680,core,[Breaking Change] Ruby 2.7 not support  symlinks folder in $LOAD_PATH to work with autoload.
-16682,core,Ruby 2.7.0p0 crash on exit if there is an active RUBY_INTERNAL_EVENT_GC_EXIT tracepoint
 16685,lib,IRB auto indent does not work for single-line method definitions
 16694,core,JIT vs hardened GCC with PCH
 16695,core,Stack consistency error when using the return value
 16696,openssl,&#39;OpenSSL 1.1.1e  17 Mar 2020&#39; causes failure in Ruby OpenSSL stdlib
 16697,core maybenotbug,Hash.ruby2_keywords_hash?(value) should support any object
 16736,core patch,Prepending blank module breaks super call in aliased method
-16737,core patch,File::BINARY doesn&#39;t work
+16740,core,Deprecating and removing the broken Process.clock_getres
+16743,thread maybenotbug, problem with multi threading [BUG] Segmentation fault 
+16753,patch lib,"ruby -run -e httpd . -p 8080 ,  not support CJK directorys ."
