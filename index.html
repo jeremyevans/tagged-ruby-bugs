@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>422 Tagged Open Ruby Bugs as of 2020-03-28 02:33:43 +0900</title>
+<title>421 Tagged Open Ruby Bugs as of 2020-04-04 12:48:44 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -13,36 +13,35 @@
 <input type="submit" value="maybenotbug" />
 <input type="submit" value="notbug" />
 <input type="submit" value="encoding" />
-<input type="submit" value="test" />
 <input type="submit" value="thread" />
+<input type="submit" value="test" />
 <input type="submit" value="cygwin" />
 <input type="submit" value="tracepoint" />
 <input type="submit" value="refine" />
-<input type="submit" value="perf" />
 <input type="submit" value="regexp" />
+<input type="submit" value="perf" />
 <input type="submit" value="arm" />
 <input type="submit" value="aix" />
 <input type="submit" value="openssl" />
 <input type="submit" value="solaris" />
 <input type="submit" value="fiber" />
-<input type="submit" value="unfixable" />
-<input type="submit" value="autoload" />
 <input type="submit" value="backport" />
-<input type="submit" value="linux" />
+<input type="submit" value="autoload" />
+<input type="submit" value="unfixable" />
+<input type="submit" value="wip-patch" />
 <input type="submit" value="haiku" />
 <input type="submit" value="ruby3" />
-<input type="submit" value="wip-patch" />
+<input type="submit" value="linux" />
 <input type="submit" value="parser" />
-<input type="submit" value="doc" />
-<input type="submit" value="mips" />
-<input type="submit" value="other" />
 <input type="submit" value="uriencoding" />
+<input type="submit" value="mips" />
+<input type="submit" value="doc" />
 <input type="submit" value="enc" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">422</span> matched)
+(<span id="matched">421</span> matched)
 <table>
-<caption>422 Tagged Open Ruby Bugs as of 2020-03-28 02:33:43 +0900</caption>
+<caption>421 Tagged Open Ruby Bugs as of 2020-04-04 12:48:44 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -51,11 +50,25 @@
 </tr>
 </thead>
 <tbody>
-<tr class=" core patch ">
-<td><a href="https://bugs.ruby-lang.org/issues/16737">16737</a>
+<tr class=" patch lib ">
+<td><a href="https://bugs.ruby-lang.org/issues/16753">16753</a>
 </td>
-<td>core patch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16737">File::BINARY doesn&#39;t work</a>
+<td>patch lib</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16753">ruby -run -e httpd . -p 8080 ,  not support CJK directorys .</a>
+</td>
+</tr>
+<tr class=" thread maybenotbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/16743">16743</a>
+</td>
+<td>thread maybenotbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16743"> problem with multi threading [BUG] Segmentation fault </a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/16740">16740</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16740">Deprecating and removing the broken Process.clock_getres</a>
 </td>
 </tr>
 <tr class=" core patch ">
@@ -98,13 +111,6 @@
 </td>
 <td>lib</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16685">IRB auto indent does not work for single-line method definitions</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/16682">16682</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16682">Ruby 2.7.0p0 crash on exit if there is an active RUBY_INTERNAL_EVENT_GC_EXIT tracepoint</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -191,13 +197,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16622">mswin build was failed with the current master branch #3121</a>
 </td>
 </tr>
-<tr class=" notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/16620">16620</a>
-</td>
-<td>notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16620">[BUG] Segmentation fault at 0x0000000103bae000</a>
-</td>
-</tr>
 <tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/16618">16618</a>
 </td>
@@ -223,7 +222,7 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16559">16559</a>
 </td>
 <td>patch lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16559">Net::HTTP#request does not properly close TCP socket if #started? is false</a>
+<td><a href="https://bugs.ruby-lang.org/issues/16559">Net::HTTP#request injects &quot;Connection: close&quot; header if #started? is false, wasting HTTP server resources</a>
 </td>
 </tr>
 <tr class=" build ">
@@ -464,18 +463,11 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16265">Test (spec) failure using current MSYS2 tools, related to -fstack-protector and possibly D_FORTIFY_SOURCE=2</a>
 </td>
 </tr>
-<tr class=" core perf  ">
+<tr class=" core perf ">
 <td><a href="https://bugs.ruby-lang.org/issues/16243">16243</a>
 </td>
-<td>core perf </td>
+<td>core perf</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16243">case/when is slower than if on MRI</a>
-</td>
-</tr>
-<tr class=" other ">
-<td><a href="https://bugs.ruby-lang.org/issues/16195">16195</a>
-</td>
-<td>other</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16195">Invalid certificate on https://ruby-lang.org/</a>
 </td>
 </tr>
 <tr class=" patch core ">
@@ -1269,10 +1261,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/14543">`make commit` show error of `common-srcs`</a>
 </td>
 </tr>
-<tr class=" core notbug ">
+<tr class=" patch core notbug ">
 <td><a href="https://bugs.ruby-lang.org/issues/14541">14541</a>
 </td>
-<td>core notbug</td>
+<td>patch core notbug</td>
 <td><a href="https://bugs.ruby-lang.org/issues/14541">Class variables have broken semantics, let&#39;s fix them</a>
 </td>
 </tr>
