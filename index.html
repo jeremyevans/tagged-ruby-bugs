@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>421 Tagged Open Ruby Bugs as of 2020-04-04 12:48:44 +0900</title>
+<title>425 Tagged Open Ruby Bugs as of 2020-04-11 09:31:38 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -13,14 +13,14 @@
 <input type="submit" value="maybenotbug" />
 <input type="submit" value="notbug" />
 <input type="submit" value="encoding" />
-<input type="submit" value="thread" />
 <input type="submit" value="test" />
+<input type="submit" value="thread" />
 <input type="submit" value="cygwin" />
 <input type="submit" value="tracepoint" />
 <input type="submit" value="refine" />
+<input type="submit" value="arm" />
 <input type="submit" value="regexp" />
 <input type="submit" value="perf" />
-<input type="submit" value="arm" />
 <input type="submit" value="aix" />
 <input type="submit" value="openssl" />
 <input type="submit" value="solaris" />
@@ -39,9 +39,9 @@
 <input type="submit" value="enc" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">421</span> matched)
+(<span id="matched">425</span> matched)
 <table>
-<caption>421 Tagged Open Ruby Bugs as of 2020-04-04 12:48:44 +0900</caption>
+<caption>425 Tagged Open Ruby Bugs as of 2020-04-11 09:31:38 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -50,25 +50,53 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/16776">16776</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16776">Regression in coverage library</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/16774">16774</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16774">Don&#39;t require sub-word atomics</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/16771">16771</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16771">Segmentation fault when inspecting a bound method</a>
+</td>
+</tr>
+<tr class=" notbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/16765">16765</a>
+</td>
+<td>notbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16765">Crash when use sass image-url in email layout</a>
+</td>
+</tr>
+<tr class=" build arm ">
+<td><a href="https://bugs.ruby-lang.org/issues/16762">16762</a>
+</td>
+<td>build arm</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16762">Ruby is not properly fortified on armv7hl</a>
+</td>
+</tr>
+<tr class=" win core ">
+<td><a href="https://bugs.ruby-lang.org/issues/16759">16759</a>
+</td>
+<td>win core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16759">MinGW 2.5 - SEGV bug with Binding#local_variable_set</a>
+</td>
+</tr>
 <tr class=" patch lib ">
 <td><a href="https://bugs.ruby-lang.org/issues/16753">16753</a>
 </td>
 <td>patch lib</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16753">ruby -run -e httpd . -p 8080 ,  not support CJK directorys .</a>
-</td>
-</tr>
-<tr class=" thread maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/16743">16743</a>
-</td>
-<td>thread maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16743"> problem with multi threading [BUG] Segmentation fault </a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/16740">16740</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16740">Deprecating and removing the broken Process.clock_getres</a>
 </td>
 </tr>
 <tr class=" core patch ">
@@ -139,6 +167,13 @@
 </td>
 <td>lib</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16672">net/http leaves original content-length header intact after inflating response</a>
+</td>
+</tr>
+<tr class="  ">
+<td><a href="https://bugs.ruby-lang.org/issues/16669">16669</a>
+</td>
+<td></td>
+<td><a href="https://bugs.ruby-lang.org/issues/16669">Rails Action Text unit tests fail since b9007b6c548f91e88fd3f2ffa23de740431fa969</a>
 </td>
 </tr>
 <tr class=" build ">
@@ -1259,13 +1294,6 @@
 </td>
 <td>build</td>
 <td><a href="https://bugs.ruby-lang.org/issues/14543">`make commit` show error of `common-srcs`</a>
-</td>
-</tr>
-<tr class=" patch core notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/14541">14541</a>
-</td>
-<td>patch core notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/14541">Class variables have broken semantics, let&#39;s fix them</a>
 </td>
 </tr>
 <tr class=" arm build ">
