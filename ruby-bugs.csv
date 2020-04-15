@@ -236,7 +236,6 @@
 14391,patch ext perf,Integer#digitsが遅い
 14400,core,IO#ungetc and IO#ungetbyte documentation is inconsistent with the behavior
 14409,build,インストール手順の改善
-14413,patch core,`-n` and `-p` flags break when stdout is closed
 14418,regexp perf,ruby 2.5 slow regexp execution
 14422,build,Ruby configuration options should not be reused for gem builds
 14434,patch core,IO#reopen fails after EPIPE
@@ -380,7 +379,6 @@
 16416,build,Suspicious include directories.
 16439,lib,Resolv::DNS: timeouts if multiple IPv6 name servers are given and address contains leading zero
 16448,core,regex global variables are working differently depending on scope
-16455,patch fiber,"coroutine ucontext uses deprecated POSIX getcontext/swapcontext/makecontext, absent in musl and uclibc"
 16465,patch core,False keyword warning against Struct#initialize
 16470,core,Issue with nanoseconds in Time#inspect
 16475,build notbug,[Installation process - compiling ruby 2.7.0 from source} &quot;make install&quot; step oddity for ruby 2.7.0 on linux minut (debian base)
@@ -403,7 +401,6 @@
 16653,lib,Weird behaviour of Resolv module
 16654,core,Segfault in rb_str_hash
 16658,core,`method__cache__clear` DTrace hook was dropped without replacement
-16660,core,Struct#deconstruct_keys inconsistent behavior 
 16668,build,Syntax error in tool/vcs.rb
 16669,"",Rails Action Text unit tests fail since b9007b6c548f91e88fd3f2ffa23de740431fa969
 16672,lib,net/http leaves original content-length header intact after inflating response
@@ -423,3 +420,8 @@
 16771,core,Segmentation fault when inspecting a bound method
 16774,core,Don&#39;t require sub-word atomics
 16776,core,Regression in coverage library
+16777,lib,IRB in Ruby 2.7 hangs on pasting long here document
+16780,lib,Net::FTP PUT command issuing Net::ReadTimeout too quickly
+16782,thread,`lock&#39;: deadlock; recursive locking (ThreadError) in 2.7.1
+16784,build,Compiling with --enable-load-relative and &quot;musl-gcc -static&quot; yields &quot;negative string size (or size too big) (ArgumentError)&quot; 
+16787,patch core,[patch] allow Dir.home to work for non-login procs when $HOME not set
