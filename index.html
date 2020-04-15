@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>425 Tagged Open Ruby Bugs as of 2020-04-11 09:31:38 +0900</title>
+<title>427 Tagged Open Ruby Bugs as of 2020-04-16 02:47:22 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -13,25 +13,25 @@
 <input type="submit" value="maybenotbug" />
 <input type="submit" value="notbug" />
 <input type="submit" value="encoding" />
-<input type="submit" value="test" />
 <input type="submit" value="thread" />
+<input type="submit" value="test" />
 <input type="submit" value="cygwin" />
 <input type="submit" value="tracepoint" />
 <input type="submit" value="refine" />
-<input type="submit" value="arm" />
 <input type="submit" value="regexp" />
 <input type="submit" value="perf" />
+<input type="submit" value="arm" />
 <input type="submit" value="aix" />
-<input type="submit" value="openssl" />
 <input type="submit" value="solaris" />
-<input type="submit" value="fiber" />
+<input type="submit" value="openssl" />
+<input type="submit" value="unfixable" />
 <input type="submit" value="backport" />
 <input type="submit" value="autoload" />
-<input type="submit" value="unfixable" />
-<input type="submit" value="wip-patch" />
+<input type="submit" value="fiber" />
 <input type="submit" value="haiku" />
-<input type="submit" value="ruby3" />
+<input type="submit" value="wip-patch" />
 <input type="submit" value="linux" />
+<input type="submit" value="ruby3" />
 <input type="submit" value="parser" />
 <input type="submit" value="uriencoding" />
 <input type="submit" value="mips" />
@@ -39,9 +39,9 @@
 <input type="submit" value="enc" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">425</span> matched)
+(<span id="matched">427</span> matched)
 <table>
-<caption>425 Tagged Open Ruby Bugs as of 2020-04-11 09:31:38 +0900</caption>
+<caption>427 Tagged Open Ruby Bugs as of 2020-04-16 02:47:22 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -50,6 +50,41 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" patch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/16787">16787</a>
+</td>
+<td>patch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16787">[patch] allow Dir.home to work for non-login procs when $HOME not set</a>
+</td>
+</tr>
+<tr class=" build ">
+<td><a href="https://bugs.ruby-lang.org/issues/16784">16784</a>
+</td>
+<td>build</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16784">Compiling with --enable-load-relative and &quot;musl-gcc -static&quot; yields &quot;negative string size (or size too big) (ArgumentError)&quot; </a>
+</td>
+</tr>
+<tr class=" thread ">
+<td><a href="https://bugs.ruby-lang.org/issues/16782">16782</a>
+</td>
+<td>thread</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16782">`lock&#39;: deadlock; recursive locking (ThreadError) in 2.7.1</a>
+</td>
+</tr>
+<tr class=" lib ">
+<td><a href="https://bugs.ruby-lang.org/issues/16780">16780</a>
+</td>
+<td>lib</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16780">Net::FTP PUT command issuing Net::ReadTimeout too quickly</a>
+</td>
+</tr>
+<tr class=" lib ">
+<td><a href="https://bugs.ruby-lang.org/issues/16777">16777</a>
+</td>
+<td>lib</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16777">IRB in Ruby 2.7 hangs on pasting long here document</a>
+</td>
+</tr>
 <tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/16776">16776</a>
 </td>
@@ -181,13 +216,6 @@
 </td>
 <td>build</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16668">Syntax error in tool/vcs.rb</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/16660">16660</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16660">Struct#deconstruct_keys inconsistent behavior </a>
 </td>
 </tr>
 <tr class=" core ">
@@ -342,13 +370,6 @@
 </td>
 <td>patch core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16465">False keyword warning against Struct#initialize</a>
-</td>
-</tr>
-<tr class=" patch fiber ">
-<td><a href="https://bugs.ruby-lang.org/issues/16455">16455</a>
-</td>
-<td>patch fiber</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16455">coroutine ucontext uses deprecated POSIX getcontext/swapcontext/makecontext, absent in musl and uclibc</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -1350,13 +1371,6 @@
 </td>
 <td>regexp perf</td>
 <td><a href="https://bugs.ruby-lang.org/issues/14418">ruby 2.5 slow regexp execution</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/14413">14413</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/14413">`-n` and `-p` flags break when stdout is closed</a>
 </td>
 </tr>
 <tr class=" build ">
