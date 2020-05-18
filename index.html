@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>427 Tagged Open Ruby Bugs as of 2020-04-16 02:47:22 +0900</title>
+<title>444 Tagged Open Ruby Bugs as of 2020-05-19 07:58:57 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -8,40 +8,43 @@
 <input type="submit" value="win" />
 <input type="submit" value="lib" />
 <input type="submit" value="ext" />
-<input type="submit" value="patch" />
 <input type="submit" value="build" />
+<input type="submit" value="patch" />
 <input type="submit" value="maybenotbug" />
 <input type="submit" value="notbug" />
 <input type="submit" value="encoding" />
-<input type="submit" value="thread" />
 <input type="submit" value="test" />
+<input type="submit" value="thread" />
 <input type="submit" value="cygwin" />
 <input type="submit" value="tracepoint" />
 <input type="submit" value="refine" />
-<input type="submit" value="regexp" />
 <input type="submit" value="perf" />
+<input type="submit" value="regexp" />
 <input type="submit" value="arm" />
+<input type="submit" value="fiber" />
 <input type="submit" value="aix" />
 <input type="submit" value="solaris" />
 <input type="submit" value="openssl" />
-<input type="submit" value="unfixable" />
-<input type="submit" value="backport" />
-<input type="submit" value="autoload" />
-<input type="submit" value="fiber" />
-<input type="submit" value="haiku" />
-<input type="submit" value="wip-patch" />
-<input type="submit" value="linux" />
-<input type="submit" value="ruby3" />
 <input type="submit" value="parser" />
-<input type="submit" value="uriencoding" />
-<input type="submit" value="mips" />
+<input type="submit" value="autoload" />
+<input type="submit" value="unfixable" />
+<input type="submit" value="s390" />
+<input type="submit" value="backport" />
+<input type="submit" value="ruby3" />
+<input type="submit" value="enc" />
+<input type="submit" value="linux" />
+<input type="submit" value="wip-patch" />
+<input type="submit" value="haiku" />
 <input type="submit" value="doc" />
-<input type="submit" value="enc" /></p>
+<input type="submit" value="uriencoding" />
+<input type="submit" value="gc" />
+<input type="submit" value="mips" />
+<input type="submit" value="misc" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">427</span> matched)
+(<span id="matched">444</span> matched)
 <table>
-<caption>427 Tagged Open Ruby Bugs as of 2020-04-16 02:47:22 +0900</caption>
+<caption>444 Tagged Open Ruby Bugs as of 2020-05-19 07:58:57 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -50,6 +53,153 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" lib ">
+<td><a href="https://bugs.ruby-lang.org/issues/16896">16896</a>
+</td>
+<td>lib</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16896">MakeMakefile methods should be private</a>
+</td>
+</tr>
+<tr class=" tracepoint ">
+<td><a href="https://bugs.ruby-lang.org/issues/16889">16889</a>
+</td>
+<td>tracepoint</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16889">TracePoint.enable { ... } also activates the TracePoint for other threads, even outside the block</a>
+</td>
+</tr>
+<tr class=" refine ">
+<td><a href="https://bugs.ruby-lang.org/issues/16852">16852</a>
+</td>
+<td>refine</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16852">Refining Enumerable fails with ruby 2.7</a>
+</td>
+</tr>
+<tr class=" patch ext ">
+<td><a href="https://bugs.ruby-lang.org/issues/16849">16849</a>
+</td>
+<td>patch ext</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16849">ObjectSpace.trace_object_allocations_stop fails if called before ObjectSpace.trace_object_allocations_start</a>
+</td>
+</tr>
+<tr class=" enc ">
+<td><a href="https://bugs.ruby-lang.org/issues/16842">16842</a>
+</td>
+<td>enc</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16842">`inspect` prints the UTF-8 character U+0085 (NEXT LINE) verbatim even though it is not printable</a>
+</td>
+</tr>
+<tr class=" notbug parser ">
+<td><a href="https://bugs.ruby-lang.org/issues/16841">16841</a>
+</td>
+<td>notbug parser</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16841">Some syntax errors are thrown from compile.c</a>
+</td>
+</tr>
+<tr class=" notbug perf ">
+<td><a href="https://bugs.ruby-lang.org/issues/16840">16840</a>
+</td>
+<td>notbug perf</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16840">Decrease in Hash#[]= performance with object keys</a>
+</td>
+</tr>
+<tr class=" maybenotbug core ">
+<td><a href="https://bugs.ruby-lang.org/issues/16838">16838</a>
+</td>
+<td>maybenotbug core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16838">Enumerator::ArithmeticSequence missing allocator for #clone and #dup</a>
+</td>
+</tr>
+<tr class=" build ">
+<td><a href="https://bugs.ruby-lang.org/issues/16836">16836</a>
+</td>
+<td>build</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16836">configure-time LDFLAGS leak into ruby pkg-config file</a>
+</td>
+</tr>
+<tr class=" maybenotbug core ">
+<td><a href="https://bugs.ruby-lang.org/issues/16835">16835</a>
+</td>
+<td>maybenotbug core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16835">SIGCHLD + system new behavior on 2.6</a>
+</td>
+</tr>
+<tr class=" maybenotbug fiber ">
+<td><a href="https://bugs.ruby-lang.org/issues/16829">16829</a>
+</td>
+<td>maybenotbug fiber</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16829">Exceptions raised from within an enumerated method lose part of their stacktrace</a>
+</td>
+</tr>
+<tr class=" build ">
+<td><a href="https://bugs.ruby-lang.org/issues/16823">16823</a>
+</td>
+<td>build</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16823">Bundler related manual pages are corrupted</a>
+</td>
+</tr>
+<tr class=" misc ">
+<td><a href="https://bugs.ruby-lang.org/issues/16820">16820</a>
+</td>
+<td>misc</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16820">LEGAL is out of sync</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/16819">16819</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16819">Line reporting off by one when reporting line of a hash?</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/16816">16816</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16816">Prematurely terminated Enumerator should stay terminated</a>
+</td>
+</tr>
+<tr class=" fiber s390 ">
+<td><a href="https://bugs.ruby-lang.org/issues/16814">16814</a>
+</td>
+<td>fiber s390</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16814">Segmentation fault in GC while running test/ruby/test_fiber.rb on s390x</a>
+</td>
+</tr>
+<tr class=" s390 ">
+<td><a href="https://bugs.ruby-lang.org/issues/16810">16810</a>
+</td>
+<td>s390</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16810">ruby segfaults on s390x with musl libc</a>
+</td>
+</tr>
+<tr class=" fiber s390 ">
+<td><a href="https://bugs.ruby-lang.org/issues/16809">16809</a>
+</td>
+<td>fiber s390</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16809">ruby testsuite fails on s390x alpine (musl) with --with-coroutine=copy</a>
+</td>
+</tr>
+<tr class=" gc ">
+<td><a href="https://bugs.ruby-lang.org/issues/16807">16807</a>
+</td>
+<td>gc</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16807">Ruby 2.7 segfault loading sources under GC.stress</a>
+</td>
+</tr>
+<tr class=" fiber ">
+<td><a href="https://bugs.ruby-lang.org/issues/16805">16805</a>
+</td>
+<td>fiber</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16805">Coroutine&#39;s license is unclear</a>
+</td>
+</tr>
+<tr class=" doc ">
+<td><a href="https://bugs.ruby-lang.org/issues/16789">16789</a>
+</td>
+<td>doc</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16789">Compaction callback for C extensions not documented</a>
+</td>
+</tr>
 <tr class=" patch core ">
 <td><a href="https://bugs.ruby-lang.org/issues/16787">16787</a>
 </td>
@@ -202,13 +352,6 @@
 </td>
 <td>lib</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16672">net/http leaves original content-length header intact after inflating response</a>
-</td>
-</tr>
-<tr class="  ">
-<td><a href="https://bugs.ruby-lang.org/issues/16669">16669</a>
-</td>
-<td></td>
-<td><a href="https://bugs.ruby-lang.org/issues/16669">Rails Action Text unit tests fail since b9007b6c548f91e88fd3f2ffa23de740431fa969</a>
 </td>
 </tr>
 <tr class=" build ">
@@ -365,13 +508,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16470">Issue with nanoseconds in Time#inspect</a>
 </td>
 </tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/16465">16465</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16465">False keyword warning against Struct#initialize</a>
-</td>
-</tr>
 <tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/16448">16448</a>
 </td>
@@ -503,13 +639,6 @@
 </td>
 <td>win ext maybenotbug</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16277">UNIXServer#listen fails with Errno::EADDRINUSE error under Windows 10 / WSL Ubuntu 18.04</a>
-</td>
-</tr>
-<tr class=" lib notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/16266">16266</a>
-</td>
-<td>lib notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16266">Additional empty folders created in lib/ruby/gems/2.7.0/gems by make install</a>
 </td>
 </tr>
 <tr class=" win thread ">
@@ -916,13 +1045,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/15367">IO.select is not resumed when io-object gets closed</a>
-</td>
-</tr>
-<tr class=" lib build ">
-<td><a href="https://bugs.ruby-lang.org/issues/15359">15359</a>
-</td>
-<td>lib build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/15359">Bundler help is not properly integrated</a>
 </td>
 </tr>
 <tr class=" test ">
