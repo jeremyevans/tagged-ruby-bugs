@@ -300,7 +300,6 @@
 15313,patch tracepoint,[PATCH] Let debuggers know when a tail call happens
 15315,patch core,ec_switch can still lose interrupts
 15334,test,child_info_fork::abort: address space needed by &#39;emoji_iso2022_kddi.so&#39; on cygwin
-15359,lib build,Bundler help is not properly integrated
 15367,core,IO.select is not resumed when io-object gets closed
 15386,patch core,[PATCH] io.c (rb_io_check_char_readable): do not io_fflush buffered sockets
 15404,patch parser,Endless range has inconsistent chaining behaviour
@@ -359,7 +358,6 @@
 16186,patch core,Calling Net::HTTP from within an #inspect implementation hang when invoked from p
 16243,core perf,case/when is slower than if on MRI
 16265,win thread,"Test (spec) failure using current MSYS2 tools, related to -fstack-protector and possibly D_FORTIFY_SOURCE=2"
-16266,lib notbug,Additional empty folders created in lib/ruby/gems/2.7.0/gems by make install
 16277,win ext maybenotbug,UNIXServer#listen fails with Errno::EADDRINUSE error under Windows 10 / WSL Ubuntu 18.04
 16288,core,"Segmentation fault with finalizers, threads"
 16334,backport core,Wrong line numbers for multiline method chains 
@@ -379,7 +377,6 @@
 16416,build,Suspicious include directories.
 16439,lib,Resolv::DNS: timeouts if multiple IPv6 name servers are given and address contains leading zero
 16448,core,regex global variables are working differently depending on scope
-16465,patch core,False keyword warning against Struct#initialize
 16470,core,Issue with nanoseconds in Time#inspect
 16475,build notbug,[Installation process - compiling ruby 2.7.0 from source} &quot;make install&quot; step oddity for ruby 2.7.0 on linux minut (debian base)
 16490,build lib,mkmf.rbの非互換な変更
@@ -402,7 +399,6 @@
 16654,core,Segfault in rb_str_hash
 16658,core,`method__cache__clear` DTrace hook was dropped without replacement
 16668,build,Syntax error in tool/vcs.rb
-16669,"",Rails Action Text unit tests fail since b9007b6c548f91e88fd3f2ffa23de740431fa969
 16672,lib,net/http leaves original content-length header intact after inflating response
 16674,build,Build issue of FreeBSD 12
 16679,test,Test of Ruby fails under multiple OS user userland installations
@@ -425,3 +421,24 @@
 16782,thread,`lock&#39;: deadlock; recursive locking (ThreadError) in 2.7.1
 16784,build,Compiling with --enable-load-relative and &quot;musl-gcc -static&quot; yields &quot;negative string size (or size too big) (ArgumentError)&quot; 
 16787,patch core,[patch] allow Dir.home to work for non-login procs when $HOME not set
+16789,doc,Compaction callback for C extensions not documented
+16805,fiber,Coroutine&#39;s license is unclear
+16807,gc,Ruby 2.7 segfault loading sources under GC.stress
+16809,fiber s390,ruby testsuite fails on s390x alpine (musl) with --with-coroutine=copy
+16810,s390,ruby segfaults on s390x with musl libc
+16814,fiber s390,Segmentation fault in GC while running test/ruby/test_fiber.rb on s390x
+16816,core,Prematurely terminated Enumerator should stay terminated
+16819,core,Line reporting off by one when reporting line of a hash?
+16820,misc,LEGAL is out of sync
+16823,build,Bundler related manual pages are corrupted
+16829,maybenotbug fiber,Exceptions raised from within an enumerated method lose part of their stacktrace
+16835,maybenotbug core,SIGCHLD + system new behavior on 2.6
+16836,build,configure-time LDFLAGS leak into ruby pkg-config file
+16838,maybenotbug core,Enumerator::ArithmeticSequence missing allocator for #clone and #dup
+16840,notbug perf,Decrease in Hash#[]= performance with object keys
+16841,notbug parser,Some syntax errors are thrown from compile.c
+16842,enc,`inspect` prints the UTF-8 character U+0085 (NEXT LINE) verbatim even though it is not printable
+16849,patch ext,ObjectSpace.trace_object_allocations_stop fails if called before ObjectSpace.trace_object_allocations_start
+16852,refine,Refining Enumerable fails with ruby 2.7
+16889,tracepoint,"TracePoint.enable { ... } also activates the TracePoint for other threads, even outside the block"
+16896,lib,MakeMakefile methods should be private
