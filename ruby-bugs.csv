@@ -113,7 +113,6 @@
 11180,ext,Missing lines with Zlib::GzipReader
 11182,refine,Refinement with alias causes strange behavior
 11183,core,Cumulative error on Complex::I ** 100000000000000000000000000000000
-11188,patch core,Method#inspect for chaining alias methods
 11189,core,alias prepended module
 11194,lib,Refactor env-sourced proxy logic for uri/generic
 11202,core maybenotbug,No warning when a link to an original method body was removed
@@ -408,7 +407,6 @@
 16695,core,Stack consistency error when using the return value
 16696,openssl,&#39;OpenSSL 1.1.1e  17 Mar 2020&#39; causes failure in Ruby OpenSSL stdlib
 16697,core maybenotbug,Hash.ruby2_keywords_hash?(value) should support any object
-16736,core patch,Prepending blank module breaks super call in aliased method
 16753,patch lib,"ruby -run -e httpd . -p 8080 ,  not support CJK directorys ."
 16759,win core,MinGW 2.5 - SEGV bug with Binding#local_variable_set
 16762,build arm,Ruby is not properly fortified on armv7hl
@@ -417,10 +415,8 @@
 16774,core,Don&#39;t require sub-word atomics
 16776,core,Regression in coverage library
 16777,lib,IRB in Ruby 2.7 hangs on pasting long here document
-16780,lib,Net::FTP PUT command issuing Net::ReadTimeout too quickly
 16782,thread,`lock&#39;: deadlock; recursive locking (ThreadError) in 2.7.1
 16784,build,Compiling with --enable-load-relative and &quot;musl-gcc -static&quot; yields &quot;negative string size (or size too big) (ArgumentError)&quot; 
-16787,patch core,[patch] allow Dir.home to work for non-login procs when $HOME not set
 16789,doc,Compaction callback for C extensions not documented
 16805,fiber,Coroutine&#39;s license is unclear
 16807,gc,Ruby 2.7 segfault loading sources under GC.stress
@@ -434,7 +430,6 @@
 16829,maybenotbug fiber,Exceptions raised from within an enumerated method lose part of their stacktrace
 16835,maybenotbug core,SIGCHLD + system new behavior on 2.6
 16836,build,configure-time LDFLAGS leak into ruby pkg-config file
-16838,maybenotbug core,Enumerator::ArithmeticSequence missing allocator for #clone and #dup
 16840,notbug perf,Decrease in Hash#[]= performance with object keys
 16841,notbug parser,Some syntax errors are thrown from compile.c
 16842,enc,`inspect` prints the UTF-8 character U+0085 (NEXT LINE) verbatim even though it is not printable
@@ -442,3 +437,8 @@
 16852,refine,Refining Enumerable fails with ruby 2.7
 16889,tracepoint,"TracePoint.enable { ... } also activates the TracePoint for other threads, even outside the block"
 16896,lib,MakeMakefile methods should be private
+16904,lib,rubygems: psych: superclass mismatch for class Mark (TypeError)
+16905,build,Ruby required to build Ruby on Haiku?
+16906,patch thread,Calling Thread#thread_variable? in IRB sometimes produce wrong result
+16907,core,Probable use-after-free in VM assertion
+16908,notbug core,Strange behaviour of Hash#shift when used with `default_proc`.
