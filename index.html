@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>444 Tagged Open Ruby Bugs as of 2020-05-19 07:58:57 +0900</title>
+<title>444 Tagged Open Ruby Bugs as of 2020-05-26 11:40:42 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -13,8 +13,8 @@
 <input type="submit" value="maybenotbug" />
 <input type="submit" value="notbug" />
 <input type="submit" value="encoding" />
-<input type="submit" value="test" />
 <input type="submit" value="thread" />
+<input type="submit" value="test" />
 <input type="submit" value="cygwin" />
 <input type="submit" value="tracepoint" />
 <input type="submit" value="refine" />
@@ -44,7 +44,7 @@
 <input id="filter" type="text" size="80" />
 (<span id="matched">444</span> matched)
 <table>
-<caption>444 Tagged Open Ruby Bugs as of 2020-05-19 07:58:57 +0900</caption>
+<caption>444 Tagged Open Ruby Bugs as of 2020-05-26 11:40:42 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -53,6 +53,41 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" notbug core ">
+<td><a href="https://bugs.ruby-lang.org/issues/16908">16908</a>
+</td>
+<td>notbug core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16908">Strange behaviour of Hash#shift when used with `default_proc`.</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/16907">16907</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16907">Probable use-after-free in VM assertion</a>
+</td>
+</tr>
+<tr class=" patch thread ">
+<td><a href="https://bugs.ruby-lang.org/issues/16906">16906</a>
+</td>
+<td>patch thread</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16906">Calling Thread#thread_variable? in IRB sometimes produce wrong result</a>
+</td>
+</tr>
+<tr class=" build ">
+<td><a href="https://bugs.ruby-lang.org/issues/16905">16905</a>
+</td>
+<td>build</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16905">Ruby required to build Ruby on Haiku?</a>
+</td>
+</tr>
+<tr class=" lib ">
+<td><a href="https://bugs.ruby-lang.org/issues/16904">16904</a>
+</td>
+<td>lib</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16904">rubygems: psych: superclass mismatch for class Mark (TypeError)</a>
+</td>
+</tr>
 <tr class=" lib ">
 <td><a href="https://bugs.ruby-lang.org/issues/16896">16896</a>
 </td>
@@ -100,13 +135,6 @@
 </td>
 <td>notbug perf</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16840">Decrease in Hash#[]= performance with object keys</a>
-</td>
-</tr>
-<tr class=" maybenotbug core ">
-<td><a href="https://bugs.ruby-lang.org/issues/16838">16838</a>
-</td>
-<td>maybenotbug core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16838">Enumerator::ArithmeticSequence missing allocator for #clone and #dup</a>
 </td>
 </tr>
 <tr class=" build ">
@@ -200,13 +228,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16789">Compaction callback for C extensions not documented</a>
 </td>
 </tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/16787">16787</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16787">[patch] allow Dir.home to work for non-login procs when $HOME not set</a>
-</td>
-</tr>
 <tr class=" build ">
 <td><a href="https://bugs.ruby-lang.org/issues/16784">16784</a>
 </td>
@@ -219,13 +240,6 @@
 </td>
 <td>thread</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16782">`lock&#39;: deadlock; recursive locking (ThreadError) in 2.7.1</a>
-</td>
-</tr>
-<tr class=" lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/16780">16780</a>
-</td>
-<td>lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16780">Net::FTP PUT command issuing Net::ReadTimeout too quickly</a>
 </td>
 </tr>
 <tr class=" lib ">
@@ -282,13 +296,6 @@
 </td>
 <td>patch lib</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16753">ruby -run -e httpd . -p 8080 ,  not support CJK directorys .</a>
-</td>
-</tr>
-<tr class=" core patch ">
-<td><a href="https://bugs.ruby-lang.org/issues/16736">16736</a>
-</td>
-<td>core patch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16736">Prepending blank module breaks super call in aliased method</a>
 </td>
 </tr>
 <tr class=" core maybenotbug ">
@@ -2347,13 +2354,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/11189">alias prepended module</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/11188">11188</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/11188">Method#inspect for chaining alias methods</a>
 </td>
 </tr>
 <tr class=" core ">
