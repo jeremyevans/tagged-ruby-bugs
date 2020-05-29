@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>444 Tagged Open Ruby Bugs as of 2020-05-26 11:40:42 +0900</title>
+<title>437 Tagged Open Ruby Bugs as of 2020-05-30 00:43:13 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -19,17 +19,17 @@
 <input type="submit" value="tracepoint" />
 <input type="submit" value="refine" />
 <input type="submit" value="perf" />
-<input type="submit" value="regexp" />
 <input type="submit" value="arm" />
+<input type="submit" value="regexp" />
 <input type="submit" value="fiber" />
 <input type="submit" value="aix" />
 <input type="submit" value="solaris" />
-<input type="submit" value="openssl" />
+<input type="submit" value="s390" />
 <input type="submit" value="parser" />
 <input type="submit" value="autoload" />
 <input type="submit" value="unfixable" />
-<input type="submit" value="s390" />
 <input type="submit" value="backport" />
+<input type="submit" value="openssl" />
 <input type="submit" value="ruby3" />
 <input type="submit" value="enc" />
 <input type="submit" value="linux" />
@@ -42,9 +42,9 @@
 <input type="submit" value="misc" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">444</span> matched)
+(<span id="matched">437</span> matched)
 <table>
-<caption>444 Tagged Open Ruby Bugs as of 2020-05-26 11:40:42 +0900</caption>
+<caption>437 Tagged Open Ruby Bugs as of 2020-05-30 00:43:13 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -53,6 +53,34 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" s390 ">
+<td><a href="https://bugs.ruby-lang.org/issues/16921">16921</a>
+</td>
+<td>s390</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16921">s390x: random test failures for timeout or segmentation fault</a>
+</td>
+</tr>
+<tr class=" arm thread ">
+<td><a href="https://bugs.ruby-lang.org/issues/16920">16920</a>
+</td>
+<td>arm thread</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16920">TestThread#test_signal_at_join fails on aarch64</a>
+</td>
+</tr>
+<tr class=" lib ">
+<td><a href="https://bugs.ruby-lang.org/issues/16919">16919</a>
+</td>
+<td>lib</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16919">IRB でマジックコメントの : の後に任意の文字を入力するとエラーが発生する</a>
+</td>
+</tr>
+<tr class=" notbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/16917">16917</a>
+</td>
+<td>notbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16917">&quot;ruby -run -e httpd . &quot; did not work </a>
+</td>
+</tr>
 <tr class=" notbug core ">
 <td><a href="https://bugs.ruby-lang.org/issues/16908">16908</a>
 </td>
@@ -65,13 +93,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16907">Probable use-after-free in VM assertion</a>
-</td>
-</tr>
-<tr class=" patch thread ">
-<td><a href="https://bugs.ruby-lang.org/issues/16906">16906</a>
-</td>
-<td>patch thread</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16906">Calling Thread#thread_variable? in IRB sometimes produce wrong result</a>
 </td>
 </tr>
 <tr class=" build ">
@@ -158,13 +179,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16829">Exceptions raised from within an enumerated method lose part of their stacktrace</a>
 </td>
 </tr>
-<tr class=" build ">
-<td><a href="https://bugs.ruby-lang.org/issues/16823">16823</a>
-</td>
-<td>build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16823">Bundler related manual pages are corrupted</a>
-</td>
-</tr>
 <tr class=" misc ">
 <td><a href="https://bugs.ruby-lang.org/issues/16820">16820</a>
 </td>
@@ -242,13 +256,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16782">`lock&#39;: deadlock; recursive locking (ThreadError) in 2.7.1</a>
 </td>
 </tr>
-<tr class=" lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/16777">16777</a>
-</td>
-<td>lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16777">IRB in Ruby 2.7 hangs on pasting long here document</a>
-</td>
-</tr>
 <tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/16776">16776</a>
 </td>
@@ -261,20 +268,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16774">Don&#39;t require sub-word atomics</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/16771">16771</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16771">Segmentation fault when inspecting a bound method</a>
-</td>
-</tr>
-<tr class=" notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/16765">16765</a>
-</td>
-<td>notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16765">Crash when use sass image-url in email layout</a>
 </td>
 </tr>
 <tr class=" build arm ">
@@ -291,25 +284,11 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16759">MinGW 2.5 - SEGV bug with Binding#local_variable_set</a>
 </td>
 </tr>
-<tr class=" patch lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/16753">16753</a>
-</td>
-<td>patch lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16753">ruby -run -e httpd . -p 8080 ,  not support CJK directorys .</a>
-</td>
-</tr>
 <tr class=" core maybenotbug ">
 <td><a href="https://bugs.ruby-lang.org/issues/16697">16697</a>
 </td>
 <td>core maybenotbug</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16697">Hash.ruby2_keywords_hash?(value) should support any object</a>
-</td>
-</tr>
-<tr class=" openssl ">
-<td><a href="https://bugs.ruby-lang.org/issues/16696">16696</a>
-</td>
-<td>openssl</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16696">&#39;OpenSSL 1.1.1e  17 Mar 2020&#39; causes failure in Ruby OpenSSL stdlib</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -361,13 +340,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16672">net/http leaves original content-length header intact after inflating response</a>
 </td>
 </tr>
-<tr class=" build ">
-<td><a href="https://bugs.ruby-lang.org/issues/16668">16668</a>
-</td>
-<td>build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16668">Syntax error in tool/vcs.rb</a>
-</td>
-</tr>
 <tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/16658">16658</a>
 </td>
@@ -380,13 +352,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16654">Segfault in rb_str_hash</a>
-</td>
-</tr>
-<tr class=" lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/16653">16653</a>
-</td>
-<td>lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16653">Weird behaviour of Resolv module</a>
 </td>
 </tr>
 <tr class=" win build ">
@@ -429,20 +394,6 @@
 </td>
 <td>ext</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16608">ConditionVariable#wait should return false when timeout exceeded</a>
-</td>
-</tr>
-<tr class=" patch lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/16559">16559</a>
-</td>
-<td>patch lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16559">Net::HTTP#request injects &quot;Connection: close&quot; header if #started? is false, wasting HTTP server resources</a>
-</td>
-</tr>
-<tr class=" build ">
-<td><a href="https://bugs.ruby-lang.org/issues/16558">16558</a>
-</td>
-<td>build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16558">What is special about GB2312</a>
 </td>
 </tr>
 <tr class=" core ">
