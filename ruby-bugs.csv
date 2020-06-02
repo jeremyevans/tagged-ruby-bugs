@@ -125,7 +125,6 @@
 11450,patch lib,HTTPHeader.content_range throws error on non-byte units
 11480,test,killed by SIGIOT (signal 6) on fork
 11514,core aix,AIX6.1 - Ruby 2.2.3 - Segmentation fault in :byteslice
-11523,patch maybenotbug,optparse short options will match complete options
 11526,patch lib,Streaming HTTP requests are not idempotent and should not be retried
 11531,lib maybenotbug,IPAddr#== implements wrong logic
 11533,lib aix,AIX6.1 - Ruby 2.2.3 - TestMkmf::TestConvertible#test_typeof_builtin fails
@@ -165,7 +164,6 @@
 12551,win core,Exception accessing file with long path on windows
 12582,openssl,OpenSSL Authenticated Encryption should check for tag length
 12590,cygwin build,Error compiling parse.c on cygwin
-12594,core notbug,The class does not inherit from a module the modules that were included after the inclusion
 12597,encoding test,Produce test failure if some tests cannot be executed due to lacking data
 12666,ext,Fatal error: glibc detected an invalid stdio handle
 12689,core,Thread isolation of $~ and $_
@@ -179,17 +177,14 @@
 13000,lib notbug,Implement Set#include? with Hash#include?
 13094,ext,Zlib::GzipReader eof?がfalseなのにgetsでnilが返ってくる
 13100,openssl,OpenSSL::PKey::EC#public_keyでGroup情報がコピーされない。
-13125,build,MRI has too much Qtrue : Qfalse;
 13151,win core,File.writable? doesn&#39;t report correctly if a directory is writable on Windows.
 13153,core,Inconsistent sprintf formatting for 0 value
 13164,core,A second `SystemStackError` exception  results in `Segmentation fault (core dumped)`
 13220,encoding,Enhance support of Unicode strings manipulation
-13257,core notbug,Symbol#singleton_class should be undef
 13269,win test,test/readline/test_readline.rb and mingw
 13298,win core,mingw SEGV TestEnumerable#test_callcc
 13331,ext,Inconsistent conversion of Float into Decimal
 13392,tracepoint,TracePoint doesn&#39;t work correct with monkey patches / aliased methods
-13397,patch core,#object_id should not be signed
 13485,win test,MinGW TestEnumerable#test_callcc SEGV info
 13500,win test,MinGW TestArity#test_proc_err_mess stops testing
 13513,lib,Resolv::DNS::Message.decode hangs after detecting truncation in UDP messages
@@ -202,7 +197,6 @@
 13671,regexp notbug,Regexp with lookbehind and case-insensitivity raises RegexpError only on strings with certain characters
 13708,core,catastrophic slow compilation of defined-defined sequence has no chance to ^C
 13754,ext,bigdecimal with lower precision that Float
-13758,core,TestRubyOptions#test_segv_setproctitle segfaults on AARCH64
 13768,core,SIGCHLD and Thread dead-lock problem
 13864,test,Rinda multicast test failures due to missing default route
 13876,core,Tempfile&#39;s finalizer can be interrupted by a Timeout exception which can cause the process to hang
@@ -212,7 +206,6 @@
 13930,wip-patch core,Exception is caught in rescue above ensure
 13932,core,[PATCH] Extension libraries take precedence in checks of later Kernel.#require calls for features without file extensions
 13999,cygwin ext,Cygwin 環境で ripper_state_lex.rb がコアダンプする
-14004,lib,ri confused by method aliases and by Queue versus Thread::Queue
 14012,refine,NameError is raised when use class variables in Refinements
 14015,core,Enumerable &amp; Hash yielding arity
 14046,ext,Ripper loses DATA
@@ -224,8 +217,6 @@
 14096,ext,Psych allows invalid single quote escape character
 14103,regexp,Regexp absense operator has no chance to ^C
 14137,win regexp,Windows / MinGW - Regexp - Character Properties - General Category
-14267,core notbug,Lazy proc allocation introduced in #14045 creates regression
-14271,test,Random TestIO_Console#test_oflush failure
 14275,patch core,GC not aggressive enough
 14327,arm build,Segmentation fault while compiling ruby 2.5 on alpine armhf
 14364,core,Regexp last match variable in procs
@@ -244,25 +235,21 @@
 14479,tracepoint,Exceptions raised from a :call tracepoint can sometimes be &quot;rescued&quot; inside the method
 14480,arm build,miniruby crashing when compiled with -O2 or -O1 on aarch64
 14543,build,`make commit` show error of `common-srcs`
-14558,core notbug,&quot;Backtrace in reverse order&quot; always upsets my brain!
 14570,win core,Wired behavior of File.expand_path() on Windows
 14582,tracepoint,Unable to use `method__entry` and `method_return` tracing probes since 2.5
 14591,encoding maybenotbug,Files with invalid multi-byte characters will cause Find::find() to raise EINVAL exception
 14607,core,Fix use of the rb_profile_frames start parameter
 14635,patch core,Float#round(n) returns a wrong result when n is big
 14640,win core,[win32] File.realpath treats a relative path with a drive letter as an absolute path.
-14671,refine,Refining Module#refine itself introduces strange state
 14679,lib,StdLib gems should properly specify their dependencies
 14681,core,`syswrite&#39;: stream closed in another thread (IOError)
 14704,core,Module#ancestors looks wrong when a module is both included and prepended in the same class.
 14716,ext,SecureRandom throwing an error in Ruby 2.5.1
 14726,patch core,wrong message when superclass is not a Class
 14727,win thread,TestQueue#test_queue_with_trap always timeout on Windows10
-14732,ext,CGI.unescape returns different instance between Ruby 2.3 and 2.4
 14737,build,Split default gems into separate directory structure
 14743,doc notbug,Some links broken in README
 14744,refine,Refinements modules have a superclass
-14755,arm,Aborted (core dumped)
 14761,solaris thread,TestThread#test_join_limits hangs up on Solaris 10 with gcc
 14804,ext,GzipReader cannot read Freebase dump (but gzcat/zless can)
 14817,tracepoint,TracePoint#parameters for bmethod&#39;s return event should return the same value as its Method#parameters
@@ -271,9 +258,7 @@
 14826,solaris build,make: *** [.ext/include/sparc-solaris2.10/rb_mjit_min_header-2.6.0.h] Error 1 on Solaris 10 with very old gcc3
 14835,tracepoint,Impossible to know whether an exception was rescued or not using TracePoint
 14838,regexp notbug,RegexpError with double &quot;s&quot; in look-behind assertion in case-insensitive unicode regexp
-14843,ext,[BUG] Illegal instruction at 0x000000010c7acc0a
 14870,tracepoint,Both TracePoint&#39;s :call and :c_call filters seem to skip a lot of builtin methods
-14874,cygwin,Segmentation fault under Cygwin
 14884,win,msys2 mingw32 &#39;rake&#39; has unexpected text at top of file
 14889,tracepoint,TracePoint for :line never seems to trigger on argument list. Maybe by design?
 14891,ext notbug,Pathname#join has different behaviour to File.join
@@ -337,7 +322,6 @@
 15779,patch core,"After NoMemoryError, ruby freezes and takes 100% CPU"
 15787,haiku lib maybenotbug,LoadError by EPERM on read-only volume
 15790,core autoload,Strange interaction between autoload and $LOADED_FEATURES
-15795,haiku ext,Some test fails on Haiku
 15819,lib,cannot read document of File::NULL with &quot;ri File::NULL&quot;
 15834,patch lib,"Mutating the result of SortedSet.to_a mutates the original set, potentially violating the set&#39;s guarantees"
 15852,core win,APPLICATION_VERIFIER_LOCKS_LOCK_IN_FREED_HEAP on exiting ruby
@@ -352,7 +336,6 @@
 16145,regexp,"regexp match error if mixing /i, character classes, and utf8"
 16158,regexp notbug,&quot;st&quot; Character Sequence In Regex Look-Behind Causes Illegal Pattern Error When Combined With POSIX Bracket Expressions And Case Insensitivity Flag
 16173,patch core,ENV.delete returns nil when name does not exist and block given
-16179,aix notbug,ruby binaries generate &quot;already initialized constant&quot; warnings on AIX 6.1
 16185,aix notbug,basictest failure on AIX 6.1 for 64bit build
 16186,patch core,Calling Net::HTTP from within an #inspect implementation hang when invoked from p
 16243,core perf,case/when is slower than if on MRI
@@ -361,22 +344,11 @@
 16288,core,"Segmentation fault with finalizers, threads"
 16334,backport core,Wrong line numbers for multiline method chains 
 16338,build,gemspec stub EOF separators throw warning
-16344,core,Can be assigned to numbered parameter when after used _1
-16350,core,ArithmeticSequence#member? can result in infinite loop
-16352,core,Marshal limit of  &gt;= 2 GiB
-16357,backport,`Segmentation fault (core dumped)` or `[BUG] object allocation during garbage collection phase`
 16368,ext,Error in `YAML.load(symbolize_names: true)` with null column YAML
-16369,thread,Segfault : crashed on child side of fork pre-exec thread_pool.rb
 16371,backport,Inconsistent usage of Double splat operator
-16373,lib,RDoc for some of the Kernel methods cannot be found in Kernel module
 16376,core,Stack-buffer-overflow in renumber_by_map in regcomp.c
 16383,patch tracepoint,TracePoint does not report calls to attribute reader methods
-16398,ext,Active Support unit test error since caac5f777ae288b5982708b8690e712e1cae0cf6
-16410,test,Spec failure - &quot;File.utime allows Time instances in the far future to set mtime and atime&quot;
-16416,build,Suspicious include directories.
-16439,lib,Resolv::DNS: timeouts if multiple IPv6 name servers are given and address contains leading zero
 16448,core,regex global variables are working differently depending on scope
-16470,core,Issue with nanoseconds in Time#inspect
 16475,build notbug,[Installation process - compiling ruby 2.7.0 from source} &quot;make install&quot; step oddity for ruby 2.7.0 on linux minut (debian base)
 16490,build lib,mkmf.rbの非互換な変更
 16492,test,TestBugReporter#test_bug_reporter_add test failures on s390x
@@ -385,19 +357,14 @@
 16500,core,Argument is added to both splat and last &amp;block argument
 16504,core,"`foo(*args, &amp;args.pop)` should pass all elements of args"
 16518,core,Should we rationalize Rational&#39;s numerator automatically?
-16522,core,Ruby 2.7 logs deprecation warning when Warning[:deprecated] is set to false.  
-16558,build,What is special about GB2312
-16559,patch lib,"Net::HTTP#request injects &quot;Connection: close&quot; header if #started? is false, wasting HTTP server resources"
 16608,ext,ConditionVariable#wait should return false when timeout exceeded
 16612,core,Enumerator::ArithmeticSequence#last with float range produces incorrect value
 16618,core,Ensure called twice when raise in ensure
 16622,win build,mswin build was failed with the current master branch #3121
 16623,win enc,Windows ENV encoding
 16651,win build,Extensions Do Not Compile on Mingw64
-16653,lib,Weird behaviour of Resolv module
 16654,core,Segfault in rb_str_hash
 16658,core,`method__cache__clear` DTrace hook was dropped without replacement
-16668,build,Syntax error in tool/vcs.rb
 16672,lib,net/http leaves original content-length header intact after inflating response
 16674,build,Build issue of FreeBSD 12
 16679,test,Test of Ruby fails under multiple OS user userland installations
@@ -405,16 +372,11 @@
 16685,lib,IRB auto indent does not work for single-line method definitions
 16694,core,JIT vs hardened GCC with PCH
 16695,core,Stack consistency error when using the return value
-16696,openssl,&#39;OpenSSL 1.1.1e  17 Mar 2020&#39; causes failure in Ruby OpenSSL stdlib
 16697,core maybenotbug,Hash.ruby2_keywords_hash?(value) should support any object
-16753,patch lib,"ruby -run -e httpd . -p 8080 ,  not support CJK directorys ."
 16759,win core,MinGW 2.5 - SEGV bug with Binding#local_variable_set
 16762,build arm,Ruby is not properly fortified on armv7hl
-16765,notbug,Crash when use sass image-url in email layout
-16771,core,Segmentation fault when inspecting a bound method
 16774,core,Don&#39;t require sub-word atomics
 16776,core,Regression in coverage library
-16777,lib,IRB in Ruby 2.7 hangs on pasting long here document
 16782,thread,`lock&#39;: deadlock; recursive locking (ThreadError) in 2.7.1
 16784,build,Compiling with --enable-load-relative and &quot;musl-gcc -static&quot; yields &quot;negative string size (or size too big) (ArgumentError)&quot; 
 16789,doc,Compaction callback for C extensions not documented
@@ -426,7 +388,6 @@
 16816,core,Prematurely terminated Enumerator should stay terminated
 16819,core,Line reporting off by one when reporting line of a hash?
 16820,misc,LEGAL is out of sync
-16823,build,Bundler related manual pages are corrupted
 16829,maybenotbug fiber,Exceptions raised from within an enumerated method lose part of their stacktrace
 16835,maybenotbug core,SIGCHLD + system new behavior on 2.6
 16836,build,configure-time LDFLAGS leak into ruby pkg-config file
@@ -439,6 +400,12 @@
 16896,lib,MakeMakefile methods should be private
 16904,lib,rubygems: psych: superclass mismatch for class Mark (TypeError)
 16905,build,Ruby required to build Ruby on Haiku?
-16906,patch thread,Calling Thread#thread_variable? in IRB sometimes produce wrong result
 16907,core,Probable use-after-free in VM assertion
 16908,notbug core,Strange behaviour of Hash#shift when used with `default_proc`.
+16917,notbug,&quot;ruby -run -e httpd . &quot; did not work 
+16919,lib,IRB でマジックコメントの : の後に任意の文字を入力するとエラーが発生する
+16920,arm thread,TestThread#test_signal_at_join fails on aarch64
+16921,s390,s390x: random test failures for timeout or segmentation fault
+16922,core,single quote should be escaped in xml
+16926,core,Kernel#require does not load a feature twice when $LOAD_PATH has been modified spec fails only on 2.7
+16927,enc,String#tr won&#39;t return the expected result for some sign with diacritics
