@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>437 Tagged Open Ruby Bugs as of 2020-05-30 00:43:13 +0900</title>
+<title>411 Tagged Open Ruby Bugs as of 2020-06-03 02:21:42 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -17,34 +17,34 @@
 <input type="submit" value="test" />
 <input type="submit" value="cygwin" />
 <input type="submit" value="tracepoint" />
-<input type="submit" value="refine" />
 <input type="submit" value="perf" />
-<input type="submit" value="arm" />
+<input type="submit" value="refine" />
 <input type="submit" value="regexp" />
+<input type="submit" value="arm" />
 <input type="submit" value="fiber" />
-<input type="submit" value="aix" />
-<input type="submit" value="solaris" />
 <input type="submit" value="s390" />
+<input type="submit" value="solaris" />
+<input type="submit" value="aix" />
 <input type="submit" value="parser" />
 <input type="submit" value="autoload" />
 <input type="submit" value="unfixable" />
-<input type="submit" value="backport" />
-<input type="submit" value="openssl" />
-<input type="submit" value="ruby3" />
 <input type="submit" value="enc" />
+<input type="submit" value="openssl" />
+<input type="submit" value="doc" />
+<input type="submit" value="ruby3" />
 <input type="submit" value="linux" />
 <input type="submit" value="wip-patch" />
-<input type="submit" value="haiku" />
-<input type="submit" value="doc" />
+<input type="submit" value="backport" />
 <input type="submit" value="uriencoding" />
+<input type="submit" value="haiku" />
 <input type="submit" value="gc" />
 <input type="submit" value="mips" />
 <input type="submit" value="misc" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">437</span> matched)
+(<span id="matched">411</span> matched)
 <table>
-<caption>437 Tagged Open Ruby Bugs as of 2020-05-30 00:43:13 +0900</caption>
+<caption>411 Tagged Open Ruby Bugs as of 2020-06-03 02:21:42 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -53,6 +53,27 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" enc ">
+<td><a href="https://bugs.ruby-lang.org/issues/16927">16927</a>
+</td>
+<td>enc</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16927">String#tr won&#39;t return the expected result for some sign with diacritics</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/16926">16926</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16926">Kernel#require does not load a feature twice when $LOAD_PATH has been modified spec fails only on 2.7</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/16922">16922</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16922">single quote should be escaped in xml</a>
+</td>
+</tr>
 <tr class=" s390 ">
 <td><a href="https://bugs.ruby-lang.org/issues/16921">16921</a>
 </td>
@@ -397,13 +418,6 @@
 </td>
 </tr>
 <tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/16522">16522</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16522">Ruby 2.7 logs deprecation warning when Warning[:deprecated] is set to false.  </a>
-</td>
-</tr>
-<tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/16518">16518</a>
 </td>
 <td>core</td>
@@ -460,45 +474,10 @@
 </td>
 </tr>
 <tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/16470">16470</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16470">Issue with nanoseconds in Time#inspect</a>
-</td>
-</tr>
-<tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/16448">16448</a>
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16448">regex global variables are working differently depending on scope</a>
-</td>
-</tr>
-<tr class=" lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/16439">16439</a>
-</td>
-<td>lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16439">Resolv::DNS: timeouts if multiple IPv6 name servers are given and address contains leading zero</a>
-</td>
-</tr>
-<tr class=" build ">
-<td><a href="https://bugs.ruby-lang.org/issues/16416">16416</a>
-</td>
-<td>build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16416">Suspicious include directories.</a>
-</td>
-</tr>
-<tr class=" test ">
-<td><a href="https://bugs.ruby-lang.org/issues/16410">16410</a>
-</td>
-<td>test</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16410">Spec failure - &quot;File.utime allows Time instances in the far future to set mtime and atime&quot;</a>
-</td>
-</tr>
-<tr class=" ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/16398">16398</a>
-</td>
-<td>ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16398">Active Support unit test error since caac5f777ae288b5982708b8690e712e1cae0cf6</a>
 </td>
 </tr>
 <tr class=" patch tracepoint ">
@@ -515,13 +494,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16376">Stack-buffer-overflow in renumber_by_map in regcomp.c</a>
 </td>
 </tr>
-<tr class=" lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/16373">16373</a>
-</td>
-<td>lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16373">RDoc for some of the Kernel methods cannot be found in Kernel module</a>
-</td>
-</tr>
 <tr class=" backport ">
 <td><a href="https://bugs.ruby-lang.org/issues/16371">16371</a>
 </td>
@@ -529,46 +501,11 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16371">Inconsistent usage of Double splat operator</a>
 </td>
 </tr>
-<tr class=" thread ">
-<td><a href="https://bugs.ruby-lang.org/issues/16369">16369</a>
-</td>
-<td>thread</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16369">Segfault : crashed on child side of fork pre-exec thread_pool.rb</a>
-</td>
-</tr>
 <tr class=" ext ">
 <td><a href="https://bugs.ruby-lang.org/issues/16368">16368</a>
 </td>
 <td>ext</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16368">Error in `YAML.load(symbolize_names: true)` with null column YAML</a>
-</td>
-</tr>
-<tr class=" backport ">
-<td><a href="https://bugs.ruby-lang.org/issues/16357">16357</a>
-</td>
-<td>backport</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16357">`Segmentation fault (core dumped)` or `[BUG] object allocation during garbage collection phase`</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/16352">16352</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16352">Marshal limit of  &gt;= 2 GiB</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/16350">16350</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16350">ArithmeticSequence#member? can result in infinite loop</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/16344">16344</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16344">Can be assigned to numbered parameter when after used _1</a>
 </td>
 </tr>
 <tr class=" build ">
@@ -625,13 +562,6 @@
 </td>
 <td>aix notbug</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16185">basictest failure on AIX 6.1 for 64bit build</a>
-</td>
-</tr>
-<tr class=" aix notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/16179">16179</a>
-</td>
-<td>aix notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16179">ruby binaries generate &quot;already initialized constant&quot; warnings on AIX 6.1</a>
 </td>
 </tr>
 <tr class=" patch core ">
@@ -730,13 +660,6 @@
 </td>
 <td>lib</td>
 <td><a href="https://bugs.ruby-lang.org/issues/15819">cannot read document of File::NULL with &quot;ri File::NULL&quot;</a>
-</td>
-</tr>
-<tr class=" haiku ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/15795">15795</a>
-</td>
-<td>haiku ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/15795">Some test fails on Haiku</a>
 </td>
 </tr>
 <tr class=" core autoload ">
@@ -1180,25 +1103,11 @@
 <td><a href="https://bugs.ruby-lang.org/issues/14884">msys2 mingw32 &#39;rake&#39; has unexpected text at top of file</a>
 </td>
 </tr>
-<tr class=" cygwin ">
-<td><a href="https://bugs.ruby-lang.org/issues/14874">14874</a>
-</td>
-<td>cygwin</td>
-<td><a href="https://bugs.ruby-lang.org/issues/14874">Segmentation fault under Cygwin</a>
-</td>
-</tr>
 <tr class=" tracepoint ">
 <td><a href="https://bugs.ruby-lang.org/issues/14870">14870</a>
 </td>
 <td>tracepoint</td>
 <td><a href="https://bugs.ruby-lang.org/issues/14870">Both TracePoint&#39;s :call and :c_call filters seem to skip a lot of builtin methods</a>
-</td>
-</tr>
-<tr class=" ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/14843">14843</a>
-</td>
-<td>ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/14843">[BUG] Illegal instruction at 0x000000010c7acc0a</a>
 </td>
 </tr>
 <tr class=" regexp notbug ">
@@ -1257,13 +1166,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/14761">TestThread#test_join_limits hangs up on Solaris 10 with gcc</a>
 </td>
 </tr>
-<tr class=" arm ">
-<td><a href="https://bugs.ruby-lang.org/issues/14755">14755</a>
-</td>
-<td>arm</td>
-<td><a href="https://bugs.ruby-lang.org/issues/14755">Aborted (core dumped)</a>
-</td>
-</tr>
 <tr class=" refine ">
 <td><a href="https://bugs.ruby-lang.org/issues/14744">14744</a>
 </td>
@@ -1283,13 +1185,6 @@
 </td>
 <td>build</td>
 <td><a href="https://bugs.ruby-lang.org/issues/14737">Split default gems into separate directory structure</a>
-</td>
-</tr>
-<tr class=" ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/14732">14732</a>
-</td>
-<td>ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/14732">CGI.unescape returns different instance between Ruby 2.3 and 2.4</a>
 </td>
 </tr>
 <tr class=" win thread ">
@@ -1334,13 +1229,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/14679">StdLib gems should properly specify their dependencies</a>
 </td>
 </tr>
-<tr class=" refine ">
-<td><a href="https://bugs.ruby-lang.org/issues/14671">14671</a>
-</td>
-<td>refine</td>
-<td><a href="https://bugs.ruby-lang.org/issues/14671">Refining Module#refine itself introduces strange state</a>
-</td>
-</tr>
 <tr class=" win core ">
 <td><a href="https://bugs.ruby-lang.org/issues/14640">14640</a>
 </td>
@@ -1381,13 +1269,6 @@
 </td>
 <td>win core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/14570">Wired behavior of File.expand_path() on Windows</a>
-</td>
-</tr>
-<tr class=" core notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/14558">14558</a>
-</td>
-<td>core notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/14558">&quot;Backtrace in reverse order&quot; always upsets my brain!</a>
 </td>
 </tr>
 <tr class=" build ">
@@ -1516,20 +1397,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/14275">GC not aggressive enough</a>
 </td>
 </tr>
-<tr class=" test ">
-<td><a href="https://bugs.ruby-lang.org/issues/14271">14271</a>
-</td>
-<td>test</td>
-<td><a href="https://bugs.ruby-lang.org/issues/14271">Random TestIO_Console#test_oflush failure</a>
-</td>
-</tr>
-<tr class=" core notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/14267">14267</a>
-</td>
-<td>core notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/14267">Lazy proc allocation introduced in #14045 creates regression</a>
-</td>
-</tr>
 <tr class=" win regexp ">
 <td><a href="https://bugs.ruby-lang.org/issues/14137">14137</a>
 </td>
@@ -1607,13 +1474,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/14012">NameError is raised when use class variables in Refinements</a>
 </td>
 </tr>
-<tr class=" lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/14004">14004</a>
-</td>
-<td>lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/14004">ri confused by method aliases and by Queue versus Thread::Queue</a>
-</td>
-</tr>
 <tr class=" cygwin ext ">
 <td><a href="https://bugs.ruby-lang.org/issues/13999">13999</a>
 </td>
@@ -1675,13 +1535,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/13768">SIGCHLD and Thread dead-lock problem</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/13758">13758</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/13758">TestRubyOptions#test_segv_setproctitle segfaults on AARCH64</a>
 </td>
 </tr>
 <tr class=" ext ">
@@ -1768,13 +1621,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/13485">MinGW TestEnumerable#test_callcc SEGV info</a>
 </td>
 </tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/13397">13397</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/13397">#object_id should not be signed</a>
-</td>
-</tr>
 <tr class=" tracepoint ">
 <td><a href="https://bugs.ruby-lang.org/issues/13392">13392</a>
 </td>
@@ -1803,13 +1649,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/13269">test/readline/test_readline.rb and mingw</a>
 </td>
 </tr>
-<tr class=" core notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/13257">13257</a>
-</td>
-<td>core notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/13257">Symbol#singleton_class should be undef</a>
-</td>
-</tr>
 <tr class=" encoding ">
 <td><a href="https://bugs.ruby-lang.org/issues/13220">13220</a>
 </td>
@@ -1836,13 +1675,6 @@
 </td>
 <td>win core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/13151">File.writable? doesn&#39;t report correctly if a directory is writable on Windows.</a>
-</td>
-</tr>
-<tr class=" build ">
-<td><a href="https://bugs.ruby-lang.org/issues/13125">13125</a>
-</td>
-<td>build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/13125">MRI has too much Qtrue : Qfalse;</a>
 </td>
 </tr>
 <tr class=" openssl ">
@@ -1934,13 +1766,6 @@
 </td>
 <td>encoding test</td>
 <td><a href="https://bugs.ruby-lang.org/issues/12597">Produce test failure if some tests cannot be executed due to lacking data</a>
-</td>
-</tr>
-<tr class=" core notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/12594">12594</a>
-</td>
-<td>core notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/12594">The class does not inherit from a module the modules that were included after the inclusion</a>
 </td>
 </tr>
 <tr class=" cygwin build ">
@@ -2214,13 +2039,6 @@
 </td>
 <td>patch lib</td>
 <td><a href="https://bugs.ruby-lang.org/issues/11526">Streaming HTTP requests are not idempotent and should not be retried</a>
-</td>
-</tr>
-<tr class=" patch maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/11523">11523</a>
-</td>
-<td>patch maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/11523">optparse short options will match complete options</a>
 </td>
 </tr>
 <tr class=" core aix ">
