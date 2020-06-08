@@ -395,14 +395,12 @@
 16841,notbug parser,Some syntax errors are thrown from compile.c
 16842,enc,`inspect` prints the UTF-8 character U+0085 (NEXT LINE) verbatim even though it is not printable
 16849,patch ext,ObjectSpace.trace_object_allocations_stop fails if called before ObjectSpace.trace_object_allocations_start
-16852,refine,Refining Enumerable fails with ruby 2.7
 16889,tracepoint,"TracePoint.enable { ... } also activates the TracePoint for other threads, even outside the block"
 16896,lib,MakeMakefile methods should be private
 16904,lib,rubygems: psych: superclass mismatch for class Mark (TypeError)
 16905,build,Ruby required to build Ruby on Haiku?
 16907,core,Probable use-after-free in VM assertion
 16908,notbug core,Strange behaviour of Hash#shift when used with `default_proc`.
-16917,notbug,&quot;ruby -run -e httpd . &quot; did not work 
 16919,lib,IRB でマジックコメントの : の後に任意の文字を入力するとエラーが発生する
 16920,arm thread,TestThread#test_signal_at_join fails on aarch64
 16921,s390,s390x: random test failures for timeout or segmentation fault
