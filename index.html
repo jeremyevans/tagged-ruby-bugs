@@ -1,13 +1,13 @@
 <html>
 <head>
-<title>409 Tagged Open Ruby Bugs as of 2020-06-09 04:58:39 +0900</title>
+<title>405 Tagged Open Ruby Bugs as of 2020-06-12 07:10:44 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
 <p class="filter-buttons">Available Tags: <input type="submit" value="core" />
 <input type="submit" value="win" />
-<input type="submit" value="lib" />
 <input type="submit" value="ext" />
+<input type="submit" value="lib" />
 <input type="submit" value="build" />
 <input type="submit" value="patch" />
 <input type="submit" value="maybenotbug" />
@@ -25,26 +25,26 @@
 <input type="submit" value="s390" />
 <input type="submit" value="solaris" />
 <input type="submit" value="aix" />
-<input type="submit" value="parser" />
-<input type="submit" value="autoload" />
-<input type="submit" value="unfixable" />
 <input type="submit" value="enc" />
+<input type="submit" value="backport" />
+<input type="submit" value="unfixable" />
 <input type="submit" value="openssl" />
-<input type="submit" value="doc" />
-<input type="submit" value="ruby3" />
+<input type="submit" value="autoload" />
 <input type="submit" value="linux" />
 <input type="submit" value="wip-patch" />
-<input type="submit" value="backport" />
+<input type="submit" value="parser" />
+<input type="submit" value="doc" />
 <input type="submit" value="uriencoding" />
 <input type="submit" value="haiku" />
+<input type="submit" value="ruby3" />
 <input type="submit" value="gc" />
 <input type="submit" value="mips" />
 <input type="submit" value="misc" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">409</span> matched)
+(<span id="matched">405</span> matched)
 <table>
-<caption>409 Tagged Open Ruby Bugs as of 2020-06-09 04:58:39 +0900</caption>
+<caption>405 Tagged Open Ruby Bugs as of 2020-06-12 07:10:44 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -53,6 +53,34 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" build ">
+<td><a href="https://bugs.ruby-lang.org/issues/16953">16953</a>
+</td>
+<td>build</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16953">Windows bash bin files removed in master</a>
+</td>
+</tr>
+<tr class=" lib ">
+<td><a href="https://bugs.ruby-lang.org/issues/16951">16951</a>
+</td>
+<td>lib</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16951">Consistently referer dependencies</a>
+</td>
+</tr>
+<tr class=" backport core ">
+<td><a href="https://bugs.ruby-lang.org/issues/16950">16950</a>
+</td>
+<td>backport core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16950">Stop nonsense keyword argument warnings in 2.6</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/16941">16941</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16941">MJIT doesn&#39;t identify Struct kind of instruction</a>
+</td>
+</tr>
 <tr class=" enc ">
 <td><a href="https://bugs.ruby-lang.org/issues/16927">16927</a>
 </td>
@@ -86,13 +114,6 @@
 </td>
 <td>arm thread</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16920">TestThread#test_signal_at_join fails on aarch64</a>
-</td>
-</tr>
-<tr class=" lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/16919">16919</a>
-</td>
-<td>lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16919">IRB でマジックコメントの : の後に任意の文字を入力するとエラーが発生する</a>
 </td>
 </tr>
 <tr class=" notbug core ">
@@ -149,13 +170,6 @@
 </td>
 <td>enc</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16842">`inspect` prints the UTF-8 character U+0085 (NEXT LINE) verbatim even though it is not printable</a>
-</td>
-</tr>
-<tr class=" notbug parser ">
-<td><a href="https://bugs.ruby-lang.org/issues/16841">16841</a>
-</td>
-<td>notbug parser</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16841">Some syntax errors are thrown from compile.c</a>
 </td>
 </tr>
 <tr class=" notbug perf ">
@@ -550,13 +564,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16185">basictest failure on AIX 6.1 for 64bit build</a>
 </td>
 </tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/16173">16173</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16173">ENV.delete returns nil when name does not exist and block given</a>
-</td>
-</tr>
 <tr class=" regexp notbug ">
 <td><a href="https://bugs.ruby-lang.org/issues/16158">16158</a>
 </td>
@@ -585,27 +592,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16116">ruby2.6.3(x86/x64)  use win32ole could not new Object, return 0x80070057</a>
 </td>
 </tr>
-<tr class=" win core thread ">
-<td><a href="https://bugs.ruby-lang.org/issues/16110">16110</a>
-</td>
-<td>win core thread</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16110">Doesn&#39;t detect deadlock on Ruby 2.4 and 2.5 on Windows</a>
-</td>
-</tr>
-<tr class=" core ext maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/16031">16031</a>
-</td>
-<td>core ext maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16031">Inconsistency between Date::strptime and Time::strptime at the end of a month</a>
-</td>
-</tr>
-<tr class=" core maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/16004">16004</a>
-</td>
-<td>core maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16004">Kernel#lambda captured with Kernel#method doesn&#39;t create lambdas</a>
-</td>
-</tr>
 <tr class=" win encoding ">
 <td><a href="https://bugs.ruby-lang.org/issues/15993">15993</a>
 </td>
@@ -632,20 +618,6 @@
 </td>
 <td>core win</td>
 <td><a href="https://bugs.ruby-lang.org/issues/15852">APPLICATION_VERIFIER_LOCKS_LOCK_IN_FREED_HEAP on exiting ruby</a>
-</td>
-</tr>
-<tr class=" patch lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/15834">15834</a>
-</td>
-<td>patch lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/15834">Mutating the result of SortedSet.to_a mutates the original set, potentially violating the set&#39;s guarantees</a>
-</td>
-</tr>
-<tr class=" lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/15819">15819</a>
-</td>
-<td>lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/15819">cannot read document of File::NULL with &quot;ri File::NULL&quot;</a>
 </td>
 </tr>
 <tr class=" core autoload ">
@@ -1262,6 +1234,13 @@
 </td>
 <td>build</td>
 <td><a href="https://bugs.ruby-lang.org/issues/14543">`make commit` show error of `common-srcs`</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/14541">14541</a>
+</td>
+<td>patch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/14541">Class variables have broken semantics, let&#39;s fix them</a>
 </td>
 </tr>
 <tr class=" arm build ">
@@ -2872,13 +2851,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/4443">odd evaluation order in a multiple assignment</a>
-</td>
-</tr>
-<tr class=" ruby3 lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/4436">4436</a>
-</td>
-<td>ruby3 lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/4436">FileUtils verbose mode prints output to stderr</a>
 </td>
 </tr>
 <tr class=" thread maybenotbug ">
