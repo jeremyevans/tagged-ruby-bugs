@@ -3,7 +3,6 @@
 4173,test,TestProcess#test_wait_and_sigchild が、たまに失敗する
 4405,win thread ext,WIN32OLE &amp; Threads incompatible
 4434,thread maybenotbug,make test-all &quot;-j10000&quot; のように大きな並列数を与えると異常終了
-4436,ruby3 lib,FileUtils verbose mode prints output to stderr
 4443,core,odd evaluation order in a multiple assignment
 5179,patch core,Complex#rationalize and to_r with approximate zeros
 5317,core maybenotbug,rubyのヘッダファイルを使った拡張を行う際にoff_tの宣言回避をする事が出来ない。
@@ -234,6 +233,7 @@
 14474,test,skip &quot;TestException#test_thread_signal_location&quot; as known bug
 14479,tracepoint,Exceptions raised from a :call tracepoint can sometimes be &quot;rescued&quot; inside the method
 14480,arm build,miniruby crashing when compiled with -O2 or -O1 on aarch64
+14541,patch core,"Class variables have broken semantics, let&#39;s fix them"
 14543,build,`make commit` show error of `common-srcs`
 14570,win core,Wired behavior of File.expand_path() on Windows
 14582,tracepoint,Unable to use `method__entry` and `method_return` tracing probes since 2.5
@@ -322,20 +322,14 @@
 15779,patch core,"After NoMemoryError, ruby freezes and takes 100% CPU"
 15787,haiku lib maybenotbug,LoadError by EPERM on read-only volume
 15790,core autoload,Strange interaction between autoload and $LOADED_FEATURES
-15819,lib,cannot read document of File::NULL with &quot;ri File::NULL&quot;
-15834,patch lib,"Mutating the result of SortedSet.to_a mutates the original set, potentially violating the set&#39;s guarantees"
 15852,core win,APPLICATION_VERIFIER_LOCKS_LOCK_IN_FREED_HEAP on exiting ruby
 15856,core perf ,Idempotent performance of Kernel.require with many activated gems is slow
 15928,core,Constant declaration does not conform to JIS 3017:2013
 15993,win encoding,&#39;require&#39; doesn&#39;t work if there are Cyrillic chars in the path to Ruby dir
-16004,core maybenotbug,Kernel#lambda captured with Kernel#method doesn&#39;t create lambdas
-16031,core ext maybenotbug,Inconsistency between Date::strptime and Time::strptime at the end of a month
-16110,win core thread,Doesn&#39;t detect deadlock on Ruby 2.4 and 2.5 on Windows
 16116,win ext,"ruby2.6.3(x86/x64)  use win32ole could not new Object, return 0x80070057"
 16143,patch core,BOM UTF-8 is not removed after rewind
 16145,regexp,"regexp match error if mixing /i, character classes, and utf8"
 16158,regexp notbug,&quot;st&quot; Character Sequence In Regex Look-Behind Causes Illegal Pattern Error When Combined With POSIX Bracket Expressions And Case Insensitivity Flag
-16173,patch core,ENV.delete returns nil when name does not exist and block given
 16185,aix notbug,basictest failure on AIX 6.1 for 64bit build
 16186,patch core,Calling Net::HTTP from within an #inspect implementation hang when invoked from p
 16243,core perf,case/when is slower than if on MRI
@@ -392,7 +386,6 @@
 16835,maybenotbug core,SIGCHLD + system new behavior on 2.6
 16836,build,configure-time LDFLAGS leak into ruby pkg-config file
 16840,notbug perf,Decrease in Hash#[]= performance with object keys
-16841,notbug parser,Some syntax errors are thrown from compile.c
 16842,enc,`inspect` prints the UTF-8 character U+0085 (NEXT LINE) verbatim even though it is not printable
 16849,patch ext,ObjectSpace.trace_object_allocations_stop fails if called before ObjectSpace.trace_object_allocations_start
 16889,tracepoint,"TracePoint.enable { ... } also activates the TracePoint for other threads, even outside the block"
@@ -401,9 +394,12 @@
 16905,build,Ruby required to build Ruby on Haiku?
 16907,core,Probable use-after-free in VM assertion
 16908,notbug core,Strange behaviour of Hash#shift when used with `default_proc`.
-16919,lib,IRB でマジックコメントの : の後に任意の文字を入力するとエラーが発生する
 16920,arm thread,TestThread#test_signal_at_join fails on aarch64
 16921,s390,s390x: random test failures for timeout or segmentation fault
 16922,core,single quote should be escaped in xml
 16926,core,Kernel#require does not load a feature twice when $LOAD_PATH has been modified spec fails only on 2.7
 16927,enc,String#tr won&#39;t return the expected result for some sign with diacritics
+16941,core,MJIT doesn&#39;t identify Struct kind of instruction
+16950,backport core,Stop nonsense keyword argument warnings in 2.6
+16951,lib,Consistently referer dependencies
+16953,build,Windows bash bin files removed in master
