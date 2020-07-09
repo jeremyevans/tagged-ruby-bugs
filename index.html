@@ -1,20 +1,20 @@
 <html>
 <head>
-<title>405 Tagged Open Ruby Bugs as of 2020-06-12 07:10:44 +0900</title>
+<title>410 Tagged Open Ruby Bugs as of 2020-07-10 06:50:13 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
 <p class="filter-buttons">Available Tags: <input type="submit" value="core" />
 <input type="submit" value="win" />
-<input type="submit" value="ext" />
 <input type="submit" value="lib" />
+<input type="submit" value="ext" />
 <input type="submit" value="build" />
 <input type="submit" value="patch" />
 <input type="submit" value="maybenotbug" />
 <input type="submit" value="notbug" />
 <input type="submit" value="encoding" />
-<input type="submit" value="thread" />
 <input type="submit" value="test" />
+<input type="submit" value="thread" />
 <input type="submit" value="cygwin" />
 <input type="submit" value="tracepoint" />
 <input type="submit" value="perf" />
@@ -23,13 +23,13 @@
 <input type="submit" value="arm" />
 <input type="submit" value="fiber" />
 <input type="submit" value="s390" />
-<input type="submit" value="solaris" />
 <input type="submit" value="aix" />
-<input type="submit" value="enc" />
+<input type="submit" value="solaris" />
 <input type="submit" value="backport" />
 <input type="submit" value="unfixable" />
-<input type="submit" value="openssl" />
+<input type="submit" value="enc" />
 <input type="submit" value="autoload" />
+<input type="submit" value="openssl" />
 <input type="submit" value="linux" />
 <input type="submit" value="wip-patch" />
 <input type="submit" value="parser" />
@@ -39,12 +39,13 @@
 <input type="submit" value="ruby3" />
 <input type="submit" value="gc" />
 <input type="submit" value="mips" />
-<input type="submit" value="misc" /></p>
+<input type="submit" value="misc" />
+<input type="submit" value="jit" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">405</span> matched)
+(<span id="matched">410</span> matched)
 <table>
-<caption>405 Tagged Open Ruby Bugs as of 2020-06-12 07:10:44 +0900</caption>
+<caption>410 Tagged Open Ruby Bugs as of 2020-07-10 06:50:13 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -53,6 +54,118 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/17021">17021</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17021">&quot;arm64&quot; and &quot;arm&quot; are mixed in RbConfig on Apple silicon</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/17020">17020</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17020">ObjectSpace.trace_object_allocations_stop raises if called before trace_object_allocations_start</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/17017">17017</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17017">Range#max &amp; Range#minmax incorrectly use Float end as max</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/17015">17015</a>
+</td>
+<td>patch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17015">RubyVM::AbstractSyntaxTree.parse has the same result on `proc { |a| }` and `proc { |a,| }`</a>
+</td>
+</tr>
+<tr class=" jit win ">
+<td><a href="https://bugs.ruby-lang.org/issues/17008">17008</a>
+</td>
+<td>jit win</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17008">JIT enabled on Windows can cause constant conhost pop-ups</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/17007">17007</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17007">SystemStackError when using super inside Module included and lexically inside refinement</a>
+</td>
+</tr>
+<tr class=" win core ">
+<td><a href="https://bugs.ruby-lang.org/issues/17003">17003</a>
+</td>
+<td>win core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17003">Segfault during bundler specs on Windows</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/16997">16997</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16997">IO#gets converts some \r\n to \n with universal_newline: false</a>
+</td>
+</tr>
+<tr class=" notbug perf ">
+<td><a href="https://bugs.ruby-lang.org/issues/16996">16996</a>
+</td>
+<td>notbug perf</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16996">Hash should avoid doing unnecessary rehash</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/16983">16983</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16983">RubyVM::AbstractSyntaxTree.of(method) returns meaningless node if the method is defined in eval</a>
+</td>
+</tr>
+<tr class=" lib ">
+<td><a href="https://bugs.ruby-lang.org/issues/16982">16982</a>
+</td>
+<td>lib</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16982">Define instance_methods and so on explicitly on classes generated by DelegateClass</a>
+</td>
+</tr>
+<tr class=" refine maybenotbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/16977">16977</a>
+</td>
+<td>refine maybenotbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16977">Ambiguous lookup super for refinements</a>
+</td>
+</tr>
+<tr class=" patch lib ">
+<td><a href="https://bugs.ruby-lang.org/issues/16974">16974</a>
+</td>
+<td>patch lib</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16974">frozen string issue in lib/reline/ansi.rb on ruby-2.7.1</a>
+</td>
+</tr>
+<tr class=" win core ">
+<td><a href="https://bugs.ruby-lang.org/issues/16970">16970</a>
+</td>
+<td>win core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16970">Encoding of ENV value returns ASCII-8BIT in Ruby2.6 or later</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/16962">16962</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16962">IO.close behaviour</a>
+</td>
+</tr>
+<tr class=" maybenotbug core ">
+<td><a href="https://bugs.ruby-lang.org/issues/16959">16959</a>
+</td>
+<td>maybenotbug core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/16959">Weakmap has specs and third-party usage despite being a private API</a>
+</td>
+</tr>
 <tr class=" build ">
 <td><a href="https://bugs.ruby-lang.org/issues/16953">16953</a>
 </td>
@@ -72,13 +185,6 @@
 </td>
 <td>backport core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16950">Stop nonsense keyword argument warnings in 2.6</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/16941">16941</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16941">MJIT doesn&#39;t identify Struct kind of instruction</a>
 </td>
 </tr>
 <tr class=" enc ">
@@ -135,13 +241,6 @@
 </td>
 <td>build</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16905">Ruby required to build Ruby on Haiku?</a>
-</td>
-</tr>
-<tr class=" lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/16904">16904</a>
-</td>
-<td>lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16904">rubygems: psych: superclass mismatch for class Mark (TypeError)</a>
 </td>
 </tr>
 <tr class=" lib ">
@@ -424,20 +523,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16518">Should we rationalize Rational&#39;s numerator automatically?</a>
 </td>
 </tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/16504">16504</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16504">`foo(*args, &amp;args.pop)` should pass all elements of args</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/16500">16500</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16500">Argument is added to both splat and last &amp;block argument</a>
-</td>
-</tr>
 <tr class=" ext ">
 <td><a href="https://bugs.ruby-lang.org/issues/16497">16497</a>
 </td>
@@ -456,7 +541,7 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16492">16492</a>
 </td>
 <td>test</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16492">TestBugReporter#test_bug_reporter_add test failures on s390x</a>
+<td><a href="https://bugs.ruby-lang.org/issues/16492">TestBugReporter#test_bug_reporter_add test failures</a>
 </td>
 </tr>
 <tr class=" build lib ">
@@ -649,24 +734,10 @@
 </td>
 </tr>
 <tr class=" core thread ">
-<td><a href="https://bugs.ruby-lang.org/issues/15737">15737</a>
-</td>
-<td>core thread</td>
-<td><a href="https://bugs.ruby-lang.org/issues/15737">Queue#pop randomly hangs forever</a>
-</td>
-</tr>
-<tr class=" core thread ">
 <td><a href="https://bugs.ruby-lang.org/issues/15735">15735</a>
 </td>
 <td>core thread</td>
 <td><a href="https://bugs.ruby-lang.org/issues/15735">Thread#handle_interrupt does not prevent Thread#kill from interrupting</a>
-</td>
-</tr>
-<tr class=" core thread openssl ">
-<td><a href="https://bugs.ruby-lang.org/issues/15729">15729</a>
-</td>
-<td>core thread openssl</td>
-<td><a href="https://bugs.ruby-lang.org/issues/15729">OpenSSL::SSL::SSLSocket#connect randomly hangs</a>
 </td>
 </tr>
 <tr class=" ext encoding ">
@@ -739,13 +810,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/15598">Deadlock on mutual reference of autoloaded constants</a>
 </td>
 </tr>
-<tr class=" perf ">
-<td><a href="https://bugs.ruby-lang.org/issues/15589">15589</a>
-</td>
-<td>perf</td>
-<td><a href="https://bugs.ruby-lang.org/issues/15589">`Numeric#zero?` is much slower than `== 0`</a>
-</td>
-</tr>
 <tr class=" win thread ">
 <td><a href="https://bugs.ruby-lang.org/issues/15587">15587</a>
 </td>
@@ -772,13 +836,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/15570">rb_int2big signature change #14036 breaks VIM on 32b arches</a>
-</td>
-</tr>
-<tr class=" win thread ">
-<td><a href="https://bugs.ruby-lang.org/issues/15569">15569</a>
-</td>
-<td>win thread</td>
-<td><a href="https://bugs.ruby-lang.org/issues/15569">TestResolvDNS#test_no_server always fails on usa&#39;s mswin environment</a>
 </td>
 </tr>
 <tr class=" win ">
@@ -1234,13 +1291,6 @@
 </td>
 <td>build</td>
 <td><a href="https://bugs.ruby-lang.org/issues/14543">`make commit` show error of `common-srcs`</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/14541">14541</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/14541">Class variables have broken semantics, let&#39;s fix them</a>
 </td>
 </tr>
 <tr class=" arm build ">
@@ -1964,13 +2014,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/11704">Refinements only get &quot;used&quot; once in loop</a>
 </td>
 </tr>
-<tr class=" refine ">
-<td><a href="https://bugs.ruby-lang.org/issues/11669">11669</a>
-</td>
-<td>refine</td>
-<td><a href="https://bugs.ruby-lang.org/issues/11669">inconsitent behavior of refining frozen class</a>
-</td>
-</tr>
 <tr class=" core solaris maybenotbug ">
 <td><a href="https://bugs.ruby-lang.org/issues/11582">11582</a>
 </td>
@@ -2431,13 +2474,6 @@
 </td>
 <td>refine maybenotbug</td>
 <td><a href="https://bugs.ruby-lang.org/issues/9580">Refinements regression in IRB</a>
-</td>
-</tr>
-<tr class=" core maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/9573">9573</a>
-</td>
-<td>core maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/9573">descendants of a module don&#39;t gain its future ancestors, but descendants of a class, do</a>
 </td>
 </tr>
 <tr class=" lib unfixable ">
