@@ -62,7 +62,6 @@
 9504,patch ext,X509 certificate incorrectly loaded (because of try-pem-first-else-asn1)
 9507,core arm,Ruby 2.1.0 is broken on ARMv5: tried to create Proc object without a block
 9542,lib unfixable,Delegator does not delegate protected methods
-9573,core maybenotbug,"descendants of a module don&#39;t gain its future ancestors, but descendants of a class, do"
 9580,refine maybenotbug,Refinements regression in IRB
 9595,ext,Float#to_d inconsistent between 2.0.0 and 2.1.1
 9659,ext,crash in FIPS mode after unchecked algo-&gt;init_func failure
@@ -129,7 +128,6 @@
 11533,lib aix,AIX6.1 - Ruby 2.2.3 - TestMkmf::TestConvertible#test_typeof_builtin fails
 11579,patch ext,Fiddle.win32_last_error after calling Fiddle::Function#call isn&#39;t GetLastError()
 11582,core solaris maybenotbug,"On Solaris, Rational#** returns -Infinity for Rational(0) when passed a negative Float"
-11669,refine,inconsitent behavior of refining frozen class
 11704,refine maybenotbug,Refinements only get &quot;used&quot; once in loop
 11706,encoding notbug,"Clean up files etc/unicode/name2ctype.{h.blt,kwd,src}"
 11778,core,recv_io with mode breaks when klass arg is kind of BasicSocket
@@ -233,7 +231,6 @@
 14474,test,skip &quot;TestException#test_thread_signal_location&quot; as known bug
 14479,tracepoint,Exceptions raised from a :call tracepoint can sometimes be &quot;rescued&quot; inside the method
 14480,arm build,miniruby crashing when compiled with -O2 or -O1 on aarch64
-14541,patch core,"Class variables have broken semantics, let&#39;s fix them"
 14543,build,`make commit` show error of `common-srcs`
 14570,win core,Wired behavior of File.expand_path() on Windows
 14582,tracepoint,Unable to use `method__entry` and `method_return` tracing probes since 2.5
@@ -299,12 +296,10 @@
 15509,"",TCPServer#accept isn&#39;t interrupted
 15517,lib encoding,Net::HTTP not recognizing valid UTF-8
 15550,win,Windows - gem bin files - can&#39;t run from bash shell
-15569,win thread,TestResolvDNS#test_no_server always fails on usa&#39;s mswin environment
 15570,core,rb_int2big signature change #14036 breaks VIM on 32b arches
 15576,core notbug,Wrong error message from some class methods of `Dir`
 15579,aix build,make step when building ruby 2.4.5 on AIX 7.1 results in a Segmentation fault : ruby-2.4.5/lib/rdoc/markup/parser.rb:325
 15587,win thread,Thread tests failing
-15589,perf,`Numeric#zero?` is much slower than `== 0`
 15598,core autoload,Deadlock on mutual reference of autoloaded constants
 15599,core autoload,Mixing autoload and require causes deadlock and incomplete definition.
 15621,win encoding,"system({}, ...) breaks nonascii ENV[&quot;PATH&quot;] on Windows"
@@ -315,9 +310,7 @@
 15674,core,"Regression: ObjectSpace.allocation_sourceline produces the wrong location for allocations, it shows the end of the method instead of the line where the object was created"
 15712,ext,DateTime#=== should be defined and compare date and time instead of just the date
 15718,ext encoding,YAML raises error when dumping strings with UTF32 encoding
-15729,core thread openssl,OpenSSL::SSL::SSLSocket#connect randomly hangs
 15735,core thread,Thread#handle_interrupt does not prevent Thread#kill from interrupting
-15737,core thread,Queue#pop randomly hangs forever
 15764,parser,Whitespace and control characters should not be permitted in tokens
 15779,patch core,"After NoMemoryError, ruby freezes and takes 100% CPU"
 15787,haiku lib maybenotbug,LoadError by EPERM on read-only volume
@@ -345,11 +338,9 @@
 16448,core,regex global variables are working differently depending on scope
 16475,build notbug,[Installation process - compiling ruby 2.7.0 from source} &quot;make install&quot; step oddity for ruby 2.7.0 on linux minut (debian base)
 16490,build lib,mkmf.rbの非互換な変更
-16492,test,TestBugReporter#test_bug_reporter_add test failures on s390x
+16492,test,TestBugReporter#test_bug_reporter_add test failures
 16493,thread arm,TestThreadQueue#test_thr_kill is flaky on AArch64
 16497,ext,StringIO#internal_encoding is broken (more severely in 2.7)
-16500,core,Argument is added to both splat and last &amp;block argument
-16504,core,"`foo(*args, &amp;args.pop)` should pass all elements of args"
 16518,core,Should we rationalize Rational&#39;s numerator automatically?
 16608,ext,ConditionVariable#wait should return false when timeout exceeded
 16612,core,Enumerator::ArithmeticSequence#last with float range produces incorrect value
@@ -390,7 +381,6 @@
 16849,patch ext,ObjectSpace.trace_object_allocations_stop fails if called before ObjectSpace.trace_object_allocations_start
 16889,tracepoint,"TracePoint.enable { ... } also activates the TracePoint for other threads, even outside the block"
 16896,lib,MakeMakefile methods should be private
-16904,lib,rubygems: psych: superclass mismatch for class Mark (TypeError)
 16905,build,Ruby required to build Ruby on Haiku?
 16907,core,Probable use-after-free in VM assertion
 16908,notbug core,Strange behaviour of Hash#shift when used with `default_proc`.
@@ -399,7 +389,22 @@
 16922,core,single quote should be escaped in xml
 16926,core,Kernel#require does not load a feature twice when $LOAD_PATH has been modified spec fails only on 2.7
 16927,enc,String#tr won&#39;t return the expected result for some sign with diacritics
-16941,core,MJIT doesn&#39;t identify Struct kind of instruction
 16950,backport core,Stop nonsense keyword argument warnings in 2.6
 16951,lib,Consistently referer dependencies
 16953,build,Windows bash bin files removed in master
+16959,maybenotbug core,Weakmap has specs and third-party usage despite being a private API
+16962,core,IO.close behaviour
+16970,win core,Encoding of ENV value returns ASCII-8BIT in Ruby2.6 or later
+16974,patch lib,frozen string issue in lib/reline/ansi.rb on ruby-2.7.1
+16977,refine maybenotbug,Ambiguous lookup super for refinements
+16982,lib,Define instance_methods and so on explicitly on classes generated by DelegateClass
+16983,core,RubyVM::AbstractSyntaxTree.of(method) returns meaningless node if the method is defined in eval
+16996,notbug perf,Hash should avoid doing unnecessary rehash
+16997,core,IO#gets converts some \r\n to \n with universal_newline: false
+17003,win core,Segfault during bundler specs on Windows
+17007,core,SystemStackError when using super inside Module included and lexically inside refinement
+17008,jit win,JIT enabled on Windows can cause constant conhost pop-ups
+17015,patch core,"RubyVM::AbstractSyntaxTree.parse has the same result on `proc { |a| }` and `proc { |a,| }`"
+17017,core,Range#max &amp; Range#minmax incorrectly use Float end as max
+17020,core,ObjectSpace.trace_object_allocations_stop raises if called before trace_object_allocations_start
+17021,core,&quot;arm64&quot; and &quot;arm&quot; are mixed in RbConfig on Apple silicon
