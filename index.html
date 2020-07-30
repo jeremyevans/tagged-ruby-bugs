@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>412 Tagged Open Ruby Bugs as of 2020-07-18 06:46:35 +0900</title>
+<title>407 Tagged Open Ruby Bugs as of 2020-07-31 02:51:09 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -43,9 +43,9 @@
 <input type="submit" value="jit" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">412</span> matched)
+(<span id="matched">407</span> matched)
 <table>
-<caption>412 Tagged Open Ruby Bugs as of 2020-07-18 06:46:35 +0900</caption>
+<caption>407 Tagged Open Ruby Bugs as of 2020-07-31 02:51:09 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -54,11 +54,39 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" patch lib ">
+<td><a href="https://bugs.ruby-lang.org/issues/17057">17057</a>
+</td>
+<td>patch lib</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17057">CGI different behaviour with C vs Ruby version</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/17052">17052</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17052">Ruby with LTO enabled has issues with SIGSEGV handler</a>
+</td>
+</tr>
+<tr class=" notbug lib ">
+<td><a href="https://bugs.ruby-lang.org/issues/17049">17049</a>
+</td>
+<td>notbug lib</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17049">Net::IMAP - Handling of NOOP untagged responses sent by Zimbra</a>
+</td>
+</tr>
 <tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/17034">17034</a>
+<td><a href="https://bugs.ruby-lang.org/issues/17048">17048</a>
 </td>
 <td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17034">Unexpected behavior in #max for beginless range</a>
+<td><a href="https://bugs.ruby-lang.org/issues/17048">Calling initialize_copy on live modules leads to crashes</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/17037">17037</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17037">rounding of Rational#to_f</a>
 </td>
 </tr>
 <tr class=" perf core ">
@@ -75,32 +103,11 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17030">Enumerable#grep{_v} should be optimized for Regexp</a>
 </td>
 </tr>
-<tr class=" lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/17029">17029</a>
-</td>
-<td>lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17029">URI.parse considers https://example.com/### invalid when browsers consider it valid</a>
-</td>
-</tr>
-<tr class=" notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/17028">17028</a>
-</td>
-<td>notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17028">On the latest OpenSSL adaptation</a>
-</td>
-</tr>
 <tr class=" patch lib ">
 <td><a href="https://bugs.ruby-lang.org/issues/17027">17027</a>
 </td>
 <td>patch lib</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17027">Connection leak possibility in Net::FTP#transfercmd</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/17025">17025</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17025">`Time#ceil` does not work like `Rational#ceil` or `Float#ceil`</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -117,13 +124,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17020">ObjectSpace.trace_object_allocations_stop raises if called before trace_object_allocations_start</a>
 </td>
 </tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/17017">17017</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17017">Range#max &amp; Range#minmax incorrectly use Float end as max</a>
-</td>
-</tr>
 <tr class=" patch core ">
 <td><a href="https://bugs.ruby-lang.org/issues/17015">17015</a>
 </td>
@@ -136,13 +136,6 @@
 </td>
 <td>jit win</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17008">JIT enabled on Windows can cause constant conhost pop-ups</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/17007">17007</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17007">SystemStackError when using super inside Module included and lexically inside refinement</a>
 </td>
 </tr>
 <tr class=" win core ">
@@ -1181,13 +1174,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/14817">TracePoint#parameters for bmethod&#39;s return event should return the same value as its Method#parameters</a>
 </td>
 </tr>
-<tr class=" ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/14804">14804</a>
-</td>
-<td>ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/14804">GzipReader cannot read Freebase dump (but gzcat/zless can)</a>
-</td>
-</tr>
 <tr class=" solaris thread ">
 <td><a href="https://bugs.ruby-lang.org/issues/14761">14761</a>
 </td>
@@ -2161,13 +2147,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/11182">Refinement with alias causes strange behavior</a>
 </td>
 </tr>
-<tr class=" ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/11180">11180</a>
-</td>
-<td>ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/11180">Missing lines with Zlib::GzipReader</a>
-</td>
-</tr>
 <tr class=" win core ">
 <td><a href="https://bugs.ruby-lang.org/issues/11177">11177</a>
 </td>
@@ -2441,13 +2420,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/9806">URI#encode doesn&#39;t encode characters &#39;[&#39; and &#39;]&#39;.  They should be encoded as %5B and %5D respectively.</a>
 </td>
 </tr>
-<tr class=" ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/9790">9790</a>
-</td>
-<td>ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/9790">Zlib::GzipReader only decompressed the first of concatenated files</a>
-</td>
-</tr>
 <tr class=" build ">
 <td><a href="https://bugs.ruby-lang.org/issues/9760">9760</a>
 </td>
@@ -2691,13 +2663,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/8484">Restoring conditions through the ruby method call during VM processing</a>
-</td>
-</tr>
-<tr class=" ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/8446">8446</a>
-</td>
-<td>ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/8446">sdbm fails to fetch existing key if many elements in it</a>
 </td>
 </tr>
 <tr class=" patch core ">
