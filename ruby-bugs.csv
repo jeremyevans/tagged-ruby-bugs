@@ -32,7 +32,6 @@
 8299,core,Minor error in float parsing
 8444,core,Regexp vars $~ and friends are not thread local
 8445,patch core,IO.open and IO#set_enconding does not support :fallback option
-8446,ext,sdbm fails to fetch existing key if many elements in it
 8484,core,Restoring conditions through the ruby method call during VM processing
 8677,patch core maybenotbug,$LOAD_PATH did not encoded into the &quot;internal encoding&quot;
 8744,build,SIZEOF_UNSIGNED___INT128
@@ -68,7 +67,6 @@
 9715,win encoding,ENV data yield ASCII-8BIT encoded strings under Windows with unicode username
 9737,wip-patch encoding,Non-ASCII characters in the path to ruby executable break require paths
 9760,build,mkmf does not allow for linking against custom libraries when a system library is present
-9790,ext,Zlib::GzipReader only decompressed the first of concatenated files
 9806,lib maybenotbug,URI#encode doesn&#39;t encode characters &#39;[&#39; and &#39;]&#39;.  They should be encoded as %5B and %5D respectively.
 9877,lib maybenotbug,"IRB::OutputMethod defines &quot;pp&quot;, but it&#39;s actually &quot;p&quot;"
 9921,build maybenotbug,"gmtime_r, win32.h, and &lt;string&gt;"
@@ -108,7 +106,6 @@
 11164,core,Garbage collector in Ruby 2.2 provokes unexpected CoW
 11174,thread linux,threads memory leak
 11177,win core,DATAでEOF文字以降が読めない
-11180,ext,Missing lines with Zlib::GzipReader
 11182,refine,Refinement with alias causes strange behavior
 11183,core,Cumulative error on Complex::I ** 100000000000000000000000000000000
 11189,core,alias prepended module
@@ -248,7 +245,6 @@
 14743,doc notbug,Some links broken in README
 14744,refine,Refinements modules have a superclass
 14761,solaris thread,TestThread#test_join_limits hangs up on Solaris 10 with gcc
-14804,ext,GzipReader cannot read Freebase dump (but gzcat/zless can)
 14817,tracepoint,TracePoint#parameters for bmethod&#39;s return event should return the same value as its Method#parameters
 14823,core maybenotbug,Endless Range Excluding End
 14824,lib,Endless Range Support in irb
@@ -397,16 +393,15 @@
 16996,notbug perf,Hash should avoid doing unnecessary rehash
 16997,core,IO#gets converts some \r\n to \n with universal_newline: false
 17003,win core,Segfault during bundler specs on Windows
-17007,core,SystemStackError when using super inside Module included and lexically inside refinement
 17008,jit win,JIT enabled on Windows can cause constant conhost pop-ups
 17015,patch core,"RubyVM::AbstractSyntaxTree.parse has the same result on `proc { |a| }` and `proc { |a,| }`"
-17017,core,Range#max &amp; Range#minmax incorrectly use Float end as max
 17020,core,ObjectSpace.trace_object_allocations_stop raises if called before trace_object_allocations_start
 17021,core,&quot;arm64&quot; and &quot;arm&quot; are mixed in RbConfig on Apple silicon
-17025,core,`Time#ceil` does not work like `Rational#ceil` or `Float#ceil`
 17027,patch lib,Connection leak possibility in Net::FTP#transfercmd
-17028,notbug,On the latest OpenSSL adaptation
-17029,lib,URI.parse considers https://example.com/### invalid when browsers consider it valid
 17030,perf core,Enumerable#grep{_v} should be optimized for Regexp
 17031,perf core,"`Kernel#caller_locations(m, n)` should be optimized"
-17034,patch core,Unexpected behavior in #max for beginless range
+17037,core,rounding of Rational#to_f
+17048,patch core,Calling initialize_copy on live modules leads to crashes
+17049,notbug lib,Net::IMAP - Handling of NOOP untagged responses sent by Zimbra
+17052,core,Ruby with LTO enabled has issues with SIGSEGV handler
+17057,patch lib,CGI different behaviour with C vs Ruby version
