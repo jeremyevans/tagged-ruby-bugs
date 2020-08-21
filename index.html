@@ -1,15 +1,15 @@
 <html>
 <head>
-<title>407 Tagged Open Ruby Bugs as of 2020-07-31 02:51:09 +0900</title>
+<title>404 Tagged Open Ruby Bugs as of 2020-08-22 01:58:38 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
 <p class="filter-buttons">Available Tags: <input type="submit" value="core" />
 <input type="submit" value="win" />
 <input type="submit" value="lib" />
+<input type="submit" value="patch" />
 <input type="submit" value="ext" />
 <input type="submit" value="build" />
-<input type="submit" value="patch" />
 <input type="submit" value="maybenotbug" />
 <input type="submit" value="notbug" />
 <input type="submit" value="encoding" />
@@ -23,13 +23,13 @@
 <input type="submit" value="refine" />
 <input type="submit" value="fiber" />
 <input type="submit" value="s390" />
-<input type="submit" value="aix" />
 <input type="submit" value="solaris" />
+<input type="submit" value="aix" />
+<input type="submit" value="enc" />
 <input type="submit" value="backport" />
 <input type="submit" value="unfixable" />
-<input type="submit" value="enc" />
-<input type="submit" value="autoload" />
 <input type="submit" value="openssl" />
+<input type="submit" value="autoload" />
 <input type="submit" value="linux" />
 <input type="submit" value="wip-patch" />
 <input type="submit" value="parser" />
@@ -43,9 +43,9 @@
 <input type="submit" value="jit" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">407</span> matched)
+(<span id="matched">404</span> matched)
 <table>
-<caption>407 Tagged Open Ruby Bugs as of 2020-07-31 02:51:09 +0900</caption>
+<caption>404 Tagged Open Ruby Bugs as of 2020-08-22 01:58:38 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -54,18 +54,74 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" ext patch ">
+<td><a href="https://bugs.ruby-lang.org/issues/17128">17128</a>
+</td>
+<td>ext patch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17128">test_io_console.rb fails on actual console</a>
+</td>
+</tr>
+<tr class=" maybenotbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/17124">17124</a>
+</td>
+<td>maybenotbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17124">Wrong &quot;ambiguous first argument&quot; warning</a>
+</td>
+</tr>
+<tr class=" core patch ">
+<td><a href="https://bugs.ruby-lang.org/issues/17120">17120</a>
+</td>
+<td>core patch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17120">String#start_with? return wrong result for Regexp patterns containing /\K/</a>
+</td>
+</tr>
+<tr class=" lib patch ">
+<td><a href="https://bugs.ruby-lang.org/issues/17112">17112</a>
+</td>
+<td>lib patch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17112">Resolv.getaddress fails with IPv6 link-local addresses </a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/17105">17105</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17105">A single `return` can return to two different places in a proc inside a lambda inside a method</a>
+</td>
+</tr>
+<tr class=" openssl ">
+<td><a href="https://bugs.ruby-lang.org/issues/17102">17102</a>
+</td>
+<td>openssl</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17102">openssl/buffering.rb:182: [BUG] Segmentation fault at 0x00001fa0fd774000</a>
+</td>
+</tr>
+<tr class=" maybenotbug perf lib ">
+<td><a href="https://bugs.ruby-lang.org/issues/17101">17101</a>
+</td>
+<td>maybenotbug perf lib</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17101">YAML.load_file: Massive slowdown under Ruby 2.7 vs. Ruby 2.4</a>
+</td>
+</tr>
+<tr class=" notbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/17098">17098</a>
+</td>
+<td>notbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17098">Float#negative? reports negative zero as not negative</a>
+</td>
+</tr>
+<tr class=" maybenotbug ext ">
+<td><a href="https://bugs.ruby-lang.org/issues/17094">17094</a>
+</td>
+<td>maybenotbug ext</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17094">PTY methods with blocks</a>
+</td>
+</tr>
 <tr class=" patch lib ">
 <td><a href="https://bugs.ruby-lang.org/issues/17057">17057</a>
 </td>
 <td>patch lib</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17057">CGI different behaviour with C vs Ruby version</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/17052">17052</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17052">Ruby with LTO enabled has issues with SIGSEGV handler</a>
 </td>
 </tr>
 <tr class=" notbug lib ">
@@ -115,13 +171,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17021">&quot;arm64&quot; and &quot;arm&quot; are mixed in RbConfig on Apple silicon</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/17020">17020</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17020">ObjectSpace.trace_object_allocations_stop raises if called before trace_object_allocations_start</a>
 </td>
 </tr>
 <tr class=" patch core ">
@@ -450,7 +499,7 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16680">16680</a>
 </td>
 <td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16680">[Breaking Change] Ruby 2.7 not support  symlinks folder in $LOAD_PATH to work with autoload.</a>
+<td><a href="https://bugs.ruby-lang.org/issues/16680">Symlink folder in $LOAD_PATH does not work with autoload</a>
 </td>
 </tr>
 <tr class=" test ">
@@ -702,7 +751,7 @@
 <td><a href="https://bugs.ruby-lang.org/issues/15856">15856</a>
 </td>
 <td>core perf </td>
-<td><a href="https://bugs.ruby-lang.org/issues/15856">Idempotent performance of Kernel.require with many activated gems is slow</a>
+<td><a href="https://bugs.ruby-lang.org/issues/15856">Performance of redundant `Kernel.require` is slow when many gems are activated</a>
 </td>
 </tr>
 <tr class=" core win ">
@@ -2196,13 +2245,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/11022">opening an eigenclass does not change the class variable definition context</a>
 </td>
 </tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/10959">10959</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/10959">rb_iseq_load: problems with hash containing symbolic keys</a>
-</td>
-</tr>
 <tr class=" lib ">
 <td><a href="https://bugs.ruby-lang.org/issues/10919">10919</a>
 </td>
@@ -2252,13 +2294,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/10637">Puppet orchestration on vagrant fails with Error: Non-HTTP proxy URI</a>
 </td>
 </tr>
-<tr class=" lib notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/10613">10613</a>
-</td>
-<td>lib notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/10613">SNI is not optional when using TLS</a>
-</td>
-</tr>
 <tr class=" encoding maybenotbug ">
 <td><a href="https://bugs.ruby-lang.org/issues/10584">10584</a>
 </td>
@@ -2294,20 +2329,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/10534">Enumerator methods other than &quot;next&quot; do not always respect &quot;peek&quot;</a>
 </td>
 </tr>
-<tr class=" ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/10484">10484</a>
-</td>
-<td>ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/10484">http response throw error with broken gzip compressed block(but can decompress)</a>
-</td>
-</tr>
-<tr class=" core notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/10475">10475</a>
-</td>
-<td>core notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/10475">Array#flatten should not accept a nil argument</a>
-</td>
-</tr>
 <tr class=" tracepoint ">
 <td><a href="https://bugs.ruby-lang.org/issues/10470">10470</a>
 </td>
@@ -2334,13 +2355,6 @@
 </td>
 <td>build</td>
 <td><a href="https://bugs.ruby-lang.org/issues/10416">Create mechanism for updating of Unicode data files downstreams when we want</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/10248">10248</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/10248">Possible missing test or bug for Module#include and Module#prepend</a>
 </td>
 </tr>
 <tr class=" build notbug ">
@@ -2476,13 +2490,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/9507">Ruby 2.1.0 is broken on ARMv5: tried to create Proc object without a block</a>
 </td>
 </tr>
-<tr class=" patch ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/9504">9504</a>
-</td>
-<td>patch ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/9504">X509 certificate incorrectly loaded (because of try-pem-first-else-asn1)</a>
-</td>
-</tr>
 <tr class=" patch lib ">
 <td><a href="https://bugs.ruby-lang.org/issues/9459">9459</a>
 </td>
@@ -2523,20 +2530,6 @@
 </td>
 <td>test</td>
 <td><a href="https://bugs.ruby-lang.org/issues/9366">&quot;make -j32 check TESTS=-j32&quot; occasionally fails on rubygems/specification</a>
-</td>
-</tr>
-<tr class=" build notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/9287">9287</a>
-</td>
-<td>build notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/9287">&#39;rb_obj_write&#39; discards qualifiers from pointer target type</a>
-</td>
-</tr>
-<tr class=" win core ">
-<td><a href="https://bugs.ruby-lang.org/issues/9274">9274</a>
-</td>
-<td>win core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/9274">A lot of SystemStackError on Windows 8.1 with MSVC 2013</a>
 </td>
 </tr>
 <tr class=" ext ">
@@ -2770,13 +2763,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/7676">Comparison of Float::NAN in array behaves unexpectedly</a>
 </td>
 </tr>
-<tr class=" win ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/6407">6407</a>
-</td>
-<td>win ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/6407">Most Test Failure for BigDecimal on 64bit Windows, any GCC parameter needed?</a>
-</td>
-</tr>
 <tr class=" win build ">
 <td><a href="https://bugs.ruby-lang.org/issues/6391">6391</a>
 </td>
@@ -2810,13 +2796,6 @@
 </td>
 <td>core ext</td>
 <td><a href="https://bugs.ruby-lang.org/issues/6120">Float and BigDecimal bug in remainder in corner cases</a>
-</td>
-</tr>
-<tr class=" fiber notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/6117">6117</a>
-</td>
-<td>fiber notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/6117">Transfers allowed into Fibers that have resumed into other fibers</a>
 </td>
 </tr>
 <tr class=" core ruby3 ">
