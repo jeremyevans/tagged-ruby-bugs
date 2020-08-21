@@ -10,13 +10,11 @@
 5418,lib,Some properties of WEBrick::HTTPRequest could be malformed
 5771,ext maybenotbug,WIN32OLERuntimeError using 1.9.2
 6087,core ruby3,How should inherited methods deal with return values of their own subclass? 
-6117,fiber notbug,Transfers allowed into Fibers that have resumed into other fibers
 6120,core ext,Float and BigDecimal bug in remainder in corner cases
 6124,build,remove the &quot;spec-only gems&quot; in Ruby 1.9.3 (was What is the purpose of &quot;fake&quot; gems in Ruby)
 6351,encoding,transcode table generator does not support multi characters of Unicode
 6360,win build,Debug information build even without requesting it
 6391,win build,Segment Fault while execute make_encmake.rb for Ruby 1.9.3 P194 ( MinGW64)
-6407,win ext,"Most Test Failure for BigDecimal on 64bit Windows, any GCC parameter needed?"
 7676,core,Comparison of Float::NAN in array behaves unexpectedly
 7742,encoding,System encoding (Windows-1258) is not recognized by Ruby to  convert back to UTF-8 
 7758,win encoding,Ruby on Windows crashes when active codepage is codepage 65001 and outputting unicode character
@@ -50,15 +48,12 @@
 9208,patch win core,Win32 ANSI color no longer works since revision 43331
 9245,win encoding,Kernel::system gives wrong output for utf-8 characters on windows under utf-8 console
 9246,ext,NoMemoryError is occurred by simple addition of BigDecimal
-9274,win core,A lot of SystemStackError on Windows 8.1 with MSVC 2013
-9287,build notbug,&#39;rb_obj_write&#39; discards qualifiers from pointer target type
 9366,test,&quot;make -j32 check TESTS=-j32&quot; occasionally fails on rubygems/specification
 9409,cygwin encoding,Cygwin で &quot;filesystem&quot; の encoding が正しくないケース
 9414,win encoding maybenotbug,strftime returns incorrectly encoded string
 9431,win core maybenotbug,In windows ruby IO.write returns count of bytes without count of CR character
 9435,win core,Kernel.system problem
 9459,patch lib,Net::HTTP initializes openssl library after TCP connection is established
-9504,patch ext,X509 certificate incorrectly loaded (because of try-pem-first-else-asn1)
 9507,core arm,Ruby 2.1.0 is broken on ARMv5: tried to create Proc object without a block
 9542,lib unfixable,Delegator does not delegate protected methods
 9580,refine maybenotbug,Refinements regression in IRB
@@ -78,19 +73,15 @@
 10128,win core,"Quoting problem for arguments of Kernel.system, Kernel.exec on Windows"
 10203,ext,TCPServer.new has strange behaviour when EADDRINUSE without specifying hostname
 10213,build notbug,bundled gems ignored by make install
-10248,core,Possible missing test or bug for Module#include and Module#prepend
 10416,build,Create mechanism for updating of Unicode data files downstreams when we want
 10417,encoding,IO#set_encoding without int_enc doesn&#39;t keep current internal encoding
 10436,patch ext,ruby -c and ripper inconsistency: m(&amp;nil) {}
 10470,tracepoint,TracePoint cannot trace attr_accessor/reader/writer method
-10475,core notbug,Array#flatten should not accept a nil argument
-10484,ext,http response throw error with broken gzip compressed block(but can decompress)
 10534,core notbug,Enumerator methods other than &quot;next&quot; do not always respect &quot;peek&quot;
 10542,build,out-of-place build from repository builds enc/trans/*.c in the source directory and the build directory 
 10561,core maybenotbug,Improve function of Thread::Backtrace::Location #path and #absolute_path
 10580,test arm,TestProcess#test_deadlock_by_signal_at_forking fails on ARM
 10584,encoding maybenotbug,"String.valid_encoding?, String.ascii_only? fails to account for BOM."
-10613,lib notbug,SNI is not optional when using TLS
 10637,lib,Puppet orchestration on vagrant fails with Error: Non-HTTP proxy URI
 10684,core maybenotbug,Block arity changes through Enumerable methods
 10749,core,Possible overflow in GC::Profiler report on 2.2.0
@@ -98,7 +89,6 @@
 10855,patch lib,[PATCH] Matrix#inverse returns matrix of integers whenever possible
 10902,core,require(&quot;enumerator&quot;) scans LOAD_PATH 2x on every invocation
 10919,lib,[gem install] installs multipe platforms
-10959,core,rb_iseq_load: problems with hash containing symbolic keys
 11022,core notbug,opening an eigenclass does not change the class variable definition context
 11063,patch core maybenotbug,Special singleton class should return true for singleton_class? test
 11064,core maybenotbug,#singleton_methods for objects with special singleton_class returns an empty array
@@ -312,7 +302,7 @@
 15787,haiku lib maybenotbug,LoadError by EPERM on read-only volume
 15790,core autoload,Strange interaction between autoload and $LOADED_FEATURES
 15852,core win,APPLICATION_VERIFIER_LOCKS_LOCK_IN_FREED_HEAP on exiting ruby
-15856,core perf ,Idempotent performance of Kernel.require with many activated gems is slow
+15856,core perf ,Performance of redundant `Kernel.require` is slow when many gems are activated
 15928,core,Constant declaration does not conform to JIS 3017:2013
 15993,win encoding,&#39;require&#39; doesn&#39;t work if there are Cyrillic chars in the path to Ruby dir
 16143,patch core,BOM UTF-8 is not removed after rewind
@@ -348,7 +338,7 @@
 16672,lib,net/http leaves original content-length header intact after inflating response
 16674,build,Build issue of FreeBSD 12
 16679,test,Test of Ruby fails under multiple OS user userland installations
-16680,core,[Breaking Change] Ruby 2.7 not support  symlinks folder in $LOAD_PATH to work with autoload.
+16680,core,Symlink folder in $LOAD_PATH does not work with autoload
 16685,lib,IRB auto indent does not work for single-line method definitions
 16694,core,JIT vs hardened GCC with PCH
 16695,core,Stack consistency error when using the return value
@@ -395,7 +385,6 @@
 17003,win core,Segfault during bundler specs on Windows
 17008,jit win,JIT enabled on Windows can cause constant conhost pop-ups
 17015,patch core,"RubyVM::AbstractSyntaxTree.parse has the same result on `proc { |a| }` and `proc { |a,| }`"
-17020,core,ObjectSpace.trace_object_allocations_stop raises if called before trace_object_allocations_start
 17021,core,&quot;arm64&quot; and &quot;arm&quot; are mixed in RbConfig on Apple silicon
 17027,patch lib,Connection leak possibility in Net::FTP#transfercmd
 17030,perf core,Enumerable#grep{_v} should be optimized for Regexp
@@ -403,5 +392,13 @@
 17037,core,rounding of Rational#to_f
 17048,patch core,Calling initialize_copy on live modules leads to crashes
 17049,notbug lib,Net::IMAP - Handling of NOOP untagged responses sent by Zimbra
-17052,core,Ruby with LTO enabled has issues with SIGSEGV handler
 17057,patch lib,CGI different behaviour with C vs Ruby version
+17094,maybenotbug ext,PTY methods with blocks
+17098,notbug,Float#negative? reports negative zero as not negative
+17101,maybenotbug perf lib,YAML.load_file: Massive slowdown under Ruby 2.7 vs. Ruby 2.4
+17102,openssl,openssl/buffering.rb:182: [BUG] Segmentation fault at 0x00001fa0fd774000
+17105,core,A single `return` can return to two different places in a proc inside a lambda inside a method
+17112,lib patch,Resolv.getaddress fails with IPv6 link-local addresses 
+17120,core patch,String#start_with? return wrong result for Regexp patterns containing /\K/
+17124,maybenotbug,Wrong &quot;ambiguous first argument&quot; warning
+17128,ext patch,test_io_console.rb fails on actual console
