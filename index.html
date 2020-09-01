@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>404 Tagged Open Ruby Bugs as of 2020-08-22 01:58:38 +0900</title>
+<title>386 Tagged Open Ruby Bugs as of 2020-09-01 10:08:20 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -8,8 +8,8 @@
 <input type="submit" value="win" />
 <input type="submit" value="lib" />
 <input type="submit" value="patch" />
-<input type="submit" value="ext" />
 <input type="submit" value="build" />
+<input type="submit" value="ext" />
 <input type="submit" value="maybenotbug" />
 <input type="submit" value="notbug" />
 <input type="submit" value="encoding" />
@@ -22,30 +22,30 @@
 <input type="submit" value="arm" />
 <input type="submit" value="refine" />
 <input type="submit" value="fiber" />
-<input type="submit" value="s390" />
 <input type="submit" value="solaris" />
+<input type="submit" value="s390" />
 <input type="submit" value="aix" />
-<input type="submit" value="enc" />
-<input type="submit" value="backport" />
 <input type="submit" value="unfixable" />
 <input type="submit" value="openssl" />
 <input type="submit" value="autoload" />
-<input type="submit" value="linux" />
+<input type="submit" value="enc" />
+<input type="submit" value="backport" />
 <input type="submit" value="wip-patch" />
+<input type="submit" value="linux" />
 <input type="submit" value="parser" />
 <input type="submit" value="doc" />
-<input type="submit" value="uriencoding" />
 <input type="submit" value="haiku" />
 <input type="submit" value="ruby3" />
-<input type="submit" value="gc" />
 <input type="submit" value="mips" />
+<input type="submit" value="gc" />
+<input type="submit" value="uriencoding" />
 <input type="submit" value="misc" />
 <input type="submit" value="jit" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">404</span> matched)
+(<span id="matched">386</span> matched)
 <table>
-<caption>404 Tagged Open Ruby Bugs as of 2020-08-22 01:58:38 +0900</caption>
+<caption>386 Tagged Open Ruby Bugs as of 2020-09-01 10:08:20 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -54,11 +54,11 @@
 </tr>
 </thead>
 <tbody>
-<tr class=" ext patch ">
-<td><a href="https://bugs.ruby-lang.org/issues/17128">17128</a>
+<tr class=" build ">
+<td><a href="https://bugs.ruby-lang.org/issues/17132">17132</a>
 </td>
-<td>ext patch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17128">test_io_console.rb fails on actual console</a>
+<td>build</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17132">vcs.rb doesn&#39;t detect git submodules as vcs</a>
 </td>
 </tr>
 <tr class=" maybenotbug ">
@@ -110,13 +110,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17098">Float#negative? reports negative zero as not negative</a>
 </td>
 </tr>
-<tr class=" maybenotbug ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/17094">17094</a>
-</td>
-<td>maybenotbug ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17094">PTY methods with blocks</a>
-</td>
-</tr>
 <tr class=" patch lib ">
 <td><a href="https://bugs.ruby-lang.org/issues/17057">17057</a>
 </td>
@@ -146,13 +139,6 @@
 </td>
 </tr>
 <tr class=" perf core ">
-<td><a href="https://bugs.ruby-lang.org/issues/17031">17031</a>
-</td>
-<td>perf core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17031">`Kernel#caller_locations(m, n)` should be optimized</a>
-</td>
-</tr>
-<tr class=" perf core ">
 <td><a href="https://bugs.ruby-lang.org/issues/17030">17030</a>
 </td>
 <td>perf core</td>
@@ -171,13 +157,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17021">&quot;arm64&quot; and &quot;arm&quot; are mixed in RbConfig on Apple silicon</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/17015">17015</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17015">RubyVM::AbstractSyntaxTree.parse has the same result on `proc { |a| }` and `proc { |a,| }`</a>
 </td>
 </tr>
 <tr class=" jit win ">
@@ -299,13 +278,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16908">Strange behaviour of Hash#shift when used with `default_proc`.</a>
 </td>
 </tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/16907">16907</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16907">Probable use-after-free in VM assertion</a>
-</td>
-</tr>
 <tr class=" build ">
 <td><a href="https://bugs.ruby-lang.org/issues/16905">16905</a>
 </td>
@@ -418,13 +390,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16805">Coroutine&#39;s license is unclear</a>
 </td>
 </tr>
-<tr class=" doc ">
-<td><a href="https://bugs.ruby-lang.org/issues/16789">16789</a>
-</td>
-<td>doc</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16789">Compaction callback for C extensions not documented</a>
-</td>
-</tr>
 <tr class=" build ">
 <td><a href="https://bugs.ruby-lang.org/issues/16784">16784</a>
 </td>
@@ -444,13 +409,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16776">Regression in coverage library</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/16774">16774</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16774">Don&#39;t require sub-word atomics</a>
 </td>
 </tr>
 <tr class=" build arm ">
@@ -549,13 +507,6 @@
 </td>
 <td>win enc</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16623">Windows ENV encoding</a>
-</td>
-</tr>
-<tr class=" win build ">
-<td><a href="https://bugs.ruby-lang.org/issues/16622">16622</a>
-</td>
-<td>win build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16622">mswin build was failed with the current master branch #3121</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -880,20 +831,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/15579">make step when building ruby 2.4.5 on AIX 7.1 results in a Segmentation fault : ruby-2.4.5/lib/rdoc/markup/parser.rb:325</a>
 </td>
 </tr>
-<tr class=" core notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/15576">15576</a>
-</td>
-<td>core notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/15576">Wrong error message from some class methods of `Dir`</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/15570">15570</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/15570">rb_int2big signature change #14036 breaks VIM on 32b arches</a>
-</td>
-</tr>
 <tr class=" win ">
 <td><a href="https://bugs.ruby-lang.org/issues/15550">15550</a>
 </td>
@@ -1013,25 +950,11 @@
 <td><a href="https://bugs.ruby-lang.org/issues/15315">ec_switch can still lose interrupts</a>
 </td>
 </tr>
-<tr class=" patch tracepoint ">
-<td><a href="https://bugs.ruby-lang.org/issues/15313">15313</a>
-</td>
-<td>patch tracepoint</td>
-<td><a href="https://bugs.ruby-lang.org/issues/15313">[PATCH] Let debuggers know when a tail call happens</a>
-</td>
-</tr>
 <tr class=" patch thread ">
 <td><a href="https://bugs.ruby-lang.org/issues/15310">15310</a>
 </td>
 <td>patch thread</td>
 <td><a href="https://bugs.ruby-lang.org/issues/15310">[PATCH] thread_pthread.c: close race from UBF_TIMER and non-GVL-releasing thread</a>
-</td>
-</tr>
-<tr class=" lib notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/15276">15276</a>
-</td>
-<td>lib notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/15276">URI.join behaviour is unintuitive</a>
 </td>
 </tr>
 <tr class=" patch core ">
@@ -1046,13 +969,6 @@
 </td>
 <td>win test</td>
 <td><a href="https://bugs.ruby-lang.org/issues/15247">Windows - TEMP folder, non 8.3 &amp; drive, fails &amp; errors in test-all (ruby &amp; rdoc)</a>
-</td>
-</tr>
-<tr class=" test ">
-<td><a href="https://bugs.ruby-lang.org/issues/15209">15209</a>
-</td>
-<td>test</td>
-<td><a href="https://bugs.ruby-lang.org/issues/15209">r64925 order-only-prerequisites - make targets - breaking change</a>
 </td>
 </tr>
 <tr class=" patch win  ">
@@ -1083,25 +999,11 @@
 <td><a href="https://bugs.ruby-lang.org/issues/15072">thread.c:4356:5: error: implicit declaration of function ‘ubf_list_atfork’</a>
 </td>
 </tr>
-<tr class=" win build ">
-<td><a href="https://bugs.ruby-lang.org/issues/15038">15038</a>
-</td>
-<td>win build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/15038">Appveyor MinGW - bundled gems missing?</a>
-</td>
-</tr>
 <tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/15027">15027</a>
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/15027">When Struct#each method is overriden Struct#select and Struct#to_a use wrong collections</a>
-</td>
-</tr>
-<tr class=" ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/14997">14997</a>
-</td>
-<td>ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/14997">Socket connect timeout exceeds the timeout value for </a>
 </td>
 </tr>
 <tr class=" lib ">
@@ -1137,20 +1039,6 @@
 </td>
 <td>win core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/14906">MinGW failure - TestIO#test_copy_stream_no_busy_wait</a>
-</td>
-</tr>
-<tr class=" core perf  ">
-<td><a href="https://bugs.ruby-lang.org/issues/14900">14900</a>
-</td>
-<td>core perf </td>
-<td><a href="https://bugs.ruby-lang.org/issues/14900">Extra allocation in String#byteslice</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/14895">14895</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/14895">Inconsistent constant names when using const_set on a singleton class</a>
 </td>
 </tr>
 <tr class=" ext notbug ">
@@ -1207,13 +1095,6 @@
 </td>
 <td>lib</td>
 <td><a href="https://bugs.ruby-lang.org/issues/14824">Endless Range Support in irb</a>
-</td>
-</tr>
-<tr class=" core maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/14823">14823</a>
-</td>
-<td>core maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/14823">Endless Range Excluding End</a>
 </td>
 </tr>
 <tr class=" tracepoint ">
@@ -2173,13 +2054,6 @@
 </td>
 <td>lib</td>
 <td><a href="https://bugs.ruby-lang.org/issues/11194">Refactor env-sourced proxy logic for uri/generic</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/11189">11189</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/11189">alias prepended module</a>
 </td>
 </tr>
 <tr class=" core ">
