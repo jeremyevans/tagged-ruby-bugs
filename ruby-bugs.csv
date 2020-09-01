@@ -98,7 +98,6 @@
 11177,win core,DATAでEOF文字以降が読めない
 11182,refine,Refinement with alias causes strange behavior
 11183,core,Cumulative error on Complex::I ** 100000000000000000000000000000000
-11189,core,alias prepended module
 11194,lib,Refactor env-sourced proxy logic for uri/generic
 11202,core maybenotbug,No warning when a link to an original method body was removed
 11213,core maybenotbug,defined?(super) ignores respond_to_missing?
@@ -236,7 +235,6 @@
 14744,refine,Refinements modules have a superclass
 14761,solaris thread,TestThread#test_join_limits hangs up on Solaris 10 with gcc
 14817,tracepoint,TracePoint#parameters for bmethod&#39;s return event should return the same value as its Method#parameters
-14823,core maybenotbug,Endless Range Excluding End
 14824,lib,Endless Range Support in irb
 14826,solaris build,make: *** [.ext/include/sparc-solaris2.10/rb_mjit_min_header-2.6.0.h] Error 1 on Solaris 10 with very old gcc3
 14835,tracepoint,Impossible to know whether an exception was rescued or not using TracePoint
@@ -245,26 +243,19 @@
 14884,win,msys2 mingw32 &#39;rake&#39; has unexpected text at top of file
 14889,tracepoint,TracePoint for :line never seems to trigger on argument list. Maybe by design?
 14891,ext notbug,Pathname#join has different behaviour to File.join
-14895,core,Inconsistent constant names when using const_set on a singleton class
-14900,core perf ,Extra allocation in String#byteslice
 14906,win core,MinGW failure - TestIO#test_copy_stream_no_busy_wait
 14957,win thread,"MinGW, gcc 8.2.0, bootstraptest test_thread.rb - failure ?"
 14963,solaris thread,"Since r64107, on Solaris, spec test of rb_io_wait_readable hangs up"
 14971,cygwin build,error: implicit declaration of function ‘rb_vm_call0
 14972,lib,Net::HTTP inconsistently raises EOFError when peer closes the connection
-14997,ext,Socket connect timeout exceeds the timeout value for 
 15027,core,When Struct#each method is overriden Struct#select and Struct#to_a use wrong collections
-15038,win build,Appveyor MinGW - bundled gems missing?
 15072,cygwin build,thread.c:4356:5: error: implicit declaration of function ‘ubf_list_atfork’
 15097,cygwin lib,Gem install fails on Ruby 2.5.1 with Cygwin (get_dns_server_list undefined)
 15178,patch build,Wrong paramaters passing to pthread_setname_np(3)
 15204,patch win ,globbing should be prevented when wildcard is surrounded by double quotes in the ruby&#39;s command line
-15209,test,r64925 order-only-prerequisites - make targets - breaking change
 15247,win test,"Windows - TEMP folder, non 8.3 &amp; drive, fails &amp; errors in test-all (ruby &amp; rdoc)"
 15263,patch core,[PATCH] vm_trace.c (postponed_job_register): only hit main thread
-15276,lib notbug,URI.join behaviour is unintuitive
 15310,patch thread,[PATCH] thread_pthread.c: close race from UBF_TIMER and non-GVL-releasing thread
-15313,patch tracepoint,[PATCH] Let debuggers know when a tail call happens
 15315,patch core,ec_switch can still lose interrupts
 15334,test,child_info_fork::abort: address space needed by &#39;emoji_iso2022_kddi.so&#39; on cygwin
 15367,core,IO.select is not resumed when io-object gets closed
@@ -282,8 +273,6 @@
 15509,"",TCPServer#accept isn&#39;t interrupted
 15517,lib encoding,Net::HTTP not recognizing valid UTF-8
 15550,win,Windows - gem bin files - can&#39;t run from bash shell
-15570,core,rb_int2big signature change #14036 breaks VIM on 32b arches
-15576,core notbug,Wrong error message from some class methods of `Dir`
 15579,aix build,make step when building ruby 2.4.5 on AIX 7.1 results in a Segmentation fault : ruby-2.4.5/lib/rdoc/markup/parser.rb:325
 15587,win thread,Thread tests failing
 15598,core autoload,Deadlock on mutual reference of autoloaded constants
@@ -330,7 +319,6 @@
 16608,ext,ConditionVariable#wait should return false when timeout exceeded
 16612,core,Enumerator::ArithmeticSequence#last with float range produces incorrect value
 16618,core,Ensure called twice when raise in ensure
-16622,win build,mswin build was failed with the current master branch #3121
 16623,win enc,Windows ENV encoding
 16651,win build,Extensions Do Not Compile on Mingw64
 16654,core,Segfault in rb_str_hash
@@ -345,11 +333,9 @@
 16697,core maybenotbug,Hash.ruby2_keywords_hash?(value) should support any object
 16759,win core,MinGW 2.5 - SEGV bug with Binding#local_variable_set
 16762,build arm,Ruby is not properly fortified on armv7hl
-16774,core,Don&#39;t require sub-word atomics
 16776,core,Regression in coverage library
 16782,thread,`lock&#39;: deadlock; recursive locking (ThreadError) in 2.7.1
 16784,build,Compiling with --enable-load-relative and &quot;musl-gcc -static&quot; yields &quot;negative string size (or size too big) (ArgumentError)&quot; 
-16789,doc,Compaction callback for C extensions not documented
 16805,fiber,Coroutine&#39;s license is unclear
 16807,gc,Ruby 2.7 segfault loading sources under GC.stress
 16809,fiber s390,ruby testsuite fails on s390x alpine (musl) with --with-coroutine=copy
@@ -366,7 +352,6 @@
 16849,patch ext,ObjectSpace.trace_object_allocations_stop fails if called before ObjectSpace.trace_object_allocations_start
 16889,tracepoint,"TracePoint.enable { ... } also activates the TracePoint for other threads, even outside the block"
 16905,build,Ruby required to build Ruby on Haiku?
-16907,core,Probable use-after-free in VM assertion
 16908,notbug core,Strange behaviour of Hash#shift when used with `default_proc`.
 16920,arm thread,TestThread#test_signal_at_join fails on aarch64
 16921,s390,s390x: random test failures for timeout or segmentation fault
@@ -384,16 +369,13 @@
 16997,core,IO#gets converts some \r\n to \n with universal_newline: false
 17003,win core,Segfault during bundler specs on Windows
 17008,jit win,JIT enabled on Windows can cause constant conhost pop-ups
-17015,patch core,"RubyVM::AbstractSyntaxTree.parse has the same result on `proc { |a| }` and `proc { |a,| }`"
 17021,core,&quot;arm64&quot; and &quot;arm&quot; are mixed in RbConfig on Apple silicon
 17027,patch lib,Connection leak possibility in Net::FTP#transfercmd
 17030,perf core,Enumerable#grep{_v} should be optimized for Regexp
-17031,perf core,"`Kernel#caller_locations(m, n)` should be optimized"
 17037,core,rounding of Rational#to_f
 17048,patch core,Calling initialize_copy on live modules leads to crashes
 17049,notbug lib,Net::IMAP - Handling of NOOP untagged responses sent by Zimbra
 17057,patch lib,CGI different behaviour with C vs Ruby version
-17094,maybenotbug ext,PTY methods with blocks
 17098,notbug,Float#negative? reports negative zero as not negative
 17101,maybenotbug perf lib,YAML.load_file: Massive slowdown under Ruby 2.7 vs. Ruby 2.4
 17102,openssl,openssl/buffering.rb:182: [BUG] Segmentation fault at 0x00001fa0fd774000
@@ -401,4 +383,4 @@
 17112,lib patch,Resolv.getaddress fails with IPv6 link-local addresses 
 17120,core patch,String#start_with? return wrong result for Regexp patterns containing /\K/
 17124,maybenotbug,Wrong &quot;ambiguous first argument&quot; warning
-17128,ext patch,test_io_console.rb fails on actual console
+17132,build,vcs.rb doesn&#39;t detect git submodules as vcs
