@@ -251,7 +251,6 @@
 15027,core,When Struct#each method is overriden Struct#select and Struct#to_a use wrong collections
 15072,cygwin build,thread.c:4356:5: error: implicit declaration of function ‘ubf_list_atfork’
 15097,cygwin lib,Gem install fails on Ruby 2.5.1 with Cygwin (get_dns_server_list undefined)
-15178,patch build,Wrong paramaters passing to pthread_setname_np(3)
 15204,patch win ,globbing should be prevented when wildcard is surrounded by double quotes in the ruby&#39;s command line
 15247,win test,"Windows - TEMP folder, non 8.3 &amp; drive, fails &amp; errors in test-all (ruby &amp; rdoc)"
 15263,patch core,[PATCH] vm_trace.c (postponed_job_register): only hit main thread
@@ -262,7 +261,6 @@
 15386,patch core,[PATCH] io.c (rb_io_check_char_readable): do not io_fflush buffered sockets
 15404,patch parser,Endless range has inconsistent chaining behaviour
 15409,ext,OpenStruct error when attribute is called &#39;method&#39;
-15417,ext,Pathname case insensitive comparison
 15423,thread,fork leapfrog leaks memory on FreeBSD 11.2
 15425,build,Store MJIT header into Ruby versioned directory.
 15428,core notbug,Refactor Proc#&gt;&gt; and #&lt;&lt;
@@ -384,3 +382,4 @@
 17120,core patch,String#start_with? return wrong result for Regexp patterns containing /\K/
 17124,maybenotbug,Wrong &quot;ambiguous first argument&quot; warning
 17132,build,vcs.rb doesn&#39;t detect git submodules as vcs
+17142,build aix,Ruby fails to build in AIX 
