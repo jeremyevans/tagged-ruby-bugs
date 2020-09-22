@@ -1,51 +1,52 @@
 <html>
 <head>
-<title>385 Tagged Open Ruby Bugs as of 2020-09-03 02:46:19 +0900</title>
+<title>378 Tagged Open Ruby Bugs as of 2020-09-23 07:48:57 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
 <p class="filter-buttons">Available Tags: <input type="submit" value="core" />
 <input type="submit" value="win" />
 <input type="submit" value="lib" />
-<input type="submit" value="build" />
 <input type="submit" value="patch" />
 <input type="submit" value="ext" />
+<input type="submit" value="build" />
 <input type="submit" value="maybenotbug" />
-<input type="submit" value="notbug" />
 <input type="submit" value="encoding" />
+<input type="submit" value="notbug" />
 <input type="submit" value="test" />
 <input type="submit" value="thread" />
 <input type="submit" value="cygwin" />
 <input type="submit" value="tracepoint" />
 <input type="submit" value="perf" />
 <input type="submit" value="regexp" />
-<input type="submit" value="arm" />
 <input type="submit" value="refine" />
+<input type="submit" value="arm" />
 <input type="submit" value="fiber" />
 <input type="submit" value="aix" />
 <input type="submit" value="s390" />
 <input type="submit" value="solaris" />
 <input type="submit" value="unfixable" />
-<input type="submit" value="openssl" />
-<input type="submit" value="autoload" />
-<input type="submit" value="enc" />
 <input type="submit" value="backport" />
-<input type="submit" value="wip-patch" />
-<input type="submit" value="linux" />
+<input type="submit" value="enc" />
+<input type="submit" value="autoload" />
+<input type="submit" value="openssl" />
+<input type="submit" value="ractor" />
 <input type="submit" value="parser" />
-<input type="submit" value="doc" />
+<input type="submit" value="linux" />
+<input type="submit" value="wip-patch" />
 <input type="submit" value="haiku" />
-<input type="submit" value="ruby3" />
 <input type="submit" value="mips" />
+<input type="submit" value="ruby3" />
 <input type="submit" value="gc" />
 <input type="submit" value="uriencoding" />
 <input type="submit" value="misc" />
-<input type="submit" value="jit" /></p>
+<input type="submit" value="jit" />
+<input type="submit" value="doc" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">385</span> matched)
+(<span id="matched">378</span> matched)
 <table>
-<caption>385 Tagged Open Ruby Bugs as of 2020-09-03 02:46:19 +0900</caption>
+<caption>378 Tagged Open Ruby Bugs as of 2020-09-23 07:48:57 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -54,6 +55,83 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" ractor ">
+<td><a href="https://bugs.ruby-lang.org/issues/17180">17180</a>
+</td>
+<td>ractor</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17180">Ractor and constant referencing</a>
+</td>
+</tr>
+<tr class=" core maybenotbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/17178">17178</a>
+</td>
+<td>core maybenotbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17178">Procs with kw:def/**kw lose elements when called with a single Array</a>
+</td>
+</tr>
+<tr class=" openssl test ">
+<td><a href="https://bugs.ruby-lang.org/issues/17175">17175</a>
+</td>
+<td>openssl test</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17175">Ruby 2.5: OpenSSL related test failures</a>
+</td>
+</tr>
+<tr class=" thread ">
+<td><a href="https://bugs.ruby-lang.org/issues/17164">17164</a>
+</td>
+<td>thread</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17164">Threads can ignore kill/interrupt/abort</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/17162">17162</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17162">Dir[&#39;**/*&#39;] : stack smashing detected when listing big amount of directories</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/17161">17161</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17161">[BUG] object allocation during garbage collection phase</a>
+</td>
+</tr>
+<tr class=" ractor ">
+<td><a href="https://bugs.ruby-lang.org/issues/17159">17159</a>
+</td>
+<td>ractor</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17159">extend `define_method` for Ractor</a>
+</td>
+</tr>
+<tr class=" ractor ">
+<td><a href="https://bugs.ruby-lang.org/issues/17158">17158</a>
+</td>
+<td>ractor</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17158">Ractor Segfault when using shell and puts</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/17150">17150</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17150">Dumping/loading an Exception object dumps core</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/17146">17146</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17146">Queue operations are allowed after it is frozen</a>
+</td>
+</tr>
+<tr class=" notbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/17144">17144</a>
+</td>
+<td>notbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17144">Tempfile.open { ... } does not unlink the file</a>
+</td>
+</tr>
 <tr class=" build aix ">
 <td><a href="https://bugs.ruby-lang.org/issues/17142">17142</a>
 </td>
@@ -171,6 +249,13 @@
 </td>
 <td>jit win</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17008">JIT enabled on Windows can cause constant conhost pop-ups</a>
+</td>
+</tr>
+<tr class=" refine ">
+<td><a href="https://bugs.ruby-lang.org/issues/17007">17007</a>
+</td>
+<td>refine</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17007">SystemStackError when using super inside Module included and lexically inside refinement</a>
 </td>
 </tr>
 <tr class=" win core ">
@@ -908,13 +993,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/15423">fork leapfrog leaks memory on FreeBSD 11.2</a>
 </td>
 </tr>
-<tr class=" ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/15409">15409</a>
-</td>
-<td>ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/15409">OpenStruct error when attribute is called &#39;method&#39;</a>
-</td>
-</tr>
 <tr class=" patch parser ">
 <td><a href="https://bugs.ruby-lang.org/issues/15404">15404</a>
 </td>
@@ -1118,13 +1196,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/14743">Some links broken in README</a>
 </td>
 </tr>
-<tr class=" build ">
-<td><a href="https://bugs.ruby-lang.org/issues/14737">14737</a>
-</td>
-<td>build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/14737">Split default gems into separate directory structure</a>
-</td>
-</tr>
 <tr class=" win thread ">
 <td><a href="https://bugs.ruby-lang.org/issues/14727">14727</a>
 </td>
@@ -1244,13 +1315,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/14456">Dir.glob with FNM_CASEFOLD gives ArgumentError: invalid byte sequence in UTF-8</a>
 </td>
 </tr>
-<tr class=" core notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/14437">14437</a>
-</td>
-<td>core notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/14437">Integer == doesn&#39;t work with coerce since 2.4 (and != since 1.9). Should it?</a>
-</td>
-</tr>
 <tr class=" patch core ">
 <td><a href="https://bugs.ruby-lang.org/issues/14434">14434</a>
 </td>
@@ -1319,13 +1383,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/14364">Regexp last match variable in procs</a>
-</td>
-</tr>
-<tr class=" arm build ">
-<td><a href="https://bugs.ruby-lang.org/issues/14327">14327</a>
-</td>
-<td>arm build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/14327">Segmentation fault while compiling ruby 2.5 on alpine armhf</a>
 </td>
 </tr>
 <tr class=" patch core ">
@@ -1419,13 +1476,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/13999">Cygwin 環境で ripper_state_lex.rb がコアダンプする</a>
 </td>
 </tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/13932">13932</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/13932">[PATCH] Extension libraries take precedence in checks of later Kernel.#require calls for features without file extensions</a>
-</td>
-</tr>
 <tr class=" wip-patch core ">
 <td><a href="https://bugs.ruby-lang.org/issues/13930">13930</a>
 </td>
@@ -1433,24 +1483,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/13930">Exception is caught in rescue above ensure</a>
 </td>
 </tr>
-<tr class=" win build ">
-<td><a href="https://bugs.ruby-lang.org/issues/13918">13918</a>
-</td>
-<td>win build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/13918">Appveyor failure - svn 59961 Use https instead of ftp for libffi downloading</a>
-</td>
-</tr>
-<tr class=" win build ">
-<td><a href="https://bugs.ruby-lang.org/issues/13891">13891</a>
-</td>
-<td>win build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/13891">Rake - no files in bin folder - 59839</a>
-</td>
-</tr>
-<tr class=" core ">
+<tr class=" thread ">
 <td><a href="https://bugs.ruby-lang.org/issues/13882">13882</a>
 </td>
-<td>core</td>
+<td>thread</td>
 <td><a href="https://bugs.ruby-lang.org/issues/13882">Exception in `ensure` stops threads from exiting</a>
 </td>
 </tr>
@@ -1494,13 +1530,6 @@
 </td>
 <td>regexp notbug</td>
 <td><a href="https://bugs.ruby-lang.org/issues/13671">Regexp with lookbehind and case-insensitivity raises RegexpError only on strings with certain characters</a>
-</td>
-</tr>
-<tr class=" arm core ">
-<td><a href="https://bugs.ruby-lang.org/issues/13670">13670</a>
-</td>
-<td>arm core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/13670">[BUG] Bus Error at 0xefce7b (armv7l) (ruby 2.3.4p301)</a>
 </td>
 </tr>
 <tr class=" core notbug ">
@@ -1601,13 +1630,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/13164">A second `SystemStackError` exception  results in `Segmentation fault (core dumped)`</a>
 </td>
 </tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/13153">13153</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/13153">Inconsistent sprintf formatting for 0 value</a>
-</td>
-</tr>
 <tr class=" win core ">
 <td><a href="https://bugs.ruby-lang.org/issues/13151">13151</a>
 </td>
@@ -1615,32 +1637,11 @@
 <td><a href="https://bugs.ruby-lang.org/issues/13151">File.writable? doesn&#39;t report correctly if a directory is writable on Windows.</a>
 </td>
 </tr>
-<tr class=" openssl ">
-<td><a href="https://bugs.ruby-lang.org/issues/13100">13100</a>
-</td>
-<td>openssl</td>
-<td><a href="https://bugs.ruby-lang.org/issues/13100">OpenSSL::PKey::EC#public_keyでGroup情報がコピーされない。</a>
-</td>
-</tr>
 <tr class=" ext ">
 <td><a href="https://bugs.ruby-lang.org/issues/13094">13094</a>
 </td>
 <td>ext</td>
 <td><a href="https://bugs.ruby-lang.org/issues/13094">Zlib::GzipReader eof?がfalseなのにgetsでnilが返ってくる</a>
-</td>
-</tr>
-<tr class=" lib notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/13000">13000</a>
-</td>
-<td>lib notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/13000">Implement Set#include? with Hash#include?</a>
-</td>
-</tr>
-<tr class=" ext win notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/12987">12987</a>
-</td>
-<td>ext win notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/12987">Win32 API.rb can not call function without argument.</a>
 </td>
 </tr>
 <tr class=" lib notbug ">
@@ -1657,13 +1658,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/12838">Duplication of UDP packets for DNS responses causing &quot;no address&quot; results for valid hostnames</a>
 </td>
 </tr>
-<tr class=" core maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/12834">12834</a>
-</td>
-<td>core maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/12834">`prepend` getting prepended even if it already exists in the ancestors chain</a>
-</td>
-</tr>
 <tr class=" ext ">
 <td><a href="https://bugs.ruby-lang.org/issues/12780">12780</a>
 </td>
@@ -1676,13 +1670,6 @@
 </td>
 <td>cygwin build</td>
 <td><a href="https://bugs.ruby-lang.org/issues/12725">Trying to use ./miniruby before it exists</a>
-</td>
-</tr>
-<tr class=" lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/12708">12708</a>
-</td>
-<td>lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/12708">Net::IMAP : Mail To address is not correct when uid_fetch is called.</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -1818,13 +1805,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/12436">newline argument of File.open seems not respected on Windows</a>
 </td>
 </tr>
-<tr class=" core maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/12416">12416</a>
-</td>
-<td>core maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/12416">struct rb_id_table lacks mark function</a>
-</td>
-</tr>
 <tr class=" win core ">
 <td><a href="https://bugs.ruby-lang.org/issues/12280">12280</a>
 </td>
@@ -1839,20 +1819,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/12261">Windows: File.dirname with 2+ / or 2+ \\ will return // or \\\\</a>
 </td>
 </tr>
-<tr class=" lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/12258">12258</a>
-</td>
-<td>lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/12258">RDoc bug when handling comments in C code examples</a>
-</td>
-</tr>
-<tr class=" lib notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/12251">12251</a>
-</td>
-<td>lib notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/12251">DelegateClass(OpenStruct) behavior in 2.3.0 different from 2.2</a>
-</td>
-</tr>
 <tr class=" lib maybenotbug ">
 <td><a href="https://bugs.ruby-lang.org/issues/12235">12235</a>
 </td>
@@ -1865,13 +1831,6 @@
 </td>
 <td>build</td>
 <td><a href="https://bugs.ruby-lang.org/issues/12179">Build failure due to VPATH expansion</a>
-</td>
-</tr>
-<tr class=" lib notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/12136">12136</a>
-</td>
-<td>lib notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/12136">OpenStruct.new(format: :bar).send :format # =&gt; too few arguments</a>
 </td>
 </tr>
 <tr class=" patch lib ">
@@ -1914,13 +1873,6 @@
 </td>
 <td>refine notbug</td>
 <td><a href="https://bugs.ruby-lang.org/issues/11779">Module#using does not make sense as a method</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/11778">11778</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/11778">recv_io with mode breaks when klass arg is kind of BasicSocket</a>
 </td>
 </tr>
 <tr class=" encoding notbug ">
