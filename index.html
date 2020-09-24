@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>378 Tagged Open Ruby Bugs as of 2020-09-23 07:48:57 +0900</title>
+<title>373 Tagged Open Ruby Bugs as of 2020-09-24 09:58:05 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -12,8 +12,8 @@
 <input type="submit" value="build" />
 <input type="submit" value="maybenotbug" />
 <input type="submit" value="encoding" />
-<input type="submit" value="notbug" />
 <input type="submit" value="test" />
+<input type="submit" value="notbug" />
 <input type="submit" value="thread" />
 <input type="submit" value="cygwin" />
 <input type="submit" value="tracepoint" />
@@ -44,9 +44,9 @@
 <input type="submit" value="doc" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">378</span> matched)
+(<span id="matched">373</span> matched)
 <table>
-<caption>378 Tagged Open Ruby Bugs as of 2020-09-23 07:48:57 +0900</caption>
+<caption>373 Tagged Open Ruby Bugs as of 2020-09-24 09:58:05 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -55,6 +55,13 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/17183">17183</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17183">Float round working weirdly</a>
+</td>
+</tr>
 <tr class=" ractor ">
 <td><a href="https://bugs.ruby-lang.org/issues/17180">17180</a>
 </td>
@@ -465,7 +472,7 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16809">16809</a>
 </td>
 <td>fiber s390</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16809">ruby testsuite fails on s390x alpine (musl) with --with-coroutine=copy</a>
+<td><a href="https://bugs.ruby-lang.org/issues/16809">Fiber crashes with --with-coroutine=copy</a>
 </td>
 </tr>
 <tr class=" gc ">
@@ -1763,13 +1770,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/12473">Test failure on fedora with TestTimeExtension#test_huge_precision</a>
 </td>
 </tr>
-<tr class=" cygwin lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/12468">12468</a>
-</td>
-<td>cygwin lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/12468">Logger: Can not rotate (log shifting failed. closed stream)</a>
-</td>
-</tr>
 <tr class=" cygwin thread ">
 <td><a href="https://bugs.ruby-lang.org/issues/12445">12445</a>
 </td>
@@ -2092,27 +2092,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/10845">Subclassing String</a>
 </td>
 </tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/10749">10749</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/10749">Possible overflow in GC::Profiler report on 2.2.0</a>
-</td>
-</tr>
-<tr class=" core maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/10684">10684</a>
-</td>
-<td>core maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/10684">Block arity changes through Enumerable methods</a>
-</td>
-</tr>
-<tr class=" lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/10637">10637</a>
-</td>
-<td>lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/10637">Puppet orchestration on vagrant fails with Error: Non-HTTP proxy URI</a>
-</td>
-</tr>
 <tr class=" encoding maybenotbug ">
 <td><a href="https://bugs.ruby-lang.org/issues/10584">10584</a>
 </td>
@@ -2127,25 +2106,11 @@
 <td><a href="https://bugs.ruby-lang.org/issues/10580">TestProcess#test_deadlock_by_signal_at_forking fails on ARM</a>
 </td>
 </tr>
-<tr class=" core maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/10561">10561</a>
-</td>
-<td>core maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/10561">Improve function of Thread::Backtrace::Location #path and #absolute_path</a>
-</td>
-</tr>
 <tr class=" build ">
 <td><a href="https://bugs.ruby-lang.org/issues/10542">10542</a>
 </td>
 <td>build</td>
 <td><a href="https://bugs.ruby-lang.org/issues/10542">out-of-place build from repository builds enc/trans/*.c in the source directory and the build directory </a>
-</td>
-</tr>
-<tr class=" core notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/10534">10534</a>
-</td>
-<td>core notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/10534">Enumerator methods other than &quot;next&quot; do not always respect &quot;peek&quot;</a>
 </td>
 </tr>
 <tr class=" tracepoint ">
