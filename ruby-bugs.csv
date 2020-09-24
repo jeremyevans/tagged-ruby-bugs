@@ -77,14 +77,9 @@
 10417,encoding,IO#set_encoding without int_enc doesn&#39;t keep current internal encoding
 10436,patch ext,ruby -c and ripper inconsistency: m(&amp;nil) {}
 10470,tracepoint,TracePoint cannot trace attr_accessor/reader/writer method
-10534,core notbug,Enumerator methods other than &quot;next&quot; do not always respect &quot;peek&quot;
 10542,build,out-of-place build from repository builds enc/trans/*.c in the source directory and the build directory 
-10561,core maybenotbug,Improve function of Thread::Backtrace::Location #path and #absolute_path
 10580,test arm,TestProcess#test_deadlock_by_signal_at_forking fails on ARM
 10584,encoding maybenotbug,"String.valid_encoding?, String.ascii_only? fails to account for BOM."
-10637,lib,Puppet orchestration on vagrant fails with Error: Non-HTTP proxy URI
-10684,core maybenotbug,Block arity changes through Enumerable methods
-10749,core,Possible overflow in GC::Profiler report on 2.2.0
 10845,core maybenotbug,Subclassing String
 10855,patch lib,[PATCH] Matrix#inverse returns matrix of integers whenever possible
 10902,core,require(&quot;enumerator&quot;) scans LOAD_PATH 2x on every invocation
@@ -131,7 +126,6 @@
 12442,cygwin core,TestArgf#test_textmode fails on cygwin
 12444,cygwin core,Segmentation fault when running TestException#test_machine_stackoverflow on cygwin
 12445,cygwin thread,Testing TestIO#test_open_fifo_does_not_block_other_threads results in deadlock on cygwin
-12468,cygwin lib,Logger: Can not rotate (log shifting failed. closed stream)
 12473,test,Test failure on fedora with TestTimeExtension#test_huge_precision
 12485,patch core maybenotbug,Kernel.Rational raises TypeError though given denominator returns 1 by to_int
 12500,test mips,TestProcess#test_aspawn_too_long_path fails on mips with &quot;argument too big&quot;
@@ -317,7 +311,7 @@
 16784,build,Compiling with --enable-load-relative and &quot;musl-gcc -static&quot; yields &quot;negative string size (or size too big) (ArgumentError)&quot; 
 16805,fiber,Coroutine&#39;s license is unclear
 16807,gc,Ruby 2.7 segfault loading sources under GC.stress
-16809,fiber s390,ruby testsuite fails on s390x alpine (musl) with --with-coroutine=copy
+16809,fiber s390,Fiber crashes with --with-coroutine=copy
 16810,s390,ruby segfaults on s390x with musl libc
 16814,fiber s390,Segmentation fault in GC while running test/ruby/test_fiber.rb on s390x
 16816,core,Prematurely terminated Enumerator should stay terminated
@@ -376,3 +370,4 @@
 17175,openssl test,Ruby 2.5: OpenSSL related test failures
 17178,core maybenotbug,Procs with kw:def/**kw lose elements when called with a single Array
 17180,ractor,Ractor and constant referencing
+17183,core,Float round working weirdly
