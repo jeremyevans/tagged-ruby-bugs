@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>373 Tagged Open Ruby Bugs as of 2020-09-24 09:58:05 +0900</title>
+<title>383 Tagged Open Ruby Bugs as of 2020-10-08 02:58:20 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -8,45 +8,44 @@
 <input type="submit" value="win" />
 <input type="submit" value="lib" />
 <input type="submit" value="patch" />
-<input type="submit" value="ext" />
 <input type="submit" value="build" />
+<input type="submit" value="ext" />
 <input type="submit" value="maybenotbug" />
 <input type="submit" value="encoding" />
+<input type="submit" value="thread" />
 <input type="submit" value="test" />
 <input type="submit" value="notbug" />
-<input type="submit" value="thread" />
 <input type="submit" value="cygwin" />
 <input type="submit" value="tracepoint" />
 <input type="submit" value="perf" />
 <input type="submit" value="regexp" />
 <input type="submit" value="refine" />
 <input type="submit" value="arm" />
+<input type="submit" value="ractor" />
 <input type="submit" value="fiber" />
 <input type="submit" value="aix" />
-<input type="submit" value="s390" />
 <input type="submit" value="solaris" />
-<input type="submit" value="unfixable" />
+<input type="submit" value="s390" />
+<input type="submit" value="autoload" />
 <input type="submit" value="backport" />
 <input type="submit" value="enc" />
-<input type="submit" value="autoload" />
 <input type="submit" value="openssl" />
-<input type="submit" value="ractor" />
+<input type="submit" value="unfixable" />
 <input type="submit" value="parser" />
-<input type="submit" value="linux" />
 <input type="submit" value="wip-patch" />
-<input type="submit" value="haiku" />
-<input type="submit" value="mips" />
+<input type="submit" value="linux" />
 <input type="submit" value="ruby3" />
-<input type="submit" value="gc" />
+<input type="submit" value="mips" />
+<input type="submit" value="haiku" />
 <input type="submit" value="uriencoding" />
 <input type="submit" value="misc" />
 <input type="submit" value="jit" />
 <input type="submit" value="doc" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">373</span> matched)
+(<span id="matched">383</span> matched)
 <table>
-<caption>373 Tagged Open Ruby Bugs as of 2020-09-24 09:58:05 +0900</caption>
+<caption>383 Tagged Open Ruby Bugs as of 2020-10-08 02:58:20 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -55,6 +54,125 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" fiber ">
+<td><a href="https://bugs.ruby-lang.org/issues/17221">17221</a>
+</td>
+<td>fiber</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17221">Relax the Fiber#transfer&#39;s limitation</a>
+</td>
+</tr>
+<tr class=" ext maybenotbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/17220">17220</a>
+</td>
+<td>ext maybenotbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17220">Rails Active Job integration test fails with Ruby 3.0.0 since 2038cc6cab6ceeffef3ec3a765c70ae684f829ed</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/17218">17218</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17218">Range#step sometimes behaves unexpectedly with Rational endpoints and increment</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/17216">17216</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17216">Enumerator::Chain doesn&#39;t support all Enumerator methods</a>
+</td>
+</tr>
+<tr class=" backport perf ">
+<td><a href="https://bugs.ruby-lang.org/issues/17215">17215</a>
+</td>
+<td>backport perf</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17215">Backport for arm64 optimizations that exist for power/x86</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/17213">17213</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17213">Rails CI against Ruby 3.0.0dev fails likely since a53e2850c572135ed657144bc14e47b29c64fa94</a>
+</td>
+</tr>
+<tr class=" build ">
+<td><a href="https://bugs.ruby-lang.org/issues/17212">17212</a>
+</td>
+<td>build</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17212">FreeBSDで3.0.0-preview1のビルドが失敗する</a>
+</td>
+</tr>
+<tr class=" lib ">
+<td><a href="https://bugs.ruby-lang.org/issues/17207">17207</a>
+</td>
+<td>lib</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17207">message/disposition-notification: unexpected token LPAR (expected QUOTED or LITERAL)</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/17204">17204</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17204">Segmentation fault in 2.7.1p83</a>
+</td>
+</tr>
+<tr class=" ractor ">
+<td><a href="https://bugs.ruby-lang.org/issues/17203">17203</a>
+</td>
+<td>ractor</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17203">Logger::Formatter won&#39;t work with non main Ractor</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/17197">17197</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17197">Some Hash methods still have arity 2 instead of 1</a>
+</td>
+</tr>
+<tr class=" ractor ">
+<td><a href="https://bugs.ruby-lang.org/issues/17196">17196</a>
+</td>
+<td>ractor</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17196">Segmentation Fault with Socket#close in Ractors</a>
+</td>
+</tr>
+<tr class=" lib ">
+<td><a href="https://bugs.ruby-lang.org/issues/17193">17193</a>
+</td>
+<td>lib</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17193">Endless method definition doesn&#39;t work with lambdas in IRB</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/17192">17192</a>
+</td>
+<td>patch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17192">ISeq.load_from_binary can cause BUG if binary is a rbinc-derived</a>
+</td>
+</tr>
+<tr class=" test thread ">
+<td><a href="https://bugs.ruby-lang.org/issues/17189">17189</a>
+</td>
+<td>test thread</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17189">test_thread.rb in testsuite deadlocks with musl libc 1.2.1</a>
+</td>
+</tr>
+<tr class=" ractor ">
+<td><a href="https://bugs.ruby-lang.org/issues/17188">17188</a>
+</td>
+<td>ractor</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17188">Freeze Encoding objects for Ractor</a>
+</td>
+</tr>
+<tr class=" core notbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/17184">17184</a>
+</td>
+<td>core notbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17184">No stdlib function to perform simple string replacement</a>
+</td>
+</tr>
 <tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/17183">17183</a>
 </td>
@@ -67,13 +185,6 @@
 </td>
 <td>ractor</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17180">Ractor and constant referencing</a>
-</td>
-</tr>
-<tr class=" core maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/17178">17178</a>
-</td>
-<td>core maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17178">Procs with kw:def/**kw lose elements when called with a single Array</a>
 </td>
 </tr>
 <tr class=" openssl test ">
@@ -130,13 +241,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17146">Queue operations are allowed after it is frozen</a>
-</td>
-</tr>
-<tr class=" notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/17144">17144</a>
-</td>
-<td>notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17144">Tempfile.open { ... } does not unlink the file</a>
 </td>
 </tr>
 <tr class=" build aix ">
@@ -475,13 +579,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16809">Fiber crashes with --with-coroutine=copy</a>
 </td>
 </tr>
-<tr class=" gc ">
-<td><a href="https://bugs.ruby-lang.org/issues/16807">16807</a>
-</td>
-<td>gc</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16807">Ruby 2.7 segfault loading sources under GC.stress</a>
-</td>
-</tr>
 <tr class=" fiber ">
 <td><a href="https://bugs.ruby-lang.org/issues/16805">16805</a>
 </td>
@@ -713,13 +810,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16338">gemspec stub EOF separators throw warning</a>
 </td>
 </tr>
-<tr class=" backport core ">
-<td><a href="https://bugs.ruby-lang.org/issues/16334">16334</a>
-</td>
-<td>backport core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16334">Wrong line numbers for multiline method chains </a>
-</td>
-</tr>
 <tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/16288">16288</a>
 </td>
@@ -853,25 +943,11 @@
 <td><a href="https://bugs.ruby-lang.org/issues/15718">YAML raises error when dumping strings with UTF32 encoding</a>
 </td>
 </tr>
-<tr class=" ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/15712">15712</a>
-</td>
-<td>ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/15712">DateTime#=== should be defined and compare date and time instead of just the date</a>
-</td>
-</tr>
 <tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/15674">15674</a>
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/15674">Regression: ObjectSpace.allocation_sourceline produces the wrong location for allocations, it shows the end of the method instead of the line where the object was created</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/15661">15661</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/15661">Disallow concurrent Dir.chdir with block</a>
 </td>
 </tr>
 <tr class=" win encoding ">
@@ -1460,13 +1536,6 @@
 </td>
 <td>ext</td>
 <td><a href="https://bugs.ruby-lang.org/issues/14046">Ripper loses DATA</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/14015">14015</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/14015">Enumerable &amp; Hash yielding arity</a>
 </td>
 </tr>
 <tr class=" refine ">
