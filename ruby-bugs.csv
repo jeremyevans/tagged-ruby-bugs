@@ -169,7 +169,6 @@
 13930,wip-patch core,Exception is caught in rescue above ensure
 13999,cygwin ext,Cygwin 環境で ripper_state_lex.rb がコアダンプする
 14012,refine,NameError is raised when use class variables in Refinements
-14015,core,Enumerable &amp; Hash yielding arity
 14046,ext,Ripper loses DATA
 14049,win core,SEGV svn 60401 require_relative
 14064,test,test-all with and without -j - incorrect assertions and missing test methods
@@ -254,9 +253,7 @@
 15634,tracepoint,TracePoint seems to be skipping some methods.
 15644,patch ext,ThreadsWait problems with Thread#report_on_exception
 15655,win encoding,Unable to handle Russian dirname on Windows
-15661,core,Disallow concurrent Dir.chdir with block
 15674,core,"Regression: ObjectSpace.allocation_sourceline produces the wrong location for allocations, it shows the end of the method instead of the line where the object was created"
-15712,ext,DateTime#=== should be defined and compare date and time instead of just the date
 15718,ext encoding,YAML raises error when dumping strings with UTF32 encoding
 15735,core thread,Thread#handle_interrupt does not prevent Thread#kill from interrupting
 15764,parser,Whitespace and control characters should not be permitted in tokens
@@ -276,7 +273,6 @@
 16265,win thread,"Test (spec) failure using current MSYS2 tools, related to -fstack-protector and possibly D_FORTIFY_SOURCE=2"
 16277,win ext maybenotbug,UNIXServer#listen fails with Errno::EADDRINUSE error under Windows 10 / WSL Ubuntu 18.04
 16288,core,"Segmentation fault with finalizers, threads"
-16334,backport core,Wrong line numbers for multiline method chains 
 16338,build,gemspec stub EOF separators throw warning
 16368,ext,Error in `YAML.load(symbolize_names: true)` with null column YAML
 16371,backport,Inconsistent usage of Double splat operator
@@ -310,7 +306,6 @@
 16782,thread,`lock&#39;: deadlock; recursive locking (ThreadError) in 2.7.1
 16784,build,Compiling with --enable-load-relative and &quot;musl-gcc -static&quot; yields &quot;negative string size (or size too big) (ArgumentError)&quot; 
 16805,fiber,Coroutine&#39;s license is unclear
-16807,gc,Ruby 2.7 segfault loading sources under GC.stress
 16809,fiber s390,Fiber crashes with --with-coroutine=copy
 16810,s390,ruby segfaults on s390x with musl libc
 16814,fiber s390,Segmentation fault in GC while running test/ruby/test_fiber.rb on s390x
@@ -359,7 +354,6 @@
 17124,maybenotbug,Wrong &quot;ambiguous first argument&quot; warning
 17132,build,vcs.rb doesn&#39;t detect git submodules as vcs
 17142,build aix,Ruby fails to build in AIX 
-17144,notbug,Tempfile.open { ... } does not unlink the file
 17146,core,Queue operations are allowed after it is frozen
 17150,core,Dumping/loading an Exception object dumps core
 17158,ractor,Ractor Segfault when using shell and puts
@@ -368,6 +362,22 @@
 17162,core,Dir[&#39;**/*&#39;] : stack smashing detected when listing big amount of directories
 17164,thread,Threads can ignore kill/interrupt/abort
 17175,openssl test,Ruby 2.5: OpenSSL related test failures
-17178,core maybenotbug,Procs with kw:def/**kw lose elements when called with a single Array
 17180,ractor,Ractor and constant referencing
 17183,core,Float round working weirdly
+17184,core notbug,No stdlib function to perform simple string replacement
+17188,ractor,Freeze Encoding objects for Ractor
+17189,test thread,test_thread.rb in testsuite deadlocks with musl libc 1.2.1
+17192,patch core,ISeq.load_from_binary can cause BUG if binary is a rbinc-derived
+17193,lib,Endless method definition doesn&#39;t work with lambdas in IRB
+17196,ractor,Segmentation Fault with Socket#close in Ractors
+17197,core,Some Hash methods still have arity 2 instead of 1
+17203,ractor,Logger::Formatter won&#39;t work with non main Ractor
+17204,core,Segmentation fault in 2.7.1p83
+17207,lib,message/disposition-notification: unexpected token LPAR (expected QUOTED or LITERAL)
+17212,build,FreeBSDで3.0.0-preview1のビルドが失敗する
+17213,core,Rails CI against Ruby 3.0.0dev fails likely since a53e2850c572135ed657144bc14e47b29c64fa94
+17215,backport perf,Backport for arm64 optimizations that exist for power/x86
+17216,core,Enumerator::Chain doesn&#39;t support all Enumerator methods
+17218,core,Range#step sometimes behaves unexpectedly with Rational endpoints and increment
+17220,ext maybenotbug,Rails Active Job integration test fails with Ruby 3.0.0 since 2038cc6cab6ceeffef3ec3a765c70ae684f829ed
+17221,fiber,Relax the Fiber#transfer&#39;s limitation
