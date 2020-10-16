@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>383 Tagged Open Ruby Bugs as of 2020-10-08 02:58:20 +0900</title>
+<title>382 Tagged Open Ruby Bugs as of 2020-10-16 13:22:28 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -12,40 +12,40 @@
 <input type="submit" value="ext" />
 <input type="submit" value="maybenotbug" />
 <input type="submit" value="encoding" />
-<input type="submit" value="thread" />
 <input type="submit" value="test" />
+<input type="submit" value="thread" />
 <input type="submit" value="notbug" />
 <input type="submit" value="cygwin" />
 <input type="submit" value="tracepoint" />
 <input type="submit" value="perf" />
-<input type="submit" value="regexp" />
 <input type="submit" value="refine" />
+<input type="submit" value="regexp" />
+<input type="submit" value="fiber" />
 <input type="submit" value="arm" />
 <input type="submit" value="ractor" />
-<input type="submit" value="fiber" />
 <input type="submit" value="aix" />
 <input type="submit" value="solaris" />
 <input type="submit" value="s390" />
 <input type="submit" value="autoload" />
-<input type="submit" value="backport" />
-<input type="submit" value="enc" />
 <input type="submit" value="openssl" />
 <input type="submit" value="unfixable" />
-<input type="submit" value="parser" />
+<input type="submit" value="enc" />
 <input type="submit" value="wip-patch" />
+<input type="submit" value="backport" />
+<input type="submit" value="parser" />
 <input type="submit" value="linux" />
+<input type="submit" value="doc" />
+<input type="submit" value="haiku" />
 <input type="submit" value="ruby3" />
 <input type="submit" value="mips" />
-<input type="submit" value="haiku" />
-<input type="submit" value="uriencoding" />
 <input type="submit" value="misc" />
 <input type="submit" value="jit" />
-<input type="submit" value="doc" /></p>
+<input type="submit" value="uriencoding" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">383</span> matched)
+(<span id="matched">382</span> matched)
 <table>
-<caption>383 Tagged Open Ruby Bugs as of 2020-10-08 02:58:20 +0900</caption>
+<caption>382 Tagged Open Ruby Bugs as of 2020-10-16 13:22:28 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -54,11 +54,25 @@
 </tr>
 </thead>
 <tbody>
-<tr class=" fiber ">
-<td><a href="https://bugs.ruby-lang.org/issues/17221">17221</a>
+<tr class=" fiber perf ">
+<td><a href="https://bugs.ruby-lang.org/issues/17263">17263</a>
 </td>
-<td>fiber</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17221">Relax the Fiber#transfer&#39;s limitation</a>
+<td>fiber perf</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17263">Fiber context switch degrades with number of fibers, limit on number of fibers</a>
+</td>
+</tr>
+<tr class=" build ">
+<td><a href="https://bugs.ruby-lang.org/issues/17255">17255</a>
+</td>
+<td>build</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17255">Installation failed for ruby version 2.7.1: unknown encoding name: binary (ArgumentError)</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/17254">17254</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17254">ENV.replace may set nil instead of the proper value</a>
 </td>
 </tr>
 <tr class=" ext maybenotbug ">
@@ -80,13 +94,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17216">Enumerator::Chain doesn&#39;t support all Enumerator methods</a>
-</td>
-</tr>
-<tr class=" backport perf ">
-<td><a href="https://bugs.ruby-lang.org/issues/17215">17215</a>
-</td>
-<td>backport perf</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17215">Backport for arm64 optimizations that exist for power/x86</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -157,13 +164,6 @@
 </td>
 <td>test thread</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17189">test_thread.rb in testsuite deadlocks with musl libc 1.2.1</a>
-</td>
-</tr>
-<tr class=" ractor ">
-<td><a href="https://bugs.ruby-lang.org/issues/17188">17188</a>
-</td>
-<td>ractor</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17188">Freeze Encoding objects for Ractor</a>
 </td>
 </tr>
 <tr class=" core notbug ">
@@ -626,13 +626,6 @@
 </td>
 <td>core maybenotbug</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16697">Hash.ruby2_keywords_hash?(value) should support any object</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/16695">16695</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16695">Stack consistency error when using the return value</a>
 </td>
 </tr>
 <tr class=" core ">
