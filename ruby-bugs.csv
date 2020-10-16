@@ -298,7 +298,6 @@
 16680,core,Symlink folder in $LOAD_PATH does not work with autoload
 16685,lib,IRB auto indent does not work for single-line method definitions
 16694,core,JIT vs hardened GCC with PCH
-16695,core,Stack consistency error when using the return value
 16697,core maybenotbug,Hash.ruby2_keywords_hash?(value) should support any object
 16759,win core,MinGW 2.5 - SEGV bug with Binding#local_variable_set
 16762,build arm,Ruby is not properly fortified on armv7hl
@@ -365,7 +364,6 @@
 17180,ractor,Ractor and constant referencing
 17183,core,Float round working weirdly
 17184,core notbug,No stdlib function to perform simple string replacement
-17188,ractor,Freeze Encoding objects for Ractor
 17189,test thread,test_thread.rb in testsuite deadlocks with musl libc 1.2.1
 17192,patch core,ISeq.load_from_binary can cause BUG if binary is a rbinc-derived
 17193,lib,Endless method definition doesn&#39;t work with lambdas in IRB
@@ -376,8 +374,9 @@
 17207,lib,message/disposition-notification: unexpected token LPAR (expected QUOTED or LITERAL)
 17212,build,FreeBSDで3.0.0-preview1のビルドが失敗する
 17213,core,Rails CI against Ruby 3.0.0dev fails likely since a53e2850c572135ed657144bc14e47b29c64fa94
-17215,backport perf,Backport for arm64 optimizations that exist for power/x86
 17216,core,Enumerator::Chain doesn&#39;t support all Enumerator methods
 17218,core,Range#step sometimes behaves unexpectedly with Rational endpoints and increment
 17220,ext maybenotbug,Rails Active Job integration test fails with Ruby 3.0.0 since 2038cc6cab6ceeffef3ec3a765c70ae684f829ed
-17221,fiber,Relax the Fiber#transfer&#39;s limitation
+17254,core,ENV.replace may set nil instead of the proper value
+17255,build,Installation failed for ruby version 2.7.1: unknown encoding name: binary (ArgumentError)
+17263,fiber perf,"Fiber context switch degrades with number of fibers, limit on number of fibers"
