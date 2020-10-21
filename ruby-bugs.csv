@@ -369,14 +369,15 @@
 17193,lib,Endless method definition doesn&#39;t work with lambdas in IRB
 17196,ractor,Segmentation Fault with Socket#close in Ractors
 17197,core,Some Hash methods still have arity 2 instead of 1
-17203,ractor,Logger::Formatter won&#39;t work with non main Ractor
 17204,core,Segmentation fault in 2.7.1p83
 17207,lib,message/disposition-notification: unexpected token LPAR (expected QUOTED or LITERAL)
 17212,build,FreeBSDで3.0.0-preview1のビルドが失敗する
 17213,core,Rails CI against Ruby 3.0.0dev fails likely since a53e2850c572135ed657144bc14e47b29c64fa94
 17216,core,Enumerator::Chain doesn&#39;t support all Enumerator methods
 17218,core,Range#step sometimes behaves unexpectedly with Rational endpoints and increment
-17220,ext maybenotbug,Rails Active Job integration test fails with Ruby 3.0.0 since 2038cc6cab6ceeffef3ec3a765c70ae684f829ed
 17254,core,ENV.replace may set nil instead of the proper value
 17255,build,Installation failed for ruby version 2.7.1: unknown encoding name: binary (ArgumentError)
 17263,fiber perf,"Fiber context switch degrades with number of fibers, limit on number of fibers"
+17264,ext maybenotbug,BigDecimal exponentiation cannot be used with #** method
+17272,core maybenotbug,Ruby 2.7.2 crash report
+17276,ext maybenotbug,Ripper stops tokenizing after keyword as a method parameter
