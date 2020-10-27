@@ -94,7 +94,6 @@
 11182,refine,Refinement with alias causes strange behavior
 11183,core,Cumulative error on Complex::I ** 100000000000000000000000000000000
 11194,lib,Refactor env-sourced proxy logic for uri/generic
-11202,core maybenotbug,No warning when a link to an original method body was removed
 11213,core maybenotbug,defined?(super) ignores respond_to_missing?
 11230,core,Should rb_struct_s_members() be public API?
 11269,core,ruby_init_setproctitle() should be called before require_libraries()
@@ -127,7 +126,6 @@
 12444,cygwin core,Segmentation fault when running TestException#test_machine_stackoverflow on cygwin
 12445,cygwin thread,Testing TestIO#test_open_fifo_does_not_block_other_threads results in deadlock on cygwin
 12473,test,Test failure on fedora with TestTimeExtension#test_huge_precision
-12485,patch core maybenotbug,Kernel.Rational raises TypeError though given denominator returns 1 by to_int
 12500,test mips,TestProcess#test_aspawn_too_long_path fails on mips with &quot;argument too big&quot;
 12506,cygwin,"On cygwin, Feature #5994 does not work"
 12538,lib,hostsを書き換えてwebrickで書いたプロキシ―に繋いでいるとrubyが落ちる
@@ -168,7 +166,6 @@
 13882,thread,Exception in `ensure` stops threads from exiting
 13930,wip-patch core,Exception is caught in rescue above ensure
 13999,cygwin ext,Cygwin 環境で ripper_state_lex.rb がコアダンプする
-14012,refine,NameError is raised when use class variables in Refinements
 14046,ext,Ripper loses DATA
 14049,win core,SEGV svn 60401 require_relative
 14064,test,test-all with and without -j - incorrect assertions and missing test methods
@@ -284,7 +281,6 @@
 16492,test,TestBugReporter#test_bug_reporter_add test failures
 16493,thread arm,TestThreadQueue#test_thr_kill is flaky on AArch64
 16497,ext,StringIO#internal_encoding is broken (more severely in 2.7)
-16518,core,Should we rationalize Rational&#39;s numerator automatically?
 16608,ext,ConditionVariable#wait should return false when timeout exceeded
 16612,core,Enumerator::ArithmeticSequence#last with float range produces incorrect value
 16618,core,Ensure called twice when raise in ensure
@@ -381,3 +377,5 @@
 17264,ext maybenotbug,BigDecimal exponentiation cannot be used with #** method
 17272,core maybenotbug,Ruby 2.7.2 crash report
 17276,ext maybenotbug,Ripper stops tokenizing after keyword as a method parameter
+17280,core,Dir.glob with FNM_DOTMATCH matches &quot;..&quot; and &quot;.&quot; and results in duplicated entries
+17289,core,Time#strftime occurs Segmentation Fault on ruby-2.7.2p137
