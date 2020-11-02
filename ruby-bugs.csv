@@ -53,11 +53,9 @@
 9414,win encoding maybenotbug,strftime returns incorrectly encoded string
 9431,win core maybenotbug,In windows ruby IO.write returns count of bytes without count of CR character
 9435,win core,Kernel.system problem
-9459,patch lib,Net::HTTP initializes openssl library after TCP connection is established
 9507,core arm,Ruby 2.1.0 is broken on ARMv5: tried to create Proc object without a block
 9542,lib unfixable,Delegator does not delegate protected methods
 9580,refine maybenotbug,Refinements regression in IRB
-9595,ext,Float#to_d inconsistent between 2.0.0 and 2.1.1
 9659,ext,crash in FIPS mode after unchecked algo-&gt;init_func failure
 9715,win encoding,ENV data yield ASCII-8BIT encoded strings under Windows with unicode username
 9737,wip-patch encoding,Non-ASCII characters in the path to ruby executable break require paths
@@ -160,7 +158,6 @@
 13671,regexp notbug,Regexp with lookbehind and case-insensitivity raises RegexpError only on strings with certain characters
 13708,core,catastrophic slow compilation of defined-defined sequence has no chance to ^C
 13754,ext,bigdecimal with lower precision that Float
-13768,core,SIGCHLD and Thread dead-lock problem
 13864,test,Rinda multicast test failures due to missing default route
 13876,core,Tempfile&#39;s finalizer can be interrupted by a Timeout exception which can cause the process to hang
 13882,thread,Exception in `ensure` stops threads from exiting
@@ -371,11 +368,12 @@
 17213,core,Rails CI against Ruby 3.0.0dev fails likely since a53e2850c572135ed657144bc14e47b29c64fa94
 17216,core,Enumerator::Chain doesn&#39;t support all Enumerator methods
 17218,core,Range#step sometimes behaves unexpectedly with Rational endpoints and increment
-17254,core,ENV.replace may set nil instead of the proper value
-17255,build,Installation failed for ruby version 2.7.1: unknown encoding name: binary (ArgumentError)
 17263,fiber perf,"Fiber context switch degrades with number of fibers, limit on number of fibers"
 17264,ext maybenotbug,BigDecimal exponentiation cannot be used with #** method
 17272,core maybenotbug,Ruby 2.7.2 crash report
 17276,ext maybenotbug,Ripper stops tokenizing after keyword as a method parameter
 17280,core,Dir.glob with FNM_DOTMATCH matches &quot;..&quot; and &quot;.&quot; and results in duplicated entries
 17289,core,Time#strftime occurs Segmentation Fault on ruby-2.7.2p137
+17300,fiber,The Fiber scheduler does not work with ConditionVariable
+17302,tracepoint,The TracePoint API does not allow setting multiple line traces within the same method (ISEQ)
+17304,core,Ruby stuck calling sched_yield on fork
