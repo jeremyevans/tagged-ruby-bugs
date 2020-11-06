@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>379 Tagged Open Ruby Bugs as of 2020-11-03 08:46:27 +0900</title>
+<title>380 Tagged Open Ruby Bugs as of 2020-11-07 05:23:24 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -12,40 +12,39 @@
 <input type="submit" value="ext" />
 <input type="submit" value="maybenotbug" />
 <input type="submit" value="encoding" />
-<input type="submit" value="test" />
 <input type="submit" value="thread" />
+<input type="submit" value="test" />
 <input type="submit" value="notbug" />
 <input type="submit" value="cygwin" />
 <input type="submit" value="tracepoint" />
 <input type="submit" value="perf" />
 <input type="submit" value="regexp" />
-<input type="submit" value="refine" />
 <input type="submit" value="fiber" />
+<input type="submit" value="refine" />
 <input type="submit" value="arm" />
 <input type="submit" value="aix" />
-<input type="submit" value="ractor" />
-<input type="submit" value="solaris" />
 <input type="submit" value="s390" />
-<input type="submit" value="autoload" />
+<input type="submit" value="solaris" />
+<input type="submit" value="ractor" />
+<input type="submit" value="backport" />
+<input type="submit" value="enc" />
 <input type="submit" value="openssl" />
 <input type="submit" value="unfixable" />
-<input type="submit" value="enc" />
+<input type="submit" value="autoload" />
 <input type="submit" value="wip-patch" />
-<input type="submit" value="backport" />
 <input type="submit" value="parser" />
 <input type="submit" value="linux" />
-<input type="submit" value="doc" />
 <input type="submit" value="haiku" />
-<input type="submit" value="ruby3" />
 <input type="submit" value="mips" />
+<input type="submit" value="uriencoding" />
 <input type="submit" value="misc" />
 <input type="submit" value="jit" />
-<input type="submit" value="uriencoding" /></p>
+<input type="submit" value="doc" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">379</span> matched)
+(<span id="matched">380</span> matched)
 <table>
-<caption>379 Tagged Open Ruby Bugs as of 2020-11-03 08:46:27 +0900</caption>
+<caption>380 Tagged Open Ruby Bugs as of 2020-11-07 05:23:24 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -54,6 +53,27 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" encoding ">
+<td><a href="https://bugs.ruby-lang.org/issues/17308">17308</a>
+</td>
+<td>encoding</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17308">RubyVM::InstructionSequence.compile_file doesn&#39;t use the same default encoding than Kernel.load</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/17306">17306</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17306">TestGCCompact#test_ast_compacts test failures</a>
+</td>
+</tr>
+<tr class=" backport ">
+<td><a href="https://bugs.ruby-lang.org/issues/17305">17305</a>
+</td>
+<td>backport</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17305">rb_rescue2() seems to loop forever if given a non-module for rescued exceptions on &lt;= 2.6.6</a>
+</td>
+</tr>
 <tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/17304">17304</a>
 </td>
@@ -94,13 +114,6 @@
 </td>
 <td>ext maybenotbug</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17276">Ripper stops tokenizing after keyword as a method parameter</a>
-</td>
-</tr>
-<tr class=" core maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/17272">17272</a>
-</td>
-<td>core maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17272">Ruby 2.7.2 crash report</a>
 </td>
 </tr>
 <tr class=" ext maybenotbug ">
@@ -2621,13 +2634,6 @@
 </td>
 <td>core ext</td>
 <td><a href="https://bugs.ruby-lang.org/issues/6120">Float and BigDecimal bug in remainder in corner cases</a>
-</td>
-</tr>
-<tr class=" core ruby3 ">
-<td><a href="https://bugs.ruby-lang.org/issues/6087">6087</a>
-</td>
-<td>core ruby3</td>
-<td><a href="https://bugs.ruby-lang.org/issues/6087">How should inherited methods deal with return values of their own subclass? </a>
 </td>
 </tr>
 <tr class=" ext maybenotbug ">
