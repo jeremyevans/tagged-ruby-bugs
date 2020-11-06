@@ -307,7 +307,7 @@
 16835,maybenotbug core,SIGCHLD + system new behavior on 2.6
 16836,build,configure-time LDFLAGS leak into ruby pkg-config file
 16840,notbug perf,Decrease in Hash#[]= performance with object keys
-16842,enc,`inspect` prints the UTF-8 character U+0085 (NEXT LINE) verbatim even though it is not printable
+16842,encoding,`inspect` prints the UTF-8 character U+0085 (NEXT LINE) verbatim even though it is not printable
 16849,patch ext,ObjectSpace.trace_object_allocations_stop fails if called before ObjectSpace.trace_object_allocations_start
 16889,tracepoint,"TracePoint.enable { ... } also activates the TracePoint for other threads, even outside the block"
 16905,build,Ruby required to build Ruby on Haiku?
@@ -315,7 +315,7 @@
 16920,arm thread,TestThread#test_signal_at_join fails on aarch64
 16921,s390,s390x: random test failures for timeout or segmentation fault
 16926,core,Kernel#require does not load a feature twice when $LOAD_PATH has been modified spec fails only on 2.7
-16927,enc,String#tr won&#39;t return the expected result for some sign with diacritics
+16927,encoding,String#tr won&#39;t return the expected result for some sign with diacritics
 16950,backport core,Stop nonsense keyword argument warnings in 2.6
 16951,lib,Consistently referer dependencies
 16953,build,Windows bash bin files removed in master
