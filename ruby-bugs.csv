@@ -135,8 +135,6 @@
 12666,ext,Fatal error: glibc detected an invalid stdio handle
 12689,core,Thread isolation of $~ and $_
 12725,cygwin build,Trying to use ./miniruby before it exists
-12780,ext,BigDecimal#round returns different types depending on argument
-12838,lib,Duplication of UDP packets for DNS responses causing &quot;no address&quot; results for valid hostnames
 12852,lib notbug,URI.parse can&#39;t handle non-ascii URIs
 13094,ext,Zlib::GzipReader eof?がfalseなのにgetsでnilが返ってくる
 13151,win core,File.writable? doesn&#39;t report correctly if a directory is writable on Windows.
@@ -340,7 +338,6 @@
 17101,maybenotbug perf lib,YAML.load_file: Massive slowdown under Ruby 2.7 vs. Ruby 2.4
 17102,openssl,openssl/buffering.rb:182: [BUG] Segmentation fault at 0x00001fa0fd774000
 17105,core,A single `return` can return to two different places in a proc inside a lambda inside a method
-17112,lib patch,Resolv.getaddress fails with IPv6 link-local addresses 
 17120,core patch,String#start_with? return wrong result for Regexp patterns containing /\K/
 17124,maybenotbug,Wrong &quot;ambiguous first argument&quot; warning
 17132,build,vcs.rb doesn&#39;t detect git submodules as vcs
