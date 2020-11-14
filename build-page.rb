@@ -30,7 +30,7 @@ File.binwrite('public/index.html', <<HTML)
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
-<p class="filter-buttons">Available Tags: #{tags.sort_by{|_,v| -v}.map{|k,_| "<input type=\"submit\" value=\"#{k}\" />"}.join("\n")}</p>
+<p class="filter-buttons">Available Tags: #{tags.sort_by{|k,v| [-v, k]}.map{|k,_| "<input type=\"submit\" value=\"#{k}\" />"}.join("\n")}</p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
 (<span id="matched">#{num_bugs}</span> matched)
