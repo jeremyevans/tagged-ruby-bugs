@@ -195,7 +195,6 @@
 14681,core,`syswrite&#39;: stream closed in another thread (IOError)
 14704,core,Module#ancestors looks wrong when a module is both included and prepended in the same class.
 14716,ext,SecureRandom throwing an error in Ruby 2.5.1
-14726,patch core,wrong message when superclass is not a Class
 14727,win thread,TestQueue#test_queue_with_trap always timeout on Windows10
 14743,doc notbug,Some links broken in README
 14744,refine,Refinements modules have a superclass
@@ -369,9 +368,9 @@
 17276,ext maybenotbug,Ripper stops tokenizing after keyword as a method parameter
 17280,core,Dir.glob with FNM_DOTMATCH matches &quot;..&quot; and &quot;.&quot; and results in duplicated entries
 17289,core,Time#strftime occurs Segmentation Fault on ruby-2.7.2p137
-17300,fiber,The Fiber scheduler does not work with ConditionVariable
 17302,tracepoint,The TracePoint API does not allow setting multiple line traces within the same method (ISEQ)
 17304,core,Ruby stuck calling sched_yield on fork
 17305,backport,rb_rescue2() seems to loop forever if given a non-module for rescued exceptions on &lt;= 2.6.6
 17306,core,TestGCCompact#test_ast_compacts test failures
 17308,encoding,RubyVM::InstructionSequence.compile_file doesn&#39;t use the same default encoding than Kernel.load
+17321,patch core,Having a singleton class makes cloning imperfect
