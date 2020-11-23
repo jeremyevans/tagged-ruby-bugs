@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>370 Tagged Open Ruby Bugs as of 2020-11-17 12:30:51 +0900</title>
+<title>363 Tagged Open Ruby Bugs as of 2020-11-24 01:55:23 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -16,8 +16,8 @@
 <input type="submit" value="thread" />
 <input type="submit" value="notbug" />
 <input type="submit" value="cygwin" />
-<input type="submit" value="tracepoint" />
 <input type="submit" value="perf" />
+<input type="submit" value="tracepoint" />
 <input type="submit" value="regexp" />
 <input type="submit" value="refine" />
 <input type="submit" value="arm" />
@@ -42,9 +42,9 @@
 <input type="submit" value="uriencoding" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">370</span> matched)
+(<span id="matched">363</span> matched)
 <table>
-<caption>370 Tagged Open Ruby Bugs as of 2020-11-17 12:30:51 +0900</caption>
+<caption>363 Tagged Open Ruby Bugs as of 2020-11-24 01:55:23 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -53,18 +53,25 @@
 </tr>
 </thead>
 <tbody>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/17321">17321</a>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/17338">17338</a>
 </td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17321">Having a singleton class makes cloning imperfect</a>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17338">ruby-spec stuck in &quot;C-API Kernel function rb_rescue2&quot;</a>
 </td>
 </tr>
-<tr class=" encoding ">
-<td><a href="https://bugs.ruby-lang.org/issues/17308">17308</a>
+<tr class=" build notbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/17337">17337</a>
 </td>
-<td>encoding</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17308">RubyVM::InstructionSequence.compile_file doesn&#39;t use the same default encoding than Kernel.load</a>
+<td>build notbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17337">Don&#39;t embed Ruby build-time configuration in Ruby</a>
+</td>
+</tr>
+<tr class=" perf ">
+<td><a href="https://bugs.ruby-lang.org/issues/17335">17335</a>
+</td>
+<td>perf</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17335">load gem in ruby 2.6.6 extremely slow</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -86,13 +93,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17280">Dir.glob with FNM_DOTMATCH matches &quot;..&quot; and &quot;.&quot; and results in duplicated entries</a>
-</td>
-</tr>
-<tr class=" ext maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/17276">17276</a>
-</td>
-<td>ext maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17276">Ripper stops tokenizing after keyword as a method parameter</a>
 </td>
 </tr>
 <tr class=" ext maybenotbug ">
@@ -149,13 +149,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17204">Segmentation fault in 2.7.1p83</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/17197">17197</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17197">Some Hash methods still have arity 2 instead of 1</a>
 </td>
 </tr>
 <tr class=" ractor ">
@@ -338,13 +331,6 @@
 </td>
 <td>patch lib</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17027">Connection leak possibility in Net::FTP#transfercmd</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/17021">17021</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17021">&quot;arm64&quot; and &quot;arm&quot; are mixed in RbConfig on Apple silicon</a>
 </td>
 </tr>
 <tr class=" jit win ">
@@ -1272,13 +1258,6 @@
 </td>
 </tr>
 <tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/14704">14704</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/14704">Module#ancestors looks wrong when a module is both included and prepended in the same class.</a>
-</td>
-</tr>
-<tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/14681">14681</a>
 </td>
 <td>core</td>
@@ -1985,13 +1964,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/11230">Should rb_struct_s_members() be public API?</a>
 </td>
 </tr>
-<tr class=" core maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/11213">11213</a>
-</td>
-<td>core maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/11213">defined?(super) ignores respond_to_missing?</a>
-</td>
-</tr>
 <tr class=" lib ">
 <td><a href="https://bugs.ruby-lang.org/issues/11194">11194</a>
 </td>
@@ -2055,13 +2027,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/11063">Special singleton class should return true for singleton_class? test</a>
 </td>
 </tr>
-<tr class=" core notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/11022">11022</a>
-</td>
-<td>core notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/11022">opening an eigenclass does not change the class variable definition context</a>
-</td>
-</tr>
 <tr class=" lib ">
 <td><a href="https://bugs.ruby-lang.org/issues/10919">10919</a>
 </td>
@@ -2081,13 +2046,6 @@
 </td>
 <td>patch lib</td>
 <td><a href="https://bugs.ruby-lang.org/issues/10855">[PATCH] Matrix#inverse returns matrix of integers whenever possible</a>
-</td>
-</tr>
-<tr class=" core maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/10845">10845</a>
-</td>
-<td>core maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/10845">Subclassing String</a>
 </td>
 </tr>
 <tr class=" encoding maybenotbug ">
@@ -2494,13 +2452,6 @@
 </td>
 <td>ext</td>
 <td><a href="https://bugs.ruby-lang.org/issues/7859">Readline: Incorrect arrow key behavior in vi_editing_mode insert mode with Readline 6.2</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/7844">7844</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/7844">include/prepend satisfiable module dependencies are not satisfied</a>
 </td>
 </tr>
 <tr class=" build ">
