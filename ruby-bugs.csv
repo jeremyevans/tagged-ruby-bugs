@@ -18,7 +18,6 @@
 7742,encoding,System encoding (Windows-1258) is not recognized by Ruby to  convert back to UTF-8 
 7758,win encoding,Ruby on Windows crashes when active codepage is codepage 65001 and outputting unicode character
 7840,build,-Wdeclaration-after-statement is valid for C/ObjC but not for C++
-7844,patch core,include/prepend satisfiable module dependencies are not satisfied
 7859,ext,Readline: Incorrect arrow key behavior in vi_editing_mode insert mode with Readline 6.2
 7892,ext,MIME encoding bug of NKF.nkf
 7964,encoding ext,Writing an ASCII-8BIT String to a StringIO created from a UTF-8 String
@@ -77,11 +76,9 @@
 10542,build,out-of-place build from repository builds enc/trans/*.c in the source directory and the build directory 
 10580,test arm,TestProcess#test_deadlock_by_signal_at_forking fails on ARM
 10584,encoding maybenotbug,"String.valid_encoding?, String.ascii_only? fails to account for BOM."
-10845,core maybenotbug,Subclassing String
 10855,patch lib,[PATCH] Matrix#inverse returns matrix of integers whenever possible
 10902,core,require(&quot;enumerator&quot;) scans LOAD_PATH 2x on every invocation
 10919,lib,[gem install] installs multipe platforms
-11022,core notbug,opening an eigenclass does not change the class variable definition context
 11063,patch core maybenotbug,Special singleton class should return true for singleton_class? test
 11064,core maybenotbug,#singleton_methods for objects with special singleton_class returns an empty array
 11142,win core,Command line argument parser on windows handles double quotes inconsistently.
@@ -91,7 +88,6 @@
 11182,refine,Refinement with alias causes strange behavior
 11183,core,Cumulative error on Complex::I ** 100000000000000000000000000000000
 11194,lib,Refactor env-sourced proxy logic for uri/generic
-11213,core maybenotbug,defined?(super) ignores respond_to_missing?
 11230,core,Should rb_struct_s_members() be public API?
 11269,core,ruby_init_setproctitle() should be called before require_libraries()
 11335,lib,`ruby -r debug` catchpoint problem
@@ -193,7 +189,6 @@
 14640,win core,[win32] File.realpath treats a relative path with a drive letter as an absolute path.
 14679,lib,StdLib gems should properly specify their dependencies
 14681,core,`syswrite&#39;: stream closed in another thread (IOError)
-14704,core,Module#ancestors looks wrong when a module is both included and prepended in the same class.
 14716,ext,SecureRandom throwing an error in Ruby 2.5.1
 14727,win thread,TestQueue#test_queue_with_trap always timeout on Windows10
 14743,doc notbug,Some links broken in README
@@ -326,7 +321,6 @@
 17003,win core,Segfault during bundler specs on Windows
 17007,refine,SystemStackError when using super inside Module included and lexically inside refinement
 17008,jit win,JIT enabled on Windows can cause constant conhost pop-ups
-17021,core,&quot;arm64&quot; and &quot;arm&quot; are mixed in RbConfig on Apple silicon
 17027,patch lib,Connection leak possibility in Net::FTP#transfercmd
 17030,perf core,Enumerable#grep{_v} should be optimized for Regexp
 17037,core,rounding of Rational#to_f
@@ -353,7 +347,6 @@
 17192,patch core,ISeq.load_from_binary can cause BUG if binary is a rbinc-derived
 17193,lib,Endless method definition doesn&#39;t work with lambdas in IRB
 17196,ractor,Segmentation Fault with Socket#close in Ractors
-17197,core,Some Hash methods still have arity 2 instead of 1
 17204,core,Segmentation fault in 2.7.1p83
 17207,lib,message/disposition-notification: unexpected token LPAR (expected QUOTED or LITERAL)
 17212,build,FreeBSDで3.0.0-preview1のビルドが失敗する
@@ -362,9 +355,9 @@
 17218,core,Range#step sometimes behaves unexpectedly with Rational endpoints and increment
 17263,fiber perf,"Fiber context switch degrades with number of fibers, limit on number of fibers"
 17264,ext maybenotbug,BigDecimal exponentiation cannot be used with #** method
-17276,ext maybenotbug,Ripper stops tokenizing after keyword as a method parameter
 17280,core,Dir.glob with FNM_DOTMATCH matches &quot;..&quot; and &quot;.&quot; and results in duplicated entries
 17289,core,Time#strftime occurs Segmentation Fault on ruby-2.7.2p137
 17306,core,TestGCCompact#test_ast_compacts test failures
-17308,encoding,RubyVM::InstructionSequence.compile_file doesn&#39;t use the same default encoding than Kernel.load
-17321,patch core,Having a singleton class makes cloning imperfect
+17335,perf,load gem in ruby 2.6.6 extremely slow
+17337,build notbug,Don&#39;t embed Ruby build-time configuration in Ruby
+17338,core,ruby-spec stuck in &quot;C-API Kernel function rb_rescue2&quot;
