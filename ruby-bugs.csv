@@ -392,5 +392,5 @@
 17599,patch core,[BUG] try to mark T_NONE object when object allocation tracing is enabled
 17600,lib,lib/benchmark should use `$stdout` instead of `STDOUT`
 17606,cygwin,Make failed on i386-cygwin (miniruby.exe aborted)
-17612,ractor,ractor crash with some simple codes
 17617,ractor,"When a Ractor&#39;s incoming port is closed, Ractor.receive_if does not raise Ractor::ClosedError, but instead blocks indefinitely"
+17618,fiber,Exceptions in Fiber Scheduler causes a segv
