@@ -50,7 +50,6 @@
 9435,win core,Kernel.system problem
 9507,core arm,Ruby 2.1.0 is broken on ARMv5: tried to create Proc object without a block
 9542,lib unfixable,Delegator does not delegate protected methods
-9580,refine maybenotbug,Refinements regression in IRB
 9659,ext,crash in FIPS mode after unchecked algo-&gt;init_func failure
 9715,win encoding,ENV data yield ASCII-8BIT encoded strings under Windows with unicode username
 9737,wip-patch encoding,Non-ASCII characters in the path to ruby executable break require paths
@@ -337,7 +336,6 @@
 17263,fiber perf,"Fiber context switch degrades with number of fibers, limit on number of fibers"
 17289,core,Time#strftime occurs Segmentation Fault on ruby-2.7.2p137
 17337,build notbug,Don&#39;t embed Ruby build-time configuration in Ruby
-17338,core,ruby-spec stuck in &quot;C-API Kernel function rb_rescue2&quot;
 17349,thread,Rake での並行実行における正規表現マッチングの異常
 17354,core,Module#const_source_location is misleading for constants awaiting autoload
 17359,ractor,Ractor copy mode is not Ractor-safe
@@ -365,7 +363,7 @@
 17508,lib,io-console versioning
 17513,ractor,Methods of shareable objects and UnboundMethods should be shareable
 17516,ractor,forking in a ractor causes Ruby to crash
-17519,refine,set_visibility fails when a prepended module and a refinement both exist
+17519,patch refine,set_visibility fails when a prepended module and a refinement both exist
 17527,fiber,rb_io_wait_readable/writable with scheduler don&#39;t check errno 
 17529,ractor,Ractor Segfaults with GC enabled
 17530,irb,irb handles &lt;&lt; incorrectly with variable as identifier
@@ -374,23 +372,27 @@
 17542,lib,Username and password are not decoded if retrieved from env
 17543,ractor,Ractor isolation broken by `self` in shareable proc
 17545,core maybenotbug,Calling dup on a subclass of Proc returns a Proc and not the subclass
-17553,core,Rails CI shows infinite loop of method_missing since f4ce78d5c139a8825ee2d09f39aef03ef762dfc6 
 17554,patch core,[PATCH] Fix ObjectSpace.dump to include singleton class name
 17561,backport,The timeout option for Addrinfo.getaddrinfo is not reliable on Ruby 2.7.2
 17568,fiber,Thread.handle_interrupt is per-Thread but should probably be per-Fiber
 17571,core,prependしたArray#[] が反映されない
 17573,core,Crashes in profiling tools when signals arrive in non-Ruby threads
 17578,lib,mkmf experimental C++ Support
-17581,patch core,Ruby 3.0 backtrace sometimes returns empty array
 17583,core,Segfault on large stack(RUBY_THREAD_VM_STACK_SIZE)
 17584,jit,Segmentation fault with Ruby 3.0
 17585,patch core,DWARF5 support?
 17587,ractor,Segmentation fault with ractors and unix signals
 17588,build win,Cannot build with library path with spaces on MSVC
 17590,core,`M.prepend M` has hidden side effect
-17594,maybenotbug,Sort order of UTF-16LE is based on binary representation instead of codepoints
-17599,patch core,[BUG] try to mark T_NONE object when object allocation tracing is enabled
 17600,lib,lib/benchmark should use `$stdout` instead of `STDOUT`
 17606,cygwin,Make failed on i386-cygwin (miniruby.exe aborted)
+17607,maybenotbug fiber,ChildProcess vs RUBY_PIPE_NONBLOCK_DEFAULT
 17617,ractor,"When a Ractor&#39;s incoming port is closed, Ractor.receive_if does not raise Ractor::ClosedError, but instead blocks indefinitely"
 17618,fiber,Exceptions in Fiber Scheduler causes a segv
+17623,irb,endless def can access to outer local variables and lead to unexpected result
+17624,ractor,Ractor.receive is not thread-safe
+17629,patch ext,"macOS, readline compiled with libedit: adding entries to history doesn&#39;t work unless Readline.readline is called before populating it"
+17631,maybenotbug,`Numeric#real?` incorrectly returns true for `NaN` and `INFINITY`
+17643,core,Ruby 3 embedded - no GC methods?
+17645,patch build,`make` stops at `file.c` with Clang 11.1.0 for 32-bit GNU/Linux targets (maybe Y2038?)
+17646,patch build,Check for `__builtin_mul_overflow` with `long long` arguments
