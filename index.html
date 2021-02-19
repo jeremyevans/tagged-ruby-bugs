@@ -1,13 +1,13 @@
 <html>
 <head>
-<title>396 Tagged Open Ruby Bugs as of 2021-02-11 01:30:54 +0900</title>
+<title>398 Tagged Open Ruby Bugs as of 2021-02-20 08:17:06 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
 <p class="filter-buttons">Available Tags: <input type="submit" value="core" />
 <input type="submit" value="win" />
-<input type="submit" value="lib" />
 <input type="submit" value="build" />
+<input type="submit" value="lib" />
 <input type="submit" value="patch" />
 <input type="submit" value="ext" />
 <input type="submit" value="maybenotbug" />
@@ -27,10 +27,10 @@
 <input type="submit" value="solaris" />
 <input type="submit" value="autoload" />
 <input type="submit" value="backport" />
+<input type="submit" value="irb" />
 <input type="submit" value="s390" />
 <input type="submit" value="unfixable" />
 <input type="submit" value="enc" />
-<input type="submit" value="irb" />
 <input type="submit" value="jit" />
 <input type="submit" value="linux" />
 <input type="submit" value="openssl" />
@@ -44,9 +44,9 @@
 <input type="submit" value="uriencoding" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">396</span> matched)
+(<span id="matched">398</span> matched)
 <table>
-<caption>396 Tagged Open Ruby Bugs as of 2021-02-11 01:30:54 +0900</caption>
+<caption>398 Tagged Open Ruby Bugs as of 2021-02-20 08:17:06 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -55,6 +55,55 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" patch build ">
+<td><a href="https://bugs.ruby-lang.org/issues/17646">17646</a>
+</td>
+<td>patch build</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17646">Check for `__builtin_mul_overflow` with `long long` arguments</a>
+</td>
+</tr>
+<tr class=" patch build ">
+<td><a href="https://bugs.ruby-lang.org/issues/17645">17645</a>
+</td>
+<td>patch build</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17645">`make` stops at `file.c` with Clang 11.1.0 for 32-bit GNU/Linux targets (maybe Y2038?)</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/17643">17643</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17643">Ruby 3 embedded - no GC methods?</a>
+</td>
+</tr>
+<tr class=" maybenotbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/17631">17631</a>
+</td>
+<td>maybenotbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17631">`Numeric#real?` incorrectly returns true for `NaN` and `INFINITY`</a>
+</td>
+</tr>
+<tr class=" patch ext ">
+<td><a href="https://bugs.ruby-lang.org/issues/17629">17629</a>
+</td>
+<td>patch ext</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17629">macOS, readline compiled with libedit: adding entries to history doesn&#39;t work unless Readline.readline is called before populating it</a>
+</td>
+</tr>
+<tr class=" ractor ">
+<td><a href="https://bugs.ruby-lang.org/issues/17624">17624</a>
+</td>
+<td>ractor</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17624">Ractor.receive is not thread-safe</a>
+</td>
+</tr>
+<tr class=" irb ">
+<td><a href="https://bugs.ruby-lang.org/issues/17623">17623</a>
+</td>
+<td>irb</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17623">endless def can access to outer local variables and lead to unexpected result</a>
+</td>
+</tr>
 <tr class=" fiber ">
 <td><a href="https://bugs.ruby-lang.org/issues/17618">17618</a>
 </td>
@@ -69,6 +118,13 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17617">When a Ractor&#39;s incoming port is closed, Ractor.receive_if does not raise Ractor::ClosedError, but instead blocks indefinitely</a>
 </td>
 </tr>
+<tr class=" maybenotbug fiber ">
+<td><a href="https://bugs.ruby-lang.org/issues/17607">17607</a>
+</td>
+<td>maybenotbug fiber</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17607">ChildProcess vs RUBY_PIPE_NONBLOCK_DEFAULT</a>
+</td>
+</tr>
 <tr class=" cygwin ">
 <td><a href="https://bugs.ruby-lang.org/issues/17606">17606</a>
 </td>
@@ -81,20 +137,6 @@
 </td>
 <td>lib</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17600">lib/benchmark should use `$stdout` instead of `STDOUT`</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/17599">17599</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17599">[BUG] try to mark T_NONE object when object allocation tracing is enabled</a>
-</td>
-</tr>
-<tr class=" maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/17594">17594</a>
-</td>
-<td>maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17594">Sort order of UTF-16LE is based on binary representation instead of codepoints</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -139,13 +181,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17583">Segfault on large stack(RUBY_THREAD_VM_STACK_SIZE)</a>
 </td>
 </tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/17581">17581</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17581">Ruby 3.0 backtrace sometimes returns empty array</a>
-</td>
-</tr>
 <tr class=" lib ">
 <td><a href="https://bugs.ruby-lang.org/issues/17578">17578</a>
 </td>
@@ -186,13 +221,6 @@
 </td>
 <td>patch core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17554">[PATCH] Fix ObjectSpace.dump to include singleton class name</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/17553">17553</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17553">Rails CI shows infinite loop of method_missing since f4ce78d5c139a8825ee2d09f39aef03ef762dfc6 </a>
 </td>
 </tr>
 <tr class=" core maybenotbug ">
@@ -251,10 +279,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17527">rb_io_wait_readable/writable with scheduler don&#39;t check errno </a>
 </td>
 </tr>
-<tr class=" refine ">
+<tr class=" patch refine ">
 <td><a href="https://bugs.ruby-lang.org/issues/17519">17519</a>
 </td>
-<td>refine</td>
+<td>patch refine</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17519">set_visibility fails when a prepended module and a refinement both exist</a>
 </td>
 </tr>
@@ -445,13 +473,6 @@
 </td>
 <td>thread</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17349">Rake での並行実行における正規表現マッチングの異常</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/17338">17338</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17338">ruby-spec stuck in &quot;C-API Kernel function rb_rescue2&quot;</a>
 </td>
 </tr>
 <tr class=" build notbug ">
@@ -2454,13 +2475,6 @@
 </td>
 <td>ext</td>
 <td><a href="https://bugs.ruby-lang.org/issues/9659">crash in FIPS mode after unchecked algo-&gt;init_func failure</a>
-</td>
-</tr>
-<tr class=" refine maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/9580">9580</a>
-</td>
-<td>refine maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/9580">Refinements regression in IRB</a>
 </td>
 </tr>
 <tr class=" lib unfixable ">
