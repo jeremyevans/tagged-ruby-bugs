@@ -252,7 +252,6 @@
 16265,win thread,"Test (spec) failure using current MSYS2 tools, related to -fstack-protector and possibly D_FORTIFY_SOURCE=2"
 16277,win ext maybenotbug,UNIXServer#listen fails with Errno::EADDRINUSE error under Windows 10 / WSL Ubuntu 18.04
 16288,core,"Segmentation fault with finalizers, threads"
-16338,build,gemspec stub EOF separators throw warning
 16368,ext,Error in `YAML.load(symbolize_names: true)` with null column YAML
 16371,backport,Inconsistent usage of Double splat operator
 16376,core,Stack-buffer-overflow in renumber_by_map in regcomp.c
@@ -350,7 +349,6 @@
 17403,core,Remove Fixnum and Bignum
 17420,ractor,Unsafe mutation of $&quot; when doing non-RubyGems require in Ractor
 17429,refine,Prohibit include/prepend in refinement modules
-17467,patch core,What makes strip() and lstrip() not stripping \u0000 from beginning of the string?
 17476,build,3.0/specifications/default/net-*.gemspec repeats the same files
 17478,perf,Ruby3.0 is slower than Ruby2.7.2 when parsing a large CSV file
 17486,build macos,Build fails on darwin due to libtool being removed
@@ -396,3 +394,4 @@
 17643,core,Ruby 3 embedded - no GC methods?
 17645,patch build,`make` stops at `file.c` with Clang 11.1.0 for 32-bit GNU/Linux targets (maybe Y2038?)
 17646,patch build,Check for `__builtin_mul_overflow` with `long long` arguments
+17649,core,`defined?` invokes method once for each syntactic element around it
