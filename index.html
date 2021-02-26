@@ -1,52 +1,52 @@
 <html>
 <head>
-<title>397 Tagged Open Ruby Bugs as of 2021-02-23 04:19:08 +0900</title>
+<title>373 Tagged Open Ruby Bugs as of 2021-02-27 08:18:31 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
 <p class="filter-buttons">Available Tags: <input type="submit" value="core" />
 <input type="submit" value="win" />
-<input type="submit" value="lib" />
 <input type="submit" value="build" />
 <input type="submit" value="patch" />
+<input type="submit" value="lib" />
 <input type="submit" value="ext" />
 <input type="submit" value="maybenotbug" />
 <input type="submit" value="thread" />
 <input type="submit" value="encoding" />
-<input type="submit" value="test" />
 <input type="submit" value="notbug" />
-<input type="submit" value="cygwin" />
+<input type="submit" value="test" />
 <input type="submit" value="ractor" />
+<input type="submit" value="cygwin" />
 <input type="submit" value="perf" />
 <input type="submit" value="tracepoint" />
 <input type="submit" value="refine" />
 <input type="submit" value="fiber" />
 <input type="submit" value="regexp" />
-<input type="submit" value="aix" />
 <input type="submit" value="arm" />
+<input type="submit" value="aix" />
 <input type="submit" value="solaris" />
 <input type="submit" value="autoload" />
 <input type="submit" value="backport" />
 <input type="submit" value="irb" />
-<input type="submit" value="s390" />
 <input type="submit" value="unfixable" />
-<input type="submit" value="enc" />
 <input type="submit" value="jit" />
 <input type="submit" value="linux" />
-<input type="submit" value="openssl" />
 <input type="submit" value="parser" />
+<input type="submit" value="s390" />
 <input type="submit" value="wip-patch" />
 <input type="submit" value="doc" />
+<input type="submit" value="enc" />
 <input type="submit" value="haiku" />
 <input type="submit" value="macos" />
 <input type="submit" value="mips" />
 <input type="submit" value="misc" />
+<input type="submit" value="openssl" />
 <input type="submit" value="uriencoding" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">397</span> matched)
+(<span id="matched">373</span> matched)
 <table>
-<caption>397 Tagged Open Ruby Bugs as of 2021-02-23 04:19:08 +0900</caption>
+<caption>373 Tagged Open Ruby Bugs as of 2021-02-27 08:18:31 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -55,10 +55,38 @@
 </tr>
 </thead>
 <tbody>
-<tr class=" core ">
+<tr class=" ractor ">
+<td><a href="https://bugs.ruby-lang.org/issues/17659">17659</a>
+</td>
+<td>ractor</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17659">Ractor: can&#39;t call io/wait methods</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/17656">17656</a>
+</td>
+<td>patch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17656">Improper functions shown in C level backtrace information</a>
+</td>
+</tr>
+<tr class=" maybenotbug core ">
+<td><a href="https://bugs.ruby-lang.org/issues/17655">17655</a>
+</td>
+<td>maybenotbug core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17655">Experiencing Repeated Segmentation Faults Using Puma with Ruby 3.0.0</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/17652">17652</a>
+</td>
+<td>patch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17652">GC compaction crash on mprotect</a>
+</td>
+</tr>
+<tr class=" patch core ">
 <td><a href="https://bugs.ruby-lang.org/issues/17649">17649</a>
 </td>
-<td>core</td>
+<td>patch core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17649">`defined?` invokes method once for each syntactic element around it</a>
 </td>
 </tr>
@@ -146,13 +174,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17600">lib/benchmark should use `$stdout` instead of `STDOUT`</a>
 </td>
 </tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/17590">17590</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17590">`M.prepend M` has hidden side effect</a>
-</td>
-</tr>
 <tr class=" build win ">
 <td><a href="https://bugs.ruby-lang.org/issues/17588">17588</a>
 </td>
@@ -221,13 +242,6 @@
 </td>
 <td>backport</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17561">The timeout option for Addrinfo.getaddrinfo is not reliable on Ruby 2.7.2</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/17554">17554</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17554">[PATCH] Fix ObjectSpace.dump to include singleton class name</a>
 </td>
 </tr>
 <tr class=" core maybenotbug ">
@@ -412,13 +426,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17398">SyntaxError in endless method</a>
 </td>
 </tr>
-<tr class=" win ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/17394">17394</a>
-</td>
-<td>win ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17394">TCPServer is not thread safe on win32</a>
-</td>
-</tr>
 <tr class=" perf ">
 <td><a href="https://bugs.ruby-lang.org/issues/17383">17383</a>
 </td>
@@ -517,13 +524,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17207">message/disposition-notification: unexpected token LPAR (expected QUOTED or LITERAL)</a>
 </td>
 </tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/17204">17204</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17204">Segmentation fault in 2.7.1p83</a>
-</td>
-</tr>
 <tr class=" ractor ">
 <td><a href="https://bugs.ruby-lang.org/issues/17196">17196</a>
 </td>
@@ -536,13 +536,6 @@
 </td>
 <td>test thread</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17189">test_thread.rb in testsuite deadlocks with musl libc 1.2.1</a>
-</td>
-</tr>
-<tr class=" core notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/17184">17184</a>
-</td>
-<td>core notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17184">No stdlib function to perform simple string replacement</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -564,13 +557,6 @@
 </td>
 <td>thread</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17164">Threads can ignore kill/interrupt/abort</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/17161">17161</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17161">[BUG] object allocation during garbage collection phase</a>
 </td>
 </tr>
 <tr class=" ractor ">
@@ -608,13 +594,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17105">A single `return` can return to two different places in a proc inside a lambda inside a method</a>
 </td>
 </tr>
-<tr class=" openssl ">
-<td><a href="https://bugs.ruby-lang.org/issues/17102">17102</a>
-</td>
-<td>openssl</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17102">openssl/buffering.rb:182: [BUG] Segmentation fault at 0x00001fa0fd774000</a>
-</td>
-</tr>
 <tr class=" maybenotbug perf lib ">
 <td><a href="https://bugs.ruby-lang.org/issues/17101">17101</a>
 </td>
@@ -627,13 +606,6 @@
 </td>
 <td>notbug</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17098">Float#negative? reports negative zero as not negative</a>
-</td>
-</tr>
-<tr class=" patch lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/17057">17057</a>
-</td>
-<td>patch lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17057">CGI different behaviour with C vs Ruby version</a>
 </td>
 </tr>
 <tr class=" notbug lib ">
@@ -657,13 +629,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17037">rounding of Rational#to_f</a>
 </td>
 </tr>
-<tr class=" patch lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/17027">17027</a>
-</td>
-<td>patch lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17027">Connection leak possibility in Net::FTP#transfercmd</a>
-</td>
-</tr>
 <tr class=" jit win ">
 <td><a href="https://bugs.ruby-lang.org/issues/17008">17008</a>
 </td>
@@ -676,13 +641,6 @@
 </td>
 <td>refine</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17007">SystemStackError when using super inside Module included and lexically inside refinement</a>
-</td>
-</tr>
-<tr class=" win core ">
-<td><a href="https://bugs.ruby-lang.org/issues/17003">17003</a>
-</td>
-<td>win core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17003">Segfault during bundler specs on Windows</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -704,13 +662,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16983">RubyVM::AbstractSyntaxTree.of(method) returns meaningless node if the method is defined in eval</a>
-</td>
-</tr>
-<tr class=" win core ">
-<td><a href="https://bugs.ruby-lang.org/issues/16970">16970</a>
-</td>
-<td>win core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16970">Encoding of ENV value returns ASCII-8BIT in Ruby2.6 or later</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -790,13 +741,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16889">TracePoint.enable { ... } also activates the TracePoint for other threads, even outside the block</a>
 </td>
 </tr>
-<tr class=" patch ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/16849">16849</a>
-</td>
-<td>patch ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16849">ObjectSpace.trace_object_allocations_stop fails if called before ObjectSpace.trace_object_allocations_start</a>
-</td>
-</tr>
 <tr class=" encoding ">
 <td><a href="https://bugs.ruby-lang.org/issues/16842">16842</a>
 </td>
@@ -853,13 +797,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16816">Prematurely terminated Enumerator should stay terminated</a>
 </td>
 </tr>
-<tr class=" fiber s390 ">
-<td><a href="https://bugs.ruby-lang.org/issues/16814">16814</a>
-</td>
-<td>fiber s390</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16814">Segmentation fault in GC while running test/ruby/test_fiber.rb on s390x</a>
-</td>
-</tr>
 <tr class=" s390 ">
 <td><a href="https://bugs.ruby-lang.org/issues/16810">16810</a>
 </td>
@@ -909,25 +846,11 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16694">JIT vs hardened GCC with PCH</a>
 </td>
 </tr>
-<tr class=" lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/16685">16685</a>
-</td>
-<td>lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16685">IRB auto indent does not work for single-line method definitions</a>
-</td>
-</tr>
 <tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/16680">16680</a>
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16680">Symlink folder in $LOAD_PATH does not work with autoload</a>
-</td>
-</tr>
-<tr class=" test ">
-<td><a href="https://bugs.ruby-lang.org/issues/16679">16679</a>
-</td>
-<td>test</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16679">Test of Ruby fails under multiple OS user userland installations</a>
 </td>
 </tr>
 <tr class=" build ">
@@ -956,13 +879,6 @@
 </td>
 <td>win build</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16651">Extensions Do Not Compile on Mingw64</a>
-</td>
-</tr>
-<tr class=" win enc ">
-<td><a href="https://bugs.ruby-lang.org/issues/16623">16623</a>
-</td>
-<td>win enc</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16623">Windows ENV encoding</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -1245,13 +1161,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/15587">Thread tests failing</a>
 </td>
 </tr>
-<tr class=" aix build ">
-<td><a href="https://bugs.ruby-lang.org/issues/15579">15579</a>
-</td>
-<td>aix build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/15579">make step when building ruby 2.4.5 on AIX 7.1 results in a Segmentation fault : ruby-2.4.5/lib/rdoc/markup/parser.rb:325</a>
-</td>
-</tr>
 <tr class=" win ">
 <td><a href="https://bugs.ruby-lang.org/issues/15550">15550</a>
 </td>
@@ -1299,13 +1208,6 @@
 </td>
 <td>win thread</td>
 <td><a href="https://bugs.ruby-lang.org/issues/15438">Threads can&#39;t switch faster than TIME_QUANTUM_(NSEC|USEC|MSEC)</a>
-</td>
-</tr>
-<tr class=" test ">
-<td><a href="https://bugs.ruby-lang.org/issues/15433">15433</a>
-</td>
-<td>test</td>
-<td><a href="https://bugs.ruby-lang.org/issues/15433">OpenStruct NameError vs NoMethodError spec fails for method_missing</a>
 </td>
 </tr>
 <tr class=" core notbug ">
@@ -1735,13 +1637,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/14096">Psych allows invalid single quote escape character</a>
 </td>
 </tr>
-<tr class=" lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/14094">14094</a>
-</td>
-<td>lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/14094">IRB does not obey frame-level visibility modifiers</a>
-</td>
-</tr>
 <tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/14090">14090</a>
 </td>
@@ -1922,13 +1817,6 @@
 </td>
 <td>win core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/13151">File.writable? doesn&#39;t report correctly if a directory is writable on Windows.</a>
-</td>
-</tr>
-<tr class=" ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/13094">13094</a>
-</td>
-<td>ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/13094">Zlib::GzipReader eof?がfalseなのにgetsでnilが返ってくる</a>
 </td>
 </tr>
 <tr class=" lib notbug ">
@@ -2407,32 +2295,11 @@
 <td><a href="https://bugs.ruby-lang.org/issues/9944">in ruby for windows in &quot;system&quot; a redirection to append a file works incorrectly</a>
 </td>
 </tr>
-<tr class=" lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/9931">9931</a>
-</td>
-<td>lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/9931">irb: Really weird behavior for x = &quot;#{x\&quot;}&quot; (ex: irb(main:009:-4))</a>
-</td>
-</tr>
-<tr class=" win encoding ">
-<td><a href="https://bugs.ruby-lang.org/issues/9930">9930</a>
-</td>
-<td>win encoding</td>
-<td><a href="https://bugs.ruby-lang.org/issues/9930">unicode filenames somehow don&#39;t work</a>
-</td>
-</tr>
 <tr class=" build maybenotbug ">
 <td><a href="https://bugs.ruby-lang.org/issues/9921">9921</a>
 </td>
 <td>build maybenotbug</td>
 <td><a href="https://bugs.ruby-lang.org/issues/9921">gmtime_r, win32.h, and &lt;string&gt;</a>
-</td>
-</tr>
-<tr class=" lib maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/9877">9877</a>
-</td>
-<td>lib maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/9877">IRB::OutputMethod defines &quot;pp&quot;, but it&#39;s actually &quot;p&quot;</a>
 </td>
 </tr>
 <tr class=" lib maybenotbug ">
@@ -2454,13 +2321,6 @@
 </td>
 <td>wip-patch encoding</td>
 <td><a href="https://bugs.ruby-lang.org/issues/9737">Non-ASCII characters in the path to ruby executable break require paths</a>
-</td>
-</tr>
-<tr class=" win encoding ">
-<td><a href="https://bugs.ruby-lang.org/issues/9715">9715</a>
-</td>
-<td>win encoding</td>
-<td><a href="https://bugs.ruby-lang.org/issues/9715">ENV data yield ASCII-8BIT encoded strings under Windows with unicode username</a>
 </td>
 </tr>
 <tr class=" ext ">
@@ -2552,13 +2412,6 @@
 </td>
 <td>lib uriencoding</td>
 <td><a href="https://bugs.ruby-lang.org/issues/9045">URIに含まれるエンコードされたID/パスワードがデコードされない</a>
-</td>
-</tr>
-<tr class=" win encoding ">
-<td><a href="https://bugs.ruby-lang.org/issues/9016">9016</a>
-</td>
-<td>win encoding</td>
-<td><a href="https://bugs.ruby-lang.org/issues/9016">String#encoding is lying?</a>
 </td>
 </tr>
 <tr class=" build ">
@@ -2708,13 +2561,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/7840">-Wdeclaration-after-statement is valid for C/ObjC but not for C++</a>
 </td>
 </tr>
-<tr class=" win encoding ">
-<td><a href="https://bugs.ruby-lang.org/issues/7758">7758</a>
-</td>
-<td>win encoding</td>
-<td><a href="https://bugs.ruby-lang.org/issues/7758">Ruby on Windows crashes when active codepage is codepage 65001 and outputting unicode character</a>
-</td>
-</tr>
 <tr class=" encoding ">
 <td><a href="https://bugs.ruby-lang.org/issues/7742">7742</a>
 </td>
@@ -2765,13 +2611,6 @@
 </td>
 </tr>
 <tr class=" ext maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/5771">5771</a>
-</td>
-<td>ext maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/5771">WIN32OLERuntimeError using 1.9.2</a>
-</td>
-</tr>
-<tr class=" ext maybenotbug ">
 <td><a href="https://bugs.ruby-lang.org/issues/5334">5334</a>
 </td>
 <td>ext maybenotbug</td>
@@ -2804,13 +2643,6 @@
 </td>
 <td>thread maybenotbug</td>
 <td><a href="https://bugs.ruby-lang.org/issues/4434">make test-all &quot;-j10000&quot; のように大きな並列数を与えると異常終了</a>
-</td>
-</tr>
-<tr class=" win thread ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/4405">4405</a>
-</td>
-<td>win thread ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/4405">WIN32OLE &amp; Threads incompatible</a>
 </td>
 </tr>
 <tr class=" test ">
