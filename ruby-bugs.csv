@@ -1,13 +1,11 @@
 595,fiber,Fiber ignores ensure clause
 4040,core,SystemStackError with Hash[*a] for Large _a_
 4173,test,TestProcess#test_wait_and_sigchild が、たまに失敗する
-4405,win thread ext,WIN32OLE &amp; Threads incompatible
 4434,thread maybenotbug,make test-all &quot;-j10000&quot; のように大きな並列数を与えると異常終了
 4443,core,odd evaluation order in a multiple assignment
 5179,patch core,Complex#rationalize and to_r with approximate zeros
 5317,core maybenotbug,rubyのヘッダファイルを使った拡張を行う際にoff_tの宣言回避をする事が出来ない。
 5334,ext maybenotbug,Segmentation fault in InternetExplorer IServiceProvider interface
-5771,ext maybenotbug,WIN32OLERuntimeError using 1.9.2
 6120,core ext,Float and BigDecimal bug in remainder in corner cases
 6124,build,remove the &quot;spec-only gems&quot; in Ruby 1.9.3 (was What is the purpose of &quot;fake&quot; gems in Ruby)
 6351,encoding,transcode table generator does not support multi characters of Unicode
@@ -15,7 +13,6 @@
 6391,win build,Segment Fault while execute make_encmake.rb for Ruby 1.9.3 P194 ( MinGW64)
 7676,core,Comparison of Float::NAN in array behaves unexpectedly
 7742,encoding,System encoding (Windows-1258) is not recognized by Ruby to  convert back to UTF-8 
-7758,win encoding,Ruby on Windows crashes when active codepage is codepage 65001 and outputting unicode character
 7840,build,-Wdeclaration-after-statement is valid for C/ObjC but not for C++
 7859,ext,Readline: Incorrect arrow key behavior in vi_editing_mode insert mode with Readline 6.2
 7892,ext,MIME encoding bug of NKF.nkf
@@ -37,7 +34,6 @@
 8973,patch build,Allow to configure archlibdir for multiarch
 9009,core,Wrong binding when tracing c-calls
 9010,build,./configure --prefix= cannot handle directories with spaces
-9016,win encoding,String#encoding is lying?
 9045,lib uriencoding,URIに含まれるエンコードされたID/パスワードがデコードされない
 9115,patch lib,Logger traps all exceptions; breaks Timeout
 9189,win encoding,Build failure on Windows in case of nonascii TEMP environment.
@@ -51,14 +47,10 @@
 9507,core arm,Ruby 2.1.0 is broken on ARMv5: tried to create Proc object without a block
 9542,lib unfixable,Delegator does not delegate protected methods
 9659,ext,crash in FIPS mode after unchecked algo-&gt;init_func failure
-9715,win encoding,ENV data yield ASCII-8BIT encoded strings under Windows with unicode username
 9737,wip-patch encoding,Non-ASCII characters in the path to ruby executable break require paths
 9760,build,mkmf does not allow for linking against custom libraries when a system library is present
 9806,lib maybenotbug,URI#encode doesn&#39;t encode characters &#39;[&#39; and &#39;]&#39;.  They should be encoded as %5B and %5D respectively.
-9877,lib maybenotbug,"IRB::OutputMethod defines &quot;pp&quot;, but it&#39;s actually &quot;p&quot;"
 9921,build maybenotbug,"gmtime_r, win32.h, and &lt;string&gt;"
-9930,win encoding,unicode filenames somehow don&#39;t work
-9931,lib,irb: Really weird behavior for x = &quot;#{x\&quot;}&quot; (ex: irb(main:009:-4))
 9944,win maybenotbug,in ruby for windows in &quot;system&quot; a redirection to append a file works incorrectly
 9955,win build,"issue building dll on mingw, library not found"
 10009,thread perf,IO operation is 10x slower in multi-thread environment
@@ -127,7 +119,6 @@
 12689,core,Thread isolation of $~ and $_
 12725,cygwin build,Trying to use ./miniruby before it exists
 12852,lib notbug,URI.parse can&#39;t handle non-ascii URIs
-13094,ext,Zlib::GzipReader eof?がfalseなのにgetsでnilが返ってくる
 13151,win core,File.writable? doesn&#39;t report correctly if a directory is writable on Windows.
 13164,core,A second `SystemStackError` exception  results in `Segmentation fault (core dumped)`
 13220,encoding,Enhance support of Unicode strings manipulation
@@ -154,7 +145,6 @@
 14064,test,test-all with and without -j - incorrect assertions and missing test methods
 14083,refine,Refinement in block calling incorrect method
 14090,core,`TestGc#test_interrupt_in_finalizer` fails very rarely
-14094,lib,IRB does not obey frame-level visibility modifiers
 14096,ext,Psych allows invalid single quote escape character
 14103,regexp,Regexp absense operator has no chance to ^C
 14137,win regexp,Windows / MinGW - Regexp - Character Properties - General Category
@@ -216,7 +206,6 @@
 15423,thread,fork leapfrog leaks memory on FreeBSD 11.2
 15425,build,Store MJIT header into Ruby versioned directory.
 15428,core notbug,Refactor Proc#&gt;&gt; and #&lt;&lt;
-15433,test,OpenStruct NameError vs NoMethodError spec fails for method_missing
 15438,win thread,Threads can&#39;t switch faster than TIME_QUANTUM_(NSEC|USEC|MSEC)
 15465,cygwin test,Tests failed on i386-cygwin
 15499,thread,Breaking behavior on ruby 2.6: rb_thread_call_without_gvl doesn&#39;t invoke unblock_function when used on the main thread 
@@ -224,7 +213,6 @@
 15509,thread,TCPServer#accept isn&#39;t interrupted
 15517,lib encoding,Net::HTTP not recognizing valid UTF-8
 15550,win,Windows - gem bin files - can&#39;t run from bash shell
-15579,aix build,make step when building ruby 2.4.5 on AIX 7.1 results in a Segmentation fault : ruby-2.4.5/lib/rdoc/markup/parser.rb:325
 15587,win thread,Thread tests failing
 15598,core autoload,Deadlock on mutual reference of autoloaded constants
 15599,core autoload,Mixing autoload and require causes deadlock and incomplete definition.
@@ -265,14 +253,11 @@
 16608,ext,ConditionVariable#wait should return false when timeout exceeded
 16612,core,Enumerator::ArithmeticSequence#last with float range produces incorrect value
 16618,core,Ensure called twice when raise in ensure
-16623,win enc,Windows ENV encoding
 16651,win build,Extensions Do Not Compile on Mingw64
 16654,core,Segfault in rb_str_hash
 16672,lib,net/http leaves original content-length header intact after inflating response
 16674,build,Build issue of FreeBSD 12
-16679,test,Test of Ruby fails under multiple OS user userland installations
 16680,core,Symlink folder in $LOAD_PATH does not work with autoload
-16685,lib,IRB auto indent does not work for single-line method definitions
 16694,core,JIT vs hardened GCC with PCH
 16759,win core,MinGW 2.5 - SEGV bug with Binding#local_variable_set
 16776,core,Regression in coverage library
@@ -280,7 +265,6 @@
 16784,build,Compiling with --enable-load-relative and &quot;musl-gcc -static&quot; yields &quot;negative string size (or size too big) (ArgumentError)&quot; 
 16805,fiber,Coroutine&#39;s license is unclear
 16810,s390,ruby segfaults on s390x with musl libc
-16814,fiber s390,Segmentation fault in GC while running test/ruby/test_fiber.rb on s390x
 16816,core,Prematurely terminated Enumerator should stay terminated
 16819,core,Line reporting off by one when reporting line of a hash?
 16820,misc,LEGAL is out of sync
@@ -289,7 +273,6 @@
 16836,build,configure-time LDFLAGS leak into ruby pkg-config file
 16840,notbug perf,Decrease in Hash#[]= performance with object keys
 16842,encoding,`inspect` prints the UTF-8 character U+0085 (NEXT LINE) verbatim even though it is not printable
-16849,patch ext,ObjectSpace.trace_object_allocations_stop fails if called before ObjectSpace.trace_object_allocations_start
 16889,tracepoint,"TracePoint.enable { ... } also activates the TracePoint for other threads, even outside the block"
 16905,build,Ruby required to build Ruby on Haiku?
 16908,notbug core,Strange behaviour of Hash#shift when used with `default_proc`.
@@ -301,34 +284,26 @@
 16953,build,Windows bash bin files removed in master
 16959,maybenotbug core,Weakmap has specs and third-party usage despite being a private API
 16962,core,IO.close behaviour
-16970,win core,Encoding of ENV value returns ASCII-8BIT in Ruby2.6 or later
 16983,core,RubyVM::AbstractSyntaxTree.of(method) returns meaningless node if the method is defined in eval
 16996,notbug perf,Hash should avoid doing unnecessary rehash
 16997,core,IO#gets converts some \r\n to \n with universal_newline: false
-17003,win core,Segfault during bundler specs on Windows
 17007,refine,SystemStackError when using super inside Module included and lexically inside refinement
 17008,jit win,JIT enabled on Windows can cause constant conhost pop-ups
-17027,patch lib,Connection leak possibility in Net::FTP#transfercmd
 17037,core,rounding of Rational#to_f
 17048,patch core,Calling initialize_copy on live modules leads to crashes
 17049,notbug lib,Net::IMAP - Handling of NOOP untagged responses sent by Zimbra
-17057,patch lib,CGI different behaviour with C vs Ruby version
 17098,notbug,Float#negative? reports negative zero as not negative
 17101,maybenotbug perf lib,YAML.load_file: Massive slowdown under Ruby 2.7 vs. Ruby 2.4
-17102,openssl,openssl/buffering.rb:182: [BUG] Segmentation fault at 0x00001fa0fd774000
 17105,core,A single `return` can return to two different places in a proc inside a lambda inside a method
 17120,core patch,String#start_with? return wrong result for Regexp patterns containing /\K/
 17132,build,vcs.rb doesn&#39;t detect git submodules as vcs
 17142,build aix,Ruby fails to build in AIX 
 17159,ractor,extend `define_method` for Ractor
-17161,core,[BUG] object allocation during garbage collection phase
 17164,thread,Threads can ignore kill/interrupt/abort
 17180,ractor,Ractor and constant referencing
 17183,core,Float round working weirdly
-17184,core notbug,No stdlib function to perform simple string replacement
 17189,test thread,test_thread.rb in testsuite deadlocks with musl libc 1.2.1
 17196,ractor,Segmentation Fault with Socket#close in Ractors
-17204,core,Segmentation fault in 2.7.1p83
 17207,lib,message/disposition-notification: unexpected token LPAR (expected QUOTED or LITERAL)
 17212,build,FreeBSDで3.0.0-preview1のビルドが失敗する
 17216,core,Enumerator::Chain doesn&#39;t support all Enumerator methods
@@ -343,7 +318,6 @@
 17379,refine,Refinement with modules redefinition bug
 17382,core,Segfault in String#inspect
 17383,perf,3.0 recursion memory|speed issues
-17394,win ext,TCPServer is not thread safe on win32
 17398,notbug,SyntaxError in endless method
 17400,enc,Incorrect character downcase for Greek Sigma
 17403,core,Remove Fixnum and Bignum
@@ -370,7 +344,6 @@
 17542,lib,Username and password are not decoded if retrieved from env
 17543,ractor,Ractor isolation broken by `self` in shareable proc
 17545,core maybenotbug,Calling dup on a subclass of Proc returns a Proc and not the subclass
-17554,patch core,[PATCH] Fix ObjectSpace.dump to include singleton class name
 17561,backport,The timeout option for Addrinfo.getaddrinfo is not reliable on Ruby 2.7.2
 17568,fiber,Thread.handle_interrupt is per-Thread but should probably be per-Fiber
 17571,core,prependしたArray#[] が反映されない
@@ -381,7 +354,6 @@
 17585,patch core,DWARF5 support?
 17587,ractor,Segmentation fault with ractors and unix signals
 17588,build win,Cannot build with library path with spaces on MSVC
-17590,core,`M.prepend M` has hidden side effect
 17600,lib,lib/benchmark should use `$stdout` instead of `STDOUT`
 17606,cygwin,Make failed on i386-cygwin (miniruby.exe aborted)
 17607,maybenotbug fiber,ChildProcess vs RUBY_PIPE_NONBLOCK_DEFAULT
@@ -394,4 +366,8 @@
 17643,core,Ruby 3 embedded - no GC methods?
 17645,patch build,`make` stops at `file.c` with Clang 11.1.0 for 32-bit GNU/Linux targets (maybe Y2038?)
 17646,patch build,Check for `__builtin_mul_overflow` with `long long` arguments
-17649,core,`defined?` invokes method once for each syntactic element around it
+17649,patch core,`defined?` invokes method once for each syntactic element around it
+17652,patch core,GC compaction crash on mprotect
+17655,maybenotbug core,Experiencing Repeated Segmentation Faults Using Puma with Ruby 3.0.0
+17656,patch core,Improper functions shown in C level backtrace information
+17659,ractor,Ractor: can&#39;t call io/wait methods
