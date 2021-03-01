@@ -279,7 +279,6 @@
 16920,arm thread,TestThread#test_signal_at_join fails on aarch64
 16921,s390,s390x: random test failures for timeout or segmentation fault
 16927,encoding,String#tr won&#39;t return the expected result for some sign with diacritics
-16950,backport core,Stop nonsense keyword argument warnings in 2.6
 16951,lib,Consistently referer dependencies
 16953,build,Windows bash bin files removed in master
 16959,maybenotbug core,Weakmap has specs and third-party usage despite being a private API
@@ -371,3 +370,6 @@
 17655,maybenotbug core,Experiencing Repeated Segmentation Faults Using Puma with Ruby 3.0.0
 17656,patch core,Improper functions shown in C level backtrace information
 17659,ractor,Ractor: can&#39;t call io/wait methods
+17661,patch core,IO#each will segfault when if file is closed inside an `each_byte` block
+17664,fiber maybenotbug,Behavior of sockets changed in Ruby 3.0 to non-blocking
+17665,patch cygwin,Make failed on x86_64-cygwin (miniruby.exe segmentation fault)
