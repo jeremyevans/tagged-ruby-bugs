@@ -190,7 +190,7 @@
 14957,win thread,"MinGW, gcc 8.2.0, bootstraptest test_thread.rb - failure ?"
 14963,solaris thread,"Since r64107, on Solaris, spec test of rb_io_wait_readable hangs up"
 14971,cygwin build,error: implicit declaration of function ‘rb_vm_call0
-14972,lib,Net::HTTP inconsistently raises EOFError when peer closes the connection
+14972,patch lib,Net::HTTP inconsistently raises EOFError when peer closes the connection
 15027,core,When Struct#each method is overriden Struct#select and Struct#to_a use wrong collections
 15072,cygwin build,thread.c:4356:5: error: implicit declaration of function ‘ubf_list_atfork’
 15097,cygwin lib,Gem install fails on Ruby 2.5.1 with Cygwin (get_dns_server_list undefined)
@@ -255,7 +255,7 @@
 16618,core,Ensure called twice when raise in ensure
 16651,win build,Extensions Do Not Compile on Mingw64
 16654,core,Segfault in rb_str_hash
-16672,lib,net/http leaves original content-length header intact after inflating response
+16672,patch lib,net/http leaves original content-length header intact after inflating response
 16674,build,Build issue of FreeBSD 12
 16680,core,Symlink folder in $LOAD_PATH does not work with autoload
 16694,core,JIT vs hardened GCC with PCH
@@ -326,7 +326,7 @@
 17478,perf,Ruby3.0 is slower than Ruby2.7.2 when parsing a large CSV file
 17486,build macos,Build fails on darwin due to libtool being removed
 17489,ractor,Ractor segfaults
-17492,lib,Breakpoints in debug.rb only work when program invoked with absolute filename
+17492,patch lib,Breakpoints in debug.rb only work when program invoked with absolute filename
 17493,irb,Calling Reline::Unicode.calculate_width appears to lock up when called from emacs or if output is redirected
 17494,refine,ruby is hanged when using activesupport + rspec + rspec-parameterized
 17506,ractor,Ractor isolation broken by ThreadGroup
@@ -340,7 +340,7 @@
 17530,irb,irb handles &lt;&lt; incorrectly with variable as identifier
 17531,ractor,`did_you_mean` not Ractor friendly
 17540,core,A segfault due to Clang/LLVM optimization on 32-bit ARM Linux 
-17542,lib,Username and password are not decoded if retrieved from env
+17542,patch lib,Username and password are not decoded if retrieved from env
 17543,ractor,Ractor isolation broken by `self` in shareable proc
 17545,core maybenotbug,Calling dup on a subclass of Proc returns a Proc and not the subclass
 17561,backport,The timeout option for Addrinfo.getaddrinfo is not reliable on Ruby 2.7.2
