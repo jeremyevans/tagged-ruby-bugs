@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>375 Tagged Open Ruby Bugs as of 2021-03-02 08:54:58 +0900</title>
+<title>374 Tagged Open Ruby Bugs as of 2021-03-04 07:45:42 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -15,8 +15,8 @@
 <input type="submit" value="encoding" />
 <input type="submit" value="notbug" />
 <input type="submit" value="test" />
-<input type="submit" value="cygwin" />
 <input type="submit" value="ractor" />
+<input type="submit" value="cygwin" />
 <input type="submit" value="perf" />
 <input type="submit" value="tracepoint" />
 <input type="submit" value="refine" />
@@ -44,9 +44,9 @@
 <input type="submit" value="uriencoding" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">375</span> matched)
+(<span id="matched">374</span> matched)
 <table>
-<caption>375 Tagged Open Ruby Bugs as of 2021-03-02 08:54:58 +0900</caption>
+<caption>374 Tagged Open Ruby Bugs as of 2021-03-04 07:45:42 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -55,6 +55,20 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/17668">17668</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17668">Large RUBY_THREAD_VM_STACK_SIZE causes segmentation fault (again)</a>
+</td>
+</tr>
+<tr class=" ractor ">
+<td><a href="https://bugs.ruby-lang.org/issues/17667">17667</a>
+</td>
+<td>ractor</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17667">Module#name needs synchronization</a>
+</td>
+</tr>
 <tr class=" patch cygwin ">
 <td><a href="https://bugs.ruby-lang.org/issues/17665">17665</a>
 </td>
@@ -188,13 +202,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17606">Make failed on i386-cygwin (miniruby.exe aborted)</a>
 </td>
 </tr>
-<tr class=" lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/17600">17600</a>
-</td>
-<td>lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17600">lib/benchmark should use `$stdout` instead of `STDOUT`</a>
-</td>
-</tr>
 <tr class=" build win ">
 <td><a href="https://bugs.ruby-lang.org/issues/17588">17588</a>
 </td>
@@ -284,13 +291,6 @@
 </td>
 <td>patch lib</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17542">Username and password are not decoded if retrieved from env</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/17540">17540</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17540">A segfault due to Clang/LLVM optimization on 32-bit ARM Linux </a>
 </td>
 </tr>
 <tr class=" ractor ">
@@ -536,13 +536,6 @@
 </td>
 <td>build</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17212">FreeBSDで3.0.0-preview1のビルドが失敗する</a>
-</td>
-</tr>
-<tr class=" lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/17207">17207</a>
-</td>
-<td>lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17207">message/disposition-notification: unexpected token LPAR (expected QUOTED or LITERAL)</a>
 </td>
 </tr>
 <tr class=" ractor ">
@@ -1742,10 +1735,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/13671">Regexp with lookbehind and case-insensitivity raises RegexpError only on strings with certain characters</a>
 </td>
 </tr>
-<tr class=" lib ">
+<tr class=" patch lib ">
 <td><a href="https://bugs.ruby-lang.org/issues/13654">13654</a>
 </td>
-<td>lib</td>
+<td>patch lib</td>
 <td><a href="https://bugs.ruby-lang.org/issues/13654">irb save-history extension is not concurrency-safe</a>
 </td>
 </tr>
