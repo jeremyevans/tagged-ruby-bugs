@@ -131,7 +131,7 @@
 13542,win test,MinGW trunk Builds - Summary of Issues
 13571,win encoding,"Script arguments, encoding, windows / MinGW"
 13644,win test,Windows - Setting Time.now
-13654,lib,irb save-history extension is not concurrency-safe
+13654,patch lib,irb save-history extension is not concurrency-safe
 13671,regexp notbug,Regexp with lookbehind and case-insensitivity raises RegexpError only on strings with certain characters
 13708,core,catastrophic slow compilation of defined-defined sequence has no chance to ^C
 13754,ext,bigdecimal with lower precision that Float
@@ -303,7 +303,6 @@
 17183,core,Float round working weirdly
 17189,test thread,test_thread.rb in testsuite deadlocks with musl libc 1.2.1
 17196,ractor,Segmentation Fault with Socket#close in Ractors
-17207,lib,message/disposition-notification: unexpected token LPAR (expected QUOTED or LITERAL)
 17212,build,FreeBSDで3.0.0-preview1のビルドが失敗する
 17216,core,Enumerator::Chain doesn&#39;t support all Enumerator methods
 17263,fiber perf,"Fiber context switch degrades with number of fibers, limit on number of fibers"
@@ -339,7 +338,6 @@
 17529,ractor,Ractor Segfaults with GC enabled
 17530,irb,irb handles &lt;&lt; incorrectly with variable as identifier
 17531,ractor,`did_you_mean` not Ractor friendly
-17540,core,A segfault due to Clang/LLVM optimization on 32-bit ARM Linux 
 17542,patch lib,Username and password are not decoded if retrieved from env
 17543,ractor,Ractor isolation broken by `self` in shareable proc
 17545,core maybenotbug,Calling dup on a subclass of Proc returns a Proc and not the subclass
@@ -353,7 +351,6 @@
 17585,patch core,DWARF5 support?
 17587,ractor,Segmentation fault with ractors and unix signals
 17588,build win,Cannot build with library path with spaces on MSVC
-17600,lib,lib/benchmark should use `$stdout` instead of `STDOUT`
 17606,cygwin,Make failed on i386-cygwin (miniruby.exe aborted)
 17607,maybenotbug fiber,ChildProcess vs RUBY_PIPE_NONBLOCK_DEFAULT
 17617,ractor,"When a Ractor&#39;s incoming port is closed, Ractor.receive_if does not raise Ractor::ClosedError, but instead blocks indefinitely"
@@ -373,3 +370,5 @@
 17661,patch core,IO#each will segfault when if file is closed inside an `each_byte` block
 17664,fiber maybenotbug,Behavior of sockets changed in Ruby 3.0 to non-blocking
 17665,patch cygwin,Make failed on x86_64-cygwin (miniruby.exe segmentation fault)
+17667,ractor,Module#name needs synchronization
+17668,core,Large RUBY_THREAD_VM_STACK_SIZE causes segmentation fault (again)
