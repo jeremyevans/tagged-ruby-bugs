@@ -20,7 +20,6 @@
 7968,ext perf,Poor UDPSocket#send performance in ruby 2.0.0 on windows
 7976,tracepoint notbug,"TracePoint call is at call point, not call site"
 8185,thread unfixable, Thread/fork issue
-8203,lib,Rinda: recycled object
 8299,core,Minor error in float parsing
 8444,core,Regexp vars $~ and friends are not thread local
 8445,patch core,IO.open and IO#set_enconding does not support :fallback option
@@ -34,7 +33,6 @@
 8973,patch build,Allow to configure archlibdir for multiarch
 9009,core,Wrong binding when tracing c-calls
 9010,build,./configure --prefix= cannot handle directories with spaces
-9045,lib uriencoding,URIに含まれるエンコードされたID/パスワードがデコードされない
 9115,patch lib,Logger traps all exceptions; breaks Timeout
 9189,win encoding,Build failure on Windows in case of nonascii TEMP environment.
 9208,patch win core,Win32 ANSI color no longer works since revision 43331
@@ -85,7 +83,6 @@
 11514,core aix,AIX6.1 - Ruby 2.2.3 - Segmentation fault in :byteslice
 11526,patch lib,Streaming HTTP requests are not idempotent and should not be retried
 11531,lib maybenotbug,IPAddr#== implements wrong logic
-11533,lib aix,AIX6.1 - Ruby 2.2.3 - TestMkmf::TestConvertible#test_typeof_builtin fails
 11579,patch ext,Fiddle.win32_last_error after calling Fiddle::Function#call isn&#39;t GetLastError()
 11582,core solaris maybenotbug,"On Solaris, Rational#** returns -Infinity for Rational(0) when passed a negative Float"
 11704,refine maybenotbug,Refinements only get &quot;used&quot; once in loop
@@ -178,7 +175,7 @@
 14744,refine,Refinements modules have a superclass
 14761,solaris thread,TestThread#test_join_limits hangs up on Solaris 10 with gcc
 14817,tracepoint,TracePoint#parameters for bmethod&#39;s return event should return the same value as its Method#parameters
-14824,lib,Endless Range Support in irb
+14824,patch lib,Endless Range Support in irb
 14826,solaris build,make: *** [.ext/include/sparc-solaris2.10/rb_mjit_min_header-2.6.0.h] Error 1 on Solaris 10 with very old gcc3
 14835,tracepoint,Impossible to know whether an exception was rescued or not using TracePoint
 14838,regexp notbug,RegexpError with double &quot;s&quot; in look-behind assertion in case-insensitive unicode regexp
