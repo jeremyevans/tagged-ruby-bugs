@@ -64,6 +64,7 @@
 10855,patch lib,[PATCH] Matrix#inverse returns matrix of integers whenever possible
 10902,core,require(&quot;enumerator&quot;) scans LOAD_PATH 2x on every invocation
 10919,lib,[gem install] installs multipe platforms
+10961,ext,Zlib corrupts data when receive signal
 11063,patch core maybenotbug,Special singleton class should return true for singleton_class? test
 11064,core maybenotbug,#singleton_methods for objects with special singleton_class returns an empty array
 11142,win core,Command line argument parser on windows handles double quotes inconsistently.
@@ -72,7 +73,6 @@
 11177,win core,DATAでEOF文字以降が読めない
 11182,refine,Refinement with alias causes strange behavior
 11183,core,Cumulative error on Complex::I ** 100000000000000000000000000000000
-11194,lib,Refactor env-sourced proxy logic for uri/generic
 11230,core,Should rb_struct_s_members() be public API?
 11269,core,ruby_init_setproctitle() should be called before require_libraries()
 11335,lib,`ruby -r debug` catchpoint problem
@@ -105,7 +105,6 @@
 12473,test,Test failure on fedora with TestTimeExtension#test_huge_precision
 12500,test mips,TestProcess#test_aspawn_too_long_path fails on mips with &quot;argument too big&quot;
 12506,cygwin,"On cygwin, Feature #5994 does not work"
-12538,lib,hostsを書き換えてwebrickで書いたプロキシ―に繋いでいるとrubyが落ちる
 12540,core,test failures when SHARABLE_MIDDLE_SUBSTRING=1
 12547,core,"Remove ONIG_UNICODE_VERSION_... in enc/unicode/case-folding.rb, casefold.h"
 12551,win core,Exception accessing file with long path on windows
@@ -128,7 +127,6 @@
 13542,win test,MinGW trunk Builds - Summary of Issues
 13571,win encoding,"Script arguments, encoding, windows / MinGW"
 13644,win test,Windows - Setting Time.now
-13654,patch lib,irb save-history extension is not concurrency-safe
 13671,regexp notbug,Regexp with lookbehind and case-insensitivity raises RegexpError only on strings with certain characters
 13708,core,catastrophic slow compilation of defined-defined sequence has no chance to ^C
 13754,ext,bigdecimal with lower precision that Float
@@ -175,7 +173,6 @@
 14744,refine,Refinements modules have a superclass
 14761,solaris thread,TestThread#test_join_limits hangs up on Solaris 10 with gcc
 14817,tracepoint,TracePoint#parameters for bmethod&#39;s return event should return the same value as its Method#parameters
-14824,patch lib,Endless Range Support in irb
 14826,solaris build,make: *** [.ext/include/sparc-solaris2.10/rb_mjit_min_header-2.6.0.h] Error 1 on Solaris 10 with very old gcc3
 14835,tracepoint,Impossible to know whether an exception was rescued or not using TracePoint
 14838,regexp notbug,RegexpError with double &quot;s&quot; in look-behind assertion in case-insensitive unicode regexp
@@ -259,7 +256,6 @@
 16759,win core,MinGW 2.5 - SEGV bug with Binding#local_variable_set
 16776,core,Regression in coverage library
 16782,thread,`lock&#39;: deadlock; recursive locking (ThreadError) in 2.7.1
-16784,build,Compiling with --enable-load-relative and &quot;musl-gcc -static&quot; yields &quot;negative string size (or size too big) (ArgumentError)&quot; 
 16805,fiber,Coroutine&#39;s license is unclear
 16810,s390,ruby segfaults on s390x with musl libc
 16816,core,Prematurely terminated Enumerator should stay terminated
