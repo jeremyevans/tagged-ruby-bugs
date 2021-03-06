@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>367 Tagged Open Ruby Bugs as of 2021-03-06 01:30:09 +0900</title>
+<title>366 Tagged Open Ruby Bugs as of 2021-03-06 10:06:10 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -8,8 +8,8 @@
 <input type="submit" value="win" />
 <input type="submit" value="patch" />
 <input type="submit" value="build" />
-<input type="submit" value="ext" />
 <input type="submit" value="maybenotbug" />
+<input type="submit" value="ext" />
 <input type="submit" value="lib" />
 <input type="submit" value="thread" />
 <input type="submit" value="encoding" />
@@ -35,17 +35,15 @@
 <input type="submit" value="s390" />
 <input type="submit" value="wip-patch" />
 <input type="submit" value="doc" />
-<input type="submit" value="enc" />
 <input type="submit" value="haiku" />
 <input type="submit" value="macos" />
 <input type="submit" value="mips" />
-<input type="submit" value="misc" />
-<input type="submit" value="openssl" /></p>
+<input type="submit" value="misc" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">367</span> matched)
+(<span id="matched">366</span> matched)
 <table>
-<caption>367 Tagged Open Ruby Bugs as of 2021-03-06 01:30:09 +0900</caption>
+<caption>366 Tagged Open Ruby Bugs as of 2021-03-06 10:06:10 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -54,6 +52,13 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" ractor ">
+<td><a href="https://bugs.ruby-lang.org/issues/17672">17672</a>
+</td>
+<td>ractor</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17672">Ractor stdio does not belong to the ractor</a>
+</td>
+</tr>
 <tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/17668">17668</a>
 </td>
@@ -432,10 +437,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17403">Remove Fixnum and Bignum</a>
 </td>
 </tr>
-<tr class=" enc ">
+<tr class=" encoding ">
 <td><a href="https://bugs.ruby-lang.org/issues/17400">17400</a>
 </td>
-<td>enc</td>
+<td>encoding</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17400">Incorrect character downcase for Greek Sigma</a>
 </td>
 </tr>
@@ -1657,13 +1662,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/14049">SEGV svn 60401 require_relative</a>
 </td>
 </tr>
-<tr class=" ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/14046">14046</a>
-</td>
-<td>ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/14046">Ripper loses DATA</a>
-</td>
-</tr>
 <tr class=" cygwin ext ">
 <td><a href="https://bugs.ruby-lang.org/issues/13999">13999</a>
 </td>
@@ -1846,10 +1844,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/12590">Error compiling parse.c on cygwin</a>
 </td>
 </tr>
-<tr class=" openssl ">
+<tr class=" ext ">
 <td><a href="https://bugs.ruby-lang.org/issues/12582">12582</a>
 </td>
-<td>openssl</td>
+<td>ext</td>
 <td><a href="https://bugs.ruby-lang.org/issues/12582">OpenSSL Authenticated Encryption should check for tag length</a>
 </td>
 </tr>
@@ -2229,13 +2227,6 @@
 </td>
 <td>build notbug</td>
 <td><a href="https://bugs.ruby-lang.org/issues/10213">bundled gems ignored by make install</a>
-</td>
-</tr>
-<tr class=" ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/10203">10203</a>
-</td>
-<td>ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/10203">TCPServer.new has strange behaviour when EADDRINUSE without specifying hostname</a>
 </td>
 </tr>
 <tr class=" win core ">
