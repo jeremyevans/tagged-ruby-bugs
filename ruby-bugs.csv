@@ -53,7 +53,6 @@
 9955,win build,"issue building dll on mingw, library not found"
 10009,thread perf,IO operation is 10x slower in multi-thread environment
 10128,win core,"Quoting problem for arguments of Kernel.system, Kernel.exec on Windows"
-10203,ext,TCPServer.new has strange behaviour when EADDRINUSE without specifying hostname
 10213,build notbug,bundled gems ignored by make install
 10416,build,Create mechanism for updating of Unicode data files downstreams when we want
 10436,patch ext,ruby -c and ripper inconsistency: m(&amp;nil) {}
@@ -108,7 +107,7 @@
 12540,core,test failures when SHARABLE_MIDDLE_SUBSTRING=1
 12547,core,"Remove ONIG_UNICODE_VERSION_... in enc/unicode/case-folding.rb, casefold.h"
 12551,win core,Exception accessing file with long path on windows
-12582,openssl,OpenSSL Authenticated Encryption should check for tag length
+12582,ext,OpenSSL Authenticated Encryption should check for tag length
 12590,cygwin build,Error compiling parse.c on cygwin
 12597,encoding test,Produce test failure if some tests cannot be executed due to lacking data
 12666,ext,Fatal error: glibc detected an invalid stdio handle
@@ -135,7 +134,6 @@
 13882,thread,Exception in `ensure` stops threads from exiting
 13930,wip-patch core,Exception is caught in rescue above ensure
 13999,cygwin ext,Cygwin 環境で ripper_state_lex.rb がコアダンプする
-14046,ext,Ripper loses DATA
 14049,win core,SEGV svn 60401 require_relative
 14064,test,test-all with and without -j - incorrect assertions and missing test methods
 14083,refine,Refinement in block calling incorrect method
@@ -310,7 +308,7 @@
 17382,core,Segfault in String#inspect
 17383,perf,3.0 recursion memory|speed issues
 17398,notbug,SyntaxError in endless method
-17400,enc,Incorrect character downcase for Greek Sigma
+17400,encoding,Incorrect character downcase for Greek Sigma
 17403,core,Remove Fixnum and Bignum
 17420,ractor,Unsafe mutation of $&quot; when doing non-RubyGems require in Ractor
 17429,refine,Prohibit include/prepend in refinement modules
@@ -365,3 +363,4 @@
 17665,patch cygwin,Make failed on x86_64-cygwin (miniruby.exe segmentation fault)
 17667,ractor,Module#name needs synchronization
 17668,core,Large RUBY_THREAD_VM_STACK_SIZE causes segmentation fault (again)
+17672,ractor,Ractor stdio does not belong to the ractor
