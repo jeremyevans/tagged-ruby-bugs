@@ -295,7 +295,6 @@
 17189,test thread,test_thread.rb in testsuite deadlocks with musl libc 1.2.1
 17196,ractor,Segmentation Fault with Socket#close in Ractors
 17212,build,FreeBSDで3.0.0-preview1のビルドが失敗する
-17216,core,Enumerator::Chain doesn&#39;t support all Enumerator methods
 17263,fiber perf,"Fiber context switch degrades with number of fibers, limit on number of fibers"
 17289,core,Time#strftime occurs Segmentation Fault on ruby-2.7.2p137
 17337,build notbug,Don&#39;t embed Ruby build-time configuration in Ruby
@@ -350,17 +349,18 @@
 17624,ractor,Ractor.receive is not thread-safe
 17629,patch ext,"macOS, readline compiled with libedit: adding entries to history doesn&#39;t work unless Readline.readline is called before populating it"
 17631,maybenotbug,`Numeric#real?` incorrectly returns true for `NaN` and `INFINITY`
-17643,core,Ruby 3 embedded - no GC methods?
 17645,patch build,`make` stops at `file.c` with Clang 11.1.0 for 32-bit GNU/Linux targets (maybe Y2038?)
 17646,patch build,Check for `__builtin_mul_overflow` with `long long` arguments
 17649,patch core,`defined?` invokes method once for each syntactic element around it
 17652,patch core,GC compaction crash on mprotect
 17655,maybenotbug core,Experiencing Repeated Segmentation Faults Using Puma with Ruby 3.0.0
 17656,patch core,Improper functions shown in C level backtrace information
-17659,ractor,Ractor: can&#39;t call io/wait methods
 17661,patch core,IO#each will segfault when if file is closed inside an `each_byte` block
 17664,fiber maybenotbug,Behavior of sockets changed in Ruby 3.0 to non-blocking
 17665,patch cygwin,Make failed on x86_64-cygwin (miniruby.exe segmentation fault)
 17667,ractor,Module#name needs synchronization
 17668,core,Large RUBY_THREAD_VM_STACK_SIZE causes segmentation fault (again)
-17672,ractor,Ractor stdio does not belong to the ractor
+17676,ractor,Accessing ENV from Ractor raises IsolationError
+17677,ractor,Ractor crashes fork when blocking
+17678,ractor,Ractors do not restart after fork
+17679,ractor,Ractor incoming channel can consume unlimited resources
