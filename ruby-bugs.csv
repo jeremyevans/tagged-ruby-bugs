@@ -63,7 +63,6 @@
 10855,patch lib,[PATCH] Matrix#inverse returns matrix of integers whenever possible
 10902,core,require(&quot;enumerator&quot;) scans LOAD_PATH 2x on every invocation
 10919,lib,[gem install] installs multipe platforms
-10961,ext,Zlib corrupts data when receive signal
 11063,patch core maybenotbug,Special singleton class should return true for singleton_class? test
 11064,core maybenotbug,#singleton_methods for objects with special singleton_class returns an empty array
 11142,win core,Command line argument parser on windows handles double quotes inconsistently.
@@ -122,7 +121,7 @@
 13392,tracepoint,TracePoint doesn&#39;t work correct with monkey patches / aliased methods
 13485,win test,MinGW TestEnumerable#test_callcc SEGV info
 13500,win test,MinGW TestArity#test_proc_err_mess stops testing
-13513,lib,Resolv::DNS::Message.decode hangs after detecting truncation in UDP messages
+13513,patch lib,Resolv::DNS::Message.decode hangs after detecting truncation in UDP messages
 13542,win test,MinGW trunk Builds - Summary of Issues
 13571,win encoding,"Script arguments, encoding, windows / MinGW"
 13644,win test,Windows - Setting Time.now
@@ -203,7 +202,6 @@
 15499,thread,Breaking behavior on ruby 2.6: rb_thread_call_without_gvl doesn&#39;t invoke unblock_function when used on the main thread 
 15507,thread,Thread#raise is delivered to GC context
 15509,thread,TCPServer#accept isn&#39;t interrupted
-15517,lib encoding,Net::HTTP not recognizing valid UTF-8
 15550,win,Windows - gem bin files - can&#39;t run from bash shell
 15587,win thread,Thread tests failing
 15598,core autoload,Deadlock on mutual reference of autoloaded constants
@@ -219,7 +217,6 @@
 15779,patch core,"After NoMemoryError, ruby freezes and takes 100% CPU"
 15787,haiku lib maybenotbug,LoadError by EPERM on read-only volume
 15790,core autoload,Strange interaction between autoload and $LOADED_FEATURES
-15852,core win,APPLICATION_VERIFIER_LOCKS_LOCK_IN_FREED_HEAP on exiting ruby
 15856,core perf ,Performance of redundant `Kernel.require` is slow when many gems are activated
 15928,core,Constant declaration does not conform to JIS 3017:2013
 15993,win encoding,&#39;require&#39; doesn&#39;t work if there are Cyrillic chars in the path to Ruby dir
@@ -364,3 +361,4 @@
 17677,ractor,Ractor crashes fork when blocking
 17678,ractor,Ractors do not restart after fork
 17679,ractor,Ractor incoming channel can consume unlimited resources
+17680,lib maybenotbug,tab completion no longer works on irb3.0
