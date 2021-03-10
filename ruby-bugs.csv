@@ -109,7 +109,7 @@
 12582,ext,OpenSSL Authenticated Encryption should check for tag length
 12590,cygwin build,Error compiling parse.c on cygwin
 12597,encoding test,Produce test failure if some tests cannot be executed due to lacking data
-12666,ext,Fatal error: glibc detected an invalid stdio handle
+12666,patch test ext,Fatal error: glibc detected an invalid stdio handle
 12689,core,Thread isolation of $~ and $_
 12725,cygwin build,Trying to use ./miniruby before it exists
 12852,lib notbug,URI.parse can&#39;t handle non-ascii URIs
@@ -137,7 +137,6 @@
 14064,test,test-all with and without -j - incorrect assertions and missing test methods
 14083,refine,Refinement in block calling incorrect method
 14090,core,`TestGc#test_interrupt_in_finalizer` fails very rarely
-14096,ext,Psych allows invalid single quote escape character
 14103,regexp,Regexp absense operator has no chance to ^C
 14137,win regexp,Windows / MinGW - Regexp - Character Properties - General Category
 14275,patch core,GC not aggressive enough
@@ -164,7 +163,7 @@
 14640,win core,[win32] File.realpath treats a relative path with a drive letter as an absolute path.
 14679,lib,StdLib gems should properly specify their dependencies
 14681,core,`syswrite&#39;: stream closed in another thread (IOError)
-14716,ext,SecureRandom throwing an error in Ruby 2.5.1
+14716,patch ext,SecureRandom throwing an error in Ruby 2.5.1
 14727,win thread,TestQueue#test_queue_with_trap always timeout on Windows10
 14743,doc notbug,Some links broken in README
 14744,refine,Refinements modules have a superclass
@@ -211,7 +210,6 @@
 15644,patch ext,ThreadsWait problems with Thread#report_on_exception
 15655,win encoding,Unable to handle Russian dirname on Windows
 15674,core,"Regression: ObjectSpace.allocation_sourceline produces the wrong location for allocations, it shows the end of the method instead of the line where the object was created"
-15718,ext encoding,YAML raises error when dumping strings with UTF32 encoding
 15735,core thread,Thread#handle_interrupt does not prevent Thread#kill from interrupting
 15764,parser,Whitespace and control characters should not be permitted in tokens
 15779,patch core,"After NoMemoryError, ruby freezes and takes 100% CPU"
@@ -229,7 +227,7 @@
 16265,win thread,"Test (spec) failure using current MSYS2 tools, related to -fstack-protector and possibly D_FORTIFY_SOURCE=2"
 16277,win ext maybenotbug,UNIXServer#listen fails with Errno::EADDRINUSE error under Windows 10 / WSL Ubuntu 18.04
 16288,core,"Segmentation fault with finalizers, threads"
-16368,ext,Error in `YAML.load(symbolize_names: true)` with null column YAML
+16368,patch ext,Error in `YAML.load(symbolize_names: true)` with null column YAML
 16371,backport,Inconsistent usage of Double splat operator
 16376,core,Stack-buffer-overflow in renumber_by_map in regcomp.c
 16383,patch tracepoint,TracePoint does not report calls to attribute reader methods
@@ -239,7 +237,7 @@
 16492,test,TestBugReporter#test_bug_reporter_add test failures
 16493,thread arm,TestThreadQueue#test_thr_kill is flaky on AArch64
 16497,ext,StringIO#internal_encoding is broken (more severely in 2.7)
-16608,ext,ConditionVariable#wait should return false when timeout exceeded
+16608,patch ext,ConditionVariable#wait should return false when timeout exceeded
 16612,core,Enumerator::ArithmeticSequence#last with float range produces incorrect value
 16618,core,Ensure called twice when raise in ensure
 16651,win build,Extensions Do Not Compile on Mingw64
@@ -317,7 +315,6 @@
 17494,refine,ruby is hanged when using activesupport + rspec + rspec-parameterized
 17506,ractor,Ractor isolation broken by ThreadGroup
 17507,thread,Regexp capture groups ignored sometimes in some multithreaded environments (possible race condition)
-17508,lib,io-console versioning
 17513,ractor,Methods of shareable objects and UnboundMethods should be shareable
 17516,ractor,forking in a ractor causes Ruby to crash
 17519,patch refine,set_visibility fails when a prepended module and a refinement both exist
