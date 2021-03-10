@@ -6,7 +6,7 @@
 5179,patch core,Complex#rationalize and to_r with approximate zeros
 5317,core maybenotbug,rubyのヘッダファイルを使った拡張を行う際にoff_tの宣言回避をする事が出来ない。
 5334,ext maybenotbug,Segmentation fault in InternetExplorer IServiceProvider interface
-6120,core ext,Float and BigDecimal bug in remainder in corner cases
+6120,patch core ext,Float and BigDecimal bug in remainder in corner cases
 6124,build,remove the &quot;spec-only gems&quot; in Ruby 1.9.3 (was What is the purpose of &quot;fake&quot; gems in Ruby)
 6351,encoding,transcode table generator does not support multi characters of Unicode
 6360,win build,Debug information build even without requesting it
@@ -109,7 +109,6 @@
 12582,ext,OpenSSL Authenticated Encryption should check for tag length
 12590,cygwin build,Error compiling parse.c on cygwin
 12597,encoding test,Produce test failure if some tests cannot be executed due to lacking data
-12666,patch test ext,Fatal error: glibc detected an invalid stdio handle
 12689,core,Thread isolation of $~ and $_
 12725,cygwin build,Trying to use ./miniruby before it exists
 12852,lib notbug,URI.parse can&#39;t handle non-ascii URIs
