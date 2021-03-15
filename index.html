@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>360 Tagged Open Ruby Bugs as of 2021-03-11 07:43:04 +0900</title>
+<title>357 Tagged Open Ruby Bugs as of 2021-03-16 04:30:32 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -14,8 +14,8 @@
 <input type="submit" value="ext" />
 <input type="submit" value="encoding" />
 <input type="submit" value="notbug" />
-<input type="submit" value="test" />
 <input type="submit" value="ractor" />
+<input type="submit" value="test" />
 <input type="submit" value="cygwin" />
 <input type="submit" value="perf" />
 <input type="submit" value="tracepoint" />
@@ -24,10 +24,10 @@
 <input type="submit" value="regexp" />
 <input type="submit" value="arm" />
 <input type="submit" value="solaris" />
-<input type="submit" value="aix" />
 <input type="submit" value="autoload" />
 <input type="submit" value="irb" />
 <input type="submit" value="unfixable" />
+<input type="submit" value="aix" />
 <input type="submit" value="backport" />
 <input type="submit" value="jit" />
 <input type="submit" value="linux" />
@@ -36,14 +36,13 @@
 <input type="submit" value="wip-patch" />
 <input type="submit" value="doc" />
 <input type="submit" value="haiku" />
-<input type="submit" value="macos" />
 <input type="submit" value="mips" />
 <input type="submit" value="misc" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">360</span> matched)
+(<span id="matched">357</span> matched)
 <table>
-<caption>360 Tagged Open Ruby Bugs as of 2021-03-11 07:43:04 +0900</caption>
+<caption>357 Tagged Open Ruby Bugs as of 2021-03-16 04:30:32 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -52,6 +51,34 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/17724">17724</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17724">Pattern matching error message is confusing</a>
+</td>
+</tr>
+<tr class=" build ">
+<td><a href="https://bugs.ruby-lang.org/issues/17723">17723</a>
+</td>
+<td>build</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17723">autoconf 2.70+ is not working with master branch</a>
+</td>
+</tr>
+<tr class=" ractor ">
+<td><a href="https://bugs.ruby-lang.org/issues/17722">17722</a>
+</td>
+<td>ractor</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17722">define_method with shareable results in &quot;defined in a different Ractor&quot;</a>
+</td>
+</tr>
+<tr class=" core maybenotbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/17719">17719</a>
+</td>
+<td>core maybenotbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17719">Irregular evaluation order in hash literals</a>
+</td>
+</tr>
 <tr class=" lib maybenotbug ">
 <td><a href="https://bugs.ruby-lang.org/issues/17680">17680</a>
 </td>
@@ -157,13 +184,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17646">Check for `__builtin_mul_overflow` with `long long` arguments</a>
 </td>
 </tr>
-<tr class=" patch build ">
-<td><a href="https://bugs.ruby-lang.org/issues/17645">17645</a>
-</td>
-<td>patch build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17645">`make` stops at `file.c` with Clang 11.1.0 for 32-bit GNU/Linux targets (maybe Y2038?)</a>
-</td>
-</tr>
 <tr class=" maybenotbug ">
 <td><a href="https://bugs.ruby-lang.org/issues/17631">17631</a>
 </td>
@@ -232,13 +252,6 @@
 </td>
 <td>ractor</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17587">Segmentation fault with ractors and unix signals</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/17585">17585</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17585">DWARF5 support?</a>
 </td>
 </tr>
 <tr class=" jit ">
@@ -400,13 +413,6 @@
 </td>
 <td>ractor</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17489">Ractor segfaults</a>
-</td>
-</tr>
-<tr class=" build macos ">
-<td><a href="https://bugs.ruby-lang.org/issues/17486">17486</a>
-</td>
-<td>build macos</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17486">Build fails on darwin due to libtool being removed</a>
 </td>
 </tr>
 <tr class=" perf ">
@@ -584,13 +590,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17159">extend `define_method` for Ractor</a>
 </td>
 </tr>
-<tr class=" build aix ">
-<td><a href="https://bugs.ruby-lang.org/issues/17142">17142</a>
-</td>
-<td>build aix</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17142">Ruby fails to build in AIX </a>
-</td>
-</tr>
 <tr class=" build ">
 <td><a href="https://bugs.ruby-lang.org/issues/17132">17132</a>
 </td>
@@ -696,10 +695,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16959">Weakmap has specs and third-party usage despite being a private API</a>
 </td>
 </tr>
-<tr class=" build ">
+<tr class=" win build ">
 <td><a href="https://bugs.ruby-lang.org/issues/16953">16953</a>
 </td>
-<td>build</td>
+<td>win build</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16953">Windows bash bin files removed in master</a>
 </td>
 </tr>
@@ -953,13 +952,6 @@
 </td>
 <td>patch tracepoint</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16383">TracePoint does not report calls to attribute reader methods</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/16376">16376</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16376">Stack-buffer-overflow in renumber_by_map in regcomp.c</a>
 </td>
 </tr>
 <tr class=" backport ">
@@ -2040,13 +2032,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/11410">Win32 Registry enumeration performs unnecessary string re-encoding which cause UndefinedConversionError exceptions</a>
 </td>
 </tr>
-<tr class=" lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/11335">11335</a>
-</td>
-<td>lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/11335">`ruby -r debug` catchpoint problem</a>
-</td>
-</tr>
 <tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/11269">11269</a>
 </td>
@@ -2507,13 +2492,6 @@
 </td>
 <td>build</td>
 <td><a href="https://bugs.ruby-lang.org/issues/6124">remove the &quot;spec-only gems&quot; in Ruby 1.9.3 (was What is the purpose of &quot;fake&quot; gems in Ruby)</a>
-</td>
-</tr>
-<tr class=" patch core ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/6120">6120</a>
-</td>
-<td>patch core ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/6120">Float and BigDecimal bug in remainder in corner cases</a>
 </td>
 </tr>
 <tr class=" ext maybenotbug ">
