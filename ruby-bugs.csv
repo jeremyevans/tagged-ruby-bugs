@@ -6,7 +6,6 @@
 5179,patch core,Complex#rationalize and to_r with approximate zeros
 5317,core maybenotbug,rubyのヘッダファイルを使った拡張を行う際にoff_tの宣言回避をする事が出来ない。
 5334,ext maybenotbug,Segmentation fault in InternetExplorer IServiceProvider interface
-6120,patch core ext,Float and BigDecimal bug in remainder in corner cases
 6124,build,remove the &quot;spec-only gems&quot; in Ruby 1.9.3 (was What is the purpose of &quot;fake&quot; gems in Ruby)
 6351,encoding,transcode table generator does not support multi characters of Unicode
 6360,win build,Debug information build even without requesting it
@@ -73,7 +72,6 @@
 11183,core,Cumulative error on Complex::I ** 100000000000000000000000000000000
 11230,core,Should rb_struct_s_members() be public API?
 11269,core,ruby_init_setproctitle() should be called before require_libraries()
-11335,lib,`ruby -r debug` catchpoint problem
 11410,win ext encoding,Win32 Registry enumeration performs unnecessary string re-encoding which cause UndefinedConversionError exceptions
 11438,win thread,"native_thread_init_stack() get machine.stack_start unequal to thread&#39;s stack start address, x86 win32"
 11450,patch lib,HTTPHeader.content_range throws error on non-byte units
@@ -228,7 +226,6 @@
 16288,core,"Segmentation fault with finalizers, threads"
 16368,patch ext,Error in `YAML.load(symbolize_names: true)` with null column YAML
 16371,backport,Inconsistent usage of Double splat operator
-16376,core,Stack-buffer-overflow in renumber_by_map in regcomp.c
 16383,patch tracepoint,TracePoint does not report calls to attribute reader methods
 16448,core,regex global variables are working differently depending on scope
 16475,build notbug,[Installation process - compiling ruby 2.7.0 from source} &quot;make install&quot; step oddity for ruby 2.7.0 on linux minut (debian base)
@@ -265,7 +262,7 @@
 16921,s390,s390x: random test failures for timeout or segmentation fault
 16927,encoding,String#tr won&#39;t return the expected result for some sign with diacritics
 16951,lib,Consistently referer dependencies
-16953,build,Windows bash bin files removed in master
+16953,win build,Windows bash bin files removed in master
 16959,maybenotbug core,Weakmap has specs and third-party usage despite being a private API
 16962,core,IO.close behaviour
 16983,core,RubyVM::AbstractSyntaxTree.of(method) returns meaningless node if the method is defined in eval
@@ -281,7 +278,6 @@
 17105,core,A single `return` can return to two different places in a proc inside a lambda inside a method
 17120,core patch,String#start_with? return wrong result for Regexp patterns containing /\K/
 17132,build,vcs.rb doesn&#39;t detect git submodules as vcs
-17142,build aix,Ruby fails to build in AIX 
 17159,ractor,extend `define_method` for Ractor
 17164,thread,Threads can ignore kill/interrupt/abort
 17180,ractor,Ractor and constant referencing
@@ -307,7 +303,6 @@
 17429,refine,Prohibit include/prepend in refinement modules
 17476,build,3.0/specifications/default/net-*.gemspec repeats the same files
 17478,perf,Ruby3.0 is slower than Ruby2.7.2 when parsing a large CSV file
-17486,build macos,Build fails on darwin due to libtool being removed
 17489,ractor,Ractor segfaults
 17492,patch lib,Breakpoints in debug.rb only work when program invoked with absolute filename
 17493,irb,Calling Reline::Unicode.calculate_width appears to lock up when called from emacs or if output is redirected
@@ -331,7 +326,6 @@
 17578,lib,mkmf experimental C++ Support
 17583,core,Segfault on large stack(RUBY_THREAD_VM_STACK_SIZE)
 17584,jit,Segmentation fault with Ruby 3.0
-17585,patch core,DWARF5 support?
 17587,ractor,Segmentation fault with ractors and unix signals
 17588,build win,Cannot build with library path with spaces on MSVC
 17606,cygwin,Make failed on i386-cygwin (miniruby.exe aborted)
@@ -342,7 +336,6 @@
 17624,ractor,Ractor.receive is not thread-safe
 17629,patch ext,"macOS, readline compiled with libedit: adding entries to history doesn&#39;t work unless Readline.readline is called before populating it"
 17631,maybenotbug,`Numeric#real?` incorrectly returns true for `NaN` and `INFINITY`
-17645,patch build,`make` stops at `file.c` with Clang 11.1.0 for 32-bit GNU/Linux targets (maybe Y2038?)
 17646,patch build,Check for `__builtin_mul_overflow` with `long long` arguments
 17649,patch core,`defined?` invokes method once for each syntactic element around it
 17652,patch core,GC compaction crash on mprotect
@@ -358,3 +351,7 @@
 17678,ractor,Ractors do not restart after fork
 17679,ractor,Ractor incoming channel can consume unlimited resources
 17680,lib maybenotbug,tab completion no longer works on irb3.0
+17719,core maybenotbug,Irregular evaluation order in hash literals
+17722,ractor,define_method with shareable results in &quot;defined in a different Ractor&quot;
+17723,build,autoconf 2.70+ is not working with master branch
+17724,core,Pattern matching error message is confusing
