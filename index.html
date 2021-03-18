@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>357 Tagged Open Ruby Bugs as of 2021-03-16 04:30:32 +0900</title>
+<title>358 Tagged Open Ruby Bugs as of 2021-03-19 04:26:12 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -9,8 +9,8 @@
 <input type="submit" value="patch" />
 <input type="submit" value="build" />
 <input type="submit" value="maybenotbug" />
-<input type="submit" value="thread" />
 <input type="submit" value="lib" />
+<input type="submit" value="thread" />
 <input type="submit" value="ext" />
 <input type="submit" value="encoding" />
 <input type="submit" value="notbug" />
@@ -19,8 +19,8 @@
 <input type="submit" value="cygwin" />
 <input type="submit" value="perf" />
 <input type="submit" value="tracepoint" />
-<input type="submit" value="refine" />
 <input type="submit" value="fiber" />
+<input type="submit" value="refine" />
 <input type="submit" value="regexp" />
 <input type="submit" value="arm" />
 <input type="submit" value="solaris" />
@@ -31,6 +31,7 @@
 <input type="submit" value="backport" />
 <input type="submit" value="jit" />
 <input type="submit" value="linux" />
+<input type="submit" value="macos" />
 <input type="submit" value="parser" />
 <input type="submit" value="s390" />
 <input type="submit" value="wip-patch" />
@@ -40,9 +41,9 @@
 <input type="submit" value="misc" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">357</span> matched)
+(<span id="matched">358</span> matched)
 <table>
-<caption>357 Tagged Open Ruby Bugs as of 2021-03-16 04:30:32 +0900</caption>
+<caption>358 Tagged Open Ruby Bugs as of 2021-03-19 04:26:12 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -51,6 +52,41 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" macos ">
+<td><a href="https://bugs.ruby-lang.org/issues/17730">17730</a>
+</td>
+<td>macos</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17730">Ruby on macOS transitively links to ~150 dylibs</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/17729">17729</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17729">Fix infinite loop when parsing RUBYLIB with locale-invalid bytes</a>
+</td>
+</tr>
+<tr class=" notbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/17728">17728</a>
+</td>
+<td>notbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17728">[BUG] Segmentation fault at 0x0000000000000000</a>
+</td>
+</tr>
+<tr class=" notbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/17726">17726</a>
+</td>
+<td>notbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17726">`respond_to_missing?` doesn&#39;t raise when called from `defined?`</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/17725">17725</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17725">Prepend breaks ability to override optimized methods</a>
+</td>
+</tr>
 <tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/17724">17724</a>
 </td>
@@ -191,10 +227,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17631">`Numeric#real?` incorrectly returns true for `NaN` and `INFINITY`</a>
 </td>
 </tr>
-<tr class=" patch ext ">
+<tr class=" patch ext macos ">
 <td><a href="https://bugs.ruby-lang.org/issues/17629">17629</a>
 </td>
-<td>patch ext</td>
+<td>patch ext macos</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17629">macOS, readline compiled with libedit: adding entries to history doesn&#39;t work unless Readline.readline is called before populating it</a>
 </td>
 </tr>
@@ -209,7 +245,7 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17623">17623</a>
 </td>
 <td>irb</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17623">endless def can access to outer local variables and lead to unexpected result</a>
+<td><a href="https://bugs.ruby-lang.org/issues/17623">irb starts with some local variables already defined</a>
 </td>
 </tr>
 <tr class=" fiber ">
@@ -350,13 +386,6 @@
 </td>
 <td>fiber</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17527">rb_io_wait_readable/writable with scheduler don&#39;t check errno </a>
-</td>
-</tr>
-<tr class=" patch refine ">
-<td><a href="https://bugs.ruby-lang.org/issues/17519">17519</a>
-</td>
-<td>patch refine</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17519">set_visibility fails when a prepended module and a refinement both exist</a>
 </td>
 </tr>
 <tr class=" ractor ">
@@ -576,13 +605,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17180">Ractor and constant referencing</a>
 </td>
 </tr>
-<tr class=" thread ">
-<td><a href="https://bugs.ruby-lang.org/issues/17164">17164</a>
-</td>
-<td>thread</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17164">Threads can ignore kill/interrupt/abort</a>
-</td>
-</tr>
 <tr class=" ractor ">
 <td><a href="https://bugs.ruby-lang.org/issues/17159">17159</a>
 </td>
@@ -665,13 +687,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16997">IO#gets converts some \r\n to \n with universal_newline: false</a>
-</td>
-</tr>
-<tr class=" notbug perf ">
-<td><a href="https://bugs.ruby-lang.org/issues/16996">16996</a>
-</td>
-<td>notbug perf</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16996">Hash should avoid doing unnecessary rehash</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -1638,13 +1653,6 @@
 </td>
 <td>wip-patch core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/13930">Exception is caught in rescue above ensure</a>
-</td>
-</tr>
-<tr class=" thread ">
-<td><a href="https://bugs.ruby-lang.org/issues/13882">13882</a>
-</td>
-<td>thread</td>
-<td><a href="https://bugs.ruby-lang.org/issues/13882">Exception in `ensure` stops threads from exiting</a>
 </td>
 </tr>
 <tr class=" core ">
