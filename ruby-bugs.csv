@@ -127,7 +127,6 @@
 13754,ext,bigdecimal with lower precision that Float
 13864,test,Rinda multicast test failures due to missing default route
 13876,core,Tempfile&#39;s finalizer can be interrupted by a Timeout exception which can cause the process to hang
-13882,thread,Exception in `ensure` stops threads from exiting
 13930,wip-patch core,Exception is caught in rescue above ensure
 13999,cygwin ext,Cygwin 環境で ripper_state_lex.rb がコアダンプする
 14049,win core,SEGV svn 60401 require_relative
@@ -266,7 +265,6 @@
 16959,maybenotbug core,Weakmap has specs and third-party usage despite being a private API
 16962,core,IO.close behaviour
 16983,core,RubyVM::AbstractSyntaxTree.of(method) returns meaningless node if the method is defined in eval
-16996,notbug perf,Hash should avoid doing unnecessary rehash
 16997,core,IO#gets converts some \r\n to \n with universal_newline: false
 17007,refine,SystemStackError when using super inside Module included and lexically inside refinement
 17008,jit win,JIT enabled on Windows can cause constant conhost pop-ups
@@ -279,7 +277,6 @@
 17120,core patch,String#start_with? return wrong result for Regexp patterns containing /\K/
 17132,build,vcs.rb doesn&#39;t detect git submodules as vcs
 17159,ractor,extend `define_method` for Ractor
-17164,thread,Threads can ignore kill/interrupt/abort
 17180,ractor,Ractor and constant referencing
 17183,core,Float round working weirdly
 17189,test thread,test_thread.rb in testsuite deadlocks with musl libc 1.2.1
@@ -311,7 +308,6 @@
 17507,thread,Regexp capture groups ignored sometimes in some multithreaded environments (possible race condition)
 17513,ractor,Methods of shareable objects and UnboundMethods should be shareable
 17516,ractor,forking in a ractor causes Ruby to crash
-17519,patch refine,set_visibility fails when a prepended module and a refinement both exist
 17527,fiber,rb_io_wait_readable/writable with scheduler don&#39;t check errno 
 17529,ractor,Ractor Segfaults with GC enabled
 17530,irb,irb handles &lt;&lt; incorrectly with variable as identifier
@@ -332,9 +328,9 @@
 17607,maybenotbug fiber,ChildProcess vs RUBY_PIPE_NONBLOCK_DEFAULT
 17617,ractor,"When a Ractor&#39;s incoming port is closed, Ractor.receive_if does not raise Ractor::ClosedError, but instead blocks indefinitely"
 17618,fiber,Exceptions in Fiber Scheduler causes a segv
-17623,irb,endless def can access to outer local variables and lead to unexpected result
+17623,irb,irb starts with some local variables already defined
 17624,ractor,Ractor.receive is not thread-safe
-17629,patch ext,"macOS, readline compiled with libedit: adding entries to history doesn&#39;t work unless Readline.readline is called before populating it"
+17629,patch ext macos,"macOS, readline compiled with libedit: adding entries to history doesn&#39;t work unless Readline.readline is called before populating it"
 17631,maybenotbug,`Numeric#real?` incorrectly returns true for `NaN` and `INFINITY`
 17646,patch build,Check for `__builtin_mul_overflow` with `long long` arguments
 17649,patch core,`defined?` invokes method once for each syntactic element around it
@@ -355,3 +351,8 @@
 17722,ractor,define_method with shareable results in &quot;defined in a different Ractor&quot;
 17723,build,autoconf 2.70+ is not working with master branch
 17724,core,Pattern matching error message is confusing
+17725,core,Prepend breaks ability to override optimized methods
+17726,notbug,`respond_to_missing?` doesn&#39;t raise when called from `defined?`
+17728,notbug,[BUG] Segmentation fault at 0x0000000000000000
+17729,core,Fix infinite loop when parsing RUBYLIB with locale-invalid bytes
+17730,macos,Ruby on macOS transitively links to ~150 dylibs
