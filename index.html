@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>358 Tagged Open Ruby Bugs as of 2021-03-19 04:26:12 +0900</title>
+<title>360 Tagged Open Ruby Bugs as of 2021-03-30 08:33:59 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -24,26 +24,26 @@
 <input type="submit" value="regexp" />
 <input type="submit" value="arm" />
 <input type="submit" value="solaris" />
+<input type="submit" value="aix" />
 <input type="submit" value="autoload" />
 <input type="submit" value="irb" />
+<input type="submit" value="linux" />
 <input type="submit" value="unfixable" />
-<input type="submit" value="aix" />
 <input type="submit" value="backport" />
 <input type="submit" value="jit" />
-<input type="submit" value="linux" />
-<input type="submit" value="macos" />
 <input type="submit" value="parser" />
 <input type="submit" value="s390" />
 <input type="submit" value="wip-patch" />
 <input type="submit" value="doc" />
 <input type="submit" value="haiku" />
+<input type="submit" value="macos" />
 <input type="submit" value="mips" />
 <input type="submit" value="misc" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">358</span> matched)
+(<span id="matched">360</span> matched)
 <table>
-<caption>358 Tagged Open Ruby Bugs as of 2021-03-19 04:26:12 +0900</caption>
+<caption>360 Tagged Open Ruby Bugs as of 2021-03-30 08:33:59 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -52,18 +52,53 @@
 </tr>
 </thead>
 <tbody>
-<tr class=" macos ">
-<td><a href="https://bugs.ruby-lang.org/issues/17730">17730</a>
+<tr class=" patch linux ">
+<td><a href="https://bugs.ruby-lang.org/issues/17759">17759</a>
 </td>
-<td>macos</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17730">Ruby on macOS transitively links to ~150 dylibs</a>
+<td>patch linux</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17759">Correct `ioctl_req_t` for musl</a>
 </td>
 </tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/17729">17729</a>
+<tr class=" patch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/17757">17757</a>
 </td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17729">Fix infinite loop when parsing RUBYLIB with locale-invalid bytes</a>
+<td>patch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17757">Hash#slice does not keep compare_by_identity on the results</a>
+</td>
+</tr>
+<tr class=" patch ext ">
+<td><a href="https://bugs.ruby-lang.org/issues/17756">17756</a>
+</td>
+<td>patch ext</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17756">StringScanner#charpos makes segmentation fault when target.byteslice returns non string value</a>
+</td>
+</tr>
+<tr class=" patch lib ">
+<td><a href="https://bugs.ruby-lang.org/issues/17748">17748</a>
+</td>
+<td>patch lib</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17748">Ruby 3.0 takes a long time to resolv DNS of nonexistent domains</a>
+</td>
+</tr>
+<tr class=" patch notbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/17745">17745</a>
+</td>
+<td>patch notbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17745">`IO#close_on_exec=` returns different value when called with `send, __send__, public_send` or not</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/17739">17739</a>
+</td>
+<td>patch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17739">Array#sort! changes the order even if the receiver raises FrozenError in given block</a>
+</td>
+</tr>
+<tr class=" maybenotbug core ">
+<td><a href="https://bugs.ruby-lang.org/issues/17737">17737</a>
+</td>
+<td>maybenotbug core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17737">`Array#permutation` does not immediately check the arity when no block is given</a>
 </td>
 </tr>
 <tr class=" notbug ">
@@ -164,13 +199,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17667">Module#name needs synchronization</a>
 </td>
 </tr>
-<tr class=" patch cygwin ">
-<td><a href="https://bugs.ruby-lang.org/issues/17665">17665</a>
-</td>
-<td>patch cygwin</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17665">Make failed on x86_64-cygwin (miniruby.exe segmentation fault)</a>
-</td>
-</tr>
 <tr class=" fiber maybenotbug ">
 <td><a href="https://bugs.ruby-lang.org/issues/17664">17664</a>
 </td>
@@ -197,20 +225,6 @@
 </td>
 <td>maybenotbug core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17655">Experiencing Repeated Segmentation Faults Using Puma with Ruby 3.0.0</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/17652">17652</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17652">GC compaction crash on mprotect</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/17649">17649</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17649">`defined?` invokes method once for each syntactic element around it</a>
 </td>
 </tr>
 <tr class=" patch build ">
@@ -610,6 +624,13 @@
 </td>
 <td>ractor</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17159">extend `define_method` for Ractor</a>
+</td>
+</tr>
+<tr class=" build aix ">
+<td><a href="https://bugs.ruby-lang.org/issues/17142">17142</a>
+</td>
+<td>build aix</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17142">Ruby fails to build in AIX </a>
 </td>
 </tr>
 <tr class=" build ">
@@ -1674,13 +1695,6 @@
 </td>
 <td>ext</td>
 <td><a href="https://bugs.ruby-lang.org/issues/13754">bigdecimal with lower precision that Float</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/13708">13708</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/13708">catastrophic slow compilation of defined-defined sequence has no chance to ^C</a>
 </td>
 </tr>
 <tr class=" regexp notbug ">
