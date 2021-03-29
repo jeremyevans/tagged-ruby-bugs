@@ -123,7 +123,6 @@
 13571,win encoding,"Script arguments, encoding, windows / MinGW"
 13644,win test,Windows - Setting Time.now
 13671,regexp notbug,Regexp with lookbehind and case-insensitivity raises RegexpError only on strings with certain characters
-13708,core,catastrophic slow compilation of defined-defined sequence has no chance to ^C
 13754,ext,bigdecimal with lower precision that Float
 13864,test,Rinda multicast test failures due to missing default route
 13876,core,Tempfile&#39;s finalizer can be interrupted by a Timeout exception which can cause the process to hang
@@ -276,6 +275,7 @@
 17105,core,A single `return` can return to two different places in a proc inside a lambda inside a method
 17120,core patch,String#start_with? return wrong result for Regexp patterns containing /\K/
 17132,build,vcs.rb doesn&#39;t detect git submodules as vcs
+17142,build aix,Ruby fails to build in AIX 
 17159,ractor,extend `define_method` for Ractor
 17180,ractor,Ractor and constant referencing
 17183,core,Float round working weirdly
@@ -333,13 +333,10 @@
 17629,patch ext macos,"macOS, readline compiled with libedit: adding entries to history doesn&#39;t work unless Readline.readline is called before populating it"
 17631,maybenotbug,`Numeric#real?` incorrectly returns true for `NaN` and `INFINITY`
 17646,patch build,Check for `__builtin_mul_overflow` with `long long` arguments
-17649,patch core,`defined?` invokes method once for each syntactic element around it
-17652,patch core,GC compaction crash on mprotect
 17655,maybenotbug core,Experiencing Repeated Segmentation Faults Using Puma with Ruby 3.0.0
 17656,patch core,Improper functions shown in C level backtrace information
 17661,patch core,IO#each will segfault when if file is closed inside an `each_byte` block
 17664,fiber maybenotbug,Behavior of sockets changed in Ruby 3.0 to non-blocking
-17665,patch cygwin,Make failed on x86_64-cygwin (miniruby.exe segmentation fault)
 17667,ractor,Module#name needs synchronization
 17668,core,Large RUBY_THREAD_VM_STACK_SIZE causes segmentation fault (again)
 17676,ractor,Accessing ENV from Ractor raises IsolationError
@@ -354,5 +351,10 @@
 17725,core,Prepend breaks ability to override optimized methods
 17726,notbug,`respond_to_missing?` doesn&#39;t raise when called from `defined?`
 17728,notbug,[BUG] Segmentation fault at 0x0000000000000000
-17729,core,Fix infinite loop when parsing RUBYLIB with locale-invalid bytes
-17730,macos,Ruby on macOS transitively links to ~150 dylibs
+17737,maybenotbug core,`Array#permutation` does not immediately check the arity when no block is given
+17739,patch core,Array#sort! changes the order even if the receiver raises FrozenError in given block
+17745,patch notbug,"`IO#close_on_exec=` returns different value when called with `send, __send__, public_send` or not"
+17748,patch lib,Ruby 3.0 takes a long time to resolv DNS of nonexistent domains
+17756,patch ext,StringScanner#charpos makes segmentation fault when target.byteslice returns non string value
+17757,patch core,Hash#slice does not keep compare_by_identity on the results
+17759,patch linux,Correct `ioctl_req_t` for musl
