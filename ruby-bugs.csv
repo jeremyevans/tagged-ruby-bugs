@@ -272,7 +272,6 @@
 17049,notbug lib,Net::IMAP - Handling of NOOP untagged responses sent by Zimbra
 17098,notbug,Float#negative? reports negative zero as not negative
 17101,maybenotbug perf lib,YAML.load_file: Massive slowdown under Ruby 2.7 vs. Ruby 2.4
-17105,core,A single `return` can return to two different places in a proc inside a lambda inside a method
 17120,core patch,String#start_with? return wrong result for Regexp patterns containing /\K/
 17132,build,vcs.rb doesn&#39;t detect git submodules as vcs
 17142,build aix,Ruby fails to build in AIX 
@@ -308,7 +307,6 @@
 17507,thread,Regexp capture groups ignored sometimes in some multithreaded environments (possible race condition)
 17513,ractor,Methods of shareable objects and UnboundMethods should be shareable
 17516,ractor,forking in a ractor causes Ruby to crash
-17527,fiber,rb_io_wait_readable/writable with scheduler don&#39;t check errno 
 17529,ractor,Ractor Segfaults with GC enabled
 17530,irb,irb handles &lt;&lt; incorrectly with variable as identifier
 17531,ractor,`did_you_mean` not Ractor friendly
@@ -358,3 +356,6 @@
 17756,patch ext,StringScanner#charpos makes segmentation fault when target.byteslice returns non string value
 17757,patch core,Hash#slice does not keep compare_by_identity on the results
 17759,patch linux,Correct `ioctl_req_t` for musl
+17765,notbug core,Segmentation fault when calling String#gsub
+17767,patch core,`Cloned ENV` inconsistently returns `ENV` or `self`
+17772,maybenotbug perf,Performance issue with NameError message in context with large instance variables (not caused by did_you_mean)
