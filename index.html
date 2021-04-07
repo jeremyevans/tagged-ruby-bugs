@@ -1,12 +1,12 @@
 <html>
 <head>
-<title>361 Tagged Open Ruby Bugs as of 2021-04-03 06:40:06 +0900</title>
+<title>363 Tagged Open Ruby Bugs as of 2021-04-08 01:59:42 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
 <p class="filter-buttons">Available Tags: <input type="submit" value="core" />
-<input type="submit" value="win" />
 <input type="submit" value="patch" />
+<input type="submit" value="win" />
 <input type="submit" value="build" />
 <input type="submit" value="maybenotbug" />
 <input type="submit" value="lib" />
@@ -20,8 +20,8 @@
 <input type="submit" value="perf" />
 <input type="submit" value="tracepoint" />
 <input type="submit" value="refine" />
-<input type="submit" value="fiber" />
 <input type="submit" value="regexp" />
+<input type="submit" value="fiber" />
 <input type="submit" value="arm" />
 <input type="submit" value="solaris" />
 <input type="submit" value="aix" />
@@ -41,9 +41,9 @@
 <input type="submit" value="misc" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">361</span> matched)
+(<span id="matched">363</span> matched)
 <table>
-<caption>361 Tagged Open Ruby Bugs as of 2021-04-03 06:40:06 +0900</caption>
+<caption>363 Tagged Open Ruby Bugs as of 2021-04-08 01:59:42 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -52,6 +52,27 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" patch perf core ">
+<td><a href="https://bugs.ruby-lang.org/issues/17779">17779</a>
+</td>
+<td>patch perf core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17779">特定の順序でHashのkeyを削除した場合に Hash#first が遅くなる</a>
+</td>
+</tr>
+<tr class=" build backport ">
+<td><a href="https://bugs.ruby-lang.org/issues/17777">17777</a>
+</td>
+<td>build backport</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17777">2.6.7 fails to build on macOS: implicit declaration of function &#39;rb_native_mutex_destroy&#39; is invalid in C99</a>
+</td>
+</tr>
+<tr class=" regexp ">
+<td><a href="https://bugs.ruby-lang.org/issues/17774">17774</a>
+</td>
+<td>regexp</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17774">Quantified empty group causes regex to fail</a>
+</td>
+</tr>
 <tr class=" maybenotbug perf ">
 <td><a href="https://bugs.ruby-lang.org/issues/17772">17772</a>
 </td>
@@ -148,13 +169,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17724">Pattern matching error message is confusing</a>
-</td>
-</tr>
-<tr class=" build ">
-<td><a href="https://bugs.ruby-lang.org/issues/17723">17723</a>
-</td>
-<td>build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17723">autoconf 2.70+ is not working with master branch</a>
 </td>
 </tr>
 <tr class=" ractor ">
@@ -414,6 +428,13 @@
 </td>
 <td>ractor</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17529">Ractor Segfaults with GC enabled</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/17519">17519</a>
+</td>
+<td>patch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17519">set_visibility fails when a prepended module and a refinement both exist</a>
 </td>
 </tr>
 <tr class=" ractor ">
@@ -997,13 +1018,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16383">TracePoint does not report calls to attribute reader methods</a>
 </td>
 </tr>
-<tr class=" backport ">
-<td><a href="https://bugs.ruby-lang.org/issues/16371">16371</a>
-</td>
-<td>backport</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16371">Inconsistent usage of Double splat operator</a>
-</td>
-</tr>
 <tr class=" patch ext ">
 <td><a href="https://bugs.ruby-lang.org/issues/16368">16368</a>
 </td>
@@ -1011,10 +1025,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16368">Error in `YAML.load(symbolize_names: true)` with null column YAML</a>
 </td>
 </tr>
-<tr class=" core ">
+<tr class=" patch core ">
 <td><a href="https://bugs.ruby-lang.org/issues/16288">16288</a>
 </td>
-<td>core</td>
+<td>patch core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16288">Segmentation fault with finalizers, threads</a>
 </td>
 </tr>
@@ -1088,10 +1102,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/15928">Constant declaration does not conform to JIS 3017:2013</a>
 </td>
 </tr>
-<tr class=" core perf  ">
+<tr class=" core perf ">
 <td><a href="https://bugs.ruby-lang.org/issues/15856">15856</a>
 </td>
-<td>core perf </td>
+<td>core perf</td>
 <td><a href="https://bugs.ruby-lang.org/issues/15856">Performance of redundant `Kernel.require` is slow when many gems are activated</a>
 </td>
 </tr>
