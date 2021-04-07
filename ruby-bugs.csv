@@ -210,7 +210,7 @@
 15779,patch core,"After NoMemoryError, ruby freezes and takes 100% CPU"
 15787,haiku lib maybenotbug,LoadError by EPERM on read-only volume
 15790,core autoload,Strange interaction between autoload and $LOADED_FEATURES
-15856,core perf ,Performance of redundant `Kernel.require` is slow when many gems are activated
+15856,core perf,Performance of redundant `Kernel.require` is slow when many gems are activated
 15928,core,Constant declaration does not conform to JIS 3017:2013
 15993,win encoding,&#39;require&#39; doesn&#39;t work if there are Cyrillic chars in the path to Ruby dir
 16143,patch core,BOM UTF-8 is not removed after rewind
@@ -221,9 +221,8 @@
 16243,core perf,case/when is slower than if on MRI
 16265,win thread,"Test (spec) failure using current MSYS2 tools, related to -fstack-protector and possibly D_FORTIFY_SOURCE=2"
 16277,win ext maybenotbug,UNIXServer#listen fails with Errno::EADDRINUSE error under Windows 10 / WSL Ubuntu 18.04
-16288,core,"Segmentation fault with finalizers, threads"
+16288,patch core,"Segmentation fault with finalizers, threads"
 16368,patch ext,Error in `YAML.load(symbolize_names: true)` with null column YAML
-16371,backport,Inconsistent usage of Double splat operator
 16383,patch tracepoint,TracePoint does not report calls to attribute reader methods
 16448,core,regex global variables are working differently depending on scope
 16475,build notbug,[Installation process - compiling ruby 2.7.0 from source} &quot;make install&quot; step oddity for ruby 2.7.0 on linux minut (debian base)
@@ -307,6 +306,7 @@
 17507,thread,Regexp capture groups ignored sometimes in some multithreaded environments (possible race condition)
 17513,ractor,Methods of shareable objects and UnboundMethods should be shareable
 17516,ractor,forking in a ractor causes Ruby to crash
+17519,patch core,set_visibility fails when a prepended module and a refinement both exist
 17529,ractor,Ractor Segfaults with GC enabled
 17530,irb,irb handles &lt;&lt; incorrectly with variable as identifier
 17531,ractor,`did_you_mean` not Ractor friendly
@@ -344,7 +344,6 @@
 17680,lib maybenotbug,tab completion no longer works on irb3.0
 17719,core maybenotbug,Irregular evaluation order in hash literals
 17722,ractor,define_method with shareable results in &quot;defined in a different Ractor&quot;
-17723,build,autoconf 2.70+ is not working with master branch
 17724,core,Pattern matching error message is confusing
 17725,core,Prepend breaks ability to override optimized methods
 17726,notbug,`respond_to_missing?` doesn&#39;t raise when called from `defined?`
@@ -359,3 +358,6 @@
 17765,notbug core,Segmentation fault when calling String#gsub
 17767,patch core,`Cloned ENV` inconsistently returns `ENV` or `self`
 17772,maybenotbug perf,Performance issue with NameError message in context with large instance variables (not caused by did_you_mean)
+17774,regexp,Quantified empty group causes regex to fail
+17777,build backport,2.6.7 fails to build on macOS: implicit declaration of function &#39;rb_native_mutex_destroy&#39; is invalid in C99
+17779,patch perf core,特定の順序でHashのkeyを削除した場合に Hash#first が遅くなる
