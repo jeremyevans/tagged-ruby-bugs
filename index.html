@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>363 Tagged Open Ruby Bugs as of 2021-04-08 01:59:42 +0900</title>
+<title>365 Tagged Open Ruby Bugs as of 2021-04-09 03:42:13 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -10,8 +10,8 @@
 <input type="submit" value="build" />
 <input type="submit" value="maybenotbug" />
 <input type="submit" value="lib" />
-<input type="submit" value="thread" />
 <input type="submit" value="ext" />
+<input type="submit" value="thread" />
 <input type="submit" value="notbug" />
 <input type="submit" value="encoding" />
 <input type="submit" value="ractor" />
@@ -41,9 +41,9 @@
 <input type="submit" value="misc" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">363</span> matched)
+(<span id="matched">365</span> matched)
 <table>
-<caption>363 Tagged Open Ruby Bugs as of 2021-04-08 01:59:42 +0900</caption>
+<caption>365 Tagged Open Ruby Bugs as of 2021-04-09 03:42:13 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -52,6 +52,27 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" patch build ">
+<td><a href="https://bugs.ruby-lang.org/issues/17784">17784</a>
+</td>
+<td>patch build</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17784">lib/exe/* mistakenly appearing in Ruby 2.7?</a>
+</td>
+</tr>
+<tr class=" patch lib ">
+<td><a href="https://bugs.ruby-lang.org/issues/17783">17783</a>
+</td>
+<td>patch lib</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17783">Running sidekiq with ruby 3.0 (possible thread deadlock on resolv request_id allocation and free)</a>
+</td>
+</tr>
+<tr class=" patch lib ">
+<td><a href="https://bugs.ruby-lang.org/issues/17781">17781</a>
+</td>
+<td>patch lib</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17781">Resolv::DNS RequestID table allocations are never freed, causing DNS lookups to eventually hang</a>
+</td>
+</tr>
 <tr class=" patch perf core ">
 <td><a href="https://bugs.ruby-lang.org/issues/17779">17779</a>
 </td>
@@ -945,7 +966,7 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16651">16651</a>
 </td>
 <td>win build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16651">Extensions Do Not Compile on Mingw64</a>
+<td><a href="https://bugs.ruby-lang.org/issues/16651">Extensions Do Not Compile on Mingw64 with mingw64-make</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -1135,13 +1156,6 @@
 </td>
 <td>parser</td>
 <td><a href="https://bugs.ruby-lang.org/issues/15764">Whitespace and control characters should not be permitted in tokens</a>
-</td>
-</tr>
-<tr class=" core thread ">
-<td><a href="https://bugs.ruby-lang.org/issues/15735">15735</a>
-</td>
-<td>core thread</td>
-<td><a href="https://bugs.ruby-lang.org/issues/15735">Thread#handle_interrupt does not prevent Thread#kill from interrupting</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -1697,10 +1711,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/13930">Exception is caught in rescue above ensure</a>
 </td>
 </tr>
-<tr class=" core ">
+<tr class=" patch core ">
 <td><a href="https://bugs.ruby-lang.org/issues/13876">13876</a>
 </td>
-<td>core</td>
+<td>patch core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/13876">Tempfile&#39;s finalizer can be interrupted by a Timeout exception which can cause the process to hang</a>
 </td>
 </tr>
