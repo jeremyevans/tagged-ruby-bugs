@@ -125,7 +125,7 @@
 13671,regexp notbug,Regexp with lookbehind and case-insensitivity raises RegexpError only on strings with certain characters
 13754,ext,bigdecimal with lower precision that Float
 13864,test,Rinda multicast test failures due to missing default route
-13876,core,Tempfile&#39;s finalizer can be interrupted by a Timeout exception which can cause the process to hang
+13876,patch core,Tempfile&#39;s finalizer can be interrupted by a Timeout exception which can cause the process to hang
 13930,wip-patch core,Exception is caught in rescue above ensure
 13999,cygwin ext,Cygwin 環境で ripper_state_lex.rb がコアダンプする
 14049,win core,SEGV svn 60401 require_relative
@@ -205,7 +205,6 @@
 15644,patch ext,ThreadsWait problems with Thread#report_on_exception
 15655,win encoding,Unable to handle Russian dirname on Windows
 15674,core,"Regression: ObjectSpace.allocation_sourceline produces the wrong location for allocations, it shows the end of the method instead of the line where the object was created"
-15735,core thread,Thread#handle_interrupt does not prevent Thread#kill from interrupting
 15764,parser,Whitespace and control characters should not be permitted in tokens
 15779,patch core,"After NoMemoryError, ruby freezes and takes 100% CPU"
 15787,haiku lib maybenotbug,LoadError by EPERM on read-only volume
@@ -233,7 +232,7 @@
 16608,patch ext,ConditionVariable#wait should return false when timeout exceeded
 16612,core,Enumerator::ArithmeticSequence#last with float range produces incorrect value
 16618,core,Ensure called twice when raise in ensure
-16651,win build,Extensions Do Not Compile on Mingw64
+16651,win build,Extensions Do Not Compile on Mingw64 with mingw64-make
 16654,core,Segfault in rb_str_hash
 16672,patch lib,net/http leaves original content-length header intact after inflating response
 16674,build,Build issue of FreeBSD 12
@@ -361,3 +360,6 @@
 17774,regexp,Quantified empty group causes regex to fail
 17777,build backport,2.6.7 fails to build on macOS: implicit declaration of function &#39;rb_native_mutex_destroy&#39; is invalid in C99
 17779,patch perf core,特定の順序でHashのkeyを削除した場合に Hash#first が遅くなる
+17781,patch lib,"Resolv::DNS RequestID table allocations are never freed, causing DNS lookups to eventually hang"
+17783,patch lib,Running sidekiq with ruby 3.0 (possible thread deadlock on resolv request_id allocation and free)
+17784,patch build,lib/exe/* mistakenly appearing in Ruby 2.7?
