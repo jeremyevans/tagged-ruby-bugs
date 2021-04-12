@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>365 Tagged Open Ruby Bugs as of 2021-04-09 03:42:13 +0900</title>
+<title>363 Tagged Open Ruby Bugs as of 2021-04-13 06:22:42 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -41,9 +41,9 @@
 <input type="submit" value="misc" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">365</span> matched)
+(<span id="matched">363</span> matched)
 <table>
-<caption>365 Tagged Open Ruby Bugs as of 2021-04-09 03:42:13 +0900</caption>
+<caption>363 Tagged Open Ruby Bugs as of 2021-04-13 06:22:42 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -52,11 +52,25 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" patch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/17794">17794</a>
+</td>
+<td>patch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17794">addr2line.c can free(3) an invalid pointer without zlib</a>
+</td>
+</tr>
+<tr class=" core arm ">
+<td><a href="https://bugs.ruby-lang.org/issues/17792">17792</a>
+</td>
+<td>core arm</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17792">make notes and make test fail with Ruby3.0.1p64 RaspberryPI 4B Ubuntu 20.10 ARM64</a>
+</td>
+</tr>
 <tr class=" patch build ">
-<td><a href="https://bugs.ruby-lang.org/issues/17784">17784</a>
+<td><a href="https://bugs.ruby-lang.org/issues/17788">17788</a>
 </td>
 <td>patch build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17784">lib/exe/* mistakenly appearing in Ruby 2.7?</a>
+<td><a href="https://bugs.ruby-lang.org/issues/17788">ruby 3.0.0 - compiling c++ extension on alpine fails</a>
 </td>
 </tr>
 <tr class=" patch lib ">
@@ -71,13 +85,6 @@
 </td>
 <td>patch lib</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17781">Resolv::DNS RequestID table allocations are never freed, causing DNS lookups to eventually hang</a>
-</td>
-</tr>
-<tr class=" patch perf core ">
-<td><a href="https://bugs.ruby-lang.org/issues/17779">17779</a>
-</td>
-<td>patch perf core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17779">特定の順序でHashのkeyを削除した場合に Hash#first が遅くなる</a>
 </td>
 </tr>
 <tr class=" build backport ">
@@ -178,10 +185,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17726">`respond_to_missing?` doesn&#39;t raise when called from `defined?`</a>
 </td>
 </tr>
-<tr class=" core ">
+<tr class=" patch core ">
 <td><a href="https://bugs.ruby-lang.org/issues/17725">17725</a>
 </td>
-<td>core</td>
+<td>patch core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17725">Prepend breaks ability to override optimized methods</a>
 </td>
 </tr>
@@ -386,13 +393,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17573">Crashes in profiling tools when signals arrive in non-Ruby threads</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/17571">17571</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17571">prependしたArray#[] が反映されない</a>
 </td>
 </tr>
 <tr class=" fiber ">
@@ -752,10 +752,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17007">SystemStackError when using super inside Module included and lexically inside refinement</a>
 </td>
 </tr>
-<tr class=" core ">
+<tr class=" core win ">
 <td><a href="https://bugs.ruby-lang.org/issues/16997">16997</a>
 </td>
-<td>core</td>
+<td>core win</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16997">IO#gets converts some \r\n to \n with universal_newline: false</a>
 </td>
 </tr>
@@ -885,13 +885,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16819">Line reporting off by one when reporting line of a hash?</a>
 </td>
 </tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/16816">16816</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16816">Prematurely terminated Enumerator should stay terminated</a>
-</td>
-</tr>
 <tr class=" s390 ">
 <td><a href="https://bugs.ruby-lang.org/issues/16810">16810</a>
 </td>
@@ -962,17 +955,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16654">Segfault in rb_str_hash</a>
 </td>
 </tr>
-<tr class=" win build ">
-<td><a href="https://bugs.ruby-lang.org/issues/16651">16651</a>
-</td>
-<td>win build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16651">Extensions Do Not Compile on Mingw64 with mingw64-make</a>
-</td>
-</tr>
-<tr class=" core ">
+<tr class=" patch core ">
 <td><a href="https://bugs.ruby-lang.org/issues/16618">16618</a>
 </td>
-<td>core</td>
+<td>patch core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16618">Ensure called twice when raise in ensure</a>
 </td>
 </tr>
