@@ -231,8 +231,7 @@
 16497,ext,StringIO#internal_encoding is broken (more severely in 2.7)
 16608,patch ext,ConditionVariable#wait should return false when timeout exceeded
 16612,core,Enumerator::ArithmeticSequence#last with float range produces incorrect value
-16618,core,Ensure called twice when raise in ensure
-16651,win build,Extensions Do Not Compile on Mingw64 with mingw64-make
+16618,patch core,Ensure called twice when raise in ensure
 16654,core,Segfault in rb_str_hash
 16672,patch lib,net/http leaves original content-length header intact after inflating response
 16674,build,Build issue of FreeBSD 12
@@ -243,7 +242,6 @@
 16782,thread,`lock&#39;: deadlock; recursive locking (ThreadError) in 2.7.1
 16805,fiber,Coroutine&#39;s license is unclear
 16810,s390,ruby segfaults on s390x with musl libc
-16816,core,Prematurely terminated Enumerator should stay terminated
 16819,core,Line reporting off by one when reporting line of a hash?
 16820,misc,LEGAL is out of sync
 16829,maybenotbug fiber,Exceptions raised from within an enumerated method lose part of their stacktrace
@@ -262,7 +260,7 @@
 16959,maybenotbug core,Weakmap has specs and third-party usage despite being a private API
 16962,core,IO.close behaviour
 16983,core,RubyVM::AbstractSyntaxTree.of(method) returns meaningless node if the method is defined in eval
-16997,core,IO#gets converts some \r\n to \n with universal_newline: false
+16997,core win,IO#gets converts some \r\n to \n with universal_newline: false
 17007,refine,SystemStackError when using super inside Module included and lexically inside refinement
 17008,jit win,JIT enabled on Windows can cause constant conhost pop-ups
 17037,core,rounding of Rational#to_f
@@ -314,7 +312,6 @@
 17545,core maybenotbug,Calling dup on a subclass of Proc returns a Proc and not the subclass
 17561,backport,The timeout option for Addrinfo.getaddrinfo is not reliable on Ruby 2.7.2
 17568,fiber,Thread.handle_interrupt is per-Thread but should probably be per-Fiber
-17571,core,prependしたArray#[] が反映されない
 17573,core,Crashes in profiling tools when signals arrive in non-Ruby threads
 17578,lib,mkmf experimental C++ Support
 17583,core,Segfault on large stack(RUBY_THREAD_VM_STACK_SIZE)
@@ -344,7 +341,7 @@
 17719,core maybenotbug,Irregular evaluation order in hash literals
 17722,ractor,define_method with shareable results in &quot;defined in a different Ractor&quot;
 17724,core,Pattern matching error message is confusing
-17725,core,Prepend breaks ability to override optimized methods
+17725,patch core,Prepend breaks ability to override optimized methods
 17726,notbug,`respond_to_missing?` doesn&#39;t raise when called from `defined?`
 17728,notbug,[BUG] Segmentation fault at 0x0000000000000000
 17737,maybenotbug core,`Array#permutation` does not immediately check the arity when no block is given
@@ -359,7 +356,8 @@
 17772,maybenotbug perf,Performance issue with NameError message in context with large instance variables (not caused by did_you_mean)
 17774,regexp,Quantified empty group causes regex to fail
 17777,build backport,2.6.7 fails to build on macOS: implicit declaration of function &#39;rb_native_mutex_destroy&#39; is invalid in C99
-17779,patch perf core,特定の順序でHashのkeyを削除した場合に Hash#first が遅くなる
 17781,patch lib,"Resolv::DNS RequestID table allocations are never freed, causing DNS lookups to eventually hang"
 17783,patch lib,Running sidekiq with ruby 3.0 (possible thread deadlock on resolv request_id allocation and free)
-17784,patch build,lib/exe/* mistakenly appearing in Ruby 2.7?
+17788,patch build,ruby 3.0.0 - compiling c++ extension on alpine fails
+17792,core arm,make notes and make test fail with Ruby3.0.1p64 RaspberryPI 4B Ubuntu 20.10 ARM64
+17794,patch core,addr2line.c can free(3) an invalid pointer without zlib
