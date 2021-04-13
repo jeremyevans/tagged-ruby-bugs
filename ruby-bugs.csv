@@ -65,7 +65,7 @@
 11063,patch core maybenotbug,Special singleton class should return true for singleton_class? test
 11064,core maybenotbug,#singleton_methods for objects with special singleton_class returns an empty array
 11142,win core,Command line argument parser on windows handles double quotes inconsistently.
-11164,core,Garbage collector in Ruby 2.2 provokes unexpected CoW
+11164,core notbug,Garbage collector in Ruby 2.2 provokes unexpected CoW
 11174,thread linux,threads memory leak
 11177,win core,DATAでEOF文字以降が読めない
 11182,refine,Refinement with alias causes strange behavior
@@ -126,7 +126,7 @@
 13754,ext,bigdecimal with lower precision that Float
 13864,test,Rinda multicast test failures due to missing default route
 13876,patch core,Tempfile&#39;s finalizer can be interrupted by a Timeout exception which can cause the process to hang
-13930,wip-patch core,Exception is caught in rescue above ensure
+13930,patch core,Exception is caught in rescue above ensure
 13999,cygwin ext,Cygwin 環境で ripper_state_lex.rb がコアダンプする
 14049,win core,SEGV svn 60401 require_relative
 14064,test,test-all with and without -j - incorrect assertions and missing test methods
@@ -153,7 +153,7 @@
 14570,win core,Wired behavior of File.expand_path() on Windows
 14582,tracepoint,Unable to use `method__entry` and `method_return` tracing probes since 2.5
 14591,encoding maybenotbug,Files with invalid multi-byte characters will cause Find::find() to raise EINVAL exception
-14607,core,Fix use of the rb_profile_frames start parameter
+14607,patch core,Fix use of the rb_profile_frames start parameter
 14635,patch core,Float#round(n) returns a wrong result when n is big
 14640,win core,[win32] File.realpath treats a relative path with a drive letter as an absolute path.
 14679,lib,StdLib gems should properly specify their dependencies
@@ -361,3 +361,5 @@
 17788,patch build,ruby 3.0.0 - compiling c++ extension on alpine fails
 17792,core arm,make notes and make test fail with Ruby3.0.1p64 RaspberryPI 4B Ubuntu 20.10 ARM64
 17794,patch core,addr2line.c can free(3) an invalid pointer without zlib
+17799,core,Seg fault in rb_class_clear_method_cache
+17801,fiber ext,repeated read from PTY blocks all Fibers
