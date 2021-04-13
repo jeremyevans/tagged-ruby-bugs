@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>363 Tagged Open Ruby Bugs as of 2021-04-13 06:22:42 +0900</title>
+<title>365 Tagged Open Ruby Bugs as of 2021-04-14 06:31:35 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -11,17 +11,17 @@
 <input type="submit" value="maybenotbug" />
 <input type="submit" value="lib" />
 <input type="submit" value="ext" />
-<input type="submit" value="thread" />
 <input type="submit" value="notbug" />
+<input type="submit" value="thread" />
 <input type="submit" value="encoding" />
 <input type="submit" value="ractor" />
 <input type="submit" value="test" />
 <input type="submit" value="cygwin" />
 <input type="submit" value="perf" />
 <input type="submit" value="tracepoint" />
+<input type="submit" value="fiber" />
 <input type="submit" value="refine" />
 <input type="submit" value="regexp" />
-<input type="submit" value="fiber" />
 <input type="submit" value="arm" />
 <input type="submit" value="solaris" />
 <input type="submit" value="aix" />
@@ -33,17 +33,17 @@
 <input type="submit" value="jit" />
 <input type="submit" value="parser" />
 <input type="submit" value="s390" />
-<input type="submit" value="wip-patch" />
 <input type="submit" value="doc" />
 <input type="submit" value="haiku" />
 <input type="submit" value="macos" />
 <input type="submit" value="mips" />
-<input type="submit" value="misc" /></p>
+<input type="submit" value="misc" />
+<input type="submit" value="wip-patch" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">363</span> matched)
+(<span id="matched">365</span> matched)
 <table>
-<caption>363 Tagged Open Ruby Bugs as of 2021-04-13 06:22:42 +0900</caption>
+<caption>365 Tagged Open Ruby Bugs as of 2021-04-14 06:31:35 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -52,6 +52,20 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" fiber ext ">
+<td><a href="https://bugs.ruby-lang.org/issues/17801">17801</a>
+</td>
+<td>fiber ext</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17801">repeated read from PTY blocks all Fibers</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/17799">17799</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17799">Seg fault in rb_class_clear_method_cache</a>
+</td>
+</tr>
 <tr class=" patch core ">
 <td><a href="https://bugs.ruby-lang.org/issues/17794">17794</a>
 </td>
@@ -1501,10 +1515,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/14635">Float#round(n) returns a wrong result when n is big</a>
 </td>
 </tr>
-<tr class=" core ">
+<tr class=" patch core ">
 <td><a href="https://bugs.ruby-lang.org/issues/14607">14607</a>
 </td>
-<td>core</td>
+<td>patch core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/14607">Fix use of the rb_profile_frames start parameter</a>
 </td>
 </tr>
@@ -1690,10 +1704,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/13999">Cygwin 環境で ripper_state_lex.rb がコアダンプする</a>
 </td>
 </tr>
-<tr class=" wip-patch core ">
+<tr class=" patch core ">
 <td><a href="https://bugs.ruby-lang.org/issues/13930">13930</a>
 </td>
-<td>wip-patch core</td>
+<td>patch core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/13930">Exception is caught in rescue above ensure</a>
 </td>
 </tr>
@@ -2117,10 +2131,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/11174">threads memory leak</a>
 </td>
 </tr>
-<tr class=" core ">
+<tr class=" core notbug ">
 <td><a href="https://bugs.ruby-lang.org/issues/11164">11164</a>
 </td>
-<td>core</td>
+<td>core notbug</td>
 <td><a href="https://bugs.ruby-lang.org/issues/11164">Garbage collector in Ruby 2.2 provokes unexpected CoW</a>
 </td>
 </tr>
