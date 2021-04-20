@@ -2,14 +2,13 @@
 4040,core,SystemStackError with Hash[*a] for Large _a_
 4173,test,TestProcess#test_wait_and_sigchild が、たまに失敗する
 4434,thread maybenotbug,make test-all &quot;-j10000&quot; のように大きな並列数を与えると異常終了
-4443,core,odd evaluation order in a multiple assignment
+4443,patch core,odd evaluation order in a multiple assignment
 5179,patch core,Complex#rationalize and to_r with approximate zeros
 5317,core maybenotbug,rubyのヘッダファイルを使った拡張を行う際にoff_tの宣言回避をする事が出来ない。
 5334,ext maybenotbug,Segmentation fault in InternetExplorer IServiceProvider interface
 6124,build,remove the &quot;spec-only gems&quot; in Ruby 1.9.3 (was What is the purpose of &quot;fake&quot; gems in Ruby)
 6351,encoding,transcode table generator does not support multi characters of Unicode
 6360,win build,Debug information build even without requesting it
-6391,win build,Segment Fault while execute make_encmake.rb for Ruby 1.9.3 P194 ( MinGW64)
 7676,core,Comparison of Float::NAN in array behaves unexpectedly
 7742,encoding,System encoding (Windows-1258) is not recognized by Ruby to  convert back to UTF-8 
 7840,build,-Wdeclaration-after-statement is valid for C/ObjC but not for C++
@@ -42,7 +41,6 @@
 9431,win core maybenotbug,In windows ruby IO.write returns count of bytes without count of CR character
 9435,win core,Kernel.system problem
 9507,core arm,Ruby 2.1.0 is broken on ARMv5: tried to create Proc object without a block
-9542,lib unfixable,Delegator does not delegate protected methods
 9659,ext,crash in FIPS mode after unchecked algo-&gt;init_func failure
 9737,wip-patch encoding,Non-ASCII characters in the path to ruby executable break require paths
 9760,build,mkmf does not allow for linking against custom libraries when a system library is present
@@ -79,7 +77,6 @@
 11514,core aix,AIX6.1 - Ruby 2.2.3 - Segmentation fault in :byteslice
 11526,patch lib,Streaming HTTP requests are not idempotent and should not be retried
 11531,lib maybenotbug,IPAddr#== implements wrong logic
-11579,patch ext,Fiddle.win32_last_error after calling Fiddle::Function#call isn&#39;t GetLastError()
 11582,core solaris maybenotbug,"On Solaris, Rational#** returns -Infinity for Rational(0) when passed a negative Float"
 11704,refine maybenotbug,Refinements only get &quot;used&quot; once in loop
 11706,encoding notbug,"Clean up files etc/unicode/name2ctype.{h.blt,kwd,src}"
@@ -288,12 +285,9 @@
 17379,refine,Refinement with modules redefinition bug
 17382,core,Segfault in String#inspect
 17383,perf,3.0 recursion memory|speed issues
-17398,notbug,SyntaxError in endless method
 17400,encoding,Incorrect character downcase for Greek Sigma
-17403,core,Remove Fixnum and Bignum
 17420,ractor,Unsafe mutation of $&quot; when doing non-RubyGems require in Ractor
 17429,refine,Prohibit include/prepend in refinement modules
-17476,build,3.0/specifications/default/net-*.gemspec repeats the same files
 17478,perf,Ruby3.0 is slower than Ruby2.7.2 when parsing a large CSV file
 17489,ractor,Ractor segfaults
 17492,patch lib,Breakpoints in debug.rb only work when program invoked with absolute filename
@@ -355,7 +349,6 @@
 17767,patch core,`Cloned ENV` inconsistently returns `ENV` or `self`
 17772,maybenotbug perf,Performance issue with NameError message in context with large instance variables (not caused by did_you_mean)
 17774,regexp,Quantified empty group causes regex to fail
-17777,build backport,2.6.7 fails to build on macOS: implicit declaration of function &#39;rb_native_mutex_destroy&#39; is invalid in C99
 17781,patch lib,"Resolv::DNS RequestID table allocations are never freed, causing DNS lookups to eventually hang"
 17783,patch lib,Running sidekiq with ruby 3.0 (possible thread deadlock on resolv request_id allocation and free)
 17788,patch build,ruby 3.0.0 - compiling c++ extension on alpine fails
@@ -363,3 +356,11 @@
 17794,patch core,addr2line.c can free(3) an invalid pointer without zlib
 17799,core,Seg fault in rb_class_clear_method_cache
 17801,fiber ext,repeated read from PTY blocks all Fibers
+17803,ext,Segmentation fault during deflate
+17804,core,Math.cbrt(0.0) returns NaN
+17806,patch core,"Bad interaction between method cache, prepend, and refinements"
+17807,core backport,&quot;Segmentation fault at 0x0000000000000008&quot; crash when accessing instance variables of Process::Waiter instances (Ruby 2.3 to 2.6)
+17810,patch core,addr2line.c: Some symbol names missing in C backtrace with Clang/LLVM
+17812,lib,Timeout::Error doesn&#39;t let two-argument raise() set a new message
+17813,patch win ext,rb_funcall() may reset the latest socket error unexpectedlly since Ruby 3.0.0
+17814,patch core,inconsistent Array.zip behavior
