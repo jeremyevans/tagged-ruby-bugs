@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>365 Tagged Open Ruby Bugs as of 2021-04-14 06:31:35 +0900</title>
+<title>366 Tagged Open Ruby Bugs as of 2021-04-21 01:46:27 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -11,8 +11,8 @@
 <input type="submit" value="maybenotbug" />
 <input type="submit" value="lib" />
 <input type="submit" value="ext" />
-<input type="submit" value="notbug" />
 <input type="submit" value="thread" />
+<input type="submit" value="notbug" />
 <input type="submit" value="encoding" />
 <input type="submit" value="ractor" />
 <input type="submit" value="test" />
@@ -28,11 +28,11 @@
 <input type="submit" value="autoload" />
 <input type="submit" value="irb" />
 <input type="submit" value="linux" />
-<input type="submit" value="unfixable" />
 <input type="submit" value="backport" />
 <input type="submit" value="jit" />
 <input type="submit" value="parser" />
 <input type="submit" value="s390" />
+<input type="submit" value="unfixable" />
 <input type="submit" value="doc" />
 <input type="submit" value="haiku" />
 <input type="submit" value="macos" />
@@ -41,9 +41,9 @@
 <input type="submit" value="wip-patch" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">365</span> matched)
+(<span id="matched">366</span> matched)
 <table>
-<caption>365 Tagged Open Ruby Bugs as of 2021-04-14 06:31:35 +0900</caption>
+<caption>366 Tagged Open Ruby Bugs as of 2021-04-21 01:46:27 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -52,6 +52,62 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" patch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/17814">17814</a>
+</td>
+<td>patch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17814">inconsistent Array.zip behavior</a>
+</td>
+</tr>
+<tr class=" patch win ext ">
+<td><a href="https://bugs.ruby-lang.org/issues/17813">17813</a>
+</td>
+<td>patch win ext</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17813">rb_funcall() may reset the latest socket error unexpectedlly since Ruby 3.0.0</a>
+</td>
+</tr>
+<tr class=" lib ">
+<td><a href="https://bugs.ruby-lang.org/issues/17812">17812</a>
+</td>
+<td>lib</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17812">Timeout::Error doesn&#39;t let two-argument raise() set a new message</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/17810">17810</a>
+</td>
+<td>patch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17810">addr2line.c: Some symbol names missing in C backtrace with Clang/LLVM</a>
+</td>
+</tr>
+<tr class=" core backport ">
+<td><a href="https://bugs.ruby-lang.org/issues/17807">17807</a>
+</td>
+<td>core backport</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17807">&quot;Segmentation fault at 0x0000000000000008&quot; crash when accessing instance variables of Process::Waiter instances (Ruby 2.3 to 2.6)</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/17806">17806</a>
+</td>
+<td>patch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17806">Bad interaction between method cache, prepend, and refinements</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/17804">17804</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17804">Math.cbrt(0.0) returns NaN</a>
+</td>
+</tr>
+<tr class=" ext ">
+<td><a href="https://bugs.ruby-lang.org/issues/17803">17803</a>
+</td>
+<td>ext</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17803">Segmentation fault during deflate</a>
+</td>
+</tr>
 <tr class=" fiber ext ">
 <td><a href="https://bugs.ruby-lang.org/issues/17801">17801</a>
 </td>
@@ -99,13 +155,6 @@
 </td>
 <td>patch lib</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17781">Resolv::DNS RequestID table allocations are never freed, causing DNS lookups to eventually hang</a>
-</td>
-</tr>
-<tr class=" build backport ">
-<td><a href="https://bugs.ruby-lang.org/issues/17777">17777</a>
-</td>
-<td>build backport</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17777">2.6.7 fails to build on macOS: implicit declaration of function &#39;rb_native_mutex_destroy&#39; is invalid in C99</a>
 </td>
 </tr>
 <tr class=" regexp ">
@@ -535,13 +584,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17478">Ruby3.0 is slower than Ruby2.7.2 when parsing a large CSV file</a>
 </td>
 </tr>
-<tr class=" build ">
-<td><a href="https://bugs.ruby-lang.org/issues/17476">17476</a>
-</td>
-<td>build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17476">3.0/specifications/default/net-*.gemspec repeats the same files</a>
-</td>
-</tr>
 <tr class=" refine ">
 <td><a href="https://bugs.ruby-lang.org/issues/17429">17429</a>
 </td>
@@ -556,25 +598,11 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17420">Unsafe mutation of $&quot; when doing non-RubyGems require in Ractor</a>
 </td>
 </tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/17403">17403</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17403">Remove Fixnum and Bignum</a>
-</td>
-</tr>
 <tr class=" encoding ">
 <td><a href="https://bugs.ruby-lang.org/issues/17400">17400</a>
 </td>
 <td>encoding</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17400">Incorrect character downcase for Greek Sigma</a>
-</td>
-</tr>
-<tr class=" notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/17398">17398</a>
-</td>
-<td>notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17398">SyntaxError in endless method</a>
 </td>
 </tr>
 <tr class=" perf ">
@@ -2033,13 +2061,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/11582">On Solaris, Rational#** returns -Infinity for Rational(0) when passed a negative Float</a>
 </td>
 </tr>
-<tr class=" patch ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/11579">11579</a>
-</td>
-<td>patch ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/11579">Fiddle.win32_last_error after calling Fiddle::Function#call isn&#39;t GetLastError()</a>
-</td>
-</tr>
 <tr class=" lib maybenotbug ">
 <td><a href="https://bugs.ruby-lang.org/issues/11531">11531</a>
 </td>
@@ -2292,13 +2313,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/9659">crash in FIPS mode after unchecked algo-&gt;init_func failure</a>
 </td>
 </tr>
-<tr class=" lib unfixable ">
-<td><a href="https://bugs.ruby-lang.org/issues/9542">9542</a>
-</td>
-<td>lib unfixable</td>
-<td><a href="https://bugs.ruby-lang.org/issues/9542">Delegator does not delegate protected methods</a>
-</td>
-</tr>
 <tr class=" core arm ">
 <td><a href="https://bugs.ruby-lang.org/issues/9507">9507</a>
 </td>
@@ -2524,13 +2538,6 @@
 </td>
 </tr>
 <tr class=" win build ">
-<td><a href="https://bugs.ruby-lang.org/issues/6391">6391</a>
-</td>
-<td>win build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/6391">Segment Fault while execute make_encmake.rb for Ruby 1.9.3 P194 ( MinGW64)</a>
-</td>
-</tr>
-<tr class=" win build ">
 <td><a href="https://bugs.ruby-lang.org/issues/6360">6360</a>
 </td>
 <td>win build</td>
@@ -2572,10 +2579,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/5179">Complex#rationalize and to_r with approximate zeros</a>
 </td>
 </tr>
-<tr class=" core ">
+<tr class=" patch core ">
 <td><a href="https://bugs.ruby-lang.org/issues/4443">4443</a>
 </td>
-<td>core</td>
+<td>patch core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/4443">odd evaluation order in a multiple assignment</a>
 </td>
 </tr>
