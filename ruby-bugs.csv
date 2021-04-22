@@ -2,7 +2,6 @@
 4040,core,SystemStackError with Hash[*a] for Large _a_
 4173,test,TestProcess#test_wait_and_sigchild が、たまに失敗する
 4434,thread maybenotbug,make test-all &quot;-j10000&quot; のように大きな並列数を与えると異常終了
-4443,patch core,odd evaluation order in a multiple assignment
 5179,patch core,Complex#rationalize and to_r with approximate zeros
 5317,core maybenotbug,rubyのヘッダファイルを使った拡張を行う際にoff_tの宣言回避をする事が出来ない。
 5334,ext maybenotbug,Segmentation fault in InternetExplorer IServiceProvider interface
@@ -123,7 +122,6 @@
 13754,ext,bigdecimal with lower precision that Float
 13864,test,Rinda multicast test failures due to missing default route
 13876,patch core,Tempfile&#39;s finalizer can be interrupted by a Timeout exception which can cause the process to hang
-13930,patch core,Exception is caught in rescue above ensure
 13999,cygwin ext,Cygwin 環境で ripper_state_lex.rb がコアダンプする
 14049,win core,SEGV svn 60401 require_relative
 14064,test,test-all with and without -j - incorrect assertions and missing test methods
@@ -228,7 +226,6 @@
 16497,ext,StringIO#internal_encoding is broken (more severely in 2.7)
 16608,patch ext,ConditionVariable#wait should return false when timeout exceeded
 16612,core,Enumerator::ArithmeticSequence#last with float range produces incorrect value
-16618,patch core,Ensure called twice when raise in ensure
 16654,core,Segfault in rb_str_hash
 16672,patch lib,net/http leaves original content-length header intact after inflating response
 16674,build,Build issue of FreeBSD 12
@@ -359,8 +356,8 @@
 17803,ext,Segmentation fault during deflate
 17804,core,Math.cbrt(0.0) returns NaN
 17806,patch core,"Bad interaction between method cache, prepend, and refinements"
-17807,core backport,&quot;Segmentation fault at 0x0000000000000008&quot; crash when accessing instance variables of Process::Waiter instances (Ruby 2.3 to 2.6)
 17810,patch core,addr2line.c: Some symbol names missing in C backtrace with Clang/LLVM
-17812,lib,Timeout::Error doesn&#39;t let two-argument raise() set a new message
+17812,patch lib,Timeout::Error doesn&#39;t let two-argument raise() set a new message
 17813,patch win ext,rb_funcall() may reset the latest socket error unexpectedlly since Ruby 3.0.0
-17814,patch core,inconsistent Array.zip behavior
+17817,jit,--jit outputs ./tmp/_ruby_mjit_*.h: No such file or directory on with TMP
+17819,core,fatal - machine stack overflow in critical region
