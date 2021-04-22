@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>366 Tagged Open Ruby Bugs as of 2021-04-21 01:46:27 +0900</title>
+<title>363 Tagged Open Ruby Bugs as of 2021-04-22 23:31:32 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -27,12 +27,12 @@
 <input type="submit" value="aix" />
 <input type="submit" value="autoload" />
 <input type="submit" value="irb" />
-<input type="submit" value="linux" />
-<input type="submit" value="backport" />
 <input type="submit" value="jit" />
+<input type="submit" value="linux" />
 <input type="submit" value="parser" />
 <input type="submit" value="s390" />
 <input type="submit" value="unfixable" />
+<input type="submit" value="backport" />
 <input type="submit" value="doc" />
 <input type="submit" value="haiku" />
 <input type="submit" value="macos" />
@@ -41,9 +41,9 @@
 <input type="submit" value="wip-patch" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">366</span> matched)
+(<span id="matched">363</span> matched)
 <table>
-<caption>366 Tagged Open Ruby Bugs as of 2021-04-21 01:46:27 +0900</caption>
+<caption>363 Tagged Open Ruby Bugs as of 2021-04-22 23:31:32 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -52,11 +52,18 @@
 </tr>
 </thead>
 <tbody>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/17814">17814</a>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/17819">17819</a>
 </td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17814">inconsistent Array.zip behavior</a>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17819">fatal - machine stack overflow in critical region</a>
+</td>
+</tr>
+<tr class=" jit ">
+<td><a href="https://bugs.ruby-lang.org/issues/17817">17817</a>
+</td>
+<td>jit</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17817">--jit outputs ./tmp/_ruby_mjit_*.h: No such file or directory on with TMP</a>
 </td>
 </tr>
 <tr class=" patch win ext ">
@@ -66,10 +73,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17813">rb_funcall() may reset the latest socket error unexpectedlly since Ruby 3.0.0</a>
 </td>
 </tr>
-<tr class=" lib ">
+<tr class=" patch lib ">
 <td><a href="https://bugs.ruby-lang.org/issues/17812">17812</a>
 </td>
-<td>lib</td>
+<td>patch lib</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17812">Timeout::Error doesn&#39;t let two-argument raise() set a new message</a>
 </td>
 </tr>
@@ -78,13 +85,6 @@
 </td>
 <td>patch core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17810">addr2line.c: Some symbol names missing in C backtrace with Clang/LLVM</a>
-</td>
-</tr>
-<tr class=" core backport ">
-<td><a href="https://bugs.ruby-lang.org/issues/17807">17807</a>
-</td>
-<td>core backport</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17807">&quot;Segmentation fault at 0x0000000000000008&quot; crash when accessing instance variables of Process::Waiter instances (Ruby 2.3 to 2.6)</a>
 </td>
 </tr>
 <tr class=" patch core ">
@@ -997,13 +997,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16654">Segfault in rb_str_hash</a>
 </td>
 </tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/16618">16618</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16618">Ensure called twice when raise in ensure</a>
-</td>
-</tr>
 <tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/16612">16612</a>
 </td>
@@ -1730,13 +1723,6 @@
 </td>
 <td>cygwin ext</td>
 <td><a href="https://bugs.ruby-lang.org/issues/13999">Cygwin 環境で ripper_state_lex.rb がコアダンプする</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/13930">13930</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/13930">Exception is caught in rescue above ensure</a>
 </td>
 </tr>
 <tr class=" patch core ">
@@ -2577,13 +2563,6 @@
 </td>
 <td>patch core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/5179">Complex#rationalize and to_r with approximate zeros</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/4443">4443</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/4443">odd evaluation order in a multiple assignment</a>
 </td>
 </tr>
 <tr class=" thread maybenotbug ">
