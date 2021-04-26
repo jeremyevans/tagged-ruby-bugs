@@ -294,7 +294,6 @@
 17507,thread,Regexp capture groups ignored sometimes in some multithreaded environments (possible race condition)
 17513,ractor,Methods of shareable objects and UnboundMethods should be shareable
 17516,ractor,forking in a ractor causes Ruby to crash
-17519,patch core,set_visibility fails when a prepended module and a refinement both exist
 17529,ractor,Ractor Segfaults with GC enabled
 17530,irb,irb handles &lt;&lt; incorrectly with variable as identifier
 17531,ractor,`did_you_mean` not Ractor friendly
@@ -360,4 +359,8 @@
 17812,patch lib,Timeout::Error doesn&#39;t let two-argument raise() set a new message
 17813,patch win ext,rb_funcall() may reset the latest socket error unexpectedlly since Ruby 3.0.0
 17817,jit,--jit outputs ./tmp/_ruby_mjit_*.h: No such file or directory on with TMP
-17819,core,fatal - machine stack overflow in critical region
+17822,core patch,Inconsistent visibility behavior with refinements
+17823,core,addr2line.c: Interpret `DW_RLE_start_length`
+17824,lib patch,Gem::Deprecate#deprecate doesn&#39;t work with method with keyword arguments
+17826,ractor,Ractor#take hangs if used in multiple Threads
+17827,thread maybenotbug,Monitor is not fiber safe
