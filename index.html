@@ -1,14 +1,14 @@
 <html>
 <head>
-<title>366 Tagged Open Ruby Bugs as of 2021-04-27 04:09:13 +0900</title>
+<title>363 Tagged Open Ruby Bugs as of 2021-04-29 04:43:59 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
 <p class="filter-buttons">Available Tags: <input type="submit" value="core" />
 <input type="submit" value="patch" />
 <input type="submit" value="win" />
-<input type="submit" value="build" />
 <input type="submit" value="maybenotbug" />
+<input type="submit" value="build" />
 <input type="submit" value="lib" />
 <input type="submit" value="ext" />
 <input type="submit" value="thread" />
@@ -41,9 +41,9 @@
 <input type="submit" value="wip-patch" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">366</span> matched)
+(<span id="matched">363</span> matched)
 <table>
-<caption>366 Tagged Open Ruby Bugs as of 2021-04-27 04:09:13 +0900</caption>
+<caption>363 Tagged Open Ruby Bugs as of 2021-04-29 04:43:59 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -52,11 +52,25 @@
 </tr>
 </thead>
 <tbody>
-<tr class=" thread maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/17827">17827</a>
+<tr class=" patch win lib ">
+<td><a href="https://bugs.ruby-lang.org/issues/17839">17839</a>
 </td>
-<td>thread maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17827">Monitor is not fiber safe</a>
+<td>patch win lib</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17839">Windows CI failures with net/http - fix at ruby/net-http</a>
+</td>
+</tr>
+<tr class=" maybenotbug lib ">
+<td><a href="https://bugs.ruby-lang.org/issues/17838">17838</a>
+</td>
+<td>maybenotbug lib</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17838">`Set#intersect?` and enumerables</a>
+</td>
+</tr>
+<tr class=" maybenotbug lib ">
+<td><a href="https://bugs.ruby-lang.org/issues/17835">17835</a>
+</td>
+<td>maybenotbug lib</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17835">Net::HTTP should automatically add Accept-Encoding request header on HEAD request as well</a>
 </td>
 </tr>
 <tr class=" ractor ">
@@ -512,13 +526,6 @@
 </td>
 <td>ractor</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17543">Ractor isolation broken by `self` in shareable proc</a>
-</td>
-</tr>
-<tr class=" patch lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/17542">17542</a>
-</td>
-<td>patch lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17542">Username and password are not decoded if retrieved from env</a>
 </td>
 </tr>
 <tr class=" ractor ">
@@ -2397,13 +2404,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/9010">./configure --prefix= cannot handle directories with spaces</a>
 </td>
 </tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/9009">9009</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/9009">Wrong binding when tracing c-calls</a>
-</td>
-</tr>
 <tr class=" patch build ">
 <td><a href="https://bugs.ruby-lang.org/issues/8973">8973</a>
 </td>
@@ -2439,25 +2439,11 @@
 <td><a href="https://bugs.ruby-lang.org/issues/8782">Don&#39;t set rl_getc_function on editline</a>
 </td>
 </tr>
-<tr class=" build ">
-<td><a href="https://bugs.ruby-lang.org/issues/8744">8744</a>
-</td>
-<td>build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/8744">SIZEOF_UNSIGNED___INT128</a>
-</td>
-</tr>
 <tr class=" patch core maybenotbug ">
 <td><a href="https://bugs.ruby-lang.org/issues/8677">8677</a>
 </td>
 <td>patch core maybenotbug</td>
 <td><a href="https://bugs.ruby-lang.org/issues/8677">$LOAD_PATH did not encoded into the &quot;internal encoding&quot;</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/8484">8484</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/8484">Restoring conditions through the ruby method call during VM processing</a>
 </td>
 </tr>
 <tr class=" patch core ">
@@ -2556,13 +2542,6 @@
 </td>
 <td>encoding</td>
 <td><a href="https://bugs.ruby-lang.org/issues/6351">transcode table generator does not support multi characters of Unicode</a>
-</td>
-</tr>
-<tr class=" build ">
-<td><a href="https://bugs.ruby-lang.org/issues/6124">6124</a>
-</td>
-<td>build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/6124">remove the &quot;spec-only gems&quot; in Ruby 1.9.3 (was What is the purpose of &quot;fake&quot; gems in Ruby)</a>
 </td>
 </tr>
 <tr class=" ext maybenotbug ">
