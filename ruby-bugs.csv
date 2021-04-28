@@ -5,7 +5,6 @@
 5179,patch core,Complex#rationalize and to_r with approximate zeros
 5317,core maybenotbug,rubyのヘッダファイルを使った拡張を行う際にoff_tの宣言回避をする事が出来ない。
 5334,ext maybenotbug,Segmentation fault in InternetExplorer IServiceProvider interface
-6124,build,remove the &quot;spec-only gems&quot; in Ruby 1.9.3 (was What is the purpose of &quot;fake&quot; gems in Ruby)
 6351,encoding,transcode table generator does not support multi characters of Unicode
 6360,win build,Debug information build even without requesting it
 7676,core,Comparison of Float::NAN in array behaves unexpectedly
@@ -20,15 +19,12 @@
 8299,core,Minor error in float parsing
 8444,core,Regexp vars $~ and friends are not thread local
 8445,patch core,IO.open and IO#set_enconding does not support :fallback option
-8484,core,Restoring conditions through the ruby method call during VM processing
 8677,patch core maybenotbug,$LOAD_PATH did not encoded into the &quot;internal encoding&quot;
-8744,build,SIZEOF_UNSIGNED___INT128
 8782,ext,Don&#39;t set rl_getc_function on editline
 8810,ext unfixable,GDBM.open内で処理がブロックしたらTimeout.timeout が効かない
 8826,ext,BigDecimal#div and #quo different behavior and inconsistencies
 8836,lib maybenotbug,[BUG] Bus Error with bundler on large Gemfile when resolving dependencies
 8973,patch build,Allow to configure archlibdir for multiarch
-9009,core,Wrong binding when tracing c-calls
 9010,build,./configure --prefix= cannot handle directories with spaces
 9115,patch lib,Logger traps all exceptions; breaks Timeout
 9189,win encoding,Build failure on Windows in case of nonascii TEMP environment.
@@ -297,7 +293,6 @@
 17529,ractor,Ractor Segfaults with GC enabled
 17530,irb,irb handles &lt;&lt; incorrectly with variable as identifier
 17531,ractor,`did_you_mean` not Ractor friendly
-17542,patch lib,Username and password are not decoded if retrieved from env
 17543,ractor,Ractor isolation broken by `self` in shareable proc
 17545,core maybenotbug,Calling dup on a subclass of Proc returns a Proc and not the subclass
 17561,backport,The timeout option for Addrinfo.getaddrinfo is not reliable on Ruby 2.7.2
@@ -363,4 +358,6 @@
 17823,core,addr2line.c: Interpret `DW_RLE_start_length`
 17824,lib patch,Gem::Deprecate#deprecate doesn&#39;t work with method with keyword arguments
 17826,ractor,Ractor#take hangs if used in multiple Threads
-17827,thread maybenotbug,Monitor is not fiber safe
+17835,maybenotbug lib,Net::HTTP should automatically add Accept-Encoding request header on HEAD request as well
+17838,maybenotbug lib,`Set#intersect?` and enumerables
+17839,patch win lib,Windows CI failures with net/http - fix at ruby/net-http
