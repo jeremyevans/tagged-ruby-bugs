@@ -221,11 +221,10 @@
 16493,thread arm,TestThreadQueue#test_thr_kill is flaky on AArch64
 16497,ext,StringIO#internal_encoding is broken (more severely in 2.7)
 16608,patch ext,ConditionVariable#wait should return false when timeout exceeded
-16612,core,Enumerator::ArithmeticSequence#last with float range produces incorrect value
+16612,patch core,Enumerator::ArithmeticSequence#last with float range produces incorrect value
 16654,core,Segfault in rb_str_hash
 16672,patch lib,net/http leaves original content-length header intact after inflating response
 16674,build,Build issue of FreeBSD 12
-16680,core,Symlink folder in $LOAD_PATH does not work with autoload
 16694,core,JIT vs hardened GCC with PCH
 16759,win core,MinGW 2.5 - SEGV bug with Binding#local_variable_set
 16776,core,Regression in coverage library
@@ -248,7 +247,6 @@
 16951,lib,Consistently referer dependencies
 16953,win build,Windows bash bin files removed in master
 16959,maybenotbug core,Weakmap has specs and third-party usage despite being a private API
-16962,core,IO.close behaviour
 16983,core,RubyVM::AbstractSyntaxTree.of(method) returns meaningless node if the method is defined in eval
 16997,core win,IO#gets converts some \r\n to \n with universal_newline: false
 17007,refine,SystemStackError when using super inside Module included and lexically inside refinement
@@ -348,7 +346,7 @@
 17799,core,Seg fault in rb_class_clear_method_cache
 17801,fiber ext,repeated read from PTY blocks all Fibers
 17803,ext,Segmentation fault during deflate
-17804,core,Math.cbrt(0.0) returns NaN
+17804,patch core,Math.cbrt(0.0) returns NaN
 17806,patch core,"Bad interaction between method cache, prepend, and refinements"
 17810,patch core,addr2line.c: Some symbol names missing in C backtrace with Clang/LLVM
 17812,patch lib,Timeout::Error doesn&#39;t let two-argument raise() set a new message
@@ -361,3 +359,4 @@
 17835,maybenotbug lib,Net::HTTP should automatically add Accept-Encoding request header on HEAD request as well
 17838,maybenotbug lib,`Set#intersect?` and enumerables
 17839,patch win lib,Windows CI failures with net/http - fix at ruby/net-http
+17840,build,`make install` overriding file permission with 644
