@@ -201,7 +201,7 @@
 15787,haiku lib maybenotbug,LoadError by EPERM on read-only volume
 15790,core autoload,Strange interaction between autoload and $LOADED_FEATURES
 15856,core perf,Performance of redundant `Kernel.require` is slow when many gems are activated
-15928,core,Constant declaration does not conform to JIS 3017:2013
+15928,patch core,Constant declaration does not conform to JIS 3017:2013
 15993,win encoding,&#39;require&#39; doesn&#39;t work if there are Cyrillic chars in the path to Ruby dir
 16143,patch core,BOM UTF-8 is not removed after rewind
 16145,regexp,"regexp match error if mixing /i, character classes, and utf8"
@@ -301,7 +301,6 @@
 17584,jit,Segmentation fault with Ruby 3.0
 17587,ractor,Segmentation fault with ractors and unix signals
 17588,build win,Cannot build with library path with spaces on MSVC
-17606,cygwin,Make failed on i386-cygwin (miniruby.exe aborted)
 17607,maybenotbug fiber,ChildProcess vs RUBY_PIPE_NONBLOCK_DEFAULT
 17617,ractor,"When a Ractor&#39;s incoming port is closed, Ractor.receive_if does not raise Ractor::ClosedError, but instead blocks indefinitely"
 17618,fiber,Exceptions in Fiber Scheduler causes a segv
@@ -349,7 +348,6 @@
 17804,patch core,Math.cbrt(0.0) returns NaN
 17806,patch core,"Bad interaction between method cache, prepend, and refinements"
 17810,patch core,addr2line.c: Some symbol names missing in C backtrace with Clang/LLVM
-17812,patch lib,Timeout::Error doesn&#39;t let two-argument raise() set a new message
 17813,patch win ext,rb_funcall() may reset the latest socket error unexpectedlly since Ruby 3.0.0
 17817,jit,--jit outputs ./tmp/_ruby_mjit_*.h: No such file or directory on with TMP
 17822,core patch,Inconsistent visibility behavior with refinements
@@ -360,3 +358,4 @@
 17838,maybenotbug lib,`Set#intersect?` and enumerables
 17839,patch win lib,Windows CI failures with net/http - fix at ruby/net-http
 17840,build,`make install` overriding file permission with 644
+17843,mac maybenotbug,Ruby on Rails error[BUG] Segmentation fault at 0x0000000000000110 ruby 3.0.1p64 (2021-04-05 revision 0fb782ee38) [x86_64-darwin15] (#42110)
