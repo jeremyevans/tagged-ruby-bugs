@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>360 Tagged Open Ruby Bugs as of 2021-05-08 08:08:47 +0900</title>
+<title>357 Tagged Open Ruby Bugs as of 2021-05-12 06:52:44 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -11,8 +11,8 @@
 <input type="submit" value="build" />
 <input type="submit" value="lib" />
 <input type="submit" value="ext" />
-<input type="submit" value="thread" />
 <input type="submit" value="notbug" />
+<input type="submit" value="thread" />
 <input type="submit" value="encoding" />
 <input type="submit" value="ractor" />
 <input type="submit" value="test" />
@@ -23,12 +23,12 @@
 <input type="submit" value="refine" />
 <input type="submit" value="regexp" />
 <input type="submit" value="arm" />
-<input type="submit" value="solaris" />
 <input type="submit" value="aix" />
 <input type="submit" value="autoload" />
 <input type="submit" value="irb" />
 <input type="submit" value="jit" />
 <input type="submit" value="linux" />
+<input type="submit" value="solaris" />
 <input type="submit" value="parser" />
 <input type="submit" value="s390" />
 <input type="submit" value="unfixable" />
@@ -42,9 +42,9 @@
 <input type="submit" value="wip-patch" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">360</span> matched)
+(<span id="matched">357</span> matched)
 <table>
-<caption>360 Tagged Open Ruby Bugs as of 2021-05-08 08:08:47 +0900</caption>
+<caption>357 Tagged Open Ruby Bugs as of 2021-05-12 06:52:44 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -53,6 +53,13 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" maybenotbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/17855">17855</a>
+</td>
+<td>maybenotbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17855">[BUG] object allocation during garbage collection phase</a>
+</td>
+</tr>
 <tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/17854">17854</a>
 </td>
@@ -142,20 +149,6 @@
 </td>
 <td>patch core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17810">addr2line.c: Some symbol names missing in C backtrace with Clang/LLVM</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/17806">17806</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17806">Bad interaction between method cache, prepend, and refinements</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/17804">17804</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17804">Math.cbrt(0.0) returns NaN</a>
 </td>
 </tr>
 <tr class=" ext ">
@@ -254,13 +247,6 @@
 </td>
 <td>patch core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17757">Hash#slice does not keep compare_by_identity on the results</a>
-</td>
-</tr>
-<tr class=" patch lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/17748">17748</a>
-</td>
-<td>patch lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17748">Ruby 3.0 takes a long time to resolv DNS of nonexistent domains</a>
 </td>
 </tr>
 <tr class=" patch notbug ">
@@ -1409,13 +1395,6 @@
 </td>
 <td>cygwin build</td>
 <td><a href="https://bugs.ruby-lang.org/issues/14971">error: implicit declaration of function ‘rb_vm_call0</a>
-</td>
-</tr>
-<tr class=" solaris thread ">
-<td><a href="https://bugs.ruby-lang.org/issues/14963">14963</a>
-</td>
-<td>solaris thread</td>
-<td><a href="https://bugs.ruby-lang.org/issues/14963">Since r64107, on Solaris, spec test of rb_io_wait_readable hangs up</a>
 </td>
 </tr>
 <tr class=" win thread ">
