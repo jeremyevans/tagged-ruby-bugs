@@ -127,7 +127,7 @@
 14137,win regexp,Windows / MinGW - Regexp - Character Properties - General Category
 14275,patch core,GC not aggressive enough
 14364,core,Regexp last match variable in procs
-14367,regexp,Wrong interpretation of backslash C in regexp literals
+14367,patch regexp,Wrong interpretation of backslash C in regexp literals
 14378,win notbug,"On windows, RUBY_FIXNUM_MAX of 64 bits ruby  is 32 bits"
 14387,core linux,Ruby 2.5 を Alpine Linux で実行すると比較的浅めで SystemStackError 例外になる
 14391,patch ext perf,Integer#digitsが遅い
@@ -353,5 +353,5 @@
 17839,patch win lib,Windows CI failures with net/http - fix at ruby/net-http
 17840,build,`make install` overriding file permission with 644
 17843,mac maybenotbug,Ruby on Rails error[BUG] Segmentation fault at 0x0000000000000110 ruby 3.0.1p64 (2021-04-05 revision 0fb782ee38) [x86_64-darwin15] (#42110)
-17854,core,Crash with certain &quot;case&quot; expressions on FreeBSD
 17855,maybenotbug,[BUG] object allocation during garbage collection phase
+17857,core,`when 0r` and `when 0i` do not match with `case 0`
