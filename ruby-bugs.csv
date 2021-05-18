@@ -95,7 +95,6 @@
 12506,cygwin,"On cygwin, Feature #5994 does not work"
 12540,core,test failures when SHARABLE_MIDDLE_SUBSTRING=1
 12547,core,"Remove ONIG_UNICODE_VERSION_... in enc/unicode/case-folding.rb, casefold.h"
-12551,win core,Exception accessing file with long path on windows
 12582,ext,OpenSSL Authenticated Encryption should check for tag length
 12590,cygwin build,Error compiling parse.c on cygwin
 12597,encoding test,Produce test failure if some tests cannot be executed due to lacking data
@@ -279,7 +278,6 @@
 17478,perf,Ruby3.0 is slower than Ruby2.7.2 when parsing a large CSV file
 17489,ractor,Ractor segfaults
 17492,patch lib,Breakpoints in debug.rb only work when program invoked with absolute filename
-17493,irb,Calling Reline::Unicode.calculate_width appears to lock up when called from emacs or if output is redirected
 17494,refine,ruby is hanged when using activesupport + rspec + rspec-parameterized
 17506,ractor,Ractor isolation broken by ThreadGroup
 17507,thread,Regexp capture groups ignored sometimes in some multithreaded environments (possible race condition)
@@ -319,7 +317,6 @@
 17680,lib maybenotbug,tab completion no longer works on irb3.0
 17719,core maybenotbug,Irregular evaluation order in hash literals
 17722,ractor,define_method with shareable results in &quot;defined in a different Ractor&quot;
-17724,core,Pattern matching error message is confusing
 17725,patch core,Prepend breaks ability to override optimized methods
 17726,notbug,`respond_to_missing?` doesn&#39;t raise when called from `defined?`
 17728,notbug,[BUG] Segmentation fault at 0x0000000000000000
@@ -353,3 +350,5 @@
 17840,build,`make install` overriding file permission with 644
 17843,mac maybenotbug,Ruby on Rails error[BUG] Segmentation fault at 0x0000000000000110 ruby 3.0.1p64 (2021-04-05 revision 0fb782ee38) [x86_64-darwin15] (#42110)
 17855,maybenotbug,[BUG] object allocation during garbage collection phase
+17864,ractor,[BUG] try to mark T_NONE object (in Ractors)
+17866,maybenotbug,Incompatible changes with Psych 4.0.0
