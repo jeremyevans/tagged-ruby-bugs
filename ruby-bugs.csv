@@ -211,7 +211,7 @@
 16368,patch ext,Error in `YAML.load(symbolize_names: true)` with null column YAML
 16383,patch tracepoint,TracePoint does not report calls to attribute reader methods
 16448,core,regex global variables are working differently depending on scope
-16475,build notbug,[Installation process - compiling ruby 2.7.0 from source} &quot;make install&quot; step oddity for ruby 2.7.0 on linux minut (debian base)
+16475,patch build,[Installation process - compiling ruby 2.7.0 from source} &quot;make install&quot; step oddity for ruby 2.7.0 on linux mint (debian base)
 16490,build lib,mkmf.rbの非互換な変更
 16492,test,TestBugReporter#test_bug_reporter_add test failures
 16493,thread arm,TestThreadQueue#test_thr_kill is flaky on AArch64
@@ -352,3 +352,4 @@
 17855,maybenotbug,[BUG] object allocation during garbage collection phase
 17864,ractor,[BUG] try to mark T_NONE object (in Ractors)
 17866,maybenotbug,Incompatible changes with Psych 4.0.0
+17868,core,Strange result of Coverage for while-in-while
