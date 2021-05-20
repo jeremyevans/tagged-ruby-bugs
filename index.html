@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>355 Tagged Open Ruby Bugs as of 2021-05-20 00:03:12 +0900</title>
+<title>355 Tagged Open Ruby Bugs as of 2021-05-21 01:21:40 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -39,12 +39,13 @@
 <input type="submit" value="macos" />
 <input type="submit" value="mips" />
 <input type="submit" value="misc" />
+<input type="submit" value="ppc" />
 <input type="submit" value="wip-patch" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
 (<span id="matched">355</span> matched)
 <table>
-<caption>355 Tagged Open Ruby Bugs as of 2021-05-20 00:03:12 +0900</caption>
+<caption>355 Tagged Open Ruby Bugs as of 2021-05-21 01:21:40 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -53,11 +54,25 @@
 </tr>
 </thead>
 <tbody>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/17868">17868</a>
+<tr class=" ppc ">
+<td><a href="https://bugs.ruby-lang.org/issues/17871">17871</a>
 </td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17868">Strange result of Coverage for while-in-while</a>
+<td>ppc</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17871">TestGCCompact#test_ast_compacts test failing again</a>
+</td>
+</tr>
+<tr class=" build ">
+<td><a href="https://bugs.ruby-lang.org/issues/17870">17870</a>
+</td>
+<td>build</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17870">`make --output-sync=line install` breaks installation</a>
+</td>
+</tr>
+<tr class=" ext ">
+<td><a href="https://bugs.ruby-lang.org/issues/17869">17869</a>
+</td>
+<td>ext</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17869">`Ripper.sexp`&#39;s S-expression when using endless method definition</a>
 </td>
 </tr>
 <tr class=" maybenotbug ">
@@ -205,20 +220,6 @@
 </td>
 <td>patch build</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17788">ruby 3.0.0 - compiling c++ extension on alpine fails</a>
-</td>
-</tr>
-<tr class=" patch lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/17783">17783</a>
-</td>
-<td>patch lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17783">Running sidekiq with ruby 3.0 (possible thread deadlock on resolv request_id allocation and free)</a>
-</td>
-</tr>
-<tr class=" patch lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/17781">17781</a>
-</td>
-<td>patch lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17781">Resolv::DNS RequestID table allocations are never freed, causing DNS lookups to eventually hang</a>
 </td>
 </tr>
 <tr class=" regexp ">
