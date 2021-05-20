@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>355 Tagged Open Ruby Bugs as of 2021-05-21 01:21:40 +0900</title>
+<title>355 Tagged Open Ruby Bugs as of 2021-05-21 01:38:08 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -15,6 +15,7 @@
 <input type="submit" value="encoding" />
 <input type="submit" value="notbug" />
 <input type="submit" value="ractor" />
+<input type="submit" value="os/arch" />
 <input type="submit" value="test" />
 <input type="submit" value="cygwin" />
 <input type="submit" value="perf" />
@@ -22,30 +23,19 @@
 <input type="submit" value="fiber" />
 <input type="submit" value="refine" />
 <input type="submit" value="regexp" />
-<input type="submit" value="arm" />
-<input type="submit" value="aix" />
 <input type="submit" value="autoload" />
 <input type="submit" value="jit" />
-<input type="submit" value="linux" />
-<input type="submit" value="solaris" />
 <input type="submit" value="irb" />
 <input type="submit" value="parser" />
-<input type="submit" value="s390" />
 <input type="submit" value="unfixable" />
 <input type="submit" value="backport" />
 <input type="submit" value="doc" />
-<input type="submit" value="haiku" />
-<input type="submit" value="mac" />
-<input type="submit" value="macos" />
-<input type="submit" value="mips" />
-<input type="submit" value="misc" />
-<input type="submit" value="ppc" />
-<input type="submit" value="wip-patch" /></p>
+<input type="submit" value="misc" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
 (<span id="matched">355</span> matched)
 <table>
-<caption>355 Tagged Open Ruby Bugs as of 2021-05-21 01:21:40 +0900</caption>
+<caption>355 Tagged Open Ruby Bugs as of 2021-05-21 01:38:08 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -54,10 +44,10 @@
 </tr>
 </thead>
 <tbody>
-<tr class=" ppc ">
+<tr class=" os/arch ">
 <td><a href="https://bugs.ruby-lang.org/issues/17871">17871</a>
 </td>
-<td>ppc</td>
+<td>os/arch</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17871">TestGCCompact#test_ast_compacts test failing again</a>
 </td>
 </tr>
@@ -96,10 +86,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17855">[BUG] object allocation during garbage collection phase</a>
 </td>
 </tr>
-<tr class=" mac maybenotbug ">
+<tr class=" maybenotbug ">
 <td><a href="https://bugs.ruby-lang.org/issues/17843">17843</a>
 </td>
-<td>mac maybenotbug</td>
+<td>maybenotbug</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17843">Ruby on Rails error[BUG] Segmentation fault at 0x0000000000000110 ruby 3.0.1p64 (2021-04-05 revision 0fb782ee38) [x86_64-darwin15] (#42110)</a>
 </td>
 </tr>
@@ -208,10 +198,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17794">addr2line.c can free(3) an invalid pointer without zlib</a>
 </td>
 </tr>
-<tr class=" core arm ">
+<tr class=" core os/arch ">
 <td><a href="https://bugs.ruby-lang.org/issues/17792">17792</a>
 </td>
-<td>core arm</td>
+<td>core os/arch</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17792">make notes and make test fail with Ruby3.0.1p64 RaspberryPI 4B Ubuntu 20.10 ARM64</a>
 </td>
 </tr>
@@ -250,10 +240,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17765">Segmentation fault when calling String#gsub</a>
 </td>
 </tr>
-<tr class=" patch linux ">
+<tr class=" patch os/arch ">
 <td><a href="https://bugs.ruby-lang.org/issues/17759">17759</a>
 </td>
-<td>patch linux</td>
+<td>patch os/arch</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17759">Correct `ioctl_req_t` for musl</a>
 </td>
 </tr>
@@ -411,10 +401,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17631">`Numeric#real?` incorrectly returns true for `NaN` and `INFINITY`</a>
 </td>
 </tr>
-<tr class=" patch ext macos ">
+<tr class=" patch ext os/arch ">
 <td><a href="https://bugs.ruby-lang.org/issues/17629">17629</a>
 </td>
-<td>patch ext macos</td>
+<td>patch ext os/arch</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17629">macOS, readline compiled with libedit: adding entries to history doesn&#39;t work unless Readline.readline is called before populating it</a>
 </td>
 </tr>
@@ -740,10 +730,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17159">extend `define_method` for Ractor</a>
 </td>
 </tr>
-<tr class=" build aix ">
+<tr class=" build os/arch ">
 <td><a href="https://bugs.ruby-lang.org/issues/17142">17142</a>
 </td>
-<td>build aix</td>
+<td>build os/arch</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17142">Ruby fails to build in AIX </a>
 </td>
 </tr>
@@ -852,17 +842,17 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16927">String#tr won&#39;t return the expected result for some sign with diacritics</a>
 </td>
 </tr>
-<tr class=" s390 ">
+<tr class=" os/arch ">
 <td><a href="https://bugs.ruby-lang.org/issues/16921">16921</a>
 </td>
-<td>s390</td>
+<td>os/arch</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16921">s390x: random test failures for timeout or segmentation fault</a>
 </td>
 </tr>
-<tr class=" arm thread ">
+<tr class=" os/arch thread ">
 <td><a href="https://bugs.ruby-lang.org/issues/16920">16920</a>
 </td>
-<td>arm thread</td>
+<td>os/arch thread</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16920">TestThread#test_signal_at_join fails on aarch64</a>
 </td>
 </tr>
@@ -936,10 +926,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16819">Line reporting off by one when reporting line of a hash?</a>
 </td>
 </tr>
-<tr class=" s390 ">
+<tr class=" os/arch ">
 <td><a href="https://bugs.ruby-lang.org/issues/16810">16810</a>
 </td>
-<td>s390</td>
+<td>os/arch</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16810">ruby segfaults on s390x with musl libc</a>
 </td>
 </tr>
@@ -1020,10 +1010,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16497">StringIO#internal_encoding is broken (more severely in 2.7)</a>
 </td>
 </tr>
-<tr class=" thread arm ">
+<tr class=" thread os/arch ">
 <td><a href="https://bugs.ruby-lang.org/issues/16493">16493</a>
 </td>
-<td>thread arm</td>
+<td>thread os/arch</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16493">TestThreadQueue#test_thr_kill is flaky on AArch64</a>
 </td>
 </tr>
@@ -1104,10 +1094,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16186">Calling Net::HTTP from within an #inspect implementation hang when invoked from p</a>
 </td>
 </tr>
-<tr class=" aix notbug ">
+<tr class=" os/arch notbug ">
 <td><a href="https://bugs.ruby-lang.org/issues/16185">16185</a>
 </td>
-<td>aix notbug</td>
+<td>os/arch notbug</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16185">basictest failure on AIX 6.1 for 64bit build</a>
 </td>
 </tr>
@@ -1160,10 +1150,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/15790">Strange interaction between autoload and $LOADED_FEATURES</a>
 </td>
 </tr>
-<tr class=" haiku lib maybenotbug ">
+<tr class=" os/arch lib maybenotbug ">
 <td><a href="https://bugs.ruby-lang.org/issues/15787">15787</a>
 </td>
-<td>haiku lib maybenotbug</td>
+<td>os/arch lib maybenotbug</td>
 <td><a href="https://bugs.ruby-lang.org/issues/15787">LoadError by EPERM on read-only volume</a>
 </td>
 </tr>
@@ -1454,10 +1444,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/14835">Impossible to know whether an exception was rescued or not using TracePoint</a>
 </td>
 </tr>
-<tr class=" solaris build ">
+<tr class=" os/arch build ">
 <td><a href="https://bugs.ruby-lang.org/issues/14826">14826</a>
 </td>
-<td>solaris build</td>
+<td>os/arch build</td>
 <td><a href="https://bugs.ruby-lang.org/issues/14826">make: *** [.ext/include/sparc-solaris2.10/rb_mjit_min_header-2.6.0.h] Error 1 on Solaris 10 with very old gcc3</a>
 </td>
 </tr>
@@ -1468,10 +1458,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/14817">TracePoint#parameters for bmethod&#39;s return event should return the same value as its Method#parameters</a>
 </td>
 </tr>
-<tr class=" solaris thread ">
+<tr class=" os/arch thread ">
 <td><a href="https://bugs.ruby-lang.org/issues/14761">14761</a>
 </td>
-<td>solaris thread</td>
+<td>os/arch thread</td>
 <td><a href="https://bugs.ruby-lang.org/issues/14761">TestThread#test_join_limits hangs up on Solaris 10 with gcc</a>
 </td>
 </tr>
@@ -1566,10 +1556,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/14543">`make commit` show error of `common-srcs`</a>
 </td>
 </tr>
-<tr class=" arm build ">
+<tr class=" os/arch build ">
 <td><a href="https://bugs.ruby-lang.org/issues/14480">14480</a>
 </td>
-<td>arm build</td>
+<td>os/arch build</td>
 <td><a href="https://bugs.ruby-lang.org/issues/14480">miniruby crashing when compiled with -O2 or -O1 on aarch64</a>
 </td>
 </tr>
@@ -1629,10 +1619,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/14391">Integer#digitsが遅い</a>
 </td>
 </tr>
-<tr class=" core linux ">
+<tr class=" core os/arch ">
 <td><a href="https://bugs.ruby-lang.org/issues/14387">14387</a>
 </td>
-<td>core linux</td>
+<td>core os/arch</td>
 <td><a href="https://bugs.ruby-lang.org/issues/14387">Ruby 2.5 を Alpine Linux で実行すると比較的浅めで SystemStackError 例外になる</a>
 </td>
 </tr>
@@ -1881,10 +1871,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/12506">On cygwin, Feature #5994 does not work</a>
 </td>
 </tr>
-<tr class=" test mips ">
+<tr class=" test os/arch ">
 <td><a href="https://bugs.ruby-lang.org/issues/12500">12500</a>
 </td>
-<td>test mips</td>
+<td>test os/arch</td>
 <td><a href="https://bugs.ruby-lang.org/issues/12500">TestProcess#test_aspawn_too_long_path fails on mips with &quot;argument too big&quot;</a>
 </td>
 </tr>
@@ -2014,10 +2004,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/11704">Refinements only get &quot;used&quot; once in loop</a>
 </td>
 </tr>
-<tr class=" core solaris maybenotbug ">
+<tr class=" core os/arch maybenotbug ">
 <td><a href="https://bugs.ruby-lang.org/issues/11582">11582</a>
 </td>
-<td>core solaris maybenotbug</td>
+<td>core os/arch maybenotbug</td>
 <td><a href="https://bugs.ruby-lang.org/issues/11582">On Solaris, Rational#** returns -Infinity for Rational(0) when passed a negative Float</a>
 </td>
 </tr>
@@ -2035,10 +2025,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/11526">Streaming HTTP requests are not idempotent and should not be retried</a>
 </td>
 </tr>
-<tr class=" core aix ">
+<tr class=" core os/arch ">
 <td><a href="https://bugs.ruby-lang.org/issues/11514">11514</a>
 </td>
-<td>core aix</td>
+<td>core os/arch</td>
 <td><a href="https://bugs.ruby-lang.org/issues/11514">AIX6.1 - Ruby 2.2.3 - Segmentation fault in :byteslice</a>
 </td>
 </tr>
@@ -2105,10 +2095,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/11177">DATAでEOF文字以降が読めない</a>
 </td>
 </tr>
-<tr class=" thread linux ">
+<tr class=" thread os/arch ">
 <td><a href="https://bugs.ruby-lang.org/issues/11174">11174</a>
 </td>
-<td>thread linux</td>
+<td>thread os/arch</td>
 <td><a href="https://bugs.ruby-lang.org/issues/11174">threads memory leak</a>
 </td>
 </tr>
@@ -2168,10 +2158,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/10584">String.valid_encoding?, String.ascii_only? fails to account for BOM.</a>
 </td>
 </tr>
-<tr class=" test arm ">
+<tr class=" test os/arch ">
 <td><a href="https://bugs.ruby-lang.org/issues/10580">10580</a>
 </td>
-<td>test arm</td>
+<td>test os/arch</td>
 <td><a href="https://bugs.ruby-lang.org/issues/10580">TestProcess#test_deadlock_by_signal_at_forking fails on ARM</a>
 </td>
 </tr>
@@ -2259,10 +2249,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/9760">mkmf does not allow for linking against custom libraries when a system library is present</a>
 </td>
 </tr>
-<tr class=" wip-patch encoding ">
+<tr class=" patch encoding ">
 <td><a href="https://bugs.ruby-lang.org/issues/9737">9737</a>
 </td>
-<td>wip-patch encoding</td>
+<td>patch encoding</td>
 <td><a href="https://bugs.ruby-lang.org/issues/9737">Non-ASCII characters in the path to ruby executable break require paths</a>
 </td>
 </tr>
@@ -2273,10 +2263,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/9659">crash in FIPS mode after unchecked algo-&gt;init_func failure</a>
 </td>
 </tr>
-<tr class=" core arm ">
+<tr class=" core os/arch ">
 <td><a href="https://bugs.ruby-lang.org/issues/9507">9507</a>
 </td>
-<td>core arm</td>
+<td>core os/arch</td>
 <td><a href="https://bugs.ruby-lang.org/issues/9507">Ruby 2.1.0 is broken on ARMv5: tried to create Proc object without a block</a>
 </td>
 </tr>
