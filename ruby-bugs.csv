@@ -35,9 +35,9 @@
 9414,win encoding maybenotbug,strftime returns incorrectly encoded string
 9431,win core maybenotbug,In windows ruby IO.write returns count of bytes without count of CR character
 9435,win core,Kernel.system problem
-9507,core arm,Ruby 2.1.0 is broken on ARMv5: tried to create Proc object without a block
+9507,core os/arch,Ruby 2.1.0 is broken on ARMv5: tried to create Proc object without a block
 9659,ext,crash in FIPS mode after unchecked algo-&gt;init_func failure
-9737,wip-patch encoding,Non-ASCII characters in the path to ruby executable break require paths
+9737,patch encoding,Non-ASCII characters in the path to ruby executable break require paths
 9760,build,mkmf does not allow for linking against custom libraries when a system library is present
 9806,lib maybenotbug,URI#encode doesn&#39;t encode characters &#39;[&#39; and &#39;]&#39;.  They should be encoded as %5B and %5D respectively.
 9921,build maybenotbug,"gmtime_r, win32.h, and &lt;string&gt;"
@@ -50,7 +50,7 @@
 10436,patch ext,ruby -c and ripper inconsistency: m(&amp;nil) {}
 10470,tracepoint,TracePoint cannot trace attr_accessor/reader/writer method
 10542,build,out-of-place build from repository builds enc/trans/*.c in the source directory and the build directory 
-10580,test arm,TestProcess#test_deadlock_by_signal_at_forking fails on ARM
+10580,test os/arch,TestProcess#test_deadlock_by_signal_at_forking fails on ARM
 10584,encoding maybenotbug,"String.valid_encoding?, String.ascii_only? fails to account for BOM."
 10855,patch lib,[PATCH] Matrix#inverse returns matrix of integers whenever possible
 10902,core,require(&quot;enumerator&quot;) scans LOAD_PATH 2x on every invocation
@@ -59,7 +59,7 @@
 11064,core maybenotbug,#singleton_methods for objects with special singleton_class returns an empty array
 11142,win core,Command line argument parser on windows handles double quotes inconsistently.
 11164,core notbug,Garbage collector in Ruby 2.2 provokes unexpected CoW
-11174,thread linux,threads memory leak
+11174,thread os/arch,threads memory leak
 11177,win core,DATAでEOF文字以降が読めない
 11182,refine,Refinement with alias causes strange behavior
 11183,core,Cumulative error on Complex::I ** 100000000000000000000000000000000
@@ -69,10 +69,10 @@
 11438,win thread,"native_thread_init_stack() get machine.stack_start unequal to thread&#39;s stack start address, x86 win32"
 11450,patch lib,HTTPHeader.content_range throws error on non-byte units
 11480,test,killed by SIGIOT (signal 6) on fork
-11514,core aix,AIX6.1 - Ruby 2.2.3 - Segmentation fault in :byteslice
+11514,core os/arch,AIX6.1 - Ruby 2.2.3 - Segmentation fault in :byteslice
 11526,patch lib,Streaming HTTP requests are not idempotent and should not be retried
 11531,lib maybenotbug,IPAddr#== implements wrong logic
-11582,core solaris maybenotbug,"On Solaris, Rational#** returns -Infinity for Rational(0) when passed a negative Float"
+11582,core os/arch maybenotbug,"On Solaris, Rational#** returns -Infinity for Rational(0) when passed a negative Float"
 11704,refine maybenotbug,Refinements only get &quot;used&quot; once in loop
 11706,encoding notbug,"Clean up files etc/unicode/name2ctype.{h.blt,kwd,src}"
 11779,refine notbug,Module#using does not make sense as a method
@@ -91,7 +91,7 @@
 12444,cygwin core,Segmentation fault when running TestException#test_machine_stackoverflow on cygwin
 12445,cygwin thread,Testing TestIO#test_open_fifo_does_not_block_other_threads results in deadlock on cygwin
 12473,test,Test failure on fedora with TestTimeExtension#test_huge_precision
-12500,test mips,TestProcess#test_aspawn_too_long_path fails on mips with &quot;argument too big&quot;
+12500,test os/arch,TestProcess#test_aspawn_too_long_path fails on mips with &quot;argument too big&quot;
 12506,cygwin,"On cygwin, Feature #5994 does not work"
 12540,core,test failures when SHARABLE_MIDDLE_SUBSTRING=1
 12547,core,"Remove ONIG_UNICODE_VERSION_... in enc/unicode/case-folding.rb, casefold.h"
@@ -127,7 +127,7 @@
 14275,patch core,GC not aggressive enough
 14364,core,Regexp last match variable in procs
 14378,win notbug,"On windows, RUBY_FIXNUM_MAX of 64 bits ruby  is 32 bits"
-14387,core linux,Ruby 2.5 を Alpine Linux で実行すると比較的浅めで SystemStackError 例外になる
+14387,core os/arch,Ruby 2.5 を Alpine Linux で実行すると比較的浅めで SystemStackError 例外になる
 14391,patch ext perf,Integer#digitsが遅い
 14409,build,インストール手順の改善
 14418,regexp perf,ruby 2.5 slow regexp execution
@@ -136,7 +136,7 @@
 14456,encoding,Dir.glob with FNM_CASEFOLD gives ArgumentError: invalid byte sequence in UTF-8
 14474,test,skip &quot;TestException#test_thread_signal_location&quot; as known bug
 14479,tracepoint,Exceptions raised from a :call tracepoint can sometimes be &quot;rescued&quot; inside the method
-14480,arm build,miniruby crashing when compiled with -O2 or -O1 on aarch64
+14480,os/arch build,miniruby crashing when compiled with -O2 or -O1 on aarch64
 14543,build,`make commit` show error of `common-srcs`
 14570,win core,Wired behavior of File.expand_path() on Windows
 14582,tracepoint,Unable to use `method__entry` and `method_return` tracing probes since 2.5
@@ -150,9 +150,9 @@
 14727,win thread,TestQueue#test_queue_with_trap always timeout on Windows10
 14743,doc notbug,Some links broken in README
 14744,refine,Refinements modules have a superclass
-14761,solaris thread,TestThread#test_join_limits hangs up on Solaris 10 with gcc
+14761,os/arch thread,TestThread#test_join_limits hangs up on Solaris 10 with gcc
 14817,tracepoint,TracePoint#parameters for bmethod&#39;s return event should return the same value as its Method#parameters
-14826,solaris build,make: *** [.ext/include/sparc-solaris2.10/rb_mjit_min_header-2.6.0.h] Error 1 on Solaris 10 with very old gcc3
+14826,os/arch build,make: *** [.ext/include/sparc-solaris2.10/rb_mjit_min_header-2.6.0.h] Error 1 on Solaris 10 with very old gcc3
 14835,tracepoint,Impossible to know whether an exception was rescued or not using TracePoint
 14838,regexp notbug,RegexpError with double &quot;s&quot; in look-behind assertion in case-insensitive unicode regexp
 14870,tracepoint,Both TracePoint&#39;s :call and :c_call filters seem to skip a lot of builtin methods
@@ -194,7 +194,7 @@
 15674,core,"Regression: ObjectSpace.allocation_sourceline produces the wrong location for allocations, it shows the end of the method instead of the line where the object was created"
 15764,parser,Whitespace and control characters should not be permitted in tokens
 15779,patch core,"After NoMemoryError, ruby freezes and takes 100% CPU"
-15787,haiku lib maybenotbug,LoadError by EPERM on read-only volume
+15787,os/arch lib maybenotbug,LoadError by EPERM on read-only volume
 15790,core autoload,Strange interaction between autoload and $LOADED_FEATURES
 15856,core perf,Performance of redundant `Kernel.require` is slow when many gems are activated
 15928,patch core,Constant declaration does not conform to JIS 3017:2013
@@ -202,7 +202,7 @@
 16143,patch core,BOM UTF-8 is not removed after rewind
 16145,regexp,"regexp match error if mixing /i, character classes, and utf8"
 16158,regexp notbug,&quot;st&quot; Character Sequence In Regex Look-Behind Causes Illegal Pattern Error When Combined With POSIX Bracket Expressions And Case Insensitivity Flag
-16185,aix notbug,basictest failure on AIX 6.1 for 64bit build
+16185,os/arch notbug,basictest failure on AIX 6.1 for 64bit build
 16186,patch core,Calling Net::HTTP from within an #inspect implementation hang when invoked from p
 16243,core perf,case/when is slower than if on MRI
 16265,win thread,"Test (spec) failure using current MSYS2 tools, related to -fstack-protector and possibly D_FORTIFY_SOURCE=2"
@@ -214,7 +214,7 @@
 16475,patch build,[Installation process - compiling ruby 2.7.0 from source} &quot;make install&quot; step oddity for ruby 2.7.0 on linux mint (debian base)
 16490,build lib,mkmf.rbの非互換な変更
 16492,test,TestBugReporter#test_bug_reporter_add test failures
-16493,thread arm,TestThreadQueue#test_thr_kill is flaky on AArch64
+16493,thread os/arch,TestThreadQueue#test_thr_kill is flaky on AArch64
 16497,ext,StringIO#internal_encoding is broken (more severely in 2.7)
 16608,patch ext,ConditionVariable#wait should return false when timeout exceeded
 16612,patch core,Enumerator::ArithmeticSequence#last with float range produces incorrect value
@@ -226,7 +226,7 @@
 16776,core,Regression in coverage library
 16782,thread,`lock&#39;: deadlock; recursive locking (ThreadError) in 2.7.1
 16805,fiber,Coroutine&#39;s license is unclear
-16810,s390,ruby segfaults on s390x with musl libc
+16810,os/arch,ruby segfaults on s390x with musl libc
 16819,core,Line reporting off by one when reporting line of a hash?
 16820,misc,LEGAL is out of sync
 16829,maybenotbug fiber,Exceptions raised from within an enumerated method lose part of their stacktrace
@@ -237,8 +237,8 @@
 16889,tracepoint,"TracePoint.enable { ... } also activates the TracePoint for other threads, even outside the block"
 16905,build,Ruby required to build Ruby on Haiku?
 16908,notbug core,Strange behaviour of Hash#shift when used with `default_proc`.
-16920,arm thread,TestThread#test_signal_at_join fails on aarch64
-16921,s390,s390x: random test failures for timeout or segmentation fault
+16920,os/arch thread,TestThread#test_signal_at_join fails on aarch64
+16921,os/arch,s390x: random test failures for timeout or segmentation fault
 16927,encoding,String#tr won&#39;t return the expected result for some sign with diacritics
 16951,lib,Consistently referer dependencies
 16953,win build,Windows bash bin files removed in master
@@ -254,7 +254,7 @@
 17101,maybenotbug perf lib,YAML.load_file: Massive slowdown under Ruby 2.7 vs. Ruby 2.4
 17120,core patch,String#start_with? return wrong result for Regexp patterns containing /\K/
 17132,build,vcs.rb doesn&#39;t detect git submodules as vcs
-17142,build aix,Ruby fails to build in AIX 
+17142,build os/arch,Ruby fails to build in AIX 
 17159,ractor,extend `define_method` for Ractor
 17180,ractor,Ractor and constant referencing
 17183,core,Float round working weirdly
@@ -301,7 +301,7 @@
 17618,fiber,Exceptions in Fiber Scheduler causes a segv
 17623,irb,irb starts with some local variables already defined
 17624,ractor,Ractor.receive is not thread-safe
-17629,patch ext macos,"macOS, readline compiled with libedit: adding entries to history doesn&#39;t work unless Readline.readline is called before populating it"
+17629,patch ext os/arch,"macOS, readline compiled with libedit: adding entries to history doesn&#39;t work unless Readline.readline is called before populating it"
 17631,maybenotbug,`Numeric#real?` incorrectly returns true for `NaN` and `INFINITY`
 17646,patch build,Check for `__builtin_mul_overflow` with `long long` arguments
 17655,maybenotbug core,Experiencing Repeated Segmentation Faults Using Puma with Ruby 3.0.0
@@ -324,13 +324,13 @@
 17739,patch core,Array#sort! changes the order even if the receiver raises FrozenError in given block
 17745,patch notbug,"`IO#close_on_exec=` returns different value when called with `send, __send__, public_send` or not"
 17757,patch core,Hash#slice does not keep compare_by_identity on the results
-17759,patch linux,Correct `ioctl_req_t` for musl
+17759,patch os/arch,Correct `ioctl_req_t` for musl
 17765,notbug core,Segmentation fault when calling String#gsub
 17767,patch core,`Cloned ENV` inconsistently returns `ENV` or `self`
 17772,maybenotbug perf,Performance issue with NameError message in context with large instance variables (not caused by did_you_mean)
 17774,regexp,Quantified empty group causes regex to fail
 17788,patch build,ruby 3.0.0 - compiling c++ extension on alpine fails
-17792,core arm,make notes and make test fail with Ruby3.0.1p64 RaspberryPI 4B Ubuntu 20.10 ARM64
+17792,core os/arch,make notes and make test fail with Ruby3.0.1p64 RaspberryPI 4B Ubuntu 20.10 ARM64
 17794,patch core,addr2line.c can free(3) an invalid pointer without zlib
 17799,core,Seg fault in rb_class_clear_method_cache
 17801,fiber ext,repeated read from PTY blocks all Fibers
@@ -346,10 +346,10 @@
 17838,maybenotbug lib,`Set#intersect?` and enumerables
 17839,patch win lib,Windows CI failures with net/http - fix at ruby/net-http
 17840,build,`make install` overriding file permission with 644
-17843,mac maybenotbug,Ruby on Rails error[BUG] Segmentation fault at 0x0000000000000110 ruby 3.0.1p64 (2021-04-05 revision 0fb782ee38) [x86_64-darwin15] (#42110)
+17843,maybenotbug,Ruby on Rails error[BUG] Segmentation fault at 0x0000000000000110 ruby 3.0.1p64 (2021-04-05 revision 0fb782ee38) [x86_64-darwin15] (#42110)
 17855,maybenotbug,[BUG] object allocation during garbage collection phase
 17864,ractor,[BUG] try to mark T_NONE object (in Ractors)
 17866,maybenotbug,Incompatible changes with Psych 4.0.0
 17869,ext,`Ripper.sexp`&#39;s S-expression when using endless method definition
 17870,build,`make --output-sync=line install` breaks installation
-17871,ppc,TestGCCompact#test_ast_compacts test failing again
+17871,os/arch,TestGCCompact#test_ast_compacts test failing again
