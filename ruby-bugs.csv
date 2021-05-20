@@ -329,8 +329,6 @@
 17767,patch core,`Cloned ENV` inconsistently returns `ENV` or `self`
 17772,maybenotbug perf,Performance issue with NameError message in context with large instance variables (not caused by did_you_mean)
 17774,regexp,Quantified empty group causes regex to fail
-17781,patch lib,"Resolv::DNS RequestID table allocations are never freed, causing DNS lookups to eventually hang"
-17783,patch lib,Running sidekiq with ruby 3.0 (possible thread deadlock on resolv request_id allocation and free)
 17788,patch build,ruby 3.0.0 - compiling c++ extension on alpine fails
 17792,core arm,make notes and make test fail with Ruby3.0.1p64 RaspberryPI 4B Ubuntu 20.10 ARM64
 17794,patch core,addr2line.c can free(3) an invalid pointer without zlib
@@ -352,4 +350,6 @@
 17855,maybenotbug,[BUG] object allocation during garbage collection phase
 17864,ractor,[BUG] try to mark T_NONE object (in Ractors)
 17866,maybenotbug,Incompatible changes with Psych 4.0.0
-17868,core,Strange result of Coverage for while-in-while
+17869,ext,`Ripper.sexp`&#39;s S-expression when using endless method definition
+17870,build,`make --output-sync=line install` breaks installation
+17871,ppc,TestGCCompact#test_ast_compacts test failing again
