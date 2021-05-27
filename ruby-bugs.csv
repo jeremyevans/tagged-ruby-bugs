@@ -243,7 +243,7 @@
 16951,lib,Consistently referer dependencies
 16953,win build,Windows bash bin files removed in master
 16959,maybenotbug core,Weakmap has specs and third-party usage despite being a private API
-16983,core,RubyVM::AbstractSyntaxTree.of(method) returns meaningless node if the method is defined in eval
+16983,patch core,RubyVM::AbstractSyntaxTree.of(method) returns meaningless node if the method is defined in eval
 16997,core win,IO#gets converts some \r\n to \n with universal_newline: false
 17007,refine,SystemStackError when using super inside Module included and lexically inside refinement
 17008,jit win,JIT enabled on Windows can cause constant conhost pop-ups
@@ -258,7 +258,7 @@
 17159,ractor,extend `define_method` for Ractor
 17180,ractor,Ractor and constant referencing
 17183,core,Float round working weirdly
-17189,test thread,test_thread.rb in testsuite deadlocks with musl libc 1.2.1
+17189,test thread os/arch,test_thread.rb in testsuite deadlocks with musl libc 1.2.1
 17196,ractor,Segmentation Fault with Socket#close in Ractors
 17212,build,FreeBSDで3.0.0-preview1のビルドが失敗する
 17263,fiber perf,"Fiber context switch degrades with number of fibers, limit on number of fibers"
@@ -284,7 +284,7 @@
 17513,ractor,Methods of shareable objects and UnboundMethods should be shareable
 17516,ractor,forking in a ractor causes Ruby to crash
 17529,ractor,Ractor Segfaults with GC enabled
-17530,irb,irb handles &lt;&lt; incorrectly with variable as identifier
+17530,patch irb,irb handles &lt;&lt; incorrectly with variable as identifier
 17531,ractor,`did_you_mean` not Ractor friendly
 17543,ractor,Ractor isolation broken by `self` in shareable proc
 17545,core maybenotbug,Calling dup on a subclass of Proc returns a Proc and not the subclass
@@ -302,7 +302,6 @@
 17623,irb,irb starts with some local variables already defined
 17624,ractor,Ractor.receive is not thread-safe
 17629,patch ext os/arch,"macOS, readline compiled with libedit: adding entries to history doesn&#39;t work unless Readline.readline is called before populating it"
-17631,maybenotbug,`Numeric#real?` incorrectly returns true for `NaN` and `INFINITY`
 17646,patch build,Check for `__builtin_mul_overflow` with `long long` arguments
 17655,maybenotbug core,Experiencing Repeated Segmentation Faults Using Puma with Ruby 3.0.0
 17656,patch core,Improper functions shown in C level backtrace information
@@ -321,7 +320,6 @@
 17726,notbug,`respond_to_missing?` doesn&#39;t raise when called from `defined?`
 17728,notbug,[BUG] Segmentation fault at 0x0000000000000000
 17737,maybenotbug core,`Array#permutation` does not immediately check the arity when no block is given
-17739,patch core,Array#sort! changes the order even if the receiver raises FrozenError in given block
 17745,patch notbug,"`IO#close_on_exec=` returns different value when called with `send, __send__, public_send` or not"
 17757,patch core,Hash#slice does not keep compare_by_identity on the results
 17759,patch os/arch,Correct `ioctl_req_t` for musl
@@ -338,7 +336,6 @@
 17810,patch core,addr2line.c: Some symbol names missing in C backtrace with Clang/LLVM
 17813,patch win ext,rb_funcall() may reset the latest socket error unexpectedlly since Ruby 3.0.0
 17817,jit,--jit outputs ./tmp/_ruby_mjit_*.h: No such file or directory on with TMP
-17822,core patch,Inconsistent visibility behavior with refinements
 17823,core,addr2line.c: Interpret `DW_RLE_start_length`
 17824,lib patch,Gem::Deprecate#deprecate doesn&#39;t work with method with keyword arguments
 17826,ractor,Ractor#take hangs if used in multiple Threads
@@ -350,6 +347,10 @@
 17855,maybenotbug,[BUG] object allocation during garbage collection phase
 17864,ractor,[BUG] try to mark T_NONE object (in Ractors)
 17866,maybenotbug,Incompatible changes with Psych 4.0.0
-17869,ext,`Ripper.sexp`&#39;s S-expression when using endless method definition
-17870,build,`make --output-sync=line install` breaks installation
-17871,os/arch,TestGCCompact#test_ast_compacts test failing again
+17875,fiber,Segfault when reusing a closed Fiber scheduler inside a Thread
+17878,ractor,bootstraptest/test_ractor.rb:224 a random failing test with &quot;The outgoing-port is already closed (Ractor::ClosedError)&quot;
+17880,core,[BUG] We are killing the stack canary set by `opt_setinlinecache`
+17882,ractor cygwin,bootstraptest/test_ractor.rb:224 segfaults on Cygwin
+17885,core,require_relative and require should be compatible with each other when symlinked files are used
+17887,core,Missed constant lookup after prepend
+17889,core,Enumerator::Lazy#with_index should return size
