@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>355 Tagged Open Ruby Bugs as of 2021-05-21 01:38:08 +0900</title>
+<title>356 Tagged Open Ruby Bugs as of 2021-05-28 02:16:47 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -11,10 +11,10 @@
 <input type="submit" value="build" />
 <input type="submit" value="lib" />
 <input type="submit" value="ext" />
+<input type="submit" value="ractor" />
 <input type="submit" value="thread" />
 <input type="submit" value="encoding" />
 <input type="submit" value="notbug" />
-<input type="submit" value="ractor" />
 <input type="submit" value="os/arch" />
 <input type="submit" value="test" />
 <input type="submit" value="cygwin" />
@@ -33,9 +33,9 @@
 <input type="submit" value="misc" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">355</span> matched)
+(<span id="matched">356</span> matched)
 <table>
-<caption>355 Tagged Open Ruby Bugs as of 2021-05-21 01:38:08 +0900</caption>
+<caption>356 Tagged Open Ruby Bugs as of 2021-05-28 02:16:47 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -44,25 +44,53 @@
 </tr>
 </thead>
 <tbody>
-<tr class=" os/arch ">
-<td><a href="https://bugs.ruby-lang.org/issues/17871">17871</a>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/17889">17889</a>
 </td>
-<td>os/arch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17871">TestGCCompact#test_ast_compacts test failing again</a>
-</td>
-</tr>
-<tr class=" build ">
-<td><a href="https://bugs.ruby-lang.org/issues/17870">17870</a>
-</td>
-<td>build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17870">`make --output-sync=line install` breaks installation</a>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17889">Enumerator::Lazy#with_index should return size</a>
 </td>
 </tr>
-<tr class=" ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/17869">17869</a>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/17887">17887</a>
 </td>
-<td>ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17869">`Ripper.sexp`&#39;s S-expression when using endless method definition</a>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17887">Missed constant lookup after prepend</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/17885">17885</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17885">require_relative and require should be compatible with each other when symlinked files are used</a>
+</td>
+</tr>
+<tr class=" ractor cygwin ">
+<td><a href="https://bugs.ruby-lang.org/issues/17882">17882</a>
+</td>
+<td>ractor cygwin</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17882">bootstraptest/test_ractor.rb:224 segfaults on Cygwin</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/17880">17880</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17880">[BUG] We are killing the stack canary set by `opt_setinlinecache`</a>
+</td>
+</tr>
+<tr class=" ractor ">
+<td><a href="https://bugs.ruby-lang.org/issues/17878">17878</a>
+</td>
+<td>ractor</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17878">bootstraptest/test_ractor.rb:224 a random failing test with &quot;The outgoing-port is already closed (Ractor::ClosedError)&quot;</a>
+</td>
+</tr>
+<tr class=" fiber ">
+<td><a href="https://bugs.ruby-lang.org/issues/17875">17875</a>
+</td>
+<td>fiber</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17875">Segfault when reusing a closed Fiber scheduler inside a Thread</a>
 </td>
 </tr>
 <tr class=" maybenotbug ">
@@ -140,13 +168,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17823">addr2line.c: Interpret `DW_RLE_start_length`</a>
-</td>
-</tr>
-<tr class=" core patch ">
-<td><a href="https://bugs.ruby-lang.org/issues/17822">17822</a>
-</td>
-<td>core patch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17822">Inconsistent visibility behavior with refinements</a>
 </td>
 </tr>
 <tr class=" jit ">
@@ -259,13 +280,6 @@
 </td>
 <td>patch notbug</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17745">`IO#close_on_exec=` returns different value when called with `send, __send__, public_send` or not</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/17739">17739</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17739">Array#sort! changes the order even if the receiver raises FrozenError in given block</a>
 </td>
 </tr>
 <tr class=" maybenotbug core ">
@@ -394,13 +408,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17646">Check for `__builtin_mul_overflow` with `long long` arguments</a>
 </td>
 </tr>
-<tr class=" maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/17631">17631</a>
-</td>
-<td>maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17631">`Numeric#real?` incorrectly returns true for `NaN` and `INFINITY`</a>
-</td>
-</tr>
 <tr class=" patch ext os/arch ">
 <td><a href="https://bugs.ruby-lang.org/issues/17629">17629</a>
 </td>
@@ -520,10 +527,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17531">`did_you_mean` not Ractor friendly</a>
 </td>
 </tr>
-<tr class=" irb ">
+<tr class=" patch irb ">
 <td><a href="https://bugs.ruby-lang.org/issues/17530">17530</a>
 </td>
-<td>irb</td>
+<td>patch irb</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17530">irb handles &lt;&lt; incorrectly with variable as identifier</a>
 </td>
 </tr>
@@ -702,10 +709,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17196">Segmentation Fault with Socket#close in Ractors</a>
 </td>
 </tr>
-<tr class=" test thread ">
+<tr class=" test thread os/arch ">
 <td><a href="https://bugs.ruby-lang.org/issues/17189">17189</a>
 </td>
-<td>test thread</td>
+<td>test thread os/arch</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17189">test_thread.rb in testsuite deadlocks with musl libc 1.2.1</a>
 </td>
 </tr>
@@ -807,10 +814,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16997">IO#gets converts some \r\n to \n with universal_newline: false</a>
 </td>
 </tr>
-<tr class=" core ">
+<tr class=" patch core ">
 <td><a href="https://bugs.ruby-lang.org/issues/16983">16983</a>
 </td>
-<td>core</td>
+<td>patch core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16983">RubyVM::AbstractSyntaxTree.of(method) returns meaningless node if the method is defined in eval</a>
 </td>
 </tr>
