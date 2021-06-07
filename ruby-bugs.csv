@@ -217,7 +217,6 @@
 16493,thread os/arch,TestThreadQueue#test_thr_kill is flaky on AArch64
 16497,ext,StringIO#internal_encoding is broken (more severely in 2.7)
 16608,patch ext,ConditionVariable#wait should return false when timeout exceeded
-16612,patch core,Enumerator::ArithmeticSequence#last with float range produces incorrect value
 16654,core,Segfault in rb_str_hash
 16672,patch lib,net/http leaves original content-length header intact after inflating response
 16674,build,Build issue of FreeBSD 12
@@ -293,7 +292,6 @@
 17573,core,Crashes in profiling tools when signals arrive in non-Ruby threads
 17578,lib,mkmf experimental C++ Support
 17583,core,Segfault on large stack(RUBY_THREAD_VM_STACK_SIZE)
-17584,jit,Segmentation fault with Ruby 3.0
 17587,ractor,Segmentation fault with ractors and unix signals
 17588,build win,Cannot build with library path with spaces on MSVC
 17607,maybenotbug fiber,ChildProcess vs RUBY_PIPE_NONBLOCK_DEFAULT
@@ -352,5 +350,10 @@
 17880,core,[BUG] We are killing the stack canary set by `opt_setinlinecache`
 17882,ractor cygwin,bootstraptest/test_ractor.rb:224 segfaults on Cygwin
 17885,core,require_relative and require should be compatible with each other when symlinked files are used
-17887,core,Missed constant lookup after prepend
-17889,core,Enumerator::Lazy#with_index should return size
+17887,patch core,Missed constant lookup after prepend
+17923,patch win,try to mark T_NONE object with miniruby x86 Win32 buildt with MSVC
+17925,parser,Pattern matching syntax using semicolon one-line
+17926,os-arch,spec/ruby/core/file/atime_spec.rb: a random failing test on Travis ppc64le
+17929,build win,Compile fails on Windows --with-static-linked-ext
+17931,build win,Compile fails on windows setup option nodynamic
+17933,lib,`Net::HTTP#write_timeout` doesn&#39;t work with `body_stream`
