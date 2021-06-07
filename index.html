@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>356 Tagged Open Ruby Bugs as of 2021-05-28 02:16:47 +0900</title>
+<title>359 Tagged Open Ruby Bugs as of 2021-06-08 00:24:35 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -24,18 +24,19 @@
 <input type="submit" value="refine" />
 <input type="submit" value="regexp" />
 <input type="submit" value="autoload" />
-<input type="submit" value="jit" />
-<input type="submit" value="irb" />
 <input type="submit" value="parser" />
+<input type="submit" value="irb" />
+<input type="submit" value="jit" />
 <input type="submit" value="unfixable" />
 <input type="submit" value="backport" />
 <input type="submit" value="doc" />
-<input type="submit" value="misc" /></p>
+<input type="submit" value="misc" />
+<input type="submit" value="os-arch" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">356</span> matched)
+(<span id="matched">359</span> matched)
 <table>
-<caption>356 Tagged Open Ruby Bugs as of 2021-05-28 02:16:47 +0900</caption>
+<caption>359 Tagged Open Ruby Bugs as of 2021-06-08 00:24:35 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -44,17 +45,52 @@
 </tr>
 </thead>
 <tbody>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/17889">17889</a>
+<tr class=" lib ">
+<td><a href="https://bugs.ruby-lang.org/issues/17933">17933</a>
 </td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17889">Enumerator::Lazy#with_index should return size</a>
+<td>lib</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17933">`Net::HTTP#write_timeout` doesn&#39;t work with `body_stream`</a>
 </td>
 </tr>
-<tr class=" core ">
+<tr class=" build win ">
+<td><a href="https://bugs.ruby-lang.org/issues/17931">17931</a>
+</td>
+<td>build win</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17931">Compile fails on windows setup option nodynamic</a>
+</td>
+</tr>
+<tr class=" build win ">
+<td><a href="https://bugs.ruby-lang.org/issues/17929">17929</a>
+</td>
+<td>build win</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17929">Compile fails on Windows --with-static-linked-ext</a>
+</td>
+</tr>
+<tr class=" os-arch ">
+<td><a href="https://bugs.ruby-lang.org/issues/17926">17926</a>
+</td>
+<td>os-arch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17926">spec/ruby/core/file/atime_spec.rb: a random failing test on Travis ppc64le</a>
+</td>
+</tr>
+<tr class=" parser ">
+<td><a href="https://bugs.ruby-lang.org/issues/17925">17925</a>
+</td>
+<td>parser</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17925">Pattern matching syntax using semicolon one-line</a>
+</td>
+</tr>
+<tr class=" patch win ">
+<td><a href="https://bugs.ruby-lang.org/issues/17923">17923</a>
+</td>
+<td>patch win</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17923">try to mark T_NONE object with miniruby x86 Win32 buildt with MSVC</a>
+</td>
+</tr>
+<tr class=" patch core ">
 <td><a href="https://bugs.ruby-lang.org/issues/17887">17887</a>
 </td>
-<td>core</td>
+<td>patch core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17887">Missed constant lookup after prepend</a>
 </td>
 </tr>
@@ -462,13 +498,6 @@
 </td>
 <td>ractor</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17587">Segmentation fault with ractors and unix signals</a>
-</td>
-</tr>
-<tr class=" jit ">
-<td><a href="https://bugs.ruby-lang.org/issues/17584">17584</a>
-</td>
-<td>jit</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17584">Segmentation fault with Ruby 3.0</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -994,13 +1023,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16654">Segfault in rb_str_hash</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/16612">16612</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16612">Enumerator::ArithmeticSequence#last with float range produces incorrect value</a>
 </td>
 </tr>
 <tr class=" patch ext ">
