@@ -1,20 +1,20 @@
 <html>
 <head>
-<title>359 Tagged Open Ruby Bugs as of 2021-06-08 00:24:35 +0900</title>
+<title>363 Tagged Open Ruby Bugs as of 2021-06-15 08:27:44 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
 <p class="filter-buttons">Available Tags: <input type="submit" value="core" />
 <input type="submit" value="patch" />
 <input type="submit" value="win" />
-<input type="submit" value="maybenotbug" />
 <input type="submit" value="build" />
+<input type="submit" value="maybenotbug" />
 <input type="submit" value="lib" />
 <input type="submit" value="ext" />
 <input type="submit" value="ractor" />
-<input type="submit" value="thread" />
-<input type="submit" value="encoding" />
 <input type="submit" value="notbug" />
+<input type="submit" value="encoding" />
+<input type="submit" value="thread" />
 <input type="submit" value="os/arch" />
 <input type="submit" value="test" />
 <input type="submit" value="cygwin" />
@@ -27,16 +27,16 @@
 <input type="submit" value="parser" />
 <input type="submit" value="irb" />
 <input type="submit" value="jit" />
+<input type="submit" value="os-arch" />
 <input type="submit" value="unfixable" />
 <input type="submit" value="backport" />
 <input type="submit" value="doc" />
-<input type="submit" value="misc" />
-<input type="submit" value="os-arch" /></p>
+<input type="submit" value="misc" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">359</span> matched)
+(<span id="matched">363</span> matched)
 <table>
-<caption>359 Tagged Open Ruby Bugs as of 2021-06-08 00:24:35 +0900</caption>
+<caption>363 Tagged Open Ruby Bugs as of 2021-06-15 08:27:44 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -45,6 +45,55 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" ractor ">
+<td><a href="https://bugs.ruby-lang.org/issues/17985">17985</a>
+</td>
+<td>ractor</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17985">Ractor + GC: [BUG] not single ractor mode</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/17984">17984</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17984">[BUG] try to mark T_NONE object </a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/17951">17951</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17951">Collistions in Proc#hash values for blocks defined at the same line</a>
+</td>
+</tr>
+<tr class=" build os-arch ">
+<td><a href="https://bugs.ruby-lang.org/issues/17949">17949</a>
+</td>
+<td>build os-arch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17949">[SOLARIS11, SPARC, SEGFAULT] generating encdb.h</a>
+</td>
+</tr>
+<tr class=" win ">
+<td><a href="https://bugs.ruby-lang.org/issues/17946">17946</a>
+</td>
+<td>win</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17946">win32/win32.c: `&amp;` has lower precedence than `==`</a>
+</td>
+</tr>
+<tr class=" ext ">
+<td><a href="https://bugs.ruby-lang.org/issues/17945">17945</a>
+</td>
+<td>ext</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17945">Date::Infinity comparison &lt;=&gt; with Float::INFINITY not symmetric</a>
+</td>
+</tr>
+<tr class=" core notbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/17940">17940</a>
+</td>
+<td>core notbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17940">Bus Error</a>
+</td>
+</tr>
 <tr class=" lib ">
 <td><a href="https://bugs.ruby-lang.org/issues/17933">17933</a>
 </td>
@@ -78,13 +127,6 @@
 </td>
 <td>parser</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17925">Pattern matching syntax using semicolon one-line</a>
-</td>
-</tr>
-<tr class=" patch win ">
-<td><a href="https://bugs.ruby-lang.org/issues/17923">17923</a>
-</td>
-<td>patch win</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17923">try to mark T_NONE object with miniruby x86 Win32 buildt with MSVC</a>
 </td>
 </tr>
 <tr class=" patch core ">
@@ -281,13 +323,6 @@
 </td>
 <td>maybenotbug perf</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17772">Performance issue with NameError message in context with large instance variables (not caused by did_you_mean)</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/17767">17767</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17767">`Cloned ENV` inconsistently returns `ENV` or `self`</a>
 </td>
 </tr>
 <tr class=" notbug core ">
@@ -974,13 +1009,6 @@
 </td>
 <td>fiber</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16805">Coroutine&#39;s license is unclear</a>
-</td>
-</tr>
-<tr class=" thread ">
-<td><a href="https://bugs.ruby-lang.org/issues/16782">16782</a>
-</td>
-<td>thread</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16782">`lock&#39;: deadlock; recursive locking (ThreadError) in 2.7.1</a>
 </td>
 </tr>
 <tr class=" core ">
