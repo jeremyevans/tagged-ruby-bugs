@@ -223,7 +223,6 @@
 16694,core,JIT vs hardened GCC with PCH
 16759,win core,MinGW 2.5 - SEGV bug with Binding#local_variable_set
 16776,core,Regression in coverage library
-16782,thread,`lock&#39;: deadlock; recursive locking (ThreadError) in 2.7.1
 16805,fiber,Coroutine&#39;s license is unclear
 16810,os/arch,ruby segfaults on s390x with musl libc
 16819,core,Line reporting off by one when reporting line of a hash?
@@ -322,7 +321,6 @@
 17757,patch core,Hash#slice does not keep compare_by_identity on the results
 17759,patch os/arch,Correct `ioctl_req_t` for musl
 17765,notbug core,Segmentation fault when calling String#gsub
-17767,patch core,`Cloned ENV` inconsistently returns `ENV` or `self`
 17772,maybenotbug perf,Performance issue with NameError message in context with large instance variables (not caused by did_you_mean)
 17774,regexp,Quantified empty group causes regex to fail
 17788,patch build,ruby 3.0.0 - compiling c++ extension on alpine fails
@@ -351,9 +349,15 @@
 17882,ractor cygwin,bootstraptest/test_ractor.rb:224 segfaults on Cygwin
 17885,core,require_relative and require should be compatible with each other when symlinked files are used
 17887,patch core,Missed constant lookup after prepend
-17923,patch win,try to mark T_NONE object with miniruby x86 Win32 buildt with MSVC
 17925,parser,Pattern matching syntax using semicolon one-line
 17926,os-arch,spec/ruby/core/file/atime_spec.rb: a random failing test on Travis ppc64le
 17929,build win,Compile fails on Windows --with-static-linked-ext
 17931,build win,Compile fails on windows setup option nodynamic
 17933,lib,`Net::HTTP#write_timeout` doesn&#39;t work with `body_stream`
+17940,core notbug,Bus Error
+17945,ext,Date::Infinity comparison &lt;=&gt; with Float::INFINITY not symmetric
+17946,win,win32/win32.c: `&amp;` has lower precedence than `==`
+17949,build os-arch,"[SOLARIS11, SPARC, SEGFAULT] generating encdb.h"
+17951,core,Collistions in Proc#hash values for blocks defined at the same line
+17984,core,[BUG] try to mark T_NONE object 
+17985,ractor,Ractor + GC: [BUG] not single ractor mode
