@@ -1,42 +1,41 @@
 <html>
 <head>
-<title>366 Tagged Open Ruby Bugs as of 2021-06-16 00:02:54 +0900</title>
+<title>360 Tagged Open Ruby Bugs as of 2021-06-16 04:41:07 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
 <p class="filter-buttons">Available Tags: <input type="submit" value="core" />
 <input type="submit" value="patch" />
 <input type="submit" value="win" />
-<input type="submit" value="maybenotbug" />
 <input type="submit" value="build" />
-<input type="submit" value="lib" />
+<input type="submit" value="maybenotbug" />
 <input type="submit" value="ext" />
-<input type="submit" value="ractor" />
+<input type="submit" value="lib" />
 <input type="submit" value="notbug" />
+<input type="submit" value="ractor" />
+<input type="submit" value="os/arch" />
 <input type="submit" value="encoding" />
 <input type="submit" value="thread" />
 <input type="submit" value="test" />
-<input type="submit" value="os/arch" />
 <input type="submit" value="cygwin" />
 <input type="submit" value="perf" />
 <input type="submit" value="tracepoint" />
-<input type="submit" value="fiber" />
 <input type="submit" value="regexp" />
+<input type="submit" value="fiber" />
 <input type="submit" value="refine" />
 <input type="submit" value="autoload" />
 <input type="submit" value="parser" />
 <input type="submit" value="irb" />
 <input type="submit" value="jit" />
-<input type="submit" value="os-arch" />
 <input type="submit" value="unfixable" />
 <input type="submit" value="backport" />
 <input type="submit" value="doc" />
 <input type="submit" value="misc" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">366</span> matched)
+(<span id="matched">360</span> matched)
 <table>
-<caption>366 Tagged Open Ruby Bugs as of 2021-06-16 00:02:54 +0900</caption>
+<caption>360 Tagged Open Ruby Bugs as of 2021-06-16 04:41:07 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -45,10 +44,10 @@
 </tr>
 </thead>
 <tbody>
-<tr class=" os-arch test ">
+<tr class=" os/arch test ">
 <td><a href="https://bugs.ruby-lang.org/issues/17991">17991</a>
 </td>
-<td>os-arch test</td>
+<td>os/arch test</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17991">[TEST, CRASH] TestBugReporter#test_bug_reporter_add </a>
 </td>
 </tr>
@@ -94,24 +93,24 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17984">[BUG] try to mark T_NONE object </a>
 </td>
 </tr>
-<tr class=" core ">
+<tr class=" patch core ">
 <td><a href="https://bugs.ruby-lang.org/issues/17951">17951</a>
 </td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17951">Collistions in Proc#hash values for blocks defined at the same line</a>
+<td>patch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17951">Collisions in Proc#hash values for blocks defined at the same line</a>
 </td>
 </tr>
-<tr class=" win ">
+<tr class=" patch win ">
 <td><a href="https://bugs.ruby-lang.org/issues/17946">17946</a>
 </td>
-<td>win</td>
+<td>patch win</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17946">win32/win32.c: `&amp;` has lower precedence than `==`</a>
 </td>
 </tr>
-<tr class=" ext ">
+<tr class=" patch ext ">
 <td><a href="https://bugs.ruby-lang.org/issues/17945">17945</a>
 </td>
-<td>ext</td>
+<td>patch ext</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17945">Date::Infinity comparison &lt;=&gt; with Float::INFINITY not symmetric</a>
 </td>
 </tr>
@@ -122,10 +121,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17940">Bus Error</a>
 </td>
 </tr>
-<tr class=" lib ">
+<tr class=" patch lib ">
 <td><a href="https://bugs.ruby-lang.org/issues/17933">17933</a>
 </td>
-<td>lib</td>
+<td>patch lib</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17933">`Net::HTTP#write_timeout` doesn&#39;t work with `body_stream`</a>
 </td>
 </tr>
@@ -143,10 +142,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17929">Compile fails on Windows --with-static-linked-ext</a>
 </td>
 </tr>
-<tr class=" os-arch ">
+<tr class=" os/arch ">
 <td><a href="https://bugs.ruby-lang.org/issues/17926">17926</a>
 </td>
-<td>os-arch</td>
+<td>os/arch</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17926">spec/ruby/core/file/atime_spec.rb: a random failing test on Travis ppc64le</a>
 </td>
 </tr>
@@ -185,13 +184,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17878">bootstraptest/test_ractor.rb:224 a random failing test with &quot;The outgoing-port is already closed (Ractor::ClosedError)&quot;</a>
 </td>
 </tr>
-<tr class=" fiber ">
-<td><a href="https://bugs.ruby-lang.org/issues/17875">17875</a>
-</td>
-<td>fiber</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17875">Segfault when reusing a closed Fiber scheduler inside a Thread</a>
-</td>
-</tr>
 <tr class=" maybenotbug ">
 <td><a href="https://bugs.ruby-lang.org/issues/17866">17866</a>
 </td>
@@ -199,24 +191,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17866">Incompatible changes with Psych 4.0.0</a>
 </td>
 </tr>
-<tr class=" ractor ">
-<td><a href="https://bugs.ruby-lang.org/issues/17864">17864</a>
-</td>
-<td>ractor</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17864">[BUG] try to mark T_NONE object (in Ractors)</a>
-</td>
-</tr>
-<tr class=" maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/17855">17855</a>
-</td>
-<td>maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17855">[BUG] object allocation during garbage collection phase</a>
-</td>
-</tr>
-<tr class=" maybenotbug ">
+<tr class=" maybenotbug os/arch ">
 <td><a href="https://bugs.ruby-lang.org/issues/17843">17843</a>
 </td>
-<td>maybenotbug</td>
+<td>maybenotbug os/arch</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17843">Ruby on Rails error[BUG] Segmentation fault at 0x0000000000000110 ruby 3.0.1p64 (2021-04-05 revision 0fb782ee38) [x86_64-darwin15] (#42110)</a>
 </td>
 </tr>
@@ -227,24 +205,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17840">`make install` overriding file permission with 644</a>
 </td>
 </tr>
-<tr class=" patch win lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/17839">17839</a>
-</td>
-<td>patch win lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17839">Windows CI failures with net/http - fix at ruby/net-http</a>
-</td>
-</tr>
-<tr class=" maybenotbug lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/17838">17838</a>
-</td>
-<td>maybenotbug lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17838">`Set#intersect?` and enumerables</a>
-</td>
-</tr>
-<tr class=" maybenotbug lib ">
+<tr class=" patch maybenotbug lib ">
 <td><a href="https://bugs.ruby-lang.org/issues/17835">17835</a>
 </td>
-<td>maybenotbug lib</td>
+<td>patch maybenotbug lib</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17835">Net::HTTP should automatically add Accept-Encoding request header on HEAD request as well</a>
 </td>
 </tr>
@@ -253,13 +217,6 @@
 </td>
 <td>ractor</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17826">Ractor#take hangs if used in multiple Threads</a>
-</td>
-</tr>
-<tr class=" lib patch ">
-<td><a href="https://bugs.ruby-lang.org/issues/17824">17824</a>
-</td>
-<td>lib patch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17824">Gem::Deprecate#deprecate doesn&#39;t work with method with keyword arguments</a>
 </td>
 </tr>
 <tr class=" core ">
