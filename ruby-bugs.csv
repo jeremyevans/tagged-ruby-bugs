@@ -345,7 +345,6 @@
 17866,maybenotbug,Incompatible changes with Psych 4.0.0
 17875,fiber,Segfault when reusing a closed Fiber scheduler inside a Thread
 17878,ractor,bootstraptest/test_ractor.rb:224 a random failing test with &quot;The outgoing-port is already closed (Ractor::ClosedError)&quot;
-17880,core,[BUG] We are killing the stack canary set by `opt_setinlinecache`
 17882,ractor cygwin,bootstraptest/test_ractor.rb:224 segfaults on Cygwin
 17885,core,require_relative and require should be compatible with each other when symlinked files are used
 17887,patch core,Missed constant lookup after prepend
@@ -357,7 +356,11 @@
 17940,core notbug,Bus Error
 17945,ext,Date::Infinity comparison &lt;=&gt; with Float::INFINITY not symmetric
 17946,win,win32/win32.c: `&amp;` has lower precedence than `==`
-17949,build os-arch,"[SOLARIS11, SPARC, SEGFAULT] generating encdb.h"
 17951,core,Collistions in Proc#hash values for blocks defined at the same line
 17984,core,[BUG] try to mark T_NONE object 
 17985,ractor,Ractor + GC: [BUG] not single ractor mode
+17986,ractor notbug,Ractor is stdlib Socket unfriendly
+17987,notbug,Ruby报错
+17989,regexp,Case insensitive Regexps do not handle characters with overlapping case foldings
+17990,regexp,Inconsistent behavior of Regexp quantifiers over characters with complex case foldings
+17991,os-arch test,"[TEST, CRASH] TestBugReporter#test_bug_reporter_add "
