@@ -135,7 +135,7 @@
 14434,patch core,IO#reopen fails after EPIPE
 14456,encoding,Dir.glob with FNM_CASEFOLD gives ArgumentError: invalid byte sequence in UTF-8
 14474,test,skip &quot;TestException#test_thread_signal_location&quot; as known bug
-14479,tracepoint,Exceptions raised from a :call tracepoint can sometimes be &quot;rescued&quot; inside the method
+14479,patch tracepoint,Exceptions raised from a :call tracepoint can sometimes be &quot;rescued&quot; inside the method
 14480,os/arch build,miniruby crashing when compiled with -O2 or -O1 on aarch64
 14543,build,`make commit` show error of `common-srcs`
 14570,win core,Wired behavior of File.expand_path() on Windows
@@ -153,7 +153,6 @@
 14761,os/arch thread,TestThread#test_join_limits hangs up on Solaris 10 with gcc
 14817,tracepoint,TracePoint#parameters for bmethod&#39;s return event should return the same value as its Method#parameters
 14826,os/arch build,make: *** [.ext/include/sparc-solaris2.10/rb_mjit_min_header-2.6.0.h] Error 1 on Solaris 10 with very old gcc3
-14835,tracepoint,Impossible to know whether an exception was rescued or not using TracePoint
 14838,regexp notbug,RegexpError with double &quot;s&quot; in look-behind assertion in case-insensitive unicode regexp
 14870,tracepoint,Both TracePoint&#39;s :call and :c_call filters seem to skip a lot of builtin methods
 14884,win,msys2 mingw32 &#39;rake&#39; has unexpected text at top of file
@@ -179,25 +178,20 @@
 15425,build,Store MJIT header into Ruby versioned directory.
 15428,core notbug,Refactor Proc#&gt;&gt; and #&lt;&lt;
 15438,win thread,Threads can&#39;t switch faster than TIME_QUANTUM_(NSEC|USEC|MSEC)
-15465,cygwin test,Tests failed on i386-cygwin
 15499,thread,Breaking behavior on ruby 2.6: rb_thread_call_without_gvl doesn&#39;t invoke unblock_function when used on the main thread 
 15507,thread,Thread#raise is delivered to GC context
 15509,thread,TCPServer#accept isn&#39;t interrupted
 15550,win,Windows - gem bin files - can&#39;t run from bash shell
-15587,win thread,Thread tests failing
 15598,core autoload,Deadlock on mutual reference of autoloaded constants
 15599,core autoload,Mixing autoload and require causes deadlock and incomplete definition.
 15634,tracepoint,TracePoint seems to be skipping some methods.
 15644,patch ext,ThreadsWait problems with Thread#report_on_exception
-15655,win encoding,Unable to handle Russian dirname on Windows
-15674,core,"Regression: ObjectSpace.allocation_sourceline produces the wrong location for allocations, it shows the end of the method instead of the line where the object was created"
 15764,parser,Whitespace and control characters should not be permitted in tokens
 15779,patch core,"After NoMemoryError, ruby freezes and takes 100% CPU"
 15787,os/arch lib maybenotbug,LoadError by EPERM on read-only volume
 15790,core autoload,Strange interaction between autoload and $LOADED_FEATURES
 15856,core perf,Performance of redundant `Kernel.require` is slow when many gems are activated
 15928,patch core,Constant declaration does not conform to JIS 3017:2013
-15993,win encoding,&#39;require&#39; doesn&#39;t work if there are Cyrillic chars in the path to Ruby dir
 16143,patch core,BOM UTF-8 is not removed after rewind
 16145,regexp,"regexp match error if mixing /i, character classes, and utf8"
 16158,regexp notbug,&quot;st&quot; Character Sequence In Regex Look-Behind Causes Illegal Pattern Error When Combined With POSIX Bracket Expressions And Case Insensitivity Flag
@@ -206,10 +200,8 @@
 16265,win thread,"Test (spec) failure using current MSYS2 tools, related to -fstack-protector and possibly D_FORTIFY_SOURCE=2"
 16277,win ext maybenotbug,UNIXServer#listen fails with Errno::EADDRINUSE error under Windows 10 / WSL Ubuntu 18.04
 16288,patch core,"Segmentation fault with finalizers, threads"
-16368,patch ext,Error in `YAML.load(symbolize_names: true)` with null column YAML
 16383,patch tracepoint,TracePoint does not report calls to attribute reader methods
 16448,core,regex global variables are working differently depending on scope
-16475,patch build,[Installation process - compiling ruby 2.7.0 from source} &quot;make install&quot; step oddity for ruby 2.7.0 on linux mint (debian base)
 16490,build lib,mkmf.rbの非互換な変更
 16492,test,TestBugReporter#test_bug_reporter_add test failures
 16493,thread os/arch,TestThreadQueue#test_thr_kill is flaky on AArch64
@@ -217,7 +209,6 @@
 16608,patch ext,ConditionVariable#wait should return false when timeout exceeded
 16654,core,Segfault in rb_str_hash
 16672,patch lib,net/http leaves original content-length header intact after inflating response
-16674,build,Build issue of FreeBSD 12
 16694,core,JIT vs hardened GCC with PCH
 16776,core,Regression in coverage library
 16805,fiber,Coroutine&#39;s license is unclear
@@ -227,7 +218,6 @@
 16829,maybenotbug fiber,Exceptions raised from within an enumerated method lose part of their stacktrace
 16835,maybenotbug core,SIGCHLD + system new behavior on 2.6
 16836,build,configure-time LDFLAGS leak into ruby pkg-config file
-16840,notbug perf,Decrease in Hash#[]= performance with object keys
 16842,encoding,`inspect` prints the UTF-8 character U+0085 (NEXT LINE) verbatim even though it is not printable
 16889,tracepoint,"TracePoint.enable { ... } also activates the TracePoint for other threads, even outside the block"
 16905,build,Ruby required to build Ruby on Haiku?
@@ -254,7 +244,6 @@
 17183,core,Float round working weirdly
 17189,test thread os/arch,test_thread.rb in testsuite deadlocks with musl libc 1.2.1
 17196,ractor,Segmentation Fault with Socket#close in Ractors
-17212,build,FreeBSDで3.0.0-preview1のビルドが失敗する
 17263,fiber perf,"Fiber context switch degrades with number of fibers, limit on number of fibers"
 17289,core,Time#strftime occurs Segmentation Fault on ruby-2.7.2p137
 17337,build notbug,Don&#39;t embed Ruby build-time configuration in Ruby
@@ -349,3 +338,4 @@
 17989,regexp,Case insensitive Regexps do not handle characters with overlapping case foldings
 17990,regexp,Inconsistent behavior of Regexp quantifiers over characters with complex case foldings
 17991,os/arch test,"[TEST, CRASH] TestBugReporter#test_bug_reporter_add "
+17993,maybenotbug,Ruby process stuck in rb_sigwait_sleep
