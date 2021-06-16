@@ -1,22 +1,22 @@
 <html>
 <head>
-<title>351 Tagged Open Ruby Bugs as of 2021-06-16 23:32:41 +0900</title>
+<title>341 Tagged Open Ruby Bugs as of 2021-06-17 07:53:43 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
 <p class="filter-buttons">Available Tags: <input type="submit" value="core" />
 <input type="submit" value="patch" />
 <input type="submit" value="win" />
-<input type="submit" value="build" />
 <input type="submit" value="maybenotbug" />
-<input type="submit" value="ext" />
+<input type="submit" value="build" />
 <input type="submit" value="lib" />
 <input type="submit" value="ractor" />
+<input type="submit" value="ext" />
 <input type="submit" value="notbug" />
-<input type="submit" value="thread" />
-<input type="submit" value="encoding" />
 <input type="submit" value="os/arch" />
+<input type="submit" value="thread" />
 <input type="submit" value="test" />
+<input type="submit" value="encoding" />
 <input type="submit" value="cygwin" />
 <input type="submit" value="perf" />
 <input type="submit" value="tracepoint" />
@@ -33,9 +33,9 @@
 <input type="submit" value="misc" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">351</span> matched)
+(<span id="matched">341</span> matched)
 <table>
-<caption>351 Tagged Open Ruby Bugs as of 2021-06-16 23:32:41 +0900</caption>
+<caption>341 Tagged Open Ruby Bugs as of 2021-06-17 07:53:43 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -44,6 +44,13 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" maybenotbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/17993">17993</a>
+</td>
+<td>maybenotbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17993">Ruby process stuck in rb_sigwait_sleep</a>
+</td>
+</tr>
 <tr class=" os/arch test ">
 <td><a href="https://bugs.ruby-lang.org/issues/17991">17991</a>
 </td>
@@ -702,13 +709,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17263">Fiber context switch degrades with number of fibers, limit on number of fibers</a>
 </td>
 </tr>
-<tr class=" build ">
-<td><a href="https://bugs.ruby-lang.org/issues/17212">17212</a>
-</td>
-<td>build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17212">FreeBSDで3.0.0-preview1のビルドが失敗する</a>
-</td>
-</tr>
 <tr class=" ractor ">
 <td><a href="https://bugs.ruby-lang.org/issues/17196">17196</a>
 </td>
@@ -891,13 +891,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16842">`inspect` prints the UTF-8 character U+0085 (NEXT LINE) verbatim even though it is not printable</a>
 </td>
 </tr>
-<tr class=" notbug perf ">
-<td><a href="https://bugs.ruby-lang.org/issues/16840">16840</a>
-</td>
-<td>notbug perf</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16840">Decrease in Hash#[]= performance with object keys</a>
-</td>
-</tr>
 <tr class=" build ">
 <td><a href="https://bugs.ruby-lang.org/issues/16836">16836</a>
 </td>
@@ -961,13 +954,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16694">JIT vs hardened GCC with PCH</a>
 </td>
 </tr>
-<tr class=" build ">
-<td><a href="https://bugs.ruby-lang.org/issues/16674">16674</a>
-</td>
-<td>build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16674">Build issue of FreeBSD 12</a>
-</td>
-</tr>
 <tr class=" patch lib ">
 <td><a href="https://bugs.ruby-lang.org/issues/16672">16672</a>
 </td>
@@ -1017,13 +1003,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16490">mkmf.rbの非互換な変更</a>
 </td>
 </tr>
-<tr class=" patch build ">
-<td><a href="https://bugs.ruby-lang.org/issues/16475">16475</a>
-</td>
-<td>patch build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16475">[Installation process - compiling ruby 2.7.0 from source} &quot;make install&quot; step oddity for ruby 2.7.0 on linux mint (debian base)</a>
-</td>
-</tr>
 <tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/16448">16448</a>
 </td>
@@ -1036,13 +1015,6 @@
 </td>
 <td>patch tracepoint</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16383">TracePoint does not report calls to attribute reader methods</a>
-</td>
-</tr>
-<tr class=" patch ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/16368">16368</a>
-</td>
-<td>patch ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16368">Error in `YAML.load(symbolize_names: true)` with null column YAML</a>
 </td>
 </tr>
 <tr class=" patch core ">
@@ -1101,13 +1073,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16143">BOM UTF-8 is not removed after rewind</a>
 </td>
 </tr>
-<tr class=" win encoding ">
-<td><a href="https://bugs.ruby-lang.org/issues/15993">15993</a>
-</td>
-<td>win encoding</td>
-<td><a href="https://bugs.ruby-lang.org/issues/15993">&#39;require&#39; doesn&#39;t work if there are Cyrillic chars in the path to Ruby dir</a>
-</td>
-</tr>
 <tr class=" patch core ">
 <td><a href="https://bugs.ruby-lang.org/issues/15928">15928</a>
 </td>
@@ -1150,20 +1115,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/15764">Whitespace and control characters should not be permitted in tokens</a>
 </td>
 </tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/15674">15674</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/15674">Regression: ObjectSpace.allocation_sourceline produces the wrong location for allocations, it shows the end of the method instead of the line where the object was created</a>
-</td>
-</tr>
-<tr class=" win encoding ">
-<td><a href="https://bugs.ruby-lang.org/issues/15655">15655</a>
-</td>
-<td>win encoding</td>
-<td><a href="https://bugs.ruby-lang.org/issues/15655">Unable to handle Russian dirname on Windows</a>
-</td>
-</tr>
 <tr class=" patch ext ">
 <td><a href="https://bugs.ruby-lang.org/issues/15644">15644</a>
 </td>
@@ -1192,13 +1143,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/15598">Deadlock on mutual reference of autoloaded constants</a>
 </td>
 </tr>
-<tr class=" win thread ">
-<td><a href="https://bugs.ruby-lang.org/issues/15587">15587</a>
-</td>
-<td>win thread</td>
-<td><a href="https://bugs.ruby-lang.org/issues/15587">Thread tests failing</a>
-</td>
-</tr>
 <tr class=" win ">
 <td><a href="https://bugs.ruby-lang.org/issues/15550">15550</a>
 </td>
@@ -1225,13 +1169,6 @@
 </td>
 <td>thread</td>
 <td><a href="https://bugs.ruby-lang.org/issues/15499">Breaking behavior on ruby 2.6: rb_thread_call_without_gvl doesn&#39;t invoke unblock_function when used on the main thread </a>
-</td>
-</tr>
-<tr class=" cygwin test ">
-<td><a href="https://bugs.ruby-lang.org/issues/15465">15465</a>
-</td>
-<td>cygwin test</td>
-<td><a href="https://bugs.ruby-lang.org/issues/15465">Tests failed on i386-cygwin</a>
 </td>
 </tr>
 <tr class=" win thread ">
@@ -1409,13 +1346,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/14838">RegexpError with double &quot;s&quot; in look-behind assertion in case-insensitive unicode regexp</a>
 </td>
 </tr>
-<tr class=" tracepoint ">
-<td><a href="https://bugs.ruby-lang.org/issues/14835">14835</a>
-</td>
-<td>tracepoint</td>
-<td><a href="https://bugs.ruby-lang.org/issues/14835">Impossible to know whether an exception was rescued or not using TracePoint</a>
-</td>
-</tr>
 <tr class=" os/arch build ">
 <td><a href="https://bugs.ruby-lang.org/issues/14826">14826</a>
 </td>
@@ -1535,10 +1465,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/14480">miniruby crashing when compiled with -O2 or -O1 on aarch64</a>
 </td>
 </tr>
-<tr class=" tracepoint ">
+<tr class=" patch tracepoint ">
 <td><a href="https://bugs.ruby-lang.org/issues/14479">14479</a>
 </td>
-<td>tracepoint</td>
+<td>patch tracepoint</td>
 <td><a href="https://bugs.ruby-lang.org/issues/14479">Exceptions raised from a :call tracepoint can sometimes be &quot;rescued&quot; inside the method</a>
 </td>
 </tr>
