@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>360 Tagged Open Ruby Bugs as of 2021-06-16 04:41:07 +0900</title>
+<title>351 Tagged Open Ruby Bugs as of 2021-06-16 23:32:41 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -11,18 +11,18 @@
 <input type="submit" value="maybenotbug" />
 <input type="submit" value="ext" />
 <input type="submit" value="lib" />
-<input type="submit" value="notbug" />
 <input type="submit" value="ractor" />
-<input type="submit" value="os/arch" />
-<input type="submit" value="encoding" />
+<input type="submit" value="notbug" />
 <input type="submit" value="thread" />
+<input type="submit" value="encoding" />
+<input type="submit" value="os/arch" />
 <input type="submit" value="test" />
 <input type="submit" value="cygwin" />
 <input type="submit" value="perf" />
 <input type="submit" value="tracepoint" />
 <input type="submit" value="regexp" />
-<input type="submit" value="fiber" />
 <input type="submit" value="refine" />
+<input type="submit" value="fiber" />
 <input type="submit" value="autoload" />
 <input type="submit" value="parser" />
 <input type="submit" value="irb" />
@@ -33,9 +33,9 @@
 <input type="submit" value="misc" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">360</span> matched)
+(<span id="matched">351</span> matched)
 <table>
-<caption>360 Tagged Open Ruby Bugs as of 2021-06-16 04:41:07 +0900</caption>
+<caption>351 Tagged Open Ruby Bugs as of 2021-06-16 23:32:41 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -105,13 +105,6 @@
 </td>
 <td>patch win</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17946">win32/win32.c: `&amp;` has lower precedence than `==`</a>
-</td>
-</tr>
-<tr class=" patch ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/17945">17945</a>
-</td>
-<td>patch ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17945">Date::Infinity comparison &lt;=&gt; with Float::INFINITY not symmetric</a>
 </td>
 </tr>
 <tr class=" core notbug ">
@@ -310,13 +303,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17765">Segmentation fault when calling String#gsub</a>
 </td>
 </tr>
-<tr class=" patch os/arch ">
-<td><a href="https://bugs.ruby-lang.org/issues/17759">17759</a>
-</td>
-<td>patch os/arch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17759">Correct `ioctl_req_t` for musl</a>
-</td>
-</tr>
 <tr class=" patch core ">
 <td><a href="https://bugs.ruby-lang.org/issues/17757">17757</a>
 </td>
@@ -343,13 +329,6 @@
 </td>
 <td>notbug</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17728">[BUG] Segmentation fault at 0x0000000000000000</a>
-</td>
-</tr>
-<tr class=" notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/17726">17726</a>
-</td>
-<td>notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17726">`respond_to_missing?` doesn&#39;t raise when called from `defined?`</a>
 </td>
 </tr>
 <tr class=" patch core ">
@@ -443,13 +422,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17656">Improper functions shown in C level backtrace information</a>
 </td>
 </tr>
-<tr class=" maybenotbug core ">
-<td><a href="https://bugs.ruby-lang.org/issues/17655">17655</a>
-</td>
-<td>maybenotbug core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17655">Experiencing Repeated Segmentation Faults Using Puma with Ruby 3.0.0</a>
-</td>
-</tr>
 <tr class=" patch build ">
 <td><a href="https://bugs.ruby-lang.org/issues/17646">17646</a>
 </td>
@@ -476,13 +448,6 @@
 </td>
 <td>irb</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17623">irb starts with some local variables already defined</a>
-</td>
-</tr>
-<tr class=" fiber ">
-<td><a href="https://bugs.ruby-lang.org/issues/17618">17618</a>
-</td>
-<td>fiber</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17618">Exceptions in Fiber Scheduler causes a segv</a>
 </td>
 </tr>
 <tr class=" ractor ">
@@ -891,13 +856,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16927">String#tr won&#39;t return the expected result for some sign with diacritics</a>
 </td>
 </tr>
-<tr class=" os/arch ">
-<td><a href="https://bugs.ruby-lang.org/issues/16921">16921</a>
-</td>
-<td>os/arch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16921">s390x: random test failures for timeout or segmentation fault</a>
-</td>
-</tr>
 <tr class=" os/arch thread ">
 <td><a href="https://bugs.ruby-lang.org/issues/16920">16920</a>
 </td>
@@ -994,13 +952,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16776">Regression in coverage library</a>
-</td>
-</tr>
-<tr class=" win core ">
-<td><a href="https://bugs.ruby-lang.org/issues/16759">16759</a>
-</td>
-<td>win core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16759">MinGW 2.5 - SEGV bug with Binding#local_variable_set</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -1122,13 +1073,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16243">case/when is slower than if on MRI</a>
 </td>
 </tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/16186">16186</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16186">Calling Net::HTTP from within an #inspect implementation hang when invoked from p</a>
-</td>
-</tr>
 <tr class=" os/arch notbug ">
 <td><a href="https://bugs.ruby-lang.org/issues/16185">16185</a>
 </td>
@@ -1232,13 +1176,6 @@
 </td>
 <td>tracepoint</td>
 <td><a href="https://bugs.ruby-lang.org/issues/15634">TracePoint seems to be skipping some methods.</a>
-</td>
-</tr>
-<tr class=" win encoding ">
-<td><a href="https://bugs.ruby-lang.org/issues/15621">15621</a>
-</td>
-<td>win encoding</td>
-<td><a href="https://bugs.ruby-lang.org/issues/15621">system({}, ...) breaks nonascii ENV[&quot;PATH&quot;] on Windows</a>
 </td>
 </tr>
 <tr class=" core autoload ">
