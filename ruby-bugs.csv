@@ -97,7 +97,6 @@
 12547,core,"Remove ONIG_UNICODE_VERSION_... in enc/unicode/case-folding.rb, casefold.h"
 12582,ext,OpenSSL Authenticated Encryption should check for tag length
 12590,cygwin build,Error compiling parse.c on cygwin
-12597,encoding test,Produce test failure if some tests cannot be executed due to lacking data
 12689,core,Thread isolation of $~ and $_
 12725,cygwin build,Trying to use ./miniruby before it exists
 12852,lib notbug,URI.parse can&#39;t handle non-ascii URIs
@@ -106,7 +105,7 @@
 13220,encoding,Enhance support of Unicode strings manipulation
 13269,win test,test/readline/test_readline.rb and mingw
 13298,win core,mingw SEGV TestEnumerable#test_callcc
-13392,tracepoint,TracePoint doesn&#39;t work correct with monkey patches / aliased methods
+13392,patch tracepoint,TracePoint return event location is incorrect for methods defined with define_method
 13485,win test,MinGW TestEnumerable#test_callcc SEGV info
 13500,win test,MinGW TestArity#test_proc_err_mess stops testing
 13513,patch lib,Resolv::DNS::Message.decode hangs after detecting truncation in UDP messages
@@ -123,13 +122,10 @@
 14083,refine,Refinement in block calling incorrect method
 14090,core,`TestGc#test_interrupt_in_finalizer` fails very rarely
 14103,regexp,Regexp absense operator has no chance to ^C
-14137,win regexp,Windows / MinGW - Regexp - Character Properties - General Category
-14275,patch core,GC not aggressive enough
 14364,core,Regexp last match variable in procs
 14378,win notbug,"On windows, RUBY_FIXNUM_MAX of 64 bits ruby  is 32 bits"
 14387,core os/arch,Ruby 2.5 を Alpine Linux で実行すると比較的浅めで SystemStackError 例外になる
 14391,patch ext perf,Integer#digitsが遅い
-14409,build,インストール手順の改善
 14418,regexp perf,ruby 2.5 slow regexp execution
 14422,build,Ruby configuration options should not be reused for gem builds
 14434,patch core,IO#reopen fails after EPIPE
@@ -138,15 +134,13 @@
 14479,patch tracepoint,Exceptions raised from a :call tracepoint can sometimes be &quot;rescued&quot; inside the method
 14480,os/arch build,miniruby crashing when compiled with -O2 or -O1 on aarch64
 14543,build,`make commit` show error of `common-srcs`
-14570,win core,Wired behavior of File.expand_path() on Windows
-14582,tracepoint,Unable to use `method__entry` and `method_return` tracing probes since 2.5
-14591,encoding maybenotbug,Files with invalid multi-byte characters will cause Find::find() to raise EINVAL exception
+14582,patch tracepoint,Unable to use `method__entry` and `method_return` tracing probes since 2.5
+14591,patch encoding,Files with invalid multi-byte characters will cause Find::find() to raise EINVAL exception
 14607,patch core,Fix use of the rb_profile_frames start parameter
 14635,patch core,Float#round(n) returns a wrong result when n is big
 14640,win core,[win32] File.realpath treats a relative path with a drive letter as an absolute path.
 14679,lib,StdLib gems should properly specify their dependencies
 14681,core,`syswrite&#39;: stream closed in another thread (IOError)
-14716,patch ext,SecureRandom throwing an error in Ruby 2.5.1
 14727,win thread,TestQueue#test_queue_with_trap always timeout on Windows10
 14743,doc notbug,Some links broken in README
 14744,refine,Refinements modules have a superclass
@@ -184,7 +178,7 @@
 15550,win,Windows - gem bin files - can&#39;t run from bash shell
 15598,core autoload,Deadlock on mutual reference of autoloaded constants
 15599,core autoload,Mixing autoload and require causes deadlock and incomplete definition.
-15634,tracepoint,TracePoint seems to be skipping some methods.
+15634,patch tracepoint,TracePoint seems to be skipping some methods.
 15644,patch ext,ThreadsWait problems with Thread#report_on_exception
 15764,parser,Whitespace and control characters should not be permitted in tokens
 15779,patch core,"After NoMemoryError, ruby freezes and takes 100% CPU"
@@ -336,7 +330,8 @@
 17989,regexp,Case insensitive Regexps do not handle characters with overlapping case foldings
 17990,regexp,Inconsistent behavior of Regexp quantifiers over characters with complex case foldings
 17991,os/arch test,"[TEST, CRASH] TestBugReporter#test_bug_reporter_add "
-17993,maybenotbug,Ruby process stuck in rb_sigwait_sleep
 17995,perf ractor,Slow down when mjit and Ractor are being used at same time
 17996,cygwin core,Cygwin: thread + pipe behavior since Ruby 2.6
 17998,ractor,"ractor: process hanging (with ractors initialized, but not being used)"
+17999,test os/arch,TestMethod#test_zsuper intermittent timeout error on raspbian10-aarch64 CI
+18000,lib,have_library doesn&#39;t work when ruby is compiled with --disable-shared --disable-install-static-library
