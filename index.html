@@ -1,14 +1,14 @@
 <html>
 <head>
-<title>342 Tagged Open Ruby Bugs as of 2021-06-18 00:56:21 +0900</title>
+<title>337 Tagged Open Ruby Bugs as of 2021-06-19 04:19:42 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
 <p class="filter-buttons">Available Tags: <input type="submit" value="core" />
 <input type="submit" value="patch" />
 <input type="submit" value="win" />
-<input type="submit" value="maybenotbug" />
 <input type="submit" value="build" />
+<input type="submit" value="maybenotbug" />
 <input type="submit" value="ractor" />
 <input type="submit" value="lib" />
 <input type="submit" value="ext" />
@@ -20,8 +20,8 @@
 <input type="submit" value="cygwin" />
 <input type="submit" value="perf" />
 <input type="submit" value="tracepoint" />
-<input type="submit" value="regexp" />
 <input type="submit" value="refine" />
+<input type="submit" value="regexp" />
 <input type="submit" value="fiber" />
 <input type="submit" value="autoload" />
 <input type="submit" value="parser" />
@@ -33,9 +33,9 @@
 <input type="submit" value="misc" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">342</span> matched)
+(<span id="matched">337</span> matched)
 <table>
-<caption>342 Tagged Open Ruby Bugs as of 2021-06-18 00:56:21 +0900</caption>
+<caption>337 Tagged Open Ruby Bugs as of 2021-06-19 04:19:42 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -44,6 +44,20 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" lib ">
+<td><a href="https://bugs.ruby-lang.org/issues/18000">18000</a>
+</td>
+<td>lib</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18000">have_library doesn&#39;t work when ruby is compiled with --disable-shared --disable-install-static-library</a>
+</td>
+</tr>
+<tr class=" test os/arch ">
+<td><a href="https://bugs.ruby-lang.org/issues/17999">17999</a>
+</td>
+<td>test os/arch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17999">TestMethod#test_zsuper intermittent timeout error on raspbian10-aarch64 CI</a>
+</td>
+</tr>
 <tr class=" ractor ">
 <td><a href="https://bugs.ruby-lang.org/issues/17998">17998</a>
 </td>
@@ -63,13 +77,6 @@
 </td>
 <td>perf ractor</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17995">Slow down when mjit and Ractor are being used at same time</a>
-</td>
-</tr>
-<tr class=" maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/17993">17993</a>
-</td>
-<td>maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17993">Ruby process stuck in rb_sigwait_sleep</a>
 </td>
 </tr>
 <tr class=" os/arch test ">
@@ -1129,10 +1136,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/15644">ThreadsWait problems with Thread#report_on_exception</a>
 </td>
 </tr>
-<tr class=" tracepoint ">
+<tr class=" patch tracepoint ">
 <td><a href="https://bugs.ruby-lang.org/issues/15634">15634</a>
 </td>
-<td>tracepoint</td>
+<td>patch tracepoint</td>
 <td><a href="https://bugs.ruby-lang.org/issues/15634">TracePoint seems to be skipping some methods.</a>
 </td>
 </tr>
@@ -1395,13 +1402,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/14727">TestQueue#test_queue_with_trap always timeout on Windows10</a>
 </td>
 </tr>
-<tr class=" patch ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/14716">14716</a>
-</td>
-<td>patch ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/14716">SecureRandom throwing an error in Ruby 2.5.1</a>
-</td>
-</tr>
 <tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/14681">14681</a>
 </td>
@@ -1437,25 +1437,18 @@
 <td><a href="https://bugs.ruby-lang.org/issues/14607">Fix use of the rb_profile_frames start parameter</a>
 </td>
 </tr>
-<tr class=" encoding maybenotbug ">
+<tr class=" patch encoding ">
 <td><a href="https://bugs.ruby-lang.org/issues/14591">14591</a>
 </td>
-<td>encoding maybenotbug</td>
+<td>patch encoding</td>
 <td><a href="https://bugs.ruby-lang.org/issues/14591">Files with invalid multi-byte characters will cause Find::find() to raise EINVAL exception</a>
 </td>
 </tr>
-<tr class=" tracepoint ">
+<tr class=" patch tracepoint ">
 <td><a href="https://bugs.ruby-lang.org/issues/14582">14582</a>
 </td>
-<td>tracepoint</td>
+<td>patch tracepoint</td>
 <td><a href="https://bugs.ruby-lang.org/issues/14582">Unable to use `method__entry` and `method_return` tracing probes since 2.5</a>
-</td>
-</tr>
-<tr class=" win core ">
-<td><a href="https://bugs.ruby-lang.org/issues/14570">14570</a>
-</td>
-<td>win core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/14570">Wired behavior of File.expand_path() on Windows</a>
 </td>
 </tr>
 <tr class=" build ">
@@ -1514,13 +1507,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/14418">ruby 2.5 slow regexp execution</a>
 </td>
 </tr>
-<tr class=" build ">
-<td><a href="https://bugs.ruby-lang.org/issues/14409">14409</a>
-</td>
-<td>build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/14409">インストール手順の改善</a>
-</td>
-</tr>
 <tr class=" patch ext perf ">
 <td><a href="https://bugs.ruby-lang.org/issues/14391">14391</a>
 </td>
@@ -1547,20 +1533,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/14364">Regexp last match variable in procs</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/14275">14275</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/14275">GC not aggressive enough</a>
-</td>
-</tr>
-<tr class=" win regexp ">
-<td><a href="https://bugs.ruby-lang.org/issues/14137">14137</a>
-</td>
-<td>win regexp</td>
-<td><a href="https://bugs.ruby-lang.org/issues/14137">Windows / MinGW - Regexp - Character Properties - General Category</a>
 </td>
 </tr>
 <tr class=" regexp ">
@@ -1675,11 +1647,11 @@
 <td><a href="https://bugs.ruby-lang.org/issues/13485">MinGW TestEnumerable#test_callcc SEGV info</a>
 </td>
 </tr>
-<tr class=" tracepoint ">
+<tr class=" patch tracepoint ">
 <td><a href="https://bugs.ruby-lang.org/issues/13392">13392</a>
 </td>
-<td>tracepoint</td>
-<td><a href="https://bugs.ruby-lang.org/issues/13392">TracePoint doesn&#39;t work correct with monkey patches / aliased methods</a>
+<td>patch tracepoint</td>
+<td><a href="https://bugs.ruby-lang.org/issues/13392">TracePoint return event location is incorrect for methods defined with define_method</a>
 </td>
 </tr>
 <tr class=" win core ">
@@ -1736,13 +1708,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/12689">Thread isolation of $~ and $_</a>
-</td>
-</tr>
-<tr class=" encoding test ">
-<td><a href="https://bugs.ruby-lang.org/issues/12597">12597</a>
-</td>
-<td>encoding test</td>
-<td><a href="https://bugs.ruby-lang.org/issues/12597">Produce test failure if some tests cannot be executed due to lacking data</a>
 </td>
 </tr>
 <tr class=" cygwin build ">
