@@ -85,7 +85,7 @@
 12235,lib maybenotbug,URI.encode issue with square brackets
 12261,win maybenotbug,Windows: File.dirname with 2+ / or 2+ \\ will return // or \\\\
 12280,win core,"IO.copy_stream(IO, IO) fails with &quot;pread() not implemented&quot;"
-12436,win core,newline argument of File.open seems not respected on Windows
+12436,patch win core,newline argument of File.open seems not respected on Windows
 12440,cygwin core,make test-all is not working on cygwin
 12442,cygwin core,TestArgf#test_textmode fails on cygwin
 12444,cygwin core,Segmentation fault when running TestException#test_machine_stackoverflow on cygwin
@@ -94,7 +94,6 @@
 12500,test os/arch,TestProcess#test_aspawn_too_long_path fails on mips with &quot;argument too big&quot;
 12506,cygwin,"On cygwin, Feature #5994 does not work"
 12540,core,test failures when SHARABLE_MIDDLE_SUBSTRING=1
-12547,core,"Remove ONIG_UNICODE_VERSION_... in enc/unicode/case-folding.rb, casefold.h"
 12582,ext,OpenSSL Authenticated Encryption should check for tag length
 12590,cygwin build,Error compiling parse.c on cygwin
 12689,core,Thread isolation of $~ and $_
@@ -123,7 +122,6 @@
 14090,core,`TestGc#test_interrupt_in_finalizer` fails very rarely
 14103,regexp,Regexp absense operator has no chance to ^C
 14364,core,Regexp last match variable in procs
-14378,win notbug,"On windows, RUBY_FIXNUM_MAX of 64 bits ruby  is 32 bits"
 14387,core os/arch,Ruby 2.5 を Alpine Linux で実行すると比較的浅めで SystemStackError 例外になる
 14391,patch ext perf,Integer#digitsが遅い
 14418,regexp perf,ruby 2.5 slow regexp execution
