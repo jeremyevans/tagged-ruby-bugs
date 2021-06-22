@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>335 Tagged Open Ruby Bugs as of 2021-06-19 08:50:17 +0900</title>
+<title>334 Tagged Open Ruby Bugs as of 2021-06-23 08:24:55 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -13,15 +13,15 @@
 <input type="submit" value="lib" />
 <input type="submit" value="ext" />
 <input type="submit" value="os/arch" />
-<input type="submit" value="notbug" />
-<input type="submit" value="thread" />
 <input type="submit" value="test" />
+<input type="submit" value="thread" />
+<input type="submit" value="notbug" />
 <input type="submit" value="encoding" />
 <input type="submit" value="cygwin" />
 <input type="submit" value="perf" />
-<input type="submit" value="tracepoint" />
 <input type="submit" value="refine" />
 <input type="submit" value="regexp" />
+<input type="submit" value="tracepoint" />
 <input type="submit" value="fiber" />
 <input type="submit" value="autoload" />
 <input type="submit" value="parser" />
@@ -33,9 +33,9 @@
 <input type="submit" value="misc" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">335</span> matched)
+(<span id="matched">334</span> matched)
 <table>
-<caption>335 Tagged Open Ruby Bugs as of 2021-06-19 08:50:17 +0900</caption>
+<caption>334 Tagged Open Ruby Bugs as of 2021-06-23 08:24:55 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -44,6 +44,20 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" test os/arch ">
+<td><a href="https://bugs.ruby-lang.org/issues/18002">18002</a>
+</td>
+<td>test os/arch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18002">s390x: Tests failing without LC_ALL env</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18001">18001</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18001">AddressSanitizer finding heap-buffer-overflow in iseq_peephole_optimize</a>
+</td>
+</tr>
 <tr class=" lib ">
 <td><a href="https://bugs.ruby-lang.org/issues/18000">18000</a>
 </td>
@@ -1136,13 +1150,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/15644">ThreadsWait problems with Thread#report_on_exception</a>
 </td>
 </tr>
-<tr class=" patch tracepoint ">
-<td><a href="https://bugs.ruby-lang.org/issues/15634">15634</a>
-</td>
-<td>patch tracepoint</td>
-<td><a href="https://bugs.ruby-lang.org/issues/15634">TracePoint seems to be skipping some methods.</a>
-</td>
-</tr>
 <tr class=" core autoload ">
 <td><a href="https://bugs.ruby-lang.org/issues/15599">15599</a>
 </td>
@@ -1330,13 +1337,6 @@
 </td>
 <td>ext notbug</td>
 <td><a href="https://bugs.ruby-lang.org/issues/14891">Pathname#join has different behaviour to File.join</a>
-</td>
-</tr>
-<tr class=" tracepoint ">
-<td><a href="https://bugs.ruby-lang.org/issues/14889">14889</a>
-</td>
-<td>tracepoint</td>
-<td><a href="https://bugs.ruby-lang.org/issues/14889">TracePoint for :line never seems to trigger on argument list. Maybe by design?</a>
 </td>
 </tr>
 <tr class=" win ">
@@ -1848,13 +1848,6 @@
 </td>
 <td>refine notbug</td>
 <td><a href="https://bugs.ruby-lang.org/issues/11779">Module#using does not make sense as a method</a>
-</td>
-</tr>
-<tr class=" encoding notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/11706">11706</a>
-</td>
-<td>encoding notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/11706">Clean up files etc/unicode/name2ctype.{h.blt,kwd,src}</a>
 </td>
 </tr>
 <tr class=" refine maybenotbug ">
