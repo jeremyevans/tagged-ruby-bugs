@@ -74,7 +74,6 @@
 11531,lib maybenotbug,IPAddr#== implements wrong logic
 11582,core os/arch maybenotbug,"On Solaris, Rational#** returns -Infinity for Rational(0) when passed a negative Float"
 11704,refine maybenotbug,Refinements only get &quot;used&quot; once in loop
-11706,encoding notbug,"Clean up files etc/unicode/name2ctype.{h.blt,kwd,src}"
 11779,refine notbug,Module#using does not make sense as a method
 11808,core,Different behavior between Enumerable#grep and Array#grep
 11840,cygwin test,Error with &quot;make check&quot; on Cygwin
@@ -148,7 +147,6 @@
 14838,regexp notbug,RegexpError with double &quot;s&quot; in look-behind assertion in case-insensitive unicode regexp
 14870,tracepoint,Both TracePoint&#39;s :call and :c_call filters seem to skip a lot of builtin methods
 14884,win,msys2 mingw32 &#39;rake&#39; has unexpected text at top of file
-14889,tracepoint,TracePoint for :line never seems to trigger on argument list. Maybe by design?
 14891,ext notbug,Pathname#join has different behaviour to File.join
 14906,win core,MinGW failure - TestIO#test_copy_stream_no_busy_wait
 14957,win thread,"MinGW, gcc 8.2.0, bootstraptest test_thread.rb - failure ?"
@@ -176,7 +174,6 @@
 15550,win,Windows - gem bin files - can&#39;t run from bash shell
 15598,core autoload,Deadlock on mutual reference of autoloaded constants
 15599,core autoload,Mixing autoload and require causes deadlock and incomplete definition.
-15634,patch tracepoint,TracePoint seems to be skipping some methods.
 15644,patch ext,ThreadsWait problems with Thread#report_on_exception
 15764,parser,Whitespace and control characters should not be permitted in tokens
 15779,patch core,"After NoMemoryError, ruby freezes and takes 100% CPU"
@@ -333,3 +330,5 @@
 17998,ractor,"ractor: process hanging (with ractors initialized, but not being used)"
 17999,test os/arch,TestMethod#test_zsuper intermittent timeout error on raspbian10-aarch64 CI
 18000,lib,have_library doesn&#39;t work when ruby is compiled with --disable-shared --disable-install-static-library
+18001,core,AddressSanitizer finding heap-buffer-overflow in iseq_peephole_optimize
+18002,test os/arch,s390x: Tests failing without LC_ALL env
