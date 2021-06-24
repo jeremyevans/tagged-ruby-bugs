@@ -295,7 +295,6 @@
 17792,core os/arch,make notes and make test fail with Ruby3.0.1p64 RaspberryPI 4B Ubuntu 20.10 ARM64
 17794,patch core,addr2line.c can free(3) an invalid pointer without zlib
 17799,core,Seg fault in rb_class_clear_method_cache
-17801,fiber ext,repeated read from PTY blocks all Fibers
 17803,ext,Segmentation fault during deflate
 17810,patch core,addr2line.c: Some symbol names missing in C backtrace with Clang/LLVM
 17813,patch win ext,rb_funcall() may reset the latest socket error unexpectedlly since Ruby 3.0.0
@@ -316,10 +315,8 @@
 17931,build win,Compile fails on windows setup option nodynamic
 17933,patch lib,`Net::HTTP#write_timeout` doesn&#39;t work with `body_stream`
 17940,core notbug,Bus Error
-17946,patch win,win32/win32.c: `&amp;` has lower precedence than `==`
 17951,patch core,Collisions in Proc#hash values for blocks defined at the same line
 17984,core,[BUG] try to mark T_NONE object 
-17985,ractor,Ractor + GC: [BUG] not single ractor mode
 17986,ractor notbug,Ractor is stdlib Socket unfriendly
 17987,notbug,Ruby报错
 17989,regexp,Case insensitive Regexps do not handle characters with overlapping case foldings
@@ -330,5 +327,4 @@
 17998,ractor,"ractor: process hanging (with ractors initialized, but not being used)"
 17999,test os/arch,TestMethod#test_zsuper intermittent timeout error on raspbian10-aarch64 CI
 18000,lib,have_library doesn&#39;t work when ruby is compiled with --disable-shared --disable-install-static-library
-18001,core,AddressSanitizer finding heap-buffer-overflow in iseq_peephole_optimize
 18002,test os/arch,s390x: Tests failing without LC_ALL env
