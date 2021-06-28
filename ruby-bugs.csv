@@ -78,7 +78,6 @@
 11808,core,Different behavior between Enumerable#grep and Array#grep
 11840,cygwin test,Error with &quot;make check&quot; on Cygwin
 12040,win core,[Win32] File.stat fails on a mounted volume
-12052,encoding,String#encode with xml option returns wrong result
 12055,patch lib,`NET::HTTPResponse` is not deflating responses with custom `Content-Range` header
 12179,build,Build failure due to VPATH expansion
 12235,lib maybenotbug,URI.encode issue with square brackets
@@ -126,13 +125,11 @@
 14418,regexp perf,ruby 2.5 slow regexp execution
 14422,build,Ruby configuration options should not be reused for gem builds
 14434,patch core,IO#reopen fails after EPIPE
-14456,encoding,Dir.glob with FNM_CASEFOLD gives ArgumentError: invalid byte sequence in UTF-8
 14474,test,skip &quot;TestException#test_thread_signal_location&quot; as known bug
 14479,patch tracepoint,Exceptions raised from a :call tracepoint can sometimes be &quot;rescued&quot; inside the method
 14480,os/arch build,miniruby crashing when compiled with -O2 or -O1 on aarch64
 14543,build,`make commit` show error of `common-srcs`
 14582,patch tracepoint,Unable to use `method__entry` and `method_return` tracing probes since 2.5
-14591,patch encoding,Files with invalid multi-byte characters will cause Find::find() to raise EINVAL exception
 14607,patch core,Fix use of the rb_profile_frames start parameter
 14635,patch core,Float#round(n) returns a wrong result when n is big
 14640,win core,[win32] File.realpath treats a relative path with a drive letter as an absolute path.
@@ -272,7 +269,6 @@
 17629,patch ext os/arch,"macOS, readline compiled with libedit: adding entries to history doesn&#39;t work unless Readline.readline is called before populating it"
 17646,patch build,Check for `__builtin_mul_overflow` with `long long` arguments
 17656,patch core,Improper functions shown in C level backtrace information
-17661,patch core,IO#each will segfault when if file is closed inside an `each_byte` block
 17664,fiber maybenotbug,Behavior of sockets changed in Ruby 3.0 to non-blocking
 17667,ractor,Module#name needs synchronization
 17668,core,Large RUBY_THREAD_VM_STACK_SIZE causes segmentation fault (again)
@@ -315,7 +311,6 @@
 17931,build win,Compile fails on windows setup option nodynamic
 17933,patch lib,`Net::HTTP#write_timeout` doesn&#39;t work with `body_stream`
 17940,core notbug,Bus Error
-17951,patch core,Collisions in Proc#hash values for blocks defined at the same line
 17984,core,[BUG] try to mark T_NONE object 
 17986,ractor notbug,Ractor is stdlib Socket unfriendly
 17987,notbug,Ruby报错
@@ -328,3 +323,6 @@
 17999,test os/arch,TestMethod#test_zsuper intermittent timeout error on raspbian10-aarch64 CI
 18000,lib,have_library doesn&#39;t work when ruby is compiled with --disable-shared --disable-install-static-library
 18002,test os/arch,s390x: Tests failing without LC_ALL env
+18006,lib,Resolv::DNS#getaddress takes minutes to resolve a domain with no DNS records in 3.0 (was quick in 2.7)
+18009,regexp,Regexps \w and \W with /i option and /u option produce inconsistent results under nested negation and intersection
+18010,regexp,Character class with single character gets case-folded with following string
