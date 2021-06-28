@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>330 Tagged Open Ruby Bugs as of 2021-06-25 04:21:10 +0900</title>
+<title>328 Tagged Open Ruby Bugs as of 2021-06-29 02:26:35 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -16,11 +16,11 @@
 <input type="submit" value="test" />
 <input type="submit" value="thread" />
 <input type="submit" value="notbug" />
-<input type="submit" value="encoding" />
 <input type="submit" value="cygwin" />
+<input type="submit" value="encoding" />
 <input type="submit" value="perf" />
-<input type="submit" value="refine" />
 <input type="submit" value="regexp" />
+<input type="submit" value="refine" />
 <input type="submit" value="tracepoint" />
 <input type="submit" value="fiber" />
 <input type="submit" value="autoload" />
@@ -33,9 +33,9 @@
 <input type="submit" value="misc" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">330</span> matched)
+(<span id="matched">328</span> matched)
 <table>
-<caption>330 Tagged Open Ruby Bugs as of 2021-06-25 04:21:10 +0900</caption>
+<caption>328 Tagged Open Ruby Bugs as of 2021-06-29 02:26:35 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -44,6 +44,27 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" regexp ">
+<td><a href="https://bugs.ruby-lang.org/issues/18010">18010</a>
+</td>
+<td>regexp</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18010">Character class with single character gets case-folded with following string</a>
+</td>
+</tr>
+<tr class=" regexp ">
+<td><a href="https://bugs.ruby-lang.org/issues/18009">18009</a>
+</td>
+<td>regexp</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18009">Regexps \w and \W with /i option and /u option produce inconsistent results under nested negation and intersection</a>
+</td>
+</tr>
+<tr class=" lib ">
+<td><a href="https://bugs.ruby-lang.org/issues/18006">18006</a>
+</td>
+<td>lib</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18006">Resolv::DNS#getaddress takes minutes to resolve a domain with no DNS records in 3.0 (was quick in 2.7)</a>
+</td>
+</tr>
 <tr class=" test os/arch ">
 <td><a href="https://bugs.ruby-lang.org/issues/18002">18002</a>
 </td>
@@ -126,13 +147,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17984">[BUG] try to mark T_NONE object </a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/17951">17951</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17951">Collisions in Proc#hash values for blocks defined at the same line</a>
 </td>
 </tr>
 <tr class=" core notbug ">
@@ -427,13 +441,6 @@
 </td>
 <td>fiber maybenotbug</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17664">Behavior of sockets changed in Ruby 3.0 to non-blocking</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/17661">17661</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17661">IO#each will segfault when if file is closed inside an `each_byte` block</a>
 </td>
 </tr>
 <tr class=" patch core ">
@@ -1409,13 +1416,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/14607">Fix use of the rb_profile_frames start parameter</a>
 </td>
 </tr>
-<tr class=" patch encoding ">
-<td><a href="https://bugs.ruby-lang.org/issues/14591">14591</a>
-</td>
-<td>patch encoding</td>
-<td><a href="https://bugs.ruby-lang.org/issues/14591">Files with invalid multi-byte characters will cause Find::find() to raise EINVAL exception</a>
-</td>
-</tr>
 <tr class=" patch tracepoint ">
 <td><a href="https://bugs.ruby-lang.org/issues/14582">14582</a>
 </td>
@@ -1449,13 +1449,6 @@
 </td>
 <td>test</td>
 <td><a href="https://bugs.ruby-lang.org/issues/14474">skip &quot;TestException#test_thread_signal_location&quot; as known bug</a>
-</td>
-</tr>
-<tr class=" encoding ">
-<td><a href="https://bugs.ruby-lang.org/issues/14456">14456</a>
-</td>
-<td>encoding</td>
-<td><a href="https://bugs.ruby-lang.org/issues/14456">Dir.glob with FNM_CASEFOLD gives ArgumentError: invalid byte sequence in UTF-8</a>
 </td>
 </tr>
 <tr class=" patch core ">
@@ -1785,13 +1778,6 @@
 </td>
 <td>patch lib</td>
 <td><a href="https://bugs.ruby-lang.org/issues/12055">`NET::HTTPResponse` is not deflating responses with custom `Content-Range` header</a>
-</td>
-</tr>
-<tr class=" encoding ">
-<td><a href="https://bugs.ruby-lang.org/issues/12052">12052</a>
-</td>
-<td>encoding</td>
-<td><a href="https://bugs.ruby-lang.org/issues/12052">String#encode with xml option returns wrong result</a>
 </td>
 </tr>
 <tr class=" win core ">
