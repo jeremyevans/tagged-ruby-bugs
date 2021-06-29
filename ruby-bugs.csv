@@ -21,15 +21,12 @@
 8445,patch core,IO.open and IO#set_enconding does not support :fallback option
 8677,patch core maybenotbug,$LOAD_PATH did not encoded into the &quot;internal encoding&quot;
 8782,ext,Don&#39;t set rl_getc_function on editline
-8810,ext unfixable,GDBM.open内で処理がブロックしたらTimeout.timeout が効かない
 8826,ext,BigDecimal#div and #quo different behavior and inconsistencies
-8836,lib maybenotbug,[BUG] Bus Error with bundler on large Gemfile when resolving dependencies
 8973,patch build,Allow to configure archlibdir for multiarch
 9010,build,./configure --prefix= cannot handle directories with spaces
 9115,patch lib,Logger traps all exceptions; breaks Timeout
 9189,win encoding,Build failure on Windows in case of nonascii TEMP environment.
 9208,patch win core,Win32 ANSI color no longer works since revision 43331
-9245,win encoding,Kernel::system gives wrong output for utf-8 characters on windows under utf-8 console
 9366,test,&quot;make -j32 check TESTS=-j32&quot; occasionally fails on rubygems/specification
 9409,cygwin encoding,Cygwin で &quot;filesystem&quot; の encoding が正しくないケース
 9414,win encoding maybenotbug,strftime returns incorrectly encoded string
@@ -37,7 +34,6 @@
 9435,win core,Kernel.system problem
 9507,core os/arch,Ruby 2.1.0 is broken on ARMv5: tried to create Proc object without a block
 9659,ext,crash in FIPS mode after unchecked algo-&gt;init_func failure
-9737,patch encoding,Non-ASCII characters in the path to ruby executable break require paths
 9760,build,mkmf does not allow for linking against custom libraries when a system library is present
 9806,lib maybenotbug,URI#encode doesn&#39;t encode characters &#39;[&#39; and &#39;]&#39;.  They should be encoded as %5B and %5D respectively.
 9921,build maybenotbug,"gmtime_r, win32.h, and &lt;string&gt;"
@@ -289,7 +285,6 @@
 17774,regexp,Quantified empty group causes regex to fail
 17788,patch build,ruby 3.0.0 - compiling c++ extension on alpine fails
 17792,core os/arch,make notes and make test fail with Ruby3.0.1p64 RaspberryPI 4B Ubuntu 20.10 ARM64
-17794,patch core,addr2line.c can free(3) an invalid pointer without zlib
 17799,core,Seg fault in rb_class_clear_method_cache
 17803,ext,Segmentation fault during deflate
 17810,patch core,addr2line.c: Some symbol names missing in C backtrace with Clang/LLVM
@@ -310,19 +305,17 @@
 17929,build win,Compile fails on Windows --with-static-linked-ext
 17931,build win,Compile fails on windows setup option nodynamic
 17933,patch lib,`Net::HTTP#write_timeout` doesn&#39;t work with `body_stream`
-17940,core notbug,Bus Error
 17984,core,[BUG] try to mark T_NONE object 
-17986,ractor notbug,Ractor is stdlib Socket unfriendly
-17987,notbug,Ruby报错
 17989,regexp,Case insensitive Regexps do not handle characters with overlapping case foldings
 17990,regexp,Inconsistent behavior of Regexp quantifiers over characters with complex case foldings
-17991,os/arch test,"[TEST, CRASH] TestBugReporter#test_bug_reporter_add "
 17995,perf ractor,Slow down when mjit and Ractor are being used at same time
 17996,cygwin core,Cygwin: thread + pipe behavior since Ruby 2.6
 17998,ractor,"ractor: process hanging (with ractors initialized, but not being used)"
 17999,test os/arch,TestMethod#test_zsuper intermittent timeout error on raspbian10-aarch64 CI
 18000,lib,have_library doesn&#39;t work when ruby is compiled with --disable-shared --disable-install-static-library
 18002,test os/arch,s390x: Tests failing without LC_ALL env
-18006,lib,Resolv::DNS#getaddress takes minutes to resolve a domain with no DNS records in 3.0 (was quick in 2.7)
 18009,regexp,Regexps \w and \W with /i option and /u option produce inconsistent results under nested negation and intersection
 18010,regexp,Character class with single character gets case-folded with following string
+18011,core maybenotbug,`Method#parameters` is incorrect for forwarded arguments
+18012,regexp,Case-insensitive character classes can only match multiple code points when top-level character class is not negated
+18013,regexp,Unexpected results when mxiing negated character classes and case-folding
