@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>328 Tagged Open Ruby Bugs as of 2021-06-29 02:26:35 +0900</title>
+<title>321 Tagged Open Ruby Bugs as of 2021-06-30 01:25:07 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -13,8 +13,8 @@
 <input type="submit" value="ractor" />
 <input type="submit" value="os/arch" />
 <input type="submit" value="ext" />
-<input type="submit" value="test" />
 <input type="submit" value="thread" />
+<input type="submit" value="test" />
 <input type="submit" value="notbug" />
 <input type="submit" value="cygwin" />
 <input type="submit" value="encoding" />
@@ -27,15 +27,15 @@
 <input type="submit" value="parser" />
 <input type="submit" value="irb" />
 <input type="submit" value="jit" />
-<input type="submit" value="unfixable" />
 <input type="submit" value="backport" />
 <input type="submit" value="doc" />
-<input type="submit" value="misc" /></p>
+<input type="submit" value="misc" />
+<input type="submit" value="unfixable" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">328</span> matched)
+(<span id="matched">321</span> matched)
 <table>
-<caption>328 Tagged Open Ruby Bugs as of 2021-06-29 02:26:35 +0900</caption>
+<caption>321 Tagged Open Ruby Bugs as of 2021-06-30 01:25:07 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -44,6 +44,27 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" regexp ">
+<td><a href="https://bugs.ruby-lang.org/issues/18013">18013</a>
+</td>
+<td>regexp</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18013">Unexpected results when mxiing negated character classes and case-folding</a>
+</td>
+</tr>
+<tr class=" regexp ">
+<td><a href="https://bugs.ruby-lang.org/issues/18012">18012</a>
+</td>
+<td>regexp</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18012">Case-insensitive character classes can only match multiple code points when top-level character class is not negated</a>
+</td>
+</tr>
+<tr class=" core maybenotbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/18011">18011</a>
+</td>
+<td>core maybenotbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18011">`Method#parameters` is incorrect for forwarded arguments</a>
+</td>
+</tr>
 <tr class=" regexp ">
 <td><a href="https://bugs.ruby-lang.org/issues/18010">18010</a>
 </td>
@@ -56,13 +77,6 @@
 </td>
 <td>regexp</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18009">Regexps \w and \W with /i option and /u option produce inconsistent results under nested negation and intersection</a>
-</td>
-</tr>
-<tr class=" lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/18006">18006</a>
-</td>
-<td>lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18006">Resolv::DNS#getaddress takes minutes to resolve a domain with no DNS records in 3.0 (was quick in 2.7)</a>
 </td>
 </tr>
 <tr class=" test os/arch ">
@@ -107,13 +121,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17995">Slow down when mjit and Ractor are being used at same time</a>
 </td>
 </tr>
-<tr class=" os/arch test ">
-<td><a href="https://bugs.ruby-lang.org/issues/17991">17991</a>
-</td>
-<td>os/arch test</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17991">[TEST, CRASH] TestBugReporter#test_bug_reporter_add </a>
-</td>
-</tr>
 <tr class=" regexp ">
 <td><a href="https://bugs.ruby-lang.org/issues/17990">17990</a>
 </td>
@@ -128,32 +135,11 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17989">Case insensitive Regexps do not handle characters with overlapping case foldings</a>
 </td>
 </tr>
-<tr class=" notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/17987">17987</a>
-</td>
-<td>notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17987">Ruby报错</a>
-</td>
-</tr>
-<tr class=" ractor notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/17986">17986</a>
-</td>
-<td>ractor notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17986">Ractor is stdlib Socket unfriendly</a>
-</td>
-</tr>
 <tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/17984">17984</a>
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17984">[BUG] try to mark T_NONE object </a>
-</td>
-</tr>
-<tr class=" core notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/17940">17940</a>
-</td>
-<td>core notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17940">Bus Error</a>
 </td>
 </tr>
 <tr class=" patch lib ">
@@ -294,13 +280,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17799">Seg fault in rb_class_clear_method_cache</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/17794">17794</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17794">addr2line.c can free(3) an invalid pointer without zlib</a>
 </td>
 </tr>
 <tr class=" core os/arch ">
@@ -2060,13 +2039,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/9760">mkmf does not allow for linking against custom libraries when a system library is present</a>
 </td>
 </tr>
-<tr class=" patch encoding ">
-<td><a href="https://bugs.ruby-lang.org/issues/9737">9737</a>
-</td>
-<td>patch encoding</td>
-<td><a href="https://bugs.ruby-lang.org/issues/9737">Non-ASCII characters in the path to ruby executable break require paths</a>
-</td>
-</tr>
 <tr class=" ext ">
 <td><a href="https://bugs.ruby-lang.org/issues/9659">9659</a>
 </td>
@@ -2116,13 +2088,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/9366">&quot;make -j32 check TESTS=-j32&quot; occasionally fails on rubygems/specification</a>
 </td>
 </tr>
-<tr class=" win encoding ">
-<td><a href="https://bugs.ruby-lang.org/issues/9245">9245</a>
-</td>
-<td>win encoding</td>
-<td><a href="https://bugs.ruby-lang.org/issues/9245">Kernel::system gives wrong output for utf-8 characters on windows under utf-8 console</a>
-</td>
-</tr>
 <tr class=" patch win core ">
 <td><a href="https://bugs.ruby-lang.org/issues/9208">9208</a>
 </td>
@@ -2158,25 +2123,11 @@
 <td><a href="https://bugs.ruby-lang.org/issues/8973">Allow to configure archlibdir for multiarch</a>
 </td>
 </tr>
-<tr class=" lib maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/8836">8836</a>
-</td>
-<td>lib maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/8836">[BUG] Bus Error with bundler on large Gemfile when resolving dependencies</a>
-</td>
-</tr>
 <tr class=" ext ">
 <td><a href="https://bugs.ruby-lang.org/issues/8826">8826</a>
 </td>
 <td>ext</td>
 <td><a href="https://bugs.ruby-lang.org/issues/8826">BigDecimal#div and #quo different behavior and inconsistencies</a>
-</td>
-</tr>
-<tr class=" ext unfixable ">
-<td><a href="https://bugs.ruby-lang.org/issues/8810">8810</a>
-</td>
-<td>ext unfixable</td>
-<td><a href="https://bugs.ruby-lang.org/issues/8810">GDBM.open内で処理がブロックしたらTimeout.timeout が効かない</a>
 </td>
 </tr>
 <tr class=" ext ">
