@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>321 Tagged Open Ruby Bugs as of 2021-06-30 01:25:07 +0900</title>
+<title>319 Tagged Open Ruby Bugs as of 2021-07-01 09:08:18 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -9,8 +9,8 @@
 <input type="submit" value="win" />
 <input type="submit" value="build" />
 <input type="submit" value="maybenotbug" />
-<input type="submit" value="lib" />
 <input type="submit" value="ractor" />
+<input type="submit" value="lib" />
 <input type="submit" value="os/arch" />
 <input type="submit" value="ext" />
 <input type="submit" value="thread" />
@@ -18,8 +18,8 @@
 <input type="submit" value="notbug" />
 <input type="submit" value="cygwin" />
 <input type="submit" value="encoding" />
-<input type="submit" value="perf" />
 <input type="submit" value="regexp" />
+<input type="submit" value="perf" />
 <input type="submit" value="refine" />
 <input type="submit" value="tracepoint" />
 <input type="submit" value="fiber" />
@@ -33,9 +33,9 @@
 <input type="submit" value="unfixable" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">321</span> matched)
+(<span id="matched">319</span> matched)
 <table>
-<caption>321 Tagged Open Ruby Bugs as of 2021-06-30 01:25:07 +0900</caption>
+<caption>319 Tagged Open Ruby Bugs as of 2021-07-01 09:08:18 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -44,6 +44,13 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" ractor ">
+<td><a href="https://bugs.ruby-lang.org/issues/18014">18014</a>
+</td>
+<td>ractor</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18014">Memory leak in GC when using Ractors</a>
+</td>
+</tr>
 <tr class=" regexp ">
 <td><a href="https://bugs.ruby-lang.org/issues/18013">18013</a>
 </td>
@@ -142,13 +149,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17984">[BUG] try to mark T_NONE object </a>
 </td>
 </tr>
-<tr class=" patch lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/17933">17933</a>
-</td>
-<td>patch lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17933">`Net::HTTP#write_timeout` doesn&#39;t work with `body_stream`</a>
-</td>
-</tr>
 <tr class=" build win ">
 <td><a href="https://bugs.ruby-lang.org/issues/17931">17931</a>
 </td>
@@ -178,16 +178,9 @@
 </td>
 </tr>
 <tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/17887">17887</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17887">Missed constant lookup after prepend</a>
-</td>
-</tr>
-<tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/17885">17885</a>
 </td>
-<td>core</td>
+<td>patch core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17885">require_relative and require should be compatible with each other when symlinked files are used</a>
 </td>
 </tr>
@@ -301,13 +294,6 @@
 </td>
 <td>regexp</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17774">Quantified empty group causes regex to fail</a>
-</td>
-</tr>
-<tr class=" maybenotbug perf ">
-<td><a href="https://bugs.ruby-lang.org/issues/17772">17772</a>
-</td>
-<td>maybenotbug perf</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17772">Performance issue with NameError message in context with large instance variables (not caused by did_you_mean)</a>
 </td>
 </tr>
 <tr class=" notbug core ">
