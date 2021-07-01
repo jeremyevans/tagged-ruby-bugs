@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>319 Tagged Open Ruby Bugs as of 2021-07-01 09:08:18 +0900</title>
+<title>314 Tagged Open Ruby Bugs as of 2021-07-02 08:25:30 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -11,8 +11,8 @@
 <input type="submit" value="maybenotbug" />
 <input type="submit" value="ractor" />
 <input type="submit" value="lib" />
-<input type="submit" value="os/arch" />
 <input type="submit" value="ext" />
+<input type="submit" value="os/arch" />
 <input type="submit" value="thread" />
 <input type="submit" value="test" />
 <input type="submit" value="notbug" />
@@ -20,8 +20,8 @@
 <input type="submit" value="encoding" />
 <input type="submit" value="regexp" />
 <input type="submit" value="perf" />
-<input type="submit" value="refine" />
 <input type="submit" value="tracepoint" />
+<input type="submit" value="refine" />
 <input type="submit" value="fiber" />
 <input type="submit" value="autoload" />
 <input type="submit" value="parser" />
@@ -33,9 +33,9 @@
 <input type="submit" value="unfixable" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">319</span> matched)
+(<span id="matched">314</span> matched)
 <table>
-<caption>319 Tagged Open Ruby Bugs as of 2021-07-01 09:08:18 +0900</caption>
+<caption>314 Tagged Open Ruby Bugs as of 2021-07-02 08:25:30 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -44,6 +44,13 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18018">18018</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18018">Float#floor / truncate sometimes result that is too small.</a>
+</td>
+</tr>
 <tr class=" ractor ">
 <td><a href="https://bugs.ruby-lang.org/issues/18014">18014</a>
 </td>
@@ -310,13 +317,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17757">Hash#slice does not keep compare_by_identity on the results</a>
 </td>
 </tr>
-<tr class=" patch notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/17745">17745</a>
-</td>
-<td>patch notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17745">`IO#close_on_exec=` returns different value when called with `send, __send__, public_send` or not</a>
-</td>
-</tr>
 <tr class=" maybenotbug core ">
 <td><a href="https://bugs.ruby-lang.org/issues/17737">17737</a>
 </td>
@@ -450,13 +450,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17617">When a Ractor&#39;s incoming port is closed, Ractor.receive_if does not raise Ractor::ClosedError, but instead blocks indefinitely</a>
 </td>
 </tr>
-<tr class=" maybenotbug fiber ">
-<td><a href="https://bugs.ruby-lang.org/issues/17607">17607</a>
-</td>
-<td>maybenotbug fiber</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17607">ChildProcess vs RUBY_PIPE_NONBLOCK_DEFAULT</a>
-</td>
-</tr>
 <tr class=" build win ">
 <td><a href="https://bugs.ruby-lang.org/issues/17588">17588</a>
 </td>
@@ -567,20 +560,6 @@
 </td>
 <td>ractor</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17506">Ractor isolation broken by ThreadGroup</a>
-</td>
-</tr>
-<tr class=" refine ">
-<td><a href="https://bugs.ruby-lang.org/issues/17494">17494</a>
-</td>
-<td>refine</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17494">ruby is hanged when using activesupport + rspec + rspec-parameterized</a>
-</td>
-</tr>
-<tr class=" patch lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/17492">17492</a>
-</td>
-<td>patch lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17492">Breakpoints in debug.rb only work when program invoked with absolute filename</a>
 </td>
 </tr>
 <tr class=" ractor ">
@@ -700,13 +679,6 @@
 </td>
 <td>ractor</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17196">Segmentation Fault with Socket#close in Ractors</a>
-</td>
-</tr>
-<tr class=" test thread os/arch ">
-<td><a href="https://bugs.ruby-lang.org/issues/17189">17189</a>
-</td>
-<td>test thread os/arch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17189">test_thread.rb in testsuite deadlocks with musl libc 1.2.1</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -903,13 +875,6 @@
 </td>
 <td>os/arch</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16810">ruby segfaults on s390x with musl libc</a>
-</td>
-</tr>
-<tr class=" fiber ">
-<td><a href="https://bugs.ruby-lang.org/issues/16805">16805</a>
-</td>
-<td>fiber</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16805">Coroutine&#39;s license is unclear</a>
 </td>
 </tr>
 <tr class=" core ">
