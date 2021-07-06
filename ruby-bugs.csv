@@ -172,13 +172,11 @@
 15779,patch core,"After NoMemoryError, ruby freezes and takes 100% CPU"
 15787,os/arch lib maybenotbug,LoadError by EPERM on read-only volume
 15790,core autoload,Strange interaction between autoload and $LOADED_FEATURES
-15856,core perf,Performance of redundant `Kernel.require` is slow when many gems are activated
 15928,patch core,Constant declaration does not conform to JIS 3017:2013
 16143,patch core,BOM UTF-8 is not removed after rewind
 16145,regexp,"regexp match error if mixing /i, character classes, and utf8"
 16158,regexp notbug,&quot;st&quot; Character Sequence In Regex Look-Behind Causes Illegal Pattern Error When Combined With POSIX Bracket Expressions And Case Insensitivity Flag
 16185,os/arch notbug,basictest failure on AIX 6.1 for 64bit build
-16243,core perf,case/when is slower than if on MRI
 16265,win thread,"Test (spec) failure using current MSYS2 tools, related to -fstack-protector and possibly D_FORTIFY_SOURCE=2"
 16277,win ext maybenotbug,UNIXServer#listen fails with Errno::EADDRINUSE error under Windows 10 / WSL Ubuntu 18.04
 16288,patch core,"Segmentation fault with finalizers, threads"
@@ -199,7 +197,6 @@
 16829,maybenotbug fiber,Exceptions raised from within an enumerated method lose part of their stacktrace
 16836,build,configure-time LDFLAGS leak into ruby pkg-config file
 16842,encoding,`inspect` prints the UTF-8 character U+0085 (NEXT LINE) verbatim even though it is not printable
-16889,tracepoint,"TracePoint.enable { ... } also activates the TracePoint for other threads, even outside the block"
 16905,build,Ruby required to build Ruby on Haiku?
 16908,notbug core,Strange behaviour of Hash#shift when used with `default_proc`.
 16920,os/arch thread,TestThread#test_signal_at_join fails on aarch64
@@ -213,8 +210,6 @@
 17008,jit win,JIT enabled on Windows can cause constant conhost pop-ups
 17037,core,rounding of Rational#to_f
 17048,patch core,Calling initialize_copy on live modules leads to crashes
-17049,notbug lib,Net::IMAP - Handling of NOOP untagged responses sent by Zimbra
-17101,maybenotbug perf lib,YAML.load_file: Massive slowdown under Ruby 2.7 vs. Ruby 2.4
 17120,core patch,String#start_with? return wrong result for Regexp patterns containing /\K/
 17132,build,vcs.rb doesn&#39;t detect git submodules as vcs
 17142,build os/arch,Ruby fails to build in AIX 
@@ -251,7 +246,6 @@
 17568,fiber,Thread.handle_interrupt is per-Thread but should probably be per-Fiber
 17573,core,Crashes in profiling tools when signals arrive in non-Ruby threads
 17578,lib,mkmf experimental C++ Support
-17583,core,Segfault on large stack(RUBY_THREAD_VM_STACK_SIZE)
 17587,ractor,Segmentation fault with ractors and unix signals
 17588,build win,Cannot build with library path with spaces on MSVC
 17617,ractor,"When a Ractor&#39;s incoming port is closed, Ractor.receive_if does not raise Ractor::ClosedError, but instead blocks indefinitely"
@@ -262,7 +256,6 @@
 17656,patch core,Improper functions shown in C level backtrace information
 17664,fiber maybenotbug,Behavior of sockets changed in Ruby 3.0 to non-blocking
 17667,ractor,Module#name needs synchronization
-17668,core,Large RUBY_THREAD_VM_STACK_SIZE causes segmentation fault (again)
 17676,ractor,Accessing ENV from Ractor raises IsolationError
 17677,ractor,Ractor crashes fork when blocking
 17678,ractor,Ractors do not restart after fork
@@ -294,7 +287,6 @@
 17885,patch core,require_relative and require should be compatible with each other when symlinked files are used
 17925,parser,Pattern matching syntax using semicolon one-line
 17926,os/arch,spec/ruby/core/file/atime_spec.rb: a random failing test on Travis ppc64le
-17929,build win,Compile fails on Windows --with-static-linked-ext
 17931,build win,Compile fails on windows setup option nodynamic
 17984,core,[BUG] try to mark T_NONE object 
 17989,regexp,Case insensitive Regexps do not handle characters with overlapping case foldings
@@ -312,3 +304,6 @@
 18013,regexp,Unexpected results when mxiing negated character classes and case-folding
 18014,ractor,Memory leak in GC when using Ractors
 18018,core,Float#floor / truncate sometimes result that is too small.
+18021,refine,"Mixins in Refinements: possibly multiple bugs, workarounds are awkward"
+18023,ractor,Ractor#make_shareable changes the values of closured shareable objects
+18024,ractor,Ractor crashes when connections are closed in multiple Ractors
