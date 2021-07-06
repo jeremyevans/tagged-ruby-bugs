@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>314 Tagged Open Ruby Bugs as of 2021-07-02 08:25:30 +0900</title>
+<title>309 Tagged Open Ruby Bugs as of 2021-07-07 00:50:00 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -10,8 +10,8 @@
 <input type="submit" value="build" />
 <input type="submit" value="maybenotbug" />
 <input type="submit" value="ractor" />
-<input type="submit" value="lib" />
 <input type="submit" value="ext" />
+<input type="submit" value="lib" />
 <input type="submit" value="os/arch" />
 <input type="submit" value="thread" />
 <input type="submit" value="test" />
@@ -20,8 +20,8 @@
 <input type="submit" value="encoding" />
 <input type="submit" value="regexp" />
 <input type="submit" value="perf" />
-<input type="submit" value="tracepoint" />
 <input type="submit" value="refine" />
+<input type="submit" value="tracepoint" />
 <input type="submit" value="fiber" />
 <input type="submit" value="autoload" />
 <input type="submit" value="parser" />
@@ -33,9 +33,9 @@
 <input type="submit" value="unfixable" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">314</span> matched)
+(<span id="matched">309</span> matched)
 <table>
-<caption>314 Tagged Open Ruby Bugs as of 2021-07-02 08:25:30 +0900</caption>
+<caption>309 Tagged Open Ruby Bugs as of 2021-07-07 00:50:00 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -44,6 +44,27 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" ractor ">
+<td><a href="https://bugs.ruby-lang.org/issues/18024">18024</a>
+</td>
+<td>ractor</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18024">Ractor crashes when connections are closed in multiple Ractors</a>
+</td>
+</tr>
+<tr class=" ractor ">
+<td><a href="https://bugs.ruby-lang.org/issues/18023">18023</a>
+</td>
+<td>ractor</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18023">Ractor#make_shareable changes the values of closured shareable objects</a>
+</td>
+</tr>
+<tr class=" refine ">
+<td><a href="https://bugs.ruby-lang.org/issues/18021">18021</a>
+</td>
+<td>refine</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18021">Mixins in Refinements: possibly multiple bugs, workarounds are awkward</a>
+</td>
+</tr>
 <tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/18018">18018</a>
 </td>
@@ -161,13 +182,6 @@
 </td>
 <td>build win</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17931">Compile fails on windows setup option nodynamic</a>
-</td>
-</tr>
-<tr class=" build win ">
-<td><a href="https://bugs.ruby-lang.org/issues/17929">17929</a>
-</td>
-<td>build win</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17929">Compile fails on Windows --with-static-linked-ext</a>
 </td>
 </tr>
 <tr class=" os/arch ">
@@ -387,13 +401,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17676">Accessing ENV from Ractor raises IsolationError</a>
 </td>
 </tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/17668">17668</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17668">Large RUBY_THREAD_VM_STACK_SIZE causes segmentation fault (again)</a>
-</td>
-</tr>
 <tr class=" ractor ">
 <td><a href="https://bugs.ruby-lang.org/issues/17667">17667</a>
 </td>
@@ -462,13 +469,6 @@
 </td>
 <td>ractor</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17587">Segmentation fault with ractors and unix signals</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/17583">17583</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17583">Segfault on large stack(RUBY_THREAD_VM_STACK_SIZE)</a>
 </td>
 </tr>
 <tr class=" lib ">
@@ -723,20 +723,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17120">String#start_with? return wrong result for Regexp patterns containing /\K/</a>
 </td>
 </tr>
-<tr class=" maybenotbug perf lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/17101">17101</a>
-</td>
-<td>maybenotbug perf lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17101">YAML.load_file: Massive slowdown under Ruby 2.7 vs. Ruby 2.4</a>
-</td>
-</tr>
-<tr class=" notbug lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/17049">17049</a>
-</td>
-<td>notbug lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17049">Net::IMAP - Handling of NOOP untagged responses sent by Zimbra</a>
-</td>
-</tr>
 <tr class=" patch core ">
 <td><a href="https://bugs.ruby-lang.org/issues/17048">17048</a>
 </td>
@@ -826,13 +812,6 @@
 </td>
 <td>build</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16905">Ruby required to build Ruby on Haiku?</a>
-</td>
-</tr>
-<tr class=" tracepoint ">
-<td><a href="https://bugs.ruby-lang.org/issues/16889">16889</a>
-</td>
-<td>tracepoint</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16889">TracePoint.enable { ... } also activates the TracePoint for other threads, even outside the block</a>
 </td>
 </tr>
 <tr class=" encoding ">
@@ -975,13 +954,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16265">Test (spec) failure using current MSYS2 tools, related to -fstack-protector and possibly D_FORTIFY_SOURCE=2</a>
 </td>
 </tr>
-<tr class=" core perf ">
-<td><a href="https://bugs.ruby-lang.org/issues/16243">16243</a>
-</td>
-<td>core perf</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16243">case/when is slower than if on MRI</a>
-</td>
-</tr>
 <tr class=" os/arch notbug ">
 <td><a href="https://bugs.ruby-lang.org/issues/16185">16185</a>
 </td>
@@ -1015,13 +987,6 @@
 </td>
 <td>patch core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/15928">Constant declaration does not conform to JIS 3017:2013</a>
-</td>
-</tr>
-<tr class=" core perf ">
-<td><a href="https://bugs.ruby-lang.org/issues/15856">15856</a>
-</td>
-<td>core perf</td>
-<td><a href="https://bugs.ruby-lang.org/issues/15856">Performance of redundant `Kernel.require` is slow when many gems are activated</a>
 </td>
 </tr>
 <tr class=" core autoload ">
