@@ -163,7 +163,6 @@
 15438,win thread,Threads can&#39;t switch faster than TIME_QUANTUM_(NSEC|USEC|MSEC)
 15499,thread,Breaking behavior on ruby 2.6: rb_thread_call_without_gvl doesn&#39;t invoke unblock_function when used on the main thread 
 15507,thread,Thread#raise is delivered to GC context
-15509,thread,TCPServer#accept isn&#39;t interrupted
 15550,win,Windows - gem bin files - can&#39;t run from bash shell
 15598,core autoload,Deadlock on mutual reference of autoloaded constants
 15599,core autoload,Mixing autoload and require causes deadlock and incomplete definition.
@@ -287,8 +286,7 @@
 17885,patch core,require_relative and require should be compatible with each other when symlinked files are used
 17925,parser,Pattern matching syntax using semicolon one-line
 17926,os/arch,spec/ruby/core/file/atime_spec.rb: a random failing test on Travis ppc64le
-17931,build win,Compile fails on windows setup option nodynamic
-17984,core,[BUG] try to mark T_NONE object 
+17931,build win,Compile fails setup option nodynamic
 17989,regexp,Case insensitive Regexps do not handle characters with overlapping case foldings
 17990,regexp,Inconsistent behavior of Regexp quantifiers over characters with complex case foldings
 17995,perf ractor,Slow down when mjit and Ractor are being used at same time
@@ -307,3 +305,5 @@
 18021,refine,"Mixins in Refinements: possibly multiple bugs, workarounds are awkward"
 18023,ractor,Ractor#make_shareable changes the values of closured shareable objects
 18024,ractor,Ractor crashes when connections are closed in multiple Ractors
+18027,encoding,test/ruby/enc/test_emoji_breaks.rb does not use the file emoji-variation-sequences.txt
+18028,encoding,test/ruby/enc/test_emoji_breaks.rb does not deal with Unicode ranges in file emoji-sequences.txt
