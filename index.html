@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>309 Tagged Open Ruby Bugs as of 2021-07-09 08:26:15 +0900</title>
+<title>313 Tagged Open Ruby Bugs as of 2021-07-10 06:40:16 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -10,14 +10,14 @@
 <input type="submit" value="build" />
 <input type="submit" value="maybenotbug" />
 <input type="submit" value="ractor" />
+<input type="submit" value="os/arch" />
 <input type="submit" value="ext" />
 <input type="submit" value="lib" />
-<input type="submit" value="os/arch" />
 <input type="submit" value="test" />
 <input type="submit" value="thread" />
+<input type="submit" value="encoding" />
 <input type="submit" value="notbug" />
 <input type="submit" value="cygwin" />
-<input type="submit" value="encoding" />
 <input type="submit" value="regexp" />
 <input type="submit" value="perf" />
 <input type="submit" value="refine" />
@@ -33,9 +33,9 @@
 <input type="submit" value="unfixable" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">309</span> matched)
+(<span id="matched">313</span> matched)
 <table>
-<caption>309 Tagged Open Ruby Bugs as of 2021-07-09 08:26:15 +0900</caption>
+<caption>313 Tagged Open Ruby Bugs as of 2021-07-10 06:40:16 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -44,6 +44,27 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" fiber ">
+<td><a href="https://bugs.ruby-lang.org/issues/18036">18036</a>
+</td>
+<td>fiber</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18036">Pthread fibers become invalid on fork - different from normal fibers.</a>
+</td>
+</tr>
+<tr class=" os/arch ">
+<td><a href="https://bugs.ruby-lang.org/issues/18034">18034</a>
+</td>
+<td>os/arch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18034">Segmentation fault fiddle with `--enable-bundled-libffi` and macOS</a>
+</td>
+</tr>
+<tr class=" tracepoint ">
+<td><a href="https://bugs.ruby-lang.org/issues/18031">18031</a>
+</td>
+<td>tracepoint</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18031">Nested TracePoint#enable with target crashes</a>
+</td>
+</tr>
 <tr class=" encoding ">
 <td><a href="https://bugs.ruby-lang.org/issues/18028">18028</a>
 </td>
@@ -987,6 +1008,13 @@
 </td>
 <td>patch core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16143">BOM UTF-8 is not removed after rewind</a>
+</td>
+</tr>
+<tr class=" win encoding ">
+<td><a href="https://bugs.ruby-lang.org/issues/15993">15993</a>
+</td>
+<td>win encoding</td>
+<td><a href="https://bugs.ruby-lang.org/issues/15993">&#39;require&#39; doesn&#39;t work if there are Cyrillic chars in the path to Ruby dir</a>
 </td>
 </tr>
 <tr class=" patch core ">
