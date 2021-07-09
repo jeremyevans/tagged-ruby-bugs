@@ -172,6 +172,7 @@
 15787,os/arch lib maybenotbug,LoadError by EPERM on read-only volume
 15790,core autoload,Strange interaction between autoload and $LOADED_FEATURES
 15928,patch core,Constant declaration does not conform to JIS 3017:2013
+15993,win encoding,&#39;require&#39; doesn&#39;t work if there are Cyrillic chars in the path to Ruby dir
 16143,patch core,BOM UTF-8 is not removed after rewind
 16145,regexp,"regexp match error if mixing /i, character classes, and utf8"
 16158,regexp notbug,&quot;st&quot; Character Sequence In Regex Look-Behind Causes Illegal Pattern Error When Combined With POSIX Bracket Expressions And Case Insensitivity Flag
@@ -307,3 +308,6 @@
 18024,ractor,Ractor crashes when connections are closed in multiple Ractors
 18027,encoding,test/ruby/enc/test_emoji_breaks.rb does not use the file emoji-variation-sequences.txt
 18028,encoding,test/ruby/enc/test_emoji_breaks.rb does not deal with Unicode ranges in file emoji-sequences.txt
+18031,tracepoint,Nested TracePoint#enable with target crashes
+18034,os/arch,Segmentation fault fiddle with `--enable-bundled-libffi` and macOS
+18036,fiber,Pthread fibers become invalid on fork - different from normal fibers.
