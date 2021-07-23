@@ -77,7 +77,6 @@
 12055,patch lib,`NET::HTTPResponse` is not deflating responses with custom `Content-Range` header
 12179,build,Build failure due to VPATH expansion
 12235,lib maybenotbug,URI.encode issue with square brackets
-12261,win maybenotbug,Windows: File.dirname with 2+ / or 2+ \\ will return // or \\\\
 12280,win core,"IO.copy_stream(IO, IO) fails with &quot;pread() not implemented&quot;"
 12436,patch win core,newline argument of File.open seems not respected on Windows
 12440,cygwin core,make test-all is not working on cygwin
@@ -171,6 +170,7 @@
 15779,patch core,"After NoMemoryError, ruby freezes and takes 100% CPU"
 15787,os/arch lib maybenotbug,LoadError by EPERM on read-only volume
 15790,core autoload,Strange interaction between autoload and $LOADED_FEATURES
+15856,patch core,Performance of redundant `Kernel.require` is slow when many gems are activated
 15928,patch core,Constant declaration does not conform to JIS 3017:2013
 15993,win encoding,&#39;require&#39; doesn&#39;t work if there are Cyrillic chars in the path to Ruby dir
 16143,patch core,BOM UTF-8 is not removed after rewind
@@ -187,7 +187,6 @@
 16493,thread os/arch,TestThreadQueue#test_thr_kill is flaky on AArch64
 16497,ext,StringIO#internal_encoding is broken (more severely in 2.7)
 16608,patch ext,ConditionVariable#wait should return false when timeout exceeded
-16654,core,Segfault in rb_str_hash
 16672,patch lib,net/http leaves original content-length header intact after inflating response
 16694,core,JIT vs hardened GCC with PCH
 16776,core,Regression in coverage library
@@ -238,7 +237,6 @@
 17513,ractor,Methods of shareable objects and UnboundMethods should be shareable
 17516,ractor,forking in a ractor causes Ruby to crash
 17529,ractor,Ractor Segfaults with GC enabled
-17530,patch irb,irb handles &lt;&lt; incorrectly with variable as identifier
 17531,ractor,`did_you_mean` not Ractor friendly
 17543,ractor,Ractor isolation broken by `self` in shareable proc
 17545,core maybenotbug,Calling dup on a subclass of Proc returns a Proc and not the subclass
@@ -265,14 +263,10 @@
 17722,ractor,define_method with shareable results in &quot;defined in a different Ractor&quot;
 17725,patch core,Prepend breaks ability to override optimized methods
 17728,notbug,[BUG] Segmentation fault at 0x0000000000000000
-17737,maybenotbug core,`Array#permutation` does not immediately check the arity when no block is given
-17757,patch core,Hash#slice does not keep compare_by_identity on the results
 17765,notbug core,Segmentation fault when calling String#gsub
 17774,regexp,Quantified empty group causes regex to fail
-17788,patch build,ruby 3.0.0 - compiling c++ extension on alpine fails
 17792,core os/arch,make notes and make test fail with Ruby3.0.1p64 RaspberryPI 4B Ubuntu 20.10 ARM64
 17799,core,Seg fault in rb_class_clear_method_cache
-17803,ext,Segmentation fault during deflate
 17810,patch core,addr2line.c: Some symbol names missing in C backtrace with Clang/LLVM
 17813,patch win ext,rb_funcall() may reset the latest socket error unexpectedlly since Ruby 3.0.0
 17817,jit,--jit outputs ./tmp/_ruby_mjit_*.h: No such file or directory on with TMP
@@ -301,7 +295,6 @@
 18011,core maybenotbug,`Method#parameters` is incorrect for forwarded arguments
 18012,regexp,Case-insensitive character classes can only match multiple code points when top-level character class is not negated
 18013,regexp,Unexpected results when mxiing negated character classes and case-folding
-18014,ractor,Memory leak in GC when using Ractors
 18018,core,Float#floor / truncate sometimes result that is too small.
 18021,refine,"Mixins in Refinements: possibly multiple bugs, workarounds are awkward"
 18023,ractor,Ractor#make_shareable changes the values of closured shareable objects
@@ -311,3 +304,4 @@
 18031,tracepoint,Nested TracePoint#enable with target crashes
 18034,os/arch,Segmentation fault fiddle with `--enable-bundled-libffi` and macOS
 18036,fiber,Pthread fibers become invalid on fork - different from normal fibers.
+18041,notbug,[BUG] Segmentation fault - ruby 2.5.8p224 (2020-03-31 revision 67882) [aarch64-linux]
