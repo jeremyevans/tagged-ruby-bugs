@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>313 Tagged Open Ruby Bugs as of 2021-07-10 06:40:16 +0900</title>
+<title>307 Tagged Open Ruby Bugs as of 2021-07-24 04:17:06 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -11,12 +11,12 @@
 <input type="submit" value="maybenotbug" />
 <input type="submit" value="ractor" />
 <input type="submit" value="os/arch" />
-<input type="submit" value="ext" />
 <input type="submit" value="lib" />
+<input type="submit" value="ext" />
 <input type="submit" value="test" />
 <input type="submit" value="thread" />
-<input type="submit" value="encoding" />
 <input type="submit" value="notbug" />
+<input type="submit" value="encoding" />
 <input type="submit" value="cygwin" />
 <input type="submit" value="regexp" />
 <input type="submit" value="perf" />
@@ -25,17 +25,17 @@
 <input type="submit" value="fiber" />
 <input type="submit" value="autoload" />
 <input type="submit" value="parser" />
-<input type="submit" value="irb" />
 <input type="submit" value="jit" />
 <input type="submit" value="backport" />
 <input type="submit" value="doc" />
+<input type="submit" value="irb" />
 <input type="submit" value="misc" />
 <input type="submit" value="unfixable" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">313</span> matched)
+(<span id="matched">307</span> matched)
 <table>
-<caption>313 Tagged Open Ruby Bugs as of 2021-07-10 06:40:16 +0900</caption>
+<caption>307 Tagged Open Ruby Bugs as of 2021-07-24 04:17:06 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -44,6 +44,13 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" notbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/18041">18041</a>
+</td>
+<td>notbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18041">[BUG] Segmentation fault - ruby 2.5.8p224 (2020-03-31 revision 67882) [aarch64-linux]</a>
+</td>
+</tr>
 <tr class=" fiber ">
 <td><a href="https://bugs.ruby-lang.org/issues/18036">18036</a>
 </td>
@@ -105,13 +112,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18018">Float#floor / truncate sometimes result that is too small.</a>
-</td>
-</tr>
-<tr class=" ractor ">
-<td><a href="https://bugs.ruby-lang.org/issues/18014">18014</a>
-</td>
-<td>ractor</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18014">Memory leak in GC when using Ractors</a>
 </td>
 </tr>
 <tr class=" regexp ">
@@ -310,13 +310,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17810">addr2line.c: Some symbol names missing in C backtrace with Clang/LLVM</a>
 </td>
 </tr>
-<tr class=" ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/17803">17803</a>
-</td>
-<td>ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17803">Segmentation fault during deflate</a>
-</td>
-</tr>
 <tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/17799">17799</a>
 </td>
@@ -331,13 +324,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17792">make notes and make test fail with Ruby3.0.1p64 RaspberryPI 4B Ubuntu 20.10 ARM64</a>
 </td>
 </tr>
-<tr class=" patch build ">
-<td><a href="https://bugs.ruby-lang.org/issues/17788">17788</a>
-</td>
-<td>patch build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17788">ruby 3.0.0 - compiling c++ extension on alpine fails</a>
-</td>
-</tr>
 <tr class=" regexp ">
 <td><a href="https://bugs.ruby-lang.org/issues/17774">17774</a>
 </td>
@@ -350,20 +336,6 @@
 </td>
 <td>notbug core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17765">Segmentation fault when calling String#gsub</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/17757">17757</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17757">Hash#slice does not keep compare_by_identity on the results</a>
-</td>
-</tr>
-<tr class=" maybenotbug core ">
-<td><a href="https://bugs.ruby-lang.org/issues/17737">17737</a>
-</td>
-<td>maybenotbug core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17737">`Array#permutation` does not immediately check the arity when no block is given</a>
 </td>
 </tr>
 <tr class=" notbug ">
@@ -546,13 +518,6 @@
 </td>
 <td>ractor</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17531">`did_you_mean` not Ractor friendly</a>
-</td>
-</tr>
-<tr class=" patch irb ">
-<td><a href="https://bugs.ruby-lang.org/issues/17530">17530</a>
-</td>
-<td>patch irb</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17530">irb handles &lt;&lt; incorrectly with variable as identifier</a>
 </td>
 </tr>
 <tr class=" ractor ">
@@ -905,13 +870,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16672">net/http leaves original content-length header intact after inflating response</a>
 </td>
 </tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/16654">16654</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16654">Segfault in rb_str_hash</a>
-</td>
-</tr>
 <tr class=" patch ext ">
 <td><a href="https://bugs.ruby-lang.org/issues/16608">16608</a>
 </td>
@@ -1022,6 +980,13 @@
 </td>
 <td>patch core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/15928">Constant declaration does not conform to JIS 3017:2013</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/15856">15856</a>
+</td>
+<td>patch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/15856">Performance of redundant `Kernel.require` is slow when many gems are activated</a>
 </td>
 </tr>
 <tr class=" core autoload ">
@@ -1673,13 +1638,6 @@
 </td>
 <td>win core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/12280">IO.copy_stream(IO, IO) fails with &quot;pread() not implemented&quot;</a>
-</td>
-</tr>
-<tr class=" win maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/12261">12261</a>
-</td>
-<td>win maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/12261">Windows: File.dirname with 2+ / or 2+ \\ will return // or \\\\</a>
 </td>
 </tr>
 <tr class=" lib maybenotbug ">
