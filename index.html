@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>307 Tagged Open Ruby Bugs as of 2021-07-24 04:17:06 +0900</title>
+<title>304 Tagged Open Ruby Bugs as of 2021-07-27 03:42:14 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -15,8 +15,8 @@
 <input type="submit" value="ext" />
 <input type="submit" value="test" />
 <input type="submit" value="thread" />
-<input type="submit" value="notbug" />
 <input type="submit" value="encoding" />
+<input type="submit" value="notbug" />
 <input type="submit" value="cygwin" />
 <input type="submit" value="regexp" />
 <input type="submit" value="perf" />
@@ -33,9 +33,9 @@
 <input type="submit" value="unfixable" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">307</span> matched)
+(<span id="matched">304</span> matched)
 <table>
-<caption>307 Tagged Open Ruby Bugs as of 2021-07-24 04:17:06 +0900</caption>
+<caption>304 Tagged Open Ruby Bugs as of 2021-07-27 03:42:14 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -107,10 +107,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18021">Mixins in Refinements: possibly multiple bugs, workarounds are awkward</a>
 </td>
 </tr>
-<tr class=" core ">
+<tr class=" patch core ">
 <td><a href="https://bugs.ruby-lang.org/issues/18018">18018</a>
 </td>
-<td>core</td>
+<td>patch core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18018">Float#floor / truncate sometimes result that is too small.</a>
 </td>
 </tr>
@@ -282,10 +282,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17826">Ractor#take hangs if used in multiple Threads</a>
 </td>
 </tr>
-<tr class=" core ">
+<tr class=" patch core ">
 <td><a href="https://bugs.ruby-lang.org/issues/17823">17823</a>
 </td>
-<td>core</td>
+<td>patch core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17823">addr2line.c: Interpret `DW_RLE_start_length`</a>
 </td>
 </tr>
@@ -336,13 +336,6 @@
 </td>
 <td>notbug core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17765">Segmentation fault when calling String#gsub</a>
-</td>
-</tr>
-<tr class=" notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/17728">17728</a>
-</td>
-<td>notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17728">[BUG] Segmentation fault at 0x0000000000000000</a>
 </td>
 </tr>
 <tr class=" patch core ">
@@ -443,10 +436,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17624">Ractor.receive is not thread-safe</a>
 </td>
 </tr>
-<tr class=" irb ">
+<tr class=" patch irb ">
 <td><a href="https://bugs.ruby-lang.org/issues/17623">17623</a>
 </td>
-<td>irb</td>
+<td>patch irb</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17623">irb starts with some local variables already defined</a>
 </td>
 </tr>
@@ -674,10 +667,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17196">Segmentation Fault with Socket#close in Ractors</a>
 </td>
 </tr>
-<tr class=" core ">
+<tr class=" patch core ">
 <td><a href="https://bugs.ruby-lang.org/issues/17183">17183</a>
 </td>
-<td>core</td>
+<td>patch core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17183">Float round working weirdly</a>
 </td>
 </tr>
@@ -870,13 +863,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16672">net/http leaves original content-length header intact after inflating response</a>
 </td>
 </tr>
-<tr class=" patch ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/16608">16608</a>
-</td>
-<td>patch ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16608">ConditionVariable#wait should return false when timeout exceeded</a>
-</td>
-</tr>
 <tr class=" ext ">
 <td><a href="https://bugs.ruby-lang.org/issues/16497">16497</a>
 </td>
@@ -980,13 +966,6 @@
 </td>
 <td>patch core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/15928">Constant declaration does not conform to JIS 3017:2013</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/15856">15856</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/15856">Performance of redundant `Kernel.require` is slow when many gems are activated</a>
 </td>
 </tr>
 <tr class=" core autoload ">
