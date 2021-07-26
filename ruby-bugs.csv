@@ -170,7 +170,6 @@
 15779,patch core,"After NoMemoryError, ruby freezes and takes 100% CPU"
 15787,os/arch lib maybenotbug,LoadError by EPERM on read-only volume
 15790,core autoload,Strange interaction between autoload and $LOADED_FEATURES
-15856,patch core,Performance of redundant `Kernel.require` is slow when many gems are activated
 15928,patch core,Constant declaration does not conform to JIS 3017:2013
 15993,win encoding,&#39;require&#39; doesn&#39;t work if there are Cyrillic chars in the path to Ruby dir
 16143,patch core,BOM UTF-8 is not removed after rewind
@@ -186,7 +185,6 @@
 16492,test,TestBugReporter#test_bug_reporter_add test failures
 16493,thread os/arch,TestThreadQueue#test_thr_kill is flaky on AArch64
 16497,ext,StringIO#internal_encoding is broken (more severely in 2.7)
-16608,patch ext,ConditionVariable#wait should return false when timeout exceeded
 16672,patch lib,net/http leaves original content-length header intact after inflating response
 16694,core,JIT vs hardened GCC with PCH
 16776,core,Regression in coverage library
@@ -214,7 +212,7 @@
 17142,build os/arch,Ruby fails to build in AIX 
 17159,ractor,extend `define_method` for Ractor
 17180,ractor,Ractor and constant referencing
-17183,core,Float round working weirdly
+17183,patch core,Float round working weirdly
 17196,ractor,Segmentation Fault with Socket#close in Ractors
 17263,fiber perf,"Fiber context switch degrades with number of fibers, limit on number of fibers"
 17289,core,Time#strftime occurs Segmentation Fault on ruby-2.7.2p137
@@ -247,7 +245,7 @@
 17587,ractor,Segmentation fault with ractors and unix signals
 17588,build win,Cannot build with library path with spaces on MSVC
 17617,ractor,"When a Ractor&#39;s incoming port is closed, Ractor.receive_if does not raise Ractor::ClosedError, but instead blocks indefinitely"
-17623,irb,irb starts with some local variables already defined
+17623,patch irb,irb starts with some local variables already defined
 17624,ractor,Ractor.receive is not thread-safe
 17629,patch ext os/arch,"macOS, readline compiled with libedit: adding entries to history doesn&#39;t work unless Readline.readline is called before populating it"
 17646,patch build,Check for `__builtin_mul_overflow` with `long long` arguments
@@ -262,7 +260,6 @@
 17719,core maybenotbug,Irregular evaluation order in hash literals
 17722,ractor,define_method with shareable results in &quot;defined in a different Ractor&quot;
 17725,patch core,Prepend breaks ability to override optimized methods
-17728,notbug,[BUG] Segmentation fault at 0x0000000000000000
 17765,notbug core,Segmentation fault when calling String#gsub
 17774,regexp,Quantified empty group causes regex to fail
 17792,core os/arch,make notes and make test fail with Ruby3.0.1p64 RaspberryPI 4B Ubuntu 20.10 ARM64
@@ -270,7 +267,7 @@
 17810,patch core,addr2line.c: Some symbol names missing in C backtrace with Clang/LLVM
 17813,patch win ext,rb_funcall() may reset the latest socket error unexpectedlly since Ruby 3.0.0
 17817,jit,--jit outputs ./tmp/_ruby_mjit_*.h: No such file or directory on with TMP
-17823,core,addr2line.c: Interpret `DW_RLE_start_length`
+17823,patch core,addr2line.c: Interpret `DW_RLE_start_length`
 17826,ractor,Ractor#take hangs if used in multiple Threads
 17835,patch maybenotbug lib,Net::HTTP should automatically add Accept-Encoding request header on HEAD request as well
 17840,build,`make install` overriding file permission with 644
@@ -295,7 +292,7 @@
 18011,core maybenotbug,`Method#parameters` is incorrect for forwarded arguments
 18012,regexp,Case-insensitive character classes can only match multiple code points when top-level character class is not negated
 18013,regexp,Unexpected results when mxiing negated character classes and case-folding
-18018,core,Float#floor / truncate sometimes result that is too small.
+18018,patch core,Float#floor / truncate sometimes result that is too small.
 18021,refine,"Mixins in Refinements: possibly multiple bugs, workarounds are awkward"
 18023,ractor,Ractor#make_shareable changes the values of closured shareable objects
 18024,ractor,Ractor crashes when connections are closed in multiple Ractors
