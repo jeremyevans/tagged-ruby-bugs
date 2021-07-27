@@ -106,6 +106,7 @@
 13644,win test,Windows - Setting Time.now
 13671,regexp notbug,Regexp with lookbehind and case-insensitivity raises RegexpError only on strings with certain characters
 13754,ext,bigdecimal with lower precision that Float
+13810,lib,Inconsistency between Date and Time.strftime(&quot;%v&quot;)
 13864,test,Rinda multicast test failures due to missing default route
 13876,patch core,Tempfile&#39;s finalizer can be interrupted by a Timeout exception which can cause the process to hang
 13999,cygwin ext,Cygwin 環境で ripper_state_lex.rb がコアダンプする
@@ -123,6 +124,7 @@
 14474,test,skip &quot;TestException#test_thread_signal_location&quot; as known bug
 14479,patch tracepoint,Exceptions raised from a :call tracepoint can sometimes be &quot;rescued&quot; inside the method
 14480,os/arch build,miniruby crashing when compiled with -O2 or -O1 on aarch64
+14500,doc,Missing Regexp documentation and clarification on behavior of \K for edge case
 14543,build,`make commit` show error of `common-srcs`
 14582,patch tracepoint,Unable to use `method__entry` and `method_return` tracing probes since 2.5
 14607,patch core,Fix use of the rb_profile_frames start parameter
@@ -297,8 +299,9 @@
 18023,ractor,Ractor#make_shareable changes the values of closured shareable objects
 18024,ractor,Ractor crashes when connections are closed in multiple Ractors
 18027,encoding,test/ruby/enc/test_emoji_breaks.rb does not use the file emoji-variation-sequences.txt
-18028,encoding,test/ruby/enc/test_emoji_breaks.rb does not deal with Unicode ranges in file emoji-sequences.txt
 18031,tracepoint,Nested TracePoint#enable with target crashes
 18034,os/arch,Segmentation fault fiddle with `--enable-bundled-libffi` and macOS
 18036,fiber,Pthread fibers become invalid on fork - different from normal fibers.
 18041,notbug,[BUG] Segmentation fault - ruby 2.5.8p224 (2020-03-31 revision 67882) [aarch64-linux]
+18046,build,Missing include leads to build breakage of glib2 on head
+18049,os/arch,Cannot build ruby-3.0.2 on NetBSD
