@@ -49,7 +49,6 @@
 10580,test os/arch,TestProcess#test_deadlock_by_signal_at_forking fails on ARM
 10584,encoding maybenotbug,"String.valid_encoding?, String.ascii_only? fails to account for BOM."
 10855,patch lib,[PATCH] Matrix#inverse returns matrix of integers whenever possible
-10902,core,require(&quot;enumerator&quot;) scans LOAD_PATH 2x on every invocation
 10919,lib,[gem install] installs multipe platforms
 11063,patch core maybenotbug,Special singleton class should return true for singleton_class? test
 11064,core maybenotbug,#singleton_methods for objects with special singleton_class returns an empty array
@@ -106,7 +105,7 @@
 13644,win test,Windows - Setting Time.now
 13671,regexp notbug,Regexp with lookbehind and case-insensitivity raises RegexpError only on strings with certain characters
 13754,ext,bigdecimal with lower precision that Float
-13810,lib,Inconsistency between Date and Time.strftime(&quot;%v&quot;)
+13810,patch ext,Inconsistency between Date and Time.strftime(&quot;%v&quot;)
 13864,test,Rinda multicast test failures due to missing default route
 13876,patch core,Tempfile&#39;s finalizer can be interrupted by a Timeout exception which can cause the process to hang
 13999,cygwin ext,Cygwin 環境で ripper_state_lex.rb がコアダンプする
@@ -124,7 +123,6 @@
 14474,test,skip &quot;TestException#test_thread_signal_location&quot; as known bug
 14479,patch tracepoint,Exceptions raised from a :call tracepoint can sometimes be &quot;rescued&quot; inside the method
 14480,os/arch build,miniruby crashing when compiled with -O2 or -O1 on aarch64
-14500,doc,Missing Regexp documentation and clarification on behavior of \K for edge case
 14543,build,`make commit` show error of `common-srcs`
 14582,patch tracepoint,Unable to use `method__entry` and `method_return` tracing probes since 2.5
 14607,patch core,Fix use of the rb_profile_frames start parameter
@@ -169,7 +167,6 @@
 15599,core autoload,Mixing autoload and require causes deadlock and incomplete definition.
 15644,patch ext,ThreadsWait problems with Thread#report_on_exception
 15764,parser,Whitespace and control characters should not be permitted in tokens
-15779,patch core,"After NoMemoryError, ruby freezes and takes 100% CPU"
 15787,os/arch lib maybenotbug,LoadError by EPERM on read-only volume
 15790,core autoload,Strange interaction between autoload and $LOADED_FEATURES
 15928,patch core,Constant declaration does not conform to JIS 3017:2013
@@ -294,7 +291,6 @@
 18011,core maybenotbug,`Method#parameters` is incorrect for forwarded arguments
 18012,regexp,Case-insensitive character classes can only match multiple code points when top-level character class is not negated
 18013,regexp,Unexpected results when mxiing negated character classes and case-folding
-18018,patch core,Float#floor / truncate sometimes result that is too small.
 18021,refine,"Mixins in Refinements: possibly multiple bugs, workarounds are awkward"
 18023,ractor,Ractor#make_shareable changes the values of closured shareable objects
 18024,ractor,Ractor crashes when connections are closed in multiple Ractors
@@ -304,4 +300,5 @@
 18036,fiber,Pthread fibers become invalid on fork - different from normal fibers.
 18041,notbug,[BUG] Segmentation fault - ruby 2.5.8p224 (2020-03-31 revision 67882) [aarch64-linux]
 18046,build,Missing include leads to build breakage of glib2 on head
-18049,os/arch,Cannot build ruby-3.0.2 on NetBSD
+18049,os/arch build notbug,Cannot build ruby-3.0.2 on NetBSD
+18050,os/arch build notbug,Cannot build ruby-2.7.4 on NetBSD
