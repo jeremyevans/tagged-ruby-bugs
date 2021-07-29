@@ -107,7 +107,6 @@
 13754,ext,bigdecimal with lower precision that Float
 13810,patch ext,Inconsistency between Date and Time.strftime(&quot;%v&quot;)
 13864,test,Rinda multicast test failures due to missing default route
-13876,patch core,Tempfile&#39;s finalizer can be interrupted by a Timeout exception which can cause the process to hang
 13999,cygwin ext,Cygwin 環境で ripper_state_lex.rb がコアダンプする
 14049,win core,SEGV svn 60401 require_relative
 14064,test,test-all with and without -j - incorrect assertions and missing test methods
@@ -116,7 +115,6 @@
 14103,regexp,Regexp absense operator has no chance to ^C
 14364,core,Regexp last match variable in procs
 14387,core os/arch,Ruby 2.5 を Alpine Linux で実行すると比較的浅めで SystemStackError 例外になる
-14391,patch ext perf,Integer#digitsが遅い
 14418,regexp perf,ruby 2.5 slow regexp execution
 14422,build,Ruby configuration options should not be reused for gem builds
 14434,patch core,IO#reopen fails after EPIPE
@@ -161,7 +159,6 @@
 15428,core notbug,Refactor Proc#&gt;&gt; and #&lt;&lt;
 15438,win thread,Threads can&#39;t switch faster than TIME_QUANTUM_(NSEC|USEC|MSEC)
 15499,thread,Breaking behavior on ruby 2.6: rb_thread_call_without_gvl doesn&#39;t invoke unblock_function when used on the main thread 
-15507,thread,Thread#raise is delivered to GC context
 15550,win,Windows - gem bin files - can&#39;t run from bash shell
 15598,core autoload,Deadlock on mutual reference of autoloaded constants
 15599,core autoload,Mixing autoload and require causes deadlock and incomplete definition.
@@ -200,7 +197,6 @@
 16951,lib,Consistently referer dependencies
 16953,win build,Windows bash bin files removed in master
 16959,maybenotbug core,Weakmap has specs and third-party usage despite being a private API
-16983,patch core,RubyVM::AbstractSyntaxTree.of(method) returns meaningless node if the method is defined in eval
 16997,core win,IO#gets converts some \r\n to \n with universal_newline: false
 17007,refine,SystemStackError when using super inside Module included and lexically inside refinement
 17008,jit win,JIT enabled on Windows can cause constant conhost pop-ups
@@ -258,7 +254,6 @@
 17680,lib maybenotbug,tab completion no longer works on irb3.0
 17719,core maybenotbug,Irregular evaluation order in hash literals
 17722,ractor,define_method with shareable results in &quot;defined in a different Ractor&quot;
-17725,patch core,Prepend breaks ability to override optimized methods
 17765,notbug core,Segmentation fault when calling String#gsub
 17774,regexp,Quantified empty group causes regex to fail
 17792,core os/arch,make notes and make test fail with Ruby3.0.1p64 RaspberryPI 4B Ubuntu 20.10 ARM64
