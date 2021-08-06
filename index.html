@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>301 Tagged Open Ruby Bugs as of 2021-08-07 01:47:07 +0900</title>
+<title>297 Tagged Open Ruby Bugs as of 2021-08-07 07:41:40 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -14,8 +14,8 @@
 <input type="submit" value="lib" />
 <input type="submit" value="ext" />
 <input type="submit" value="test" />
-<input type="submit" value="thread" />
 <input type="submit" value="notbug" />
+<input type="submit" value="thread" />
 <input type="submit" value="cygwin" />
 <input type="submit" value="encoding" />
 <input type="submit" value="regexp" />
@@ -23,8 +23,8 @@
 <input type="submit" value="tracepoint" />
 <input type="submit" value="perf" />
 <input type="submit" value="fiber" />
-<input type="submit" value="autoload" />
 <input type="submit" value="jit" />
+<input type="submit" value="autoload" />
 <input type="submit" value="parser" />
 <input type="submit" value="doc" />
 <input type="submit" value="irb" />
@@ -32,9 +32,9 @@
 <input type="submit" value="unfixable" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">301</span> matched)
+(<span id="matched">297</span> matched)
 <table>
-<caption>301 Tagged Open Ruby Bugs as of 2021-08-07 01:47:07 +0900</caption>
+<caption>297 Tagged Open Ruby Bugs as of 2021-08-07 07:41:40 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -54,7 +54,7 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18061">18061</a>
 </td>
 <td>os/arch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18061">Execshield test: libruby.so.N.N.N: FAIL: property-note test because no .note.gnu.property section found</a>
+<td><a href="https://bugs.ruby-lang.org/issues/18061"> Execshield test: libruby.so.N.N.N: FAIL: property-note test because no .note.gnu.property section found</a>
 </td>
 </tr>
 <tr class=" patch core ">
@@ -69,13 +69,6 @@
 </td>
 <td>jit</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18058">3.1.0-dev with MJIT enabled Zlib::BufError during `gem install`</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18053">18053</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18053">Crashes and infinite loops when generating partial backtraces in Ruby 3.0+</a>
 </td>
 </tr>
 <tr class=" os/arch build notbug ">
@@ -624,13 +617,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17373">Ruby 3.0 is slower at Discourse bench than Ruby 2.7</a>
 </td>
 </tr>
-<tr class=" thread ">
-<td><a href="https://bugs.ruby-lang.org/issues/17362">17362</a>
-</td>
-<td>thread</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17362">Thread core dump</a>
-</td>
-</tr>
 <tr class=" ractor ">
 <td><a href="https://bugs.ruby-lang.org/issues/17359">17359</a>
 </td>
@@ -678,13 +664,6 @@
 </td>
 <td>ractor</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17196">Segmentation Fault with Socket#close in Ractors</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/17183">17183</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17183">Float round working weirdly</a>
 </td>
 </tr>
 <tr class=" ractor ">
@@ -855,10 +834,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16776">Regression in coverage library</a>
 </td>
 </tr>
-<tr class=" core ">
+<tr class=" jit ">
 <td><a href="https://bugs.ruby-lang.org/issues/16694">16694</a>
 </td>
-<td>core</td>
+<td>jit</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16694">JIT vs hardened GCC with PCH</a>
 </td>
 </tr>
@@ -974,10 +953,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/15928">Constant declaration does not conform to JIS 3017:2013</a>
 </td>
 </tr>
-<tr class=" core autoload ">
+<tr class=" patch core autoload ">
 <td><a href="https://bugs.ruby-lang.org/issues/15790">15790</a>
 </td>
-<td>core autoload</td>
+<td>patch core autoload</td>
 <td><a href="https://bugs.ruby-lang.org/issues/15790">Strange interaction between autoload and $LOADED_FEATURES</a>
 </td>
 </tr>
@@ -1262,13 +1241,6 @@
 </td>
 </tr>
 <tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/14635">14635</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/14635">Float#round(n) returns a wrong result when n is big</a>
-</td>
-</tr>
-<tr class=" patch core ">
 <td><a href="https://bugs.ruby-lang.org/issues/14607">14607</a>
 </td>
 <td>patch core</td>
@@ -1387,10 +1359,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/13999">Cygwin 環境で ripper_state_lex.rb がコアダンプする</a>
 </td>
 </tr>
-<tr class=" test ">
+<tr class=" patch test ">
 <td><a href="https://bugs.ruby-lang.org/issues/13864">13864</a>
 </td>
-<td>test</td>
+<td>patch test</td>
 <td><a href="https://bugs.ruby-lang.org/issues/13864">Rinda multicast test failures due to missing default route</a>
 </td>
 </tr>
