@@ -106,7 +106,7 @@
 13671,regexp notbug,Regexp with lookbehind and case-insensitivity raises RegexpError only on strings with certain characters
 13754,ext,bigdecimal with lower precision that Float
 13810,patch ext,Inconsistency between Date and Time.strftime(&quot;%v&quot;)
-13864,test,Rinda multicast test failures due to missing default route
+13864,patch test,Rinda multicast test failures due to missing default route
 13999,cygwin ext,Cygwin 環境で ripper_state_lex.rb がコアダンプする
 14049,win core,SEGV svn 60401 require_relative
 14064,test,test-all with and without -j - incorrect assertions and missing test methods
@@ -124,7 +124,6 @@
 14543,build,`make commit` show error of `common-srcs`
 14582,patch tracepoint,Unable to use `method__entry` and `method_return` tracing probes since 2.5
 14607,patch core,Fix use of the rb_profile_frames start parameter
-14635,patch core,Float#round(n) returns a wrong result when n is big
 14640,win core,[win32] File.realpath treats a relative path with a drive letter as an absolute path.
 14679,lib,StdLib gems should properly specify their dependencies
 14681,core,`syswrite&#39;: stream closed in another thread (IOError)
@@ -165,7 +164,7 @@
 15644,patch ext,ThreadsWait problems with Thread#report_on_exception
 15764,parser,Whitespace and control characters should not be permitted in tokens
 15787,os/arch lib maybenotbug,LoadError by EPERM on read-only volume
-15790,core autoload,Strange interaction between autoload and $LOADED_FEATURES
+15790,patch core autoload,Strange interaction between autoload and $LOADED_FEATURES
 15928,patch core,Constant declaration does not conform to JIS 3017:2013
 15993,win encoding,&#39;require&#39; doesn&#39;t work if there are Cyrillic chars in the path to Ruby dir
 16143,patch core,BOM UTF-8 is not removed after rewind
@@ -182,7 +181,7 @@
 16493,thread os/arch,TestThreadQueue#test_thr_kill is flaky on AArch64
 16497,ext,StringIO#internal_encoding is broken (more severely in 2.7)
 16672,patch lib,net/http leaves original content-length header intact after inflating response
-16694,core,JIT vs hardened GCC with PCH
+16694,jit,JIT vs hardened GCC with PCH
 16776,core,Regression in coverage library
 16810,os/arch,ruby segfaults on s390x with musl libc
 16819,core,Line reporting off by one when reporting line of a hash?
@@ -207,7 +206,6 @@
 17142,build os/arch,Ruby fails to build in AIX 
 17159,ractor,extend `define_method` for Ractor
 17180,ractor,Ractor and constant referencing
-17183,patch core,Float round working weirdly
 17196,ractor,Segmentation Fault with Socket#close in Ractors
 17263,fiber perf,"Fiber context switch degrades with number of fibers, limit on number of fibers"
 17289,core,Time#strftime occurs Segmentation Fault on ruby-2.7.2p137
@@ -215,7 +213,6 @@
 17349,thread,Rake での並行実行における正規表現マッチングの異常
 17354,core,Module#const_source_location is misleading for constants awaiting autoload
 17359,ractor,Ractor copy mode is not Ractor-safe
-17362,thread,Thread core dump
 17373,perf,Ruby 3.0 is slower at Discourse bench than Ruby 2.7
 17379,refine,Refinement with modules redefinition bug
 17382,core,Segfault in String#inspect
@@ -294,8 +291,7 @@
 18041,notbug,[BUG] Segmentation fault - ruby 2.5.8p224 (2020-03-31 revision 67882) [aarch64-linux]
 18049,os/arch build notbug,Cannot build ruby-3.0.2 on NetBSD
 18050,os/arch build notbug,Cannot build ruby-2.7.4 on NetBSD
-18053,patch core,Crashes and infinite loops when generating partial backtraces in Ruby 3.0+
 18058,jit,3.1.0-dev with MJIT enabled Zlib::BufError during `gem install`
 18060,patch core,Infinite loop when b_return TracePoint raises
-18061,os/arch,Execshield test: libruby.so.N.N.N: FAIL: property-note test because no .note.gnu.property section found
+18061,os/arch, Execshield test: libruby.so.N.N.N: FAIL: property-note test because no .note.gnu.property section found
 18062,os/arch build,Ruby with enabled LTO segfaults during build
