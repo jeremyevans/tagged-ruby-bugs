@@ -233,7 +233,6 @@
 17531,ractor,`did_you_mean` not Ractor friendly
 17543,ractor,Ractor isolation broken by `self` in shareable proc
 17545,core maybenotbug,Calling dup on a subclass of Proc returns a Proc and not the subclass
-17561,backport,The timeout option for Addrinfo.getaddrinfo is not reliable on Ruby 2.7.2
 17568,fiber,Thread.handle_interrupt is per-Thread but should probably be per-Fiber
 17573,core,Crashes in profiling tools when signals arrive in non-Ruby threads
 17578,lib,mkmf experimental C++ Support
@@ -283,17 +282,20 @@
 18002,test os/arch,s390x: Tests failing without LC_ALL env
 18009,regexp,Regexps \w and \W with /i option and /u option produce inconsistent results under nested negation and intersection
 18010,regexp,Character class with single character gets case-folded with following string
-18011,core maybenotbug,`Method#parameters` is incorrect for forwarded arguments
 18012,regexp,Case-insensitive character classes can only match multiple code points when top-level character class is not negated
 18013,regexp,Unexpected results when mxiing negated character classes and case-folding
 18021,refine,"Mixins in Refinements: possibly multiple bugs, workarounds are awkward"
 18023,ractor,Ractor#make_shareable changes the values of closured shareable objects
 18024,ractor,Ractor crashes when connections are closed in multiple Ractors
 18027,encoding,test/ruby/enc/test_emoji_breaks.rb does not use the file emoji-variation-sequences.txt
-18031,tracepoint,Nested TracePoint#enable with target crashes
+18031,tracepoint,Nested TracePoint#enable with define_method target crashes
 18034,os/arch,Segmentation fault fiddle with `--enable-bundled-libffi` and macOS
 18036,fiber,Pthread fibers become invalid on fork - different from normal fibers.
 18041,notbug,[BUG] Segmentation fault - ruby 2.5.8p224 (2020-03-31 revision 67882) [aarch64-linux]
-18046,build,Missing include leads to build breakage of glib2 on head
 18049,os/arch build notbug,Cannot build ruby-3.0.2 on NetBSD
 18050,os/arch build notbug,Cannot build ruby-2.7.4 on NetBSD
+18053,patch core,Crashes and infinite loops when generating partial backtraces in Ruby 3.0+
+18058,jit,3.1.0-dev with MJIT enabled Zlib::BufError during `gem install`
+18060,patch core,Infinite loop when b_return TracePoint raises
+18061,os/arch,Execshield test: libruby.so.N.N.N: FAIL: property-note test because no .note.gnu.property section found
+18062,os/arch build,Ruby with enabled LTO segfaults during build
