@@ -295,3 +295,7 @@
 18060,patch core,Infinite loop when b_return TracePoint raises
 18061,os/arch, Execshield test: libruby.so.N.N.N: FAIL: property-note test because no .note.gnu.property section found
 18062,os/arch build,Ruby with enabled LTO segfaults during build
+18066,core,Load did_you_mean/error_highlight even with --disable-gems
+18067,notbug core,Composite procs with `instance_exec` aren&#39;t executed within the context of the receiver
+18072,build os/arch,Build error on Fedora 34 x86_64
+18073,build os/arch,test/ruby/test_jit.rb: &quot;error: invalid use of &#39;__builtin_va_arg_pack ()&#39;&quot; on Ruby 2.7.4 on gcc 4.8.5
