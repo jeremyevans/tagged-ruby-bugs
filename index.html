@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>299 Tagged Open Ruby Bugs as of 2021-08-12 01:54:51 +0900</title>
+<title>298 Tagged Open Ruby Bugs as of 2021-08-14 06:06:13 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -13,11 +13,11 @@
 <input type="submit" value="maybenotbug" />
 <input type="submit" value="lib" />
 <input type="submit" value="ext" />
-<input type="submit" value="test" />
 <input type="submit" value="notbug" />
+<input type="submit" value="test" />
 <input type="submit" value="thread" />
-<input type="submit" value="cygwin" />
 <input type="submit" value="encoding" />
+<input type="submit" value="cygwin" />
 <input type="submit" value="regexp" />
 <input type="submit" value="refine" />
 <input type="submit" value="tracepoint" />
@@ -32,9 +32,9 @@
 <input type="submit" value="unfixable" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">299</span> matched)
+(<span id="matched">298</span> matched)
 <table>
-<caption>299 Tagged Open Ruby Bugs as of 2021-08-12 01:54:51 +0900</caption>
+<caption>298 Tagged Open Ruby Bugs as of 2021-08-14 06:06:13 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -62,13 +62,6 @@
 </td>
 <td>patch core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18066">Load did_you_mean/error_highlight even with --disable-gems</a>
-</td>
-</tr>
-<tr class=" os/arch build ">
-<td><a href="https://bugs.ruby-lang.org/issues/18062">18062</a>
-</td>
-<td>os/arch build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18062">Ruby with enabled LTO segfaults during build</a>
 </td>
 </tr>
 <tr class=" os/arch ">
@@ -127,10 +120,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18034">Segmentation fault fiddle with `--enable-bundled-libffi` and macOS</a>
 </td>
 </tr>
-<tr class=" tracepoint ">
+<tr class=" patch tracepoint ">
 <td><a href="https://bugs.ruby-lang.org/issues/18031">18031</a>
 </td>
-<td>tracepoint</td>
+<td>patch tracepoint</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18031">Nested TracePoint#enable with define_method target crashes</a>
 </td>
 </tr>
@@ -197,10 +190,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18002">s390x: Tests failing without LC_ALL env</a>
 </td>
 </tr>
-<tr class=" lib ">
+<tr class=" patch lib ">
 <td><a href="https://bugs.ruby-lang.org/issues/18000">18000</a>
 </td>
-<td>lib</td>
+<td>patch lib</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18000">have_library doesn&#39;t work when ruby is compiled with --disable-shared --disable-install-static-library</a>
 </td>
 </tr>
@@ -302,10 +295,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17843">Ruby on Rails error[BUG] Segmentation fault at 0x0000000000000110 ruby 3.0.1p64 (2021-04-05 revision 0fb782ee38) [x86_64-darwin15] (#42110)</a>
 </td>
 </tr>
-<tr class=" build ">
+<tr class=" patch build ">
 <td><a href="https://bugs.ruby-lang.org/issues/17840">17840</a>
 </td>
-<td>build</td>
+<td>patch build</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17840">`make install` overriding file permission with 644</a>
 </td>
 </tr>
@@ -561,10 +554,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17513">Methods of shareable objects and UnboundMethods should be shareable</a>
 </td>
 </tr>
-<tr class=" thread ">
+<tr class=" patch regexp thread ">
 <td><a href="https://bugs.ruby-lang.org/issues/17507">17507</a>
 </td>
-<td>thread</td>
+<td>patch regexp thread</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17507">Regexp capture groups ignored sometimes in some multithreaded environments (possible race condition)</a>
 </td>
 </tr>
@@ -652,10 +645,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17354">Module#const_source_location is misleading for constants awaiting autoload</a>
 </td>
 </tr>
-<tr class=" thread ">
+<tr class=" patch thread regexp ">
 <td><a href="https://bugs.ruby-lang.org/issues/17349">17349</a>
 </td>
-<td>thread</td>
+<td>patch thread regexp</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17349">Rake での並行実行における正規表現マッチングの異常</a>
 </td>
 </tr>
@@ -720,6 +713,13 @@
 </td>
 <td>core patch</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17120">String#start_with? return wrong result for Regexp patterns containing /\K/</a>
+</td>
+</tr>
+<tr class=" build ">
+<td><a href="https://bugs.ruby-lang.org/issues/17052">17052</a>
+</td>
+<td>build</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17052">Ruby with LTO enabled has issues with SIGSEGV handler</a>
 </td>
 </tr>
 <tr class=" patch core ">
@@ -799,10 +799,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16908">Strange behaviour of Hash#shift when used with `default_proc`.</a>
 </td>
 </tr>
-<tr class=" build ">
+<tr class=" build os/arch ">
 <td><a href="https://bugs.ruby-lang.org/issues/16905">16905</a>
 </td>
-<td>build</td>
+<td>build os/arch</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16905">Ruby required to build Ruby on Haiku?</a>
 </td>
 </tr>
@@ -813,10 +813,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16842">`inspect` prints the UTF-8 character U+0085 (NEXT LINE) verbatim even though it is not printable</a>
 </td>
 </tr>
-<tr class=" build ">
+<tr class=" notbug patch build ">
 <td><a href="https://bugs.ruby-lang.org/issues/16836">16836</a>
 </td>
-<td>build</td>
+<td>notbug patch build</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16836">configure-time LDFLAGS leak into ruby pkg-config file</a>
 </td>
 </tr>
@@ -869,10 +869,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16672">net/http leaves original content-length header intact after inflating response</a>
 </td>
 </tr>
-<tr class=" ext ">
+<tr class=" ext encoding ">
 <td><a href="https://bugs.ruby-lang.org/issues/16497">16497</a>
 </td>
-<td>ext</td>
+<td>ext encoding</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16497">StringIO#internal_encoding is broken (more severely in 2.7)</a>
 </td>
 </tr>
@@ -883,17 +883,17 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16493">TestThreadQueue#test_thr_kill is flaky on AArch64</a>
 </td>
 </tr>
-<tr class=" test ">
+<tr class=" test os/arch ">
 <td><a href="https://bugs.ruby-lang.org/issues/16492">16492</a>
 </td>
-<td>test</td>
+<td>test os/arch</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16492">TestBugReporter#test_bug_reporter_add test failures</a>
 </td>
 </tr>
-<tr class=" build lib ">
+<tr class=" patch build lib ">
 <td><a href="https://bugs.ruby-lang.org/issues/16490">16490</a>
 </td>
-<td>build lib</td>
+<td>patch build lib</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16490">mkmf.rbの非互換な変更</a>
 </td>
 </tr>
@@ -1800,13 +1800,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/10580">TestProcess#test_deadlock_by_signal_at_forking fails on ARM</a>
 </td>
 </tr>
-<tr class=" build ">
-<td><a href="https://bugs.ruby-lang.org/issues/10542">10542</a>
-</td>
-<td>build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/10542">out-of-place build from repository builds enc/trans/*.c in the source directory and the build directory </a>
-</td>
-</tr>
 <tr class=" tracepoint ">
 <td><a href="https://bugs.ruby-lang.org/issues/10470">10470</a>
 </td>
@@ -2003,10 +1996,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/8444">Regexp vars $~ and friends are not thread local</a>
 </td>
 </tr>
-<tr class=" core ">
+<tr class=" core win ">
 <td><a href="https://bugs.ruby-lang.org/issues/8299">8299</a>
 </td>
-<td>core</td>
+<td>core win</td>
 <td><a href="https://bugs.ruby-lang.org/issues/8299">Minor error in float parsing</a>
 </td>
 </tr>
