@@ -16,7 +16,7 @@
 7968,ext perf,Poor UDPSocket#send performance in ruby 2.0.0 on windows
 7976,tracepoint notbug,"TracePoint call is at call point, not call site"
 8185,thread unfixable, Thread/fork issue
-8299,core,Minor error in float parsing
+8299,core win,Minor error in float parsing
 8444,core,Regexp vars $~ and friends are not thread local
 8445,patch core,IO.open and IO#set_enconding does not support :fallback option
 8677,patch core maybenotbug,$LOAD_PATH did not encoded into the &quot;internal encoding&quot;
@@ -45,7 +45,6 @@
 10416,build,Create mechanism for updating of Unicode data files downstreams when we want
 10436,patch ext,ruby -c and ripper inconsistency: m(&amp;nil) {}
 10470,tracepoint,TracePoint cannot trace attr_accessor/reader/writer method
-10542,build,out-of-place build from repository builds enc/trans/*.c in the source directory and the build directory 
 10580,test os/arch,TestProcess#test_deadlock_by_signal_at_forking fails on ARM
 10584,encoding maybenotbug,"String.valid_encoding?, String.ascii_only? fails to account for BOM."
 10855,patch lib,[PATCH] Matrix#inverse returns matrix of integers whenever possible
@@ -175,10 +174,10 @@
 16288,patch core,"Segmentation fault with finalizers, threads"
 16383,patch tracepoint,TracePoint does not report calls to attribute reader methods
 16448,core,regex global variables are working differently depending on scope
-16490,build lib,mkmf.rbの非互換な変更
-16492,test,TestBugReporter#test_bug_reporter_add test failures
+16490,patch build lib,mkmf.rbの非互換な変更
+16492,test os/arch,TestBugReporter#test_bug_reporter_add test failures
 16493,thread os/arch,TestThreadQueue#test_thr_kill is flaky on AArch64
-16497,ext,StringIO#internal_encoding is broken (more severely in 2.7)
+16497,ext encoding,StringIO#internal_encoding is broken (more severely in 2.7)
 16672,patch lib,net/http leaves original content-length header intact after inflating response
 16694,jit,JIT vs hardened GCC with PCH
 16776,core,Regression in coverage library
@@ -186,9 +185,9 @@
 16819,core,Line reporting off by one when reporting line of a hash?
 16820,misc,LEGAL is out of sync
 16829,maybenotbug fiber,Exceptions raised from within an enumerated method lose part of their stacktrace
-16836,build,configure-time LDFLAGS leak into ruby pkg-config file
+16836,notbug patch build,configure-time LDFLAGS leak into ruby pkg-config file
 16842,encoding,`inspect` prints the UTF-8 character U+0085 (NEXT LINE) verbatim even though it is not printable
-16905,build,Ruby required to build Ruby on Haiku?
+16905,build os/arch,Ruby required to build Ruby on Haiku?
 16908,notbug core,Strange behaviour of Hash#shift when used with `default_proc`.
 16920,os/arch thread,TestThread#test_signal_at_join fails on aarch64
 16927,encoding,String#tr won&#39;t return the expected result for some sign with diacritics
@@ -200,6 +199,7 @@
 17008,jit win,JIT enabled on Windows can cause constant conhost pop-ups
 17037,core,rounding of Rational#to_f
 17048,patch core,Calling initialize_copy on live modules leads to crashes
+17052,build,Ruby with LTO enabled has issues with SIGSEGV handler
 17120,core patch,String#start_with? return wrong result for Regexp patterns containing /\K/
 17132,build,vcs.rb doesn&#39;t detect git submodules as vcs
 17142,build os/arch,Ruby fails to build in AIX 
@@ -209,7 +209,7 @@
 17263,fiber perf,"Fiber context switch degrades with number of fibers, limit on number of fibers"
 17289,core,Time#strftime occurs Segmentation Fault on ruby-2.7.2p137
 17337,build notbug,Don&#39;t embed Ruby build-time configuration in Ruby
-17349,thread,Rake での並行実行における正規表現マッチングの異常
+17349,patch thread regexp,Rake での並行実行における正規表現マッチングの異常
 17354,core,Module#const_source_location is misleading for constants awaiting autoload
 17359,ractor,Ractor copy mode is not Ractor-safe
 17373,perf,Ruby 3.0 is slower at Discourse bench than Ruby 2.7
@@ -222,7 +222,7 @@
 17478,perf,Ruby3.0 is slower than Ruby2.7.2 when parsing a large CSV file
 17489,ractor,Ractor segfaults
 17506,ractor,Ractor isolation broken by ThreadGroup
-17507,thread,Regexp capture groups ignored sometimes in some multithreaded environments (possible race condition)
+17507,patch regexp thread,Regexp capture groups ignored sometimes in some multithreaded environments (possible race condition)
 17513,ractor,Methods of shareable objects and UnboundMethods should be shareable
 17516,ractor,forking in a ractor causes Ruby to crash
 17529,ractor,Ractor Segfaults with GC enabled
@@ -259,7 +259,7 @@
 17823,patch core,addr2line.c: Interpret `DW_RLE_start_length`
 17826,ractor,Ractor#take hangs if used in multiple Threads
 17835,patch maybenotbug lib,Net::HTTP should automatically add Accept-Encoding request header on HEAD request as well
-17840,build,`make install` overriding file permission with 644
+17840,patch build,`make install` overriding file permission with 644
 17843,maybenotbug os/arch,Ruby on Rails error[BUG] Segmentation fault at 0x0000000000000110 ruby 3.0.1p64 (2021-04-05 revision 0fb782ee38) [x86_64-darwin15] (#42110)
 17866,maybenotbug,Incompatible changes with Psych 4.0.0
 17878,ractor,bootstraptest/test_ractor.rb:224 a random failing test with &quot;The outgoing-port is already closed (Ractor::ClosedError)&quot;
@@ -274,7 +274,7 @@
 17996,cygwin core,Cygwin: thread + pipe behavior since Ruby 2.6
 17998,ractor,"ractor: process hanging (with ractors initialized, but not being used)"
 17999,test os/arch,TestMethod#test_zsuper intermittent timeout error on raspbian10-aarch64 CI
-18000,lib,have_library doesn&#39;t work when ruby is compiled with --disable-shared --disable-install-static-library
+18000,patch lib,have_library doesn&#39;t work when ruby is compiled with --disable-shared --disable-install-static-library
 18002,test os/arch,s390x: Tests failing without LC_ALL env
 18009,regexp,Regexps \w and \W with /i option and /u option produce inconsistent results under nested negation and intersection
 18010,regexp,Character class with single character gets case-folded with following string
@@ -284,7 +284,7 @@
 18023,ractor,Ractor#make_shareable changes the values of closured shareable objects
 18024,ractor,Ractor crashes when connections are closed in multiple Ractors
 18027,encoding,test/ruby/enc/test_emoji_breaks.rb does not use the file emoji-variation-sequences.txt
-18031,tracepoint,Nested TracePoint#enable with define_method target crashes
+18031,patch tracepoint,Nested TracePoint#enable with define_method target crashes
 18034,os/arch,Segmentation fault fiddle with `--enable-bundled-libffi` and macOS
 18036,fiber,Pthread fibers become invalid on fork - different from normal fibers.
 18041,notbug,[BUG] Segmentation fault - ruby 2.5.8p224 (2020-03-31 revision 67882) [aarch64-linux]
@@ -293,7 +293,6 @@
 18058,jit,3.1.0-dev with MJIT enabled Zlib::BufError during `gem install`
 18060,patch core,Infinite loop when b_return TracePoint raises
 18061,os/arch, Execshield test: libruby.so.N.N.N: FAIL: property-note test because no .note.gnu.property section found
-18062,os/arch build,Ruby with enabled LTO segfaults during build
 18066,patch core,Load did_you_mean/error_highlight even with --disable-gems
 18067,notbug core,Composite procs with `instance_exec` aren&#39;t executed within the context of the receiver
 18073,build os/arch,test/ruby/test_jit.rb: &quot;error: invalid use of &#39;__builtin_va_arg_pack ()&#39;&quot; on Ruby 2.7.4 on gcc 4.8.5
