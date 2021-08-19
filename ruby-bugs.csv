@@ -139,7 +139,7 @@
 14957,win thread,"MinGW, gcc 8.2.0, bootstraptest test_thread.rb - failure ?"
 14971,cygwin build,error: implicit declaration of function ‘rb_vm_call0
 14972,patch lib,Net::HTTP inconsistently raises EOFError when peer closes the connection
-15027,core,When Struct#each method is overriden Struct#select and Struct#to_a use wrong collections
+15027,patch core notbug,When Struct#each method is overriden Struct#select and Struct#to_a use wrong collections
 15072,cygwin build,thread.c:4356:5: error: implicit declaration of function ‘ubf_list_atfork’
 15097,cygwin lib,Gem install fails on Ruby 2.5.1 with Cygwin (get_dns_server_list undefined)
 15204,patch win ,globbing should be prevented when wildcard is surrounded by double quotes in the ruby&#39;s command line
@@ -147,11 +147,10 @@
 15263,patch core,[PATCH] vm_trace.c (postponed_job_register): only hit main thread
 15310,patch thread,[PATCH] thread_pthread.c: close race from UBF_TIMER and non-GVL-releasing thread
 15315,patch core,ec_switch can still lose interrupts
-15334,test,child_info_fork::abort: address space needed by &#39;emoji_iso2022_kddi.so&#39; on cygwin
+15334,test cygwin,child_info_fork::abort: address space needed by &#39;emoji_iso2022_kddi.so&#39; on cygwin
 15367,core,IO.select is not resumed when io-object gets closed
 15386,patch core,[PATCH] io.c (rb_io_check_char_readable): do not io_fflush buffered sockets
-15404,patch parser,Endless range has inconsistent chaining behaviour
-15423,thread,fork leapfrog leaks memory on FreeBSD 11.2
+15423,core os/arch,fork leapfrog leaks memory on FreeBSD 11.2
 15425,build,Store MJIT header into Ruby versioned directory.
 15428,core notbug,Refactor Proc#&gt;&gt; and #&lt;&lt;
 15438,win thread,Threads can&#39;t switch faster than TIME_QUANTUM_(NSEC|USEC|MSEC)
@@ -173,8 +172,6 @@
 16277,win ext maybenotbug,UNIXServer#listen fails with Errno::EADDRINUSE error under Windows 10 / WSL Ubuntu 18.04
 16288,patch core,"Segmentation fault with finalizers, threads"
 16383,patch tracepoint,TracePoint does not report calls to attribute reader methods
-16448,core,regex global variables are working differently depending on scope
-16490,patch build lib,mkmf.rbの非互換な変更
 16492,test os/arch,TestBugReporter#test_bug_reporter_add test failures
 16493,thread os/arch,TestThreadQueue#test_thr_kill is flaky on AArch64
 16497,ext encoding,StringIO#internal_encoding is broken (more severely in 2.7)
@@ -233,7 +230,6 @@
 17573,core,Crashes in profiling tools when signals arrive in non-Ruby threads
 17578,lib,mkmf experimental C++ Support
 17587,ractor,Segmentation fault with ractors and unix signals
-17588,build win,Cannot build with library path with spaces on MSVC
 17617,ractor,"When a Ractor&#39;s incoming port is closed, Ractor.receive_if does not raise Ractor::ClosedError, but instead blocks indefinitely"
 17623,patch irb,irb starts with some local variables already defined
 17624,ractor,Ractor.receive is not thread-safe
@@ -283,7 +279,6 @@
 18021,refine,"Mixins in Refinements: possibly multiple bugs, workarounds are awkward"
 18023,ractor,Ractor#make_shareable changes the values of closured shareable objects
 18024,ractor,Ractor crashes when connections are closed in multiple Ractors
-18027,encoding,test/ruby/enc/test_emoji_breaks.rb does not use the file emoji-variation-sequences.txt
 18031,patch tracepoint,Nested TracePoint#enable with define_method target crashes
 18034,os/arch,Segmentation fault fiddle with `--enable-bundled-libffi` and macOS
 18036,fiber,Pthread fibers become invalid on fork - different from normal fibers.
@@ -296,3 +291,12 @@
 18066,patch core,Load did_you_mean/error_highlight even with --disable-gems
 18067,notbug core,Composite procs with `instance_exec` aren&#39;t executed within the context of the receiver
 18073,build os/arch,test/ruby/test_jit.rb: &quot;error: invalid use of &#39;__builtin_va_arg_pack ()&#39;&quot; on Ruby 2.7.4 on gcc 4.8.5
+18076,patch build,ext/digest/md5/md5.c: `-Wnull-pointer-subtraction` warning by Clang 13
+18077,patch core,Marshal.dump(closed_io) raises IOError instead of TypeError
+18079,patch build win,[PATCH] make error for MinGW with Clang/LLVM + LLD
+18080,parser,Syntax error on one-line pattern matching
+18081,patch core,addr2line.c: Wrong section for `DW_AT_ranges`
+18117,patch ractor,Segmentation fault when yielding values from Ractors during GC sweeping
+18119,ractor,Ractor crashes when instantiating classes
+18120,ractor autoload,Deadlock and segfault when using autoload in Ractor
+18121,patch core,addr2line.c: Endianness
