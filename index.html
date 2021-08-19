@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>298 Tagged Open Ruby Bugs as of 2021-08-14 06:06:13 +0900</title>
+<title>302 Tagged Open Ruby Bugs as of 2021-08-20 02:51:37 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -12,19 +12,19 @@
 <input type="submit" value="ractor" />
 <input type="submit" value="maybenotbug" />
 <input type="submit" value="lib" />
-<input type="submit" value="ext" />
 <input type="submit" value="notbug" />
+<input type="submit" value="ext" />
 <input type="submit" value="test" />
 <input type="submit" value="thread" />
-<input type="submit" value="encoding" />
 <input type="submit" value="cygwin" />
+<input type="submit" value="encoding" />
 <input type="submit" value="regexp" />
 <input type="submit" value="refine" />
 <input type="submit" value="tracepoint" />
 <input type="submit" value="perf" />
 <input type="submit" value="fiber" />
-<input type="submit" value="jit" />
 <input type="submit" value="autoload" />
+<input type="submit" value="jit" />
 <input type="submit" value="parser" />
 <input type="submit" value="doc" />
 <input type="submit" value="irb" />
@@ -32,9 +32,9 @@
 <input type="submit" value="unfixable" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">298</span> matched)
+(<span id="matched">302</span> matched)
 <table>
-<caption>298 Tagged Open Ruby Bugs as of 2021-08-14 06:06:13 +0900</caption>
+<caption>302 Tagged Open Ruby Bugs as of 2021-08-20 02:51:37 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -43,6 +43,69 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" patch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18121">18121</a>
+</td>
+<td>patch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18121">addr2line.c: Endianness</a>
+</td>
+</tr>
+<tr class=" ractor autoload ">
+<td><a href="https://bugs.ruby-lang.org/issues/18120">18120</a>
+</td>
+<td>ractor autoload</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18120">Deadlock and segfault when using autoload in Ractor</a>
+</td>
+</tr>
+<tr class=" ractor ">
+<td><a href="https://bugs.ruby-lang.org/issues/18119">18119</a>
+</td>
+<td>ractor</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18119">Ractor crashes when instantiating classes</a>
+</td>
+</tr>
+<tr class=" patch ractor ">
+<td><a href="https://bugs.ruby-lang.org/issues/18117">18117</a>
+</td>
+<td>patch ractor</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18117">Segmentation fault when yielding values from Ractors during GC sweeping</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18081">18081</a>
+</td>
+<td>patch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18081">addr2line.c: Wrong section for `DW_AT_ranges`</a>
+</td>
+</tr>
+<tr class=" parser ">
+<td><a href="https://bugs.ruby-lang.org/issues/18080">18080</a>
+</td>
+<td>parser</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18080">Syntax error on one-line pattern matching</a>
+</td>
+</tr>
+<tr class=" patch build win ">
+<td><a href="https://bugs.ruby-lang.org/issues/18079">18079</a>
+</td>
+<td>patch build win</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18079">[PATCH] make error for MinGW with Clang/LLVM + LLD</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18077">18077</a>
+</td>
+<td>patch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18077">Marshal.dump(closed_io) raises IOError instead of TypeError</a>
+</td>
+</tr>
+<tr class=" patch build ">
+<td><a href="https://bugs.ruby-lang.org/issues/18076">18076</a>
+</td>
+<td>patch build</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18076">ext/digest/md5/md5.c: `-Wnull-pointer-subtraction` warning by Clang 13</a>
+</td>
+</tr>
 <tr class=" build os/arch ">
 <td><a href="https://bugs.ruby-lang.org/issues/18073">18073</a>
 </td>
@@ -125,13 +188,6 @@
 </td>
 <td>patch tracepoint</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18031">Nested TracePoint#enable with define_method target crashes</a>
-</td>
-</tr>
-<tr class=" encoding ">
-<td><a href="https://bugs.ruby-lang.org/issues/18027">18027</a>
-</td>
-<td>encoding</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18027">test/ruby/enc/test_emoji_breaks.rb does not use the file emoji-variation-sequences.txt</a>
 </td>
 </tr>
 <tr class=" ractor ">
@@ -475,13 +531,6 @@
 </td>
 <td>ractor</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17617">When a Ractor&#39;s incoming port is closed, Ractor.receive_if does not raise Ractor::ClosedError, but instead blocks indefinitely</a>
-</td>
-</tr>
-<tr class=" build win ">
-<td><a href="https://bugs.ruby-lang.org/issues/17588">17588</a>
-</td>
-<td>build win</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17588">Cannot build with library path with spaces on MSVC</a>
 </td>
 </tr>
 <tr class=" ractor ">
@@ -890,20 +939,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16492">TestBugReporter#test_bug_reporter_add test failures</a>
 </td>
 </tr>
-<tr class=" patch build lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/16490">16490</a>
-</td>
-<td>patch build lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16490">mkmf.rbの非互換な変更</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/16448">16448</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16448">regex global variables are working differently depending on scope</a>
-</td>
-</tr>
 <tr class=" patch tracepoint ">
 <td><a href="https://bugs.ruby-lang.org/issues/16383">16383</a>
 </td>
@@ -1051,18 +1086,11 @@
 <td><a href="https://bugs.ruby-lang.org/issues/15425">Store MJIT header into Ruby versioned directory.</a>
 </td>
 </tr>
-<tr class=" thread ">
+<tr class=" core os/arch ">
 <td><a href="https://bugs.ruby-lang.org/issues/15423">15423</a>
 </td>
-<td>thread</td>
+<td>core os/arch</td>
 <td><a href="https://bugs.ruby-lang.org/issues/15423">fork leapfrog leaks memory on FreeBSD 11.2</a>
-</td>
-</tr>
-<tr class=" patch parser ">
-<td><a href="https://bugs.ruby-lang.org/issues/15404">15404</a>
-</td>
-<td>patch parser</td>
-<td><a href="https://bugs.ruby-lang.org/issues/15404">Endless range has inconsistent chaining behaviour</a>
 </td>
 </tr>
 <tr class=" patch core ">
@@ -1079,10 +1107,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/15367">IO.select is not resumed when io-object gets closed</a>
 </td>
 </tr>
-<tr class=" test ">
+<tr class=" test cygwin ">
 <td><a href="https://bugs.ruby-lang.org/issues/15334">15334</a>
 </td>
-<td>test</td>
+<td>test cygwin</td>
 <td><a href="https://bugs.ruby-lang.org/issues/15334">child_info_fork::abort: address space needed by &#39;emoji_iso2022_kddi.so&#39; on cygwin</a>
 </td>
 </tr>
@@ -1135,10 +1163,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/15072">thread.c:4356:5: error: implicit declaration of function ‘ubf_list_atfork’</a>
 </td>
 </tr>
-<tr class=" core ">
+<tr class=" patch core notbug ">
 <td><a href="https://bugs.ruby-lang.org/issues/15027">15027</a>
 </td>
-<td>core</td>
+<td>patch core notbug</td>
 <td><a href="https://bugs.ruby-lang.org/issues/15027">When Struct#each method is overriden Struct#select and Struct#to_a use wrong collections</a>
 </td>
 </tr>
