@@ -127,7 +127,6 @@
 14681,core,`syswrite&#39;: stream closed in another thread (IOError)
 14727,win thread,TestQueue#test_queue_with_trap always timeout on Windows10
 14743,doc notbug,Some links broken in README
-14744,refine,Refinements modules have a superclass
 14761,os/arch thread,TestThread#test_join_limits hangs up on Solaris 10 with gcc
 14817,tracepoint,TracePoint#parameters for bmethod&#39;s return event should return the same value as its Method#parameters
 14826,os/arch build,make: *** [.ext/include/sparc-solaris2.10/rb_mjit_min_header-2.6.0.h] Error 1 on Solaris 10 with very old gcc3
@@ -184,6 +183,7 @@
 16829,maybenotbug fiber,Exceptions raised from within an enumerated method lose part of their stacktrace
 16836,notbug patch build,configure-time LDFLAGS leak into ruby pkg-config file
 16842,encoding,`inspect` prints the UTF-8 character U+0085 (NEXT LINE) verbatim even though it is not printable
+16889,tracepoint,"TracePoint.enable { ... } also activates the TracePoint for other threads, even outside the block"
 16905,build os/arch,Ruby required to build Ruby on Haiku?
 16908,notbug core,Strange behaviour of Hash#shift when used with `default_proc`.
 16920,os/arch thread,TestThread#test_signal_at_join fails on aarch64
@@ -300,3 +300,4 @@
 18119,ractor,Ractor crashes when instantiating classes
 18120,ractor autoload,Deadlock and segfault when using autoload in Ractor
 18121,patch core,addr2line.c: Endianness
+18123,patch core,addr2line.c: Define `SHF_COMPRESSED`
