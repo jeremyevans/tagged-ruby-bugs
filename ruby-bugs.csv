@@ -131,7 +131,6 @@
 14817,tracepoint,TracePoint#parameters for bmethod&#39;s return event should return the same value as its Method#parameters
 14826,os/arch build,make: *** [.ext/include/sparc-solaris2.10/rb_mjit_min_header-2.6.0.h] Error 1 on Solaris 10 with very old gcc3
 14838,regexp notbug,RegexpError with double &quot;s&quot; in look-behind assertion in case-insensitive unicode regexp
-14870,tracepoint,Both TracePoint&#39;s :call and :c_call filters seem to skip a lot of builtin methods
 14884,win,msys2 mingw32 &#39;rake&#39; has unexpected text at top of file
 14891,ext notbug,Pathname#join has different behaviour to File.join
 14906,win core,MinGW failure - TestIO#test_copy_stream_no_busy_wait
@@ -292,7 +291,6 @@
 18067,notbug core,Composite procs with `instance_exec` aren&#39;t executed within the context of the receiver
 18073,build os/arch,test/ruby/test_jit.rb: &quot;error: invalid use of &#39;__builtin_va_arg_pack ()&#39;&quot; on Ruby 2.7.4 on gcc 4.8.5
 18076,patch build,ext/digest/md5/md5.c: `-Wnull-pointer-subtraction` warning by Clang 13
-18077,patch core,Marshal.dump(closed_io) raises IOError instead of TypeError
 18079,patch build win,[PATCH] make error for MinGW with Clang/LLVM + LLD
 18080,parser,Syntax error on one-line pattern matching
 18081,patch core,addr2line.c: Wrong section for `DW_AT_ranges`
@@ -301,3 +299,4 @@
 18120,ractor autoload,Deadlock and segfault when using autoload in Ractor
 18121,patch core,addr2line.c: Endianness
 18123,patch core,addr2line.c: Define `SHF_COMPRESSED`
+18126,patch core,Process termination three seconds after thread termination dumps core
