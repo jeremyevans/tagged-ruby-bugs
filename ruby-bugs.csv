@@ -44,7 +44,7 @@
 10213,build notbug,bundled gems ignored by make install
 10416,build,Create mechanism for updating of Unicode data files downstreams when we want
 10436,patch ext,ruby -c and ripper inconsistency: m(&amp;nil) {}
-10470,tracepoint,TracePoint cannot trace attr_accessor/reader/writer method
+10470,patch tracepoint,TracePoint cannot trace attr_accessor/reader/writer method
 10580,test os/arch,TestProcess#test_deadlock_by_signal_at_forking fails on ARM
 10584,encoding maybenotbug,"String.valid_encoding?, String.ascii_only? fails to account for BOM."
 10855,patch lib,[PATCH] Matrix#inverse returns matrix of integers whenever possible
@@ -195,7 +195,6 @@
 17008,jit win,JIT enabled on Windows can cause constant conhost pop-ups
 17037,core,rounding of Rational#to_f
 17048,patch core,Calling initialize_copy on live modules leads to crashes
-17052,build,Ruby with LTO enabled has issues with SIGSEGV handler
 17120,core patch,String#start_with? return wrong result for Regexp patterns containing /\K/
 17132,build,vcs.rb doesn&#39;t detect git submodules as vcs
 17142,build os/arch,Ruby fails to build in AIX 
@@ -294,9 +293,15 @@
 18079,patch build win,[PATCH] make error for MinGW with Clang/LLVM + LLD
 18080,parser,Syntax error on one-line pattern matching
 18081,patch core,addr2line.c: Wrong section for `DW_AT_ranges`
-18117,patch ractor,Segmentation fault when yielding values from Ractors during GC sweeping
 18119,ractor,Ractor crashes when instantiating classes
 18120,ractor autoload,Deadlock and segfault when using autoload in Ractor
 18121,patch core,addr2line.c: Endianness
 18123,patch core,addr2line.c: Define `SHF_COMPRESSED`
 18126,patch core,Process termination three seconds after thread termination dumps core
+18128,ractor,Ractor allows class variables that have been used before
+18129,ractor,Ractor-incompatible global variables can be accessed through alias
+18130,patch ractor,Showing exceptions from Ractor on console causes errors
+18131,os/arch,addr2line.c: Some inlined functions mistakenly shown
+18132,thread,TODO: fix ccan/list thread safety
+18133,os/arch,LTO: TestGCCompact#test_ast_compacts segfaults on i686
+18134,win core,Memory leak in master
