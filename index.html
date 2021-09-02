@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>307 Tagged Open Ruby Bugs as of 2021-08-27 07:13:20 +0900</title>
+<title>306 Tagged Open Ruby Bugs as of 2021-09-03 05:45:19 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -13,18 +13,18 @@
 <input type="submit" value="maybenotbug" />
 <input type="submit" value="lib" />
 <input type="submit" value="notbug" />
-<input type="submit" value="ext" />
 <input type="submit" value="test" />
+<input type="submit" value="ext" />
 <input type="submit" value="thread" />
 <input type="submit" value="cygwin" />
 <input type="submit" value="encoding" />
 <input type="submit" value="regexp" />
-<input type="submit" value="tracepoint" />
 <input type="submit" value="perf" />
 <input type="submit" value="refine" />
+<input type="submit" value="tracepoint" />
 <input type="submit" value="fiber" />
-<input type="submit" value="autoload" />
 <input type="submit" value="jit" />
+<input type="submit" value="autoload" />
 <input type="submit" value="parser" />
 <input type="submit" value="doc" />
 <input type="submit" value="irb" />
@@ -32,9 +32,9 @@
 <input type="submit" value="unfixable" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">307</span> matched)
+(<span id="matched">306</span> matched)
 <table>
-<caption>307 Tagged Open Ruby Bugs as of 2021-08-27 07:13:20 +0900</caption>
+<caption>306 Tagged Open Ruby Bugs as of 2021-09-03 05:45:19 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -43,11 +43,25 @@
 </tr>
 </thead>
 <tbody>
-<tr class=" win core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18134">18134</a>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18144">18144</a>
 </td>
-<td>win core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18134">Memory leak in master</a>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18144">Timeout not working while regular expression match is running</a>
+</td>
+</tr>
+<tr class=" jit ">
+<td><a href="https://bugs.ruby-lang.org/issues/18142">18142</a>
+</td>
+<td>jit</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18142">Segmentation fault with Ruby 3.0.2</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18141">18141</a>
+</td>
+<td>patch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18141">Marshal load with proc yield strings before they are fully initialized </a>
 </td>
 </tr>
 <tr class=" os/arch ">
@@ -596,10 +610,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17578">mkmf experimental C++ Support</a>
 </td>
 </tr>
-<tr class=" core ">
+<tr class=" patch core ">
 <td><a href="https://bugs.ruby-lang.org/issues/17573">17573</a>
 </td>
-<td>core</td>
+<td>patch core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17573">Crashes in profiling tools when signals arrive in non-Ruby threads</a>
 </td>
 </tr>
@@ -988,13 +1002,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16492">TestBugReporter#test_bug_reporter_add test failures</a>
 </td>
 </tr>
-<tr class=" patch tracepoint ">
-<td><a href="https://bugs.ruby-lang.org/issues/16383">16383</a>
-</td>
-<td>patch tracepoint</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16383">TracePoint does not report calls to attribute reader methods</a>
-</td>
-</tr>
 <tr class=" patch core ">
 <td><a href="https://bugs.ruby-lang.org/issues/16288">16288</a>
 </td>
@@ -1275,10 +1282,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/14826">make: *** [.ext/include/sparc-solaris2.10/rb_mjit_min_header-2.6.0.h] Error 1 on Solaris 10 with very old gcc3</a>
 </td>
 </tr>
-<tr class=" tracepoint ">
+<tr class=" patch tracepoint ">
 <td><a href="https://bugs.ruby-lang.org/issues/14817">14817</a>
 </td>
-<td>tracepoint</td>
+<td>patch tracepoint</td>
 <td><a href="https://bugs.ruby-lang.org/issues/14817">TracePoint#parameters for bmethod&#39;s return event should return the same value as its Method#parameters</a>
 </td>
 </tr>
@@ -1863,13 +1870,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/10580">TestProcess#test_deadlock_by_signal_at_forking fails on ARM</a>
 </td>
 </tr>
-<tr class=" patch tracepoint ">
-<td><a href="https://bugs.ruby-lang.org/issues/10470">10470</a>
-</td>
-<td>patch tracepoint</td>
-<td><a href="https://bugs.ruby-lang.org/issues/10470">TracePoint cannot trace attr_accessor/reader/writer method</a>
-</td>
-</tr>
 <tr class=" patch ext ">
 <td><a href="https://bugs.ruby-lang.org/issues/10436">10436</a>
 </td>
@@ -1938,13 +1938,6 @@
 </td>
 <td>build</td>
 <td><a href="https://bugs.ruby-lang.org/issues/9760">mkmf does not allow for linking against custom libraries when a system library is present</a>
-</td>
-</tr>
-<tr class=" ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/9659">9659</a>
-</td>
-<td>ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/9659">crash in FIPS mode after unchecked algo-&gt;init_func failure</a>
 </td>
 </tr>
 <tr class=" core os/arch ">
