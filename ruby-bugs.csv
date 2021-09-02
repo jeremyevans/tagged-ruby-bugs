@@ -33,7 +33,6 @@
 9431,win core maybenotbug,In windows ruby IO.write returns count of bytes without count of CR character
 9435,win core,Kernel.system problem
 9507,core os/arch,Ruby 2.1.0 is broken on ARMv5: tried to create Proc object without a block
-9659,ext,crash in FIPS mode after unchecked algo-&gt;init_func failure
 9760,build,mkmf does not allow for linking against custom libraries when a system library is present
 9806,lib maybenotbug,URI#encode doesn&#39;t encode characters &#39;[&#39; and &#39;]&#39;.  They should be encoded as %5B and %5D respectively.
 9921,build maybenotbug,"gmtime_r, win32.h, and &lt;string&gt;"
@@ -44,7 +43,6 @@
 10213,build notbug,bundled gems ignored by make install
 10416,build,Create mechanism for updating of Unicode data files downstreams when we want
 10436,patch ext,ruby -c and ripper inconsistency: m(&amp;nil) {}
-10470,patch tracepoint,TracePoint cannot trace attr_accessor/reader/writer method
 10580,test os/arch,TestProcess#test_deadlock_by_signal_at_forking fails on ARM
 10584,encoding maybenotbug,"String.valid_encoding?, String.ascii_only? fails to account for BOM."
 10855,patch lib,[PATCH] Matrix#inverse returns matrix of integers whenever possible
@@ -128,7 +126,7 @@
 14727,win thread,TestQueue#test_queue_with_trap always timeout on Windows10
 14743,doc notbug,Some links broken in README
 14761,os/arch thread,TestThread#test_join_limits hangs up on Solaris 10 with gcc
-14817,tracepoint,TracePoint#parameters for bmethod&#39;s return event should return the same value as its Method#parameters
+14817,patch tracepoint,TracePoint#parameters for bmethod&#39;s return event should return the same value as its Method#parameters
 14826,os/arch build,make: *** [.ext/include/sparc-solaris2.10/rb_mjit_min_header-2.6.0.h] Error 1 on Solaris 10 with very old gcc3
 14838,regexp notbug,RegexpError with double &quot;s&quot; in look-behind assertion in case-insensitive unicode regexp
 14884,win,msys2 mingw32 &#39;rake&#39; has unexpected text at top of file
@@ -169,7 +167,6 @@
 16265,win thread,"Test (spec) failure using current MSYS2 tools, related to -fstack-protector and possibly D_FORTIFY_SOURCE=2"
 16277,win ext maybenotbug,UNIXServer#listen fails with Errno::EADDRINUSE error under Windows 10 / WSL Ubuntu 18.04
 16288,patch core,"Segmentation fault with finalizers, threads"
-16383,patch tracepoint,TracePoint does not report calls to attribute reader methods
 16492,test os/arch,TestBugReporter#test_bug_reporter_add test failures
 16493,thread os/arch,TestThreadQueue#test_thr_kill is flaky on AArch64
 16497,ext encoding,StringIO#internal_encoding is broken (more severely in 2.7)
@@ -225,7 +222,7 @@
 17543,ractor,Ractor isolation broken by `self` in shareable proc
 17545,core maybenotbug,Calling dup on a subclass of Proc returns a Proc and not the subclass
 17568,fiber,Thread.handle_interrupt is per-Thread but should probably be per-Fiber
-17573,core,Crashes in profiling tools when signals arrive in non-Ruby threads
+17573,patch core,Crashes in profiling tools when signals arrive in non-Ruby threads
 17578,lib,mkmf experimental C++ Support
 17587,ractor,Segmentation fault with ractors and unix signals
 17617,ractor,"When a Ractor&#39;s incoming port is closed, Ractor.receive_if does not raise Ractor::ClosedError, but instead blocks indefinitely"
@@ -304,4 +301,6 @@
 18131,os/arch,addr2line.c: Some inlined functions mistakenly shown
 18132,thread,TODO: fix ccan/list thread safety
 18133,os/arch,LTO: TestGCCompact#test_ast_compacts segfaults on i686
-18134,win core,Memory leak in master
+18141,patch core,Marshal load with proc yield strings before they are fully initialized 
+18142,jit,Segmentation fault with Ruby 3.0.2
+18144,core,Timeout not working while regular expression match is running
