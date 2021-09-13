@@ -7,7 +7,6 @@
 5334,ext maybenotbug,Segmentation fault in InternetExplorer IServiceProvider interface
 6351,encoding,transcode table generator does not support multi characters of Unicode
 6360,win build,Debug information build even without requesting it
-7676,core,Comparison of Float::NAN in array behaves unexpectedly
 7742,encoding,System encoding (Windows-1258) is not recognized by Ruby to  convert back to UTF-8 
 7840,build,-Wdeclaration-after-statement is valid for C/ObjC but not for C++
 7859,ext,Readline: Incorrect arrow key behavior in vi_editing_mode insert mode with Readline 6.2
@@ -226,7 +225,6 @@
 17578,lib,mkmf experimental C++ Support
 17587,ractor,Segmentation fault with ractors and unix signals
 17617,ractor,"When a Ractor&#39;s incoming port is closed, Ractor.receive_if does not raise Ractor::ClosedError, but instead blocks indefinitely"
-17623,patch irb,irb starts with some local variables already defined
 17624,ractor,Ractor.receive is not thread-safe
 17629,patch ext os/arch,"macOS, readline compiled with libedit: adding entries to history doesn&#39;t work unless Readline.readline is called before populating it"
 17646,patch build,Check for `__builtin_mul_overflow` with `long long` arguments
@@ -294,7 +292,6 @@
 18120,ractor autoload,Deadlock and segfault when using autoload in Ractor
 18121,patch core,addr2line.c: Endianness
 18123,patch core,addr2line.c: Define `SHF_COMPRESSED`
-18126,patch core,Process termination three seconds after thread termination dumps core
 18128,ractor,Ractor allows class variables that have been used before
 18129,ractor,Ractor-incompatible global variables can be accessed through alias
 18130,patch ractor,Showing exceptions from Ractor on console causes errors
@@ -304,3 +301,9 @@
 18141,patch core,Marshal load with proc yield strings before they are fully initialized 
 18142,jit,Segmentation fault with Ruby 3.0.2
 18144,core,Timeout not working while regular expression match is running
+18151,lib,Incorrect Resolv result when DNS server is unreachable
+18152,core,Fix theoretical bug with signals + qsort
+18155,core notbug,(nil..nil).cover?(x) is true for all x since beginless ranges were introduced
+18156,build,3.0.2 configuration checks by default for C++ compiler instead of C?
+18158,core,Pathname#each_entry without block does not return Enumerator
+18164,patch core,Segfault after spawn when using modified ENV
