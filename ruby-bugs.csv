@@ -52,7 +52,6 @@
 11164,core notbug,Garbage collector in Ruby 2.2 provokes unexpected CoW
 11174,thread os/arch,threads memory leak
 11177,win core,DATAでEOF文字以降が読めない
-11182,refine,Refinement with alias causes strange behavior
 11183,core,Cumulative error on Complex::I ** 100000000000000000000000000000000
 11230,core,Should rb_struct_s_members() be public API?
 11269,core,ruby_init_setproctitle() should be called before require_libraries()
@@ -100,7 +99,6 @@
 13644,win test,Windows - Setting Time.now
 13671,regexp notbug,Regexp with lookbehind and case-insensitivity raises RegexpError only on strings with certain characters
 13754,ext,bigdecimal with lower precision that Float
-13810,patch ext,Inconsistency between Date and Time.strftime(&quot;%v&quot;)
 13864,patch test,Rinda multicast test failures due to missing default route
 13999,cygwin ext,Cygwin 環境で ripper_state_lex.rb がコアダンプする
 14049,win core,SEGV svn 60401 require_relative
@@ -306,4 +304,4 @@
 18155,core notbug,(nil..nil).cover?(x) is true for all x since beginless ranges were introduced
 18156,build,3.0.2 configuration checks by default for C++ compiler instead of C?
 18158,core,Pathname#each_entry without block does not return Enumerator
-18164,patch core,Segfault after spawn when using modified ENV
+18165,patch lib,resolv: IPv6 link local addresses do not accept dash as a valid zone_id character
