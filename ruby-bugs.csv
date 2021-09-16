@@ -132,7 +132,6 @@
 14957,win thread,"MinGW, gcc 8.2.0, bootstraptest test_thread.rb - failure ?"
 14971,cygwin build,error: implicit declaration of function ‘rb_vm_call0
 14972,patch lib,Net::HTTP inconsistently raises EOFError when peer closes the connection
-15027,patch core notbug,When Struct#each method is overriden Struct#select and Struct#to_a use wrong collections
 15072,cygwin build,thread.c:4356:5: error: implicit declaration of function ‘ubf_list_atfork’
 15097,cygwin lib,Gem install fails on Ruby 2.5.1 with Cygwin (get_dns_server_list undefined)
 15204,patch win ,globbing should be prevented when wildcard is surrounded by double quotes in the ruby&#39;s command line
@@ -296,7 +295,6 @@
 18131,os/arch,addr2line.c: Some inlined functions mistakenly shown
 18132,thread,TODO: fix ccan/list thread safety
 18133,os/arch,LTO: TestGCCompact#test_ast_compacts segfaults on i686
-18141,patch core,Marshal load with proc yield strings before they are fully initialized 
 18142,jit,Segmentation fault with Ruby 3.0.2
 18144,core,Timeout not working while regular expression match is running
 18151,lib,Incorrect Resolv result when DNS server is unreachable
@@ -305,3 +303,6 @@
 18156,build,3.0.2 configuration checks by default for C++ compiler instead of C?
 18158,core,Pathname#each_entry without block does not return Enumerator
 18165,patch lib,resolv: IPv6 link local addresses do not accept dash as a valid zone_id character
+18169,misc,Local copies of gemified libraries are being released out of sync with their gems
+18170,core,Exception#inspect should not include newlines
+18171,core,`Marshal` ignores `Hash#compare_by_identity`
