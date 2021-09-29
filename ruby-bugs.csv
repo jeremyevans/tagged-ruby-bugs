@@ -240,7 +240,6 @@
 17810,patch core,addr2line.c: Some symbol names missing in C backtrace with Clang/LLVM
 17813,patch win ext,rb_funcall() may reset the latest socket error unexpectedlly since Ruby 3.0.0
 17817,jit,--jit outputs ./tmp/_ruby_mjit_*.h: No such file or directory on with TMP
-17823,patch core,addr2line.c: Interpret `DW_RLE_start_length`
 17826,ractor,Ractor#take hangs if used in multiple Threads
 17835,patch maybenotbug lib,Net::HTTP should automatically add Accept-Encoding request header on HEAD request as well
 17840,patch build,`make install` overriding file permission with 644
@@ -248,6 +247,7 @@
 17866,maybenotbug,Incompatible changes with Psych 4.0.0
 17878,ractor,bootstraptest/test_ractor.rb:224 a random failing test with &quot;The outgoing-port is already closed (Ractor::ClosedError)&quot;
 17882,ractor cygwin,bootstraptest/test_ractor.rb:224 segfaults on Cygwin
+17885,patch core,require_relative and require should be compatible with each other when symlinked files are used
 17925,parser,Pattern matching syntax using semicolon one-line
 17926,os/arch,spec/ruby/core/file/atime_spec.rb: a random failing test on Travis ppc64le
 17931,build win,Compile fails setup option nodynamic
@@ -292,6 +292,7 @@
 18131,os/arch,addr2line.c: Some inlined functions mistakenly shown
 18132,thread,TODO: fix ccan/list thread safety
 18133,os/arch,LTO: TestGCCompact#test_ast_compacts segfaults on i686
+18141,patch core,Marshal load with proc yield objects before they are fully initialized 
 18142,jit,Segmentation fault with Ruby 3.0.2
 18144,core,Timeout not working while regular expression match is running
 18152,core,Fix theoretical bug with signals + qsort
@@ -303,8 +304,8 @@
 18170,patch core,Exception#inspect should not include newlines
 18171,core,`Marshal` ignores `Hash#compare_by_identity`
 18180,refine,opt_newarray_min/max instructions ignore refined methods
-18182,patch core,"wrong number of arguments (given 1, expected 0) (ArgumentError) since 178ee1e801acb33d13b3e8a630f6ca4926c68fbc"
-18185,patch core,BasicObject is inserted in the middle of the inheritance tree.
 18186,win,SEGV with system command - MinGW?
 18187,patch core,Float#clamp() returns ArgumentError (comparison of Float with 1 failed)
-18189,patch core,`rb_cString` can be NULL during `Init_Object`
+18191,notbug,All loaded feature filenames should be in the file system encoding
+18193,ractor,Accessing global configuration from Ractors
+18230,notbug,i get unexpected @path error.
