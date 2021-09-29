@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>310 Tagged Open Ruby Bugs as of 2021-09-24 04:08:05 +0900</title>
+<title>311 Tagged Open Ruby Bugs as of 2021-09-30 06:35:11 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -8,11 +8,11 @@
 <input type="submit" value="patch" />
 <input type="submit" value="win" />
 <input type="submit" value="build" />
-<input type="submit" value="os/arch" />
 <input type="submit" value="ractor" />
+<input type="submit" value="os/arch" />
 <input type="submit" value="maybenotbug" />
-<input type="submit" value="lib" />
 <input type="submit" value="notbug" />
+<input type="submit" value="lib" />
 <input type="submit" value="test" />
 <input type="submit" value="ext" />
 <input type="submit" value="thread" />
@@ -31,9 +31,9 @@
 <input type="submit" value="unfixable" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">310</span> matched)
+(<span id="matched">311</span> matched)
 <table>
-<caption>310 Tagged Open Ruby Bugs as of 2021-09-24 04:08:05 +0900</caption>
+<caption>311 Tagged Open Ruby Bugs as of 2021-09-30 06:35:11 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -42,11 +42,25 @@
 </tr>
 </thead>
 <tbody>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18189">18189</a>
+<tr class=" notbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/18230">18230</a>
 </td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18189">`rb_cString` can be NULL during `Init_Object`</a>
+<td>notbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18230">i get unexpected @path error.</a>
+</td>
+</tr>
+<tr class=" ractor ">
+<td><a href="https://bugs.ruby-lang.org/issues/18193">18193</a>
+</td>
+<td>ractor</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18193">Accessing global configuration from Ractors</a>
+</td>
+</tr>
+<tr class=" notbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/18191">18191</a>
+</td>
+<td>notbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18191">All loaded feature filenames should be in the file system encoding</a>
 </td>
 </tr>
 <tr class=" patch core ">
@@ -61,20 +75,6 @@
 </td>
 <td>win</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18186">SEGV with system command - MinGW?</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18185">18185</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18185">BasicObject is inserted in the middle of the inheritance tree.</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18182">18182</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18182">wrong number of arguments (given 1, expected 0) (ArgumentError) since 178ee1e801acb33d13b3e8a630f6ca4926c68fbc</a>
 </td>
 </tr>
 <tr class=" refine ">
@@ -152,6 +152,13 @@
 </td>
 <td>jit</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18142">Segmentation fault with Ruby 3.0.2</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18141">18141</a>
+</td>
+<td>patch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18141">Marshal load with proc yield objects before they are fully initialized </a>
 </td>
 </tr>
 <tr class=" os/arch ">
@@ -462,6 +469,13 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17925">Pattern matching syntax using semicolon one-line</a>
 </td>
 </tr>
+<tr class=" patch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/17885">17885</a>
+</td>
+<td>patch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/17885">require_relative and require should be compatible with each other when symlinked files are used</a>
+</td>
+</tr>
 <tr class=" ractor cygwin ">
 <td><a href="https://bugs.ruby-lang.org/issues/17882">17882</a>
 </td>
@@ -509,13 +523,6 @@
 </td>
 <td>ractor</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17826">Ractor#take hangs if used in multiple Threads</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/17823">17823</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17823">addr2line.c: Interpret `DW_RLE_start_length`</a>
 </td>
 </tr>
 <tr class=" jit ">
