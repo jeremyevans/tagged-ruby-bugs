@@ -208,7 +208,6 @@
 17478,perf,Ruby3.0 is slower than Ruby2.7.2 when parsing a large CSV file
 17489,ractor,Ractor segfaults
 17506,ractor,Ractor isolation broken by ThreadGroup
-17507,patch regexp thread,Regexp capture groups ignored sometimes in some multithreaded environments (possible race condition)
 17513,ractor,Methods of shareable objects and UnboundMethods should be shareable
 17516,ractor,forking in a ractor causes Ruby to crash
 17529,ractor,Ractor Segfaults with GC enabled
@@ -247,7 +246,6 @@
 17866,maybenotbug,Incompatible changes with Psych 4.0.0
 17878,ractor,bootstraptest/test_ractor.rb:224 a random failing test with &quot;The outgoing-port is already closed (Ractor::ClosedError)&quot;
 17882,ractor cygwin,bootstraptest/test_ractor.rb:224 segfaults on Cygwin
-17885,patch core,require_relative and require should be compatible with each other when symlinked files are used
 17925,parser,Pattern matching syntax using semicolon one-line
 17926,os/arch,spec/ruby/core/file/atime_spec.rb: a random failing test on Travis ppc64le
 17931,build win,Compile fails setup option nodynamic
@@ -292,20 +290,18 @@
 18131,os/arch,addr2line.c: Some inlined functions mistakenly shown
 18132,thread,TODO: fix ccan/list thread safety
 18133,os/arch,LTO: TestGCCompact#test_ast_compacts segfaults on i686
-18141,patch core,Marshal load with proc yield objects before they are fully initialized 
 18142,jit,Segmentation fault with Ruby 3.0.2
 18144,core,Timeout not working while regular expression match is running
 18152,core,Fix theoretical bug with signals + qsort
 18155,core notbug,(nil..nil).cover?(x) is true for all x since beginless ranges were introduced
-18156,build,3.0.2 configuration checks by default for C++ compiler instead of C?
 18158,patch core,Pathname#each_entry without block does not return Enumerator
 18165,patch lib,resolv: IPv6 link local addresses do not accept dash as a valid zone_id character
 18169,misc,Local copies of gemified libraries are being released out of sync with their gems
 18170,patch core,Exception#inspect should not include newlines
-18171,core,`Marshal` ignores `Hash#compare_by_identity`
-18180,refine,opt_newarray_min/max instructions ignore refined methods
 18186,win,SEGV with system command - MinGW?
 18187,patch core,Float#clamp() returns ArgumentError (comparison of Float with 1 failed)
-18191,notbug,All loaded feature filenames should be in the file system encoding
 18193,ractor,Accessing global configuration from Ractors
 18230,notbug,i get unexpected @path error.
+18232,ractor,Ractor.make_shareable is broken in code loaded with RubyVM::InstructionSequence.load_from_binary
+18234,patch lib,exit after `binding.irb`
+18242,notbug parser,Parser makes multiple assignment sad in confusing way
