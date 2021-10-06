@@ -1,18 +1,18 @@
 <html>
 <head>
-<title>311 Tagged Open Ruby Bugs as of 2021-09-30 06:35:11 +0900</title>
+<title>307 Tagged Open Ruby Bugs as of 2021-10-07 00:59:32 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
 <p class="filter-buttons">Available Tags: <input type="submit" value="core" />
 <input type="submit" value="patch" />
 <input type="submit" value="win" />
-<input type="submit" value="build" />
 <input type="submit" value="ractor" />
+<input type="submit" value="build" />
 <input type="submit" value="os/arch" />
 <input type="submit" value="maybenotbug" />
-<input type="submit" value="notbug" />
 <input type="submit" value="lib" />
+<input type="submit" value="notbug" />
 <input type="submit" value="test" />
 <input type="submit" value="ext" />
 <input type="submit" value="thread" />
@@ -31,9 +31,9 @@
 <input type="submit" value="unfixable" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">311</span> matched)
+(<span id="matched">307</span> matched)
 <table>
-<caption>311 Tagged Open Ruby Bugs as of 2021-09-30 06:35:11 +0900</caption>
+<caption>307 Tagged Open Ruby Bugs as of 2021-10-07 00:59:32 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -42,6 +42,27 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" notbug parser ">
+<td><a href="https://bugs.ruby-lang.org/issues/18242">18242</a>
+</td>
+<td>notbug parser</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18242">Parser makes multiple assignment sad in confusing way</a>
+</td>
+</tr>
+<tr class=" patch lib ">
+<td><a href="https://bugs.ruby-lang.org/issues/18234">18234</a>
+</td>
+<td>patch lib</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18234">exit after `binding.irb`</a>
+</td>
+</tr>
+<tr class=" ractor ">
+<td><a href="https://bugs.ruby-lang.org/issues/18232">18232</a>
+</td>
+<td>ractor</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18232">Ractor.make_shareable is broken in code loaded with RubyVM::InstructionSequence.load_from_binary</a>
+</td>
+</tr>
 <tr class=" notbug ">
 <td><a href="https://bugs.ruby-lang.org/issues/18230">18230</a>
 </td>
@@ -56,13 +77,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18193">Accessing global configuration from Ractors</a>
 </td>
 </tr>
-<tr class=" notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/18191">18191</a>
-</td>
-<td>notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18191">All loaded feature filenames should be in the file system encoding</a>
-</td>
-</tr>
 <tr class=" patch core ">
 <td><a href="https://bugs.ruby-lang.org/issues/18187">18187</a>
 </td>
@@ -75,20 +89,6 @@
 </td>
 <td>win</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18186">SEGV with system command - MinGW?</a>
-</td>
-</tr>
-<tr class=" refine ">
-<td><a href="https://bugs.ruby-lang.org/issues/18180">18180</a>
-</td>
-<td>refine</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18180">opt_newarray_min/max instructions ignore refined methods</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18171">18171</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18171">`Marshal` ignores `Hash#compare_by_identity`</a>
 </td>
 </tr>
 <tr class=" patch core ">
@@ -119,13 +119,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18158">Pathname#each_entry without block does not return Enumerator</a>
 </td>
 </tr>
-<tr class=" build ">
-<td><a href="https://bugs.ruby-lang.org/issues/18156">18156</a>
-</td>
-<td>build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18156">3.0.2 configuration checks by default for C++ compiler instead of C?</a>
-</td>
-</tr>
 <tr class=" core notbug ">
 <td><a href="https://bugs.ruby-lang.org/issues/18155">18155</a>
 </td>
@@ -152,13 +145,6 @@
 </td>
 <td>jit</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18142">Segmentation fault with Ruby 3.0.2</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18141">18141</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18141">Marshal load with proc yield objects before they are fully initialized </a>
 </td>
 </tr>
 <tr class=" os/arch ">
@@ -469,13 +455,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17925">Pattern matching syntax using semicolon one-line</a>
 </td>
 </tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/17885">17885</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17885">require_relative and require should be compatible with each other when symlinked files are used</a>
-</td>
-</tr>
 <tr class=" ractor cygwin ">
 <td><a href="https://bugs.ruby-lang.org/issues/17882">17882</a>
 </td>
@@ -740,13 +719,6 @@
 </td>
 <td>ractor</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17513">Methods of shareable objects and UnboundMethods should be shareable</a>
-</td>
-</tr>
-<tr class=" patch regexp thread ">
-<td><a href="https://bugs.ruby-lang.org/issues/17507">17507</a>
-</td>
-<td>patch regexp thread</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17507">Regexp capture groups ignored sometimes in some multithreaded environments (possible race condition)</a>
 </td>
 </tr>
 <tr class=" ractor ">
