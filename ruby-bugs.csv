@@ -262,7 +262,6 @@
 18012,regexp,Case-insensitive character classes can only match multiple code points when top-level character class is not negated
 18013,regexp,Unexpected results when mxiing negated character classes and case-folding
 18021,refine,"Mixins in Refinements: possibly multiple bugs, workarounds are awkward"
-18023,ractor,Ractor#make_shareable changes the values of closured shareable objects
 18024,ractor,Ractor crashes when connections are closed in multiple Ractors
 18031,patch tracepoint,Nested TracePoint#enable with define_method target crashes
 18034,os/arch,Segmentation fault fiddle with `--enable-bundled-libffi` and macOS
@@ -301,7 +300,7 @@
 18186,win,SEGV with system command - MinGW?
 18187,patch core,Float#clamp() returns ArgumentError (comparison of Float with 1 failed)
 18193,ractor,Accessing global configuration from Ractors
-18230,notbug,i get unexpected @path error.
 18232,ractor,Ractor.make_shareable is broken in code loaded with RubyVM::InstructionSequence.load_from_binary
-18234,patch lib,exit after `binding.irb`
-18242,notbug parser,Parser makes multiple assignment sad in confusing way
+18243,ractor,Ractor.make_shareable does not freeze the receiver of a Proc but allows accessing ivars of it
+18244,patch core,Unexpected errors output order
+18245,patch lib,"CSV Parser, buffer overflow issue with very specific data"
