@@ -58,7 +58,6 @@
 11410,win ext encoding,Win32 Registry enumeration performs unnecessary string re-encoding which cause UndefinedConversionError exceptions
 11438,win thread,"native_thread_init_stack() get machine.stack_start unequal to thread&#39;s stack start address, x86 win32"
 11450,patch lib,HTTPHeader.content_range throws error on non-byte units
-11480,test,killed by SIGIOT (signal 6) on fork
 11514,core os/arch,AIX6.1 - Ruby 2.2.3 - Segmentation fault in :byteslice
 11526,patch lib,Streaming HTTP requests are not idempotent and should not be retried
 11531,lib maybenotbug,IPAddr#== implements wrong logic
@@ -142,7 +141,6 @@
 15367,core,IO.select is not resumed when io-object gets closed
 15386,patch core,[PATCH] io.c (rb_io_check_char_readable): do not io_fflush buffered sockets
 15423,core os/arch,fork leapfrog leaks memory on FreeBSD 11.2
-15425,build,Store MJIT header into Ruby versioned directory.
 15428,core notbug,Refactor Proc#&gt;&gt; and #&lt;&lt;
 15438,win thread,Threads can&#39;t switch faster than TIME_QUANTUM_(NSEC|USEC|MSEC)
 15499,thread,Breaking behavior on ruby 2.6: rb_thread_call_without_gvl doesn&#39;t invoke unblock_function when used on the main thread 
@@ -152,7 +150,6 @@
 15644,patch ext,ThreadsWait problems with Thread#report_on_exception
 15764,parser,Whitespace and control characters should not be permitted in tokens
 15787,os/arch lib maybenotbug,LoadError by EPERM on read-only volume
-15790,patch core autoload,Strange interaction between autoload and $LOADED_FEATURES
 15928,patch core,Constant declaration does not conform to JIS 3017:2013
 15993,win encoding,&#39;require&#39; doesn&#39;t work if there are Cyrillic chars in the path to Ruby dir
 16143,patch core,BOM UTF-8 is not removed after rewind
@@ -200,7 +197,6 @@
 17359,ractor,Ractor copy mode is not Ractor-safe
 17373,perf,Ruby 3.0 is slower at Discourse bench than Ruby 2.7
 17379,refine,Refinement with modules redefinition bug
-17382,core,Segfault in String#inspect
 17383,perf,3.0 recursion memory|speed issues
 17400,encoding,Incorrect character downcase for Greek Sigma
 17420,ractor,Unsafe mutation of $&quot; when doing non-RubyGems require in Ractor
@@ -255,7 +251,6 @@
 17996,cygwin core,Cygwin: thread + pipe behavior since Ruby 2.6
 17998,ractor,"ractor: process hanging (with ractors initialized, but not being used)"
 17999,test os/arch,TestMethod#test_zsuper intermittent timeout error on raspbian10-aarch64 CI
-18000,patch lib,have_library doesn&#39;t work when ruby is compiled with --disable-shared --disable-install-static-library
 18002,test os/arch,s390x: Tests failing without LC_ALL env
 18009,regexp,Regexps \w and \W with /i option and /u option produce inconsistent results under nested negation and intersection
 18010,regexp,Character class with single character gets case-folded with following string
@@ -273,7 +268,6 @@
 18060,patch core,Infinite loop when b_return TracePoint raises
 18061,os/arch, Execshield test: libruby.so.N.N.N: FAIL: property-note test because no .note.gnu.property section found
 18066,patch core,Load did_you_mean/error_highlight even with --disable-gems
-18067,notbug core,Composite procs with `instance_exec` aren&#39;t executed within the context of the receiver
 18073,build os/arch,test/ruby/test_jit.rb: &quot;error: invalid use of &#39;__builtin_va_arg_pack ()&#39;&quot; on Ruby 2.7.4 on gcc 4.8.5
 18076,patch build,ext/digest/md5/md5.c: `-Wnull-pointer-subtraction` warning by Clang 13
 18079,patch build win,[PATCH] make error for MinGW with Clang/LLVM + LLD
@@ -300,7 +294,7 @@
 18186,win,SEGV with system command - MinGW?
 18187,patch core,Float#clamp() returns ArgumentError (comparison of Float with 1 failed)
 18193,ractor,Accessing global configuration from Ractors
-18232,ractor,Ractor.make_shareable is broken in code loaded with RubyVM::InstructionSequence.load_from_binary
 18243,ractor,Ractor.make_shareable does not freeze the receiver of a Proc but allows accessing ivars of it
 18244,patch core,Unexpected errors output order
-18245,patch lib,"CSV Parser, buffer overflow issue with very specific data"
+18247,core,weird results for `Array#slice` or `Array#[]` with argument of type `Enumerator::ArithmeticSequence`
+18249,build maybenotbug,The ABI version of dev builds of CRuby does not correspond to the ABI
