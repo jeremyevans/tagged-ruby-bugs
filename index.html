@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>306 Tagged Open Ruby Bugs as of 2021-10-08 01:38:39 +0900</title>
+<title>300 Tagged Open Ruby Bugs as of 2021-10-13 02:40:13 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -31,9 +31,9 @@
 <input type="submit" value="unfixable" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">306</span> matched)
+(<span id="matched">300</span> matched)
 <table>
-<caption>306 Tagged Open Ruby Bugs as of 2021-10-08 01:38:39 +0900</caption>
+<caption>300 Tagged Open Ruby Bugs as of 2021-10-13 02:40:13 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -42,11 +42,18 @@
 </tr>
 </thead>
 <tbody>
-<tr class=" patch lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/18245">18245</a>
+<tr class=" build maybenotbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/18249">18249</a>
 </td>
-<td>patch lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18245">CSV Parser, buffer overflow issue with very specific data</a>
+<td>build maybenotbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18249">The ABI version of dev builds of CRuby does not correspond to the ABI</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18247">18247</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18247">weird results for `Array#slice` or `Array#[]` with argument of type `Enumerator::ArithmeticSequence`</a>
 </td>
 </tr>
 <tr class=" patch core ">
@@ -61,13 +68,6 @@
 </td>
 <td>ractor</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18243">Ractor.make_shareable does not freeze the receiver of a Proc but allows accessing ivars of it</a>
-</td>
-</tr>
-<tr class=" ractor ">
-<td><a href="https://bugs.ruby-lang.org/issues/18232">18232</a>
-</td>
-<td>ractor</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18232">Ractor.make_shareable is broken in code loaded with RubyVM::InstructionSequence.load_from_binary</a>
 </td>
 </tr>
 <tr class=" ractor ">
@@ -252,13 +252,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18073">test/ruby/test_jit.rb: &quot;error: invalid use of &#39;__builtin_va_arg_pack ()&#39;&quot; on Ruby 2.7.4 on gcc 4.8.5</a>
 </td>
 </tr>
-<tr class=" notbug core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18067">18067</a>
-</td>
-<td>notbug core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18067">Composite procs with `instance_exec` aren&#39;t executed within the context of the receiver</a>
-</td>
-</tr>
 <tr class=" patch core ">
 <td><a href="https://bugs.ruby-lang.org/issues/18066">18066</a>
 </td>
@@ -376,13 +369,6 @@
 </td>
 <td>test os/arch</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18002">s390x: Tests failing without LC_ALL env</a>
-</td>
-</tr>
-<tr class=" patch lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/18000">18000</a>
-</td>
-<td>patch lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18000">have_library doesn&#39;t work when ruby is compiled with --disable-shared --disable-install-static-library</a>
 </td>
 </tr>
 <tr class=" test os/arch ">
@@ -763,13 +749,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17383">3.0 recursion memory|speed issues</a>
 </td>
 </tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/17382">17382</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17382">Segfault in String#inspect</a>
-</td>
-</tr>
 <tr class=" refine ">
 <td><a href="https://bugs.ruby-lang.org/issues/17379">17379</a>
 </td>
@@ -1099,13 +1078,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/15928">Constant declaration does not conform to JIS 3017:2013</a>
 </td>
 </tr>
-<tr class=" patch core autoload ">
-<td><a href="https://bugs.ruby-lang.org/issues/15790">15790</a>
-</td>
-<td>patch core autoload</td>
-<td><a href="https://bugs.ruby-lang.org/issues/15790">Strange interaction between autoload and $LOADED_FEATURES</a>
-</td>
-</tr>
 <tr class=" os/arch lib maybenotbug ">
 <td><a href="https://bugs.ruby-lang.org/issues/15787">15787</a>
 </td>
@@ -1167,13 +1139,6 @@
 </td>
 <td>core notbug</td>
 <td><a href="https://bugs.ruby-lang.org/issues/15428">Refactor Proc#&gt;&gt; and #&lt;&lt;</a>
-</td>
-</tr>
-<tr class=" build ">
-<td><a href="https://bugs.ruby-lang.org/issues/15425">15425</a>
-</td>
-<td>build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/15425">Store MJIT header into Ruby versioned directory.</a>
 </td>
 </tr>
 <tr class=" core os/arch ">
@@ -1755,13 +1720,6 @@
 </td>
 <td>core os/arch</td>
 <td><a href="https://bugs.ruby-lang.org/issues/11514">AIX6.1 - Ruby 2.2.3 - Segmentation fault in :byteslice</a>
-</td>
-</tr>
-<tr class=" test ">
-<td><a href="https://bugs.ruby-lang.org/issues/11480">11480</a>
-</td>
-<td>test</td>
-<td><a href="https://bugs.ruby-lang.org/issues/11480">killed by SIGIOT (signal 6) on fork</a>
 </td>
 </tr>
 <tr class=" patch lib ">
