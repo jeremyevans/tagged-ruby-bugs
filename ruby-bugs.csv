@@ -132,7 +132,6 @@
 14972,patch lib,Net::HTTP inconsistently raises EOFError when peer closes the connection
 15072,cygwin build,thread.c:4356:5: error: implicit declaration of function ‘ubf_list_atfork’
 15097,cygwin lib,Gem install fails on Ruby 2.5.1 with Cygwin (get_dns_server_list undefined)
-15204,patch win ,globbing should be prevented when wildcard is surrounded by double quotes in the ruby&#39;s command line
 15247,win test,"Windows - TEMP folder, non 8.3 &amp; drive, fails &amp; errors in test-all (ruby &amp; rdoc)"
 15263,patch core,[PATCH] vm_trace.c (postponed_job_register): only hit main thread
 15310,patch thread,[PATCH] thread_pthread.c: close race from UBF_TIMER and non-GVL-releasing thread
@@ -261,7 +260,6 @@
 18031,patch tracepoint,Nested TracePoint#enable with define_method target crashes
 18034,os/arch,Segmentation fault fiddle with `--enable-bundled-libffi` and macOS
 18036,fiber,Pthread fibers become invalid on fork - different from normal fibers.
-18041,notbug,[BUG] Segmentation fault - ruby 2.5.8p224 (2020-03-31 revision 67882) [aarch64-linux]
 18049,os/arch build notbug,Cannot build ruby-3.0.2 on NetBSD
 18050,os/arch build notbug,Cannot build ruby-2.7.4 on NetBSD
 18058,jit,3.1.0-dev with MJIT enabled Zlib::BufError during `gem install`
@@ -298,3 +296,4 @@
 18244,patch core,Unexpected errors output order
 18247,core,weird results for `Array#slice` or `Array#[]` with argument of type `Enumerator::ArithmeticSequence`
 18249,build maybenotbug,The ABI version of dev builds of CRuby does not correspond to the ABI
+18250,patch core,Anonymous variables seem to break `Ractor.make_shareable`
