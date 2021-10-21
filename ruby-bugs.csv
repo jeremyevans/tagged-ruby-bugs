@@ -162,7 +162,7 @@
 16493,thread os/arch,TestThreadQueue#test_thr_kill is flaky on AArch64
 16497,ext encoding,StringIO#internal_encoding is broken (more severely in 2.7)
 16672,patch lib,net/http leaves original content-length header intact after inflating response
-16694,jit,JIT vs hardened GCC with PCH
+16694,mjit,JIT vs hardened GCC with PCH
 16776,core,Regression in coverage library
 16810,os/arch,ruby segfaults on s390x with musl libc
 16819,core,Line reporting off by one when reporting line of a hash?
@@ -179,12 +179,12 @@
 16953,win build,Windows bash bin files removed in master
 16959,maybenotbug core,Weakmap has specs and third-party usage despite being a private API
 16997,core win,IO#gets converts some \r\n to \n with universal_newline: false
-17007,refine,SystemStackError when using super inside Module included and lexically inside refinement
-17008,jit win,JIT enabled on Windows can cause constant conhost pop-ups
+17008,mjit win,JIT enabled on Windows can cause constant conhost pop-ups
 17037,core,rounding of Rational#to_f
 17120,core patch,String#start_with? return wrong result for Regexp patterns containing /\K/
 17132,build,vcs.rb doesn&#39;t detect git submodules as vcs
 17142,build os/arch,Ruby fails to build in AIX 
+17146,"",Queue operations are allowed after it is frozen
 17159,ractor,extend `define_method` for Ractor
 17180,ractor,Ractor and constant referencing
 17196,ractor,Segmentation Fault with Socket#close in Ractors
@@ -195,11 +195,9 @@
 17354,core,Module#const_source_location is misleading for constants awaiting autoload
 17359,ractor,Ractor copy mode is not Ractor-safe
 17373,perf,Ruby 3.0 is slower at Discourse bench than Ruby 2.7
-17379,refine,Refinement with modules redefinition bug
 17383,perf,3.0 recursion memory|speed issues
 17400,encoding,Incorrect character downcase for Greek Sigma
 17420,ractor,Unsafe mutation of $&quot; when doing non-RubyGems require in Ractor
-17429,refine,Prohibit include/prepend in refinement modules
 17478,perf,Ruby3.0 is slower than Ruby2.7.2 when parsing a large CSV file
 17489,ractor,Ractor segfaults
 17506,ractor,Ractor isolation broken by ThreadGroup
@@ -225,7 +223,6 @@
 17678,ractor,Ractors do not restart after fork
 17679,ractor,Ractor incoming channel can consume unlimited resources
 17680,lib maybenotbug,tab completion no longer works on irb3.0
-17719,core maybenotbug,Irregular evaluation order in hash literals
 17722,ractor,define_method with shareable results in &quot;defined in a different Ractor&quot;
 17765,notbug core,Segmentation fault when calling String#gsub
 17774,regexp,Quantified empty group causes regex to fail
@@ -233,7 +230,7 @@
 17799,core,Seg fault in rb_class_clear_method_cache
 17810,patch core,addr2line.c: Some symbol names missing in C backtrace with Clang/LLVM
 17813,patch win ext,rb_funcall() may reset the latest socket error unexpectedlly since Ruby 3.0.0
-17817,jit,--jit outputs ./tmp/_ruby_mjit_*.h: No such file or directory on with TMP
+17817,mjit,--jit outputs ./tmp/_ruby_mjit_*.h: No such file or directory on with TMP
 17826,ractor,Ractor#take hangs if used in multiple Threads
 17835,patch maybenotbug lib,Net::HTTP should automatically add Accept-Encoding request header on HEAD request as well
 17840,patch build,`make install` overriding file permission with 644
@@ -255,14 +252,13 @@
 18010,regexp,Character class with single character gets case-folded with following string
 18012,regexp,Case-insensitive character classes can only match multiple code points when top-level character class is not negated
 18013,regexp,Unexpected results when mxiing negated character classes and case-folding
-18021,refine,"Mixins in Refinements: possibly multiple bugs, workarounds are awkward"
 18024,ractor,Ractor crashes when connections are closed in multiple Ractors
 18031,patch tracepoint,Nested TracePoint#enable with define_method target crashes
 18034,os/arch,Segmentation fault fiddle with `--enable-bundled-libffi` and macOS
 18036,fiber,Pthread fibers become invalid on fork - different from normal fibers.
 18049,os/arch build notbug,Cannot build ruby-3.0.2 on NetBSD
 18050,os/arch build notbug,Cannot build ruby-2.7.4 on NetBSD
-18058,jit,3.1.0-dev with MJIT enabled Zlib::BufError during `gem install`
+18058,mjit,3.1.0-dev with MJIT enabled Zlib::BufError during `gem install`
 18060,patch core,Infinite loop when b_return TracePoint raises
 18061,os/arch, Execshield test: libruby.so.N.N.N: FAIL: property-note test because no .note.gnu.property section found
 18066,patch core,Load did_you_mean/error_highlight even with --disable-gems
@@ -281,7 +277,7 @@
 18131,os/arch,addr2line.c: Some inlined functions mistakenly shown
 18132,thread,TODO: fix ccan/list thread safety
 18133,os/arch,LTO: TestGCCompact#test_ast_compacts segfaults on i686
-18142,jit,Segmentation fault with Ruby 3.0.2
+18142,mjit,Segmentation fault with Ruby 3.0.2
 18144,core,Timeout not working while regular expression match is running
 18152,core,Fix theoretical bug with signals + qsort
 18155,core notbug,(nil..nil).cover?(x) is true for all x since beginless ranges were introduced
@@ -290,10 +286,13 @@
 18169,misc,Local copies of gemified libraries are being released out of sync with their gems
 18170,patch core,Exception#inspect should not include newlines
 18186,win,SEGV with system command - MinGW?
-18187,patch core,Float#clamp() returns ArgumentError (comparison of Float with 1 failed)
 18193,ractor,Accessing global configuration from Ractors
 18243,ractor,Ractor.make_shareable does not freeze the receiver of a Proc but allows accessing ivars of it
 18244,patch core,Unexpected errors output order
 18247,core,weird results for `Array#slice` or `Array#[]` with argument of type `Enumerator::ArithmeticSequence`
 18249,build maybenotbug,The ABI version of dev builds of CRuby does not correspond to the ABI
 18250,patch core,Anonymous variables seem to break `Ractor.make_shareable`
+18255,core,ioctl zeroes the last buffer byte
+18257,os/arch core,SystemTap/DTrace coredump on ppc64le/s390x
+18258,ractor maybenotbug,Ractor.shareable? can be slow and mutates internal object flags.
+18260,yjit,YJIT uses insecure mmap protections
