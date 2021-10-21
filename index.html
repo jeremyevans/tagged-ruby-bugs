@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>299 Tagged Open Ruby Bugs as of 2021-10-15 04:59:45 +0900</title>
+<title>298 Tagged Open Ruby Bugs as of 2021-10-22 01:21:12 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -8,8 +8,8 @@
 <input type="submit" value="patch" />
 <input type="submit" value="win" />
 <input type="submit" value="ractor" />
-<input type="submit" value="build" />
 <input type="submit" value="os/arch" />
+<input type="submit" value="build" />
 <input type="submit" value="maybenotbug" />
 <input type="submit" value="lib" />
 <input type="submit" value="notbug" />
@@ -20,20 +20,21 @@
 <input type="submit" value="encoding" />
 <input type="submit" value="regexp" />
 <input type="submit" value="perf" />
-<input type="submit" value="refine" />
 <input type="submit" value="fiber" />
 <input type="submit" value="tracepoint" />
-<input type="submit" value="jit" />
+<input type="submit" value="mjit" />
 <input type="submit" value="autoload" />
 <input type="submit" value="parser" />
+<input type="submit" value="refine" />
 <input type="submit" value="misc" />
 <input type="submit" value="doc" />
-<input type="submit" value="unfixable" /></p>
+<input type="submit" value="unfixable" />
+<input type="submit" value="yjit" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">299</span> matched)
+(<span id="matched">298</span> matched)
 <table>
-<caption>299 Tagged Open Ruby Bugs as of 2021-10-15 04:59:45 +0900</caption>
+<caption>298 Tagged Open Ruby Bugs as of 2021-10-22 01:21:12 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -42,6 +43,34 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" yjit ">
+<td><a href="https://bugs.ruby-lang.org/issues/18260">18260</a>
+</td>
+<td>yjit</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18260">YJIT uses insecure mmap protections</a>
+</td>
+</tr>
+<tr class=" ractor maybenotbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/18258">18258</a>
+</td>
+<td>ractor maybenotbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18258">Ractor.shareable? can be slow and mutates internal object flags.</a>
+</td>
+</tr>
+<tr class=" os/arch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18257">18257</a>
+</td>
+<td>os/arch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18257">SystemTap/DTrace coredump on ppc64le/s390x</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18255">18255</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18255">ioctl zeroes the last buffer byte</a>
+</td>
+</tr>
 <tr class=" patch core ">
 <td><a href="https://bugs.ruby-lang.org/issues/18250">18250</a>
 </td>
@@ -82,13 +111,6 @@
 </td>
 <td>ractor</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18193">Accessing global configuration from Ractors</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18187">18187</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18187">Float#clamp() returns ArgumentError (comparison of Float with 1 failed)</a>
 </td>
 </tr>
 <tr class=" win ">
@@ -147,10 +169,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18144">Timeout not working while regular expression match is running</a>
 </td>
 </tr>
-<tr class=" jit ">
+<tr class=" mjit ">
 <td><a href="https://bugs.ruby-lang.org/issues/18142">18142</a>
 </td>
-<td>jit</td>
+<td>mjit</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18142">Segmentation fault with Ruby 3.0.2</a>
 </td>
 </tr>
@@ -280,10 +302,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18060">Infinite loop when b_return TracePoint raises</a>
 </td>
 </tr>
-<tr class=" jit ">
+<tr class=" mjit ">
 <td><a href="https://bugs.ruby-lang.org/issues/18058">18058</a>
 </td>
-<td>jit</td>
+<td>mjit</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18058">3.1.0-dev with MJIT enabled Zlib::BufError during `gem install`</a>
 </td>
 </tr>
@@ -327,13 +349,6 @@
 </td>
 <td>ractor</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18024">Ractor crashes when connections are closed in multiple Ractors</a>
-</td>
-</tr>
-<tr class=" refine ">
-<td><a href="https://bugs.ruby-lang.org/issues/18021">18021</a>
-</td>
-<td>refine</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18021">Mixins in Refinements: possibly multiple bugs, workarounds are awkward</a>
 </td>
 </tr>
 <tr class=" regexp ">
@@ -483,10 +498,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17826">Ractor#take hangs if used in multiple Threads</a>
 </td>
 </tr>
-<tr class=" jit ">
+<tr class=" mjit ">
 <td><a href="https://bugs.ruby-lang.org/issues/17817">17817</a>
 </td>
-<td>jit</td>
+<td>mjit</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17817">--jit outputs ./tmp/_ruby_mjit_*.h: No such file or directory on with TMP</a>
 </td>
 </tr>
@@ -537,13 +552,6 @@
 </td>
 <td>ractor</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17722">define_method with shareable results in &quot;defined in a different Ractor&quot;</a>
-</td>
-</tr>
-<tr class=" core maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/17719">17719</a>
-</td>
-<td>core maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17719">Irregular evaluation order in hash literals</a>
 </td>
 </tr>
 <tr class=" lib maybenotbug ">
@@ -721,13 +729,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17478">Ruby3.0 is slower than Ruby2.7.2 when parsing a large CSV file</a>
 </td>
 </tr>
-<tr class=" refine ">
-<td><a href="https://bugs.ruby-lang.org/issues/17429">17429</a>
-</td>
-<td>refine</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17429">Prohibit include/prepend in refinement modules</a>
-</td>
-</tr>
 <tr class=" ractor ">
 <td><a href="https://bugs.ruby-lang.org/issues/17420">17420</a>
 </td>
@@ -747,13 +748,6 @@
 </td>
 <td>perf</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17383">3.0 recursion memory|speed issues</a>
-</td>
-</tr>
-<tr class=" refine ">
-<td><a href="https://bugs.ruby-lang.org/issues/17379">17379</a>
-</td>
-<td>refine</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17379">Refinement with modules redefinition bug</a>
 </td>
 </tr>
 <tr class=" perf ">
@@ -826,6 +820,13 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17159">extend `define_method` for Ractor</a>
 </td>
 </tr>
+<tr class="  ">
+<td><a href="https://bugs.ruby-lang.org/issues/17146">17146</a>
+</td>
+<td></td>
+<td><a href="https://bugs.ruby-lang.org/issues/17146">Queue operations are allowed after it is frozen</a>
+</td>
+</tr>
 <tr class=" build os/arch ">
 <td><a href="https://bugs.ruby-lang.org/issues/17142">17142</a>
 </td>
@@ -854,18 +855,11 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17037">rounding of Rational#to_f</a>
 </td>
 </tr>
-<tr class=" jit win ">
+<tr class=" mjit win ">
 <td><a href="https://bugs.ruby-lang.org/issues/17008">17008</a>
 </td>
-<td>jit win</td>
+<td>mjit win</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17008">JIT enabled on Windows can cause constant conhost pop-ups</a>
-</td>
-</tr>
-<tr class=" refine ">
-<td><a href="https://bugs.ruby-lang.org/issues/17007">17007</a>
-</td>
-<td>refine</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17007">SystemStackError when using super inside Module included and lexically inside refinement</a>
 </td>
 </tr>
 <tr class=" core win ">
@@ -980,10 +974,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16776">Regression in coverage library</a>
 </td>
 </tr>
-<tr class=" jit ">
+<tr class=" mjit ">
 <td><a href="https://bugs.ruby-lang.org/issues/16694">16694</a>
 </td>
-<td>jit</td>
+<td>mjit</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16694">JIT vs hardened GCC with PCH</a>
 </td>
 </tr>
