@@ -1,14 +1,14 @@
 <html>
 <head>
-<title>298 Tagged Open Ruby Bugs as of 2021-10-22 01:21:12 +0900</title>
+<title>297 Tagged Open Ruby Bugs as of 2021-10-26 03:28:14 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
 <p class="filter-buttons">Available Tags: <input type="submit" value="core" />
 <input type="submit" value="patch" />
 <input type="submit" value="win" />
-<input type="submit" value="ractor" />
 <input type="submit" value="os/arch" />
+<input type="submit" value="ractor" />
 <input type="submit" value="build" />
 <input type="submit" value="maybenotbug" />
 <input type="submit" value="lib" />
@@ -20,8 +20,8 @@
 <input type="submit" value="encoding" />
 <input type="submit" value="regexp" />
 <input type="submit" value="perf" />
-<input type="submit" value="fiber" />
 <input type="submit" value="tracepoint" />
+<input type="submit" value="fiber" />
 <input type="submit" value="mjit" />
 <input type="submit" value="autoload" />
 <input type="submit" value="parser" />
@@ -32,9 +32,9 @@
 <input type="submit" value="yjit" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">298</span> matched)
+(<span id="matched">297</span> matched)
 <table>
-<caption>298 Tagged Open Ruby Bugs as of 2021-10-22 01:21:12 +0900</caption>
+<caption>297 Tagged Open Ruby Bugs as of 2021-10-26 03:28:14 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -43,6 +43,13 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" patch tracepoint ">
+<td><a href="https://bugs.ruby-lang.org/issues/18264">18264</a>
+</td>
+<td>patch tracepoint</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18264">TracePoint leaks memory</a>
+</td>
+</tr>
 <tr class=" yjit ">
 <td><a href="https://bugs.ruby-lang.org/issues/18260">18260</a>
 </td>
@@ -104,13 +111,6 @@
 </td>
 <td>ractor</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18243">Ractor.make_shareable does not freeze the receiver of a Proc but allows accessing ivars of it</a>
-</td>
-</tr>
-<tr class=" ractor ">
-<td><a href="https://bugs.ruby-lang.org/issues/18193">18193</a>
-</td>
-<td>ractor</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18193">Accessing global configuration from Ractors</a>
 </td>
 </tr>
 <tr class=" win ">
@@ -279,13 +279,6 @@
 </td>
 <td>build os/arch</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18073">test/ruby/test_jit.rb: &quot;error: invalid use of &#39;__builtin_va_arg_pack ()&#39;&quot; on Ruby 2.7.4 on gcc 4.8.5</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18066">18066</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18066">Load did_you_mean/error_highlight even with --disable-gems</a>
 </td>
 </tr>
 <tr class=" os/arch ">
