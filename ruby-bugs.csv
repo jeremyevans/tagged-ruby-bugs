@@ -293,5 +293,6 @@
 18255,core,ioctl zeroes the last buffer byte
 18257,os/arch core,SystemTap/DTrace coredump on ppc64le/s390x
 18258,ractor maybenotbug,Ractor.shareable? can be slow and mutates internal object flags.
-18260,yjit,YJIT uses insecure mmap protections
-18264,patch tracepoint,TracePoint leaks memory
+18260,patch yjit,YJIT uses insecure mmap protections
+18267,notbug,Argument forwarding requires parenthesis on method definitions
+18269,core,trace_opt_not and trace_opt_regexpmatch2 insns are indistinguishable
