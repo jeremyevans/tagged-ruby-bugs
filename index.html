@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>298 Tagged Open Ruby Bugs as of 2021-10-28 01:33:45 +0900</title>
+<title>302 Tagged Open Ruby Bugs as of 2021-11-05 00:10:15 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -12,29 +12,28 @@
 <input type="submit" value="build" />
 <input type="submit" value="maybenotbug" />
 <input type="submit" value="lib" />
-<input type="submit" value="notbug" />
-<input type="submit" value="test" />
 <input type="submit" value="ext" />
+<input type="submit" value="test" />
+<input type="submit" value="notbug" />
 <input type="submit" value="thread" />
 <input type="submit" value="cygwin" />
 <input type="submit" value="encoding" />
 <input type="submit" value="regexp" />
 <input type="submit" value="perf" />
 <input type="submit" value="fiber" />
-<input type="submit" value="tracepoint" />
 <input type="submit" value="mjit" />
+<input type="submit" value="tracepoint" />
 <input type="submit" value="autoload" />
 <input type="submit" value="parser" />
 <input type="submit" value="refine" />
 <input type="submit" value="misc" />
-<input type="submit" value="doc" />
 <input type="submit" value="unfixable" />
 <input type="submit" value="yjit" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">298</span> matched)
+(<span id="matched">302</span> matched)
 <table>
-<caption>298 Tagged Open Ruby Bugs as of 2021-10-28 01:33:45 +0900</caption>
+<caption>302 Tagged Open Ruby Bugs as of 2021-11-05 00:10:15 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -43,18 +42,53 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" os/arch ">
+<td><a href="https://bugs.ruby-lang.org/issues/18286">18286</a>
+</td>
+<td>os/arch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18286">Universal arm64/x86_84 binary built on an x86_64 machine segfaults/is killed on arm64</a>
+</td>
+</tr>
+<tr class=" os/arch ">
+<td><a href="https://bugs.ruby-lang.org/issues/18284">18284</a>
+</td>
+<td>os/arch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18284">Macosx M1</a>
+</td>
+</tr>
+<tr class=" ractor ">
+<td><a href="https://bugs.ruby-lang.org/issues/18283">18283</a>
+</td>
+<td>ractor</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18283">Creating a subclass in Ractor dumps core</a>
+</td>
+</tr>
+<tr class=" core patch ">
+<td><a href="https://bugs.ruby-lang.org/issues/18282">18282</a>
+</td>
+<td>core patch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18282">Rails CI raises Segmentation fault with ruby 3.1.0dev supporting `Class#descendants`</a>
+</td>
+</tr>
+<tr class=" lib ">
+<td><a href="https://bugs.ruby-lang.org/issues/18281">18281</a>
+</td>
+<td>lib</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18281">Ruby 3.1.0: gem uninstall -aIx fails to uninstall debug</a>
+</td>
+</tr>
+<tr class=" ext mjit ">
+<td><a href="https://bugs.ruby-lang.org/issues/18277">18277</a>
+</td>
+<td>ext mjit</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18277">buffer error (Zlib::BufError) in Zlib::Deflate#deflate when using MJIT</a>
+</td>
+</tr>
 <tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/18269">18269</a>
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18269">trace_opt_not and trace_opt_regexpmatch2 insns are indistinguishable</a>
-</td>
-</tr>
-<tr class=" notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/18267">18267</a>
-</td>
-<td>notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18267">Argument forwarding requires parenthesis on method definitions</a>
 </td>
 </tr>
 <tr class=" patch yjit ">
@@ -1273,13 +1307,6 @@
 </td>
 <td>os/arch thread</td>
 <td><a href="https://bugs.ruby-lang.org/issues/14761">TestThread#test_join_limits hangs up on Solaris 10 with gcc</a>
-</td>
-</tr>
-<tr class=" doc notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/14743">14743</a>
-</td>
-<td>doc notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/14743">Some links broken in README</a>
 </td>
 </tr>
 <tr class=" win thread ">
