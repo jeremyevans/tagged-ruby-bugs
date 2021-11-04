@@ -119,7 +119,6 @@
 14679,lib,StdLib gems should properly specify their dependencies
 14681,core,`syswrite&#39;: stream closed in another thread (IOError)
 14727,win thread,TestQueue#test_queue_with_trap always timeout on Windows10
-14743,doc notbug,Some links broken in README
 14761,os/arch thread,TestThread#test_join_limits hangs up on Solaris 10 with gcc
 14817,patch tracepoint,TracePoint#parameters for bmethod&#39;s return event should return the same value as its Method#parameters
 14826,os/arch build,make: *** [.ext/include/sparc-solaris2.10/rb_mjit_min_header-2.6.0.h] Error 1 on Solaris 10 with very old gcc3
@@ -294,5 +293,10 @@
 18257,os/arch core,SystemTap/DTrace coredump on ppc64le/s390x
 18258,ractor maybenotbug,Ractor.shareable? can be slow and mutates internal object flags.
 18260,patch yjit,YJIT uses insecure mmap protections
-18267,notbug,Argument forwarding requires parenthesis on method definitions
 18269,core,trace_opt_not and trace_opt_regexpmatch2 insns are indistinguishable
+18277,ext mjit,buffer error (Zlib::BufError) in Zlib::Deflate#deflate when using MJIT
+18281,lib,Ruby 3.1.0: gem uninstall -aIx fails to uninstall debug
+18282,core patch,Rails CI raises Segmentation fault with ruby 3.1.0dev supporting `Class#descendants`
+18283,ractor,Creating a subclass in Ractor dumps core
+18284,os/arch,Macosx M1
+18286,os/arch,Universal arm64/x86_84 binary built on an x86_64 machine segfaults/is killed on arm64
