@@ -300,3 +300,6 @@
 18283,ractor,Creating a subclass in Ractor dumps core
 18284,os/arch,Macosx M1
 18286,os/arch,Universal arm64/x86_84 binary built on an x86_64 machine segfaults/is killed on arm64
+18292,core,3.1.0-dev `include` cause Module to be marked as initialized
+18293,core,Time.at in master branch was 25% slower then Ruby 3.0
+18294,regexp,error when parsing regexp comment
