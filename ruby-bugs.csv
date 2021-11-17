@@ -261,7 +261,6 @@
 18060,patch core,Infinite loop when b_return TracePoint raises
 18061,os/arch, Execshield test: libruby.so.N.N.N: FAIL: property-note test because no .note.gnu.property section found
 18073,build os/arch,test/ruby/test_jit.rb: &quot;error: invalid use of &#39;__builtin_va_arg_pack ()&#39;&quot; on Ruby 2.7.4 on gcc 4.8.5
-18076,patch build,ext/digest/md5/md5.c: `-Wnull-pointer-subtraction` warning by Clang 13
 18079,patch build win,[PATCH] make error for MinGW with Clang/LLVM + LLD
 18080,parser,Syntax error on one-line pattern matching
 18081,patch core,addr2line.c: Wrong section for `DW_AT_ranges`
@@ -296,10 +295,11 @@
 18269,core,trace_opt_not and trace_opt_regexpmatch2 insns are indistinguishable
 18277,ext mjit,buffer error (Zlib::BufError) in Zlib::Deflate#deflate when using MJIT
 18281,lib,Ruby 3.1.0: gem uninstall -aIx fails to uninstall debug
-18282,core patch,Rails CI raises Segmentation fault with ruby 3.1.0dev supporting `Class#descendants`
-18283,ractor,Creating a subclass in Ractor dumps core
 18284,os/arch,Macosx M1
 18286,os/arch,Universal arm64/x86_84 binary built on an x86_64 machine segfaults/is killed on arm64
 18292,core,3.1.0-dev `include` cause Module to be marked as initialized
-18293,core,Time.at in master branch was 25% slower then Ruby 3.0
 18294,regexp,error when parsing regexp comment
+18330,build os/arch,Make failure on 32-bit Linux (Android) with Clang due to implicit 64-to-32-bit integer truncation
+18337,parser encoding,Ruby allows zero-width characters in identifiers
+18338,encoding,Encoding.default_external = Encoding::UTF_16BE may add a wrongly-encoded string to $LOADED_FEATURES
+18341,build win,Visual Studio 2019でRubyを「-MT」でビルドできません。
