@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>305 Tagged Open Ruby Bugs as of 2021-11-09 06:26:49 +0900</title>
+<title>305 Tagged Open Ruby Bugs as of 2021-11-18 02:48:04 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -8,23 +8,23 @@
 <input type="submit" value="patch" />
 <input type="submit" value="win" />
 <input type="submit" value="os/arch" />
-<input type="submit" value="ractor" />
 <input type="submit" value="build" />
+<input type="submit" value="ractor" />
 <input type="submit" value="maybenotbug" />
 <input type="submit" value="lib" />
 <input type="submit" value="ext" />
 <input type="submit" value="test" />
 <input type="submit" value="notbug" />
+<input type="submit" value="encoding" />
 <input type="submit" value="thread" />
 <input type="submit" value="cygwin" />
-<input type="submit" value="encoding" />
 <input type="submit" value="regexp" />
 <input type="submit" value="perf" />
 <input type="submit" value="fiber" />
 <input type="submit" value="mjit" />
 <input type="submit" value="tracepoint" />
-<input type="submit" value="autoload" />
 <input type="submit" value="parser" />
+<input type="submit" value="autoload" />
 <input type="submit" value="refine" />
 <input type="submit" value="misc" />
 <input type="submit" value="unfixable" />
@@ -33,7 +33,7 @@
 <input id="filter" type="text" size="80" />
 (<span id="matched">305</span> matched)
 <table>
-<caption>305 Tagged Open Ruby Bugs as of 2021-11-09 06:26:49 +0900</caption>
+<caption>305 Tagged Open Ruby Bugs as of 2021-11-18 02:48:04 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -42,18 +42,39 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" build win ">
+<td><a href="https://bugs.ruby-lang.org/issues/18341">18341</a>
+</td>
+<td>build win</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18341">Visual Studio 2019でRubyを「-MT」でビルドできません。</a>
+</td>
+</tr>
+<tr class=" encoding ">
+<td><a href="https://bugs.ruby-lang.org/issues/18338">18338</a>
+</td>
+<td>encoding</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18338">Encoding.default_external = Encoding::UTF_16BE may add a wrongly-encoded string to $LOADED_FEATURES</a>
+</td>
+</tr>
+<tr class=" parser encoding ">
+<td><a href="https://bugs.ruby-lang.org/issues/18337">18337</a>
+</td>
+<td>parser encoding</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18337">Ruby allows zero-width characters in identifiers</a>
+</td>
+</tr>
+<tr class=" build os/arch ">
+<td><a href="https://bugs.ruby-lang.org/issues/18330">18330</a>
+</td>
+<td>build os/arch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18330">Make failure on 32-bit Linux (Android) with Clang due to implicit 64-to-32-bit integer truncation</a>
+</td>
+</tr>
 <tr class=" regexp ">
 <td><a href="https://bugs.ruby-lang.org/issues/18294">18294</a>
 </td>
 <td>regexp</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18294">error when parsing regexp comment</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18293">18293</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18293">Time.at in master branch was 25% slower then Ruby 3.0</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -75,20 +96,6 @@
 </td>
 <td>os/arch</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18284">Macosx M1</a>
-</td>
-</tr>
-<tr class=" ractor ">
-<td><a href="https://bugs.ruby-lang.org/issues/18283">18283</a>
-</td>
-<td>ractor</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18283">Creating a subclass in Ractor dumps core</a>
-</td>
-</tr>
-<tr class=" core patch ">
-<td><a href="https://bugs.ruby-lang.org/issues/18282">18282</a>
-</td>
-<td>core patch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18282">Rails CI raises Segmentation fault with ruby 3.1.0dev supporting `Class#descendants`</a>
 </td>
 </tr>
 <tr class=" lib ">
@@ -327,13 +334,6 @@
 </td>
 <td>patch build win</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18079">[PATCH] make error for MinGW with Clang/LLVM + LLD</a>
-</td>
-</tr>
-<tr class=" patch build ">
-<td><a href="https://bugs.ruby-lang.org/issues/18076">18076</a>
-</td>
-<td>patch build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18076">ext/digest/md5/md5.c: `-Wnull-pointer-subtraction` warning by Clang 13</a>
 </td>
 </tr>
 <tr class=" build os/arch ">
