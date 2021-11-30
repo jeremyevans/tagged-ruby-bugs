@@ -207,7 +207,6 @@
 17543,ractor,Ractor isolation broken by `self` in shareable proc
 17545,core maybenotbug,Calling dup on a subclass of Proc returns a Proc and not the subclass
 17568,fiber,Thread.handle_interrupt is per-Thread but should probably be per-Fiber
-17573,patch core,Crashes in profiling tools when signals arrive in non-Ruby threads
 17578,lib,mkmf experimental C++ Support
 17587,ractor,Segmentation fault with ractors and unix signals
 17617,ractor,"When a Ractor&#39;s incoming port is closed, Ractor.receive_if does not raise Ractor::ClosedError, but instead blocks indefinitely"
@@ -287,7 +286,6 @@
 18244,patch core,Unexpected errors output order
 18247,core,weird results for `Array#slice` or `Array#[]` with argument of type `Enumerator::ArithmeticSequence`
 18249,build maybenotbug,The ABI version of dev builds of CRuby does not correspond to the ABI
-18250,patch core,Anonymous variables seem to break `Ractor.make_shareable`
 18255,core,ioctl zeroes the last buffer byte
 18257,os/arch core,SystemTap/DTrace coredump on ppc64le/s390x
 18258,ractor maybenotbug,Ractor.shareable? can be slow and mutates internal object flags.
@@ -295,11 +293,13 @@
 18269,core,trace_opt_not and trace_opt_regexpmatch2 insns are indistinguishable
 18277,ext mjit,buffer error (Zlib::BufError) in Zlib::Deflate#deflate when using MJIT
 18281,lib,Ruby 3.1.0: gem uninstall -aIx fails to uninstall debug
-18284,os/arch,Macosx M1
 18286,os/arch,Universal arm64/x86_84 binary built on an x86_64 machine segfaults/is killed on arm64
 18292,core,3.1.0-dev `include` cause Module to be marked as initialized
 18294,regexp,error when parsing regexp comment
 18330,build os/arch,Make failure on 32-bit Linux (Android) with Clang due to implicit 64-to-32-bit integer truncation
 18337,parser encoding,Ruby allows zero-width characters in identifiers
 18338,encoding,Encoding.default_external = Encoding::UTF_16BE may add a wrongly-encoded string to $LOADED_FEATURES
-18341,build win,Visual Studio 2019でRubyを「-MT」でビルドできません。
+18353,win encoding,Czech keyboard input encoding on czech Windows
+18355,lib,"require(&quot;pathname&quot;) within rack application chnages behaviors of Pathname methods, such as absolute?(), when there are two versions of &#39;pathname&#39; gem installed."
+18359,win,[Windows MinGW] warning Please include winsock2.h before windows.h
+18371,notbug,Release branches (release information in general)
