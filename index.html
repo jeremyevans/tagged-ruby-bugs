@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>305 Tagged Open Ruby Bugs as of 2021-11-18 02:48:04 +0900</title>
+<title>305 Tagged Open Ruby Bugs as of 2021-12-01 08:42:48 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -8,13 +8,13 @@
 <input type="submit" value="patch" />
 <input type="submit" value="win" />
 <input type="submit" value="os/arch" />
-<input type="submit" value="build" />
 <input type="submit" value="ractor" />
+<input type="submit" value="build" />
 <input type="submit" value="maybenotbug" />
 <input type="submit" value="lib" />
 <input type="submit" value="ext" />
-<input type="submit" value="test" />
 <input type="submit" value="notbug" />
+<input type="submit" value="test" />
 <input type="submit" value="encoding" />
 <input type="submit" value="thread" />
 <input type="submit" value="cygwin" />
@@ -33,7 +33,7 @@
 <input id="filter" type="text" size="80" />
 (<span id="matched">305</span> matched)
 <table>
-<caption>305 Tagged Open Ruby Bugs as of 2021-11-18 02:48:04 +0900</caption>
+<caption>305 Tagged Open Ruby Bugs as of 2021-12-01 08:42:48 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -42,11 +42,32 @@
 </tr>
 </thead>
 <tbody>
-<tr class=" build win ">
-<td><a href="https://bugs.ruby-lang.org/issues/18341">18341</a>
+<tr class=" notbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/18371">18371</a>
 </td>
-<td>build win</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18341">Visual Studio 2019でRubyを「-MT」でビルドできません。</a>
+<td>notbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18371">Release branches (release information in general)</a>
+</td>
+</tr>
+<tr class=" win ">
+<td><a href="https://bugs.ruby-lang.org/issues/18359">18359</a>
+</td>
+<td>win</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18359">[Windows MinGW] warning Please include winsock2.h before windows.h</a>
+</td>
+</tr>
+<tr class=" lib ">
+<td><a href="https://bugs.ruby-lang.org/issues/18355">18355</a>
+</td>
+<td>lib</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18355">require(&quot;pathname&quot;) within rack application chnages behaviors of Pathname methods, such as absolute?(), when there are two versions of &#39;pathname&#39; gem installed.</a>
+</td>
+</tr>
+<tr class=" win encoding ">
+<td><a href="https://bugs.ruby-lang.org/issues/18353">18353</a>
+</td>
+<td>win encoding</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18353">Czech keyboard input encoding on czech Windows</a>
 </td>
 </tr>
 <tr class=" encoding ">
@@ -89,13 +110,6 @@
 </td>
 <td>os/arch</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18286">Universal arm64/x86_84 binary built on an x86_64 machine segfaults/is killed on arm64</a>
-</td>
-</tr>
-<tr class=" os/arch ">
-<td><a href="https://bugs.ruby-lang.org/issues/18284">18284</a>
-</td>
-<td>os/arch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18284">Macosx M1</a>
 </td>
 </tr>
 <tr class=" lib ">
@@ -145,13 +159,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18255">ioctl zeroes the last buffer byte</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18250">18250</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18250">Anonymous variables seem to break `Ractor.make_shareable`</a>
 </td>
 </tr>
 <tr class=" build maybenotbug ">
@@ -705,13 +712,6 @@
 </td>
 <td>lib</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17578">mkmf experimental C++ Support</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/17573">17573</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17573">Crashes in profiling tools when signals arrive in non-Ruby threads</a>
 </td>
 </tr>
 <tr class=" fiber ">
