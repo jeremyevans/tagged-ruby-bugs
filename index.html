@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>305 Tagged Open Ruby Bugs as of 2021-12-01 08:42:48 +0900</title>
+<title>299 Tagged Open Ruby Bugs as of 2021-12-24 02:12:06 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -8,32 +8,30 @@
 <input type="submit" value="patch" />
 <input type="submit" value="win" />
 <input type="submit" value="os/arch" />
-<input type="submit" value="ractor" />
 <input type="submit" value="build" />
+<input type="submit" value="ractor" />
 <input type="submit" value="maybenotbug" />
 <input type="submit" value="lib" />
-<input type="submit" value="ext" />
 <input type="submit" value="notbug" />
 <input type="submit" value="test" />
 <input type="submit" value="encoding" />
+<input type="submit" value="ext" />
 <input type="submit" value="thread" />
 <input type="submit" value="cygwin" />
 <input type="submit" value="regexp" />
 <input type="submit" value="perf" />
-<input type="submit" value="fiber" />
 <input type="submit" value="mjit" />
-<input type="submit" value="tracepoint" />
+<input type="submit" value="fiber" />
 <input type="submit" value="parser" />
-<input type="submit" value="autoload" />
+<input type="submit" value="tracepoint" />
 <input type="submit" value="refine" />
-<input type="submit" value="misc" />
-<input type="submit" value="unfixable" />
-<input type="submit" value="yjit" /></p>
+<input type="submit" value="autoload" />
+<input type="submit" value="unfixable" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">305</span> matched)
+(<span id="matched">299</span> matched)
 <table>
-<caption>305 Tagged Open Ruby Bugs as of 2021-12-01 08:42:48 +0900</caption>
+<caption>299 Tagged Open Ruby Bugs as of 2021-12-24 02:12:06 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -42,6 +40,76 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" build os/arch ">
+<td><a href="https://bugs.ruby-lang.org/issues/18413">18413</a>
+</td>
+<td>build os/arch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18413">Segfault in `ripper/lexer.rb`</a>
+</td>
+</tr>
+<tr class=" ractor ">
+<td><a href="https://bugs.ruby-lang.org/issues/18412">18412</a>
+</td>
+<td>ractor</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18412">Segfault in test_ractor.rb</a>
+</td>
+</tr>
+<tr class=" notbug core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18407">18407</a>
+</td>
+<td>notbug core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18407">Behavior difference between integer and string flags to File creation</a>
+</td>
+</tr>
+<tr class=" parser ">
+<td><a href="https://bugs.ruby-lang.org/issues/18396">18396</a>
+</td>
+<td>parser</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18396">An unexpected &quot;hash value omission&quot; syntax error when without parentheses call expr follows</a>
+</td>
+</tr>
+<tr class=" os/arch test ext ">
+<td><a href="https://bugs.ruby-lang.org/issues/18393">18393</a>
+</td>
+<td>os/arch test ext</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18393">TestReadline#test_interrupt_in_other_thread fails on armv7hl</a>
+</td>
+</tr>
+<tr class=" lib ">
+<td><a href="https://bugs.ruby-lang.org/issues/18389">18389</a>
+</td>
+<td>lib</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18389">`binding.irb` can fail in some classes that implement `context` and `print` methods.</a>
+</td>
+</tr>
+<tr class=" notbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/18381">18381</a>
+</td>
+<td>notbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18381">Default vs Bundled gems</a>
+</td>
+</tr>
+<tr class=" test ">
+<td><a href="https://bugs.ruby-lang.org/issues/18380">18380</a>
+</td>
+<td>test</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18380">TestAddressResolve#test_socket_getnameinfo_domain_blocking test failures</a>
+</td>
+</tr>
+<tr class=" win test ">
+<td><a href="https://bugs.ruby-lang.org/issues/18379">18379</a>
+</td>
+<td>win test</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18379">[CI] Windows mingw/ucrt - test-all timeout failures</a>
+</td>
+</tr>
+<tr class=" build ">
+<td><a href="https://bugs.ruby-lang.org/issues/18373">18373</a>
+</td>
+<td>build</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18373">Bundled gem (RBS, debug) extensions are not properly built</a>
+</td>
+</tr>
 <tr class=" notbug ">
 <td><a href="https://bugs.ruby-lang.org/issues/18371">18371</a>
 </td>
@@ -63,13 +131,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18355">require(&quot;pathname&quot;) within rack application chnages behaviors of Pathname methods, such as absolute?(), when there are two versions of &#39;pathname&#39; gem installed.</a>
 </td>
 </tr>
-<tr class=" win encoding ">
-<td><a href="https://bugs.ruby-lang.org/issues/18353">18353</a>
-</td>
-<td>win encoding</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18353">Czech keyboard input encoding on czech Windows</a>
-</td>
-</tr>
 <tr class=" encoding ">
 <td><a href="https://bugs.ruby-lang.org/issues/18338">18338</a>
 </td>
@@ -82,13 +143,6 @@
 </td>
 <td>parser encoding</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18337">Ruby allows zero-width characters in identifiers</a>
-</td>
-</tr>
-<tr class=" build os/arch ">
-<td><a href="https://bugs.ruby-lang.org/issues/18330">18330</a>
-</td>
-<td>build os/arch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18330">Make failure on 32-bit Linux (Android) with Clang due to implicit 64-to-32-bit integer truncation</a>
 </td>
 </tr>
 <tr class=" regexp ">
@@ -133,13 +187,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18269">trace_opt_not and trace_opt_regexpmatch2 insns are indistinguishable</a>
 </td>
 </tr>
-<tr class=" patch yjit ">
-<td><a href="https://bugs.ruby-lang.org/issues/18260">18260</a>
-</td>
-<td>patch yjit</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18260">YJIT uses insecure mmap protections</a>
-</td>
-</tr>
 <tr class=" ractor maybenotbug ">
 <td><a href="https://bugs.ruby-lang.org/issues/18258">18258</a>
 </td>
@@ -175,20 +222,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18247">weird results for `Array#slice` or `Array#[]` with argument of type `Enumerator::ArithmeticSequence`</a>
 </td>
 </tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18244">18244</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18244">Unexpected errors output order</a>
-</td>
-</tr>
-<tr class=" ractor ">
-<td><a href="https://bugs.ruby-lang.org/issues/18243">18243</a>
-</td>
-<td>ractor</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18243">Ractor.make_shareable does not freeze the receiver of a Proc but allows accessing ivars of it</a>
-</td>
-</tr>
 <tr class=" win ">
 <td><a href="https://bugs.ruby-lang.org/issues/18186">18186</a>
 </td>
@@ -203,10 +236,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18170">Exception#inspect should not include newlines</a>
 </td>
 </tr>
-<tr class=" misc ">
+<tr class=" notbug ">
 <td><a href="https://bugs.ruby-lang.org/issues/18169">18169</a>
 </td>
-<td>misc</td>
+<td>notbug</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18169">Local copies of gemified libraries are being released out of sync with their gems</a>
 </td>
 </tr>
@@ -273,13 +306,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18131">addr2line.c: Some inlined functions mistakenly shown</a>
 </td>
 </tr>
-<tr class=" patch ractor ">
-<td><a href="https://bugs.ruby-lang.org/issues/18130">18130</a>
-</td>
-<td>patch ractor</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18130">Showing exceptions from Ractor on console causes errors</a>
-</td>
-</tr>
 <tr class=" ractor ">
 <td><a href="https://bugs.ruby-lang.org/issues/18129">18129</a>
 </td>
@@ -306,13 +332,6 @@
 </td>
 <td>patch core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18121">addr2line.c: Endianness</a>
-</td>
-</tr>
-<tr class=" ractor autoload ">
-<td><a href="https://bugs.ruby-lang.org/issues/18120">18120</a>
-</td>
-<td>ractor autoload</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18120">Deadlock and segfault when using autoload in Ractor</a>
 </td>
 </tr>
 <tr class=" ractor ">
@@ -525,25 +544,11 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17878">bootstraptest/test_ractor.rb:224 a random failing test with &quot;The outgoing-port is already closed (Ractor::ClosedError)&quot;</a>
 </td>
 </tr>
-<tr class=" maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/17866">17866</a>
-</td>
-<td>maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17866">Incompatible changes with Psych 4.0.0</a>
-</td>
-</tr>
 <tr class=" maybenotbug os/arch ">
 <td><a href="https://bugs.ruby-lang.org/issues/17843">17843</a>
 </td>
 <td>maybenotbug os/arch</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17843">Ruby on Rails error[BUG] Segmentation fault at 0x0000000000000110 ruby 3.0.1p64 (2021-04-05 revision 0fb782ee38) [x86_64-darwin15] (#42110)</a>
-</td>
-</tr>
-<tr class=" patch build ">
-<td><a href="https://bugs.ruby-lang.org/issues/17840">17840</a>
-</td>
-<td>patch build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17840">`make install` overriding file permission with 644</a>
 </td>
 </tr>
 <tr class=" patch maybenotbug lib ">
@@ -700,25 +705,11 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17617">When a Ractor&#39;s incoming port is closed, Ractor.receive_if does not raise Ractor::ClosedError, but instead blocks indefinitely</a>
 </td>
 </tr>
-<tr class=" ractor ">
-<td><a href="https://bugs.ruby-lang.org/issues/17587">17587</a>
-</td>
-<td>ractor</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17587">Segmentation fault with ractors and unix signals</a>
-</td>
-</tr>
 <tr class=" lib ">
 <td><a href="https://bugs.ruby-lang.org/issues/17578">17578</a>
 </td>
 <td>lib</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17578">mkmf experimental C++ Support</a>
-</td>
-</tr>
-<tr class=" fiber ">
-<td><a href="https://bugs.ruby-lang.org/issues/17568">17568</a>
-</td>
-<td>fiber</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17568">Thread.handle_interrupt is per-Thread but should probably be per-Fiber</a>
 </td>
 </tr>
 <tr class=" core maybenotbug ">
@@ -1001,10 +992,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16829">Exceptions raised from within an enumerated method lose part of their stacktrace</a>
 </td>
 </tr>
-<tr class=" misc ">
+<tr class=" notbug ">
 <td><a href="https://bugs.ruby-lang.org/issues/16820">16820</a>
 </td>
-<td>misc</td>
+<td>notbug</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16820">LEGAL is out of sync</a>
 </td>
 </tr>
@@ -1288,13 +1279,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/14906">MinGW failure - TestIO#test_copy_stream_no_busy_wait</a>
 </td>
 </tr>
-<tr class=" ext notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/14891">14891</a>
-</td>
-<td>ext notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/14891">Pathname#join has different behaviour to File.join</a>
-</td>
-</tr>
 <tr class=" win ">
 <td><a href="https://bugs.ruby-lang.org/issues/14884">14884</a>
 </td>
@@ -1314,13 +1298,6 @@
 </td>
 <td>os/arch build</td>
 <td><a href="https://bugs.ruby-lang.org/issues/14826">make: *** [.ext/include/sparc-solaris2.10/rb_mjit_min_header-2.6.0.h] Error 1 on Solaris 10 with very old gcc3</a>
-</td>
-</tr>
-<tr class=" patch tracepoint ">
-<td><a href="https://bugs.ruby-lang.org/issues/14817">14817</a>
-</td>
-<td>patch tracepoint</td>
-<td><a href="https://bugs.ruby-lang.org/issues/14817">TracePoint#parameters for bmethod&#39;s return event should return the same value as its Method#parameters</a>
 </td>
 </tr>
 <tr class=" os/arch thread ">
@@ -1477,13 +1454,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/13864">Rinda multicast test failures due to missing default route</a>
 </td>
 </tr>
-<tr class=" ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/13754">13754</a>
-</td>
-<td>ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/13754">bigdecimal with lower precision that Float</a>
-</td>
-</tr>
 <tr class=" regexp notbug ">
 <td><a href="https://bugs.ruby-lang.org/issues/13671">13671</a>
 </td>
@@ -1531,13 +1501,6 @@
 </td>
 <td>win test</td>
 <td><a href="https://bugs.ruby-lang.org/issues/13485">MinGW TestEnumerable#test_callcc SEGV info</a>
-</td>
-</tr>
-<tr class=" patch tracepoint ">
-<td><a href="https://bugs.ruby-lang.org/issues/13392">13392</a>
-</td>
-<td>patch tracepoint</td>
-<td><a href="https://bugs.ruby-lang.org/issues/13392">TracePoint return event location is incorrect for methods defined with define_method</a>
 </td>
 </tr>
 <tr class=" win core ">
@@ -2014,13 +1977,6 @@
 </td>
 <td>patch build</td>
 <td><a href="https://bugs.ruby-lang.org/issues/8973">Allow to configure archlibdir for multiarch</a>
-</td>
-</tr>
-<tr class=" ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/8826">8826</a>
-</td>
-<td>ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/8826">BigDecimal#div and #quo different behavior and inconsistencies</a>
 </td>
 </tr>
 <tr class=" ext ">
