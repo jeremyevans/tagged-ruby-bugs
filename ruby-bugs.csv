@@ -20,7 +20,6 @@
 8445,patch core,IO.open and IO#set_enconding does not support :fallback option
 8677,patch core maybenotbug,$LOAD_PATH did not encoded into the &quot;internal encoding&quot;
 8782,ext,Don&#39;t set rl_getc_function on editline
-8826,ext,BigDecimal#div and #quo different behavior and inconsistencies
 8973,patch build,Allow to configure archlibdir for multiarch
 9010,build,./configure --prefix= cannot handle directories with spaces
 9115,patch lib,Logger traps all exceptions; breaks Timeout
@@ -89,7 +88,6 @@
 13220,encoding,Enhance support of Unicode strings manipulation
 13269,win test,test/readline/test_readline.rb and mingw
 13298,win core,mingw SEGV TestEnumerable#test_callcc
-13392,patch tracepoint,TracePoint return event location is incorrect for methods defined with define_method
 13485,win test,MinGW TestEnumerable#test_callcc SEGV info
 13500,win test,MinGW TestArity#test_proc_err_mess stops testing
 13513,patch lib,Resolv::DNS::Message.decode hangs after detecting truncation in UDP messages
@@ -97,7 +95,6 @@
 13571,win encoding,"Script arguments, encoding, windows / MinGW"
 13644,win test,Windows - Setting Time.now
 13671,regexp notbug,Regexp with lookbehind and case-insensitivity raises RegexpError only on strings with certain characters
-13754,ext,bigdecimal with lower precision that Float
 13864,patch test,Rinda multicast test failures due to missing default route
 13999,cygwin ext,Cygwin 環境で ripper_state_lex.rb がコアダンプする
 14049,win core,SEGV svn 60401 require_relative
@@ -120,11 +117,9 @@
 14681,core,`syswrite&#39;: stream closed in another thread (IOError)
 14727,win thread,TestQueue#test_queue_with_trap always timeout on Windows10
 14761,os/arch thread,TestThread#test_join_limits hangs up on Solaris 10 with gcc
-14817,patch tracepoint,TracePoint#parameters for bmethod&#39;s return event should return the same value as its Method#parameters
 14826,os/arch build,make: *** [.ext/include/sparc-solaris2.10/rb_mjit_min_header-2.6.0.h] Error 1 on Solaris 10 with very old gcc3
 14838,regexp notbug,RegexpError with double &quot;s&quot; in look-behind assertion in case-insensitive unicode regexp
 14884,win,msys2 mingw32 &#39;rake&#39; has unexpected text at top of file
-14891,ext notbug,Pathname#join has different behaviour to File.join
 14906,win core,MinGW failure - TestIO#test_copy_stream_no_busy_wait
 14957,win thread,"MinGW, gcc 8.2.0, bootstraptest test_thread.rb - failure ?"
 14971,cygwin build,error: implicit declaration of function ‘rb_vm_call0
@@ -165,7 +160,7 @@
 16776,core,Regression in coverage library
 16810,os/arch,ruby segfaults on s390x with musl libc
 16819,core,Line reporting off by one when reporting line of a hash?
-16820,misc,LEGAL is out of sync
+16820,notbug,LEGAL is out of sync
 16829,maybenotbug fiber,Exceptions raised from within an enumerated method lose part of their stacktrace
 16836,notbug patch build,configure-time LDFLAGS leak into ruby pkg-config file
 16842,encoding,`inspect` prints the UTF-8 character U+0085 (NEXT LINE) verbatim even though it is not printable
@@ -206,9 +201,7 @@
 17531,ractor,`did_you_mean` not Ractor friendly
 17543,ractor,Ractor isolation broken by `self` in shareable proc
 17545,core maybenotbug,Calling dup on a subclass of Proc returns a Proc and not the subclass
-17568,fiber,Thread.handle_interrupt is per-Thread but should probably be per-Fiber
 17578,lib,mkmf experimental C++ Support
-17587,ractor,Segmentation fault with ractors and unix signals
 17617,ractor,"When a Ractor&#39;s incoming port is closed, Ractor.receive_if does not raise Ractor::ClosedError, but instead blocks indefinitely"
 17624,ractor,Ractor.receive is not thread-safe
 17629,patch ext os/arch,"macOS, readline compiled with libedit: adding entries to history doesn&#39;t work unless Readline.readline is called before populating it"
@@ -231,9 +224,7 @@
 17817,mjit,--jit outputs ./tmp/_ruby_mjit_*.h: No such file or directory on with TMP
 17826,ractor,Ractor#take hangs if used in multiple Threads
 17835,patch maybenotbug lib,Net::HTTP should automatically add Accept-Encoding request header on HEAD request as well
-17840,patch build,`make install` overriding file permission with 644
 17843,maybenotbug os/arch,Ruby on Rails error[BUG] Segmentation fault at 0x0000000000000110 ruby 3.0.1p64 (2021-04-05 revision 0fb782ee38) [x86_64-darwin15] (#42110)
-17866,maybenotbug,Incompatible changes with Psych 4.0.0
 17878,ractor,bootstraptest/test_ractor.rb:224 a random failing test with &quot;The outgoing-port is already closed (Ractor::ClosedError)&quot;
 17882,ractor cygwin,bootstraptest/test_ractor.rb:224 segfaults on Cygwin
 17925,parser,Pattern matching syntax using semicolon one-line
@@ -264,12 +255,10 @@
 18080,parser,Syntax error on one-line pattern matching
 18081,patch core,addr2line.c: Wrong section for `DW_AT_ranges`
 18119,ractor,Ractor crashes when instantiating classes
-18120,ractor autoload,Deadlock and segfault when using autoload in Ractor
 18121,patch core,addr2line.c: Endianness
 18123,patch core,addr2line.c: Define `SHF_COMPRESSED`
 18128,ractor,Ractor allows class variables that have been used before
 18129,ractor,Ractor-incompatible global variables can be accessed through alias
-18130,patch ractor,Showing exceptions from Ractor on console causes errors
 18131,os/arch,addr2line.c: Some inlined functions mistakenly shown
 18132,thread,TODO: fix ccan/list thread safety
 18133,os/arch,LTO: TestGCCompact#test_ast_compacts segfaults on i686
@@ -279,27 +268,32 @@
 18155,core notbug,(nil..nil).cover?(x) is true for all x since beginless ranges were introduced
 18158,patch core,Pathname#each_entry without block does not return Enumerator
 18165,patch lib,resolv: IPv6 link local addresses do not accept dash as a valid zone_id character
-18169,misc,Local copies of gemified libraries are being released out of sync with their gems
+18169,notbug,Local copies of gemified libraries are being released out of sync with their gems
 18170,patch core,Exception#inspect should not include newlines
 18186,win,SEGV with system command - MinGW?
-18243,ractor,Ractor.make_shareable does not freeze the receiver of a Proc but allows accessing ivars of it
-18244,patch core,Unexpected errors output order
 18247,core,weird results for `Array#slice` or `Array#[]` with argument of type `Enumerator::ArithmeticSequence`
 18249,build maybenotbug,The ABI version of dev builds of CRuby does not correspond to the ABI
 18255,core,ioctl zeroes the last buffer byte
 18257,os/arch core,SystemTap/DTrace coredump on ppc64le/s390x
 18258,ractor maybenotbug,Ractor.shareable? can be slow and mutates internal object flags.
-18260,patch yjit,YJIT uses insecure mmap protections
 18269,core,trace_opt_not and trace_opt_regexpmatch2 insns are indistinguishable
 18277,ext mjit,buffer error (Zlib::BufError) in Zlib::Deflate#deflate when using MJIT
 18281,lib,Ruby 3.1.0: gem uninstall -aIx fails to uninstall debug
 18286,os/arch,Universal arm64/x86_84 binary built on an x86_64 machine segfaults/is killed on arm64
 18292,core,3.1.0-dev `include` cause Module to be marked as initialized
 18294,regexp,error when parsing regexp comment
-18330,build os/arch,Make failure on 32-bit Linux (Android) with Clang due to implicit 64-to-32-bit integer truncation
 18337,parser encoding,Ruby allows zero-width characters in identifiers
 18338,encoding,Encoding.default_external = Encoding::UTF_16BE may add a wrongly-encoded string to $LOADED_FEATURES
-18353,win encoding,Czech keyboard input encoding on czech Windows
 18355,lib,"require(&quot;pathname&quot;) within rack application chnages behaviors of Pathname methods, such as absolute?(), when there are two versions of &#39;pathname&#39; gem installed."
 18359,win,[Windows MinGW] warning Please include winsock2.h before windows.h
 18371,notbug,Release branches (release information in general)
+18373,build,"Bundled gem (RBS, debug) extensions are not properly built"
+18379,win test,[CI] Windows mingw/ucrt - test-all timeout failures
+18380,test,TestAddressResolve#test_socket_getnameinfo_domain_blocking test failures
+18381,notbug,Default vs Bundled gems
+18389,lib,`binding.irb` can fail in some classes that implement `context` and `print` methods.
+18393,os/arch test ext,TestReadline#test_interrupt_in_other_thread fails on armv7hl
+18396,parser,An unexpected &quot;hash value omission&quot; syntax error when without parentheses call expr follows
+18407,notbug core,Behavior difference between integer and string flags to File creation
+18412,ractor,Segfault in test_ractor.rb
+18413,build os/arch,Segfault in `ripper/lexer.rb`
