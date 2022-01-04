@@ -1,12 +1,12 @@
 <html>
 <head>
-<title>299 Tagged Open Ruby Bugs as of 2021-12-24 02:12:06 +0900</title>
+<title>310 Tagged Open Ruby Bugs as of 2022-01-05 05:29:58 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
 <p class="filter-buttons">Available Tags: <input type="submit" value="core" />
-<input type="submit" value="patch" />
 <input type="submit" value="win" />
+<input type="submit" value="patch" />
 <input type="submit" value="os/arch" />
 <input type="submit" value="build" />
 <input type="submit" value="ractor" />
@@ -14,8 +14,8 @@
 <input type="submit" value="lib" />
 <input type="submit" value="notbug" />
 <input type="submit" value="test" />
-<input type="submit" value="encoding" />
 <input type="submit" value="ext" />
+<input type="submit" value="encoding" />
 <input type="submit" value="thread" />
 <input type="submit" value="cygwin" />
 <input type="submit" value="regexp" />
@@ -26,12 +26,13 @@
 <input type="submit" value="tracepoint" />
 <input type="submit" value="refine" />
 <input type="submit" value="autoload" />
+<input type="submit" value="jit" />
 <input type="submit" value="unfixable" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">299</span> matched)
+(<span id="matched">310</span> matched)
 <table>
-<caption>299 Tagged Open Ruby Bugs as of 2021-12-24 02:12:06 +0900</caption>
+<caption>310 Tagged Open Ruby Bugs as of 2022-01-05 05:29:58 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -40,6 +41,90 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" win ext ">
+<td><a href="https://bugs.ruby-lang.org/issues/18457">18457</a>
+</td>
+<td>win ext</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18457">ruby 2.7.5 fiddle/types.rb use uint32_t but fiddle/cparser.rb lacks uint32_t</a>
+</td>
+</tr>
+<tr class=" lib ">
+<td><a href="https://bugs.ruby-lang.org/issues/18456">18456</a>
+</td>
+<td>lib</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18456">rdoc non-determinism: module includes can be added once or twice to generated .ri</a>
+</td>
+</tr>
+<tr class=" core perf ">
+<td><a href="https://bugs.ruby-lang.org/issues/18455">18455</a>
+</td>
+<td>core perf</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18455">`IO#close` has poor performance and difficult to understand semantics.</a>
+</td>
+</tr>
+<tr class=" perf jit ">
+<td><a href="https://bugs.ruby-lang.org/issues/18454">18454</a>
+</td>
+<td>perf jit</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18454">YJIT slowing down key Discourse benchmarks</a>
+</td>
+</tr>
+<tr class=" notbug core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18446">18446</a>
+</td>
+<td>notbug core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18446">LSAN reporting</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18444">18444</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18444">Trapped TSTP causes a locking deadlock in 3.0.3 onward</a>
+</td>
+</tr>
+<tr class=" win jit ">
+<td><a href="https://bugs.ruby-lang.org/issues/18439">18439</a>
+</td>
+<td>win jit</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18439">Support YJIT for VC++</a>
+</td>
+</tr>
+<tr class=" build os/arch ">
+<td><a href="https://bugs.ruby-lang.org/issues/18437">18437</a>
+</td>
+<td>build os/arch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18437">3.1.0 install stucks on FreeBSD &amp; NFS</a>
+</td>
+</tr>
+<tr class=" ext ">
+<td><a href="https://bugs.ruby-lang.org/issues/18436">18436</a>
+</td>
+<td>ext</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18436">Fix Pathname dot directory globbing</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18435">18435</a>
+</td>
+<td>patch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18435">Calling `protected` on ancestor method changes result of `instance_methods(false)`</a>
+</td>
+</tr>
+<tr class=" os/arch build ">
+<td><a href="https://bugs.ruby-lang.org/issues/18430">18430</a>
+</td>
+<td>os/arch build</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18430">Raspberry Pi 3.0.3 Compile Issue</a>
+</td>
+</tr>
+<tr class=" os/arch build ">
+<td><a href="https://bugs.ruby-lang.org/issues/18429">18429</a>
+</td>
+<td>os/arch build</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18429">Configure ruby-3.0.3 on Solaris 10 Unknown keyword &#39;URL&#39; in &#39;./ruby.tmp.pc&#39;</a>
+</td>
+</tr>
 <tr class=" build os/arch ">
 <td><a href="https://bugs.ruby-lang.org/issues/18413">18413</a>
 </td>
@@ -311,13 +396,6 @@
 </td>
 <td>ractor</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18129">Ractor-incompatible global variables can be accessed through alias</a>
-</td>
-</tr>
-<tr class=" ractor ">
-<td><a href="https://bugs.ruby-lang.org/issues/18128">18128</a>
-</td>
-<td>ractor</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18128">Ractor allows class variables that have been used before</a>
 </td>
 </tr>
 <tr class=" patch core ">
