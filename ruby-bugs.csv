@@ -257,7 +257,6 @@
 18119,ractor,Ractor crashes when instantiating classes
 18121,patch core,addr2line.c: Endianness
 18123,patch core,addr2line.c: Define `SHF_COMPRESSED`
-18128,ractor,Ractor allows class variables that have been used before
 18129,ractor,Ractor-incompatible global variables can be accessed through alias
 18131,os/arch,addr2line.c: Some inlined functions mistakenly shown
 18132,thread,TODO: fix ccan/list thread safety
@@ -297,3 +296,15 @@
 18407,notbug core,Behavior difference between integer and string flags to File creation
 18412,ractor,Segfault in test_ractor.rb
 18413,build os/arch,Segfault in `ripper/lexer.rb`
+18429,os/arch build,Configure ruby-3.0.3 on Solaris 10 Unknown keyword &#39;URL&#39; in &#39;./ruby.tmp.pc&#39;
+18430,os/arch build,Raspberry Pi 3.0.3 Compile Issue
+18435,patch core,Calling `protected` on ancestor method changes result of `instance_methods(false)`
+18436,ext,Fix Pathname dot directory globbing
+18437,build os/arch,3.1.0 install stucks on FreeBSD &amp; NFS
+18439,win jit,Support YJIT for VC++
+18444,core,Trapped TSTP causes a locking deadlock in 3.0.3 onward
+18446,notbug core,LSAN reporting
+18454,perf jit,YJIT slowing down key Discourse benchmarks
+18455,core perf,`IO#close` has poor performance and difficult to understand semantics.
+18456,lib,rdoc non-determinism: module includes can be added once or twice to generated .ri
+18457,win ext,ruby 2.7.5 fiddle/types.rb use uint32_t but fiddle/cparser.rb lacks uint32_t
