@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>310 Tagged Open Ruby Bugs as of 2022-01-05 05:29:58 +0900</title>
+<title>313 Tagged Open Ruby Bugs as of 2022-01-12 09:47:33 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -15,8 +15,8 @@
 <input type="submit" value="notbug" />
 <input type="submit" value="test" />
 <input type="submit" value="ext" />
-<input type="submit" value="encoding" />
 <input type="submit" value="thread" />
+<input type="submit" value="encoding" />
 <input type="submit" value="cygwin" />
 <input type="submit" value="regexp" />
 <input type="submit" value="perf" />
@@ -30,9 +30,9 @@
 <input type="submit" value="unfixable" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">310</span> matched)
+(<span id="matched">313</span> matched)
 <table>
-<caption>310 Tagged Open Ruby Bugs as of 2022-01-05 05:29:58 +0900</caption>
+<caption>313 Tagged Open Ruby Bugs as of 2022-01-12 09:47:33 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -41,6 +41,62 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18476">18476</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18476">Call to require stuck forever after receiving EAGAIN on writev when running with zeus</a>
+</td>
+</tr>
+<tr class=" thread ">
+<td><a href="https://bugs.ruby-lang.org/issues/18475">18475</a>
+</td>
+<td>thread</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18475">Yielding an element for Enumerator in another thread dumps core</a>
+</td>
+</tr>
+<tr class=" maybenotbug core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18474">18474</a>
+</td>
+<td>maybenotbug core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18474">938e027c seems to have caused a regression in yield handling with concurrent-ruby</a>
+</td>
+</tr>
+<tr class=" os/arch ext ">
+<td><a href="https://bugs.ruby-lang.org/issues/18473">18473</a>
+</td>
+<td>os/arch ext</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18473">Raw data in Socket::Option#inspect on Amazon Linux 2 </a>
+</td>
+</tr>
+<tr class=" win ext ">
+<td><a href="https://bugs.ruby-lang.org/issues/18472">18472</a>
+</td>
+<td>win ext</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18472">rb_w32_map_errno is not found on Ruby-3.1.0</a>
+</td>
+</tr>
+<tr class=" lib ">
+<td><a href="https://bugs.ruby-lang.org/issues/18468">18468</a>
+</td>
+<td>lib</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18468">Tutorial Link for Optionparser is broken</a>
+</td>
+</tr>
+<tr class=" core maybenotbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/18465">18465</a>
+</td>
+<td>core maybenotbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18465">Make `IO#write` atomic.</a>
+</td>
+</tr>
+<tr class=" ractor tracepoint ">
+<td><a href="https://bugs.ruby-lang.org/issues/18464">18464</a>
+</td>
+<td>ractor tracepoint</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18464">RUBY_INTERNAL_EVENT_NEWOBJ tracepoint causes an interpreter crash when combined with Ractors</a>
+</td>
+</tr>
 <tr class=" win ext ">
 <td><a href="https://bugs.ruby-lang.org/issues/18457">18457</a>
 </td>
@@ -83,25 +139,11 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18444">Trapped TSTP causes a locking deadlock in 3.0.3 onward</a>
 </td>
 </tr>
-<tr class=" win jit ">
-<td><a href="https://bugs.ruby-lang.org/issues/18439">18439</a>
-</td>
-<td>win jit</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18439">Support YJIT for VC++</a>
-</td>
-</tr>
 <tr class=" build os/arch ">
 <td><a href="https://bugs.ruby-lang.org/issues/18437">18437</a>
 </td>
 <td>build os/arch</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18437">3.1.0 install stucks on FreeBSD &amp; NFS</a>
-</td>
-</tr>
-<tr class=" ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/18436">18436</a>
-</td>
-<td>ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18436">Fix Pathname dot directory globbing</a>
 </td>
 </tr>
 <tr class=" patch core ">
@@ -160,10 +202,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18393">TestReadline#test_interrupt_in_other_thread fails on armv7hl</a>
 </td>
 </tr>
-<tr class=" lib ">
+<tr class=" patch lib ">
 <td><a href="https://bugs.ruby-lang.org/issues/18389">18389</a>
 </td>
-<td>lib</td>
+<td>patch lib</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18389">`binding.irb` can fail in some classes that implement `context` and `print` methods.</a>
 </td>
 </tr>
@@ -235,13 +277,6 @@
 </td>
 <td>regexp</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18294">error when parsing regexp comment</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18292">18292</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18292">3.1.0-dev `include` cause Module to be marked as initialized</a>
 </td>
 </tr>
 <tr class=" os/arch ">
@@ -326,20 +361,6 @@
 </td>
 <td>notbug</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18169">Local copies of gemified libraries are being released out of sync with their gems</a>
-</td>
-</tr>
-<tr class=" patch lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/18165">18165</a>
-</td>
-<td>patch lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18165">resolv: IPv6 link local addresses do not accept dash as a valid zone_id character</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18158">18158</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18158">Pathname#each_entry without block does not return Enumerator</a>
 </td>
 </tr>
 <tr class=" core notbug ">
