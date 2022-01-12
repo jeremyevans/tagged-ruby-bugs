@@ -265,8 +265,6 @@
 18144,core,Timeout not working while regular expression match is running
 18152,core,Fix theoretical bug with signals + qsort
 18155,core notbug,(nil..nil).cover?(x) is true for all x since beginless ranges were introduced
-18158,patch core,Pathname#each_entry without block does not return Enumerator
-18165,patch lib,resolv: IPv6 link local addresses do not accept dash as a valid zone_id character
 18169,notbug,Local copies of gemified libraries are being released out of sync with their gems
 18170,patch core,Exception#inspect should not include newlines
 18186,win,SEGV with system command - MinGW?
@@ -279,7 +277,6 @@
 18277,ext mjit,buffer error (Zlib::BufError) in Zlib::Deflate#deflate when using MJIT
 18281,lib,Ruby 3.1.0: gem uninstall -aIx fails to uninstall debug
 18286,os/arch,Universal arm64/x86_84 binary built on an x86_64 machine segfaults/is killed on arm64
-18292,core,3.1.0-dev `include` cause Module to be marked as initialized
 18294,regexp,error when parsing regexp comment
 18337,parser encoding,Ruby allows zero-width characters in identifiers
 18338,encoding,Encoding.default_external = Encoding::UTF_16BE may add a wrongly-encoded string to $LOADED_FEATURES
@@ -290,7 +287,7 @@
 18379,win test,[CI] Windows mingw/ucrt - test-all timeout failures
 18380,test,TestAddressResolve#test_socket_getnameinfo_domain_blocking test failures
 18381,notbug,Default vs Bundled gems
-18389,lib,`binding.irb` can fail in some classes that implement `context` and `print` methods.
+18389,patch lib,`binding.irb` can fail in some classes that implement `context` and `print` methods.
 18393,os/arch test ext,TestReadline#test_interrupt_in_other_thread fails on armv7hl
 18396,parser,An unexpected &quot;hash value omission&quot; syntax error when without parentheses call expr follows
 18407,notbug core,Behavior difference between integer and string flags to File creation
@@ -299,12 +296,18 @@
 18429,os/arch build,Configure ruby-3.0.3 on Solaris 10 Unknown keyword &#39;URL&#39; in &#39;./ruby.tmp.pc&#39;
 18430,os/arch build,Raspberry Pi 3.0.3 Compile Issue
 18435,patch core,Calling `protected` on ancestor method changes result of `instance_methods(false)`
-18436,ext,Fix Pathname dot directory globbing
 18437,build os/arch,3.1.0 install stucks on FreeBSD &amp; NFS
-18439,win jit,Support YJIT for VC++
 18444,core,Trapped TSTP causes a locking deadlock in 3.0.3 onward
 18446,notbug core,LSAN reporting
 18454,perf jit,YJIT slowing down key Discourse benchmarks
 18455,core perf,`IO#close` has poor performance and difficult to understand semantics.
 18456,lib,rdoc non-determinism: module includes can be added once or twice to generated .ri
 18457,win ext,ruby 2.7.5 fiddle/types.rb use uint32_t but fiddle/cparser.rb lacks uint32_t
+18464,ractor tracepoint,RUBY_INTERNAL_EVENT_NEWOBJ tracepoint causes an interpreter crash when combined with Ractors
+18465,core maybenotbug,Make `IO#write` atomic.
+18468,lib,Tutorial Link for Optionparser is broken
+18472,win ext,rb_w32_map_errno is not found on Ruby-3.1.0
+18473,os/arch ext,Raw data in Socket::Option#inspect on Amazon Linux 2 
+18474,maybenotbug core,938e027c seems to have caused a regression in yield handling with concurrent-ruby
+18475,thread,Yielding an element for Enumerator in another thread dumps core
+18476,core,Call to require stuck forever after receiving EAGAIN on writev when running with zeus
