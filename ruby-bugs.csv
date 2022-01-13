@@ -200,7 +200,6 @@
 17529,ractor,Ractor Segfaults with GC enabled
 17531,ractor,`did_you_mean` not Ractor friendly
 17543,ractor,Ractor isolation broken by `self` in shareable proc
-17545,core maybenotbug,Calling dup on a subclass of Proc returns a Proc and not the subclass
 17578,lib,mkmf experimental C++ Support
 17617,ractor,"When a Ractor&#39;s incoming port is closed, Ractor.receive_if does not raise Ractor::ClosedError, but instead blocks indefinitely"
 17624,ractor,Ractor.receive is not thread-safe
@@ -297,7 +296,7 @@
 18430,os/arch build,Raspberry Pi 3.0.3 Compile Issue
 18435,patch core,Calling `protected` on ancestor method changes result of `instance_methods(false)`
 18437,build os/arch,3.1.0 install stucks on FreeBSD &amp; NFS
-18444,core,Trapped TSTP causes a locking deadlock in 3.0.3 onward
+18444,os/arch core,Trapped TSTP causes a locking deadlock in 3.0.3 onward
 18446,notbug core,LSAN reporting
 18454,perf jit,YJIT slowing down key Discourse benchmarks
 18455,core perf,`IO#close` has poor performance and difficult to understand semantics.
@@ -305,9 +304,10 @@
 18457,win ext,ruby 2.7.5 fiddle/types.rb use uint32_t but fiddle/cparser.rb lacks uint32_t
 18464,ractor tracepoint,RUBY_INTERNAL_EVENT_NEWOBJ tracepoint causes an interpreter crash when combined with Ractors
 18465,core maybenotbug,Make `IO#write` atomic.
-18468,lib,Tutorial Link for Optionparser is broken
 18472,win ext,rb_w32_map_errno is not found on Ruby-3.1.0
 18473,os/arch ext,Raw data in Socket::Option#inspect on Amazon Linux 2 
 18474,maybenotbug core,938e027c seems to have caused a regression in yield handling with concurrent-ruby
-18475,thread,Yielding an element for Enumerator in another thread dumps core
 18476,core,Call to require stuck forever after receiving EAGAIN on writev when running with zeus
+18480,os/arch core,Dtrace enabled build fails on systems with DTRACE_REBUILD=yes
+18484,fiber,Fiber should return it self when blocked by IO
+18485,fiber,Even though init a blocking Fiber with Fiber.new(blocking: true) but scheduler is invoked
