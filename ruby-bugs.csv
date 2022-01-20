@@ -143,7 +143,6 @@
 15644,patch ext,ThreadsWait problems with Thread#report_on_exception
 15764,parser,Whitespace and control characters should not be permitted in tokens
 15787,os/arch lib maybenotbug,LoadError by EPERM on read-only volume
-15928,patch core,Constant declaration does not conform to JIS 3017:2013
 15993,win encoding,&#39;require&#39; doesn&#39;t work if there are Cyrillic chars in the path to Ruby dir
 16143,patch core,BOM UTF-8 is not removed after rewind
 16145,regexp,"regexp match error if mixing /i, character classes, and utf8"
@@ -166,7 +165,6 @@
 16842,encoding,`inspect` prints the UTF-8 character U+0085 (NEXT LINE) verbatim even though it is not printable
 16889,tracepoint,"TracePoint.enable { ... } also activates the TracePoint for other threads, even outside the block"
 16905,build os/arch,Ruby required to build Ruby on Haiku?
-16908,notbug core,Strange behaviour of Hash#shift when used with `default_proc`.
 16920,os/arch thread,TestThread#test_signal_at_join fails on aarch64
 16927,encoding,String#tr won&#39;t return the expected result for some sign with diacritics
 16951,lib,Consistently referer dependencies
@@ -294,7 +292,6 @@
 18413,build os/arch,Segfault in `ripper/lexer.rb`
 18429,os/arch build,Configure ruby-3.0.3 on Solaris 10 Unknown keyword &#39;URL&#39; in &#39;./ruby.tmp.pc&#39;
 18430,os/arch build,Raspberry Pi 3.0.3 Compile Issue
-18435,patch core,Calling `protected` on ancestor method changes result of `instance_methods(false)`
 18437,build os/arch,3.1.0 install stucks on FreeBSD &amp; NFS
 18444,os/arch core,Trapped TSTP causes a locking deadlock in 3.0.3 onward
 18446,notbug core,LSAN reporting
@@ -310,4 +307,8 @@
 18476,core,Call to require stuck forever after receiving EAGAIN on writev when running with zeus
 18480,os/arch core,Dtrace enabled build fails on systems with DTRACE_REBUILD=yes
 18484,fiber,Fiber should return it self when blocked by IO
-18485,fiber,Even though init a blocking Fiber with Fiber.new(blocking: true) but scheduler is invoked
+18487,core,Kernel#binding behaves differently depending on implementation language of items on the stack
+18492,win core,`rb_rescue2` inside `rb_protect` segfaults on Windows
+18496,notbug,Segmentation fault at 0x0000000005107620
+18501,core,[BUG] try to mark T_NONE object in RubyVM::InstructionSequence. load_from_binary
+18503,os/arch ext notbug,Make ruby-2.7.5 on Solaris 10 openssl: Could not be configured. It will not be installed.
