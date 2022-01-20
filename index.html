@@ -1,13 +1,13 @@
 <html>
 <head>
-<title>313 Tagged Open Ruby Bugs as of 2022-01-14 08:14:02 +0900</title>
+<title>314 Tagged Open Ruby Bugs as of 2022-01-21 08:37:20 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
 <p class="filter-buttons">Available Tags: <input type="submit" value="core" />
 <input type="submit" value="win" />
-<input type="submit" value="patch" />
 <input type="submit" value="os/arch" />
+<input type="submit" value="patch" />
 <input type="submit" value="build" />
 <input type="submit" value="ractor" />
 <input type="submit" value="maybenotbug" />
@@ -30,9 +30,9 @@
 <input type="submit" value="unfixable" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">313</span> matched)
+(<span id="matched">314</span> matched)
 <table>
-<caption>313 Tagged Open Ruby Bugs as of 2022-01-14 08:14:02 +0900</caption>
+<caption>314 Tagged Open Ruby Bugs as of 2022-01-21 08:37:20 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -41,11 +41,39 @@
 </tr>
 </thead>
 <tbody>
-<tr class=" fiber ">
-<td><a href="https://bugs.ruby-lang.org/issues/18485">18485</a>
+<tr class=" os/arch ext notbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/18503">18503</a>
 </td>
-<td>fiber</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18485">Even though init a blocking Fiber with Fiber.new(blocking: true) but scheduler is invoked</a>
+<td>os/arch ext notbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18503">Make ruby-2.7.5 on Solaris 10 openssl: Could not be configured. It will not be installed.</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18501">18501</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18501">[BUG] try to mark T_NONE object in RubyVM::InstructionSequence. load_from_binary</a>
+</td>
+</tr>
+<tr class=" notbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/18496">18496</a>
+</td>
+<td>notbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18496">Segmentation fault at 0x0000000005107620</a>
+</td>
+</tr>
+<tr class=" win core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18492">18492</a>
+</td>
+<td>win core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18492">`rb_rescue2` inside `rb_protect` segfaults on Windows</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18487">18487</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18487">Kernel#binding behaves differently depending on implementation language of items on the stack</a>
 </td>
 </tr>
 <tr class=" fiber ">
@@ -151,13 +179,6 @@
 </td>
 <td>build os/arch</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18437">3.1.0 install stucks on FreeBSD &amp; NFS</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18435">18435</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18435">Calling `protected` on ancestor method changes result of `instance_methods(false)`</a>
 </td>
 </tr>
 <tr class=" os/arch build ">
@@ -1049,13 +1070,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16920">TestThread#test_signal_at_join fails on aarch64</a>
 </td>
 </tr>
-<tr class=" notbug core ">
-<td><a href="https://bugs.ruby-lang.org/issues/16908">16908</a>
-</td>
-<td>notbug core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16908">Strange behaviour of Hash#shift when used with `default_proc`.</a>
-</td>
-</tr>
 <tr class=" build os/arch ">
 <td><a href="https://bugs.ruby-lang.org/issues/16905">16905</a>
 </td>
@@ -1208,13 +1222,6 @@
 </td>
 <td>win encoding</td>
 <td><a href="https://bugs.ruby-lang.org/issues/15993">&#39;require&#39; doesn&#39;t work if there are Cyrillic chars in the path to Ruby dir</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/15928">15928</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/15928">Constant declaration does not conform to JIS 3017:2013</a>
 </td>
 </tr>
 <tr class=" os/arch lib maybenotbug ">
