@@ -201,7 +201,6 @@
 17578,lib,mkmf experimental C++ Support
 17617,ractor,"When a Ractor&#39;s incoming port is closed, Ractor.receive_if does not raise Ractor::ClosedError, but instead blocks indefinitely"
 17624,ractor,Ractor.receive is not thread-safe
-17629,patch ext os/arch,"macOS, readline compiled with libedit: adding entries to history doesn&#39;t work unless Readline.readline is called before populating it"
 17646,patch build,Check for `__builtin_mul_overflow` with `long long` arguments
 17656,patch core,Improper functions shown in C level backtrace information
 17664,fiber maybenotbug,Behavior of sockets changed in Ruby 3.0 to non-blocking
@@ -268,7 +267,7 @@
 18247,core,weird results for `Array#slice` or `Array#[]` with argument of type `Enumerator::ArithmeticSequence`
 18249,build maybenotbug,The ABI version of dev builds of CRuby does not correspond to the ABI
 18255,core,ioctl zeroes the last buffer byte
-18257,os/arch core,SystemTap/DTrace coredump on ppc64le/s390x
+18257,os/arch core,SystemTap/DTrace coredump
 18258,ractor maybenotbug,Ractor.shareable? can be slow and mutates internal object flags.
 18269,core,trace_opt_not and trace_opt_regexpmatch2 insns are indistinguishable
 18277,ext mjit,buffer error (Zlib::BufError) in Zlib::Deflate#deflate when using MJIT
@@ -284,7 +283,6 @@
 18379,win test,[CI] Windows mingw/ucrt - test-all timeout failures
 18380,test,TestAddressResolve#test_socket_getnameinfo_domain_blocking test failures
 18381,notbug,Default vs Bundled gems
-18389,patch lib,`binding.irb` can fail in some classes that implement `context` and `print` methods.
 18393,os/arch test ext,TestReadline#test_interrupt_in_other_thread fails on armv7hl
 18396,parser,An unexpected &quot;hash value omission&quot; syntax error when without parentheses call expr follows
 18407,notbug core,Behavior difference between integer and string flags to File creation
@@ -292,7 +290,6 @@
 18413,build os/arch,Segfault in `ripper/lexer.rb`
 18429,os/arch build,Configure ruby-3.0.3 on Solaris 10 Unknown keyword &#39;URL&#39; in &#39;./ruby.tmp.pc&#39;
 18430,os/arch build,Raspberry Pi 3.0.3 Compile Issue
-18437,build os/arch,3.1.0 install stucks on FreeBSD &amp; NFS
 18444,os/arch core,Trapped TSTP causes a locking deadlock in 3.0.3 onward
 18446,notbug core,LSAN reporting
 18454,perf jit,YJIT slowing down key Discourse benchmarks
@@ -309,6 +306,15 @@
 18484,fiber,Fiber should return it self when blocked by IO
 18487,core,Kernel#binding behaves differently depending on implementation language of items on the stack
 18492,win core,`rb_rescue2` inside `rb_protect` segfaults on Windows
-18496,notbug,Segmentation fault at 0x0000000005107620
 18501,core,[BUG] try to mark T_NONE object in RubyVM::InstructionSequence. load_from_binary
-18503,os/arch ext notbug,Make ruby-2.7.5 on Solaris 10 openssl: Could not be configured. It will not be installed.
+18504,os/arch build,configure prints a warning when cross-compiling
+18506,build,make and make install rebuild items every time unnecessarily - sometimes causing races in parallel installs
+18507,os/arch build,Incorrect target_os detection in configure script
+18510,win core,Unexpected waiting for console when starting ruby on windows
+18511,notbug,ruby in infinite loop consuming 100% CPU
+18518,core,NoMemoryError + [FATAL] failed to allocate memory for twice 1 &lt;&lt; large
+18553,core,Memory leak on compiling method call with kwargs
+18560,notbug,&quot;Compaction isn&#39;t available on this platform&quot; error running PG test suite on ppc64le
+18561,patch core,Make singleton def operation and define_singleton_method explicitly use public visibility
+18562,patch core,throw_data passed to rescue through require
+18567,notbug,Depending on default gems in stdlib gems when not needed considered harmful
