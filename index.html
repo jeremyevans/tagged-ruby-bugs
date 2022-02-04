@@ -1,18 +1,18 @@
 <html>
 <head>
-<title>314 Tagged Open Ruby Bugs as of 2022-01-21 08:37:20 +0900</title>
+<title>320 Tagged Open Ruby Bugs as of 2022-02-05 06:14:18 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
 <p class="filter-buttons">Available Tags: <input type="submit" value="core" />
 <input type="submit" value="win" />
-<input type="submit" value="os/arch" />
 <input type="submit" value="patch" />
+<input type="submit" value="os/arch" />
 <input type="submit" value="build" />
 <input type="submit" value="ractor" />
 <input type="submit" value="maybenotbug" />
-<input type="submit" value="lib" />
 <input type="submit" value="notbug" />
+<input type="submit" value="lib" />
 <input type="submit" value="test" />
 <input type="submit" value="ext" />
 <input type="submit" value="encoding" />
@@ -30,9 +30,9 @@
 <input type="submit" value="unfixable" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">314</span> matched)
+(<span id="matched">320</span> matched)
 <table>
-<caption>314 Tagged Open Ruby Bugs as of 2022-01-21 08:37:20 +0900</caption>
+<caption>320 Tagged Open Ruby Bugs as of 2022-02-05 06:14:18 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -41,11 +41,81 @@
 </tr>
 </thead>
 <tbody>
-<tr class=" os/arch ext notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/18503">18503</a>
+<tr class=" notbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/18567">18567</a>
 </td>
-<td>os/arch ext notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18503">Make ruby-2.7.5 on Solaris 10 openssl: Could not be configured. It will not be installed.</a>
+<td>notbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18567">Depending on default gems in stdlib gems when not needed considered harmful</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18562">18562</a>
+</td>
+<td>patch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18562">throw_data passed to rescue through require</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18561">18561</a>
+</td>
+<td>patch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18561">Make singleton def operation and define_singleton_method explicitly use public visibility</a>
+</td>
+</tr>
+<tr class=" notbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/18560">18560</a>
+</td>
+<td>notbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18560">&quot;Compaction isn&#39;t available on this platform&quot; error running PG test suite on ppc64le</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18553">18553</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18553">Memory leak on compiling method call with kwargs</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18518">18518</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18518">NoMemoryError + [FATAL] failed to allocate memory for twice 1 &lt;&lt; large</a>
+</td>
+</tr>
+<tr class=" notbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/18511">18511</a>
+</td>
+<td>notbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18511">ruby in infinite loop consuming 100% CPU</a>
+</td>
+</tr>
+<tr class=" win core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18510">18510</a>
+</td>
+<td>win core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18510">Unexpected waiting for console when starting ruby on windows</a>
+</td>
+</tr>
+<tr class=" os/arch build ">
+<td><a href="https://bugs.ruby-lang.org/issues/18507">18507</a>
+</td>
+<td>os/arch build</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18507">Incorrect target_os detection in configure script</a>
+</td>
+</tr>
+<tr class=" build ">
+<td><a href="https://bugs.ruby-lang.org/issues/18506">18506</a>
+</td>
+<td>build</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18506">make and make install rebuild items every time unnecessarily - sometimes causing races in parallel installs</a>
+</td>
+</tr>
+<tr class=" os/arch build ">
+<td><a href="https://bugs.ruby-lang.org/issues/18504">18504</a>
+</td>
+<td>os/arch build</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18504">configure prints a warning when cross-compiling</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -53,13 +123,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18501">[BUG] try to mark T_NONE object in RubyVM::InstructionSequence. load_from_binary</a>
-</td>
-</tr>
-<tr class=" notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/18496">18496</a>
-</td>
-<td>notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18496">Segmentation fault at 0x0000000005107620</a>
 </td>
 </tr>
 <tr class=" win core ">
@@ -174,13 +237,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18444">Trapped TSTP causes a locking deadlock in 3.0.3 onward</a>
 </td>
 </tr>
-<tr class=" build os/arch ">
-<td><a href="https://bugs.ruby-lang.org/issues/18437">18437</a>
-</td>
-<td>build os/arch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18437">3.1.0 install stucks on FreeBSD &amp; NFS</a>
-</td>
-</tr>
 <tr class=" os/arch build ">
 <td><a href="https://bugs.ruby-lang.org/issues/18430">18430</a>
 </td>
@@ -228,13 +284,6 @@
 </td>
 <td>os/arch test ext</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18393">TestReadline#test_interrupt_in_other_thread fails on armv7hl</a>
-</td>
-</tr>
-<tr class=" patch lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/18389">18389</a>
-</td>
-<td>patch lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18389">`binding.irb` can fail in some classes that implement `context` and `print` methods.</a>
 </td>
 </tr>
 <tr class=" notbug ">
@@ -346,7 +395,7 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18257">18257</a>
 </td>
 <td>os/arch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18257">SystemTap/DTrace coredump on ppc64le/s390x</a>
+<td><a href="https://bugs.ruby-lang.org/issues/18257">SystemTap/DTrace coredump</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -809,13 +858,6 @@
 </td>
 <td>patch build</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17646">Check for `__builtin_mul_overflow` with `long long` arguments</a>
-</td>
-</tr>
-<tr class=" patch ext os/arch ">
-<td><a href="https://bugs.ruby-lang.org/issues/17629">17629</a>
-</td>
-<td>patch ext os/arch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17629">macOS, readline compiled with libedit: adding entries to history doesn&#39;t work unless Readline.readline is called before populating it</a>
 </td>
 </tr>
 <tr class=" ractor ">
