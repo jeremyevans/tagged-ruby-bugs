@@ -267,7 +267,7 @@
 18247,core,weird results for `Array#slice` or `Array#[]` with argument of type `Enumerator::ArithmeticSequence`
 18249,build maybenotbug,The ABI version of dev builds of CRuby does not correspond to the ABI
 18255,core,ioctl zeroes the last buffer byte
-18257,os/arch core,SystemTap/DTrace coredump
+18257,os/arch core,rb_mRubyVMFrozenCore is broken by GC run
 18258,ractor maybenotbug,Ractor.shareable? can be slow and mutates internal object flags.
 18269,core,trace_opt_not and trace_opt_regexpmatch2 insns are indistinguishable
 18277,ext mjit,buffer error (Zlib::BufError) in Zlib::Deflate#deflate when using MJIT
@@ -306,7 +306,6 @@
 18484,fiber,Fiber should return it self when blocked by IO
 18487,core,Kernel#binding behaves differently depending on implementation language of items on the stack
 18492,win core,`rb_rescue2` inside `rb_protect` segfaults on Windows
-18501,core,[BUG] try to mark T_NONE object in RubyVM::InstructionSequence. load_from_binary
 18504,os/arch build,configure prints a warning when cross-compiling
 18506,build,make and make install rebuild items every time unnecessarily - sometimes causing races in parallel installs
 18507,os/arch build,Incorrect target_os detection in configure script
@@ -316,5 +315,6 @@
 18553,core,Memory leak on compiling method call with kwargs
 18560,notbug,&quot;Compaction isn&#39;t available on this platform&quot; error running PG test suite on ppc64le
 18561,patch core,Make singleton def operation and define_singleton_method explicitly use public visibility
-18562,patch core,throw_data passed to rescue through require
 18567,notbug,Depending on default gems in stdlib gems when not needed considered harmful
+18572,perf core,Performance regression when invoking refined methods
+18580,maybenotbug,Range#include? inconsistency for beginless String ranges
