@@ -1,13 +1,13 @@
 <html>
 <head>
-<title>320 Tagged Open Ruby Bugs as of 2022-02-05 06:14:18 +0900</title>
+<title>320 Tagged Open Ruby Bugs as of 2022-02-11 06:41:42 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
 <p class="filter-buttons">Available Tags: <input type="submit" value="core" />
 <input type="submit" value="win" />
-<input type="submit" value="patch" />
 <input type="submit" value="os/arch" />
+<input type="submit" value="patch" />
 <input type="submit" value="build" />
 <input type="submit" value="ractor" />
 <input type="submit" value="maybenotbug" />
@@ -32,7 +32,7 @@
 <input id="filter" type="text" size="80" />
 (<span id="matched">320</span> matched)
 <table>
-<caption>320 Tagged Open Ruby Bugs as of 2022-02-05 06:14:18 +0900</caption>
+<caption>320 Tagged Open Ruby Bugs as of 2022-02-11 06:41:42 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -41,18 +41,25 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" maybenotbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/18580">18580</a>
+</td>
+<td>maybenotbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18580">Range#include? inconsistency for beginless String ranges</a>
+</td>
+</tr>
+<tr class=" perf core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18572">18572</a>
+</td>
+<td>perf core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18572">Performance regression when invoking refined methods</a>
+</td>
+</tr>
 <tr class=" notbug ">
 <td><a href="https://bugs.ruby-lang.org/issues/18567">18567</a>
 </td>
 <td>notbug</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18567">Depending on default gems in stdlib gems when not needed considered harmful</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18562">18562</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18562">throw_data passed to rescue through require</a>
 </td>
 </tr>
 <tr class=" patch core ">
@@ -116,13 +123,6 @@
 </td>
 <td>os/arch build</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18504">configure prints a warning when cross-compiling</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18501">18501</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18501">[BUG] try to mark T_NONE object in RubyVM::InstructionSequence. load_from_binary</a>
 </td>
 </tr>
 <tr class=" win core ">
@@ -395,7 +395,7 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18257">18257</a>
 </td>
 <td>os/arch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18257">SystemTap/DTrace coredump</a>
+<td><a href="https://bugs.ruby-lang.org/issues/18257">rb_mRubyVMFrozenCore is broken by GC run</a>
 </td>
 </tr>
 <tr class=" core ">
