@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>320 Tagged Open Ruby Bugs as of 2022-02-11 06:41:42 +0900</title>
+<title>322 Tagged Open Ruby Bugs as of 2022-02-19 05:37:15 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -14,8 +14,8 @@
 <input type="submit" value="notbug" />
 <input type="submit" value="lib" />
 <input type="submit" value="test" />
-<input type="submit" value="ext" />
 <input type="submit" value="encoding" />
+<input type="submit" value="ext" />
 <input type="submit" value="thread" />
 <input type="submit" value="cygwin" />
 <input type="submit" value="regexp" />
@@ -30,9 +30,9 @@
 <input type="submit" value="unfixable" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">320</span> matched)
+(<span id="matched">322</span> matched)
 <table>
-<caption>320 Tagged Open Ruby Bugs as of 2022-02-11 06:41:42 +0900</caption>
+<caption>322 Tagged Open Ruby Bugs as of 2022-02-19 05:37:15 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -41,6 +41,27 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" build os/arch ">
+<td><a href="https://bugs.ruby-lang.org/issues/18592">18592</a>
+</td>
+<td>build os/arch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18592">RPATH of bundled native extensions is incorrect</a>
+</td>
+</tr>
+<tr class=" encoding ">
+<td><a href="https://bugs.ruby-lang.org/issues/18590">18590</a>
+</td>
+<td>encoding</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18590">String#downcase and CAPITAL LETTER I WITH DOT ABOVE</a>
+</td>
+</tr>
+<tr class=" win encoding ">
+<td><a href="https://bugs.ruby-lang.org/issues/18588">18588</a>
+</td>
+<td>win encoding</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18588">ruby -e &#39;p gets&#39; with japanese charactors gets additional invalid leading chars and caught Encoding::InvalidByteSequenceError</a>
+</td>
+</tr>
 <tr class=" maybenotbug ">
 <td><a href="https://bugs.ruby-lang.org/issues/18580">18580</a>
 </td>
@@ -116,13 +137,6 @@
 </td>
 <td>build</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18506">make and make install rebuild items every time unnecessarily - sometimes causing races in parallel installs</a>
-</td>
-</tr>
-<tr class=" os/arch build ">
-<td><a href="https://bugs.ruby-lang.org/issues/18504">18504</a>
-</td>
-<td>os/arch build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18504">configure prints a warning when cross-compiling</a>
 </td>
 </tr>
 <tr class=" win core ">
