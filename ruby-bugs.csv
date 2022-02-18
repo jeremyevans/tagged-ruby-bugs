@@ -306,7 +306,6 @@
 18484,fiber,Fiber should return it self when blocked by IO
 18487,core,Kernel#binding behaves differently depending on implementation language of items on the stack
 18492,win core,`rb_rescue2` inside `rb_protect` segfaults on Windows
-18504,os/arch build,configure prints a warning when cross-compiling
 18506,build,make and make install rebuild items every time unnecessarily - sometimes causing races in parallel installs
 18507,os/arch build,Incorrect target_os detection in configure script
 18510,win core,Unexpected waiting for console when starting ruby on windows
@@ -318,3 +317,6 @@
 18567,notbug,Depending on default gems in stdlib gems when not needed considered harmful
 18572,perf core,Performance regression when invoking refined methods
 18580,maybenotbug,Range#include? inconsistency for beginless String ranges
+18588,win encoding,ruby -e &#39;p gets&#39; with japanese charactors gets additional invalid leading chars and caught Encoding::InvalidByteSequenceError
+18590,encoding,String#downcase and CAPITAL LETTER I WITH DOT ABOVE
+18592,build os/arch,RPATH of bundled native extensions is incorrect
