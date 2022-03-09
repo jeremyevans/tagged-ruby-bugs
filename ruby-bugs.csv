@@ -325,3 +325,7 @@
 18605,win core,Fails to run on (newer) 32bit Windows with ucrt
 18607,os/arch build,Ruby 2.7.5 fails to configure on macOS Monterey on mac with M1 Pro
 18608,build,`require&#39;: cannot load such file -- ripper (LoadError) after `make distclean`
+18612,notbug,ffi gem installed successfully but while using raises Bus Error.
+18613,os/arch,Voluntary wanted: Some signal-related tests fail on FreeBSD 13
+18614,lib,Error (busy loop) in TestGemCommandsSetupCommand#test_destdir_flag_does_not_try_to_write_to_the_default_gem_home
+18616,build notbug,Warning with clang(1) on MacOS due to __declspec()
