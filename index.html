@@ -1,16 +1,16 @@
 <html>
 <head>
-<title>331 Tagged Open Ruby Bugs as of 2022-03-09 10:21:14 +0900</title>
+<title>340 Tagged Open Ruby Bugs as of 2022-03-15 07:48:21 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
 <p class="filter-buttons">Available Tags: <input type="submit" value="core" />
 <input type="submit" value="win" />
-<input type="submit" value="os/arch" />
 <input type="submit" value="patch" />
+<input type="submit" value="os/arch" />
 <input type="submit" value="build" />
-<input type="submit" value="ractor" />
 <input type="submit" value="maybenotbug" />
+<input type="submit" value="ractor" />
 <input type="submit" value="notbug" />
 <input type="submit" value="lib" />
 <input type="submit" value="test" />
@@ -24,15 +24,17 @@
 <input type="submit" value="mjit" />
 <input type="submit" value="parser" />
 <input type="submit" value="tracepoint" />
-<input type="submit" value="refine" />
 <input type="submit" value="autoload" />
+<input type="submit" value="refine" />
+<input type="submit" value="backport" />
+<input type="submit" value="doc" />
 <input type="submit" value="jit" />
 <input type="submit" value="unfixable" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">331</span> matched)
+(<span id="matched">340</span> matched)
 <table>
-<caption>331 Tagged Open Ruby Bugs as of 2022-03-09 10:21:14 +0900</caption>
+<caption>340 Tagged Open Ruby Bugs as of 2022-03-15 07:48:21 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -41,11 +43,88 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" maybenotbug core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18633">18633</a>
+</td>
+<td>maybenotbug core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18633">proc { |a, **kw| a } autosplats and treats empty kwargs specially</a>
+</td>
+</tr>
+<tr class=" maybenotbug core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18632">18632</a>
+</td>
+<td>maybenotbug core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18632">Struct.new wrongly treats a positional Hash as keyword arguments</a>
+</td>
+</tr>
+<tr class=" regexp ">
+<td><a href="https://bugs.ruby-lang.org/issues/18631">18631</a>
+</td>
+<td>regexp</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18631">Range check breaks multiplex backreferences in regular expressions</a>
+</td>
+</tr>
+<tr class=" maybenotbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/18629">18629</a>
+</td>
+<td>maybenotbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18629">block args array splatting assigns to higher scope _ var</a>
+</td>
+</tr>
+<tr class=" doc ">
+<td><a href="https://bugs.ruby-lang.org/issues/18628">18628</a>
+</td>
+<td>doc</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18628">Link contributing is broken</a>
+</td>
+</tr>
+<tr class=" core backport ">
+<td><a href="https://bugs.ruby-lang.org/issues/18627">18627</a>
+</td>
+<td>core backport</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18627">segmentation fault when doing a lot of redundant Module#include</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18625">18625</a>
+</td>
+<td>patch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18625">ruby2_keywords does not unmark the hash if the receiving method has a *rest parameter</a>
+</td>
+</tr>
+<tr class=" patch autoload ">
+<td><a href="https://bugs.ruby-lang.org/issues/18624">18624</a>
+</td>
+<td>patch autoload</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18624">`const_source_location` returns [false, 0] when autoload is defined for the constant</a>
+</td>
+</tr>
+<tr class=" build ">
+<td><a href="https://bugs.ruby-lang.org/issues/18623">18623</a>
+</td>
+<td>build</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18623">`make runnable` does not work</a>
+</td>
+</tr>
+<tr class=" maybenotbug core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18622">18622</a>
+</td>
+<td>maybenotbug core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18622">const_get still looks in Object, while lexical constant lookup no longer does</a>
+</td>
+</tr>
+<tr class=" maybenotbug core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18620">18620</a>
+</td>
+<td>maybenotbug core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18620">Not possible to partially curry lambda or proc&#39;s `call` method</a>
+</td>
+</tr>
 <tr class=" build notbug ">
 <td><a href="https://bugs.ruby-lang.org/issues/18616">18616</a>
 </td>
 <td>build notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18616">Warning with clang(1) on MacOS due to __declspec()</a>
+<td><a href="https://bugs.ruby-lang.org/issues/18616">Error with clang(1) on MacOS due to __declspec()</a>
 </td>
 </tr>
 <tr class=" lib ">
@@ -97,13 +176,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18601">Invalid byte sequences in Big5 encodings</a>
 </td>
 </tr>
-<tr class=" core patch ">
-<td><a href="https://bugs.ruby-lang.org/issues/18600">18600</a>
-</td>
-<td>core patch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18600">Aliased method visibility issue on Ruby 3.1</a>
-</td>
-</tr>
 <tr class=" build os/arch ">
 <td><a href="https://bugs.ruby-lang.org/issues/18592">18592</a>
 </td>
@@ -111,10 +183,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18592">RPATH of bundled native extensions is incorrect</a>
 </td>
 </tr>
-<tr class=" encoding ">
+<tr class=" patch encoding ">
 <td><a href="https://bugs.ruby-lang.org/issues/18590">18590</a>
 </td>
-<td>encoding</td>
+<td>patch encoding</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18590">String#downcase and CAPITAL LETTER I WITH DOT ABOVE</a>
 </td>
 </tr>
@@ -1628,13 +1700,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/14364">Regexp last match variable in procs</a>
-</td>
-</tr>
-<tr class=" regexp ">
-<td><a href="https://bugs.ruby-lang.org/issues/14103">14103</a>
-</td>
-<td>regexp</td>
-<td><a href="https://bugs.ruby-lang.org/issues/14103">Regexp absense operator has no chance to ^C</a>
 </td>
 </tr>
 <tr class=" core ">
