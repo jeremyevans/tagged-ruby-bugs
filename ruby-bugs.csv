@@ -101,7 +101,6 @@
 14064,test,test-all with and without -j - incorrect assertions and missing test methods
 14083,refine,Refinement in block calling incorrect method
 14090,core,`TestGc#test_interrupt_in_finalizer` fails very rarely
-14103,regexp,Regexp absense operator has no chance to ^C
 14364,core,Regexp last match variable in procs
 14387,core os/arch,Ruby 2.5 を Alpine Linux で実行すると比較的浅めで SystemStackError 例外になる
 14418,regexp perf,ruby 2.5 slow regexp execution
@@ -318,9 +317,8 @@
 18572,perf core,Performance regression when invoking refined methods
 18580,maybenotbug,Range#include? inconsistency for beginless String ranges
 18588,win encoding,ruby -e &#39;p gets&#39; with japanese charactors gets additional invalid leading chars and caught Encoding::InvalidByteSequenceError
-18590,encoding,String#downcase and CAPITAL LETTER I WITH DOT ABOVE
+18590,patch encoding,String#downcase and CAPITAL LETTER I WITH DOT ABOVE
 18592,build os/arch,RPATH of bundled native extensions is incorrect
-18600,core patch,Aliased method visibility issue on Ruby 3.1
 18601,encoding,Invalid byte sequences in Big5 encodings
 18605,win core,Fails to run on (newer) 32bit Windows with ucrt
 18607,os/arch build,Ruby 2.7.5 fails to configure on macOS Monterey on mac with M1 Pro
@@ -328,4 +326,15 @@
 18612,notbug,ffi gem installed successfully but while using raises Bus Error.
 18613,os/arch,Voluntary wanted: Some signal-related tests fail on FreeBSD 13
 18614,lib,Error (busy loop) in TestGemCommandsSetupCommand#test_destdir_flag_does_not_try_to_write_to_the_default_gem_home
-18616,build notbug,Warning with clang(1) on MacOS due to __declspec()
+18616,build notbug,Error with clang(1) on MacOS due to __declspec()
+18620,maybenotbug core,Not possible to partially curry lambda or proc&#39;s `call` method
+18622,maybenotbug core,"const_get still looks in Object, while lexical constant lookup no longer does"
+18623,build,`make runnable` does not work
+18624,patch autoload,"`const_source_location` returns [false, 0] when autoload is defined for the constant"
+18625,patch core,ruby2_keywords does not unmark the hash if the receiving method has a *rest parameter
+18627,core backport,segmentation fault when doing a lot of redundant Module#include
+18628,doc,Link contributing is broken
+18629,maybenotbug,block args array splatting assigns to higher scope _ var
+18631,regexp,Range check breaks multiplex backreferences in regular expressions
+18632,maybenotbug core,Struct.new wrongly treats a positional Hash as keyword arguments
+18633,maybenotbug core,"proc { |a, **kw| a } autosplats and treats empty kwargs specially"
