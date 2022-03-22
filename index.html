@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>340 Tagged Open Ruby Bugs as of 2022-03-15 07:48:21 +0900</title>
+<title>337 Tagged Open Ruby Bugs as of 2022-03-23 05:56:55 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -9,8 +9,8 @@
 <input type="submit" value="patch" />
 <input type="submit" value="os/arch" />
 <input type="submit" value="build" />
-<input type="submit" value="maybenotbug" />
 <input type="submit" value="ractor" />
+<input type="submit" value="maybenotbug" />
 <input type="submit" value="notbug" />
 <input type="submit" value="lib" />
 <input type="submit" value="test" />
@@ -26,15 +26,15 @@
 <input type="submit" value="tracepoint" />
 <input type="submit" value="autoload" />
 <input type="submit" value="refine" />
-<input type="submit" value="backport" />
 <input type="submit" value="doc" />
+<input type="submit" value="enc" />
 <input type="submit" value="jit" />
 <input type="submit" value="unfixable" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">340</span> matched)
+(<span id="matched">337</span> matched)
 <table>
-<caption>340 Tagged Open Ruby Bugs as of 2022-03-15 07:48:21 +0900</caption>
+<caption>337 Tagged Open Ruby Bugs as of 2022-03-23 05:56:55 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -43,18 +43,39 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" enc ">
+<td><a href="https://bugs.ruby-lang.org/issues/18651">18651</a>
+</td>
+<td>enc</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18651">oob access in CP51932 -&gt; CP50220 transcoder</a>
+</td>
+</tr>
+<tr class=" thread ">
+<td><a href="https://bugs.ruby-lang.org/issues/18649">18649</a>
+</td>
+<td>thread</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18649">Enumerable#first breaks out of the incorect block when across threads</a>
+</td>
+</tr>
+<tr class=" patch lib ">
+<td><a href="https://bugs.ruby-lang.org/issues/18643">18643</a>
+</td>
+<td>patch lib</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18643">test-bundler failed on ruby_3_1 CI</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18635">18635</a>
+</td>
+<td>patch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18635">Enumerable#inject without block/symbol will return values or raise LocalJumpError</a>
+</td>
+</tr>
 <tr class=" maybenotbug core ">
 <td><a href="https://bugs.ruby-lang.org/issues/18633">18633</a>
 </td>
 <td>maybenotbug core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18633">proc { |a, **kw| a } autosplats and treats empty kwargs specially</a>
-</td>
-</tr>
-<tr class=" maybenotbug core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18632">18632</a>
-</td>
-<td>maybenotbug core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18632">Struct.new wrongly treats a positional Hash as keyword arguments</a>
 </td>
 </tr>
 <tr class=" regexp ">
@@ -76,13 +97,6 @@
 </td>
 <td>doc</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18628">Link contributing is broken</a>
-</td>
-</tr>
-<tr class=" core backport ">
-<td><a href="https://bugs.ruby-lang.org/issues/18627">18627</a>
-</td>
-<td>core backport</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18627">segmentation fault when doing a lot of redundant Module#include</a>
 </td>
 </tr>
 <tr class=" patch core ">
@@ -111,13 +125,6 @@
 </td>
 <td>maybenotbug core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18622">const_get still looks in Object, while lexical constant lookup no longer does</a>
-</td>
-</tr>
-<tr class=" maybenotbug core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18620">18620</a>
-</td>
-<td>maybenotbug core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18620">Not possible to partially curry lambda or proc&#39;s `call` method</a>
 </td>
 </tr>
 <tr class=" build notbug ">
@@ -188,13 +195,6 @@
 </td>
 <td>patch encoding</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18590">String#downcase and CAPITAL LETTER I WITH DOT ABOVE</a>
-</td>
-</tr>
-<tr class=" win encoding ">
-<td><a href="https://bugs.ruby-lang.org/issues/18588">18588</a>
-</td>
-<td>win encoding</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18588">ruby -e &#39;p gets&#39; with japanese charactors gets additional invalid leading chars and caught Encoding::InvalidByteSequenceError</a>
 </td>
 </tr>
 <tr class=" maybenotbug ">
@@ -307,13 +307,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18476">Call to require stuck forever after receiving EAGAIN on writev when running with zeus</a>
-</td>
-</tr>
-<tr class=" maybenotbug core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18474">18474</a>
-</td>
-<td>maybenotbug core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18474">938e027c seems to have caused a regression in yield handling with concurrent-ruby</a>
 </td>
 </tr>
 <tr class=" os/arch ext ">
@@ -1038,13 +1031,6 @@
 </td>
 </tr>
 <tr class=" ractor ">
-<td><a href="https://bugs.ruby-lang.org/issues/17529">17529</a>
-</td>
-<td>ractor</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17529">Ractor Segfaults with GC enabled</a>
-</td>
-</tr>
-<tr class=" ractor ">
 <td><a href="https://bugs.ruby-lang.org/issues/17516">17516</a>
 </td>
 <td>ractor</td>
@@ -1177,10 +1163,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17159">extend `define_method` for Ractor</a>
 </td>
 </tr>
-<tr class="  ">
+<tr class=" notbug core ">
 <td><a href="https://bugs.ruby-lang.org/issues/17146">17146</a>
 </td>
-<td></td>
+<td>notbug core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17146">Queue operations are allowed after it is frozen</a>
 </td>
 </tr>
@@ -2085,13 +2071,6 @@
 </td>
 <td>core maybenotbug</td>
 <td><a href="https://bugs.ruby-lang.org/issues/11064">#singleton_methods for objects with special singleton_class returns an empty array</a>
-</td>
-</tr>
-<tr class=" patch core maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/11063">11063</a>
-</td>
-<td>patch core maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/11063">Special singleton class should return true for singleton_class? test</a>
 </td>
 </tr>
 <tr class=" lib ">
