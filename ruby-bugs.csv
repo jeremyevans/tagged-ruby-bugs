@@ -45,7 +45,6 @@
 10584,encoding maybenotbug,"String.valid_encoding?, String.ascii_only? fails to account for BOM."
 10855,patch lib,[PATCH] Matrix#inverse returns matrix of integers whenever possible
 10919,lib,[gem install] installs multipe platforms
-11063,patch core maybenotbug,Special singleton class should return true for singleton_class? test
 11064,core maybenotbug,#singleton_methods for objects with special singleton_class returns an empty array
 11142,win core,Command line argument parser on windows handles double quotes inconsistently.
 11164,core notbug,Garbage collector in Ruby 2.2 provokes unexpected CoW
@@ -175,7 +174,7 @@
 17120,core patch,String#start_with? return wrong result for Regexp patterns containing /\K/
 17132,build,vcs.rb doesn&#39;t detect git submodules as vcs
 17142,build os/arch,Ruby fails to build in AIX 
-17146,"",Queue operations are allowed after it is frozen
+17146,notbug core,Queue operations are allowed after it is frozen
 17159,ractor,extend `define_method` for Ractor
 17180,ractor,Ractor and constant referencing
 17196,ractor,Segmentation Fault with Socket#close in Ractors
@@ -195,7 +194,6 @@
 17506,ractor,Ractor isolation broken by ThreadGroup
 17513,ractor,Methods of shareable objects and UnboundMethods should be shareable
 17516,ractor,forking in a ractor causes Ruby to crash
-17529,ractor,Ractor Segfaults with GC enabled
 17531,ractor,`did_you_mean` not Ractor friendly
 17543,ractor,Ractor isolation broken by `self` in shareable proc
 17578,lib,mkmf experimental C++ Support
@@ -299,7 +297,6 @@
 18465,core maybenotbug,Make `IO#write` atomic.
 18472,win ext,rb_w32_map_errno is not found on Ruby-3.1.0
 18473,os/arch ext,Raw data in Socket::Option#inspect on Amazon Linux 2 
-18474,maybenotbug core,938e027c seems to have caused a regression in yield handling with concurrent-ruby
 18476,core,Call to require stuck forever after receiving EAGAIN on writev when running with zeus
 18480,os/arch core,Dtrace enabled build fails on systems with DTRACE_REBUILD=yes
 18484,fiber,Fiber should return it self when blocked by IO
@@ -316,7 +313,6 @@
 18567,notbug,Depending on default gems in stdlib gems when not needed considered harmful
 18572,perf core,Performance regression when invoking refined methods
 18580,maybenotbug,Range#include? inconsistency for beginless String ranges
-18588,win encoding,ruby -e &#39;p gets&#39; with japanese charactors gets additional invalid leading chars and caught Encoding::InvalidByteSequenceError
 18590,patch encoding,String#downcase and CAPITAL LETTER I WITH DOT ABOVE
 18592,build os/arch,RPATH of bundled native extensions is incorrect
 18601,encoding,Invalid byte sequences in Big5 encodings
@@ -327,14 +323,15 @@
 18613,os/arch,Voluntary wanted: Some signal-related tests fail on FreeBSD 13
 18614,lib,Error (busy loop) in TestGemCommandsSetupCommand#test_destdir_flag_does_not_try_to_write_to_the_default_gem_home
 18616,build notbug,Error with clang(1) on MacOS due to __declspec()
-18620,maybenotbug core,Not possible to partially curry lambda or proc&#39;s `call` method
 18622,maybenotbug core,"const_get still looks in Object, while lexical constant lookup no longer does"
 18623,build,`make runnable` does not work
 18624,patch autoload,"`const_source_location` returns [false, 0] when autoload is defined for the constant"
 18625,patch core,ruby2_keywords does not unmark the hash if the receiving method has a *rest parameter
-18627,core backport,segmentation fault when doing a lot of redundant Module#include
 18628,doc,Link contributing is broken
 18629,maybenotbug,block args array splatting assigns to higher scope _ var
 18631,regexp,Range check breaks multiplex backreferences in regular expressions
-18632,maybenotbug core,Struct.new wrongly treats a positional Hash as keyword arguments
 18633,maybenotbug core,"proc { |a, **kw| a } autosplats and treats empty kwargs specially"
+18635,patch core,Enumerable#inject without block/symbol will return values or raise LocalJumpError
+18643,patch lib,test-bundler failed on ruby_3_1 CI
+18649,thread,Enumerable#first breaks out of the incorect block when across threads
+18651,enc,oob access in CP51932 -&gt; CP50220 transcoder
