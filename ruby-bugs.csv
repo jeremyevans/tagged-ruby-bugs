@@ -185,12 +185,10 @@
 17354,core,Module#const_source_location is misleading for constants awaiting autoload
 17359,ractor,Ractor copy mode is not Ractor-safe
 17373,perf,Ruby 3.0 is slower at Discourse bench than Ruby 2.7
-17382,core,Segfault in String#inspect
 17383,perf,3.0 recursion memory|speed issues
 17400,encoding,Incorrect character downcase for Greek Sigma
 17420,ractor,Unsafe mutation of $&quot; when doing non-RubyGems require in Ractor
 17478,perf,Ruby3.0 is slower than Ruby2.7.2 when parsing a large CSV file
-17489,ractor,Ractor segfaults
 17506,ractor,Ractor isolation broken by ThreadGroup
 17513,ractor,Methods of shareable objects and UnboundMethods should be shareable
 17516,ractor,forking in a ractor causes Ruby to crash
@@ -275,7 +273,6 @@
 18338,encoding,Encoding.default_external = Encoding::UTF_16BE may add a wrongly-encoded string to $LOADED_FEATURES
 18355,lib,"require(&quot;pathname&quot;) within rack application chnages behaviors of Pathname methods, such as absolute?(), when there are two versions of &#39;pathname&#39; gem installed."
 18359,win,[Windows MinGW] warning Please include winsock2.h before windows.h
-18371,notbug,Release branches (release information in general)
 18373,build,"Bundled gem (RBS, debug) extensions are not properly built"
 18379,win test,[CI] Windows mingw/ucrt - test-all timeout failures
 18380,test,TestAddressResolve#test_socket_getnameinfo_domain_blocking test failures
@@ -299,13 +296,10 @@
 18473,os/arch ext,Raw data in Socket::Option#inspect on Amazon Linux 2 
 18476,core,Call to require stuck forever after receiving EAGAIN on writev when running with zeus
 18480,os/arch core,Dtrace enabled build fails on systems with DTRACE_REBUILD=yes
-18484,fiber,Fiber should return it self when blocked by IO
-18487,core,Kernel#binding behaves differently depending on implementation language of items on the stack
 18492,win core,`rb_rescue2` inside `rb_protect` segfaults on Windows
 18506,build,make and make install rebuild items every time unnecessarily - sometimes causing races in parallel installs
 18507,os/arch build,Incorrect target_os detection in configure script
 18510,win core,Unexpected waiting for console when starting ruby on windows
-18511,notbug,ruby in infinite loop consuming 100% CPU
 18518,core,NoMemoryError + [FATAL] failed to allocate memory for twice 1 &lt;&lt; large
 18553,core,Memory leak on compiling method call with kwargs
 18560,notbug,&quot;Compaction isn&#39;t available on this platform&quot; error running PG test suite on ppc64le
@@ -327,11 +321,16 @@
 18623,build,`make runnable` does not work
 18624,patch autoload,"`const_source_location` returns [false, 0] when autoload is defined for the constant"
 18625,patch core,ruby2_keywords does not unmark the hash if the receiving method has a *rest parameter
-18628,doc,Link contributing is broken
+18628,patch doc,Link contributing is broken
 18629,maybenotbug,block args array splatting assigns to higher scope _ var
-18631,regexp,Range check breaks multiplex backreferences in regular expressions
-18633,maybenotbug core,"proc { |a, **kw| a } autosplats and treats empty kwargs specially"
-18635,patch core,Enumerable#inject without block/symbol will return values or raise LocalJumpError
+18631,patch regexp,Range check breaks multiplex backreferences in regular expressions
+18633,patch core,"proc { |a, **kw| a } autosplats and treats empty kwargs specially"
 18643,patch lib,test-bundler failed on ruby_3_1 CI
-18649,thread,Enumerable#first breaks out of the incorect block when across threads
+18649,patch thread,Enumerable#first breaks out of the incorect block when across threads
 18651,enc,oob access in CP51932 -&gt; CP50220 transcoder
+18657,patch lib,IRB raises exception when stdout is a pipe
+18658,backport ext,Need openssl 3 support for Ubuntu 22.04 (Ruby 2.7.x and 3.0.x)
+18661,win core,Net::HTTP behavior changed between 2.6 and 3.1 on windows.
+18663,autoload fiber,Autoload doesn&#39;t work with fiber context switch.
+18665,doc,Tutorial Link for Optionparser is still broken
+18666,build,"No rule to make target &#39;yaml/yaml.h&#39;, needed by &#39;api.o&#39;"
