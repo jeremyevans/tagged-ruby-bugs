@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>337 Tagged Open Ruby Bugs as of 2022-03-23 05:56:55 +0900</title>
+<title>336 Tagged Open Ruby Bugs as of 2022-03-30 03:59:26 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -11,11 +11,11 @@
 <input type="submit" value="build" />
 <input type="submit" value="ractor" />
 <input type="submit" value="maybenotbug" />
-<input type="submit" value="notbug" />
 <input type="submit" value="lib" />
+<input type="submit" value="notbug" />
 <input type="submit" value="test" />
-<input type="submit" value="encoding" />
 <input type="submit" value="ext" />
+<input type="submit" value="encoding" />
 <input type="submit" value="thread" />
 <input type="submit" value="cygwin" />
 <input type="submit" value="regexp" />
@@ -27,14 +27,15 @@
 <input type="submit" value="autoload" />
 <input type="submit" value="refine" />
 <input type="submit" value="doc" />
+<input type="submit" value="backport" />
 <input type="submit" value="enc" />
 <input type="submit" value="jit" />
 <input type="submit" value="unfixable" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">337</span> matched)
+(<span id="matched">336</span> matched)
 <table>
-<caption>337 Tagged Open Ruby Bugs as of 2022-03-23 05:56:55 +0900</caption>
+<caption>336 Tagged Open Ruby Bugs as of 2022-03-30 03:59:26 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -43,6 +44,48 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" build ">
+<td><a href="https://bugs.ruby-lang.org/issues/18666">18666</a>
+</td>
+<td>build</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18666">No rule to make target &#39;yaml/yaml.h&#39;, needed by &#39;api.o&#39;</a>
+</td>
+</tr>
+<tr class=" doc ">
+<td><a href="https://bugs.ruby-lang.org/issues/18665">18665</a>
+</td>
+<td>doc</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18665">Tutorial Link for Optionparser is still broken</a>
+</td>
+</tr>
+<tr class=" autoload fiber ">
+<td><a href="https://bugs.ruby-lang.org/issues/18663">18663</a>
+</td>
+<td>autoload fiber</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18663">Autoload doesn&#39;t work with fiber context switch.</a>
+</td>
+</tr>
+<tr class=" win core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18661">18661</a>
+</td>
+<td>win core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18661">Net::HTTP behavior changed between 2.6 and 3.1 on windows.</a>
+</td>
+</tr>
+<tr class=" backport ext ">
+<td><a href="https://bugs.ruby-lang.org/issues/18658">18658</a>
+</td>
+<td>backport ext</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18658">Need openssl 3 support for Ubuntu 22.04 (Ruby 2.7.x and 3.0.x)</a>
+</td>
+</tr>
+<tr class=" patch lib ">
+<td><a href="https://bugs.ruby-lang.org/issues/18657">18657</a>
+</td>
+<td>patch lib</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18657">IRB raises exception when stdout is a pipe</a>
+</td>
+</tr>
 <tr class=" enc ">
 <td><a href="https://bugs.ruby-lang.org/issues/18651">18651</a>
 </td>
@@ -50,10 +93,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18651">oob access in CP51932 -&gt; CP50220 transcoder</a>
 </td>
 </tr>
-<tr class=" thread ">
+<tr class=" patch thread ">
 <td><a href="https://bugs.ruby-lang.org/issues/18649">18649</a>
 </td>
-<td>thread</td>
+<td>patch thread</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18649">Enumerable#first breaks out of the incorect block when across threads</a>
 </td>
 </tr>
@@ -65,23 +108,16 @@
 </td>
 </tr>
 <tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18635">18635</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18635">Enumerable#inject without block/symbol will return values or raise LocalJumpError</a>
-</td>
-</tr>
-<tr class=" maybenotbug core ">
 <td><a href="https://bugs.ruby-lang.org/issues/18633">18633</a>
 </td>
-<td>maybenotbug core</td>
+<td>patch core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18633">proc { |a, **kw| a } autosplats and treats empty kwargs specially</a>
 </td>
 </tr>
-<tr class=" regexp ">
+<tr class=" patch regexp ">
 <td><a href="https://bugs.ruby-lang.org/issues/18631">18631</a>
 </td>
-<td>regexp</td>
+<td>patch regexp</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18631">Range check breaks multiplex backreferences in regular expressions</a>
 </td>
 </tr>
@@ -92,10 +128,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18629">block args array splatting assigns to higher scope _ var</a>
 </td>
 </tr>
-<tr class=" doc ">
+<tr class=" patch doc ">
 <td><a href="https://bugs.ruby-lang.org/issues/18628">18628</a>
 </td>
-<td>doc</td>
+<td>patch doc</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18628">Link contributing is broken</a>
 </td>
 </tr>
@@ -246,13 +282,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18518">NoMemoryError + [FATAL] failed to allocate memory for twice 1 &lt;&lt; large</a>
 </td>
 </tr>
-<tr class=" notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/18511">18511</a>
-</td>
-<td>notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18511">ruby in infinite loop consuming 100% CPU</a>
-</td>
-</tr>
 <tr class=" win core ">
 <td><a href="https://bugs.ruby-lang.org/issues/18510">18510</a>
 </td>
@@ -279,20 +308,6 @@
 </td>
 <td>win core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18492">`rb_rescue2` inside `rb_protect` segfaults on Windows</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18487">18487</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18487">Kernel#binding behaves differently depending on implementation language of items on the stack</a>
-</td>
-</tr>
-<tr class=" fiber ">
-<td><a href="https://bugs.ruby-lang.org/issues/18484">18484</a>
-</td>
-<td>fiber</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18484">Fiber should return it self when blocked by IO</a>
 </td>
 </tr>
 <tr class=" os/arch core ">
@@ -454,13 +469,6 @@
 </td>
 <td>build</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18373">Bundled gem (RBS, debug) extensions are not properly built</a>
-</td>
-</tr>
-<tr class=" notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/18371">18371</a>
-</td>
-<td>notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18371">Release branches (release information in general)</a>
 </td>
 </tr>
 <tr class=" win ">
@@ -1051,13 +1059,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17506">Ractor isolation broken by ThreadGroup</a>
 </td>
 </tr>
-<tr class=" ractor ">
-<td><a href="https://bugs.ruby-lang.org/issues/17489">17489</a>
-</td>
-<td>ractor</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17489">Ractor segfaults</a>
-</td>
-</tr>
 <tr class=" perf ">
 <td><a href="https://bugs.ruby-lang.org/issues/17478">17478</a>
 </td>
@@ -1084,13 +1085,6 @@
 </td>
 <td>perf</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17383">3.0 recursion memory|speed issues</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/17382">17382</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17382">Segfault in String#inspect</a>
 </td>
 </tr>
 <tr class=" perf ">
