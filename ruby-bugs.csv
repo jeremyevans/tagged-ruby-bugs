@@ -32,7 +32,6 @@
 9435,win core,Kernel.system problem
 9507,core os/arch,Ruby 2.1.0 is broken on ARMv5: tried to create Proc object without a block
 9760,build,mkmf does not allow for linking against custom libraries when a system library is present
-9806,lib maybenotbug,URI#encode doesn&#39;t encode characters &#39;[&#39; and &#39;]&#39;.  They should be encoded as %5B and %5D respectively.
 9921,build maybenotbug,"gmtime_r, win32.h, and &lt;string&gt;"
 9944,win maybenotbug,in ruby for windows in &quot;system&quot; a redirection to append a file works incorrectly
 9955,win build,"issue building dll on mingw, library not found"
@@ -67,7 +66,6 @@
 12040,win core,[Win32] File.stat fails on a mounted volume
 12055,patch lib,`NET::HTTPResponse` is not deflating responses with custom `Content-Range` header
 12179,build,Build failure due to VPATH expansion
-12235,lib maybenotbug,URI.encode issue with square brackets
 12280,win core,"IO.copy_stream(IO, IO) fails with &quot;pread() not implemented&quot;"
 12436,patch win core,newline argument of File.open seems not respected on Windows
 12440,cygwin core,make test-all is not working on cygwin
@@ -121,7 +119,6 @@
 14906,win core,MinGW failure - TestIO#test_copy_stream_no_busy_wait
 14957,win thread,"MinGW, gcc 8.2.0, bootstraptest test_thread.rb - failure ?"
 14971,cygwin build,error: implicit declaration of function ‘rb_vm_call0
-14972,patch lib,Net::HTTP inconsistently raises EOFError when peer closes the connection
 15072,cygwin build,thread.c:4356:5: error: implicit declaration of function ‘ubf_list_atfork’
 15097,cygwin lib,Gem install fails on Ruby 2.5.1 with Cygwin (get_dns_server_list undefined)
 15247,win test,"Windows - TEMP folder, non 8.3 &amp; drive, fails &amp; errors in test-all (ruby &amp; rdoc)"
@@ -152,7 +149,6 @@
 16492,test os/arch,TestBugReporter#test_bug_reporter_add test failures
 16493,thread os/arch,TestThreadQueue#test_thr_kill is flaky on AArch64
 16497,ext encoding,StringIO#internal_encoding is broken (more severely in 2.7)
-16672,patch lib,net/http leaves original content-length header intact after inflating response
 16694,mjit,JIT vs hardened GCC with PCH
 16776,core,Regression in coverage library
 16810,os/arch,ruby segfaults on s390x with musl libc
@@ -161,7 +157,6 @@
 16829,maybenotbug fiber,Exceptions raised from within an enumerated method lose part of their stacktrace
 16836,notbug patch build,configure-time LDFLAGS leak into ruby pkg-config file
 16842,encoding,`inspect` prints the UTF-8 character U+0085 (NEXT LINE) verbatim even though it is not printable
-16889,tracepoint,"TracePoint.enable { ... } also activates the TracePoint for other threads, even outside the block"
 16905,build os/arch,Ruby required to build Ruby on Haiku?
 16920,os/arch thread,TestThread#test_signal_at_join fails on aarch64
 16927,encoding,String#tr won&#39;t return the expected result for some sign with diacritics
@@ -215,7 +210,6 @@
 17813,patch win ext,rb_funcall() may reset the latest socket error unexpectedlly since Ruby 3.0.0
 17817,mjit,--jit outputs ./tmp/_ruby_mjit_*.h: No such file or directory on with TMP
 17826,ractor,Ractor#take hangs if used in multiple Threads
-17835,patch maybenotbug lib,Net::HTTP should automatically add Accept-Encoding request header on HEAD request as well
 17843,maybenotbug os/arch,Ruby on Rails error[BUG] Segmentation fault at 0x0000000000000110 ruby 3.0.1p64 (2021-04-05 revision 0fb782ee38) [x86_64-darwin15] (#42110)
 17878,ractor,bootstraptest/test_ractor.rb:224 a random failing test with &quot;The outgoing-port is already closed (Ractor::ClosedError)&quot;
 17882,ractor cygwin,bootstraptest/test_ractor.rb:224 segfaults on Cygwin
@@ -256,7 +250,6 @@
 18142,mjit,Segmentation fault with Ruby 3.0.2
 18144,core,Timeout not working while regular expression match is running
 18152,core,Fix theoretical bug with signals + qsort
-18155,core notbug,(nil..nil).cover?(x) is true for all x since beginless ranges were introduced
 18169,notbug,Local copies of gemified libraries are being released out of sync with their gems
 18170,patch core,Exception#inspect should not include newlines
 18186,win,SEGV with system command - MinGW?
@@ -273,7 +266,6 @@
 18338,encoding,Encoding.default_external = Encoding::UTF_16BE may add a wrongly-encoded string to $LOADED_FEATURES
 18355,lib,"require(&quot;pathname&quot;) within rack application chnages behaviors of Pathname methods, such as absolute?(), when there are two versions of &#39;pathname&#39; gem installed."
 18359,win,[Windows MinGW] warning Please include winsock2.h before windows.h
-18373,build,"Bundled gem (RBS, debug) extensions are not properly built"
 18379,win test,[CI] Windows mingw/ucrt - test-all timeout failures
 18380,test,TestAddressResolve#test_socket_getnameinfo_domain_blocking test failures
 18381,notbug,Default vs Bundled gems
@@ -285,7 +277,6 @@
 18429,os/arch build,Configure ruby-3.0.3 on Solaris 10 Unknown keyword &#39;URL&#39; in &#39;./ruby.tmp.pc&#39;
 18430,os/arch build,Raspberry Pi 3.0.3 Compile Issue
 18444,os/arch core,Trapped TSTP causes a locking deadlock in 3.0.3 onward
-18446,notbug core,LSAN reporting
 18454,perf jit,YJIT slowing down key Discourse benchmarks
 18455,core perf,`IO#close` has poor performance and difficult to understand semantics.
 18456,lib,rdoc non-determinism: module includes can be added once or twice to generated .ri
@@ -303,7 +294,6 @@
 18518,core,NoMemoryError + [FATAL] failed to allocate memory for twice 1 &lt;&lt; large
 18553,core,Memory leak on compiling method call with kwargs
 18560,notbug,&quot;Compaction isn&#39;t available on this platform&quot; error running PG test suite on ppc64le
-18561,patch core,Make singleton def operation and define_singleton_method explicitly use public visibility
 18567,notbug,Depending on default gems in stdlib gems when not needed considered harmful
 18572,perf core,Performance regression when invoking refined methods
 18580,maybenotbug,Range#include? inconsistency for beginless String ranges
@@ -320,17 +310,26 @@
 18622,maybenotbug core,"const_get still looks in Object, while lexical constant lookup no longer does"
 18623,build,`make runnable` does not work
 18624,patch autoload,"`const_source_location` returns [false, 0] when autoload is defined for the constant"
-18625,patch core,ruby2_keywords does not unmark the hash if the receiving method has a *rest parameter
-18628,patch doc,Link contributing is broken
-18629,maybenotbug,block args array splatting assigns to higher scope _ var
-18631,patch regexp,Range check breaks multiplex backreferences in regular expressions
-18633,patch core,"proc { |a, **kw| a } autosplats and treats empty kwargs specially"
 18643,patch lib,test-bundler failed on ruby_3_1 CI
-18649,patch thread,Enumerable#first breaks out of the incorect block when across threads
 18651,enc,oob access in CP51932 -&gt; CP50220 transcoder
 18657,patch lib,IRB raises exception when stdout is a pipe
 18658,backport ext,Need openssl 3 support for Ubuntu 22.04 (Ruby 2.7.x and 3.0.x)
 18661,win core,Net::HTTP behavior changed between 2.6 and 3.1 on windows.
 18663,autoload fiber,Autoload doesn&#39;t work with fiber context switch.
-18665,doc,Tutorial Link for Optionparser is still broken
 18666,build,"No rule to make target &#39;yaml/yaml.h&#39;, needed by &#39;api.o&#39;"
+18674,win build,Build failure `make up` with WSL2
+18677,ext,BigDecimal#power (**) returns FloatDomainError when passing an infinite parameter
+18678,notbug,Crash on Mac - vm_call0_cfunc_with_frame
+18684,notbug build,Support for out of source build
+18686,regexp,Regexp supporting unexpected age properties in Ruby &lt; 3.2
+18727,cygwin build,Make failed on x86_64-cygwin (LoadError)
+18729,patch core,Method#owner and UnboundMethod#owner are incorrect after using Module#public/protected/private
+18730,tracepoint,Double `return` event handling with different tracepoints
+18731,test,Parallel test-all sometimes does not run at all some tests
+18733,os/arch,Ruby GC problems cause performance issue with Ractor
+18737,notbug,Windows &#39;require&#39; is case independent
+18738,lib,IRB can&#39;t recognize heredoc after words
+18740,tracepoint,Unable to set a tracepoint on the code with rightward assignment
+18743,fiber,Enumerator#next / peek re-use each others stacktraces
+18748,maybenotbug core,Range#cover? returns true for beginless range of different type
+18750,tracepoint,Segmentation fault on SIGINT when waiting in TracePoint handler
