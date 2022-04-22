@@ -1,41 +1,40 @@
 <html>
 <head>
-<title>336 Tagged Open Ruby Bugs as of 2022-03-30 03:59:26 +0900</title>
+<title>335 Tagged Open Ruby Bugs as of 2022-04-23 03:26:11 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
 <p class="filter-buttons">Available Tags: <input type="submit" value="core" />
 <input type="submit" value="win" />
-<input type="submit" value="patch" />
 <input type="submit" value="os/arch" />
 <input type="submit" value="build" />
+<input type="submit" value="patch" />
 <input type="submit" value="ractor" />
-<input type="submit" value="maybenotbug" />
-<input type="submit" value="lib" />
 <input type="submit" value="notbug" />
+<input type="submit" value="maybenotbug" />
 <input type="submit" value="test" />
+<input type="submit" value="lib" />
 <input type="submit" value="ext" />
 <input type="submit" value="encoding" />
-<input type="submit" value="thread" />
 <input type="submit" value="cygwin" />
+<input type="submit" value="thread" />
 <input type="submit" value="regexp" />
 <input type="submit" value="perf" />
 <input type="submit" value="fiber" />
+<input type="submit" value="tracepoint" />
 <input type="submit" value="mjit" />
 <input type="submit" value="parser" />
-<input type="submit" value="tracepoint" />
 <input type="submit" value="autoload" />
 <input type="submit" value="refine" />
-<input type="submit" value="doc" />
 <input type="submit" value="backport" />
 <input type="submit" value="enc" />
 <input type="submit" value="jit" />
 <input type="submit" value="unfixable" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">336</span> matched)
+(<span id="matched">335</span> matched)
 <table>
-<caption>336 Tagged Open Ruby Bugs as of 2022-03-30 03:59:26 +0900</caption>
+<caption>335 Tagged Open Ruby Bugs as of 2022-04-23 03:26:11 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -44,18 +43,123 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" tracepoint ">
+<td><a href="https://bugs.ruby-lang.org/issues/18750">18750</a>
+</td>
+<td>tracepoint</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18750">Segmentation fault on SIGINT when waiting in TracePoint handler</a>
+</td>
+</tr>
+<tr class=" maybenotbug core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18748">18748</a>
+</td>
+<td>maybenotbug core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18748">Range#cover? returns true for beginless range of different type</a>
+</td>
+</tr>
+<tr class=" fiber ">
+<td><a href="https://bugs.ruby-lang.org/issues/18743">18743</a>
+</td>
+<td>fiber</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18743">Enumerator#next / peek re-use each others stacktraces</a>
+</td>
+</tr>
+<tr class=" tracepoint ">
+<td><a href="https://bugs.ruby-lang.org/issues/18740">18740</a>
+</td>
+<td>tracepoint</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18740">Unable to set a tracepoint on the code with rightward assignment</a>
+</td>
+</tr>
+<tr class=" lib ">
+<td><a href="https://bugs.ruby-lang.org/issues/18738">18738</a>
+</td>
+<td>lib</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18738">IRB can&#39;t recognize heredoc after words</a>
+</td>
+</tr>
+<tr class=" notbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/18737">18737</a>
+</td>
+<td>notbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18737">Windows &#39;require&#39; is case independent</a>
+</td>
+</tr>
+<tr class=" os/arch ">
+<td><a href="https://bugs.ruby-lang.org/issues/18733">18733</a>
+</td>
+<td>os/arch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18733">Ruby GC problems cause performance issue with Ractor</a>
+</td>
+</tr>
+<tr class=" test ">
+<td><a href="https://bugs.ruby-lang.org/issues/18731">18731</a>
+</td>
+<td>test</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18731">Parallel test-all sometimes does not run at all some tests</a>
+</td>
+</tr>
+<tr class=" tracepoint ">
+<td><a href="https://bugs.ruby-lang.org/issues/18730">18730</a>
+</td>
+<td>tracepoint</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18730">Double `return` event handling with different tracepoints</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18729">18729</a>
+</td>
+<td>patch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18729">Method#owner and UnboundMethod#owner are incorrect after using Module#public/protected/private</a>
+</td>
+</tr>
+<tr class=" cygwin build ">
+<td><a href="https://bugs.ruby-lang.org/issues/18727">18727</a>
+</td>
+<td>cygwin build</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18727">Make failed on x86_64-cygwin (LoadError)</a>
+</td>
+</tr>
+<tr class=" regexp ">
+<td><a href="https://bugs.ruby-lang.org/issues/18686">18686</a>
+</td>
+<td>regexp</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18686">Regexp supporting unexpected age properties in Ruby &lt; 3.2</a>
+</td>
+</tr>
+<tr class=" notbug build ">
+<td><a href="https://bugs.ruby-lang.org/issues/18684">18684</a>
+</td>
+<td>notbug build</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18684">Support for out of source build</a>
+</td>
+</tr>
+<tr class=" notbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/18678">18678</a>
+</td>
+<td>notbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18678">Crash on Mac - vm_call0_cfunc_with_frame</a>
+</td>
+</tr>
+<tr class=" ext ">
+<td><a href="https://bugs.ruby-lang.org/issues/18677">18677</a>
+</td>
+<td>ext</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18677">BigDecimal#power (**) returns FloatDomainError when passing an infinite parameter</a>
+</td>
+</tr>
+<tr class=" win build ">
+<td><a href="https://bugs.ruby-lang.org/issues/18674">18674</a>
+</td>
+<td>win build</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18674">Build failure `make up` with WSL2</a>
+</td>
+</tr>
 <tr class=" build ">
 <td><a href="https://bugs.ruby-lang.org/issues/18666">18666</a>
 </td>
 <td>build</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18666">No rule to make target &#39;yaml/yaml.h&#39;, needed by &#39;api.o&#39;</a>
-</td>
-</tr>
-<tr class=" doc ">
-<td><a href="https://bugs.ruby-lang.org/issues/18665">18665</a>
-</td>
-<td>doc</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18665">Tutorial Link for Optionparser is still broken</a>
 </td>
 </tr>
 <tr class=" autoload fiber ">
@@ -93,53 +197,11 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18651">oob access in CP51932 -&gt; CP50220 transcoder</a>
 </td>
 </tr>
-<tr class=" patch thread ">
-<td><a href="https://bugs.ruby-lang.org/issues/18649">18649</a>
-</td>
-<td>patch thread</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18649">Enumerable#first breaks out of the incorect block when across threads</a>
-</td>
-</tr>
 <tr class=" patch lib ">
 <td><a href="https://bugs.ruby-lang.org/issues/18643">18643</a>
 </td>
 <td>patch lib</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18643">test-bundler failed on ruby_3_1 CI</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18633">18633</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18633">proc { |a, **kw| a } autosplats and treats empty kwargs specially</a>
-</td>
-</tr>
-<tr class=" patch regexp ">
-<td><a href="https://bugs.ruby-lang.org/issues/18631">18631</a>
-</td>
-<td>patch regexp</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18631">Range check breaks multiplex backreferences in regular expressions</a>
-</td>
-</tr>
-<tr class=" maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/18629">18629</a>
-</td>
-<td>maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18629">block args array splatting assigns to higher scope _ var</a>
-</td>
-</tr>
-<tr class=" patch doc ">
-<td><a href="https://bugs.ruby-lang.org/issues/18628">18628</a>
-</td>
-<td>patch doc</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18628">Link contributing is broken</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18625">18625</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18625">ruby2_keywords does not unmark the hash if the receiving method has a *rest parameter</a>
 </td>
 </tr>
 <tr class=" patch autoload ">
@@ -252,13 +314,6 @@
 </td>
 <td>notbug</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18567">Depending on default gems in stdlib gems when not needed considered harmful</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18561">18561</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18561">Make singleton def operation and define_singleton_method explicitly use public visibility</a>
 </td>
 </tr>
 <tr class=" notbug ">
@@ -380,13 +435,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18454">YJIT slowing down key Discourse benchmarks</a>
 </td>
 </tr>
-<tr class=" notbug core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18446">18446</a>
-</td>
-<td>notbug core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18446">LSAN reporting</a>
-</td>
-</tr>
 <tr class=" os/arch core ">
 <td><a href="https://bugs.ruby-lang.org/issues/18444">18444</a>
 </td>
@@ -462,13 +510,6 @@
 </td>
 <td>win test</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18379">[CI] Windows mingw/ucrt - test-all timeout failures</a>
-</td>
-</tr>
-<tr class=" build ">
-<td><a href="https://bugs.ruby-lang.org/issues/18373">18373</a>
-</td>
-<td>build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18373">Bundled gem (RBS, debug) extensions are not properly built</a>
 </td>
 </tr>
 <tr class=" win ">
@@ -581,13 +622,6 @@
 </td>
 <td>notbug</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18169">Local copies of gemified libraries are being released out of sync with their gems</a>
-</td>
-</tr>
-<tr class=" core notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/18155">18155</a>
-</td>
-<td>core notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18155">(nil..nil).cover?(x) is true for all x since beginless ranges were introduced</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -868,13 +902,6 @@
 </td>
 <td>maybenotbug os/arch</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17843">Ruby on Rails error[BUG] Segmentation fault at 0x0000000000000110 ruby 3.0.1p64 (2021-04-05 revision 0fb782ee38) [x86_64-darwin15] (#42110)</a>
-</td>
-</tr>
-<tr class=" patch maybenotbug lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/17835">17835</a>
-</td>
-<td>patch maybenotbug lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17835">Net::HTTP should automatically add Accept-Encoding request header on HEAD request as well</a>
 </td>
 </tr>
 <tr class=" ractor ">
@@ -1248,13 +1275,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16905">Ruby required to build Ruby on Haiku?</a>
 </td>
 </tr>
-<tr class=" tracepoint ">
-<td><a href="https://bugs.ruby-lang.org/issues/16889">16889</a>
-</td>
-<td>tracepoint</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16889">TracePoint.enable { ... } also activates the TracePoint for other threads, even outside the block</a>
-</td>
-</tr>
 <tr class=" encoding ">
 <td><a href="https://bugs.ruby-lang.org/issues/16842">16842</a>
 </td>
@@ -1309,13 +1329,6 @@
 </td>
 <td>mjit</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16694">JIT vs hardened GCC with PCH</a>
-</td>
-</tr>
-<tr class=" patch lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/16672">16672</a>
-</td>
-<td>patch lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16672">net/http leaves original content-length header intact after inflating response</a>
 </td>
 </tr>
 <tr class=" ext encoding ">
@@ -1526,13 +1539,6 @@
 </td>
 <td>cygwin build</td>
 <td><a href="https://bugs.ruby-lang.org/issues/15072">thread.c:4356:5: error: implicit declaration of function ‘ubf_list_atfork’</a>
-</td>
-</tr>
-<tr class=" patch lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/14972">14972</a>
-</td>
-<td>patch lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/14972">Net::HTTP inconsistently raises EOFError when peer closes the connection</a>
 </td>
 </tr>
 <tr class=" cygwin build ">
@@ -1906,13 +1912,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/12280">IO.copy_stream(IO, IO) fails with &quot;pread() not implemented&quot;</a>
 </td>
 </tr>
-<tr class=" lib maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/12235">12235</a>
-</td>
-<td>lib maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/12235">URI.encode issue with square brackets</a>
-</td>
-</tr>
 <tr class=" build ">
 <td><a href="https://bugs.ruby-lang.org/issues/12179">12179</a>
 </td>
@@ -2149,13 +2148,6 @@
 </td>
 <td>build maybenotbug</td>
 <td><a href="https://bugs.ruby-lang.org/issues/9921">gmtime_r, win32.h, and &lt;string&gt;</a>
-</td>
-</tr>
-<tr class=" lib maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/9806">9806</a>
-</td>
-<td>lib maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/9806">URI#encode doesn&#39;t encode characters &#39;[&#39; and &#39;]&#39;.  They should be encoded as %5B and %5D respectively.</a>
 </td>
 </tr>
 <tr class=" build ">
