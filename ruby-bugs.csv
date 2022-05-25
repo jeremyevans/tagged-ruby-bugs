@@ -76,7 +76,6 @@
 12500,test os/arch,TestProcess#test_aspawn_too_long_path fails on mips with &quot;argument too big&quot;
 12506,cygwin,"On cygwin, Feature #5994 does not work"
 12582,ext,OpenSSL Authenticated Encryption should check for tag length
-12590,cygwin build,Error compiling parse.c on cygwin
 12689,core,Thread isolation of $~ and $_
 12725,cygwin build,Trying to use ./miniruby before it exists
 12852,lib notbug,URI.parse can&#39;t handle non-ascii URIs
@@ -271,7 +270,6 @@
 18381,notbug,Default vs Bundled gems
 18393,os/arch test ext,TestReadline#test_interrupt_in_other_thread fails on armv7hl
 18396,parser,An unexpected &quot;hash value omission&quot; syntax error when without parentheses call expr follows
-18407,notbug core,Behavior difference between integer and string flags to File creation
 18412,ractor,Segfault in test_ractor.rb
 18413,build os/arch,Segfault in `ripper/lexer.rb`
 18429,os/arch build,Configure ruby-3.0.3 on Solaris 10 Unknown keyword &#39;URL&#39; in &#39;./ruby.tmp.pc&#39;
@@ -298,12 +296,10 @@
 18572,perf core,Performance regression when invoking refined methods
 18580,maybenotbug,Range#include? inconsistency for beginless String ranges
 18590,patch encoding,String#downcase and CAPITAL LETTER I WITH DOT ABOVE
-18592,build os/arch,RPATH of bundled native extensions is incorrect
 18601,encoding,Invalid byte sequences in Big5 encodings
 18605,win core,Fails to run on (newer) 32bit Windows with ucrt
 18607,os/arch build,Ruby 2.7.5 fails to configure on macOS Monterey on mac with M1 Pro
 18608,build,`require&#39;: cannot load such file -- ripper (LoadError) after `make distclean`
-18612,notbug,ffi gem installed successfully but while using raises Bus Error.
 18613,os/arch,Voluntary wanted: Some signal-related tests fail on FreeBSD 13
 18614,lib,Error (busy loop) in TestGemCommandsSetupCommand#test_destdir_flag_does_not_try_to_write_to_the_default_gem_home
 18616,build notbug,Error with clang(1) on MacOS due to __declspec()
@@ -315,12 +311,10 @@
 18657,patch lib,IRB raises exception when stdout is a pipe
 18658,backport ext,Need openssl 3 support for Ubuntu 22.04 (Ruby 2.7.x and 3.0.x)
 18661,win core,Net::HTTP behavior changed between 2.6 and 3.1 on windows.
-18663,autoload fiber,Autoload doesn&#39;t work with fiber context switch.
 18666,build,"No rule to make target &#39;yaml/yaml.h&#39;, needed by &#39;api.o&#39;"
 18674,win build,Build failure `make up` with WSL2
 18677,ext,BigDecimal#power (**) returns FloatDomainError when passing an infinite parameter
 18678,notbug,Crash on Mac - vm_call0_cfunc_with_frame
-18684,notbug build,Support for out of source build
 18686,regexp,Regexp supporting unexpected age properties in Ruby &lt; 3.2
 18727,cygwin build,Make failed on x86_64-cygwin (LoadError)
 18729,patch core,Method#owner and UnboundMethod#owner are incorrect after using Module#public/protected/private
@@ -329,7 +323,36 @@
 18733,os/arch,Ruby GC problems cause performance issue with Ractor
 18737,notbug,Windows &#39;require&#39; is case independent
 18738,lib,IRB can&#39;t recognize heredoc after words
-18740,tracepoint,Unable to set a tracepoint on the code with rightward assignment
+18740,tracepoint,Use of rightward assignment changes line number needed for line-targeted TracePoint
 18743,fiber,Enumerator#next / peek re-use each others stacktraces
 18748,maybenotbug core,Range#cover? returns true for beginless range of different type
 18750,tracepoint,Segmentation fault on SIGINT when waiting in TracePoint handler
+18751,maybenotbug core,Regression on master for Method#== when comparing public with private method
+18758,build ext,Ruby fails to build on M1 Mac when x86 Homebrew is installed
+18759,backport test os/arch,snapshot-ruby_2_7: test failure on macos-12
+18760,ractor perf,Ractors vs &quot;skynet&quot; microbenchmark
+18763,build ext,The configure option “--with-openssl-dir” has lower precedence than pkg-config
+18764,build ext,Build Error when Using msys2-mingw64 and Ruby 3.2
+18765,doc,Wrong description introduced by https://github.com/ruby/ruby/pull/4938/files
+18767,core,IO.foreach hangs up when passes limit=0
+18768,ext,"Inconsistent behavior of IO, StringIO and String each_line methods when return paragraph and chomp: true passed"
+18769,ext,StringIO#each hangs up on some input with `chomp: true`
+18770,ext,"Inconsistent behavior of IO/StringIO&#39;s each methods when called with nil as a separator, limit and chomp: true"
+18771,core,IO.foreach/.readlines ignores the 4th positional argument
+18780,maybenotbug,Incorrect binding receiver for C API rb_eval_string()
+18781,patch os/arch,MJIT tests failing with Ubuntu focal with gcc-11 and some flags
+18782,autoload,Race conditions in autoload when loading the same feature with multiple threads.
+18783,patch lib,OptionParser should recognize &quot;-&quot; as an optional argument
+18784,patch lib maybenotbug,`FileUtils.rm_f` and `FileUtils.rm_rf` should not mask exceptions
+18785,backport,RbConfig::MAKEFILE_CONFIG[&quot;warnflags&quot;] contains &quot;-Wno-cast-function-type&quot; which is not compatible with clang 13.0.0
+18789,test,make test-bundled-gems failed after make install
+18790,build ext,cannot load such file -- digest (LoadError)
+18793,notbug core,Select and Find behave differently for hashes
+18794,win,Windows ucrt - intermittent SEGV TestObjSpace#test_reachable_objects_during_iteration
+18795,core,Verbose GC debug output with -DRGENGC_DEBUG=5 causes a crash
+18796,os/arch core,GC compaction gets stuck on Mac OS when a debugger is attached
+18797,regexp,Third argument to Regexp.new is a bit broken
+18799,maybenotbug refine,Refinement#import_methods vs attr_reader
+18801,maybenotbug core,Dead YARV instructions produced when `branchif` is used
+18804,core,Invalid line number for putnil instruction
+18805,core,IO::Buffer is inconsistent when returning a string from an empty buffer
