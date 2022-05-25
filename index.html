@@ -1,40 +1,41 @@
 <html>
 <head>
-<title>335 Tagged Open Ruby Bugs as of 2022-04-23 03:26:11 +0900</title>
+<title>358 Tagged Open Ruby Bugs as of 2022-05-26 04:37:14 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
 <p class="filter-buttons">Available Tags: <input type="submit" value="core" />
 <input type="submit" value="win" />
 <input type="submit" value="os/arch" />
-<input type="submit" value="build" />
 <input type="submit" value="patch" />
-<input type="submit" value="ractor" />
-<input type="submit" value="notbug" />
+<input type="submit" value="build" />
 <input type="submit" value="maybenotbug" />
+<input type="submit" value="ractor" />
+<input type="submit" value="ext" />
+<input type="submit" value="notbug" />
 <input type="submit" value="test" />
 <input type="submit" value="lib" />
-<input type="submit" value="ext" />
 <input type="submit" value="encoding" />
-<input type="submit" value="cygwin" />
 <input type="submit" value="thread" />
+<input type="submit" value="cygwin" />
 <input type="submit" value="regexp" />
 <input type="submit" value="perf" />
-<input type="submit" value="fiber" />
 <input type="submit" value="tracepoint" />
+<input type="submit" value="fiber" />
 <input type="submit" value="mjit" />
 <input type="submit" value="parser" />
 <input type="submit" value="autoload" />
 <input type="submit" value="refine" />
 <input type="submit" value="backport" />
+<input type="submit" value="doc" />
 <input type="submit" value="enc" />
 <input type="submit" value="jit" />
 <input type="submit" value="unfixable" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">335</span> matched)
+(<span id="matched">358</span> matched)
 <table>
-<caption>335 Tagged Open Ruby Bugs as of 2022-04-23 03:26:11 +0900</caption>
+<caption>358 Tagged Open Ruby Bugs as of 2022-05-26 04:37:14 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -43,6 +44,209 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18805">18805</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18805">IO::Buffer is inconsistent when returning a string from an empty buffer</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18804">18804</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18804">Invalid line number for putnil instruction</a>
+</td>
+</tr>
+<tr class=" maybenotbug core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18801">18801</a>
+</td>
+<td>maybenotbug core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18801">Dead YARV instructions produced when `branchif` is used</a>
+</td>
+</tr>
+<tr class=" maybenotbug refine ">
+<td><a href="https://bugs.ruby-lang.org/issues/18799">18799</a>
+</td>
+<td>maybenotbug refine</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18799">Refinement#import_methods vs attr_reader</a>
+</td>
+</tr>
+<tr class=" regexp ">
+<td><a href="https://bugs.ruby-lang.org/issues/18797">18797</a>
+</td>
+<td>regexp</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18797">Third argument to Regexp.new is a bit broken</a>
+</td>
+</tr>
+<tr class=" os/arch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18796">18796</a>
+</td>
+<td>os/arch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18796">GC compaction gets stuck on Mac OS when a debugger is attached</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18795">18795</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18795">Verbose GC debug output with -DRGENGC_DEBUG=5 causes a crash</a>
+</td>
+</tr>
+<tr class=" win ">
+<td><a href="https://bugs.ruby-lang.org/issues/18794">18794</a>
+</td>
+<td>win</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18794">Windows ucrt - intermittent SEGV TestObjSpace#test_reachable_objects_during_iteration</a>
+</td>
+</tr>
+<tr class=" notbug core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18793">18793</a>
+</td>
+<td>notbug core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18793">Select and Find behave differently for hashes</a>
+</td>
+</tr>
+<tr class=" build ext ">
+<td><a href="https://bugs.ruby-lang.org/issues/18790">18790</a>
+</td>
+<td>build ext</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18790">cannot load such file -- digest (LoadError)</a>
+</td>
+</tr>
+<tr class=" test ">
+<td><a href="https://bugs.ruby-lang.org/issues/18789">18789</a>
+</td>
+<td>test</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18789">make test-bundled-gems failed after make install</a>
+</td>
+</tr>
+<tr class=" backport ">
+<td><a href="https://bugs.ruby-lang.org/issues/18785">18785</a>
+</td>
+<td>backport</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18785">RbConfig::MAKEFILE_CONFIG[&quot;warnflags&quot;] contains &quot;-Wno-cast-function-type&quot; which is not compatible with clang 13.0.0</a>
+</td>
+</tr>
+<tr class=" patch lib maybenotbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/18784">18784</a>
+</td>
+<td>patch lib maybenotbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18784">`FileUtils.rm_f` and `FileUtils.rm_rf` should not mask exceptions</a>
+</td>
+</tr>
+<tr class=" patch lib ">
+<td><a href="https://bugs.ruby-lang.org/issues/18783">18783</a>
+</td>
+<td>patch lib</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18783">OptionParser should recognize &quot;-&quot; as an optional argument</a>
+</td>
+</tr>
+<tr class=" autoload ">
+<td><a href="https://bugs.ruby-lang.org/issues/18782">18782</a>
+</td>
+<td>autoload</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18782">Race conditions in autoload when loading the same feature with multiple threads.</a>
+</td>
+</tr>
+<tr class=" patch os/arch ">
+<td><a href="https://bugs.ruby-lang.org/issues/18781">18781</a>
+</td>
+<td>patch os/arch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18781">MJIT tests failing with Ubuntu focal with gcc-11 and some flags</a>
+</td>
+</tr>
+<tr class=" maybenotbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/18780">18780</a>
+</td>
+<td>maybenotbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18780">Incorrect binding receiver for C API rb_eval_string()</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18771">18771</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18771">IO.foreach/.readlines ignores the 4th positional argument</a>
+</td>
+</tr>
+<tr class=" ext ">
+<td><a href="https://bugs.ruby-lang.org/issues/18770">18770</a>
+</td>
+<td>ext</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18770">Inconsistent behavior of IO/StringIO&#39;s each methods when called with nil as a separator, limit and chomp: true</a>
+</td>
+</tr>
+<tr class=" ext ">
+<td><a href="https://bugs.ruby-lang.org/issues/18769">18769</a>
+</td>
+<td>ext</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18769">StringIO#each hangs up on some input with `chomp: true`</a>
+</td>
+</tr>
+<tr class=" ext ">
+<td><a href="https://bugs.ruby-lang.org/issues/18768">18768</a>
+</td>
+<td>ext</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18768">Inconsistent behavior of IO, StringIO and String each_line methods when return paragraph and chomp: true passed</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18767">18767</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18767">IO.foreach hangs up when passes limit=0</a>
+</td>
+</tr>
+<tr class=" doc ">
+<td><a href="https://bugs.ruby-lang.org/issues/18765">18765</a>
+</td>
+<td>doc</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18765">Wrong description introduced by https://github.com/ruby/ruby/pull/4938/files</a>
+</td>
+</tr>
+<tr class=" build ext ">
+<td><a href="https://bugs.ruby-lang.org/issues/18764">18764</a>
+</td>
+<td>build ext</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18764">Build Error when Using msys2-mingw64 and Ruby 3.2</a>
+</td>
+</tr>
+<tr class=" build ext ">
+<td><a href="https://bugs.ruby-lang.org/issues/18763">18763</a>
+</td>
+<td>build ext</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18763">The configure option “--with-openssl-dir” has lower precedence than pkg-config</a>
+</td>
+</tr>
+<tr class=" ractor perf ">
+<td><a href="https://bugs.ruby-lang.org/issues/18760">18760</a>
+</td>
+<td>ractor perf</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18760">Ractors vs &quot;skynet&quot; microbenchmark</a>
+</td>
+</tr>
+<tr class=" backport test os/arch ">
+<td><a href="https://bugs.ruby-lang.org/issues/18759">18759</a>
+</td>
+<td>backport test os/arch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18759">snapshot-ruby_2_7: test failure on macos-12</a>
+</td>
+</tr>
+<tr class=" build ext ">
+<td><a href="https://bugs.ruby-lang.org/issues/18758">18758</a>
+</td>
+<td>build ext</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18758">Ruby fails to build on M1 Mac when x86 Homebrew is installed</a>
+</td>
+</tr>
+<tr class=" maybenotbug core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18751">18751</a>
+</td>
+<td>maybenotbug core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18751">Regression on master for Method#== when comparing public with private method</a>
+</td>
+</tr>
 <tr class=" tracepoint ">
 <td><a href="https://bugs.ruby-lang.org/issues/18750">18750</a>
 </td>
@@ -68,7 +272,7 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18740">18740</a>
 </td>
 <td>tracepoint</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18740">Unable to set a tracepoint on the code with rightward assignment</a>
+<td><a href="https://bugs.ruby-lang.org/issues/18740">Use of rightward assignment changes line number needed for line-targeted TracePoint</a>
 </td>
 </tr>
 <tr class=" lib ">
@@ -127,13 +331,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18686">Regexp supporting unexpected age properties in Ruby &lt; 3.2</a>
 </td>
 </tr>
-<tr class=" notbug build ">
-<td><a href="https://bugs.ruby-lang.org/issues/18684">18684</a>
-</td>
-<td>notbug build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18684">Support for out of source build</a>
-</td>
-</tr>
 <tr class=" notbug ">
 <td><a href="https://bugs.ruby-lang.org/issues/18678">18678</a>
 </td>
@@ -160,13 +357,6 @@
 </td>
 <td>build</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18666">No rule to make target &#39;yaml/yaml.h&#39;, needed by &#39;api.o&#39;</a>
-</td>
-</tr>
-<tr class=" autoload fiber ">
-<td><a href="https://bugs.ruby-lang.org/issues/18663">18663</a>
-</td>
-<td>autoload fiber</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18663">Autoload doesn&#39;t work with fiber context switch.</a>
 </td>
 </tr>
 <tr class=" win core ">
@@ -246,13 +436,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18613">Voluntary wanted: Some signal-related tests fail on FreeBSD 13</a>
 </td>
 </tr>
-<tr class=" notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/18612">18612</a>
-</td>
-<td>notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18612">ffi gem installed successfully but while using raises Bus Error.</a>
-</td>
-</tr>
 <tr class=" build ">
 <td><a href="https://bugs.ruby-lang.org/issues/18608">18608</a>
 </td>
@@ -279,13 +462,6 @@
 </td>
 <td>encoding</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18601">Invalid byte sequences in Big5 encodings</a>
-</td>
-</tr>
-<tr class=" build os/arch ">
-<td><a href="https://bugs.ruby-lang.org/issues/18592">18592</a>
-</td>
-<td>build os/arch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18592">RPATH of bundled native extensions is incorrect</a>
 </td>
 </tr>
 <tr class=" patch encoding ">
@@ -468,13 +644,6 @@
 </td>
 <td>ractor</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18412">Segfault in test_ractor.rb</a>
-</td>
-</tr>
-<tr class=" notbug core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18407">18407</a>
-</td>
-<td>notbug core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18407">Behavior difference between integer and string flags to File creation</a>
 </td>
 </tr>
 <tr class=" parser ">
@@ -1833,13 +2002,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/12689">Thread isolation of $~ and $_</a>
-</td>
-</tr>
-<tr class=" cygwin build ">
-<td><a href="https://bugs.ruby-lang.org/issues/12590">12590</a>
-</td>
-<td>cygwin build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/12590">Error compiling parse.c on cygwin</a>
 </td>
 </tr>
 <tr class=" ext ">
