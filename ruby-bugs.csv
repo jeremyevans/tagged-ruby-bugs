@@ -274,17 +274,16 @@
 18413,build os/arch,Segfault in `ripper/lexer.rb`
 18429,os/arch build,Configure ruby-3.0.3 on Solaris 10 Unknown keyword &#39;URL&#39; in &#39;./ruby.tmp.pc&#39;
 18430,os/arch build,Raspberry Pi 3.0.3 Compile Issue
+18435,patch core,Calling `protected` on ancestor method changes result of `instance_methods(false)`
 18444,os/arch core,Trapped TSTP causes a locking deadlock in 3.0.3 onward
 18454,perf jit,YJIT slowing down key Discourse benchmarks
 18455,core perf,`IO#close` has poor performance and difficult to understand semantics.
 18456,lib,rdoc non-determinism: module includes can be added once or twice to generated .ri
 18457,win ext,ruby 2.7.5 fiddle/types.rb use uint32_t but fiddle/cparser.rb lacks uint32_t
 18464,ractor tracepoint,RUBY_INTERNAL_EVENT_NEWOBJ tracepoint causes an interpreter crash when combined with Ractors
-18465,core maybenotbug,Make `IO#write` atomic.
 18472,win ext,rb_w32_map_errno is not found on Ruby-3.1.0
 18473,os/arch ext,Raw data in Socket::Option#inspect on Amazon Linux 2 
 18476,core,Call to require stuck forever after receiving EAGAIN on writev when running with zeus
-18480,os/arch core,Dtrace enabled build fails on systems with DTRACE_REBUILD=yes
 18492,win core,`rb_rescue2` inside `rb_protect` segfaults on Windows
 18506,build,make and make install rebuild items every time unnecessarily - sometimes causing races in parallel installs
 18507,os/arch build,Incorrect target_os detection in configure script
@@ -317,7 +316,6 @@
 18686,regexp,Regexp supporting unexpected age properties in Ruby &lt; 3.2
 18727,cygwin build,Make failed on x86_64-cygwin (LoadError)
 18729,patch core,Method#owner and UnboundMethod#owner are incorrect after using Module#public/protected/private
-18730,tracepoint,Double `return` event handling with different tracepoints
 18731,test,Parallel test-all sometimes does not run at all some tests
 18733,os/arch,Ruby GC problems cause performance issue with Ractor
 18737,notbug,Windows &#39;require&#39; is case independent
@@ -332,11 +330,7 @@
 18760,ractor perf,Ractors vs &quot;skynet&quot; microbenchmark
 18763,build ext,The configure option “--with-openssl-dir” has lower precedence than pkg-config
 18764,build ext,Build Error when Using msys2-mingw64 and Ruby 3.2
-18765,patch doc,Wrong description introduced by https://github.com/ruby/ruby/pull/4938/files
 18767,patch core,IO.foreach hangs up when passes limit=0
-18768,patch core ext,"Inconsistent behavior of IO, StringIO and String each_line methods when return paragraph and chomp: true passed"
-18769,patch ext,StringIO#each hangs up on some input with `chomp: true`
-18770,patch core ext,"Inconsistent behavior of IO/StringIO&#39;s each methods when called with nil as a separator, limit and chomp: true"
 18771,patch core,IO.foreach/.readlines ignores the 4th positional argument
 18780,maybenotbug,Incorrect binding receiver for C API rb_eval_string()
 18781,patch os/arch,MJIT tests failing with Ubuntu focal with gcc-11 and some flags
@@ -356,3 +350,8 @@
 18805,core,IO::Buffer is inconsistent when returning a string from an empty buffer
 18806,core,protected methods defined by refinements can&#39;t be called
 18808,build os/arch,Cannot compile ruby 3.1.2 on powerpc64le-linux without disabling the jit features
+18810,maybenotbug core,Make `Kernel#p` interruptable.
+18811,ext os/arch,PTY I/O not working on AIX 7.x
+18813,core patch,Let Module#autoload be strict about the autoloaded constant
+18816,ractor os/arch,Ractor segfaulting MacOS 12.4 (aarch64 / M1 processor)
+18818,fiber,SEGV (Fiber scheduler?)
