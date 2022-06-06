@@ -1,16 +1,16 @@
 <html>
 <head>
-<title>358 Tagged Open Ruby Bugs as of 2022-05-28 07:03:39 +0900</title>
+<title>357 Tagged Open Ruby Bugs as of 2022-06-07 02:17:54 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
 <p class="filter-buttons">Available Tags: <input type="submit" value="core" />
 <input type="submit" value="win" />
-<input type="submit" value="patch" />
 <input type="submit" value="os/arch" />
+<input type="submit" value="patch" />
 <input type="submit" value="build" />
-<input type="submit" value="maybenotbug" />
 <input type="submit" value="ractor" />
+<input type="submit" value="maybenotbug" />
 <input type="submit" value="ext" />
 <input type="submit" value="test" />
 <input type="submit" value="lib" />
@@ -20,22 +20,21 @@
 <input type="submit" value="cygwin" />
 <input type="submit" value="regexp" />
 <input type="submit" value="perf" />
-<input type="submit" value="tracepoint" />
 <input type="submit" value="fiber" />
 <input type="submit" value="mjit" />
+<input type="submit" value="tracepoint" />
 <input type="submit" value="parser" />
 <input type="submit" value="autoload" />
 <input type="submit" value="refine" />
 <input type="submit" value="backport" />
-<input type="submit" value="doc" />
 <input type="submit" value="enc" />
 <input type="submit" value="jit" />
 <input type="submit" value="unfixable" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">358</span> matched)
+(<span id="matched">357</span> matched)
 <table>
-<caption>358 Tagged Open Ruby Bugs as of 2022-05-28 07:03:39 +0900</caption>
+<caption>357 Tagged Open Ruby Bugs as of 2022-06-07 02:17:54 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -44,6 +43,41 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" fiber ">
+<td><a href="https://bugs.ruby-lang.org/issues/18818">18818</a>
+</td>
+<td>fiber</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18818">SEGV (Fiber scheduler?)</a>
+</td>
+</tr>
+<tr class=" ractor os/arch ">
+<td><a href="https://bugs.ruby-lang.org/issues/18816">18816</a>
+</td>
+<td>ractor os/arch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18816">Ractor segfaulting MacOS 12.4 (aarch64 / M1 processor)</a>
+</td>
+</tr>
+<tr class=" core patch ">
+<td><a href="https://bugs.ruby-lang.org/issues/18813">18813</a>
+</td>
+<td>core patch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18813">Let Module#autoload be strict about the autoloaded constant</a>
+</td>
+</tr>
+<tr class=" ext os/arch ">
+<td><a href="https://bugs.ruby-lang.org/issues/18811">18811</a>
+</td>
+<td>ext os/arch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18811">PTY I/O not working on AIX 7.x</a>
+</td>
+</tr>
+<tr class=" maybenotbug core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18810">18810</a>
+</td>
+<td>maybenotbug core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18810">Make `Kernel#p` interruptable.</a>
+</td>
+</tr>
 <tr class=" build os/arch ">
 <td><a href="https://bugs.ruby-lang.org/issues/18808">18808</a>
 </td>
@@ -177,39 +211,11 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18771">IO.foreach/.readlines ignores the 4th positional argument</a>
 </td>
 </tr>
-<tr class=" patch core ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/18770">18770</a>
-</td>
-<td>patch core ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18770">Inconsistent behavior of IO/StringIO&#39;s each methods when called with nil as a separator, limit and chomp: true</a>
-</td>
-</tr>
-<tr class=" patch ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/18769">18769</a>
-</td>
-<td>patch ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18769">StringIO#each hangs up on some input with `chomp: true`</a>
-</td>
-</tr>
-<tr class=" patch core ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/18768">18768</a>
-</td>
-<td>patch core ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18768">Inconsistent behavior of IO, StringIO and String each_line methods when return paragraph and chomp: true passed</a>
-</td>
-</tr>
 <tr class=" patch core ">
 <td><a href="https://bugs.ruby-lang.org/issues/18767">18767</a>
 </td>
 <td>patch core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18767">IO.foreach hangs up when passes limit=0</a>
-</td>
-</tr>
-<tr class=" patch doc ">
-<td><a href="https://bugs.ruby-lang.org/issues/18765">18765</a>
-</td>
-<td>patch doc</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18765">Wrong description introduced by https://github.com/ruby/ruby/pull/4938/files</a>
 </td>
 </tr>
 <tr class=" build ext ">
@@ -308,13 +314,6 @@
 </td>
 <td>test</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18731">Parallel test-all sometimes does not run at all some tests</a>
-</td>
-</tr>
-<tr class=" tracepoint ">
-<td><a href="https://bugs.ruby-lang.org/issues/18730">18730</a>
-</td>
-<td>tracepoint</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18730">Double `return` event handling with different tracepoints</a>
 </td>
 </tr>
 <tr class=" patch core ">
@@ -541,13 +540,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18492">`rb_rescue2` inside `rb_protect` segfaults on Windows</a>
 </td>
 </tr>
-<tr class=" os/arch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18480">18480</a>
-</td>
-<td>os/arch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18480">Dtrace enabled build fails on systems with DTRACE_REBUILD=yes</a>
-</td>
-</tr>
 <tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/18476">18476</a>
 </td>
@@ -567,13 +559,6 @@
 </td>
 <td>win ext</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18472">rb_w32_map_errno is not found on Ruby-3.1.0</a>
-</td>
-</tr>
-<tr class=" core maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/18465">18465</a>
-</td>
-<td>core maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18465">Make `IO#write` atomic.</a>
 </td>
 </tr>
 <tr class=" ractor tracepoint ">
@@ -616,6 +601,13 @@
 </td>
 <td>os/arch core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18444">Trapped TSTP causes a locking deadlock in 3.0.3 onward</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18435">18435</a>
+</td>
+<td>patch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18435">Calling `protected` on ancestor method changes result of `instance_methods(false)`</a>
 </td>
 </tr>
 <tr class=" os/arch build ">
