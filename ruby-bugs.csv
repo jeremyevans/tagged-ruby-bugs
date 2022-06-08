@@ -89,7 +89,7 @@
 13542,win test,MinGW trunk Builds - Summary of Issues
 13571,win encoding,"Script arguments, encoding, windows / MinGW"
 13644,win test,Windows - Setting Time.now
-13671,regexp notbug,Regexp with lookbehind and case-insensitivity raises RegexpError only on strings with certain characters
+13671,regexp,Regexp with lookbehind and case-insensitivity raises RegexpError only on strings with certain characters
 13864,patch test,Rinda multicast test failures due to missing default route
 13999,cygwin ext,Cygwin 環境で ripper_state_lex.rb がコアダンプする
 14049,win core,SEGV svn 60401 require_relative
@@ -127,7 +127,7 @@
 15367,core,IO.select is not resumed when io-object gets closed
 15386,patch core,[PATCH] io.c (rb_io_check_char_readable): do not io_fflush buffered sockets
 15423,core os/arch,fork leapfrog leaks memory on FreeBSD 11.2
-15428,core notbug,Refactor Proc#&gt;&gt; and #&lt;&lt;
+15428,core maybenotbug,Refactor Proc#&gt;&gt; and #&lt;&lt;
 15438,win thread,Threads can&#39;t switch faster than TIME_QUANTUM_(NSEC|USEC|MSEC)
 15499,thread,Breaking behavior on ruby 2.6: rb_thread_call_without_gvl doesn&#39;t invoke unblock_function when used on the main thread 
 15550,win,Windows - gem bin files - can&#39;t run from bash shell
@@ -167,7 +167,7 @@
 17120,core patch,String#start_with? return wrong result for Regexp patterns containing /\K/
 17132,build,vcs.rb doesn&#39;t detect git submodules as vcs
 17142,build os/arch,Ruby fails to build in AIX 
-17146,notbug core,Queue operations are allowed after it is frozen
+17146,maybenotbug core,Queue operations are allowed after it is frozen
 17159,ractor,extend `define_method` for Ractor
 17180,ractor,Ractor and constant referencing
 17196,ractor,Segmentation Fault with Socket#close in Ractors
@@ -229,8 +229,8 @@
 18031,patch tracepoint,Nested TracePoint#enable with define_method target crashes
 18034,os/arch,Segmentation fault fiddle with `--enable-bundled-libffi` and macOS
 18036,fiber,Pthread fibers become invalid on fork - different from normal fibers.
-18049,os/arch build notbug,Cannot build ruby-3.0.2 on NetBSD
-18050,os/arch build notbug,Cannot build ruby-2.7.4 on NetBSD
+18049,os/arch build maybenotbug,Cannot build ruby-3.0.2 on NetBSD
+18050,os/arch build maybenotbug,Cannot build ruby-2.7.4 on NetBSD
 18058,mjit,3.1.0-dev with MJIT enabled Zlib::BufError during `gem install`
 18060,patch core,Infinite loop when b_return TracePoint raises
 18061,os/arch, Execshield test: libruby.so.N.N.N: FAIL: property-note test because no .note.gnu.property section found
@@ -248,7 +248,7 @@
 18142,mjit,Segmentation fault with Ruby 3.0.2
 18144,core,Timeout not working while regular expression match is running
 18152,core,Fix theoretical bug with signals + qsort
-18169,notbug,Local copies of gemified libraries are being released out of sync with their gems
+18169,maybenotbug,Local copies of gemified libraries are being released out of sync with their gems
 18170,patch core,Exception#inspect should not include newlines
 18186,win,SEGV with system command - MinGW?
 18247,core,weird results for `Array#slice` or `Array#[]` with argument of type `Enumerator::ArithmeticSequence`
