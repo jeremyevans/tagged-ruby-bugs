@@ -1,23 +1,23 @@
 <html>
 <head>
-<title>355 Tagged Open Ruby Bugs as of 2022-06-09 00:39:36 +0900</title>
+<title>351 Tagged Open Ruby Bugs as of 2022-06-09 01:05:18 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
 <p class="filter-buttons">Available Tags: <input type="submit" value="core" />
 <input type="submit" value="win" />
 <input type="submit" value="os/arch" />
-<input type="submit" value="patch" />
 <input type="submit" value="build" />
-<input type="submit" value="ractor" />
+<input type="submit" value="patch" />
 <input type="submit" value="maybenotbug" />
+<input type="submit" value="ractor" />
 <input type="submit" value="ext" />
 <input type="submit" value="test" />
 <input type="submit" value="lib" />
-<input type="submit" value="notbug" />
 <input type="submit" value="encoding" />
-<input type="submit" value="thread" />
+<input type="submit" value="notbug" />
 <input type="submit" value="cygwin" />
+<input type="submit" value="thread" />
 <input type="submit" value="regexp" />
 <input type="submit" value="perf" />
 <input type="submit" value="fiber" />
@@ -31,9 +31,9 @@
 <input type="submit" value="unfixable" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">355</span> matched)
+(<span id="matched">351</span> matched)
 <table>
-<caption>355 Tagged Open Ruby Bugs as of 2022-06-09 00:39:36 +0900</caption>
+<caption>351 Tagged Open Ruby Bugs as of 2022-06-09 01:05:18 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -271,13 +271,6 @@
 </td>
 <td>tracepoint</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18750">Segmentation fault on SIGINT when waiting in TracePoint handler</a>
-</td>
-</tr>
-<tr class=" maybenotbug core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18748">18748</a>
-</td>
-<td>maybenotbug core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18748">Range#cover? returns true for beginless range of different type</a>
 </td>
 </tr>
 <tr class=" fiber ">
@@ -770,10 +763,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18170">Exception#inspect should not include newlines</a>
 </td>
 </tr>
-<tr class=" notbug ">
+<tr class=" maybenotbug ">
 <td><a href="https://bugs.ruby-lang.org/issues/18169">18169</a>
 </td>
-<td>notbug</td>
+<td>maybenotbug</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18169">Local copies of gemified libraries are being released out of sync with their gems</a>
 </td>
 </tr>
@@ -861,13 +854,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18080">Syntax error on one-line pattern matching</a>
 </td>
 </tr>
-<tr class=" patch build win ">
-<td><a href="https://bugs.ruby-lang.org/issues/18079">18079</a>
-</td>
-<td>patch build win</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18079">[PATCH] make error for MinGW with Clang/LLVM + LLD</a>
-</td>
-</tr>
 <tr class=" build os/arch ">
 <td><a href="https://bugs.ruby-lang.org/issues/18073">18073</a>
 </td>
@@ -896,17 +882,17 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18058">3.1.0-dev with MJIT enabled Zlib::BufError during `gem install`</a>
 </td>
 </tr>
-<tr class=" os/arch build notbug ">
+<tr class=" os/arch build maybenotbug ">
 <td><a href="https://bugs.ruby-lang.org/issues/18050">18050</a>
 </td>
-<td>os/arch build notbug</td>
+<td>os/arch build maybenotbug</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18050">Cannot build ruby-2.7.4 on NetBSD</a>
 </td>
 </tr>
-<tr class=" os/arch build notbug ">
+<tr class=" os/arch build maybenotbug ">
 <td><a href="https://bugs.ruby-lang.org/issues/18049">18049</a>
 </td>
-<td>os/arch build notbug</td>
+<td>os/arch build maybenotbug</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18049">Cannot build ruby-3.0.2 on NetBSD</a>
 </td>
 </tr>
@@ -1288,13 +1274,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17354">Module#const_source_location is misleading for constants awaiting autoload</a>
 </td>
 </tr>
-<tr class=" patch thread regexp ">
-<td><a href="https://bugs.ruby-lang.org/issues/17349">17349</a>
-</td>
-<td>patch thread regexp</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17349">Rake での並行実行における正規表現マッチングの異常</a>
-</td>
-</tr>
 <tr class=" build notbug ">
 <td><a href="https://bugs.ruby-lang.org/issues/17337">17337</a>
 </td>
@@ -1337,10 +1316,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17159">extend `define_method` for Ractor</a>
 </td>
 </tr>
-<tr class=" notbug core ">
+<tr class=" maybenotbug core ">
 <td><a href="https://bugs.ruby-lang.org/issues/17146">17146</a>
 </td>
-<td>notbug core</td>
+<td>maybenotbug core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17146">Queue operations are allowed after it is frozen</a>
 </td>
 </tr>
@@ -1575,13 +1554,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/15764">Whitespace and control characters should not be permitted in tokens</a>
 </td>
 </tr>
-<tr class=" patch ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/15644">15644</a>
-</td>
-<td>patch ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/15644">ThreadsWait problems with Thread#report_on_exception</a>
-</td>
-</tr>
 <tr class=" core autoload ">
 <td><a href="https://bugs.ruby-lang.org/issues/15599">15599</a>
 </td>
@@ -1617,10 +1589,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/15438">Threads can&#39;t switch faster than TIME_QUANTUM_(NSEC|USEC|MSEC)</a>
 </td>
 </tr>
-<tr class=" core notbug ">
+<tr class=" core maybenotbug ">
 <td><a href="https://bugs.ruby-lang.org/issues/15428">15428</a>
 </td>
-<td>core notbug</td>
+<td>core maybenotbug</td>
 <td><a href="https://bugs.ruby-lang.org/issues/15428">Refactor Proc#&gt;&gt; and #&lt;&lt;</a>
 </td>
 </tr>
@@ -1883,10 +1855,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/13864">Rinda multicast test failures due to missing default route</a>
 </td>
 </tr>
-<tr class=" regexp notbug ">
+<tr class=" regexp ">
 <td><a href="https://bugs.ruby-lang.org/issues/13671">13671</a>
 </td>
-<td>regexp notbug</td>
+<td>regexp</td>
 <td><a href="https://bugs.ruby-lang.org/issues/13671">Regexp with lookbehind and case-insensitivity raises RegexpError only on strings with certain characters</a>
 </td>
 </tr>
