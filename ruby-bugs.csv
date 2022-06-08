@@ -2,7 +2,7 @@
 4040,core,SystemStackError with Hash[*a] for Large _a_
 4173,test,TestProcess#test_wait_and_sigchild が、たまに失敗する
 4434,thread maybenotbug,make test-all &quot;-j10000&quot; のように大きな並列数を与えると異常終了
-5179,patch core,Complex#rationalize and to_r with approximate zeros
+5179,core,Complex#rationalize and to_r with approximate zeros
 5317,core maybenotbug,rubyのヘッダファイルを使った拡張を行う際にoff_tの宣言回避をする事が出来ない。
 5334,ext maybenotbug,Segmentation fault in InternetExplorer IServiceProvider interface
 6351,encoding,transcode table generator does not support multi characters of Unicode
@@ -18,7 +18,6 @@
 8299,core win,Minor error in float parsing
 8444,core,Regexp vars $~ and friends are not thread local
 8445,patch core,IO.open and IO#set_enconding does not support :fallback option
-8677,patch core maybenotbug,$LOAD_PATH did not encoded into the &quot;internal encoding&quot;
 8782,ext,Don&#39;t set rl_getc_function on editline
 8973,patch build,Allow to configure archlibdir for multiarch
 9010,build,./configure --prefix= cannot handle directories with spaces
@@ -42,7 +41,7 @@
 10436,patch ext,ruby -c and ripper inconsistency: m(&amp;nil) {}
 10580,test os/arch,TestProcess#test_deadlock_by_signal_at_forking fails on ARM
 10584,encoding maybenotbug,"String.valid_encoding?, String.ascii_only? fails to account for BOM."
-10855,patch lib,[PATCH] Matrix#inverse returns matrix of integers whenever possible
+10855,patch maybenotbug lib,[PATCH] Matrix#inverse returns matrix of integers whenever possible
 10919,lib,[gem install] installs multipe platforms
 11064,core maybenotbug,#singleton_methods for objects with special singleton_class returns an empty array
 11142,win core,Command line argument parser on windows handles double quotes inconsistently.
@@ -260,7 +259,6 @@
 18277,ext mjit,buffer error (Zlib::BufError) in Zlib::Deflate#deflate when using MJIT
 18281,lib,Ruby 3.1.0: gem uninstall -aIx fails to uninstall debug
 18286,os/arch,Universal arm64/x86_84 binary built on an x86_64 machine segfaults/is killed on arm64
-18294,regexp,error when parsing regexp comment
 18337,parser encoding,Ruby allows zero-width characters in identifiers
 18338,encoding,Encoding.default_external = Encoding::UTF_16BE may add a wrongly-encoded string to $LOADED_FEATURES
 18355,lib,"require(&quot;pathname&quot;) within rack application chnages behaviors of Pathname methods, such as absolute?(), when there are two versions of &#39;pathname&#39; gem installed."
@@ -303,9 +301,8 @@
 18616,build notbug,Error with clang(1) on MacOS due to __declspec()
 18622,maybenotbug core,"const_get still looks in Object, while lexical constant lookup no longer does"
 18623,build,`make runnable` does not work
-18624,patch autoload,"`const_source_location` returns [false, 0] when autoload is defined for the constant"
 18643,patch lib,test-bundler failed on ruby_3_1 CI
-18651,enc,oob access in CP51932 -&gt; CP50220 transcoder
+18651,encoding,oob access in CP51932 -&gt; CP50220 transcoder
 18657,patch lib,IRB raises exception when stdout is a pipe
 18658,backport ext,Need openssl 3 support for Ubuntu 22.04 (Ruby 2.7.x and 3.0.x)
 18661,win core,Net::HTTP behavior changed between 2.6 and 3.1 on windows.
@@ -331,9 +328,10 @@
 18763,build ext,The configure option “--with-openssl-dir” has lower precedence than pkg-config
 18764,build ext,Build Error when Using msys2-mingw64 and Ruby 3.2
 18767,patch core,IO.foreach hangs up when passes limit=0
+18768,patch core,"Inconsistent behavior of IO, StringIO and String each_line methods when return paragraph and chomp: true passed"
+18770,patch core,"Inconsistent behavior of IO/StringIO&#39;s each methods when called with nil as a separator, limit and chomp: true"
 18771,patch core,IO.foreach/.readlines ignores the 4th positional argument
 18780,maybenotbug,Incorrect binding receiver for C API rb_eval_string()
-18781,patch os/arch,MJIT tests failing with Ubuntu focal with gcc-11 and some flags
 18782,autoload,Race conditions in autoload when loading the same feature with multiple threads.
 18783,patch lib,OptionParser should recognize &quot;-&quot; as an optional argument
 18784,patch lib maybenotbug,`FileUtils.rm_f` and `FileUtils.rm_rf` should not mask exceptions
