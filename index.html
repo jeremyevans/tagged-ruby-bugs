@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>357 Tagged Open Ruby Bugs as of 2022-06-07 02:17:54 +0900</title>
+<title>355 Tagged Open Ruby Bugs as of 2022-06-09 00:39:36 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -24,17 +24,16 @@
 <input type="submit" value="mjit" />
 <input type="submit" value="tracepoint" />
 <input type="submit" value="parser" />
-<input type="submit" value="autoload" />
 <input type="submit" value="refine" />
+<input type="submit" value="autoload" />
 <input type="submit" value="backport" />
-<input type="submit" value="enc" />
 <input type="submit" value="jit" />
 <input type="submit" value="unfixable" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">357</span> matched)
+(<span id="matched">355</span> matched)
 <table>
-<caption>357 Tagged Open Ruby Bugs as of 2022-06-07 02:17:54 +0900</caption>
+<caption>355 Tagged Open Ruby Bugs as of 2022-06-09 00:39:36 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -190,13 +189,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18782">Race conditions in autoload when loading the same feature with multiple threads.</a>
 </td>
 </tr>
-<tr class=" patch os/arch ">
-<td><a href="https://bugs.ruby-lang.org/issues/18781">18781</a>
-</td>
-<td>patch os/arch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18781">MJIT tests failing with Ubuntu focal with gcc-11 and some flags</a>
-</td>
-</tr>
 <tr class=" maybenotbug ">
 <td><a href="https://bugs.ruby-lang.org/issues/18780">18780</a>
 </td>
@@ -209,6 +201,20 @@
 </td>
 <td>patch core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18771">IO.foreach/.readlines ignores the 4th positional argument</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18770">18770</a>
+</td>
+<td>patch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18770">Inconsistent behavior of IO/StringIO&#39;s each methods when called with nil as a separator, limit and chomp: true</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18768">18768</a>
+</td>
+<td>patch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18768">Inconsistent behavior of IO, StringIO and String each_line methods when return paragraph and chomp: true passed</a>
 </td>
 </tr>
 <tr class=" patch core ">
@@ -386,10 +392,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18657">IRB raises exception when stdout is a pipe</a>
 </td>
 </tr>
-<tr class=" enc ">
+<tr class=" encoding ">
 <td><a href="https://bugs.ruby-lang.org/issues/18651">18651</a>
 </td>
-<td>enc</td>
+<td>encoding</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18651">oob access in CP51932 -&gt; CP50220 transcoder</a>
 </td>
 </tr>
@@ -398,13 +404,6 @@
 </td>
 <td>patch lib</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18643">test-bundler failed on ruby_3_1 CI</a>
-</td>
-</tr>
-<tr class=" patch autoload ">
-<td><a href="https://bugs.ruby-lang.org/issues/18624">18624</a>
-</td>
-<td>patch autoload</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18624">`const_source_location` returns [false, 0] when autoload is defined for the constant</a>
 </td>
 </tr>
 <tr class=" build ">
@@ -699,13 +698,6 @@
 </td>
 <td>parser encoding</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18337">Ruby allows zero-width characters in identifiers</a>
-</td>
-</tr>
-<tr class=" regexp ">
-<td><a href="https://bugs.ruby-lang.org/issues/18294">18294</a>
-</td>
-<td>regexp</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18294">error when parsing regexp comment</a>
 </td>
 </tr>
 <tr class=" os/arch ">
@@ -2227,10 +2219,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/10919">[gem install] installs multipe platforms</a>
 </td>
 </tr>
-<tr class=" patch lib ">
+<tr class=" patch maybenotbug lib ">
 <td><a href="https://bugs.ruby-lang.org/issues/10855">10855</a>
 </td>
-<td>patch lib</td>
+<td>patch maybenotbug lib</td>
 <td><a href="https://bugs.ruby-lang.org/issues/10855">[PATCH] Matrix#inverse returns matrix of integers whenever possible</a>
 </td>
 </tr>
@@ -2395,13 +2387,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/8782">Don&#39;t set rl_getc_function on editline</a>
 </td>
 </tr>
-<tr class=" patch core maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/8677">8677</a>
-</td>
-<td>patch core maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/8677">$LOAD_PATH did not encoded into the &quot;internal encoding&quot;</a>
-</td>
-</tr>
 <tr class=" patch core ">
 <td><a href="https://bugs.ruby-lang.org/issues/8445">8445</a>
 </td>
@@ -2507,10 +2492,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/5317">rubyのヘッダファイルを使った拡張を行う際にoff_tの宣言回避をする事が出来ない。</a>
 </td>
 </tr>
-<tr class=" patch core ">
+<tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/5179">5179</a>
 </td>
-<td>patch core</td>
+<td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/5179">Complex#rationalize and to_r with approximate zeros</a>
 </td>
 </tr>
