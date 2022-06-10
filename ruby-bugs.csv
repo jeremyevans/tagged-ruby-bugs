@@ -342,7 +342,7 @@
 18801,maybenotbug core,Dead YARV instructions produced when `branchif` is used
 18804,core,Invalid line number for putnil instruction
 18805,core,IO::Buffer is inconsistent when returning a string from an empty buffer
-18806,core,protected methods defined by refinements can&#39;t be called
+18806,patch core,protected methods defined by refinements can&#39;t be called
 18808,build os/arch,Cannot compile ruby 3.1.2 on powerpc64le-linux without disabling the jit features
 18810,maybenotbug core,Make `Kernel#p` interruptable.
 18811,ext os/arch,PTY I/O not working on AIX 7.x
