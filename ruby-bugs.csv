@@ -39,7 +39,6 @@
 10416,build,Create mechanism for updating of Unicode data files downstreams when we want
 10436,patch ext,ruby -c and ripper inconsistency: m(&amp;nil) {}
 10580,test os/arch,TestProcess#test_deadlock_by_signal_at_forking fails on ARM
-10855,patch maybenotbug lib,[PATCH] Matrix#inverse returns matrix of integers whenever possible
 10919,lib,[gem install] installs multipe platforms
 11064,core maybenotbug,#singleton_methods for objects with special singleton_class returns an empty array
 11142,win core,Command line argument parser on windows handles double quotes inconsistently.
@@ -217,7 +216,6 @@
 18012,regexp,Case-insensitive character classes can only match multiple code points when top-level character class is not negated
 18013,regexp,Unexpected results when mxiing negated character classes and case-folding
 18024,ractor,Ractor crashes when connections are closed in multiple Ractors
-18031,patch tracepoint,Nested TracePoint#enable with define_method target crashes
 18034,os/arch,Segmentation fault fiddle with `--enable-bundled-libffi` and macOS
 18036,fiber,Pthread fibers become invalid on fork - different from normal fibers.
 18049,os/arch build maybenotbug feedback,Cannot build ruby-3.0.2 on NetBSD
@@ -314,7 +312,6 @@
 18764,build ext,Build Error when Using msys2-mingw64 and Ruby 3.2
 18768,patch core,"Inconsistent behavior of IO, StringIO and String each_line methods when return paragraph and chomp: true passed"
 18770,patch core,"Inconsistent behavior of IO/StringIO&#39;s each methods when called with nil as a separator, limit and chomp: true"
-18780,maybenotbug,Incorrect binding receiver for C API rb_eval_string()
 18782,autoload,Race conditions in autoload when loading the same feature with multiple threads.
 18783,patch lib,OptionParser should recognize &quot;-&quot; as an optional argument
 18784,patch lib maybenotbug,`FileUtils.rm_f` and `FileUtils.rm_rf` should not mask exceptions
@@ -335,3 +332,5 @@
 18813,core patch,Let Module#autoload be strict about the autoloaded constant
 18816,ractor os/arch,Ractor segfaulting MacOS 12.4 (aarch64 / M1 processor)
 18818,fiber,SEGV (Fiber scheduler?)
+18826,patch core,"Symbol#to_proc inconsistent, sometimes calls private methods"
+18827,patch encoding,`__ENCODING__` is not set to the source encoding when saving script lines
