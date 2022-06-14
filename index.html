@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>337 Tagged Open Ruby Bugs as of 2022-06-11 01:19:43 +0900</title>
+<title>336 Tagged Open Ruby Bugs as of 2022-06-15 04:54:55 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -10,8 +10,8 @@
 <input type="submit" value="build" />
 <input type="submit" value="patch" />
 <input type="submit" value="ractor" />
-<input type="submit" value="maybenotbug" />
 <input type="submit" value="feedback" />
+<input type="submit" value="maybenotbug" />
 <input type="submit" value="test" />
 <input type="submit" value="ext" />
 <input type="submit" value="lib" />
@@ -23,8 +23,8 @@
 <input type="submit" value="perf" />
 <input type="submit" value="fiber" />
 <input type="submit" value="mjit" />
-<input type="submit" value="tracepoint" />
 <input type="submit" value="parser" />
+<input type="submit" value="tracepoint" />
 <input type="submit" value="refine" />
 <input type="submit" value="autoload" />
 <input type="submit" value="backport" />
@@ -32,9 +32,9 @@
 <input type="submit" value="unfixable" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">337</span> matched)
+(<span id="matched">336</span> matched)
 <table>
-<caption>337 Tagged Open Ruby Bugs as of 2022-06-11 01:19:43 +0900</caption>
+<caption>336 Tagged Open Ruby Bugs as of 2022-06-15 04:54:55 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -43,6 +43,20 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" patch encoding ">
+<td><a href="https://bugs.ruby-lang.org/issues/18827">18827</a>
+</td>
+<td>patch encoding</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18827">`__ENCODING__` is not set to the source encoding when saving script lines</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18826">18826</a>
+</td>
+<td>patch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18826">Symbol#to_proc inconsistent, sometimes calls private methods</a>
+</td>
+</tr>
 <tr class=" fiber ">
 <td><a href="https://bugs.ruby-lang.org/issues/18818">18818</a>
 </td>
@@ -181,13 +195,6 @@
 </td>
 <td>autoload</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18782">Race conditions in autoload when loading the same feature with multiple threads.</a>
-</td>
-</tr>
-<tr class=" maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/18780">18780</a>
-</td>
-<td>maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18780">Incorrect binding receiver for C API rb_eval_string()</a>
 </td>
 </tr>
 <tr class=" patch core ">
@@ -860,13 +867,6 @@
 </td>
 <td>os/arch</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18034">Segmentation fault fiddle with `--enable-bundled-libffi` and macOS</a>
-</td>
-</tr>
-<tr class=" patch tracepoint ">
-<td><a href="https://bugs.ruby-lang.org/issues/18031">18031</a>
-</td>
-<td>patch tracepoint</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18031">Nested TracePoint#enable with define_method target crashes</a>
 </td>
 </tr>
 <tr class=" ractor ">
@@ -2106,13 +2106,6 @@
 </td>
 <td>lib</td>
 <td><a href="https://bugs.ruby-lang.org/issues/10919">[gem install] installs multipe platforms</a>
-</td>
-</tr>
-<tr class=" patch maybenotbug lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/10855">10855</a>
-</td>
-<td>patch maybenotbug lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/10855">[PATCH] Matrix#inverse returns matrix of integers whenever possible</a>
 </td>
 </tr>
 <tr class=" test os/arch ">
