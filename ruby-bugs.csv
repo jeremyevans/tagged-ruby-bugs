@@ -312,6 +312,7 @@
 18764,build ext,Build Error when Using msys2-mingw64 and Ruby 3.2
 18768,patch core,"Inconsistent behavior of IO, StringIO and String each_line methods when return paragraph and chomp: true passed"
 18770,patch core,"Inconsistent behavior of IO/StringIO&#39;s each methods when called with nil as a separator, limit and chomp: true"
+18780,core,Incorrect binding receiver for C API rb_eval_string()
 18782,autoload,Race conditions in autoload when loading the same feature with multiple threads.
 18783,patch lib,OptionParser should recognize &quot;-&quot; as an optional argument
 18784,patch lib maybenotbug,`FileUtils.rm_f` and `FileUtils.rm_rf` should not mask exceptions
@@ -334,3 +335,4 @@
 18818,fiber,SEGV (Fiber scheduler?)
 18826,patch core,"Symbol#to_proc inconsistent, sometimes calls private methods"
 18827,patch encoding,`__ENCODING__` is not set to the source encoding when saving script lines
+18829,patch core,GC_COMPACTION_SUPPORTED macro should be set and detected automatically.
