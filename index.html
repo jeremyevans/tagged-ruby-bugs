@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>338 Tagged Open Ruby Bugs as of 2022-06-16 00:24:37 +0900</title>
+<title>334 Tagged Open Ruby Bugs as of 2022-06-21 07:12:26 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -32,9 +32,9 @@
 <input type="submit" value="unfixable" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">338</span> matched)
+(<span id="matched">334</span> matched)
 <table>
-<caption>338 Tagged Open Ruby Bugs as of 2022-06-16 00:24:37 +0900</caption>
+<caption>334 Tagged Open Ruby Bugs as of 2022-06-21 07:12:26 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -43,18 +43,25 @@
 </tr>
 </thead>
 <tbody>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18829">18829</a>
+<tr class=" lib ">
+<td><a href="https://bugs.ruby-lang.org/issues/18842">18842</a>
 </td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18829">GC_COMPACTION_SUPPORTED macro should be set and detected automatically.</a>
+<td>lib</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18842">Ruby&#39;s Resolv library does not handle correctly the `NODATA` case</a>
 </td>
 </tr>
-<tr class=" patch encoding ">
-<td><a href="https://bugs.ruby-lang.org/issues/18827">18827</a>
+<tr class=" maybenotbug core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18837">18837</a>
 </td>
-<td>patch encoding</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18827">`__ENCODING__` is not set to the source encoding when saving script lines</a>
+<td>maybenotbug core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18837">Not possible to evaluate expression with numbered parameters in it</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18832">18832</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18832">Suspicious superclass mismatch</a>
 </td>
 </tr>
 <tr class=" patch core ">
@@ -78,13 +85,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18816">Ractor segfaulting MacOS 12.4 (aarch64 / M1 processor)</a>
 </td>
 </tr>
-<tr class=" core patch ">
-<td><a href="https://bugs.ruby-lang.org/issues/18813">18813</a>
-</td>
-<td>core patch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18813">Let Module#autoload be strict about the autoloaded constant</a>
-</td>
-</tr>
 <tr class=" ext os/arch feedback ">
 <td><a href="https://bugs.ruby-lang.org/issues/18811">18811</a>
 </td>
@@ -104,13 +104,6 @@
 </td>
 <td>build os/arch</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18808">Cannot compile ruby 3.1.2 on powerpc64le-linux without disabling the jit features</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18806">18806</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18806">protected methods defined by refinements can&#39;t be called</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -225,6 +218,13 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18768">Inconsistent behavior of IO, StringIO and String each_line methods when return paragraph and chomp: true passed</a>
 </td>
 </tr>
+<tr class=" patch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18767">18767</a>
+</td>
+<td>patch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18767">IO.foreach hangs up when passes limit=0</a>
+</td>
+</tr>
 <tr class=" build ext ">
 <td><a href="https://bugs.ruby-lang.org/issues/18764">18764</a>
 </td>
@@ -314,13 +314,6 @@
 </td>
 <td>test</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18731">Parallel test-all sometimes does not run at all some tests</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18729">18729</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18729">Method#owner and UnboundMethod#owner are incorrect after using Module#public/protected/private</a>
 </td>
 </tr>
 <tr class=" cygwin build ">
@@ -1282,13 +1275,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17132">vcs.rb doesn&#39;t detect git submodules as vcs</a>
 </td>
 </tr>
-<tr class=" core patch ">
-<td><a href="https://bugs.ruby-lang.org/issues/17120">17120</a>
-</td>
-<td>core patch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17120">String#start_with? return wrong result for Regexp patterns containing /\K/</a>
-</td>
-</tr>
 <tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/17037">17037</a>
 </td>
@@ -1975,13 +1961,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/12179">Build failure due to VPATH expansion</a>
 </td>
 </tr>
-<tr class=" patch lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/12055">12055</a>
-</td>
-<td>patch lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/12055">`NET::HTTPResponse` is not deflating responses with custom `Content-Range` header</a>
-</td>
-</tr>
 <tr class=" win core ">
 <td><a href="https://bugs.ruby-lang.org/issues/12040">12040</a>
 </td>
@@ -2043,13 +2022,6 @@
 </td>
 <td>core os/arch</td>
 <td><a href="https://bugs.ruby-lang.org/issues/11514">AIX6.1 - Ruby 2.2.3 - Segmentation fault in :byteslice</a>
-</td>
-</tr>
-<tr class=" patch lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/11450">11450</a>
-</td>
-<td>patch lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/11450">HTTPHeader.content_range throws error on non-byte units</a>
 </td>
 </tr>
 <tr class=" win thread ">
@@ -2227,10 +2199,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/9366">&quot;make -j32 check TESTS=-j32&quot; occasionally fails on rubygems/specification</a>
 </td>
 </tr>
-<tr class=" patch win core ">
+<tr class=" patch win core feedback ">
 <td><a href="https://bugs.ruby-lang.org/issues/9208">9208</a>
 </td>
-<td>patch win core</td>
+<td>patch win core feedback</td>
 <td><a href="https://bugs.ruby-lang.org/issues/9208">Win32 ANSI color no longer works since revision 43331</a>
 </td>
 </tr>
@@ -2255,10 +2227,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/9010">./configure --prefix= cannot handle directories with spaces</a>
 </td>
 </tr>
-<tr class=" patch build ">
+<tr class=" patch build feedback ">
 <td><a href="https://bugs.ruby-lang.org/issues/8973">8973</a>
 </td>
-<td>patch build</td>
+<td>patch build feedback</td>
 <td><a href="https://bugs.ruby-lang.org/issues/8973">Allow to configure archlibdir for multiarch</a>
 </td>
 </tr>
