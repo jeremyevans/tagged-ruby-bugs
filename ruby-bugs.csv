@@ -19,11 +19,11 @@
 8444,core,Regexp vars $~ and friends are not thread local
 8445,patch core,IO.open and IO#set_enconding does not support :fallback option
 8782,ext,Don&#39;t set rl_getc_function on editline
-8973,patch build,Allow to configure archlibdir for multiarch
+8973,patch build feedback,Allow to configure archlibdir for multiarch
 9010,build,./configure --prefix= cannot handle directories with spaces
 9115,patch lib,Logger traps all exceptions; breaks Timeout
 9189,win encoding,Build failure on Windows in case of nonascii TEMP environment.
-9208,patch win core,Win32 ANSI color no longer works since revision 43331
+9208,patch win core feedback,Win32 ANSI color no longer works since revision 43331
 9366,test,&quot;make -j32 check TESTS=-j32&quot; occasionally fails on rubygems/specification
 9409,cygwin encoding,Cygwin で &quot;filesystem&quot; の encoding が正しくないケース
 9414,win encoding maybenotbug feedback,strftime returns incorrectly encoded string
@@ -49,7 +49,6 @@
 11269,core,ruby_init_setproctitle() should be called before require_libraries()
 11410,win ext encoding feedback,Win32 Registry enumeration performs unnecessary string re-encoding which cause UndefinedConversionError exceptions
 11438,win thread,"native_thread_init_stack() get machine.stack_start unequal to thread&#39;s stack start address, x86 win32"
-11450,patch lib,HTTPHeader.content_range throws error on non-byte units
 11514,core os/arch,AIX6.1 - Ruby 2.2.3 - Segmentation fault in :byteslice
 11526,patch lib,Streaming HTTP requests are not idempotent and should not be retried
 11531,lib maybenotbug,IPAddr#== implements wrong logic
@@ -59,7 +58,6 @@
 11808,core,Different behavior between Enumerable#grep and Array#grep
 11840,cygwin test,Error with &quot;make check&quot; on Cygwin
 12040,win core,[Win32] File.stat fails on a mounted volume
-12055,patch lib,`NET::HTTPResponse` is not deflating responses with custom `Content-Range` header
 12179,build,Build failure due to VPATH expansion
 12280,win core,"IO.copy_stream(IO, IO) fails with &quot;pread() not implemented&quot;"
 12436,patch win core,newline argument of File.open seems not respected on Windows
@@ -158,7 +156,6 @@
 16997,core win,IO#gets converts some \r\n to \n with universal_newline: false
 17008,mjit win feedback,JIT enabled on Windows can cause constant conhost pop-ups
 17037,core,rounding of Rational#to_f
-17120,core patch,String#start_with? return wrong result for Regexp patterns containing /\K/
 17132,build feedback,vcs.rb doesn&#39;t detect git submodules as vcs
 17142,build os/arch,Ruby fails to build in AIX 
 17146,maybenotbug core,Queue operations are allowed after it is frozen
@@ -296,7 +293,6 @@
 18678,notbug,Crash on Mac - vm_call0_cfunc_with_frame
 18686,regexp,Regexp supporting unexpected age properties in Ruby &lt; 3.2
 18727,cygwin build,Make failed on x86_64-cygwin (LoadError)
-18729,patch core,Method#owner and UnboundMethod#owner are incorrect after using Module#public/protected/private
 18731,test,Parallel test-all sometimes does not run at all some tests
 18733,os/arch,Ruby GC problems cause performance issue with Ractor
 18737,notbug,Windows &#39;require&#39; is case independent
@@ -310,6 +306,7 @@
 18760,ractor perf,Ractors vs &quot;skynet&quot; microbenchmark
 18763,build ext,The configure option “--with-openssl-dir” has lower precedence than pkg-config
 18764,build ext,Build Error when Using msys2-mingw64 and Ruby 3.2
+18767,patch core,IO.foreach hangs up when passes limit=0
 18768,patch core,"Inconsistent behavior of IO, StringIO and String each_line methods when return paragraph and chomp: true passed"
 18770,patch core,"Inconsistent behavior of IO/StringIO&#39;s each methods when called with nil as a separator, limit and chomp: true"
 18780,core,Incorrect binding receiver for C API rb_eval_string()
@@ -326,13 +323,12 @@
 18799,maybenotbug refine,Refinement#import_methods vs attr_reader
 18804,core,Invalid line number for putnil instruction
 18805,core,IO::Buffer is inconsistent when returning a string from an empty buffer
-18806,patch core,protected methods defined by refinements can&#39;t be called
 18808,build os/arch,Cannot compile ruby 3.1.2 on powerpc64le-linux without disabling the jit features
 18810,maybenotbug core,Make `Kernel#p` interruptable.
 18811,ext os/arch feedback,PTY I/O not working on AIX 7.x
-18813,core patch,Let Module#autoload be strict about the autoloaded constant
 18816,ractor os/arch,Ractor segfaulting MacOS 12.4 (aarch64 / M1 processor)
 18818,fiber,SEGV (Fiber scheduler?)
 18826,patch core,"Symbol#to_proc inconsistent, sometimes calls private methods"
-18827,patch encoding,`__ENCODING__` is not set to the source encoding when saving script lines
-18829,patch core,GC_COMPACTION_SUPPORTED macro should be set and detected automatically.
+18832,core,Suspicious superclass mismatch
+18837,maybenotbug core,Not possible to evaluate expression with numbered parameters in it
+18842,lib,Ruby&#39;s Resolv library does not handle correctly the `NODATA` case
