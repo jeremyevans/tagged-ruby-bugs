@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>315 Tagged Open Ruby Bugs as of 2022-07-15 05:36:05 +0900</title>
+<title>318 Tagged Open Ruby Bugs as of 2022-07-28 07:31:32 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -11,13 +11,13 @@
 <input type="submit" value="ractor" />
 <input type="submit" value="test" />
 <input type="submit" value="maybenotbug" />
+<input type="submit" value="lib" />
 <input type="submit" value="patch" />
 <input type="submit" value="ext" />
-<input type="submit" value="lib" />
 <input type="submit" value="encoding" />
-<input type="submit" value="cygwin" />
-<input type="submit" value="thread" />
 <input type="submit" value="notbug" />
+<input type="submit" value="thread" />
+<input type="submit" value="cygwin" />
 <input type="submit" value="regexp" />
 <input type="submit" value="perf" />
 <input type="submit" value="fiber" />
@@ -31,9 +31,9 @@
 <input type="submit" value="unfixable" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">315</span> matched)
+(<span id="matched">318</span> matched)
 <table>
-<caption>315 Tagged Open Ruby Bugs as of 2022-07-15 05:36:05 +0900</caption>
+<caption>318 Tagged Open Ruby Bugs as of 2022-07-28 07:31:32 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -42,6 +42,76 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" lib ">
+<td><a href="https://bugs.ruby-lang.org/issues/18941">18941</a>
+</td>
+<td>lib</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18941">Endless loop with a memory leak in FileUtils::mkpath</a>
+</td>
+</tr>
+<tr class=" ractor ">
+<td><a href="https://bugs.ruby-lang.org/issues/18940">18940</a>
+</td>
+<td>ractor</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18940">Ruby Ractor fails with IOError when handling higher concurrency</a>
+</td>
+</tr>
+<tr class=" notbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/18937">18937</a>
+</td>
+<td>notbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18937">Inconsistent definitions of Complex#&lt;=&gt; and Numeric#&lt;=&gt; with others</a>
+</td>
+</tr>
+<tr class=" ractor maybenotbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/18933">18933</a>
+</td>
+<td>ractor maybenotbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18933">Dir.tmpdir implemented in non-Ractor-safe manner</a>
+</td>
+</tr>
+<tr class=" win ">
+<td><a href="https://bugs.ruby-lang.org/issues/18932">18932</a>
+</td>
+<td>win</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18932">Ruby 3.1 - Allow building with VS 2022</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18931">18931</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18931">Inconsistent handling of invalid codepoints in String#lstrip and String#rstrip</a>
+</td>
+</tr>
+<tr class=" win ">
+<td><a href="https://bugs.ruby-lang.org/issues/18924">18924</a>
+</td>
+<td>win</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18924">lstrlen and lstrcat still in use</a>
+</td>
+</tr>
+<tr class=" win ">
+<td><a href="https://bugs.ruby-lang.org/issues/18923">18923</a>
+</td>
+<td>win</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18923">Dir.glob Errno::ENAMETOOLONG - Caused by outdated logic in open_dir_handle (win32.c)</a>
+</td>
+</tr>
+<tr class=" ractor notbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/18919">18919</a>
+</td>
+<td>ractor notbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18919">Ractor: can&#39;t share #Method objects</a>
+</td>
+</tr>
+<tr class=" build ">
+<td><a href="https://bugs.ruby-lang.org/issues/18918">18918</a>
+</td>
+<td>build</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18918">Can&#39;t compile ruby master with AFL ASAN</a>
+</td>
+</tr>
 <tr class=" test os/arch ">
 <td><a href="https://bugs.ruby-lang.org/issues/18914">18914</a>
 </td>
@@ -63,32 +133,11 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18911">Process._fork hook point is not called when Process.daemon is used</a>
 </td>
 </tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18909">18909</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18909">ARGF.readlines reads more than current file</a>
-</td>
-</tr>
 <tr class=" lib ">
 <td><a href="https://bugs.ruby-lang.org/issues/18908">18908</a>
 </td>
 <td>lib</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18908">Allow username and password to be extracted from the http_proxy variable on Windows</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18907">18907</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18907">rb_profile_frames output includes dummy main Thread frame</a>
-</td>
-</tr>
-<tr class=" maybenotbug core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18905">18905</a>
-</td>
-<td>maybenotbug core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18905">:&quot;@=&quot;.inspect is non-evaluatable</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -138,13 +187,6 @@
 </td>
 <td>lib</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18842">Ruby&#39;s Resolv library does not handle correctly the `NODATA` case</a>
-</td>
-</tr>
-<tr class=" maybenotbug core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18837">18837</a>
-</td>
-<td>maybenotbug core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18837">Not possible to evaluate expression with numbered parameters in it</a>
 </td>
 </tr>
 <tr class=" patch core ">
@@ -267,20 +309,6 @@
 </td>
 </tr>
 <tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18770">18770</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18770">Inconsistent behavior of IO/StringIO&#39;s each methods when called with nil as a separator, limit and chomp: true</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18768">18768</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18768">Inconsistent behavior of IO, StringIO and String each_line methods when return paragraph and chomp: true passed</a>
-</td>
-</tr>
-<tr class=" patch core ">
 <td><a href="https://bugs.ruby-lang.org/issues/18767">18767</a>
 </td>
 <td>patch core</td>
@@ -369,13 +397,6 @@
 </td>
 <td>test</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18731">Parallel test-all sometimes does not run at all some tests</a>
-</td>
-</tr>
-<tr class=" cygwin build ">
-<td><a href="https://bugs.ruby-lang.org/issues/18727">18727</a>
-</td>
-<td>cygwin build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18727">Make failed on x86_64-cygwin (LoadError)</a>
 </td>
 </tr>
 <tr class=" regexp ">
