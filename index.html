@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>318 Tagged Open Ruby Bugs as of 2022-07-28 07:31:32 +0900</title>
+<title>322 Tagged Open Ruby Bugs as of 2022-08-10 01:55:26 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -11,8 +11,8 @@
 <input type="submit" value="ractor" />
 <input type="submit" value="test" />
 <input type="submit" value="maybenotbug" />
-<input type="submit" value="lib" />
 <input type="submit" value="patch" />
+<input type="submit" value="lib" />
 <input type="submit" value="ext" />
 <input type="submit" value="encoding" />
 <input type="submit" value="notbug" />
@@ -31,9 +31,9 @@
 <input type="submit" value="unfixable" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">318</span> matched)
+(<span id="matched">322</span> matched)
 <table>
-<caption>318 Tagged Open Ruby Bugs as of 2022-07-28 07:31:32 +0900</caption>
+<caption>322 Tagged Open Ruby Bugs as of 2022-08-10 01:55:26 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -42,6 +42,48 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" patch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18960">18960</a>
+</td>
+<td>patch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18960">Module#using raises RuntimeError when called at toplevel from wrapped script</a>
+</td>
+</tr>
+<tr class=" maybenotbug core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18958">18958</a>
+</td>
+<td>maybenotbug core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18958">Kernel#sprintf doesn&#39;t apply format sequence in some encodings</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18956">18956</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18956">Kernel#sprintf - %c handles negative Integer argument in a confusing way</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18955">18955</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18955">Kernel#sprintf - %c ignores a non-ASCII character&#39;s encoding</a>
+</td>
+</tr>
+<tr class=" win core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18947">18947</a>
+</td>
+<td>win core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18947">Unexpected Errno::ENAMETOOLONG on Windows</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18945">18945</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18945">node_id is not initialized but it is used leading to UB</a>
+</td>
+</tr>
 <tr class=" lib ">
 <td><a href="https://bugs.ruby-lang.org/issues/18941">18941</a>
 </td>
@@ -70,10 +112,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18933">Dir.tmpdir implemented in non-Ractor-safe manner</a>
 </td>
 </tr>
-<tr class=" win ">
+<tr class=" win build ">
 <td><a href="https://bugs.ruby-lang.org/issues/18932">18932</a>
 </td>
-<td>win</td>
+<td>win build</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18932">Ruby 3.1 - Allow building with VS 2022</a>
 </td>
 </tr>
@@ -124,13 +166,6 @@
 </td>
 <td>build os/arch</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18912">Build failure with macOS 13 (Ventura) Beta</a>
-</td>
-</tr>
-<tr class=" notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/18911">18911</a>
-</td>
-<td>notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18911">Process._fork hook point is not called when Process.daemon is used</a>
 </td>
 </tr>
 <tr class=" lib ">
@@ -327,13 +362,6 @@
 </td>
 <td>build ext</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18763">The configure option “--with-openssl-dir” has lower precedence than pkg-config</a>
-</td>
-</tr>
-<tr class=" ractor perf ">
-<td><a href="https://bugs.ruby-lang.org/issues/18760">18760</a>
-</td>
-<td>ractor perf</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18760">Ractors vs &quot;skynet&quot; microbenchmark</a>
 </td>
 </tr>
 <tr class=" backport test os/arch ">
