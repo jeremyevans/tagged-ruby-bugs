@@ -74,7 +74,6 @@
 13571,win encoding,"Script arguments, encoding, windows / MinGW"
 13644,win test,Windows - Setting Time.now
 13671,regexp,Regexp with lookbehind and case-insensitivity raises RegexpError only on strings with certain characters
-13864,patch test,Rinda multicast test failures due to missing default route
 13999,cygwin ext,Cygwin 環境で ripper_state_lex.rb がコアダンプする
 14049,win core,SEGV svn 60401 require_relative
 14064,test,test-all with and without -j - incorrect assertions and missing test methods
@@ -132,7 +131,6 @@
 16820,notbug,LEGAL is out of sync
 16829,maybenotbug fiber,Exceptions raised from within an enumerated method lose part of their stacktrace
 16836,notbug patch build,configure-time LDFLAGS leak into ruby pkg-config file
-16842,encoding,`inspect` prints the UTF-8 character U+0085 (NEXT LINE) verbatim even though it is not printable
 16905,build os/arch,Ruby required to build Ruby on Haiku?
 16920,os/arch thread,TestThread#test_signal_at_join fails on aarch64
 16927,encoding,String#tr won&#39;t return the expected result for some sign with diacritics
@@ -210,7 +208,6 @@
 18152,core,Fix theoretical bug with signals + qsort
 18169,maybenotbug,Local copies of gemified libraries are being released out of sync with their gems
 18186,win,SEGV with system command - MinGW?
-18247,core,weird results for `Array#slice` or `Array#[]` with argument of type `Enumerator::ArithmeticSequence`
 18255,core,ioctl zeroes the last buffer byte
 18257,os/arch core,rb_mRubyVMFrozenCore is broken by GC run
 18258,ractor maybenotbug,Ractor.shareable? can be slow and mutates internal object flags.
@@ -265,6 +262,7 @@
 18677,ext,BigDecimal#power (**) returns FloatDomainError when passing an infinite parameter
 18678,notbug,Crash on Mac - vm_call0_cfunc_with_frame
 18686,regexp,Regexp supporting unexpected age properties in Ruby &lt; 3.2
+18729,patch core,Method#owner and UnboundMethod#owner are incorrect after using Module#public/protected/private
 18731,test,Parallel test-all sometimes does not run at all some tests
 18733,os/arch,Ruby GC problems cause performance issue with Ractor
 18737,notbug,Windows &#39;require&#39; is case independent
@@ -293,7 +291,6 @@
 18808,build os/arch,Cannot compile ruby 3.1.2 on powerpc64le-linux without disabling the jit features
 18810,maybenotbug core,Make `Kernel#p` interruptable.
 18818,fiber,SEGV (Fiber scheduler?)
-18826,patch core,"Symbol#to_proc inconsistent, sometimes calls private methods"
 18842,lib,Ruby&#39;s Resolv library does not handle correctly the `NODATA` case
 18878,parser,parse.y: Foo::Bar {} is inconsistently rejected
 18880,win core,IO#sysread on Windows does not validate arguments
@@ -320,3 +317,6 @@
 18956,core,Kernel#sprintf - %c handles negative Integer argument in a confusing way
 18958,maybenotbug core,Kernel#sprintf doesn&#39;t apply format sequence in some encodings
 18960,patch core,Module#using raises RuntimeError when called at toplevel from wrapped script
+18963,ext,Ripper.tokenize(code).join != code when heredoc and multiline string is on the same line
+18966,parser,Strange behavior when numbered parameters and method definition are both used in a block
+18967,maybenotbug,Segmentation fault in stackprof with Ruby 2.7.6
