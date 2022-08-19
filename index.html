@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>322 Tagged Open Ruby Bugs as of 2022-08-10 01:55:26 +0900</title>
+<title>322 Tagged Open Ruby Bugs as of 2022-08-20 01:10:22 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -9,19 +9,19 @@
 <input type="submit" value="os/arch" />
 <input type="submit" value="build" />
 <input type="submit" value="ractor" />
-<input type="submit" value="test" />
 <input type="submit" value="maybenotbug" />
-<input type="submit" value="patch" />
-<input type="submit" value="lib" />
+<input type="submit" value="test" />
 <input type="submit" value="ext" />
+<input type="submit" value="lib" />
+<input type="submit" value="patch" />
 <input type="submit" value="encoding" />
 <input type="submit" value="notbug" />
 <input type="submit" value="thread" />
 <input type="submit" value="cygwin" />
 <input type="submit" value="regexp" />
 <input type="submit" value="perf" />
-<input type="submit" value="fiber" />
 <input type="submit" value="parser" />
+<input type="submit" value="fiber" />
 <input type="submit" value="mjit" />
 <input type="submit" value="tracepoint" />
 <input type="submit" value="autoload" />
@@ -33,7 +33,7 @@
 <input id="filter" type="text" size="80" />
 (<span id="matched">322</span> matched)
 <table>
-<caption>322 Tagged Open Ruby Bugs as of 2022-08-10 01:55:26 +0900</caption>
+<caption>322 Tagged Open Ruby Bugs as of 2022-08-20 01:10:22 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -42,6 +42,27 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" maybenotbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/18967">18967</a>
+</td>
+<td>maybenotbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18967">Segmentation fault in stackprof with Ruby 2.7.6</a>
+</td>
+</tr>
+<tr class=" parser ">
+<td><a href="https://bugs.ruby-lang.org/issues/18966">18966</a>
+</td>
+<td>parser</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18966">Strange behavior when numbered parameters and method definition are both used in a block</a>
+</td>
+</tr>
+<tr class=" ext ">
+<td><a href="https://bugs.ruby-lang.org/issues/18963">18963</a>
+</td>
+<td>ext</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18963">Ripper.tokenize(code).join != code when heredoc and multiline string is on the same line</a>
+</td>
+</tr>
 <tr class=" patch core ">
 <td><a href="https://bugs.ruby-lang.org/issues/18960">18960</a>
 </td>
@@ -222,13 +243,6 @@
 </td>
 <td>lib</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18842">Ruby&#39;s Resolv library does not handle correctly the `NODATA` case</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18826">18826</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18826">Symbol#to_proc inconsistent, sometimes calls private methods</a>
 </td>
 </tr>
 <tr class=" fiber ">
@@ -425,6 +439,13 @@
 </td>
 <td>test</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18731">Parallel test-all sometimes does not run at all some tests</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18729">18729</a>
+</td>
+<td>patch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18729">Method#owner and UnboundMethod#owner are incorrect after using Module#public/protected/private</a>
 </td>
 </tr>
 <tr class=" regexp ">
@@ -803,13 +824,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18255">ioctl zeroes the last buffer byte</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18247">18247</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18247">weird results for `Array#slice` or `Array#[]` with argument of type `Enumerator::ArithmeticSequence`</a>
 </td>
 </tr>
 <tr class=" win ">
@@ -1351,13 +1365,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16905">Ruby required to build Ruby on Haiku?</a>
 </td>
 </tr>
-<tr class=" encoding ">
-<td><a href="https://bugs.ruby-lang.org/issues/16842">16842</a>
-</td>
-<td>encoding</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16842">`inspect` prints the UTF-8 character U+0085 (NEXT LINE) verbatim even though it is not printable</a>
-</td>
-</tr>
 <tr class=" notbug patch build ">
 <td><a href="https://bugs.ruby-lang.org/issues/16836">16836</a>
 </td>
@@ -1755,13 +1762,6 @@
 </td>
 <td>cygwin ext</td>
 <td><a href="https://bugs.ruby-lang.org/issues/13999">Cygwin 環境で ripper_state_lex.rb がコアダンプする</a>
-</td>
-</tr>
-<tr class=" patch test ">
-<td><a href="https://bugs.ruby-lang.org/issues/13864">13864</a>
-</td>
-<td>patch test</td>
-<td><a href="https://bugs.ruby-lang.org/issues/13864">Rinda multicast test failures due to missing default route</a>
 </td>
 </tr>
 <tr class=" regexp ">
