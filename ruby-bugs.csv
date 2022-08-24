@@ -52,7 +52,6 @@
 12040,win core,[Win32] File.stat fails on a mounted volume
 12179,build,Build failure due to VPATH expansion
 12280,win core,"IO.copy_stream(IO, IO) fails with &quot;pread() not implemented&quot;"
-12436,patch win core,newline argument of File.open seems not respected on Windows
 12442,cygwin core,TestArgf#test_textmode fails on cygwin
 12444,cygwin core,Segmentation fault when running TestException#test_machine_stackoverflow on cygwin
 12445,cygwin thread,Testing TestIO#test_open_fifo_does_not_block_other_threads results in deadlock on cygwin
@@ -227,7 +226,6 @@
 18412,ractor,Segfault in test_ractor.rb
 18413,build os/arch,Segfault in `ripper/lexer.rb`
 18429,os/arch build,Configure ruby-3.0.3 on Solaris 10 Unknown keyword &#39;URL&#39; in &#39;./ruby.tmp.pc&#39;
-18435,patch core,Calling `protected` on ancestor method changes result of `instance_methods(false)`
 18444,os/arch core,Trapped TSTP causes a locking deadlock in 3.0.3 onward
 18454,perf jit,YJIT slowing down key Discourse benchmarks
 18455,core perf,`IO#close` has poor performance and difficult to understand semantics.
@@ -245,7 +243,7 @@
 18553,core,Memory leak on compiling method call with kwargs
 18567,notbug,Depending on default gems in stdlib gems when not needed considered harmful
 18572,perf core,Performance regression when invoking refined methods
-18580,maybenotbug,Range#include? inconsistency for beginless String ranges
+18580,patch core,Range#include? inconsistency for beginless String ranges
 18601,encoding,Invalid byte sequences in Big5 encodings
 18605,win core,Fails to run on (newer) 32bit Windows with ucrt
 18608,build,`require&#39;: cannot load such file -- ripper (LoadError) after `make distclean`
@@ -262,20 +260,17 @@
 18677,ext,BigDecimal#power (**) returns FloatDomainError when passing an infinite parameter
 18678,notbug,Crash on Mac - vm_call0_cfunc_with_frame
 18686,regexp,Regexp supporting unexpected age properties in Ruby &lt; 3.2
-18729,patch core,Method#owner and UnboundMethod#owner are incorrect after using Module#public/protected/private
 18731,test,Parallel test-all sometimes does not run at all some tests
 18733,os/arch,Ruby GC problems cause performance issue with Ractor
 18737,notbug,Windows &#39;require&#39; is case independent
 18738,lib,IRB can&#39;t recognize heredoc after words
 18740,tracepoint,Use of rightward assignment changes line number needed for line-targeted TracePoint
 18743,fiber,Enumerator#next / peek re-use each others stacktraces
-18751,maybenotbug core,Regression on master for Method#== when comparing public with private method
 18758,build ext,Ruby fails to build on M1 Mac when x86 Homebrew is installed
 18759,backport test os/arch,snapshot-ruby_2_7: test failure on macos-12
 18763,build ext,The configure option “--with-openssl-dir” has lower precedence than pkg-config
 18764,build ext,Build Error when Using msys2-mingw64 and Ruby 3.2
 18767,patch core,IO.foreach hangs up when passes limit=0
-18780,core,Incorrect binding receiver for C API rb_eval_string()
 18782,autoload,Race conditions in autoload when loading the same feature with multiple threads.
 18783,patch lib,OptionParser should recognize &quot;-&quot; as an optional argument
 18784,patch lib maybenotbug,`FileUtils.rm_f` and `FileUtils.rm_rf` should not mask exceptions
@@ -296,7 +291,7 @@
 18880,win core,IO#sysread on Windows does not validate arguments
 18883,parser maybenotbug,parse.y: trailing comma cannot coexist with star
 18886,tracepoint maybenotbug,Struct aref and aset don&#39;t trigger any tracepoints.
-18899,encoding,Inconsistent argument handling in IO#set_encoding
+18899,patch encoding,Inconsistent argument handling in IO#set_encoding
 18903,core,Stack overflow signal handling seems to be triggered once and then not working after
 18908,lib,Allow username and password to be extracted from the http_proxy variable on Windows
 18912,build os/arch,Build failure with macOS 13 (Ventura) Beta
@@ -308,15 +303,13 @@
 18931,core,Inconsistent handling of invalid codepoints in String#lstrip and String#rstrip
 18932,win build,Ruby 3.1 - Allow building with VS 2022
 18933,ractor maybenotbug,Dir.tmpdir implemented in non-Ractor-safe manner
-18937,notbug,Inconsistent definitions of Complex#&lt;=&gt; and Numeric#&lt;=&gt; with others
 18940,ractor,Ruby Ractor fails with IOError when handling higher concurrency
-18941,lib,Endless loop with a memory leak in FileUtils::mkpath
 18945,core,node_id is not initialized but it is used leading to UB
 18947,win core,Unexpected Errno::ENAMETOOLONG on Windows
-18955,core,Kernel#sprintf - %c ignores a non-ASCII character&#39;s encoding
-18956,core,Kernel#sprintf - %c handles negative Integer argument in a confusing way
-18958,maybenotbug core,Kernel#sprintf doesn&#39;t apply format sequence in some encodings
 18960,patch core,Module#using raises RuntimeError when called at toplevel from wrapped script
 18963,ext,Ripper.tokenize(code).join != code when heredoc and multiline string is on the same line
 18966,parser,Strange behavior when numbered parameters and method definition are both used in a block
-18967,maybenotbug,Segmentation fault in stackprof with Ruby 2.7.6
+18970,core,CRuby adds an invalid header to bin/bundle (and others) which makes it unusable in Bash on Windows
+18971,patch core,Enumerator::Lazy.take(0) leaks first element into next operation
+18973,patch core,Kernel#sprintf: %c allows codepoints above 127 for 7-bits ASCII encoding
+18974,core,Wrong line number in the rescue iseq for the exception matching code
