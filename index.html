@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>322 Tagged Open Ruby Bugs as of 2022-08-20 01:10:22 +0900</title>
+<title>315 Tagged Open Ruby Bugs as of 2022-08-25 01:45:10 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -9,15 +9,15 @@
 <input type="submit" value="os/arch" />
 <input type="submit" value="build" />
 <input type="submit" value="ractor" />
-<input type="submit" value="maybenotbug" />
 <input type="submit" value="test" />
-<input type="submit" value="ext" />
-<input type="submit" value="lib" />
 <input type="submit" value="patch" />
+<input type="submit" value="ext" />
+<input type="submit" value="maybenotbug" />
+<input type="submit" value="lib" />
 <input type="submit" value="encoding" />
-<input type="submit" value="notbug" />
 <input type="submit" value="thread" />
 <input type="submit" value="cygwin" />
+<input type="submit" value="notbug" />
 <input type="submit" value="regexp" />
 <input type="submit" value="perf" />
 <input type="submit" value="parser" />
@@ -31,9 +31,9 @@
 <input type="submit" value="unfixable" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">322</span> matched)
+(<span id="matched">315</span> matched)
 <table>
-<caption>322 Tagged Open Ruby Bugs as of 2022-08-20 01:10:22 +0900</caption>
+<caption>315 Tagged Open Ruby Bugs as of 2022-08-25 01:45:10 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -42,11 +42,32 @@
 </tr>
 </thead>
 <tbody>
-<tr class=" maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/18967">18967</a>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18974">18974</a>
 </td>
-<td>maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18967">Segmentation fault in stackprof with Ruby 2.7.6</a>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18974">Wrong line number in the rescue iseq for the exception matching code</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18973">18973</a>
+</td>
+<td>patch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18973">Kernel#sprintf: %c allows codepoints above 127 for 7-bits ASCII encoding</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18971">18971</a>
+</td>
+<td>patch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18971">Enumerator::Lazy.take(0) leaks first element into next operation</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18970">18970</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18970">CRuby adds an invalid header to bin/bundle (and others) which makes it unusable in Bash on Windows</a>
 </td>
 </tr>
 <tr class=" parser ">
@@ -70,27 +91,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18960">Module#using raises RuntimeError when called at toplevel from wrapped script</a>
 </td>
 </tr>
-<tr class=" maybenotbug core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18958">18958</a>
-</td>
-<td>maybenotbug core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18958">Kernel#sprintf doesn&#39;t apply format sequence in some encodings</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18956">18956</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18956">Kernel#sprintf - %c handles negative Integer argument in a confusing way</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18955">18955</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18955">Kernel#sprintf - %c ignores a non-ASCII character&#39;s encoding</a>
-</td>
-</tr>
 <tr class=" win core ">
 <td><a href="https://bugs.ruby-lang.org/issues/18947">18947</a>
 </td>
@@ -105,25 +105,11 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18945">node_id is not initialized but it is used leading to UB</a>
 </td>
 </tr>
-<tr class=" lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/18941">18941</a>
-</td>
-<td>lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18941">Endless loop with a memory leak in FileUtils::mkpath</a>
-</td>
-</tr>
 <tr class=" ractor ">
 <td><a href="https://bugs.ruby-lang.org/issues/18940">18940</a>
 </td>
 <td>ractor</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18940">Ruby Ractor fails with IOError when handling higher concurrency</a>
-</td>
-</tr>
-<tr class=" notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/18937">18937</a>
-</td>
-<td>notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18937">Inconsistent definitions of Complex#&lt;=&gt; and Numeric#&lt;=&gt; with others</a>
 </td>
 </tr>
 <tr class=" ractor maybenotbug ">
@@ -203,10 +189,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18903">Stack overflow signal handling seems to be triggered once and then not working after</a>
 </td>
 </tr>
-<tr class=" encoding ">
+<tr class=" patch encoding ">
 <td><a href="https://bugs.ruby-lang.org/issues/18899">18899</a>
 </td>
-<td>encoding</td>
+<td>patch encoding</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18899">Inconsistent argument handling in IO#set_encoding</a>
 </td>
 </tr>
@@ -350,13 +336,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18782">Race conditions in autoload when loading the same feature with multiple threads.</a>
 </td>
 </tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18780">18780</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18780">Incorrect binding receiver for C API rb_eval_string()</a>
-</td>
-</tr>
 <tr class=" patch core ">
 <td><a href="https://bugs.ruby-lang.org/issues/18767">18767</a>
 </td>
@@ -390,13 +369,6 @@
 </td>
 <td>build ext</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18758">Ruby fails to build on M1 Mac when x86 Homebrew is installed</a>
-</td>
-</tr>
-<tr class=" maybenotbug core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18751">18751</a>
-</td>
-<td>maybenotbug core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18751">Regression on master for Method#== when comparing public with private method</a>
 </td>
 </tr>
 <tr class=" fiber ">
@@ -439,13 +411,6 @@
 </td>
 <td>test</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18731">Parallel test-all sometimes does not run at all some tests</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18729">18729</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18729">Method#owner and UnboundMethod#owner are incorrect after using Module#public/protected/private</a>
 </td>
 </tr>
 <tr class=" regexp ">
@@ -560,10 +525,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18601">Invalid byte sequences in Big5 encodings</a>
 </td>
 </tr>
-<tr class=" maybenotbug ">
+<tr class=" patch core ">
 <td><a href="https://bugs.ruby-lang.org/issues/18580">18580</a>
 </td>
-<td>maybenotbug</td>
+<td>patch core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18580">Range#include? inconsistency for beginless String ranges</a>
 </td>
 </tr>
@@ -684,13 +649,6 @@
 </td>
 <td>os/arch core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18444">Trapped TSTP causes a locking deadlock in 3.0.3 onward</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18435">18435</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18435">Calling `protected` on ancestor method changes result of `instance_methods(false)`</a>
 </td>
 </tr>
 <tr class=" os/arch build ">
@@ -1909,13 +1867,6 @@
 </td>
 <td>cygwin core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/12442">TestArgf#test_textmode fails on cygwin</a>
-</td>
-</tr>
-<tr class=" patch win core ">
-<td><a href="https://bugs.ruby-lang.org/issues/12436">12436</a>
-</td>
-<td>patch win core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/12436">newline argument of File.open seems not respected on Windows</a>
 </td>
 </tr>
 <tr class=" win core ">
