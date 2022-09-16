@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>312 Tagged Open Ruby Bugs as of 2022-08-26 06:38:09 +0900</title>
+<title>315 Tagged Open Ruby Bugs as of 2022-09-17 07:05:55 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -15,15 +15,15 @@
 <input type="submit" value="ext" />
 <input type="submit" value="lib" />
 <input type="submit" value="encoding" />
+<input type="submit" value="notbug" />
 <input type="submit" value="thread" />
 <input type="submit" value="cygwin" />
-<input type="submit" value="notbug" />
 <input type="submit" value="regexp" />
 <input type="submit" value="perf" />
 <input type="submit" value="fiber" />
 <input type="submit" value="parser" />
-<input type="submit" value="mjit" />
 <input type="submit" value="tracepoint" />
+<input type="submit" value="mjit" />
 <input type="submit" value="autoload" />
 <input type="submit" value="refine" />
 <input type="submit" value="backport" />
@@ -31,9 +31,9 @@
 <input type="submit" value="unfixable" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">312</span> matched)
+(<span id="matched">315</span> matched)
 <table>
-<caption>312 Tagged Open Ruby Bugs as of 2022-08-26 06:38:09 +0900</caption>
+<caption>315 Tagged Open Ruby Bugs as of 2022-09-17 07:05:55 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -42,6 +42,69 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" build os/arch ">
+<td><a href="https://bugs.ruby-lang.org/issues/19005">19005</a>
+</td>
+<td>build os/arch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19005">Ruby interpreter compiled XCode 14 cannot build some native gems on macOS</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/19004">19004</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19004">Complex can be nested by Complex.polar</a>
+</td>
+</tr>
+<tr class=" maybenotbug tracepoint ">
+<td><a href="https://bugs.ruby-lang.org/issues/19003">19003</a>
+</td>
+<td>maybenotbug tracepoint</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19003">TracePoint behavior inconsistency in 3.2.0-preview2</a>
+</td>
+</tr>
+<tr class=" notbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/18998">18998</a>
+</td>
+<td>notbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18998">Kernel#Integer does not convert SimpleDelegator object expectly</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18995">18995</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18995">IO#set_encoding sometimes set an IO&#39;s internal encoding to the default external encoding</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18993">18993</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18993">Inconsistent Range#size for Float and Rational</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18991">18991</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18991">False LocalJumpError when branch coverage is enabled</a>
+</td>
+</tr>
+<tr class=" ext ">
+<td><a href="https://bugs.ruby-lang.org/issues/18988">18988</a>
+</td>
+<td>ext</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18988">Ripper cannot parse some code that has regexp named capture</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/18983">18983</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/18983">Range#size for beginless Range is not nil.</a>
+</td>
+</tr>
 <tr class=" maybenotbug core ">
 <td><a href="https://bugs.ruby-lang.org/issues/18978">18978</a>
 </td>
@@ -57,24 +120,10 @@
 </td>
 </tr>
 <tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18973">18973</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18973">Kernel#sprintf: %c allows codepoints above 127 for 7-bits ASCII encoding</a>
-</td>
-</tr>
-<tr class=" patch core ">
 <td><a href="https://bugs.ruby-lang.org/issues/18971">18971</a>
 </td>
 <td>patch core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18971">Enumerator::Lazy.take(0) leaks first element into next operation</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18970">18970</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18970">CRuby adds an invalid header to bin/bundle (and others) which makes it unusable in Bash on Windows</a>
 </td>
 </tr>
 <tr class=" parser ">
@@ -82,13 +131,6 @@
 </td>
 <td>parser</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18966">Strange behavior when numbered parameters and method definition are both used in a block</a>
-</td>
-</tr>
-<tr class=" maybenotbug ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/18963">18963</a>
-</td>
-<td>maybenotbug ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18963">Ripper.tokenize(code).join != code when heredoc and multiline string is on the same line</a>
 </td>
 </tr>
 <tr class=" maybenotbug patch core ">
@@ -194,13 +236,6 @@
 </td>
 <td>tracepoint maybenotbug</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18886">Struct aref and aset don&#39;t trigger any tracepoints.</a>
-</td>
-</tr>
-<tr class=" win core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18880">18880</a>
-</td>
-<td>win core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18880">IO#sysread on Windows does not validate arguments</a>
 </td>
 </tr>
 <tr class=" parser ">
@@ -327,13 +362,6 @@
 </td>
 <td>build ext</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18764">Build Error when Using msys2-mingw64 and Ruby 3.2</a>
-</td>
-</tr>
-<tr class=" build ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/18763">18763</a>
-</td>
-<td>build ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18763">The configure option “--with-openssl-dir” has lower precedence than pkg-config</a>
 </td>
 </tr>
 <tr class=" backport test os/arch ">
@@ -2189,13 +2217,6 @@
 </td>
 <td>ext maybenotbug</td>
 <td><a href="https://bugs.ruby-lang.org/issues/5334">Segmentation fault in InternetExplorer IServiceProvider interface</a>
-</td>
-</tr>
-<tr class=" core maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/5317">5317</a>
-</td>
-<td>core maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/5317">rubyのヘッダファイルを使った拡張を行う際にoff_tの宣言回避をする事が出来ない。</a>
 </td>
 </tr>
 <tr class=" core ">
