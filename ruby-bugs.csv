@@ -2,7 +2,6 @@
 4040,core,SystemStackError with Hash[*a] for Large _a_
 4173,test,TestProcess#test_wait_and_sigchild が、たまに失敗する
 5179,core,Complex#rationalize and to_r with approximate zeros
-5317,core maybenotbug,rubyのヘッダファイルを使った拡張を行う際にoff_tの宣言回避をする事が出来ない。
 5334,ext maybenotbug,Segmentation fault in InternetExplorer IServiceProvider interface
 6351,encoding,transcode table generator does not support multi characters of Unicode
 6360,win build,Debug information build even without requesting it
@@ -268,7 +267,6 @@
 18743,fiber,Enumerator#next / peek re-use each others stacktraces
 18758,build ext,Ruby fails to build on M1 Mac when x86 Homebrew is installed
 18759,backport test os/arch,snapshot-ruby_2_7: test failure on macos-12
-18763,build ext,The configure option “--with-openssl-dir” has lower precedence than pkg-config
 18764,build ext,Build Error when Using msys2-mingw64 and Ruby 3.2
 18782,autoload,Race conditions in autoload when loading the same feature with multiple threads.
 18783,patch lib,OptionParser should recognize &quot;-&quot; as an optional argument
@@ -287,7 +285,6 @@
 18818,fiber,SEGV (Fiber scheduler?)
 18842,lib,Ruby&#39;s Resolv library does not handle correctly the `NODATA` case
 18878,parser,parse.y: Foo::Bar {} is inconsistently rejected
-18880,win core,IO#sysread on Windows does not validate arguments
 18886,tracepoint maybenotbug,Struct aref and aset don&#39;t trigger any tracepoints.
 18899,patch encoding,Inconsistent argument handling in IO#set_encoding
 18903,core,Stack overflow signal handling seems to be triggered once and then not working after
@@ -303,10 +300,16 @@
 18940,ractor,Ruby Ractor fails with IOError when handling higher concurrency
 18947,win core,Unexpected Errno::ENAMETOOLONG on Windows
 18960,maybenotbug patch core,Module#using raises RuntimeError when called at toplevel from wrapped script
-18963,maybenotbug ext,Ripper.tokenize(code).join != code when heredoc and multiline string is on the same line
 18966,parser,Strange behavior when numbered parameters and method definition are both used in a block
-18970,core,CRuby adds an invalid header to bin/bundle (and others) which makes it unusable in Bash on Windows
 18971,patch core,Enumerator::Lazy.take(0) leaks first element into next operation
-18973,patch core,Kernel#sprintf: %c allows codepoints above 127 for 7-bits ASCII encoding
 18974,core,Wrong line number in the rescue iseq for the exception matching code
 18978,maybenotbug core,Unexpected behaviour in Time.utc and Time.local when 8 arguments are passed in
+18983,core,Range#size for beginless Range is not nil.
+18988,ext,Ripper cannot parse some code that has regexp named capture
+18991,core,False LocalJumpError when branch coverage is enabled
+18993,core,Inconsistent Range#size for Float and Rational
+18995,core,IO#set_encoding sometimes set an IO&#39;s internal encoding to the default external encoding
+18998,notbug,Kernel#Integer does not convert SimpleDelegator object expectly
+19003,maybenotbug tracepoint,TracePoint behavior inconsistency in 3.2.0-preview2
+19004,core,Complex can be nested by Complex.polar
+19005,build os/arch,Ruby interpreter compiled XCode 14 cannot build some native gems on macOS
