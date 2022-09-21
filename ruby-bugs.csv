@@ -268,7 +268,6 @@
 18758,build ext,Ruby fails to build on M1 Mac when x86 Homebrew is installed
 18759,backport test os/arch,snapshot-ruby_2_7: test failure on macos-12
 18764,build ext,Build Error when Using msys2-mingw64 and Ruby 3.2
-18782,autoload,Race conditions in autoload when loading the same feature with multiple threads.
 18783,patch lib,OptionParser should recognize &quot;-&quot; as an optional argument
 18784,patch lib maybenotbug,`FileUtils.rm_f` and `FileUtils.rm_rf` should not mask exceptions
 18789,test,make test-bundled-gems failed after make install
@@ -289,7 +288,7 @@
 18899,patch encoding,Inconsistent argument handling in IO#set_encoding
 18903,core,Stack overflow signal handling seems to be triggered once and then not working after
 18908,patch lib,Allow username and password to be extracted from the http_proxy variable on Windows
-18912,build os/arch,Build failure with macOS 13 (Ventura) Beta
+18912,build os/arch,Build failure with Xcode 14 and macOS 13 (Ventura) Beta
 18914,test os/arch,Segmentation fault during Ruby test suite execution
 18918,build,Can&#39;t compile ruby master with AFL ASAN
 18919,ractor notbug,Ractor: can&#39;t share #Method objects
@@ -312,4 +311,5 @@
 18998,notbug,Kernel#Integer does not convert SimpleDelegator object expectly
 19003,maybenotbug tracepoint,TracePoint behavior inconsistency in 3.2.0-preview2
 19004,core,Complex can be nested by Complex.polar
-19005,build os/arch,Ruby interpreter compiled XCode 14 cannot build some native gems on macOS
+19007,encoding,Unicode tables differences from Unicode.org 14.0 data and removed properties since 13.0
+19012,patch ext maybenotbug,BasicSocket#recv* methods return an empty packet instead of nil on closed connections
