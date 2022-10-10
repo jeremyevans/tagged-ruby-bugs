@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>316 Tagged Open Ruby Bugs as of 2022-09-27 06:21:13 +0900</title>
+<title>314 Tagged Open Ruby Bugs as of 2022-10-11 01:09:45 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -11,8 +11,8 @@
 <input type="submit" value="ractor" />
 <input type="submit" value="test" />
 <input type="submit" value="lib" />
-<input type="submit" value="patch" />
 <input type="submit" value="maybenotbug" />
+<input type="submit" value="patch" />
 <input type="submit" value="ext" />
 <input type="submit" value="encoding" />
 <input type="submit" value="notbug" />
@@ -20,8 +20,8 @@
 <input type="submit" value="cygwin" />
 <input type="submit" value="regexp" />
 <input type="submit" value="perf" />
-<input type="submit" value="fiber" />
 <input type="submit" value="parser" />
+<input type="submit" value="fiber" />
 <input type="submit" value="tracepoint" />
 <input type="submit" value="mjit" />
 <input type="submit" value="refine" />
@@ -31,9 +31,9 @@
 <input type="submit" value="unfixable" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">316</span> matched)
+(<span id="matched">314</span> matched)
 <table>
-<caption>316 Tagged Open Ruby Bugs as of 2022-09-27 06:21:13 +0900</caption>
+<caption>314 Tagged Open Ruby Bugs as of 2022-10-11 01:09:45 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -42,11 +42,46 @@
 </tr>
 </thead>
 <tbody>
-<tr class=" patch lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/19020">19020</a>
+<tr class=" win build ">
+<td><a href="https://bugs.ruby-lang.org/issues/19044">19044</a>
 </td>
-<td>patch lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19020">Unexpected timeout thread appears in ThreadGroup</a>
+<td>win build</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19044">Attempting to compile a static ruby 3.1 fails with MinGW</a>
+</td>
+</tr>
+<tr class=" ext ">
+<td><a href="https://bugs.ruby-lang.org/issues/19043">19043</a>
+</td>
+<td>ext</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19043">Segfault on macOS 11.7 while using StringScanner in multiple threads</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/19042">19042</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19042">Bug: Dir.glob ignores subdirectories in alternation when alternation is preceded by recursive directory pattern</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/19039">19039</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19039">Closing an IO being select&#39;ed in another thread does not resume the thread</a>
+</td>
+</tr>
+<tr class=" notbug parser ">
+<td><a href="https://bugs.ruby-lang.org/issues/19033">19033</a>
+</td>
+<td>notbug parser</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19033">One-liner pattern match as Boolean arg syntax error</a>
+</td>
+</tr>
+<tr class=" ext ">
+<td><a href="https://bugs.ruby-lang.org/issues/19025">19025</a>
+</td>
+<td>ext</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19025">Ripper cannot parse syntax ok code that has numbered parameters</a>
 </td>
 </tr>
 <tr class=" patch lib ">
@@ -133,13 +168,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18983">Range#size for beginless Range is not nil.</a>
 </td>
 </tr>
-<tr class=" maybenotbug core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18978">18978</a>
-</td>
-<td>maybenotbug core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18978">Unexpected behaviour in Time.utc and Time.local when 8 arguments are passed in</a>
-</td>
-</tr>
 <tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/18974">18974</a>
 </td>
@@ -222,13 +250,6 @@
 </td>
 <td>test os/arch</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18914">Segmentation fault during Ruby test suite execution</a>
-</td>
-</tr>
-<tr class=" patch lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/18908">18908</a>
-</td>
-<td>patch lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18908">Allow username and password to be extracted from the http_proxy variable on Windows</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -336,13 +357,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18794">Windows - intermittent SEGV TestObjSpace#test_reachable_objects_during_iteration</a>
 </td>
 </tr>
-<tr class=" build ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/18790">18790</a>
-</td>
-<td>build ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18790">cannot load such file -- digest (LoadError)</a>
-</td>
-</tr>
 <tr class=" test ">
 <td><a href="https://bugs.ruby-lang.org/issues/18789">18789</a>
 </td>
@@ -362,27 +376,6 @@
 </td>
 <td>patch lib</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18783">OptionParser should recognize &quot;-&quot; as an optional argument</a>
-</td>
-</tr>
-<tr class=" build ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/18764">18764</a>
-</td>
-<td>build ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18764">Build Error when Using msys2-mingw64 and Ruby 3.2</a>
-</td>
-</tr>
-<tr class=" backport test os/arch ">
-<td><a href="https://bugs.ruby-lang.org/issues/18759">18759</a>
-</td>
-<td>backport test os/arch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18759">snapshot-ruby_2_7: test failure on macos-12</a>
-</td>
-</tr>
-<tr class=" build ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/18758">18758</a>
-</td>
-<td>build ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18758">Ruby fails to build on M1 Mac when x86 Homebrew is installed</a>
 </td>
 </tr>
 <tr class=" fiber ">
@@ -901,13 +894,6 @@
 </td>
 <td>fiber</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18036">Pthread fibers become invalid on fork - different from normal fibers.</a>
-</td>
-</tr>
-<tr class=" os/arch ">
-<td><a href="https://bugs.ruby-lang.org/issues/18034">18034</a>
-</td>
-<td>os/arch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18034">Segmentation fault fiddle with `--enable-bundled-libffi` and macOS</a>
 </td>
 </tr>
 <tr class=" ractor ">
