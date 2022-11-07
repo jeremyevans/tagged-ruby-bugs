@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>314 Tagged Open Ruby Bugs as of 2022-10-11 01:09:45 +0900</title>
+<title>315 Tagged Open Ruby Bugs as of 2022-11-08 02:26:03 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -9,31 +9,31 @@
 <input type="submit" value="os/arch" />
 <input type="submit" value="build" />
 <input type="submit" value="ractor" />
-<input type="submit" value="test" />
-<input type="submit" value="lib" />
-<input type="submit" value="maybenotbug" />
 <input type="submit" value="patch" />
+<input type="submit" value="lib" />
+<input type="submit" value="test" />
 <input type="submit" value="ext" />
+<input type="submit" value="maybenotbug" />
 <input type="submit" value="encoding" />
-<input type="submit" value="notbug" />
 <input type="submit" value="thread" />
 <input type="submit" value="cygwin" />
+<input type="submit" value="notbug" />
 <input type="submit" value="regexp" />
 <input type="submit" value="perf" />
-<input type="submit" value="parser" />
 <input type="submit" value="fiber" />
+<input type="submit" value="parser" />
 <input type="submit" value="tracepoint" />
 <input type="submit" value="mjit" />
-<input type="submit" value="refine" />
 <input type="submit" value="autoload" />
+<input type="submit" value="refine" />
 <input type="submit" value="backport" />
 <input type="submit" value="jit" />
 <input type="submit" value="unfixable" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">314</span> matched)
+(<span id="matched">315</span> matched)
 <table>
-<caption>314 Tagged Open Ruby Bugs as of 2022-10-11 01:09:45 +0900</caption>
+<caption>315 Tagged Open Ruby Bugs as of 2022-11-08 02:26:03 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -42,6 +42,69 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/19108">19108</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19108">Format routines like pack blindly treat a string as ASCII-encoded</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/19105">19105</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19105">mutex: Raise a ThreadError when detecting a fiber deadlock</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/19103">19103</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19103">[3.2.0dev] [BUG] Segmentation fault at 0x0000000000000000 in rgengc_check_relation</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/19100">19100</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19100">Ruby 3 PRNG values diverge from Ruby 2 for some initial values</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/19087">19087</a>
+</td>
+<td>patch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19087">String#to_c supports multiple &quot;_&quot;</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/19084">19084</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19084">Using `IO::Buffer` to change an extended String affects other Strings sharing the same buffer</a>
+</td>
+</tr>
+<tr class=" lib patch ">
+<td><a href="https://bugs.ruby-lang.org/issues/19079">19079</a>
+</td>
+<td>lib patch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19079">Modules included in a DelegateClass cannot override delegate methods</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/19051">19051</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19051">Incorrect pointers in global_cc_cache_table when compacting</a>
+</td>
+</tr>
+<tr class=" build win ">
+<td><a href="https://bugs.ruby-lang.org/issues/19048">19048</a>
+</td>
+<td>build win</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19048">Install of Ruby 3.1.x fails on Ubuntu 20.04 running on WSL</a>
+</td>
+</tr>
 <tr class=" win build ">
 <td><a href="https://bugs.ruby-lang.org/issues/19044">19044</a>
 </td>
@@ -57,24 +120,10 @@
 </td>
 </tr>
 <tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/19042">19042</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19042">Bug: Dir.glob ignores subdirectories in alternation when alternation is preceded by recursive directory pattern</a>
-</td>
-</tr>
-<tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/19039">19039</a>
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19039">Closing an IO being select&#39;ed in another thread does not resume the thread</a>
-</td>
-</tr>
-<tr class=" notbug parser ">
-<td><a href="https://bugs.ruby-lang.org/issues/19033">19033</a>
-</td>
-<td>notbug parser</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19033">One-liner pattern match as Boolean arg syntax error</a>
 </td>
 </tr>
 <tr class=" ext ">
@@ -109,14 +158,7 @@
 <td><a href="https://bugs.ruby-lang.org/issues/19007">19007</a>
 </td>
 <td>encoding</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19007">Unicode tables differences from Unicode.org 14.0 data and removed properties since 13.0</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/19004">19004</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19004">Complex can be nested by Complex.polar</a>
+<td><a href="https://bugs.ruby-lang.org/issues/19007">Unicode tables differences from Unicode.org 14.0 data</a>
 </td>
 </tr>
 <tr class=" maybenotbug tracepoint ">
@@ -124,13 +166,6 @@
 </td>
 <td>maybenotbug tracepoint</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19003">TracePoint behavior inconsistency in 3.2.0-preview2</a>
-</td>
-</tr>
-<tr class=" notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/18998">18998</a>
-</td>
-<td>notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18998">Kernel#Integer does not convert SimpleDelegator object expectly</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -159,13 +194,6 @@
 </td>
 <td>ext</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18988">Ripper cannot parse some code that has regexp named capture</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18983">18983</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18983">Range#size for beginless Range is not nil.</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -322,13 +350,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18804">Invalid line number for putnil instruction</a>
 </td>
 </tr>
-<tr class=" maybenotbug refine ">
-<td><a href="https://bugs.ruby-lang.org/issues/18799">18799</a>
-</td>
-<td>maybenotbug refine</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18799">Refinement#import_methods vs attr_reader</a>
-</td>
-</tr>
 <tr class=" regexp ">
 <td><a href="https://bugs.ruby-lang.org/issues/18797">18797</a>
 </td>
@@ -411,13 +432,6 @@
 </td>
 <td>os/arch</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18733">Ruby GC problems cause performance issue with Ractor</a>
-</td>
-</tr>
-<tr class=" test ">
-<td><a href="https://bugs.ruby-lang.org/issues/18731">18731</a>
-</td>
-<td>test</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18731">Parallel test-all sometimes does not run at all some tests</a>
 </td>
 </tr>
 <tr class=" regexp ">
@@ -698,13 +712,6 @@
 </td>
 <td>notbug</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18381">Default vs Bundled gems</a>
-</td>
-</tr>
-<tr class=" test ">
-<td><a href="https://bugs.ruby-lang.org/issues/18380">18380</a>
-</td>
-<td>test</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18380">TestAddressResolve#test_socket_getnameinfo_domain_blocking test failures</a>
 </td>
 </tr>
 <tr class=" win test ">
