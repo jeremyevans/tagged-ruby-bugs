@@ -217,7 +217,6 @@
 18355,lib,"require(&quot;pathname&quot;) within rack application chnages behaviors of Pathname methods, such as absolute?(), when there are two versions of &#39;pathname&#39; gem installed."
 18359,win,[Windows MinGW] warning Please include winsock2.h before windows.h
 18379,win test,[CI] Windows mingw/ucrt - test-all timeout failures
-18380,test,TestAddressResolve#test_socket_getnameinfo_domain_blocking test failures
 18381,notbug,Default vs Bundled gems
 18393,os/arch test ext,TestReadline#test_interrupt_in_other_thread fails on armv7hl
 18396,parser,An unexpected &quot;hash value omission&quot; syntax error when without parentheses call expr follows
@@ -258,7 +257,6 @@
 18677,ext,BigDecimal#power (**) returns FloatDomainError when passing an infinite parameter
 18678,notbug,Crash on Mac - vm_call0_cfunc_with_frame
 18686,regexp,Regexp supporting unexpected age properties in Ruby &lt; 3.2
-18731,test,Parallel test-all sometimes does not run at all some tests
 18733,os/arch,Ruby GC problems cause performance issue with Ractor
 18737,notbug,Windows &#39;require&#39; is case independent
 18738,lib,IRB can&#39;t recognize heredoc after words
@@ -271,7 +269,6 @@
 18795,core,Verbose GC debug output with -DRGENGC_DEBUG=5 causes a crash
 18796,os/arch core,GC compaction gets stuck on Mac OS when a debugger is attached
 18797,regexp,Third argument to Regexp.new is a bit broken
-18799,maybenotbug refine,Refinement#import_methods vs attr_reader
 18804,core,Invalid line number for putnil instruction
 18805,core,IO::Buffer is inconsistent when returning a string from an empty buffer
 18808,build os/arch,Cannot compile ruby 3.1.2 on powerpc64le-linux without disabling the jit features
@@ -294,21 +291,25 @@
 18966,parser,Strange behavior when numbered parameters and method definition are both used in a block
 18971,patch core,Enumerator::Lazy.take(0) leaks first element into next operation
 18974,core,Wrong line number in the rescue iseq for the exception matching code
-18983,core,Range#size for beginless Range is not nil.
 18988,ext,Ripper cannot parse some code that has regexp named capture
 18991,core,False LocalJumpError when branch coverage is enabled
 18993,core,Inconsistent Range#size for Float and Rational
 18995,core,IO#set_encoding sometimes set an IO&#39;s internal encoding to the default external encoding
-18998,notbug,Kernel#Integer does not convert SimpleDelegator object expectly
 19003,maybenotbug tracepoint,TracePoint behavior inconsistency in 3.2.0-preview2
-19004,core,Complex can be nested by Complex.polar
-19007,encoding,Unicode tables differences from Unicode.org 14.0 data and removed properties since 13.0
+19007,encoding,Unicode tables differences from Unicode.org 14.0 data
 19012,patch ext maybenotbug,BasicSocket#recv* methods return an empty packet instead of nil on closed connections
 19016,lib,syntax_suggest is not working with Ruby 3.2.0-preview2
 19017,patch lib,Net::HTTP may block when attempting to reuse a persistent connection
 19025,ext,Ripper cannot parse syntax ok code that has numbered parameters
-19033,notbug parser,One-liner pattern match as Boolean arg syntax error
 19039,core,Closing an IO being select&#39;ed in another thread does not resume the thread
-19042,core,Bug: Dir.glob ignores subdirectories in alternation when alternation is preceded by recursive directory pattern
 19043,ext,Segfault on macOS 11.7 while using StringScanner in multiple threads
 19044,win build,Attempting to compile a static ruby 3.1 fails with MinGW
+19048,build win,Install of Ruby 3.1.x fails on Ubuntu 20.04 running on WSL
+19051,core,Incorrect pointers in global_cc_cache_table when compacting
+19079,lib patch,Modules included in a DelegateClass cannot override delegate methods
+19084,core,Using `IO::Buffer` to change an extended String affects other Strings sharing the same buffer
+19087,patch core,String#to_c supports multiple &quot;_&quot;
+19100,core,Ruby 3 PRNG values diverge from Ruby 2 for some initial values
+19103,core,[3.2.0dev] [BUG] Segmentation fault at 0x0000000000000000 in rgengc_check_relation
+19105,core,mutex: Raise a ThreadError when detecting a fiber deadlock
+19108,core,Format routines like pack blindly treat a string as ASCII-encoded
