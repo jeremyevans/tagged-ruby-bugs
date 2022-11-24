@@ -60,7 +60,6 @@
 12582,ext,OpenSSL Authenticated Encryption should check for tag length
 12689,core,Thread isolation of $~ and $_
 12725,cygwin build,Trying to use ./miniruby before it exists
-12852,lib notbug,URI.parse can&#39;t handle non-ascii URIs
 13151,win core,File.writable? doesn&#39;t report correctly if a directory is writable on Windows.
 13164,core,A second `SystemStackError` exception  results in `Segmentation fault (core dumped)`
 13269,win test,test/readline/test_readline.rb and mingw
@@ -210,7 +209,6 @@
 18258,ractor maybenotbug,Ractor.shareable? can be slow and mutates internal object flags.
 18269,core,trace_opt_not and trace_opt_regexpmatch2 insns are indistinguishable
 18277,ext mjit,buffer error (Zlib::BufError) in Zlib::Deflate#deflate when using MJIT
-18281,lib,Ruby 3.1.0: gem uninstall -aIx fails to uninstall debug
 18286,os/arch,Universal arm64/x86_84 binary built on an x86_64 machine segfaults/is killed on arm64
 18337,parser encoding,Ruby allows zero-width characters in identifiers
 18338,encoding,Encoding.default_external = Encoding::UTF_16BE may add a wrongly-encoded string to $LOADED_FEATURES
@@ -240,7 +238,6 @@
 18553,core,Memory leak on compiling method call with kwargs
 18567,notbug,Depending on default gems in stdlib gems when not needed considered harmful
 18572,perf core,Performance regression when invoking refined methods
-18580,patch core,Range#include? inconsistency for beginless String ranges
 18601,encoding,Invalid byte sequences in Big5 encodings
 18605,win core,Fails to run on (newer) 32bit Windows with ucrt
 18608,build,`require&#39;: cannot load such file -- ripper (LoadError) after `make distclean`
@@ -267,7 +264,6 @@
 18789,test,make test-bundled-gems failed after make install
 18794,win,Windows - intermittent SEGV TestObjSpace#test_reachable_objects_during_iteration
 18795,core,Verbose GC debug output with -DRGENGC_DEBUG=5 causes a crash
-18796,os/arch core,GC compaction gets stuck on Mac OS when a debugger is attached
 18797,regexp,Third argument to Regexp.new is a bit broken
 18804,core,Invalid line number for putnil instruction
 18805,core,IO::Buffer is inconsistent when returning a string from an empty buffer
@@ -290,15 +286,12 @@
 18947,win core,Unexpected Errno::ENAMETOOLONG on Windows
 18966,parser,Strange behavior when numbered parameters and method definition are both used in a block
 18971,patch core,Enumerator::Lazy.take(0) leaks first element into next operation
-18974,core,Wrong line number in the rescue iseq for the exception matching code
 18988,ext,Ripper cannot parse some code that has regexp named capture
-18991,core,False LocalJumpError when branch coverage is enabled
 18993,core,Inconsistent Range#size for Float and Rational
 18995,core,IO#set_encoding sometimes set an IO&#39;s internal encoding to the default external encoding
 19003,maybenotbug tracepoint,TracePoint behavior inconsistency in 3.2.0-preview2
 19007,encoding,Unicode tables differences from Unicode.org 14.0 data
 19012,patch ext maybenotbug,BasicSocket#recv* methods return an empty packet instead of nil on closed connections
-19016,lib,syntax_suggest is not working with Ruby 3.2.0-preview2
 19017,patch lib,Net::HTTP may block when attempting to reuse a persistent connection
 19025,ext,Ripper cannot parse syntax ok code that has numbered parameters
 19039,core,Closing an IO being select&#39;ed in another thread does not resume the thread
@@ -309,7 +302,13 @@
 19079,lib patch,Modules included in a DelegateClass cannot override delegate methods
 19084,core,Using `IO::Buffer` to change an extended String affects other Strings sharing the same buffer
 19087,patch core,String#to_c supports multiple &quot;_&quot;
-19100,core,Ruby 3 PRNG values diverge from Ruby 2 for some initial values
-19103,core,[3.2.0dev] [BUG] Segmentation fault at 0x0000000000000000 in rgengc_check_relation
-19105,core,mutex: Raise a ThreadError when detecting a fiber deadlock
 19108,core,Format routines like pack blindly treat a string as ASCII-encoded
+19112,ractor tracepoint,Ractor garbage collection breaks/disables all active tracepoints
+19113,core patch,Inconsistency in retention of compare_by_identity flag in Hash methods
+19114,tracepoint,Calling TracePoint#enable multiple times causes TracePoint to be activated multiple times
+19115,autoload ext,OpenSSL fails to autoload (macOS)
+19126,maybenotbug build,clang: Cannot compile with Control Flow Integrity (CFI)
+19136,ext,OpenSSL::PKey::EC.check_key is useless when linked against OpenSSL 3
+19144,maybenotbug ext,Ruby should set AI_V4MAPPED | AI_ADDRCONFIG getaddrinfo flags by default
+19145,test patch,TestException#test_exception_in_message timeouts
+19147,core,`TestFileExhaustive#test_expand_path_for_existent_username` and `TestDir#test_home` fails on i686
