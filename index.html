@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>315 Tagged Open Ruby Bugs as of 2022-11-08 02:26:03 +0900</title>
+<title>314 Tagged Open Ruby Bugs as of 2022-11-25 08:36:54 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -10,19 +10,19 @@
 <input type="submit" value="build" />
 <input type="submit" value="ractor" />
 <input type="submit" value="patch" />
-<input type="submit" value="lib" />
-<input type="submit" value="test" />
 <input type="submit" value="ext" />
 <input type="submit" value="maybenotbug" />
+<input type="submit" value="test" />
+<input type="submit" value="lib" />
 <input type="submit" value="encoding" />
 <input type="submit" value="thread" />
 <input type="submit" value="cygwin" />
-<input type="submit" value="notbug" />
 <input type="submit" value="regexp" />
+<input type="submit" value="notbug" />
 <input type="submit" value="perf" />
+<input type="submit" value="tracepoint" />
 <input type="submit" value="fiber" />
 <input type="submit" value="parser" />
-<input type="submit" value="tracepoint" />
 <input type="submit" value="mjit" />
 <input type="submit" value="autoload" />
 <input type="submit" value="refine" />
@@ -31,9 +31,9 @@
 <input type="submit" value="unfixable" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">315</span> matched)
+(<span id="matched">314</span> matched)
 <table>
-<caption>315 Tagged Open Ruby Bugs as of 2022-11-08 02:26:03 +0900</caption>
+<caption>314 Tagged Open Ruby Bugs as of 2022-11-25 08:36:54 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -43,31 +43,73 @@
 </thead>
 <tbody>
 <tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/19147">19147</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19147">`TestFileExhaustive#test_expand_path_for_existent_username` and `TestDir#test_home` fails on i686</a>
+</td>
+</tr>
+<tr class=" test patch ">
+<td><a href="https://bugs.ruby-lang.org/issues/19145">19145</a>
+</td>
+<td>test patch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19145">TestException#test_exception_in_message timeouts</a>
+</td>
+</tr>
+<tr class=" maybenotbug ext ">
+<td><a href="https://bugs.ruby-lang.org/issues/19144">19144</a>
+</td>
+<td>maybenotbug ext</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19144">Ruby should set AI_V4MAPPED | AI_ADDRCONFIG getaddrinfo flags by default</a>
+</td>
+</tr>
+<tr class=" ext ">
+<td><a href="https://bugs.ruby-lang.org/issues/19136">19136</a>
+</td>
+<td>ext</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19136">OpenSSL::PKey::EC.check_key is useless when linked against OpenSSL 3</a>
+</td>
+</tr>
+<tr class=" maybenotbug build ">
+<td><a href="https://bugs.ruby-lang.org/issues/19126">19126</a>
+</td>
+<td>maybenotbug build</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19126">clang: Cannot compile with Control Flow Integrity (CFI)</a>
+</td>
+</tr>
+<tr class=" autoload ext ">
+<td><a href="https://bugs.ruby-lang.org/issues/19115">19115</a>
+</td>
+<td>autoload ext</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19115">OpenSSL fails to autoload (macOS)</a>
+</td>
+</tr>
+<tr class=" tracepoint ">
+<td><a href="https://bugs.ruby-lang.org/issues/19114">19114</a>
+</td>
+<td>tracepoint</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19114">Calling TracePoint#enable multiple times causes TracePoint to be activated multiple times</a>
+</td>
+</tr>
+<tr class=" core patch ">
+<td><a href="https://bugs.ruby-lang.org/issues/19113">19113</a>
+</td>
+<td>core patch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19113">Inconsistency in retention of compare_by_identity flag in Hash methods</a>
+</td>
+</tr>
+<tr class=" ractor tracepoint ">
+<td><a href="https://bugs.ruby-lang.org/issues/19112">19112</a>
+</td>
+<td>ractor tracepoint</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19112">Ractor garbage collection breaks/disables all active tracepoints</a>
+</td>
+</tr>
+<tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/19108">19108</a>
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19108">Format routines like pack blindly treat a string as ASCII-encoded</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/19105">19105</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19105">mutex: Raise a ThreadError when detecting a fiber deadlock</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/19103">19103</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19103">[3.2.0dev] [BUG] Segmentation fault at 0x0000000000000000 in rgengc_check_relation</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/19100">19100</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19100">Ruby 3 PRNG values diverge from Ruby 2 for some initial values</a>
 </td>
 </tr>
 <tr class=" patch core ">
@@ -140,13 +182,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/19017">Net::HTTP may block when attempting to reuse a persistent connection</a>
 </td>
 </tr>
-<tr class=" lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/19016">19016</a>
-</td>
-<td>lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19016">syntax_suggest is not working with Ruby 3.2.0-preview2</a>
-</td>
-</tr>
 <tr class=" patch ext maybenotbug ">
 <td><a href="https://bugs.ruby-lang.org/issues/19012">19012</a>
 </td>
@@ -182,25 +217,11 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18993">Inconsistent Range#size for Float and Rational</a>
 </td>
 </tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18991">18991</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18991">False LocalJumpError when branch coverage is enabled</a>
-</td>
-</tr>
 <tr class=" ext ">
 <td><a href="https://bugs.ruby-lang.org/issues/18988">18988</a>
 </td>
 <td>ext</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18988">Ripper cannot parse some code that has regexp named capture</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18974">18974</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18974">Wrong line number in the rescue iseq for the exception matching code</a>
 </td>
 </tr>
 <tr class=" patch core ">
@@ -355,13 +376,6 @@
 </td>
 <td>regexp</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18797">Third argument to Regexp.new is a bit broken</a>
-</td>
-</tr>
-<tr class=" os/arch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18796">18796</a>
-</td>
-<td>os/arch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18796">GC compaction gets stuck on Mac OS when a debugger is attached</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -544,13 +558,6 @@
 </td>
 <td>encoding</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18601">Invalid byte sequences in Big5 encodings</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18580">18580</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18580">Range#include? inconsistency for beginless String ranges</a>
 </td>
 </tr>
 <tr class=" perf core ">
@@ -754,13 +761,6 @@
 </td>
 <td>os/arch</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18286">Universal arm64/x86_84 binary built on an x86_64 machine segfaults/is killed on arm64</a>
-</td>
-</tr>
-<tr class=" lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/18281">18281</a>
-</td>
-<td>lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18281">Ruby 3.1.0: gem uninstall -aIx fails to uninstall debug</a>
 </td>
 </tr>
 <tr class=" ext mjit ">
@@ -1804,13 +1804,6 @@
 </td>
 <td>win core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/13151">File.writable? doesn&#39;t report correctly if a directory is writable on Windows.</a>
-</td>
-</tr>
-<tr class=" lib notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/12852">12852</a>
-</td>
-<td>lib notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/12852">URI.parse can&#39;t handle non-ascii URIs</a>
 </td>
 </tr>
 <tr class=" cygwin build ">
