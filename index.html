@@ -1,39 +1,40 @@
 <html>
 <head>
-<title>314 Tagged Open Ruby Bugs as of 2022-11-25 08:36:54 +0900</title>
+<title>334 Tagged Open Ruby Bugs as of 2023-01-17 07:00:05 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
 <p class="filter-buttons">Available Tags: <input type="submit" value="core" />
 <input type="submit" value="win" />
 <input type="submit" value="os/arch" />
-<input type="submit" value="build" />
 <input type="submit" value="ractor" />
-<input type="submit" value="patch" />
-<input type="submit" value="ext" />
+<input type="submit" value="build" />
 <input type="submit" value="maybenotbug" />
+<input type="submit" value="ext" />
+<input type="submit" value="patch" />
 <input type="submit" value="test" />
 <input type="submit" value="lib" />
+<input type="submit" value="notbug" />
 <input type="submit" value="encoding" />
+<input type="submit" value="perf" />
+<input type="submit" value="regexp" />
 <input type="submit" value="thread" />
 <input type="submit" value="cygwin" />
-<input type="submit" value="regexp" />
-<input type="submit" value="notbug" />
-<input type="submit" value="perf" />
-<input type="submit" value="tracepoint" />
-<input type="submit" value="fiber" />
 <input type="submit" value="parser" />
+<input type="submit" value="fiber" />
+<input type="submit" value="tracepoint" />
 <input type="submit" value="mjit" />
 <input type="submit" value="autoload" />
 <input type="submit" value="refine" />
 <input type="submit" value="backport" />
 <input type="submit" value="jit" />
+<input type="submit" value="os-arch" />
 <input type="submit" value="unfixable" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">314</span> matched)
+(<span id="matched">334</span> matched)
 <table>
-<caption>314 Tagged Open Ruby Bugs as of 2022-11-25 08:36:54 +0900</caption>
+<caption>334 Tagged Open Ruby Bugs as of 2023-01-17 07:00:05 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -42,18 +43,277 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" patch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/19343">19343</a>
+</td>
+<td>patch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19343">Integer#ceildiv should respect #coerce</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/19341">19341</a>
+</td>
+<td>patch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19341">Write cache issue with class variables</a>
+</td>
+</tr>
+<tr class=" patch build ">
+<td><a href="https://bugs.ruby-lang.org/issues/19340">19340</a>
+</td>
+<td>patch build</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19340">Ruby master &#39;make install&#39; not installing rbs gem</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/19339">19339</a>
+</td>
+<td>patch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19339">Defining ivar on special constants with @ syntax causes segv</a>
+</td>
+</tr>
+<tr class=" ractor ">
+<td><a href="https://bugs.ruby-lang.org/issues/19338">19338</a>
+</td>
+<td>ractor</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19338">Ruby hangs when ouputting warnings inside ractor with VM lock held</a>
+</td>
+</tr>
+<tr class=" notbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/19337">19337</a>
+</td>
+<td>notbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19337">What is the difference between &quot;default&quot; gems and &quot;bundled&quot; gems?</a>
+</td>
+</tr>
+<tr class=" perf notbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/19334">19334</a>
+</td>
+<td>perf notbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19334">Defining many instance variables and accessing them is slow in Ruby 3.2.0</a>
+</td>
+</tr>
+<tr class=" test os-arch ">
+<td><a href="https://bugs.ruby-lang.org/issues/19313">19313</a>
+</td>
+<td>test os-arch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19313">Leaked file descriptors while running test-all</a>
+</td>
+</tr>
+<tr class=" test ">
+<td><a href="https://bugs.ruby-lang.org/issues/19297">19297</a>
+</td>
+<td>test</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19297">Don&#39;t download content from internet to execute Ruby test suite</a>
+</td>
+</tr>
+<tr class=" core maybenotbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/19294">19294</a>
+</td>
+<td>core maybenotbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19294">Enumerator.product works incorrectly with consuming enumerators</a>
+</td>
+</tr>
+<tr class=" core maybenotbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/19293">19293</a>
+</td>
+<td>core maybenotbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19293">The new Time.new(String) API is nice... but we still need a stricter version of this</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/19289">19289</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19289">RbConfig::CONFIG[&quot;STRIP&quot;] should keep `rb_abi_version` and `rb_abi_version` should always be part of Ruby</a>
+</td>
+</tr>
+<tr class=" ractor perf ">
+<td><a href="https://bugs.ruby-lang.org/issues/19288">19288</a>
+</td>
+<td>ractor perf</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19288">Ractor JSON parsing significantly slower than linear parsing</a>
+</td>
+</tr>
+<tr class=" lib ">
+<td><a href="https://bugs.ruby-lang.org/issues/19287">19287</a>
+</td>
+<td>lib</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19287">Let DelegateClass respect the original method&#39;s arity in case of 0</a>
+</td>
+</tr>
+<tr class=" core maybenotbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/19286">19286</a>
+</td>
+<td>core maybenotbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19286">What should kwargs&#39; arity be?</a>
+</td>
+</tr>
+<tr class=" regexp ">
+<td><a href="https://bugs.ruby-lang.org/issues/19283">19283</a>
+</td>
+<td>regexp</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19283">Regex error on ruby 3.2</a>
+</td>
+</tr>
+<tr class=" parser ">
+<td><a href="https://bugs.ruby-lang.org/issues/19281">19281</a>
+</td>
+<td>parser</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19281">SyntaxError if first argument of command call has semicolon inside parenthesis</a>
+</td>
+</tr>
+<tr class=" build win ">
+<td><a href="https://bugs.ruby-lang.org/issues/19268">19268</a>
+</td>
+<td>build win</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19268">Mingw64 Build Failure</a>
+</td>
+</tr>
+<tr class=" lib ">
+<td><a href="https://bugs.ruby-lang.org/issues/19266">19266</a>
+</td>
+<td>lib</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19266">URI::Generic should use URI::RFC3986_PARSER instead of URI::DEFAULT_PARSER</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/19259">19259</a>
+</td>
+<td>patch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19259">`Data#with` doesn&#39;t call `initialize` nor `initialize_copy`</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/19255">19255</a>
+</td>
+<td>patch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19255">YJIT: global symbol leakage</a>
+</td>
+</tr>
+<tr class=" test ">
+<td><a href="https://bugs.ruby-lang.org/issues/19251">19251</a>
+</td>
+<td>test</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19251">Limit amount of test failures due to updates of tzdata</a>
+</td>
+</tr>
+<tr class=" perf maybenotbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/19246">19246</a>
+</td>
+<td>perf maybenotbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19246">Rebuilding the loaded feature index much slower in Ruby 3.1</a>
+</td>
+</tr>
+<tr class=" patch core win ">
+<td><a href="https://bugs.ruby-lang.org/issues/19244">19244</a>
+</td>
+<td>patch core win</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19244">Windows: USERPROFILE should be preferred over HOMEPATH</a>
+</td>
+</tr>
+<tr class=" lib notbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/19238">19238</a>
+</td>
+<td>lib notbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19238">URI.open fails for file path when second argument is a hash</a>
+</td>
+</tr>
+<tr class=" core maybenotbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/19237">19237</a>
+</td>
+<td>core maybenotbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19237">Hash default_proc is not thread-safe to  lazy-initialize value for a given key</a>
+</td>
+</tr>
+<tr class=" maybenotbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/19235">19235</a>
+</td>
+<td>maybenotbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19235">StringIO.new(encoding: &quot;ext_enc:int_enc&quot;) doesn&#39;t set external encoding</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/19231">19231</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19231">Integer#step and Float::INFINITY - inconsistent behaviour when called with and without a block</a>
+</td>
+</tr>
+<tr class=" ext ">
+<td><a href="https://bugs.ruby-lang.org/issues/19230">19230</a>
+</td>
+<td>ext</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19230">The openssl backend of securerandom is no longer needed</a>
+</td>
+</tr>
+<tr class=" core win ">
+<td><a href="https://bugs.ruby-lang.org/issues/19192">19192</a>
+</td>
+<td>core win</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19192">IO has third data mode, document is incomplete.</a>
+</td>
+</tr>
+<tr class=" ext ">
+<td><a href="https://bugs.ruby-lang.org/issues/19175">19175</a>
+</td>
+<td>ext</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19175">Ripper does not recognize some pattern matching defining local variable</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/19172">19172</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19172">`ruby_thread_has_gvl_p` is innacurate sometimes -- document or change?</a>
+</td>
+</tr>
+<tr class=" notbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/19168">19168</a>
+</td>
+<td>notbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19168">&quot;such file&quot; is bad grammar</a>
+</td>
+</tr>
+<tr class=" perf ">
+<td><a href="https://bugs.ruby-lang.org/issues/19165">19165</a>
+</td>
+<td>perf</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19165">Method (with no param) delegation with *, **, and ... is slow</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/19160">19160</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19160">cmp_clamp arguments</a>
+</td>
+</tr>
+<tr class=" ext ">
+<td><a href="https://bugs.ruby-lang.org/issues/19158">19158</a>
+</td>
+<td>ext</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19158">Ruby 3.1.3 installs wrong gemspec for debug gem</a>
+</td>
+</tr>
+<tr class=" lib ">
+<td><a href="https://bugs.ruby-lang.org/issues/19157">19157</a>
+</td>
+<td>lib</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19157">URI bad component validation can be tricked</a>
+</td>
+</tr>
+<tr class=" ractor ">
+<td><a href="https://bugs.ruby-lang.org/issues/19154">19154</a>
+</td>
+<td>ractor</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19154">Specify require and autoload guarantees in ractors</a>
+</td>
+</tr>
 <tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/19147">19147</a>
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19147">`TestFileExhaustive#test_expand_path_for_existent_username` and `TestDir#test_home` fails on i686</a>
-</td>
-</tr>
-<tr class=" test patch ">
-<td><a href="https://bugs.ruby-lang.org/issues/19145">19145</a>
-</td>
-<td>test patch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19145">TestException#test_exception_in_message timeouts</a>
 </td>
 </tr>
 <tr class=" maybenotbug ext ">
@@ -63,25 +323,11 @@
 <td><a href="https://bugs.ruby-lang.org/issues/19144">Ruby should set AI_V4MAPPED | AI_ADDRCONFIG getaddrinfo flags by default</a>
 </td>
 </tr>
-<tr class=" ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/19136">19136</a>
-</td>
-<td>ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19136">OpenSSL::PKey::EC.check_key is useless when linked against OpenSSL 3</a>
-</td>
-</tr>
 <tr class=" maybenotbug build ">
 <td><a href="https://bugs.ruby-lang.org/issues/19126">19126</a>
 </td>
 <td>maybenotbug build</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19126">clang: Cannot compile with Control Flow Integrity (CFI)</a>
-</td>
-</tr>
-<tr class=" autoload ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/19115">19115</a>
-</td>
-<td>autoload ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19115">OpenSSL fails to autoload (macOS)</a>
 </td>
 </tr>
 <tr class=" tracepoint ">
@@ -106,31 +352,10 @@
 </td>
 </tr>
 <tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/19108">19108</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19108">Format routines like pack blindly treat a string as ASCII-encoded</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/19087">19087</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19087">String#to_c supports multiple &quot;_&quot;</a>
-</td>
-</tr>
-<tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/19084">19084</a>
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19084">Using `IO::Buffer` to change an extended String affects other Strings sharing the same buffer</a>
-</td>
-</tr>
-<tr class=" lib patch ">
-<td><a href="https://bugs.ruby-lang.org/issues/19079">19079</a>
-</td>
-<td>lib patch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19079">Modules included in a DelegateClass cannot override delegate methods</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -196,11 +421,11 @@
 <td><a href="https://bugs.ruby-lang.org/issues/19007">Unicode tables differences from Unicode.org 14.0 data</a>
 </td>
 </tr>
-<tr class=" maybenotbug tracepoint ">
-<td><a href="https://bugs.ruby-lang.org/issues/19003">19003</a>
+<tr class="  ">
+<td><a href="https://bugs.ruby-lang.org/issues/19005">19005</a>
 </td>
-<td>maybenotbug tracepoint</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19003">TracePoint behavior inconsistency in 3.2.0-preview2</a>
+<td></td>
+<td><a href="https://bugs.ruby-lang.org/issues/19005">Ruby interpreter compiled XCode 14 cannot build some native gems on macOS</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -222,13 +447,6 @@
 </td>
 <td>ext</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18988">Ripper cannot parse some code that has regexp named capture</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18971">18971</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18971">Enumerator::Lazy.take(0) leaks first element into next operation</a>
 </td>
 </tr>
 <tr class=" parser ">
@@ -257,13 +475,6 @@
 </td>
 <td>ractor maybenotbug</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18933">Dir.tmpdir implemented in non-Ractor-safe manner</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18931">18931</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18931">Inconsistent handling of invalid codepoints in String#lstrip and String#rstrip</a>
 </td>
 </tr>
 <tr class=" win ">
@@ -306,13 +517,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18903">Stack overflow signal handling seems to be triggered once and then not working after</a>
-</td>
-</tr>
-<tr class=" patch encoding ">
-<td><a href="https://bugs.ruby-lang.org/issues/18899">18899</a>
-</td>
-<td>patch encoding</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18899">Inconsistent argument handling in IO#set_encoding</a>
 </td>
 </tr>
 <tr class=" tracepoint maybenotbug ">
@@ -497,25 +701,11 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18658">Need openssl 3 support for Ubuntu 22.04 (Ruby 2.7.x and 3.0.x)</a>
 </td>
 </tr>
-<tr class=" patch lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/18657">18657</a>
-</td>
-<td>patch lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18657">IRB raises exception when stdout is a pipe</a>
-</td>
-</tr>
 <tr class=" encoding ">
 <td><a href="https://bugs.ruby-lang.org/issues/18651">18651</a>
 </td>
 <td>encoding</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18651">oob access in CP51932 -&gt; CP50220 transcoder</a>
-</td>
-</tr>
-<tr class=" build ">
-<td><a href="https://bugs.ruby-lang.org/issues/18623">18623</a>
-</td>
-<td>build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18623">`make runnable` does not work</a>
 </td>
 </tr>
 <tr class=" maybenotbug core ">
@@ -579,13 +769,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18553">Memory leak on compiling method call with kwargs</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18518">18518</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18518">NoMemoryError + [FATAL] failed to allocate memory for twice 1 &lt;&lt; large</a>
 </td>
 </tr>
 <tr class=" win core ">
@@ -831,13 +1014,6 @@
 </td>
 <td>mjit</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18142">Segmentation fault with Ruby 3.0.2</a>
-</td>
-</tr>
-<tr class=" os/arch ">
-<td><a href="https://bugs.ruby-lang.org/issues/18133">18133</a>
-</td>
-<td>os/arch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18133">LTO: TestGCCompact#test_ast_compacts segfaults on i686</a>
 </td>
 </tr>
 <tr class=" thread ">
@@ -1330,13 +1506,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16905">Ruby required to build Ruby on Haiku?</a>
 </td>
 </tr>
-<tr class=" notbug patch build ">
-<td><a href="https://bugs.ruby-lang.org/issues/16836">16836</a>
-</td>
-<td>notbug patch build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16836">configure-time LDFLAGS leak into ruby pkg-config file</a>
-</td>
-</tr>
 <tr class=" maybenotbug fiber ">
 <td><a href="https://bugs.ruby-lang.org/issues/16829">16829</a>
 </td>
@@ -1555,13 +1724,6 @@
 </td>
 </tr>
 <tr class=" cygwin build ">
-<td><a href="https://bugs.ruby-lang.org/issues/15072">15072</a>
-</td>
-<td>cygwin build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/15072">thread.c:4356:5: error: implicit declaration of function ‘ubf_list_atfork’</a>
-</td>
-</tr>
-<tr class=" cygwin build ">
 <td><a href="https://bugs.ruby-lang.org/issues/14971">14971</a>
 </td>
 <td>cygwin build</td>
@@ -1769,20 +1931,6 @@
 </td>
 <td>win test</td>
 <td><a href="https://bugs.ruby-lang.org/issues/13500">MinGW TestArity#test_proc_err_mess stops testing</a>
-</td>
-</tr>
-<tr class=" win test ">
-<td><a href="https://bugs.ruby-lang.org/issues/13485">13485</a>
-</td>
-<td>win test</td>
-<td><a href="https://bugs.ruby-lang.org/issues/13485">MinGW TestEnumerable#test_callcc SEGV info</a>
-</td>
-</tr>
-<tr class=" win core ">
-<td><a href="https://bugs.ruby-lang.org/issues/13298">13298</a>
-</td>
-<td>win core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/13298">mingw SEGV TestEnumerable#test_callcc</a>
 </td>
 </tr>
 <tr class=" win test ">
@@ -2224,13 +2372,6 @@
 </td>
 <td>test</td>
 <td><a href="https://bugs.ruby-lang.org/issues/4173">TestProcess#test_wait_and_sigchild が、たまに失敗する</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/4040">4040</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/4040">SystemStackError with Hash[*a] for Large _a_</a>
 </td>
 </tr>
 <tr class=" fiber ">
