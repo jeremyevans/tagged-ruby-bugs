@@ -1,40 +1,42 @@
 <html>
 <head>
-<title>334 Tagged Open Ruby Bugs as of 2023-01-17 07:00:05 +0900</title>
+<title>348 Tagged Open Ruby Bugs as of 2023-02-11 03:41:48 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
 <p class="filter-buttons">Available Tags: <input type="submit" value="core" />
 <input type="submit" value="win" />
-<input type="submit" value="os/arch" />
 <input type="submit" value="ractor" />
+<input type="submit" value="os/arch" />
 <input type="submit" value="build" />
-<input type="submit" value="maybenotbug" />
-<input type="submit" value="ext" />
 <input type="submit" value="patch" />
+<input type="submit" value="ext" />
+<input type="submit" value="maybenotbug" />
 <input type="submit" value="test" />
 <input type="submit" value="lib" />
-<input type="submit" value="notbug" />
 <input type="submit" value="encoding" />
 <input type="submit" value="perf" />
+<input type="submit" value="notbug" />
 <input type="submit" value="regexp" />
 <input type="submit" value="thread" />
 <input type="submit" value="cygwin" />
 <input type="submit" value="parser" />
-<input type="submit" value="fiber" />
 <input type="submit" value="tracepoint" />
+<input type="submit" value="fiber" />
 <input type="submit" value="mjit" />
 <input type="submit" value="autoload" />
-<input type="submit" value="refine" />
-<input type="submit" value="backport" />
-<input type="submit" value="jit" />
+<input type="submit" value="doc" />
 <input type="submit" value="os-arch" />
+<input type="submit" value="backport" />
+<input type="submit" value="coverage" />
+<input type="submit" value="jit" />
+<input type="submit" value="refine" />
 <input type="submit" value="unfixable" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">334</span> matched)
+(<span id="matched">348</span> matched)
 <table>
-<caption>334 Tagged Open Ruby Bugs as of 2023-01-17 07:00:05 +0900</caption>
+<caption>348 Tagged Open Ruby Bugs as of 2023-02-11 03:41:48 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -44,31 +46,241 @@
 </thead>
 <tbody>
 <tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/19343">19343</a>
+<td><a href="https://bugs.ruby-lang.org/issues/19427">19427</a>
 </td>
 <td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19343">Integer#ceildiv should respect #coerce</a>
+<td><a href="https://bugs.ruby-lang.org/issues/19427">Marshal.load(source, freeze: true) doesn&#39;t freeze in some cases</a>
+</td>
+</tr>
+<tr class=" perf lib ">
+<td><a href="https://bugs.ruby-lang.org/issues/19424">19424</a>
+</td>
+<td>perf lib</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19424">Degradation in **Marshal load** only in Ruby 3.1.2 compared to 2.7.4</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/19419">19419</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19419">[BUG] try to mark T_NONE object in `ibf_dump_mark`</a>
+</td>
+</tr>
+<tr class=" patch regexp doc ">
+<td><a href="https://bugs.ruby-lang.org/issues/19417">19417</a>
+</td>
+<td>patch regexp doc</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19417">Regexp \p{Word} and [[:word:]] do not match Unicode Other_Number character</a>
 </td>
 </tr>
 <tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/19341">19341</a>
+<td><a href="https://bugs.ruby-lang.org/issues/19416">19416</a>
 </td>
 <td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19341">Write cache issue with class variables</a>
+<td><a href="https://bugs.ruby-lang.org/issues/19416">Inconsistent behaviour for Struct.new without any member_names</a>
 </td>
 </tr>
-<tr class=" patch build ">
-<td><a href="https://bugs.ruby-lang.org/issues/19340">19340</a>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/19413">19413</a>
 </td>
-<td>patch build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19340">Ruby master &#39;make install&#39; not installing rbs gem</a>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19413">Can&#39;t move object when 2 ivars refer to same object</a>
+</td>
+</tr>
+<tr class=" ext ">
+<td><a href="https://bugs.ruby-lang.org/issues/19412">19412</a>
+</td>
+<td>ext</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19412">Socket starts queueing and not responding after a certain amount of requests</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/19411">19411</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19411">GC issue with moved objects</a>
+</td>
+</tr>
+<tr class=" ractor ">
+<td><a href="https://bugs.ruby-lang.org/issues/19410">19410</a>
+</td>
+<td>ractor</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19410">If move from ractor fails with error, some objects are left in broken state</a>
+</td>
+</tr>
+<tr class=" ractor ">
+<td><a href="https://bugs.ruby-lang.org/issues/19409">19409</a>
+</td>
+<td>ractor</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19409">Object&#39;s shape is reset after a ractor move</a>
+</td>
+</tr>
+<tr class=" ractor ">
+<td><a href="https://bugs.ruby-lang.org/issues/19408">19408</a>
+</td>
+<td>ractor</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19408">Object no longer frozen after moved from a ractor</a>
+</td>
+</tr>
+<tr class=" ractor ">
+<td><a href="https://bugs.ruby-lang.org/issues/19407">19407</a>
+</td>
+<td>ractor</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19407">2 threads taking from current ractor will hang forever</a>
+</td>
+</tr>
+<tr class=" lib doc  ">
+<td><a href="https://bugs.ruby-lang.org/issues/19401">19401</a>
+</td>
+<td>lib doc </td>
+<td><a href="https://bugs.ruby-lang.org/issues/19401">[Doc] Broken links in CSV documentation</a>
 </td>
 </tr>
 <tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/19339">19339</a>
+<td><a href="https://bugs.ruby-lang.org/issues/19394">19394</a>
 </td>
 <td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19339">Defining ivar on special constants with @ syntax causes segv</a>
+<td><a href="https://bugs.ruby-lang.org/issues/19394">cvars in instance of cloned class point to source class&#39;s cvars even after class_variable_set on clone</a>
+</td>
+</tr>
+<tr class=" parser maybenotbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/19392">19392</a>
+</td>
+<td>parser maybenotbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19392">Endless method vs and/or</a>
+</td>
+</tr>
+<tr class=" patch ractor ">
+<td><a href="https://bugs.ruby-lang.org/issues/19387">19387</a>
+</td>
+<td>patch ractor</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19387">Issue with ObjectSpace.each_objects not returning objects after starting a ractor</a>
+</td>
+</tr>
+<tr class=" ext os-arch ">
+<td><a href="https://bugs.ruby-lang.org/issues/19386">19386</a>
+</td>
+<td>ext os-arch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19386">`test_hmac.rb` of openssl is timeout on RHEL9</a>
+</td>
+</tr>
+<tr class=" win encoding ">
+<td><a href="https://bugs.ruby-lang.org/issues/19384">19384</a>
+</td>
+<td>win encoding</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19384">ASCII 128..154 characters in IO.popen or %x output do not reflect the proper encoding in Windows</a>
+</td>
+</tr>
+<tr class=" patch win encoding ">
+<td><a href="https://bugs.ruby-lang.org/issues/19383">19383</a>
+</td>
+<td>patch win encoding</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19383">Time.now.zone encoding for German display language in Windows is incorrect</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/19380">19380</a>
+</td>
+<td>patch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19380">IO.read doesn&#39;t validate the offset argument</a>
+</td>
+</tr>
+<tr class=" patch core win ">
+<td><a href="https://bugs.ruby-lang.org/issues/19378">19378</a>
+</td>
+<td>patch core win</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19378">Windows: Use less syscalls for faster require of big gems</a>
+</td>
+</tr>
+<tr class=" ractor ">
+<td><a href="https://bugs.ruby-lang.org/issues/19375">19375</a>
+</td>
+<td>ractor</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19375">File objects are currently shareable, as are other extension objects that shouldn&#39;t be.</a>
+</td>
+</tr>
+<tr class=" patch ractor ">
+<td><a href="https://bugs.ruby-lang.org/issues/19374">19374</a>
+</td>
+<td>patch ractor</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19374">Issue with Ractor.make_shareable with curried procs</a>
+</td>
+</tr>
+<tr class=" patch ractor ">
+<td><a href="https://bugs.ruby-lang.org/issues/19372">19372</a>
+</td>
+<td>patch ractor</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19372">Proc objects are not traversed for shareable check during Ractor.make_shareable(prok)</a>
+</td>
+</tr>
+<tr class=" ext ">
+<td><a href="https://bugs.ruby-lang.org/issues/19371">19371</a>
+</td>
+<td>ext</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19371">Having Psych 5 installed raises an error during another gem&#39;s C-extension installation when parsing YAML</a>
+</td>
+</tr>
+<tr class=" patch ractor ">
+<td><a href="https://bugs.ruby-lang.org/issues/19369">19369</a>
+</td>
+<td>patch ractor</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19369">Small corner-case issue that breaks Ractor isolation: change cloned object from another thread</a>
+</td>
+</tr>
+<tr class=" ractor ">
+<td><a href="https://bugs.ruby-lang.org/issues/19368">19368</a>
+</td>
+<td>ractor</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19368">Small issue with isolated procs and eval</a>
+</td>
+</tr>
+<tr class=" patch ractor ">
+<td><a href="https://bugs.ruby-lang.org/issues/19367">19367</a>
+</td>
+<td>patch ractor</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19367">Issue with ractor local storage API</a>
+</td>
+</tr>
+<tr class=" ractor ">
+<td><a href="https://bugs.ruby-lang.org/issues/19365">19365</a>
+</td>
+<td>ractor</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19365">Ractors can access non-shareable values through enumerators</a>
+</td>
+</tr>
+<tr class=" ractor tracepoint ">
+<td><a href="https://bugs.ruby-lang.org/issues/19364">19364</a>
+</td>
+<td>ractor tracepoint</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19364">Issue with tracepoint enable/disable across ractors</a>
+</td>
+</tr>
+<tr class=" coverage ">
+<td><a href="https://bugs.ruby-lang.org/issues/19363">19363</a>
+</td>
+<td>coverage</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19363">Fix rb_transient_heap_mark: wrong header (T_STRUCT) segfault</a>
+</td>
+</tr>
+<tr class=" core maybenotbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/19362">19362</a>
+</td>
+<td>core maybenotbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19362">#dup on Proc doesn&#39;t call initialize_dup</a>
+</td>
+</tr>
+<tr class=" notbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/19352">19352</a>
+</td>
+<td>notbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19352">Feature #17391 was not such a good idea because now Ruby 3.2 can not install Rails v5 or v6 if they use webpacker.</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/19349">19349</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19349">Kernel.Integer silently discards base argument that does not have a #to_int</a>
 </td>
 </tr>
 <tr class=" ractor ">
@@ -76,13 +288,6 @@
 </td>
 <td>ractor</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19338">Ruby hangs when ouputting warnings inside ractor with VM lock held</a>
-</td>
-</tr>
-<tr class=" notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/19337">19337</a>
-</td>
-<td>notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19337">What is the difference between &quot;default&quot; gems and &quot;bundled&quot; gems?</a>
 </td>
 </tr>
 <tr class=" perf notbug ">
@@ -120,13 +325,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/19293">The new Time.new(String) API is nice... but we still need a stricter version of this</a>
 </td>
 </tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/19289">19289</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19289">RbConfig::CONFIG[&quot;STRIP&quot;] should keep `rb_abi_version` and `rb_abi_version` should always be part of Ruby</a>
-</td>
-</tr>
 <tr class=" ractor perf ">
 <td><a href="https://bugs.ruby-lang.org/issues/19288">19288</a>
 </td>
@@ -139,20 +337,6 @@
 </td>
 <td>lib</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19287">Let DelegateClass respect the original method&#39;s arity in case of 0</a>
-</td>
-</tr>
-<tr class=" core maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/19286">19286</a>
-</td>
-<td>core maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19286">What should kwargs&#39; arity be?</a>
-</td>
-</tr>
-<tr class=" regexp ">
-<td><a href="https://bugs.ruby-lang.org/issues/19283">19283</a>
-</td>
-<td>regexp</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19283">Regex error on ruby 3.2</a>
 </td>
 </tr>
 <tr class=" parser ">
@@ -183,13 +367,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/19259">`Data#with` doesn&#39;t call `initialize` nor `initialize_copy`</a>
 </td>
 </tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/19255">19255</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19255">YJIT: global symbol leakage</a>
-</td>
-</tr>
 <tr class=" test ">
 <td><a href="https://bugs.ruby-lang.org/issues/19251">19251</a>
 </td>
@@ -216,20 +393,6 @@
 </td>
 <td>lib notbug</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19238">URI.open fails for file path when second argument is a hash</a>
-</td>
-</tr>
-<tr class=" core maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/19237">19237</a>
-</td>
-<td>core maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19237">Hash default_proc is not thread-safe to  lazy-initialize value for a given key</a>
-</td>
-</tr>
-<tr class=" maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/19235">19235</a>
-</td>
-<td>maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19235">StringIO.new(encoding: &quot;ext_enc:int_enc&quot;) doesn&#39;t set external encoding</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -316,13 +479,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/19147">`TestFileExhaustive#test_expand_path_for_existent_username` and `TestDir#test_home` fails on i686</a>
 </td>
 </tr>
-<tr class=" maybenotbug ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/19144">19144</a>
-</td>
-<td>maybenotbug ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19144">Ruby should set AI_V4MAPPED | AI_ADDRCONFIG getaddrinfo flags by default</a>
-</td>
-</tr>
 <tr class=" maybenotbug build ">
 <td><a href="https://bugs.ruby-lang.org/issues/19126">19126</a>
 </td>
@@ -356,13 +512,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19084">Using `IO::Buffer` to change an extended String affects other Strings sharing the same buffer</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/19051">19051</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19051">Incorrect pointers in global_cc_cache_table when compacting</a>
 </td>
 </tr>
 <tr class=" build win ">
@@ -680,13 +829,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18674">Build failure `make up` with WSL2</a>
 </td>
 </tr>
-<tr class=" build ">
-<td><a href="https://bugs.ruby-lang.org/issues/18666">18666</a>
-</td>
-<td>build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18666">No rule to make target &#39;yaml/yaml.h&#39;, needed by &#39;api.o&#39;</a>
-</td>
-</tr>
 <tr class=" win core ">
 <td><a href="https://bugs.ruby-lang.org/issues/18661">18661</a>
 </td>
@@ -755,13 +897,6 @@
 </td>
 <td>perf core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18572">Performance regression when invoking refined methods</a>
-</td>
-</tr>
-<tr class=" notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/18567">18567</a>
-</td>
-<td>notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18567">Depending on default gems in stdlib gems when not needed considered harmful</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -918,13 +1053,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18359">[Windows MinGW] warning Please include winsock2.h before windows.h</a>
 </td>
 </tr>
-<tr class=" lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/18355">18355</a>
-</td>
-<td>lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18355">require(&quot;pathname&quot;) within rack application chnages behaviors of Pathname methods, such as absolute?(), when there are two versions of &#39;pathname&#39; gem installed.</a>
-</td>
-</tr>
 <tr class=" encoding ">
 <td><a href="https://bugs.ruby-lang.org/issues/18338">18338</a>
 </td>
@@ -986,13 +1114,6 @@
 </td>
 <td>win</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18186">SEGV with system command - MinGW?</a>
-</td>
-</tr>
-<tr class=" maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/18169">18169</a>
-</td>
-<td>maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18169">Local copies of gemified libraries are being released out of sync with their gems</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -1863,13 +1984,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/14090">`TestGc#test_interrupt_in_finalizer` fails very rarely</a>
 </td>
 </tr>
-<tr class=" refine ">
-<td><a href="https://bugs.ruby-lang.org/issues/14083">14083</a>
-</td>
-<td>refine</td>
-<td><a href="https://bugs.ruby-lang.org/issues/14083">Refinement in block calling incorrect method</a>
-</td>
-</tr>
 <tr class=" test ">
 <td><a href="https://bugs.ruby-lang.org/issues/14064">14064</a>
 </td>
@@ -2102,13 +2216,6 @@
 </td>
 </tr>
 <tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/11230">11230</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/11230">Should rb_struct_s_members() be public API?</a>
-</td>
-</tr>
-<tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/11183">11183</a>
 </td>
 <td>core</td>
@@ -2141,13 +2248,6 @@
 </td>
 <td>core maybenotbug</td>
 <td><a href="https://bugs.ruby-lang.org/issues/11064">#singleton_methods for objects with special singleton_class returns an empty array</a>
-</td>
-</tr>
-<tr class=" lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/10919">10919</a>
-</td>
-<td>lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/10919">[gem install] installs multipe platforms</a>
 </td>
 </tr>
 <tr class=" test os/arch ">
