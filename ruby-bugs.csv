@@ -115,7 +115,7 @@
 16493,thread os/arch,TestThreadQueue#test_thr_kill is flaky on AArch64
 16497,ext encoding,StringIO#internal_encoding is broken (more severely in 2.7)
 16694,mjit,JIT vs hardened GCC with PCH
-16776,core,Regression in coverage library
+16776,coverage,Regression in coverage library
 16810,os/arch,ruby segfaults on s390x with musl libc
 16819,core,Line reporting off by one when reporting line of a hash?
 16820,notbug,LEGAL is out of sync
@@ -211,7 +211,7 @@
 18413,build os/arch,Segfault in `ripper/lexer.rb`
 18429,os/arch build,Configure ruby-3.0.3 on Solaris 10 Unknown keyword &#39;URL&#39; in &#39;./ruby.tmp.pc&#39;
 18444,os/arch core,Trapped TSTP causes a locking deadlock in 3.0.3 onward
-18454,perf jit,YJIT slowing down key Discourse benchmarks
+18454,perf yjit,YJIT slowing down key Discourse benchmarks
 18455,core perf,`IO#close` has poor performance and difficult to understand semantics.
 18456,lib,rdoc non-determinism: module includes can be added once or twice to generated .ri
 18457,win ext,ruby 2.7.5 fiddle/types.rb use uint32_t but fiddle/cparser.rb lacks uint32_t
@@ -224,7 +224,7 @@
 18507,os/arch build,Incorrect target_os detection in configure script
 18510,win core,Unexpected waiting for console when starting ruby on windows
 18553,core,Memory leak on compiling method call with kwargs
-18572,perf core,Performance regression when invoking refined methods
+18572,perf refine,Performance regression when invoking refined methods
 18601,encoding,Invalid byte sequences in Big5 encodings
 18605,win core,Fails to run on (newer) 32bit Windows with ucrt
 18608,build,`require&#39;: cannot load such file -- ripper (LoadError) after `make distclean`
@@ -309,7 +309,7 @@
 19293,core maybenotbug,The new Time.new(String) API is nice... but we still need a stricter version of this
 19294,core maybenotbug,Enumerator.product works incorrectly with consuming enumerators
 19297,test,Don&#39;t download content from internet to execute Ruby test suite
-19313,test os-arch,Leaked file descriptors while running test-all
+19313,test os/arch,Leaked file descriptors while running test-all
 19334,perf notbug,Defining many instance variables and accessing them is slow in Ruby 3.2.0
 19338,ractor,Ruby hangs when ouputting warnings inside ractor with VM lock held
 19349,core,Kernel.Integer silently discards base argument that does not have a #to_int
@@ -329,7 +329,7 @@
 19380,patch core,IO.read doesn&#39;t validate the offset argument
 19383,patch win encoding,Time.now.zone encoding for German display language in Windows is incorrect
 19384,win encoding,ASCII 128..154 characters in IO.popen or %x output do not reflect the proper encoding in Windows
-19386,ext os-arch,`test_hmac.rb` of openssl is timeout on RHEL9
+19386,ext os/arch,`test_hmac.rb` of openssl is timeout on RHEL9
 19387,patch ractor,Issue with ObjectSpace.each_objects not returning objects after starting a ractor
 19392,parser maybenotbug,Endless method vs and/or
 19394,patch core,cvars in instance of cloned class point to source class&#39;s cvars even after class_variable_set on clone
