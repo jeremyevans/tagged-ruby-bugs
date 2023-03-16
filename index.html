@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>348 Tagged Open Ruby Bugs as of 2023-02-11 03:46:08 +0900</title>
+<title>342 Tagged Open Ruby Bugs as of 2023-03-17 05:42:54 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -8,34 +8,33 @@
 <input type="submit" value="win" />
 <input type="submit" value="ractor" />
 <input type="submit" value="os/arch" />
-<input type="submit" value="build" />
 <input type="submit" value="patch" />
-<input type="submit" value="ext" />
+<input type="submit" value="build" />
 <input type="submit" value="maybenotbug" />
+<input type="submit" value="ext" />
 <input type="submit" value="test" />
 <input type="submit" value="lib" />
 <input type="submit" value="encoding" />
-<input type="submit" value="perf" />
 <input type="submit" value="notbug" />
-<input type="submit" value="regexp" />
+<input type="submit" value="perf" />
 <input type="submit" value="thread" />
+<input type="submit" value="regexp" />
 <input type="submit" value="cygwin" />
 <input type="submit" value="parser" />
-<input type="submit" value="tracepoint" />
 <input type="submit" value="fiber" />
-<input type="submit" value="mjit" />
+<input type="submit" value="tracepoint" />
+<input type="submit" value="doc" />
 <input type="submit" value="autoload" />
 <input type="submit" value="coverage" />
-<input type="submit" value="doc" />
 <input type="submit" value="refine" />
-<input type="submit" value="backport" />
+<input type="submit" value="mjit" />
 <input type="submit" value="unfixable" />
 <input type="submit" value="yjit" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">348</span> matched)
+(<span id="matched">342</span> matched)
 <table>
-<caption>348 Tagged Open Ruby Bugs as of 2023-02-11 03:46:08 +0900</caption>
+<caption>342 Tagged Open Ruby Bugs as of 2023-03-17 05:42:54 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -44,25 +43,81 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" patch encoding ">
+<td><a href="https://bugs.ruby-lang.org/issues/19532">19532</a>
+</td>
+<td>patch encoding</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19532">Handling of 6-byte codepoints in left_adjust_char_head in CESU-8 encoding is broken</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/19531">19531</a>
+</td>
+<td>patch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19531">ObjectSpace::WeakMap: replaced values still clear the key they were assigned to</a>
+</td>
+</tr>
+<tr class=" patch doc ">
+<td><a href="https://bugs.ruby-lang.org/issues/19485">19485</a>
+</td>
+<td>patch doc</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19485">Unexpected behavior in squiggly heredocs</a>
+</td>
+</tr>
+<tr class=" lib ">
+<td><a href="https://bugs.ruby-lang.org/issues/19479">19479</a>
+</td>
+<td>lib</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19479">Support IPv4-mapped IPv6 addresses in IPAddr#private? </a>
+</td>
+</tr>
+<tr class=" maybenotbug thread ">
+<td><a href="https://bugs.ruby-lang.org/issues/19473">19473</a>
+</td>
+<td>maybenotbug thread</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19473">can&#39;t be called from trap context (ThreadError) is too limiting</a>
+</td>
+</tr>
+<tr class=" perf notbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/19470">19470</a>
+</td>
+<td>perf notbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19470">Frequent small range-reads from and then writes to a large array are very slow</a>
+</td>
+</tr>
+<tr class=" regexp ">
+<td><a href="https://bugs.ruby-lang.org/issues/19455">19455</a>
+</td>
+<td>regexp</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19455">Ruby 3.2: wrong Regexp encoding with non-ASCII comments</a>
+</td>
+</tr>
+<tr class=" maybenotbug lib ">
+<td><a href="https://bugs.ruby-lang.org/issues/19441">19441</a>
+</td>
+<td>maybenotbug lib</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19441">Closing an Tempfile#dup behaviour</a>
+</td>
+</tr>
+<tr class=" perf ">
+<td><a href="https://bugs.ruby-lang.org/issues/19438">19438</a>
+</td>
+<td>perf</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19438">Ruby 2.7 -&gt; 3.2 Performance Regression in so_k_nucleotide benchmark</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/19436">19436</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19436">Call Cache for singleton methods can lead to &quot;memory leaks&quot;</a>
+</td>
+</tr>
 <tr class=" patch core ">
 <td><a href="https://bugs.ruby-lang.org/issues/19427">19427</a>
 </td>
 <td>patch core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19427">Marshal.load(source, freeze: true) doesn&#39;t freeze in some cases</a>
-</td>
-</tr>
-<tr class=" perf lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/19424">19424</a>
-</td>
-<td>perf lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19424">Degradation in **Marshal load** only in Ruby 3.1.2 compared to 2.7.4</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/19419">19419</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19419">[BUG] try to mark T_NONE object in `ibf_dump_mark`</a>
 </td>
 </tr>
 <tr class=" patch regexp doc ">
@@ -128,10 +183,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/19407">2 threads taking from current ractor will hang forever</a>
 </td>
 </tr>
-<tr class=" lib doc  ">
+<tr class=" lib doc ">
 <td><a href="https://bugs.ruby-lang.org/issues/19401">19401</a>
 </td>
-<td>lib doc </td>
+<td>lib doc</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19401">[Doc] Broken links in CSV documentation</a>
 </td>
 </tr>
@@ -140,13 +195,6 @@
 </td>
 <td>patch core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19394">cvars in instance of cloned class point to source class&#39;s cvars even after class_variable_set on clone</a>
-</td>
-</tr>
-<tr class=" parser maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/19392">19392</a>
-</td>
-<td>parser maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19392">Endless method vs and/or</a>
 </td>
 </tr>
 <tr class=" patch ractor ">
@@ -210,13 +258,6 @@
 </td>
 <td>patch ractor</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19372">Proc objects are not traversed for shareable check during Ractor.make_shareable(prok)</a>
-</td>
-</tr>
-<tr class=" ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/19371">19371</a>
-</td>
-<td>ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19371">Having Psych 5 installed raises an error during another gem&#39;s C-extension installation when parsing YAML</a>
 </td>
 </tr>
 <tr class=" patch ractor ">
@@ -359,13 +400,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/19266">URI::Generic should use URI::RFC3986_PARSER instead of URI::DEFAULT_PARSER</a>
 </td>
 </tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/19259">19259</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19259">`Data#with` doesn&#39;t call `initialize` nor `initialize_copy`</a>
-</td>
-</tr>
 <tr class=" test ">
 <td><a href="https://bugs.ruby-lang.org/issues/19251">19251</a>
 </td>
@@ -448,13 +482,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19160">cmp_clamp arguments</a>
-</td>
-</tr>
-<tr class=" ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/19158">19158</a>
-</td>
-<td>ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19158">Ruby 3.1.3 installs wrong gemspec for debug gem</a>
 </td>
 </tr>
 <tr class=" lib ">
@@ -702,13 +729,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18810">Make `Kernel#p` interruptable.</a>
 </td>
 </tr>
-<tr class=" build os/arch ">
-<td><a href="https://bugs.ruby-lang.org/issues/18808">18808</a>
-</td>
-<td>build os/arch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18808">Cannot compile ruby 3.1.2 on powerpc64le-linux without disabling the jit features</a>
-</td>
-</tr>
 <tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/18805">18805</a>
 </td>
@@ -721,13 +741,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18804">Invalid line number for putnil instruction</a>
-</td>
-</tr>
-<tr class=" regexp ">
-<td><a href="https://bugs.ruby-lang.org/issues/18797">18797</a>
-</td>
-<td>regexp</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18797">Third argument to Regexp.new is a bit broken</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -835,13 +848,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18661">Net::HTTP behavior changed between 2.6 and 3.1 on windows.</a>
 </td>
 </tr>
-<tr class=" backport ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/18658">18658</a>
-</td>
-<td>backport ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18658">Need openssl 3 support for Ubuntu 22.04 (Ruby 2.7.x and 3.0.x)</a>
-</td>
-</tr>
 <tr class=" encoding ">
 <td><a href="https://bugs.ruby-lang.org/issues/18651">18651</a>
 </td>
@@ -861,13 +867,6 @@
 </td>
 <td>build notbug</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18616">Error with clang(1) on MacOS due to __declspec()</a>
-</td>
-</tr>
-<tr class=" lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/18614">18614</a>
-</td>
-<td>lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18614">Error (busy loop) in TestGemCommandsSetupCommand#test_destdir_flag_does_not_try_to_write_to_the_default_gem_home</a>
 </td>
 </tr>
 <tr class=" build ">
@@ -952,13 +951,6 @@
 </td>
 <td>win ext</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18472">rb_w32_map_errno is not found on Ruby-3.1.0</a>
-</td>
-</tr>
-<tr class=" ractor tracepoint ">
-<td><a href="https://bugs.ruby-lang.org/issues/18464">18464</a>
-</td>
-<td>ractor tracepoint</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18464">RUBY_INTERNAL_EVENT_NEWOBJ tracepoint causes an interpreter crash when combined with Ractors</a>
 </td>
 </tr>
 <tr class=" win ext ">
@@ -1073,13 +1065,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18286">Universal arm64/x86_84 binary built on an x86_64 machine segfaults/is killed on arm64</a>
 </td>
 </tr>
-<tr class=" ext mjit ">
-<td><a href="https://bugs.ruby-lang.org/issues/18277">18277</a>
-</td>
-<td>ext mjit</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18277">buffer error (Zlib::BufError) in Zlib::Deflate#deflate when using MJIT</a>
-</td>
-</tr>
 <tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/18269">18269</a>
 </td>
@@ -1129,13 +1114,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18144">Timeout not working while regular expression match is running</a>
 </td>
 </tr>
-<tr class=" mjit ">
-<td><a href="https://bugs.ruby-lang.org/issues/18142">18142</a>
-</td>
-<td>mjit</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18142">Segmentation fault with Ruby 3.0.2</a>
-</td>
-</tr>
 <tr class=" thread ">
 <td><a href="https://bugs.ruby-lang.org/issues/18132">18132</a>
 </td>
@@ -1183,13 +1161,6 @@
 </td>
 <td>os/arch</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18061"> Execshield test: libruby.so.N.N.N: FAIL: property-note test because no .note.gnu.property section found</a>
-</td>
-</tr>
-<tr class=" mjit ">
-<td><a href="https://bugs.ruby-lang.org/issues/18058">18058</a>
-</td>
-<td>mjit</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18058">3.1.0-dev with MJIT enabled Zlib::BufError during `gem install`</a>
 </td>
 </tr>
 <tr class=" fiber ">
@@ -1260,13 +1231,6 @@
 </td>
 <td>cygwin core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17996">Cygwin: thread + pipe behavior since Ruby 2.6</a>
-</td>
-</tr>
-<tr class=" perf ractor ">
-<td><a href="https://bugs.ruby-lang.org/issues/17995">17995</a>
-</td>
-<td>perf ractor</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17995">Slow down when mjit and Ractor are being used at same time</a>
 </td>
 </tr>
 <tr class=" regexp ">
@@ -1659,13 +1623,6 @@
 </td>
 <td>coverage</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16776">Regression in coverage library</a>
-</td>
-</tr>
-<tr class=" mjit ">
-<td><a href="https://bugs.ruby-lang.org/issues/16694">16694</a>
-</td>
-<td>mjit</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16694">JIT vs hardened GCC with PCH</a>
 </td>
 </tr>
 <tr class=" ext encoding ">
@@ -2326,13 +2283,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/9409">Cygwin で &quot;filesystem&quot; の encoding が正しくないケース</a>
 </td>
 </tr>
-<tr class=" test ">
-<td><a href="https://bugs.ruby-lang.org/issues/9366">9366</a>
-</td>
-<td>test</td>
-<td><a href="https://bugs.ruby-lang.org/issues/9366">&quot;make -j32 check TESTS=-j32&quot; occasionally fails on rubygems/specification</a>
-</td>
-</tr>
 <tr class=" win encoding ">
 <td><a href="https://bugs.ruby-lang.org/issues/9189">9189</a>
 </td>
@@ -2471,6 +2421,13 @@
 </td>
 <td>test</td>
 <td><a href="https://bugs.ruby-lang.org/issues/4173">TestProcess#test_wait_and_sigchild が、たまに失敗する</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/4040">4040</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/4040">SystemStackError with Hash[*a] for Large _a_</a>
 </td>
 </tr>
 <tr class=" fiber ">
