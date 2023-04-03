@@ -271,7 +271,6 @@
 19048,build win,Install of Ruby 3.1.x fails on Ubuntu 20.04 running on WSL
 19084,core,Using `IO::Buffer` to change an extended String affects other Strings sharing the same buffer
 19112,ractor tracepoint,Ractor garbage collection breaks/disables all active tracepoints
-19113,core patch,Inconsistency in retention of compare_by_identity flag in Hash methods
 19114,tracepoint,Calling TracePoint#enable multiple times causes TracePoint to be activated multiple times
 19126,maybenotbug build,clang: Cannot compile with Control Flow Integrity (CFI)
 19147,core,`TestFileExhaustive#test_expand_path_for_existent_username` and `TestDir#test_home` fails on i686
@@ -281,7 +280,6 @@
 19165,perf,"Method (with no param) delegation with *, **, and ... is slow"
 19168,notbug,&quot;such file&quot; is bad grammar
 19172,core,`ruby_thread_has_gvl_p` is innacurate sometimes -- document or change?
-19175,ext,Ripper does not recognize some pattern matching defining local variable
 19192,core win,"IO has third data mode, document is incomplete."
 19230,ext,The openssl backend of securerandom is no longer needed
 19231,core,Integer#step and Float::INFINITY - inconsistent behaviour when called with and without a block
@@ -313,7 +311,6 @@
 19374,patch ractor,Issue with Ractor.make_shareable with curried procs
 19375,ractor,"File objects are currently shareable, as are other extension objects that shouldn&#39;t be."
 19378,patch core win,Windows: Use less syscalls for faster require of big gems
-19380,patch core,IO.read doesn&#39;t validate the offset argument
 19383,patch win encoding,Time.now.zone encoding for German display language in Windows is incorrect
 19384,win encoding,ASCII 128..154 characters in IO.popen or %x output do not reflect the proper encoding in Windows
 19386,ext os/arch,`test_hmac.rb` of openssl is timeout on RHEL9
@@ -337,6 +334,19 @@
 19470,perf notbug,Frequent small range-reads from and then writes to a large array are very slow
 19473,maybenotbug thread,can&#39;t be called from trap context (ThreadError) is too limiting
 19479,lib,Support IPv4-mapped IPv6 addresses in IPAddr#private? 
-19485,patch doc,Unexpected behavior in squiggly heredocs
-19531,patch core,ObjectSpace::WeakMap: replaced values still clear the key they were assigned to
 19532,patch encoding,Handling of 6-byte codepoints in left_adjust_char_head in CESU-8 encoding is broken
+19533,patch maybenotbug,Behavior of ===/include? on a beginless/endless range (nil..nil) changed in ruby 3.2
+19534,perf notbug,[ruby 3.2.1] Regular expression comparisons may be slower than in older versions.
+19537,regexp,Regexp caching algorithm since v3.2.0 causes invalid memory access
+19542,core,Operations on zero-sized IO::Buffer are raising
+19544,core,Custom quotes inconsistency
+19549,parser,Inconsistency in backref parsing
+19557,core,Deadlock on STDOUT(ERR) lock on signal handler
+19558,core patch,str.dump.undump crashes when str contains both Unicode and ASCII control characters
+19562,ractor,Setting default_(in|ex)ternal encoding after running an Ractor freezes ruby
+19563,ext,Ripper.tokenize(code).join != code when heredoc and multiline %w[] literal is on the same line
+19564,notbug core,Range.cover? fails for Range wrapped in SimpleDelegator
+19566,lib,OptionParser::on raises unsupported argument type: URI (ArgumentError) but shouldn&#39;t
+19568,win test,"Windows mingw rust, failures with test/rubygems/test_gem_ext_cargo_builder.rb"
+19569,core,#map on Enumerator::Lazy block arguments seem to differ from regular #map
+19570,core,`Exception#full_message` raises an `EncodingError` if the exception contains UTF8 characters after a newline and `Exception#cause` contains UTF8 characters
