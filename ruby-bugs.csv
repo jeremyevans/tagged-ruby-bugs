@@ -12,7 +12,7 @@
 7964,encoding ext,Writing an ASCII-8BIT String to a StringIO created from a UTF-8 String
 7968,ext perf,Poor UDPSocket#send performance in ruby 2.0.0 on windows
 7976,tracepoint notbug,"TracePoint call is at call point, not call site"
-8185,thread unfixable, Thread/fork issue
+8185,thread, Thread/fork issue
 8299,core win,Minor error in float parsing
 8444,core,Regexp vars $~ and friends are not thread local
 8445,patch core,IO.open and IO#set_enconding does not support :fallback option
@@ -84,7 +84,6 @@
 14681,core,`syswrite&#39;: stream closed in another thread (IOError)
 14727,win thread,TestQueue#test_queue_with_trap always timeout on Windows10
 14761,os/arch thread,TestThread#test_join_limits hangs up on Solaris 10 with gcc
-14826,os/arch build,make: *** [.ext/include/sparc-solaris2.10/rb_mjit_min_header-2.6.0.h] Error 1 on Solaris 10 with very old gcc3
 14838,regexp notbug,RegexpError with double &quot;s&quot; in look-behind assertion in case-insensitive unicode regexp
 14906,win core,MinGW failure - TestIO#test_copy_stream_no_busy_wait
 14957,win thread,"MinGW, gcc 8.2.0, bootstraptest test_thread.rb - failure ?"
@@ -161,7 +160,6 @@
 17774,regexp,Quantified empty group causes regex to fail
 17792,core os/arch,make notes and make test fail with Ruby3.0.1p64 RaspberryPI 4B Ubuntu 20.10 ARM64
 17799,core,Seg fault in rb_class_clear_method_cache
-17817,mjit,--jit outputs ./tmp/_ruby_mjit_*.h: No such file or directory on with TMP
 17826,ractor,Ractor#take hangs if used in multiple Threads
 17878,ractor,bootstraptest/test_ractor.rb:224 a random failing test with &quot;The outgoing-port is already closed (Ractor::ClosedError)&quot;
 17882,ractor cygwin,bootstraptest/test_ractor.rb:224 segfaults on Cygwin
@@ -346,7 +344,7 @@
 19562,ractor,Setting default_(in|ex)ternal encoding after running an Ractor freezes ruby
 19563,ext,Ripper.tokenize(code).join != code when heredoc and multiline %w[] literal is on the same line
 19564,notbug core,Range.cover? fails for Range wrapped in SimpleDelegator
-19566,lib,OptionParser::on raises unsupported argument type: URI (ArgumentError) but shouldn&#39;t
+19566,doc lib,OptionParser::on raises unsupported argument type: URI (ArgumentError) but shouldn&#39;t
 19568,win test,"Windows mingw rust, failures with test/rubygems/test_gem_ext_cargo_builder.rb"
 19569,core,#map on Enumerator::Lazy block arguments seem to differ from regular #map
 19570,core,`Exception#full_message` raises an `EncodingError` if the exception contains UTF8 characters after a newline and `Exception#cause` contains UTF8 characters
