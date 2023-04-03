@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>342 Tagged Open Ruby Bugs as of 2023-03-17 05:42:54 +0900</title>
+<title>352 Tagged Open Ruby Bugs as of 2023-04-04 04:49:21 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -11,30 +11,30 @@
 <input type="submit" value="patch" />
 <input type="submit" value="build" />
 <input type="submit" value="maybenotbug" />
-<input type="submit" value="ext" />
 <input type="submit" value="test" />
+<input type="submit" value="ext" />
 <input type="submit" value="lib" />
 <input type="submit" value="encoding" />
 <input type="submit" value="notbug" />
 <input type="submit" value="perf" />
-<input type="submit" value="thread" />
 <input type="submit" value="regexp" />
+<input type="submit" value="thread" />
 <input type="submit" value="cygwin" />
 <input type="submit" value="parser" />
 <input type="submit" value="fiber" />
 <input type="submit" value="tracepoint" />
-<input type="submit" value="doc" />
 <input type="submit" value="autoload" />
 <input type="submit" value="coverage" />
+<input type="submit" value="doc" />
 <input type="submit" value="refine" />
 <input type="submit" value="mjit" />
 <input type="submit" value="unfixable" />
 <input type="submit" value="yjit" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">342</span> matched)
+(<span id="matched">352</span> matched)
 <table>
-<caption>342 Tagged Open Ruby Bugs as of 2023-03-17 05:42:54 +0900</caption>
+<caption>352 Tagged Open Ruby Bugs as of 2023-04-04 04:49:21 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -43,25 +43,116 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/19570">19570</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19570">`Exception#full_message` raises an `EncodingError` if the exception contains UTF8 characters after a newline and `Exception#cause` contains UTF8 characters</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/19569">19569</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19569">#map on Enumerator::Lazy block arguments seem to differ from regular #map</a>
+</td>
+</tr>
+<tr class=" win test ">
+<td><a href="https://bugs.ruby-lang.org/issues/19568">19568</a>
+</td>
+<td>win test</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19568">Windows mingw rust, failures with test/rubygems/test_gem_ext_cargo_builder.rb</a>
+</td>
+</tr>
+<tr class=" lib ">
+<td><a href="https://bugs.ruby-lang.org/issues/19566">19566</a>
+</td>
+<td>lib</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19566">OptionParser::on raises unsupported argument type: URI (ArgumentError) but shouldn&#39;t</a>
+</td>
+</tr>
+<tr class=" notbug core ">
+<td><a href="https://bugs.ruby-lang.org/issues/19564">19564</a>
+</td>
+<td>notbug core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19564">Range.cover? fails for Range wrapped in SimpleDelegator</a>
+</td>
+</tr>
+<tr class=" ext ">
+<td><a href="https://bugs.ruby-lang.org/issues/19563">19563</a>
+</td>
+<td>ext</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19563">Ripper.tokenize(code).join != code when heredoc and multiline %w[] literal is on the same line</a>
+</td>
+</tr>
+<tr class=" ractor ">
+<td><a href="https://bugs.ruby-lang.org/issues/19562">19562</a>
+</td>
+<td>ractor</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19562">Setting default_(in|ex)ternal encoding after running an Ractor freezes ruby</a>
+</td>
+</tr>
+<tr class=" core patch ">
+<td><a href="https://bugs.ruby-lang.org/issues/19558">19558</a>
+</td>
+<td>core patch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19558">str.dump.undump crashes when str contains both Unicode and ASCII control characters</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/19557">19557</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19557">Deadlock on STDOUT(ERR) lock on signal handler</a>
+</td>
+</tr>
+<tr class=" parser ">
+<td><a href="https://bugs.ruby-lang.org/issues/19549">19549</a>
+</td>
+<td>parser</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19549">Inconsistency in backref parsing</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/19544">19544</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19544">Custom quotes inconsistency</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/19542">19542</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19542">Operations on zero-sized IO::Buffer are raising</a>
+</td>
+</tr>
+<tr class=" regexp ">
+<td><a href="https://bugs.ruby-lang.org/issues/19537">19537</a>
+</td>
+<td>regexp</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19537">Regexp caching algorithm since v3.2.0 causes invalid memory access</a>
+</td>
+</tr>
+<tr class=" perf notbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/19534">19534</a>
+</td>
+<td>perf notbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19534">[ruby 3.2.1] Regular expression comparisons may be slower than in older versions.</a>
+</td>
+</tr>
+<tr class=" patch maybenotbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/19533">19533</a>
+</td>
+<td>patch maybenotbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19533">Behavior of ===/include? on a beginless/endless range (nil..nil) changed in ruby 3.2</a>
+</td>
+</tr>
 <tr class=" patch encoding ">
 <td><a href="https://bugs.ruby-lang.org/issues/19532">19532</a>
 </td>
 <td>patch encoding</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19532">Handling of 6-byte codepoints in left_adjust_char_head in CESU-8 encoding is broken</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/19531">19531</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19531">ObjectSpace::WeakMap: replaced values still clear the key they were assigned to</a>
-</td>
-</tr>
-<tr class=" patch doc ">
-<td><a href="https://bugs.ruby-lang.org/issues/19485">19485</a>
-</td>
-<td>patch doc</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19485">Unexpected behavior in squiggly heredocs</a>
 </td>
 </tr>
 <tr class=" lib ">
@@ -223,13 +314,6 @@
 </td>
 <td>patch win encoding</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19383">Time.now.zone encoding for German display language in Windows is incorrect</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/19380">19380</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19380">IO.read doesn&#39;t validate the offset argument</a>
 </td>
 </tr>
 <tr class=" patch core win ">
@@ -449,13 +533,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/19192">IO has third data mode, document is incomplete.</a>
 </td>
 </tr>
-<tr class=" ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/19175">19175</a>
-</td>
-<td>ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19175">Ripper does not recognize some pattern matching defining local variable</a>
-</td>
-</tr>
 <tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/19172">19172</a>
 </td>
@@ -517,13 +594,6 @@
 </td>
 <td>tracepoint</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19114">Calling TracePoint#enable multiple times causes TracePoint to be activated multiple times</a>
-</td>
-</tr>
-<tr class=" core patch ">
-<td><a href="https://bugs.ruby-lang.org/issues/19113">19113</a>
-</td>
-<td>core patch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19113">Inconsistency in retention of compare_by_identity flag in Hash methods</a>
 </td>
 </tr>
 <tr class=" ractor tracepoint ">
