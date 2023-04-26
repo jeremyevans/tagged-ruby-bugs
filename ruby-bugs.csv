@@ -1,5 +1,4 @@
 595,fiber,Fiber ignores ensure clause
-4040,core,SystemStackError with Hash[*a] for Large _a_
 4173,test,TestProcess#test_wait_and_sigchild が、たまに失敗する
 5179,core,Complex#rationalize and to_r with approximate zeros
 5334,ext maybenotbug,Segmentation fault in InternetExplorer IServiceProvider interface
@@ -283,7 +282,6 @@
 19231,core,Integer#step and Float::INFINITY - inconsistent behaviour when called with and without a block
 19238,lib notbug,URI.open fails for file path when second argument is a hash
 19244,patch core win,Windows: USERPROFILE should be preferred over HOMEPATH
-19246,perf maybenotbug,Rebuilding the loaded feature index much slower in Ruby 3.1
 19251,test,Limit amount of test failures due to updates of tzdata
 19266,lib,URI::Generic should use URI::RFC3986_PARSER instead of URI::DEFAULT_PARSER
 19268,build win,Mingw64 Build Failure
@@ -314,7 +312,6 @@
 19386,ext os/arch,`test_hmac.rb` of openssl is timeout on RHEL9
 19387,patch ractor,Issue with ObjectSpace.each_objects not returning objects after starting a ractor
 19394,patch core,cvars in instance of cloned class point to source class&#39;s cvars even after class_variable_set on clone
-19401,lib doc,[Doc] Broken links in CSV documentation
 19407,ractor,2 threads taking from current ractor will hang forever
 19408,ractor,Object no longer frozen after moved from a ractor
 19409,ractor,Object&#39;s shape is reset after a ractor move
@@ -322,18 +319,14 @@
 19411,core,GC issue with moved objects
 19412,ext,Socket starts queueing and not responding after a certain amount of requests
 19413,core,Can&#39;t move object when 2 ivars refer to same object
-19416,patch core,Inconsistent behaviour for Struct.new without any member_names
 19417,patch regexp doc,Regexp \p{Word} and [[:word:]] do not match Unicode Other_Number character
-19427,patch core,"Marshal.load(source, freeze: true) doesn&#39;t freeze in some cases"
 19436,core,Call Cache for singleton methods can lead to &quot;memory leaks&quot;
 19438,perf,Ruby 2.7 -&gt; 3.2 Performance Regression in so_k_nucleotide benchmark
-19441,maybenotbug lib,Closing an Tempfile#dup behaviour
-19455,regexp,Ruby 3.2: wrong Regexp encoding with non-ASCII comments
+19441,patch lib,Closing an Tempfile#dup behaviour
 19470,perf notbug,Frequent small range-reads from and then writes to a large array are very slow
 19473,maybenotbug thread,can&#39;t be called from trap context (ThreadError) is too limiting
 19479,lib,Support IPv4-mapped IPv6 addresses in IPAddr#private? 
 19532,patch encoding,Handling of 6-byte codepoints in left_adjust_char_head in CESU-8 encoding is broken
-19533,patch maybenotbug,Behavior of ===/include? on a beginless/endless range (nil..nil) changed in ruby 3.2
 19534,perf notbug,[ruby 3.2.1] Regular expression comparisons may be slower than in older versions.
 19537,regexp,Regexp caching algorithm since v3.2.0 causes invalid memory access
 19542,core,Operations on zero-sized IO::Buffer are raising
@@ -342,9 +335,11 @@
 19557,core,Deadlock on STDOUT(ERR) lock on signal handler
 19558,core patch,str.dump.undump crashes when str contains both Unicode and ASCII control characters
 19562,ractor,Setting default_(in|ex)ternal encoding after running an Ractor freezes ruby
-19563,ext,Ripper.tokenize(code).join != code when heredoc and multiline %w[] literal is on the same line
-19564,notbug core,Range.cover? fails for Range wrapped in SimpleDelegator
-19566,doc lib,OptionParser::on raises unsupported argument type: URI (ArgumentError) but shouldn&#39;t
-19568,win test,"Windows mingw rust, failures with test/rubygems/test_gem_ext_cargo_builder.rb"
 19569,core,#map on Enumerator::Lazy block arguments seem to differ from regular #map
-19570,core,`Exception#full_message` raises an `EncodingError` if the exception contains UTF8 characters after a newline and `Exception#cause` contains UTF8 characters
+19576,backport,Backport request: Gemfile.lock resolving is broken with bundler shipped with Ruby 3.1.4
+19592,build,Unable to statically link a single extension in 3.2.x and &gt;=3.1.4
+19598,tracepoint maybenotbug,Inconsistent behaviour of TracePoint API
+19606,os/arch,addr2line.c broken on Fedora 38
+19609,win lib,"net/http ignores open_timeout, read_timeout on Windows"
+19611,patch core,Ruby hangs up with `while true &amp;&amp; true`
+19619,parser,Endless method definition with parameters for an instance given as numbered parameters doesn&#39;t work
