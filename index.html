@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>350 Tagged Open Ruby Bugs as of 2023-04-04 04:52:37 +0900</title>
+<title>345 Tagged Open Ruby Bugs as of 2023-04-27 03:31:32 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -8,8 +8,8 @@
 <input type="submit" value="win" />
 <input type="submit" value="ractor" />
 <input type="submit" value="os/arch" />
-<input type="submit" value="patch" />
 <input type="submit" value="build" />
+<input type="submit" value="patch" />
 <input type="submit" value="maybenotbug" />
 <input type="submit" value="test" />
 <input type="submit" value="ext" />
@@ -17,22 +17,23 @@
 <input type="submit" value="encoding" />
 <input type="submit" value="notbug" />
 <input type="submit" value="perf" />
-<input type="submit" value="regexp" />
 <input type="submit" value="thread" />
+<input type="submit" value="regexp" />
 <input type="submit" value="cygwin" />
 <input type="submit" value="parser" />
-<input type="submit" value="fiber" />
 <input type="submit" value="tracepoint" />
-<input type="submit" value="doc" />
+<input type="submit" value="fiber" />
 <input type="submit" value="autoload" />
 <input type="submit" value="coverage" />
 <input type="submit" value="refine" />
+<input type="submit" value="backport" />
+<input type="submit" value="doc" />
 <input type="submit" value="yjit" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">350</span> matched)
+(<span id="matched">345</span> matched)
 <table>
-<caption>350 Tagged Open Ruby Bugs as of 2023-04-04 04:52:37 +0900</caption>
+<caption>345 Tagged Open Ruby Bugs as of 2023-04-27 03:31:32 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -41,11 +42,53 @@
 </tr>
 </thead>
 <tbody>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/19570">19570</a>
+<tr class=" parser ">
+<td><a href="https://bugs.ruby-lang.org/issues/19619">19619</a>
 </td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19570">`Exception#full_message` raises an `EncodingError` if the exception contains UTF8 characters after a newline and `Exception#cause` contains UTF8 characters</a>
+<td>parser</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19619">Endless method definition with parameters for an instance given as numbered parameters doesn&#39;t work</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/19611">19611</a>
+</td>
+<td>patch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19611">Ruby hangs up with `while true &amp;&amp; true`</a>
+</td>
+</tr>
+<tr class=" win lib ">
+<td><a href="https://bugs.ruby-lang.org/issues/19609">19609</a>
+</td>
+<td>win lib</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19609">net/http ignores open_timeout, read_timeout on Windows</a>
+</td>
+</tr>
+<tr class=" os/arch ">
+<td><a href="https://bugs.ruby-lang.org/issues/19606">19606</a>
+</td>
+<td>os/arch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19606">addr2line.c broken on Fedora 38</a>
+</td>
+</tr>
+<tr class=" tracepoint maybenotbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/19598">19598</a>
+</td>
+<td>tracepoint maybenotbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19598">Inconsistent behaviour of TracePoint API</a>
+</td>
+</tr>
+<tr class=" build ">
+<td><a href="https://bugs.ruby-lang.org/issues/19592">19592</a>
+</td>
+<td>build</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19592">Unable to statically link a single extension in 3.2.x and &gt;=3.1.4</a>
+</td>
+</tr>
+<tr class=" backport ">
+<td><a href="https://bugs.ruby-lang.org/issues/19576">19576</a>
+</td>
+<td>backport</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19576">Backport request: Gemfile.lock resolving is broken with bundler shipped with Ruby 3.1.4</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -53,34 +96,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19569">#map on Enumerator::Lazy block arguments seem to differ from regular #map</a>
-</td>
-</tr>
-<tr class=" win test ">
-<td><a href="https://bugs.ruby-lang.org/issues/19568">19568</a>
-</td>
-<td>win test</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19568">Windows mingw rust, failures with test/rubygems/test_gem_ext_cargo_builder.rb</a>
-</td>
-</tr>
-<tr class=" doc lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/19566">19566</a>
-</td>
-<td>doc lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19566">OptionParser::on raises unsupported argument type: URI (ArgumentError) but shouldn&#39;t</a>
-</td>
-</tr>
-<tr class=" notbug core ">
-<td><a href="https://bugs.ruby-lang.org/issues/19564">19564</a>
-</td>
-<td>notbug core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19564">Range.cover? fails for Range wrapped in SimpleDelegator</a>
-</td>
-</tr>
-<tr class=" ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/19563">19563</a>
-</td>
-<td>ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19563">Ripper.tokenize(code).join != code when heredoc and multiline %w[] literal is on the same line</a>
 </td>
 </tr>
 <tr class=" ractor ">
@@ -139,13 +154,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/19534">[ruby 3.2.1] Regular expression comparisons may be slower than in older versions.</a>
 </td>
 </tr>
-<tr class=" patch maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/19533">19533</a>
-</td>
-<td>patch maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19533">Behavior of ===/include? on a beginless/endless range (nil..nil) changed in ruby 3.2</a>
-</td>
-</tr>
 <tr class=" patch encoding ">
 <td><a href="https://bugs.ruby-lang.org/issues/19532">19532</a>
 </td>
@@ -174,17 +182,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/19470">Frequent small range-reads from and then writes to a large array are very slow</a>
 </td>
 </tr>
-<tr class=" regexp ">
-<td><a href="https://bugs.ruby-lang.org/issues/19455">19455</a>
-</td>
-<td>regexp</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19455">Ruby 3.2: wrong Regexp encoding with non-ASCII comments</a>
-</td>
-</tr>
-<tr class=" maybenotbug lib ">
+<tr class=" patch lib ">
 <td><a href="https://bugs.ruby-lang.org/issues/19441">19441</a>
 </td>
-<td>maybenotbug lib</td>
+<td>patch lib</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19441">Closing an Tempfile#dup behaviour</a>
 </td>
 </tr>
@@ -202,25 +203,11 @@
 <td><a href="https://bugs.ruby-lang.org/issues/19436">Call Cache for singleton methods can lead to &quot;memory leaks&quot;</a>
 </td>
 </tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/19427">19427</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19427">Marshal.load(source, freeze: true) doesn&#39;t freeze in some cases</a>
-</td>
-</tr>
 <tr class=" patch regexp doc ">
 <td><a href="https://bugs.ruby-lang.org/issues/19417">19417</a>
 </td>
 <td>patch regexp doc</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19417">Regexp \p{Word} and [[:word:]] do not match Unicode Other_Number character</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/19416">19416</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19416">Inconsistent behaviour for Struct.new without any member_names</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -270,13 +257,6 @@
 </td>
 <td>ractor</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19407">2 threads taking from current ractor will hang forever</a>
-</td>
-</tr>
-<tr class=" lib doc ">
-<td><a href="https://bugs.ruby-lang.org/issues/19401">19401</a>
-</td>
-<td>lib doc</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19401">[Doc] Broken links in CSV documentation</a>
 </td>
 </tr>
 <tr class=" patch core ">
@@ -487,13 +467,6 @@
 </td>
 <td>test</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19251">Limit amount of test failures due to updates of tzdata</a>
-</td>
-</tr>
-<tr class=" perf maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/19246">19246</a>
-</td>
-<td>perf maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19246">Rebuilding the loaded feature index much slower in Ruby 3.1</a>
 </td>
 </tr>
 <tr class=" patch core win ">
@@ -2475,13 +2448,6 @@
 </td>
 <td>test</td>
 <td><a href="https://bugs.ruby-lang.org/issues/4173">TestProcess#test_wait_and_sigchild が、たまに失敗する</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/4040">4040</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/4040">SystemStackError with Hash[*a] for Large _a_</a>
 </td>
 </tr>
 <tr class=" fiber ">
