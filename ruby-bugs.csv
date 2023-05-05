@@ -337,9 +337,6 @@
 19562,ractor,Setting default_(in|ex)ternal encoding after running an Ractor freezes ruby
 19569,core,#map on Enumerator::Lazy block arguments seem to differ from regular #map
 19576,backport,Backport request: Gemfile.lock resolving is broken with bundler shipped with Ruby 3.1.4
-19592,build,Unable to statically link a single extension in 3.2.x and &gt;=3.1.4
 19598,tracepoint maybenotbug,Inconsistent behaviour of TracePoint API
-19606,os/arch,addr2line.c broken on Fedora 38
 19609,win lib,"net/http ignores open_timeout, read_timeout on Windows"
-19611,patch core,Ruby hangs up with `while true &amp;&amp; true`
-19619,parser,Endless method definition with parameters for an instance given as numbered parameters doesn&#39;t work
+19622,doc,Undocumented behavior of Array#&amp; and similar methods
