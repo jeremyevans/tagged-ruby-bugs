@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>342 Tagged Open Ruby Bugs as of 2023-05-06 05:09:44 +0900</title>
+<title>322 Tagged Open Ruby Bugs as of 2023-05-24 10:24:51 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -10,18 +10,18 @@
 <input type="submit" value="os/arch" />
 <input type="submit" value="build" />
 <input type="submit" value="patch" />
-<input type="submit" value="maybenotbug" />
 <input type="submit" value="test" />
+<input type="submit" value="encoding" />
 <input type="submit" value="ext" />
 <input type="submit" value="lib" />
-<input type="submit" value="encoding" />
-<input type="submit" value="notbug" />
-<input type="submit" value="perf" />
+<input type="submit" value="maybenotbug" />
 <input type="submit" value="thread" />
 <input type="submit" value="regexp" />
+<input type="submit" value="perf" />
 <input type="submit" value="cygwin" />
 <input type="submit" value="parser" />
 <input type="submit" value="tracepoint" />
+<input type="submit" value="notbug" />
 <input type="submit" value="fiber" />
 <input type="submit" value="autoload" />
 <input type="submit" value="coverage" />
@@ -31,9 +31,9 @@
 <input type="submit" value="yjit" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">342</span> matched)
+(<span id="matched">322</span> matched)
 <table>
-<caption>342 Tagged Open Ruby Bugs as of 2023-05-06 05:09:44 +0900</caption>
+<caption>322 Tagged Open Ruby Bugs as of 2023-05-24 10:24:51 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -42,11 +42,53 @@
 </tr>
 </thead>
 <tbody>
-<tr class=" doc ">
-<td><a href="https://bugs.ruby-lang.org/issues/19622">19622</a>
+<tr class=" doc notbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/19685">19685</a>
 </td>
-<td>doc</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19622">Undocumented behavior of Array#&amp; and similar methods</a>
+<td>doc notbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19685">ruby --helpに --yydebugの情報がない</a>
+</td>
+</tr>
+<tr class=" os/arch build ">
+<td><a href="https://bugs.ruby-lang.org/issues/19683">19683</a>
+</td>
+<td>os/arch build</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19683">ruby-3.3.0-preview1 does not build with BSD make without --with-baseruby</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/19681">19681</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19681">The final classpath of partially named modules is sometimes inconsistent once permanently named</a>
+</td>
+</tr>
+<tr class=" test os/arch ">
+<td><a href="https://bugs.ruby-lang.org/issues/19680">19680</a>
+</td>
+<td>test os/arch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19680">test_process.rb tests fail sometimes on FreeBSD</a>
+</td>
+</tr>
+<tr class=" encoding ">
+<td><a href="https://bugs.ruby-lang.org/issues/19636">19636</a>
+</td>
+<td>encoding</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19636">String#encode EUC_JIS_2004で&quot;¥&quot;がEncoding::UndefinedConversionErrorになる</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/19632">19632</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19632">Disable external iterator for frozen enumerator</a>
+</td>
+</tr>
+<tr class=" maybenotbug core ">
+<td><a href="https://bugs.ruby-lang.org/issues/19631">19631</a>
+</td>
+<td>maybenotbug core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19631">module_eval does not propulate absolute_path for Kernel.caller_locations</a>
 </td>
 </tr>
 <tr class=" win lib ">
@@ -124,13 +166,6 @@
 </td>
 <td>regexp</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19537">Regexp caching algorithm since v3.2.0 causes invalid memory access</a>
-</td>
-</tr>
-<tr class=" perf notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/19534">19534</a>
-</td>
-<td>perf notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19534">[ruby 3.2.1] Regular expression comparisons may be slower than in older versions.</a>
 </td>
 </tr>
 <tr class=" patch encoding ">
@@ -252,13 +287,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/19387">Issue with ObjectSpace.each_objects not returning objects after starting a ractor</a>
 </td>
 </tr>
-<tr class=" ext os/arch ">
-<td><a href="https://bugs.ruby-lang.org/issues/19386">19386</a>
-</td>
-<td>ext os/arch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19386">`test_hmac.rb` of openssl is timeout on RHEL9</a>
-</td>
-</tr>
 <tr class=" win encoding ">
 <td><a href="https://bugs.ruby-lang.org/issues/19384">19384</a>
 </td>
@@ -350,13 +378,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/19362">#dup on Proc doesn&#39;t call initialize_dup</a>
 </td>
 </tr>
-<tr class=" notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/19352">19352</a>
-</td>
-<td>notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19352">Feature #17391 was not such a good idea because now Ruby 3.2 can not install Rails v5 or v6 if they use webpacker.</a>
-</td>
-</tr>
 <tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/19349">19349</a>
 </td>
@@ -371,13 +392,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/19338">Ruby hangs when ouputting warnings inside ractor with VM lock held</a>
 </td>
 </tr>
-<tr class=" perf notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/19334">19334</a>
-</td>
-<td>perf notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19334">Defining many instance variables and accessing them is slow in Ruby 3.2.0</a>
-</td>
-</tr>
 <tr class=" test os/arch ">
 <td><a href="https://bugs.ruby-lang.org/issues/19313">19313</a>
 </td>
@@ -390,13 +404,6 @@
 </td>
 <td>test</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19297">Don&#39;t download content from internet to execute Ruby test suite</a>
-</td>
-</tr>
-<tr class=" core maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/19294">19294</a>
-</td>
-<td>core maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19294">Enumerator.product works incorrectly with consuming enumerators</a>
 </td>
 </tr>
 <tr class=" core maybenotbug ">
@@ -490,13 +497,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/19172">`ruby_thread_has_gvl_p` is innacurate sometimes -- document or change?</a>
 </td>
 </tr>
-<tr class=" notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/19168">19168</a>
-</td>
-<td>notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19168">&quot;such file&quot; is bad grammar</a>
-</td>
-</tr>
 <tr class=" perf ">
 <td><a href="https://bugs.ruby-lang.org/issues/19165">19165</a>
 </td>
@@ -553,13 +553,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/19112">Ractor garbage collection breaks/disables all active tracepoints</a>
 </td>
 </tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/19084">19084</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19084">Using `IO::Buffer` to change an extended String affects other Strings sharing the same buffer</a>
-</td>
-</tr>
 <tr class=" build win ">
 <td><a href="https://bugs.ruby-lang.org/issues/19048">19048</a>
 </td>
@@ -586,13 +579,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19039">Closing an IO being select&#39;ed in another thread does not resume the thread</a>
-</td>
-</tr>
-<tr class=" ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/19025">19025</a>
-</td>
-<td>ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19025">Ripper cannot parse syntax ok code that has numbered parameters</a>
 </td>
 </tr>
 <tr class=" patch lib ">
@@ -686,13 +672,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18923">Dir.glob Errno::ENAMETOOLONG - Caused by outdated logic in open_dir_handle (win32.c)</a>
 </td>
 </tr>
-<tr class=" ractor notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/18919">18919</a>
-</td>
-<td>ractor notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18919">Ractor: can&#39;t share #Method objects</a>
-</td>
-</tr>
 <tr class=" build ">
 <td><a href="https://bugs.ruby-lang.org/issues/18918">18918</a>
 </td>
@@ -784,13 +763,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18789">make test-bundled-gems failed after make install</a>
 </td>
 </tr>
-<tr class=" patch lib maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/18784">18784</a>
-</td>
-<td>patch lib maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18784">`FileUtils.rm_f` and `FileUtils.rm_rf` should not mask exceptions</a>
-</td>
-</tr>
 <tr class=" patch lib ">
 <td><a href="https://bugs.ruby-lang.org/issues/18783">18783</a>
 </td>
@@ -819,13 +791,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18738">IRB can&#39;t recognize heredoc after words</a>
 </td>
 </tr>
-<tr class=" notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/18737">18737</a>
-</td>
-<td>notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18737">Windows &#39;require&#39; is case independent</a>
-</td>
-</tr>
 <tr class=" os/arch ">
 <td><a href="https://bugs.ruby-lang.org/issues/18733">18733</a>
 </td>
@@ -838,13 +803,6 @@
 </td>
 <td>regexp</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18686">Regexp supporting unexpected age properties in Ruby &lt; 3.2</a>
-</td>
-</tr>
-<tr class=" notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/18678">18678</a>
-</td>
-<td>notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18678">Crash on Mac - vm_call0_cfunc_with_frame</a>
 </td>
 </tr>
 <tr class=" ext ">
@@ -880,13 +838,6 @@
 </td>
 <td>maybenotbug core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18622">const_get still looks in Object, while lexical constant lookup no longer does</a>
-</td>
-</tr>
-<tr class=" build notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/18616">18616</a>
-</td>
-<td>build notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18616">Error with clang(1) on MacOS due to __declspec()</a>
 </td>
 </tr>
 <tr class=" build ">
@@ -1090,13 +1041,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18269">trace_opt_not and trace_opt_regexpmatch2 insns are indistinguishable</a>
-</td>
-</tr>
-<tr class=" ractor maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/18258">18258</a>
-</td>
-<td>ractor maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18258">Ractor.shareable? can be slow and mutates internal object flags.</a>
 </td>
 </tr>
 <tr class=" os/arch core ">
@@ -1337,13 +1281,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17722">define_method with shareable results in &quot;defined in a different Ractor&quot;</a>
 </td>
 </tr>
-<tr class=" lib maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/17680">17680</a>
-</td>
-<td>lib maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17680">tab completion no longer works on irb3.0</a>
-</td>
-</tr>
 <tr class=" ractor ">
 <td><a href="https://bugs.ruby-lang.org/issues/17679">17679</a>
 </td>
@@ -1377,13 +1314,6 @@
 </td>
 <td>ractor</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17667">Module#name needs synchronization</a>
-</td>
-</tr>
-<tr class=" fiber maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/17664">17664</a>
-</td>
-<td>fiber maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17664">Behavior of sockets changed in Ruby 3.0 to non-blocking</a>
 </td>
 </tr>
 <tr class=" patch build ">
@@ -1498,10 +1428,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17354">Module#const_source_location is misleading for constants awaiting autoload</a>
 </td>
 </tr>
-<tr class=" build notbug ">
+<tr class=" build ">
 <td><a href="https://bugs.ruby-lang.org/issues/17337">17337</a>
 </td>
-<td>build notbug</td>
+<td>build</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17337">Don&#39;t embed Ruby build-time configuration in Ruby</a>
 </td>
 </tr>
@@ -1568,13 +1498,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16997">IO#gets converts some \r\n to \n with universal_newline: false</a>
 </td>
 </tr>
-<tr class=" maybenotbug core ">
-<td><a href="https://bugs.ruby-lang.org/issues/16959">16959</a>
-</td>
-<td>maybenotbug core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16959">Weakmap has specs and third-party usage despite being a private API</a>
-</td>
-</tr>
 <tr class=" lib ">
 <td><a href="https://bugs.ruby-lang.org/issues/16951">16951</a>
 </td>
@@ -1608,13 +1531,6 @@
 </td>
 <td>maybenotbug fiber</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16829">Exceptions raised from within an enumerated method lose part of their stacktrace</a>
-</td>
-</tr>
-<tr class=" notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/16820">16820</a>
-</td>
-<td>notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16820">LEGAL is out of sync</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -1671,13 +1587,6 @@
 </td>
 <td>win thread</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16265">Test (spec) failure using current MSYS2 tools, related to -fstack-protector and possibly D_FORTIFY_SOURCE=2</a>
-</td>
-</tr>
-<tr class=" os/arch notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/16185">16185</a>
-</td>
-<td>os/arch notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16185">basictest failure on AIX 6.1 for 64bit build</a>
 </td>
 </tr>
 <tr class=" regexp notbug ">
@@ -1925,13 +1834,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/14418">ruby 2.5 slow regexp execution</a>
 </td>
 </tr>
-<tr class=" core os/arch ">
-<td><a href="https://bugs.ruby-lang.org/issues/14387">14387</a>
-</td>
-<td>core os/arch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/14387">Ruby 2.5 を Alpine Linux で実行すると比較的浅めで SystemStackError 例外になる</a>
-</td>
-</tr>
 <tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/14364">14364</a>
 </td>
@@ -2135,20 +2037,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/11704">Refinements only get &quot;used&quot; once in loop</a>
 </td>
 </tr>
-<tr class=" core os/arch maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/11582">11582</a>
-</td>
-<td>core os/arch maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/11582">On Solaris, Rational#** returns -Infinity for Rational(0) when passed a negative Float</a>
-</td>
-</tr>
-<tr class=" lib maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/11531">11531</a>
-</td>
-<td>lib maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/11531">IPAddr#== implements wrong logic</a>
-</td>
-</tr>
 <tr class=" patch lib ">
 <td><a href="https://bugs.ruby-lang.org/issues/11526">11526</a>
 </td>
@@ -2345,13 +2233,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/8185"> Thread/fork issue</a>
 </td>
 </tr>
-<tr class=" tracepoint notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/7976">7976</a>
-</td>
-<td>tracepoint notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/7976">TracePoint call is at call point, not call site</a>
-</td>
-</tr>
 <tr class=" ext perf ">
 <td><a href="https://bugs.ruby-lang.org/issues/7968">7968</a>
 </td>
@@ -2408,32 +2289,11 @@
 <td><a href="https://bugs.ruby-lang.org/issues/6351">transcode table generator does not support multi characters of Unicode</a>
 </td>
 </tr>
-<tr class=" ext maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/5334">5334</a>
-</td>
-<td>ext maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/5334">Segmentation fault in InternetExplorer IServiceProvider interface</a>
-</td>
-</tr>
 <tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/5179">5179</a>
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/5179">Complex#rationalize and to_r with approximate zeros</a>
-</td>
-</tr>
-<tr class=" test ">
-<td><a href="https://bugs.ruby-lang.org/issues/4173">4173</a>
-</td>
-<td>test</td>
-<td><a href="https://bugs.ruby-lang.org/issues/4173">TestProcess#test_wait_and_sigchild が、たまに失敗する</a>
-</td>
-</tr>
-<tr class=" fiber ">
-<td><a href="https://bugs.ruby-lang.org/issues/595">595</a>
-</td>
-<td>fiber</td>
-<td><a href="https://bugs.ruby-lang.org/issues/595">Fiber ignores ensure clause</a>
 </td>
 </tr>
 </tbody>
