@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>322 Tagged Open Ruby Bugs as of 2023-05-24 10:24:51 +0900</title>
+<title>319 Tagged Open Ruby Bugs as of 2023-06-12 11:16:38 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -15,25 +15,25 @@
 <input type="submit" value="ext" />
 <input type="submit" value="lib" />
 <input type="submit" value="maybenotbug" />
-<input type="submit" value="thread" />
 <input type="submit" value="regexp" />
+<input type="submit" value="thread" />
 <input type="submit" value="perf" />
 <input type="submit" value="cygwin" />
 <input type="submit" value="parser" />
 <input type="submit" value="tracepoint" />
-<input type="submit" value="notbug" />
 <input type="submit" value="fiber" />
+<input type="submit" value="notbug" />
 <input type="submit" value="autoload" />
 <input type="submit" value="coverage" />
-<input type="submit" value="doc" />
-<input type="submit" value="refine" />
+<input type="submit" value="yjit" />
 <input type="submit" value="backport" />
-<input type="submit" value="yjit" /></p>
+<input type="submit" value="doc" />
+<input type="submit" value="refine" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">322</span> matched)
+(<span id="matched">319</span> matched)
 <table>
-<caption>322 Tagged Open Ruby Bugs as of 2023-05-24 10:24:51 +0900</caption>
+<caption>319 Tagged Open Ruby Bugs as of 2023-06-12 11:16:38 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -42,11 +42,32 @@
 </tr>
 </thead>
 <tbody>
-<tr class=" doc notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/19685">19685</a>
+<tr class=" os/arch ">
+<td><a href="https://bugs.ruby-lang.org/issues/19716">19716</a>
 </td>
-<td>doc notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19685">ruby --helpに --yydebugの情報がない</a>
+<td>os/arch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19716">SystemStackError occurs too easily on Alpine Linux (due to small stack size reported by pthread_attr_getstacksize on musl libc)</a>
+</td>
+</tr>
+<tr class=" win core ">
+<td><a href="https://bugs.ruby-lang.org/issues/19703">19703</a>
+</td>
+<td>win core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19703">text/binary mode of parent process fd is not properly inherited on windows</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/19701">19701</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19701">The rb_classext_t::classpath field is not marked for T_ICLASS</a>
+</td>
+</tr>
+<tr class=" yjit ">
+<td><a href="https://bugs.ruby-lang.org/issues/19696">19696</a>
+</td>
+<td>yjit</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19696">YJIT panicked - branch stubs should never enlarge branches</a>
 </td>
 </tr>
 <tr class=" os/arch build ">
@@ -54,20 +75,6 @@
 </td>
 <td>os/arch build</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19683">ruby-3.3.0-preview1 does not build with BSD make without --with-baseruby</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/19681">19681</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19681">The final classpath of partially named modules is sometimes inconsistent once permanently named</a>
-</td>
-</tr>
-<tr class=" test os/arch ">
-<td><a href="https://bugs.ruby-lang.org/issues/19680">19680</a>
-</td>
-<td>test os/arch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19680">test_process.rb tests fail sometimes on FreeBSD</a>
 </td>
 </tr>
 <tr class=" encoding ">
@@ -462,10 +469,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/19244">Windows: USERPROFILE should be preferred over HOMEPATH</a>
 </td>
 </tr>
-<tr class=" lib notbug ">
+<tr class=" lib patch ">
 <td><a href="https://bugs.ruby-lang.org/issues/19238">19238</a>
 </td>
-<td>lib notbug</td>
+<td>lib patch</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19238">URI.open fails for file path when second argument is a hash</a>
 </td>
 </tr>
@@ -718,7 +725,7 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18818">18818</a>
 </td>
 <td>fiber</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18818">SEGV (Fiber scheduler?)</a>
+<td><a href="https://bugs.ruby-lang.org/issues/18818">Thread waitq does not retain referenced objects, can lead to use after free.</a>
 </td>
 </tr>
 <tr class=" maybenotbug core ">
@@ -782,13 +789,6 @@
 </td>
 <td>tracepoint</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18740">Use of rightward assignment changes line number needed for line-targeted TracePoint</a>
-</td>
-</tr>
-<tr class=" lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/18738">18738</a>
-</td>
-<td>lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18738">IRB can&#39;t recognize heredoc after words</a>
 </td>
 </tr>
 <tr class=" os/arch ">
@@ -1582,13 +1582,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16288">Segmentation fault with finalizers, threads</a>
 </td>
 </tr>
-<tr class=" win thread ">
-<td><a href="https://bugs.ruby-lang.org/issues/16265">16265</a>
-</td>
-<td>win thread</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16265">Test (spec) failure using current MSYS2 tools, related to -fstack-protector and possibly D_FORTIFY_SOURCE=2</a>
-</td>
-</tr>
 <tr class=" regexp notbug ">
 <td><a href="https://bugs.ruby-lang.org/issues/16158">16158</a>
 </td>
@@ -2030,13 +2023,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/11808">Different behavior between Enumerable#grep and Array#grep</a>
 </td>
 </tr>
-<tr class=" refine maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/11704">11704</a>
-</td>
-<td>refine maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/11704">Refinements only get &quot;used&quot; once in loop</a>
-</td>
-</tr>
 <tr class=" patch lib ">
 <td><a href="https://bugs.ruby-lang.org/issues/11526">11526</a>
 </td>
@@ -2140,13 +2126,6 @@
 </td>
 <td>win build</td>
 <td><a href="https://bugs.ruby-lang.org/issues/9955">issue building dll on mingw, library not found</a>
-</td>
-</tr>
-<tr class=" win maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/9944">9944</a>
-</td>
-<td>win maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/9944">in ruby for windows in &quot;system&quot; a redirection to append a file works incorrectly</a>
 </td>
 </tr>
 <tr class=" build ">
