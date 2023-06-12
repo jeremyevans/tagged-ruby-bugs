@@ -19,7 +19,6 @@
 9435,win core,Kernel.system problem
 9507,core os/arch,Ruby 2.1.0 is broken on ARMv5: tried to create Proc object without a block
 9760,build,mkmf does not allow for linking against custom libraries when a system library is present
-9944,win maybenotbug,in ruby for windows in &quot;system&quot; a redirection to append a file works incorrectly
 9955,win build,"issue building dll on mingw, library not found"
 10009,thread perf,IO operation is 10x slower in multi-thread environment
 10128,win core,"Quoting problem for arguments of Kernel.system, Kernel.exec on Windows"
@@ -35,7 +34,6 @@
 11438,win thread,"native_thread_init_stack() get machine.stack_start unequal to thread&#39;s stack start address, x86 win32"
 11514,core os/arch,AIX6.1 - Ruby 2.2.3 - Segmentation fault in :byteslice
 11526,patch lib,Streaming HTTP requests are not idempotent and should not be retried
-11704,refine maybenotbug,Refinements only get &quot;used&quot; once in loop
 11808,core,Different behavior between Enumerable#grep and Array#grep
 11840,cygwin test,Error with &quot;make check&quot; on Cygwin
 12040,win core,[Win32] File.stat fails on a mounted volume
@@ -99,7 +97,6 @@
 15993,win encoding,&#39;require&#39; doesn&#39;t work if there are Cyrillic chars in the path to Ruby dir
 16145,regexp,"regexp match error if mixing /i, character classes, and utf8"
 16158,regexp notbug,&quot;st&quot; Character Sequence In Regex Look-Behind Causes Illegal Pattern Error When Combined With POSIX Bracket Expressions And Case Insensitivity Flag
-16265,win thread,"Test (spec) failure using current MSYS2 tools, related to -fstack-protector and possibly D_FORTIFY_SOURCE=2"
 16288,patch core,"Segmentation fault with finalizers, threads"
 16492,test os/arch,TestBugReporter#test_bug_reporter_add test failures
 16493,thread os/arch,TestThreadQueue#test_thr_kill is flaky on AArch64
@@ -213,7 +210,6 @@
 18677,ext,BigDecimal#power (**) returns FloatDomainError when passing an infinite parameter
 18686,regexp,Regexp supporting unexpected age properties in Ruby &lt; 3.2
 18733,os/arch,Ruby GC problems cause performance issue with Ractor
-18738,lib,IRB can&#39;t recognize heredoc after words
 18740,tracepoint,Use of rightward assignment changes line number needed for line-targeted TracePoint
 18743,fiber,Enumerator#next / peek re-use each others stacktraces
 18783,patch lib,OptionParser should recognize &quot;-&quot; as an optional argument
@@ -223,7 +219,7 @@
 18804,core,Invalid line number for putnil instruction
 18805,core,IO::Buffer is inconsistent when returning a string from an empty buffer
 18810,maybenotbug core,Make `Kernel#p` interruptable.
-18818,fiber,SEGV (Fiber scheduler?)
+18818,fiber,"Thread waitq does not retain referenced objects, can lead to use after free."
 18842,lib,Ruby&#39;s Resolv library does not handle correctly the `NODATA` case
 18878,parser,parse.y: Foo::Bar {} is inconsistently rejected
 18886,tracepoint maybenotbug,Struct aref and aset don&#39;t trigger any tracepoints.
@@ -259,7 +255,7 @@
 19192,core win,"IO has third data mode, document is incomplete."
 19230,ext,The openssl backend of securerandom is no longer needed
 19231,core,Integer#step and Float::INFINITY - inconsistent behaviour when called with and without a block
-19238,lib notbug,URI.open fails for file path when second argument is a hash
+19238,lib patch,URI.open fails for file path when second argument is a hash
 19244,patch core win,Windows: USERPROFILE should be preferred over HOMEPATH
 19251,test,Limit amount of test failures due to updates of tzdata
 19266,lib,URI::Generic should use URI::RFC3986_PARSER instead of URI::DEFAULT_PARSER
@@ -316,7 +312,8 @@
 19631,maybenotbug core,module_eval does not propulate absolute_path for Kernel.caller_locations
 19632,core,Disable external iterator for frozen enumerator
 19636,encoding,String#encode EUC_JIS_2004で&quot;¥&quot;がEncoding::UndefinedConversionErrorになる
-19680,test os/arch,test_process.rb tests fail sometimes on FreeBSD
-19681,core,The final classpath of partially named modules is sometimes inconsistent once permanently named
 19683,os/arch build,ruby-3.3.0-preview1 does not build with BSD make without --with-baseruby
-19685,doc notbug,ruby --helpに --yydebugの情報がない
+19696,yjit,YJIT panicked - branch stubs should never enlarge branches
+19701,core,The rb_classext_t::classpath field is not marked for T_ICLASS
+19703,win core,text/binary mode of parent process fd is not properly inherited on windows
+19716,os/arch,SystemStackError occurs too easily on Alpine Linux (due to small stack size reported by pthread_attr_getstacksize on musl libc)
