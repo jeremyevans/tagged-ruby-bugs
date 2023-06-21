@@ -208,7 +208,6 @@
 18661,win core,Net::HTTP behavior changed between 2.6 and 3.1 on windows.
 18674,win build,Build failure `make up` with WSL2
 18677,ext,BigDecimal#power (**) returns FloatDomainError when passing an infinite parameter
-18686,regexp,Regexp supporting unexpected age properties in Ruby &lt; 3.2
 18733,os/arch,Ruby GC problems cause performance issue with Ractor
 18740,tracepoint,Use of rightward assignment changes line number needed for line-targeted TracePoint
 18743,fiber,Enumerator#next / peek re-use each others stacktraces
@@ -317,3 +316,6 @@
 19701,core,The rb_classext_t::classpath field is not marked for T_ICLASS
 19703,win core,text/binary mode of parent process fd is not properly inherited on windows
 19716,os/arch,SystemStackError occurs too easily on Alpine Linux (due to small stack size reported by pthread_attr_getstacksize on musl libc)
+19726,notbug core,Script loadde twice when requiring self
+19728,doc,Automate (checking of) Regexp character property documentation
+19738,ext,`ObjectSpace.each_object.to_a` crashes in `make runirb`.
