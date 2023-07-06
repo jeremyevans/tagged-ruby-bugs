@@ -227,7 +227,6 @@
 18918,build,Can&#39;t compile ruby master with AFL ASAN
 18923,win,Dir.glob Errno::ENAMETOOLONG - Caused by outdated logic in open_dir_handle (win32.c)
 18924,win,lstrlen and lstrcat still in use
-18933,ractor maybenotbug,Dir.tmpdir implemented in non-Ractor-safe manner
 18940,ractor,Ruby Ractor fails with IOError when handling higher concurrency
 18947,win core,Unexpected Errno::ENAMETOOLONG on Windows
 18966,parser,Strange behavior when numbered parameters and method definition are both used in a block
@@ -244,7 +243,6 @@
 19048,build win,Install of Ruby 3.1.x fails on Ubuntu 20.04 running on WSL
 19112,ractor tracepoint,Ractor garbage collection breaks/disables all active tracepoints
 19114,tracepoint,Calling TracePoint#enable multiple times causes TracePoint to be activated multiple times
-19126,maybenotbug build,clang: Cannot compile with Control Flow Integrity (CFI)
 19147,core,`TestFileExhaustive#test_expand_path_for_existent_username` and `TestDir#test_home` fails on i686
 19154,ractor,Specify require and autoload guarantees in ractors
 19157,lib,URI bad component validation can be tricked
@@ -281,7 +279,6 @@
 19383,patch win encoding,Time.now.zone encoding for German display language in Windows is incorrect
 19384,win encoding,ASCII 128..154 characters in IO.popen or %x output do not reflect the proper encoding in Windows
 19387,patch ractor,Issue with ObjectSpace.each_objects not returning objects after starting a ractor
-19394,patch core,cvars in instance of cloned class point to source class&#39;s cvars even after class_variable_set on clone
 19407,ractor,2 threads taking from current ractor will hang forever
 19408,ractor,Object no longer frozen after moved from a ractor
 19409,ractor,Object&#39;s shape is reset after a ractor move
@@ -295,8 +292,6 @@
 19441,patch lib,Closing an Tempfile#dup behaviour
 19470,perf notbug,Frequent small range-reads from and then writes to a large array are very slow
 19473,maybenotbug thread,can&#39;t be called from trap context (ThreadError) is too limiting
-19479,lib,Support IPv4-mapped IPv6 addresses in IPAddr#private? 
-19532,patch encoding,Handling of 6-byte codepoints in left_adjust_char_head in CESU-8 encoding is broken
 19537,regexp,Regexp caching algorithm since v3.2.0 causes invalid memory access
 19542,core,Operations on zero-sized IO::Buffer are raising
 19544,core,Custom quotes inconsistency
@@ -304,7 +299,6 @@
 19557,core,Deadlock on STDOUT(ERR) lock on signal handler
 19558,core patch,str.dump.undump crashes when str contains both Unicode and ASCII control characters
 19562,ractor,Setting default_(in|ex)ternal encoding after running an Ractor freezes ruby
-19569,core,#map on Enumerator::Lazy block arguments seem to differ from regular #map
 19576,backport,Backport request: Gemfile.lock resolving is broken with bundler shipped with Ruby 3.1.4
 19598,tracepoint maybenotbug,Inconsistent behaviour of TracePoint API
 19609,win lib,"net/http ignores open_timeout, read_timeout on Windows"
@@ -317,5 +311,8 @@
 19703,win core,text/binary mode of parent process fd is not properly inherited on windows
 19716,os/arch,SystemStackError occurs too easily on Alpine Linux (due to small stack size reported by pthread_attr_getstacksize on musl libc)
 19726,notbug core,Script loadde twice when requiring self
-19728,doc,Automate (checking of) Regexp character property documentation
 19738,ext,`ObjectSpace.each_object.to_a` crashes in `make runirb`.
+19749,patch core,Confirm correct behaviour when attaching private method with `#define_method`
+19753,core,IO::Buffer#get_string can&#39;t handle negative offset
+19754,core,`IO::Buffer#get_string` raises unsuitable exception for too large offset
+19756,lib,"URI::HTTP.build does not accept a host of `_gateway`, but `URI.parse` will."
