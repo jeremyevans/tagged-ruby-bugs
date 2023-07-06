@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>321 Tagged Open Ruby Bugs as of 2023-06-22 00:47:23 +0900</title>
+<title>318 Tagged Open Ruby Bugs as of 2023-07-07 02:58:35 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -14,26 +14,26 @@
 <input type="submit" value="ext" />
 <input type="submit" value="encoding" />
 <input type="submit" value="lib" />
-<input type="submit" value="maybenotbug" />
 <input type="submit" value="thread" />
 <input type="submit" value="perf" />
 <input type="submit" value="regexp" />
 <input type="submit" value="cygwin" />
+<input type="submit" value="maybenotbug" />
 <input type="submit" value="parser" />
 <input type="submit" value="tracepoint" />
 <input type="submit" value="fiber" />
 <input type="submit" value="notbug" />
 <input type="submit" value="autoload" />
 <input type="submit" value="coverage" />
-<input type="submit" value="doc" />
 <input type="submit" value="yjit" />
 <input type="submit" value="backport" />
+<input type="submit" value="doc" />
 <input type="submit" value="refine" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">321</span> matched)
+(<span id="matched">318</span> matched)
 <table>
-<caption>321 Tagged Open Ruby Bugs as of 2023-06-22 00:47:23 +0900</caption>
+<caption>318 Tagged Open Ruby Bugs as of 2023-07-07 02:58:35 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -42,18 +42,39 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" lib ">
+<td><a href="https://bugs.ruby-lang.org/issues/19756">19756</a>
+</td>
+<td>lib</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19756">URI::HTTP.build does not accept a host of `_gateway`, but `URI.parse` will.</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/19754">19754</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19754">`IO::Buffer#get_string` raises unsuitable exception for too large offset</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/19753">19753</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19753">IO::Buffer#get_string can&#39;t handle negative offset</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/19749">19749</a>
+</td>
+<td>patch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19749">Confirm correct behaviour when attaching private method with `#define_method`</a>
+</td>
+</tr>
 <tr class=" ext ">
 <td><a href="https://bugs.ruby-lang.org/issues/19738">19738</a>
 </td>
 <td>ext</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19738">`ObjectSpace.each_object.to_a` crashes in `make runirb`.</a>
-</td>
-</tr>
-<tr class=" doc ">
-<td><a href="https://bugs.ruby-lang.org/issues/19728">19728</a>
-</td>
-<td>doc</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19728">Automate (checking of) Regexp character property documentation</a>
 </td>
 </tr>
 <tr class=" notbug core ">
@@ -140,13 +161,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/19576">Backport request: Gemfile.lock resolving is broken with bundler shipped with Ruby 3.1.4</a>
 </td>
 </tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/19569">19569</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19569">#map on Enumerator::Lazy block arguments seem to differ from regular #map</a>
-</td>
-</tr>
 <tr class=" ractor ">
 <td><a href="https://bugs.ruby-lang.org/issues/19562">19562</a>
 </td>
@@ -194,20 +208,6 @@
 </td>
 <td>regexp</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19537">Regexp caching algorithm since v3.2.0 causes invalid memory access</a>
-</td>
-</tr>
-<tr class=" patch encoding ">
-<td><a href="https://bugs.ruby-lang.org/issues/19532">19532</a>
-</td>
-<td>patch encoding</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19532">Handling of 6-byte codepoints in left_adjust_char_head in CESU-8 encoding is broken</a>
-</td>
-</tr>
-<tr class=" lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/19479">19479</a>
-</td>
-<td>lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19479">Support IPv4-mapped IPv6 addresses in IPAddr#private? </a>
 </td>
 </tr>
 <tr class=" maybenotbug thread ">
@@ -299,13 +299,6 @@
 </td>
 <td>ractor</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19407">2 threads taking from current ractor will hang forever</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/19394">19394</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19394">cvars in instance of cloned class point to source class&#39;s cvars even after class_variable_set on clone</a>
 </td>
 </tr>
 <tr class=" patch ractor ">
@@ -560,13 +553,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/19147">`TestFileExhaustive#test_expand_path_for_existent_username` and `TestDir#test_home` fails on i686</a>
 </td>
 </tr>
-<tr class=" maybenotbug build ">
-<td><a href="https://bugs.ruby-lang.org/issues/19126">19126</a>
-</td>
-<td>maybenotbug build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19126">clang: Cannot compile with Control Flow Integrity (CFI)</a>
-</td>
-</tr>
 <tr class=" tracepoint ">
 <td><a href="https://bugs.ruby-lang.org/issues/19114">19114</a>
 </td>
@@ -677,13 +663,6 @@
 </td>
 <td>ractor</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18940">Ruby Ractor fails with IOError when handling higher concurrency</a>
-</td>
-</tr>
-<tr class=" ractor maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/18933">18933</a>
-</td>
-<td>ractor maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18933">Dir.tmpdir implemented in non-Ractor-safe manner</a>
 </td>
 </tr>
 <tr class=" win ">
