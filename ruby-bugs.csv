@@ -25,7 +25,6 @@
 10416,build,Create mechanism for updating of Unicode data files downstreams when we want
 10436,patch ext,ruby -c and ripper inconsistency: m(&amp;nil) {}
 10580,test os/arch,TestProcess#test_deadlock_by_signal_at_forking fails on ARM
-11064,core maybenotbug,#singleton_methods for objects with special singleton_class returns an empty array
 11142,win core,Command line argument parser on windows handles double quotes inconsistently.
 11174,thread os/arch,threads memory leak
 11177,win core,DATAでEOF文字以降が読めない
@@ -199,7 +198,6 @@
 18507,os/arch build,Incorrect target_os detection in configure script
 18510,win core,Unexpected waiting for console when starting ruby on windows
 18553,core,Memory leak on compiling method call with kwargs
-18572,perf refine,Performance regression when invoking refined methods
 18601,encoding,Invalid byte sequences in Big5 encodings
 18605,win core,Fails to run on (newer) 32bit Windows with ucrt
 18608,build,`require&#39;: cannot load such file -- ripper (LoadError) after `make distclean`
@@ -260,7 +258,6 @@
 19281,parser,SyntaxError if first argument of command call has semicolon inside parenthesis
 19287,lib,Let DelegateClass respect the original method&#39;s arity in case of 0
 19288,ractor perf,Ractor JSON parsing significantly slower than linear parsing
-19293,core maybenotbug,The new Time.new(String) API is nice... but we still need a stricter version of this
 19297,test,Don&#39;t download content from internet to execute Ruby test suite
 19313,test os/arch,Leaked file descriptors while running test-all
 19338,ractor,Ruby hangs when ouputting warnings inside ractor with VM lock held
@@ -287,14 +284,12 @@
 19412,ext,Socket starts queueing and not responding after a certain amount of requests
 19413,core,Can&#39;t move object when 2 ivars refer to same object
 19417,patch regexp doc,Regexp \p{Word} and [[:word:]] do not match Unicode Other_Number character
-19436,core,Call Cache for singleton methods can lead to &quot;memory leaks&quot;
 19438,perf,Ruby 2.7 -&gt; 3.2 Performance Regression in so_k_nucleotide benchmark
 19441,patch lib,Closing an Tempfile#dup behaviour
 19470,perf notbug,Frequent small range-reads from and then writes to a large array are very slow
 19473,maybenotbug thread,can&#39;t be called from trap context (ThreadError) is too limiting
 19537,regexp,Regexp caching algorithm since v3.2.0 causes invalid memory access
 19542,core,Operations on zero-sized IO::Buffer are raising
-19544,core,Custom quotes inconsistency
 19549,parser,Inconsistency in backref parsing
 19557,core,Deadlock on STDOUT(ERR) lock on signal handler
 19558,core patch,str.dump.undump crashes when str contains both Unicode and ASCII control characters
@@ -310,9 +305,19 @@
 19701,core,The rb_classext_t::classpath field is not marked for T_ICLASS
 19703,win core,text/binary mode of parent process fd is not properly inherited on windows
 19716,os/arch,SystemStackError occurs too easily on Alpine Linux (due to small stack size reported by pthread_attr_getstacksize on musl libc)
-19726,notbug core,Script loadde twice when requiring self
 19738,ext,`ObjectSpace.each_object.to_a` crashes in `make runirb`.
 19749,patch core,Confirm correct behaviour when attaching private method with `#define_method`
 19753,core,IO::Buffer#get_string can&#39;t handle negative offset
 19754,core,`IO::Buffer#get_string` raises unsuitable exception for too large offset
 19756,lib,"URI::HTTP.build does not accept a host of `_gateway`, but `URI.parse` will."
+19761,os/arch core,AddressSanitizer fails with Thread and Process
+19765,ractor,Ractor.make_shareable ignores self of a proc created from a Method
+19778,lib,mkmf.rb pkg_config() interaction with RbConfig::CONFIG[&quot;cflags&quot;]
+19779,maybenotbug core,`eval &quot;return&quot;` at top level raises `LocalJumpError`
+19784,core,String#delete_prefix! problem
+19792,os/arch core,arm の alpine 上でネストしたハッシュに長い文字列を入れると segmentation fault が発生する
+19794,os/arch build,Ruby 3.2.2 fails to build on macOS Sonoma betas
+19828,ext,Segfault when `OpenSSL::X509::Certificate#public_key=` is given a `OpenSSL::PKey::DH` object
+19829,core,Enumerator.product called with keyword arguments raises exception with not precise message
+19837,backport,Concurrent calls to Process.waitpid2 misbehave on Ruby 3.1 &amp; 3.2
+19838,ext,Ripper nested heredocs
