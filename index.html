@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>318 Tagged Open Ruby Bugs as of 2023-07-07 02:58:35 +0900</title>
+<title>323 Tagged Open Ruby Bugs as of 2023-08-18 07:18:31 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -10,30 +10,29 @@
 <input type="submit" value="os/arch" />
 <input type="submit" value="build" />
 <input type="submit" value="patch" />
-<input type="submit" value="test" />
 <input type="submit" value="ext" />
-<input type="submit" value="encoding" />
+<input type="submit" value="test" />
 <input type="submit" value="lib" />
+<input type="submit" value="encoding" />
 <input type="submit" value="thread" />
-<input type="submit" value="perf" />
 <input type="submit" value="regexp" />
 <input type="submit" value="cygwin" />
+<input type="submit" value="perf" />
 <input type="submit" value="maybenotbug" />
 <input type="submit" value="parser" />
 <input type="submit" value="tracepoint" />
 <input type="submit" value="fiber" />
 <input type="submit" value="notbug" />
 <input type="submit" value="autoload" />
+<input type="submit" value="backport" />
 <input type="submit" value="coverage" />
 <input type="submit" value="yjit" />
-<input type="submit" value="backport" />
-<input type="submit" value="doc" />
-<input type="submit" value="refine" /></p>
+<input type="submit" value="doc" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">318</span> matched)
+(<span id="matched">323</span> matched)
 <table>
-<caption>318 Tagged Open Ruby Bugs as of 2023-07-07 02:58:35 +0900</caption>
+<caption>323 Tagged Open Ruby Bugs as of 2023-08-18 07:18:31 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -42,6 +41,83 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" ext ">
+<td><a href="https://bugs.ruby-lang.org/issues/19838">19838</a>
+</td>
+<td>ext</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19838">Ripper nested heredocs</a>
+</td>
+</tr>
+<tr class=" backport ">
+<td><a href="https://bugs.ruby-lang.org/issues/19837">19837</a>
+</td>
+<td>backport</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19837">Concurrent calls to Process.waitpid2 misbehave on Ruby 3.1 &amp; 3.2</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/19829">19829</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19829">Enumerator.product called with keyword arguments raises exception with not precise message</a>
+</td>
+</tr>
+<tr class=" ext ">
+<td><a href="https://bugs.ruby-lang.org/issues/19828">19828</a>
+</td>
+<td>ext</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19828">Segfault when `OpenSSL::X509::Certificate#public_key=` is given a `OpenSSL::PKey::DH` object</a>
+</td>
+</tr>
+<tr class=" os/arch build ">
+<td><a href="https://bugs.ruby-lang.org/issues/19794">19794</a>
+</td>
+<td>os/arch build</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19794">Ruby 3.2.2 fails to build on macOS Sonoma betas</a>
+</td>
+</tr>
+<tr class=" os/arch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/19792">19792</a>
+</td>
+<td>os/arch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19792">arm の alpine 上でネストしたハッシュに長い文字列を入れると segmentation fault が発生する</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/19784">19784</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19784">String#delete_prefix! problem</a>
+</td>
+</tr>
+<tr class=" maybenotbug core ">
+<td><a href="https://bugs.ruby-lang.org/issues/19779">19779</a>
+</td>
+<td>maybenotbug core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19779">`eval &quot;return&quot;` at top level raises `LocalJumpError`</a>
+</td>
+</tr>
+<tr class=" lib ">
+<td><a href="https://bugs.ruby-lang.org/issues/19778">19778</a>
+</td>
+<td>lib</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19778">mkmf.rb pkg_config() interaction with RbConfig::CONFIG[&quot;cflags&quot;]</a>
+</td>
+</tr>
+<tr class=" ractor ">
+<td><a href="https://bugs.ruby-lang.org/issues/19765">19765</a>
+</td>
+<td>ractor</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19765">Ractor.make_shareable ignores self of a proc created from a Method</a>
+</td>
+</tr>
+<tr class=" os/arch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/19761">19761</a>
+</td>
+<td>os/arch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19761">AddressSanitizer fails with Thread and Process</a>
+</td>
+</tr>
 <tr class=" lib ">
 <td><a href="https://bugs.ruby-lang.org/issues/19756">19756</a>
 </td>
@@ -75,13 +151,6 @@
 </td>
 <td>ext</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19738">`ObjectSpace.each_object.to_a` crashes in `make runirb`.</a>
-</td>
-</tr>
-<tr class=" notbug core ">
-<td><a href="https://bugs.ruby-lang.org/issues/19726">19726</a>
-</td>
-<td>notbug core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19726">Script loadde twice when requiring self</a>
 </td>
 </tr>
 <tr class=" os/arch ">
@@ -190,13 +259,6 @@
 </td>
 </tr>
 <tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/19544">19544</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19544">Custom quotes inconsistency</a>
-</td>
-</tr>
-<tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/19542">19542</a>
 </td>
 <td>core</td>
@@ -236,13 +298,6 @@
 </td>
 <td>perf</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19438">Ruby 2.7 -&gt; 3.2 Performance Regression in so_k_nucleotide benchmark</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/19436">19436</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19436">Call Cache for singleton methods can lead to &quot;memory leaks&quot;</a>
 </td>
 </tr>
 <tr class=" patch regexp doc ">
@@ -425,13 +480,6 @@
 </td>
 <td>test</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19297">Don&#39;t download content from internet to execute Ruby test suite</a>
-</td>
-</tr>
-<tr class=" core maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/19293">19293</a>
-</td>
-<td>core maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19293">The new Time.new(String) API is nice... but we still need a stricter version of this</a>
 </td>
 </tr>
 <tr class=" ractor perf ">
@@ -852,13 +900,6 @@
 </td>
 <td>encoding</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18601">Invalid byte sequences in Big5 encodings</a>
-</td>
-</tr>
-<tr class=" perf refine ">
-<td><a href="https://bugs.ruby-lang.org/issues/18572">18572</a>
-</td>
-<td>perf refine</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18572">Performance regression when invoking refined methods</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -2070,13 +2111,6 @@
 </td>
 <td>win core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/11142">Command line argument parser on windows handles double quotes inconsistently.</a>
-</td>
-</tr>
-<tr class=" core maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/11064">11064</a>
-</td>
-<td>core maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/11064">#singleton_methods for objects with special singleton_class returns an empty array</a>
 </td>
 </tr>
 <tr class=" test os/arch ">
