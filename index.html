@@ -1,38 +1,38 @@
 <html>
 <head>
-<title>323 Tagged Open Ruby Bugs as of 2023-08-18 07:18:31 +0900</title>
+<title>247 Tagged Open Ruby Bugs as of 2023-08-30 03:12:06 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
 <p class="filter-buttons">Available Tags: <input type="submit" value="core" />
-<input type="submit" value="win" />
 <input type="submit" value="ractor" />
+<input type="submit" value="win" />
+<input type="submit" value="patch" />
 <input type="submit" value="os/arch" />
 <input type="submit" value="build" />
-<input type="submit" value="patch" />
 <input type="submit" value="ext" />
-<input type="submit" value="test" />
-<input type="submit" value="lib" />
 <input type="submit" value="encoding" />
-<input type="submit" value="thread" />
+<input type="submit" value="lib" />
 <input type="submit" value="regexp" />
 <input type="submit" value="cygwin" />
-<input type="submit" value="perf" />
 <input type="submit" value="maybenotbug" />
+<input type="submit" value="thread" />
 <input type="submit" value="parser" />
+<input type="submit" value="test" />
+<input type="submit" value="perf" />
 <input type="submit" value="tracepoint" />
 <input type="submit" value="fiber" />
 <input type="submit" value="notbug" />
 <input type="submit" value="autoload" />
-<input type="submit" value="backport" />
 <input type="submit" value="coverage" />
-<input type="submit" value="yjit" />
-<input type="submit" value="doc" /></p>
+<input type="submit" value="backport" />
+<input type="submit" value="doc" />
+<input type="submit" value="yjit" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">323</span> matched)
+(<span id="matched">247</span> matched)
 <table>
-<caption>323 Tagged Open Ruby Bugs as of 2023-08-18 07:18:31 +0900</caption>
+<caption>247 Tagged Open Ruby Bugs as of 2023-08-30 03:12:06 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -41,25 +41,39 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" core patch ">
+<td><a href="https://bugs.ruby-lang.org/issues/19853">19853</a>
+</td>
+<td>core patch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19853">Segfault when calling `system` from a non-blocking fiber</a>
+</td>
+</tr>
+<tr class=" build win ">
+<td><a href="https://bugs.ruby-lang.org/issues/19847">19847</a>
+</td>
+<td>build win</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19847">Cannot install Ruby 3.2.2 on Windows using Visual Studio 2019</a>
+</td>
+</tr>
+<tr class=" build ">
+<td><a href="https://bugs.ruby-lang.org/issues/19844">19844</a>
+</td>
+<td>build</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19844">Ruby 3.2 fails to build with openssl version 3</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/19841">19841</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19841">Marshal.dump stack overflow with recursive Time</a>
+</td>
+</tr>
 <tr class=" ext ">
 <td><a href="https://bugs.ruby-lang.org/issues/19838">19838</a>
 </td>
 <td>ext</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19838">Ripper nested heredocs</a>
-</td>
-</tr>
-<tr class=" backport ">
-<td><a href="https://bugs.ruby-lang.org/issues/19837">19837</a>
-</td>
-<td>backport</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19837">Concurrent calls to Process.waitpid2 misbehave on Ruby 3.1 &amp; 3.2</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/19829">19829</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19829">Enumerator.product called with keyword arguments raises exception with not precise message</a>
 </td>
 </tr>
 <tr class=" ext ">
@@ -74,20 +88,6 @@
 </td>
 <td>os/arch build</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19794">Ruby 3.2.2 fails to build on macOS Sonoma betas</a>
-</td>
-</tr>
-<tr class=" os/arch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/19792">19792</a>
-</td>
-<td>os/arch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19792">arm の alpine 上でネストしたハッシュに長い文字列を入れると segmentation fault が発生する</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/19784">19784</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19784">String#delete_prefix! problem</a>
 </td>
 </tr>
 <tr class=" maybenotbug core ">
@@ -531,13 +531,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/19244">Windows: USERPROFILE should be preferred over HOMEPATH</a>
 </td>
 </tr>
-<tr class=" lib patch ">
-<td><a href="https://bugs.ruby-lang.org/issues/19238">19238</a>
-</td>
-<td>lib patch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19238">URI.open fails for file path when second argument is a hash</a>
-</td>
-</tr>
 <tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/19231">19231</a>
 </td>
@@ -662,13 +655,6 @@
 </td>
 <td>encoding</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19007">Unicode tables differences from Unicode.org 14.0 data</a>
-</td>
-</tr>
-<tr class="  ">
-<td><a href="https://bugs.ruby-lang.org/issues/19005">19005</a>
-</td>
-<td></td>
-<td><a href="https://bugs.ruby-lang.org/issues/19005">Ruby interpreter compiled XCode 14 cannot build some native gems on macOS</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -811,20 +797,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18794">Windows - intermittent SEGV TestObjSpace#test_reachable_objects_during_iteration</a>
 </td>
 </tr>
-<tr class=" test ">
-<td><a href="https://bugs.ruby-lang.org/issues/18789">18789</a>
-</td>
-<td>test</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18789">make test-bundled-gems failed after make install</a>
-</td>
-</tr>
-<tr class=" patch lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/18783">18783</a>
-</td>
-<td>patch lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18783">OptionParser should recognize &quot;-&quot; as an optional argument</a>
-</td>
-</tr>
 <tr class=" fiber ">
 <td><a href="https://bugs.ruby-lang.org/issues/18743">18743</a>
 </td>
@@ -853,25 +825,11 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18677">BigDecimal#power (**) returns FloatDomainError when passing an infinite parameter</a>
 </td>
 </tr>
-<tr class=" win build ">
-<td><a href="https://bugs.ruby-lang.org/issues/18674">18674</a>
-</td>
-<td>win build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18674">Build failure `make up` with WSL2</a>
-</td>
-</tr>
 <tr class=" win core ">
 <td><a href="https://bugs.ruby-lang.org/issues/18661">18661</a>
 </td>
 <td>win core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18661">Net::HTTP behavior changed between 2.6 and 3.1 on windows.</a>
-</td>
-</tr>
-<tr class=" encoding ">
-<td><a href="https://bugs.ruby-lang.org/issues/18651">18651</a>
-</td>
-<td>encoding</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18651">oob access in CP51932 -&gt; CP50220 transcoder</a>
 </td>
 </tr>
 <tr class=" maybenotbug core ">
@@ -951,27 +909,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18473">Raw data in Socket::Option#inspect on Amazon Linux 2 </a>
 </td>
 </tr>
-<tr class=" win ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/18472">18472</a>
-</td>
-<td>win ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18472">rb_w32_map_errno is not found on Ruby-3.1.0</a>
-</td>
-</tr>
-<tr class=" win ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/18457">18457</a>
-</td>
-<td>win ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18457">ruby 2.7.5 fiddle/types.rb use uint32_t but fiddle/cparser.rb lacks uint32_t</a>
-</td>
-</tr>
-<tr class=" lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/18456">18456</a>
-</td>
-<td>lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18456">rdoc non-determinism: module includes can be added once or twice to generated .ri</a>
-</td>
-</tr>
 <tr class=" core perf ">
 <td><a href="https://bugs.ruby-lang.org/issues/18455">18455</a>
 </td>
@@ -979,32 +916,11 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18455">`IO#close` has poor performance and difficult to understand semantics.</a>
 </td>
 </tr>
-<tr class=" perf yjit ">
-<td><a href="https://bugs.ruby-lang.org/issues/18454">18454</a>
-</td>
-<td>perf yjit</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18454">YJIT slowing down key Discourse benchmarks</a>
-</td>
-</tr>
 <tr class=" os/arch core ">
 <td><a href="https://bugs.ruby-lang.org/issues/18444">18444</a>
 </td>
 <td>os/arch core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18444">Trapped TSTP causes a locking deadlock in 3.0.3 onward</a>
-</td>
-</tr>
-<tr class=" os/arch build ">
-<td><a href="https://bugs.ruby-lang.org/issues/18429">18429</a>
-</td>
-<td>os/arch build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18429">Configure ruby-3.0.3 on Solaris 10 Unknown keyword &#39;URL&#39; in &#39;./ruby.tmp.pc&#39;</a>
-</td>
-</tr>
-<tr class=" build os/arch ">
-<td><a href="https://bugs.ruby-lang.org/issues/18413">18413</a>
-</td>
-<td>build os/arch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18413">Segfault in `ripper/lexer.rb`</a>
 </td>
 </tr>
 <tr class=" ractor ">
@@ -1019,27 +935,6 @@
 </td>
 <td>parser</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18396">An unexpected &quot;hash value omission&quot; syntax error when without parentheses call expr follows</a>
-</td>
-</tr>
-<tr class=" os/arch test ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/18393">18393</a>
-</td>
-<td>os/arch test ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18393">TestReadline#test_interrupt_in_other_thread fails on armv7hl</a>
-</td>
-</tr>
-<tr class=" notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/18381">18381</a>
-</td>
-<td>notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18381">Default vs Bundled gems</a>
-</td>
-</tr>
-<tr class=" win test ">
-<td><a href="https://bugs.ruby-lang.org/issues/18379">18379</a>
-</td>
-<td>win test</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18379">[CI] Windows mingw/ucrt - test-all timeout failures</a>
 </td>
 </tr>
 <tr class=" win ">
@@ -1071,31 +966,10 @@
 </td>
 </tr>
 <tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18269">18269</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18269">trace_opt_not and trace_opt_regexpmatch2 insns are indistinguishable</a>
-</td>
-</tr>
-<tr class=" os/arch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18257">18257</a>
-</td>
-<td>os/arch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18257">rb_mRubyVMFrozenCore is broken by GC run</a>
-</td>
-</tr>
-<tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/18255">18255</a>
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18255">ioctl zeroes the last buffer byte</a>
-</td>
-</tr>
-<tr class=" win ">
-<td><a href="https://bugs.ruby-lang.org/issues/18186">18186</a>
-</td>
-<td>win</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18186">SEGV with system command - MinGW?</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -1103,13 +977,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18152">Fix theoretical bug with signals + qsort</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18144">18144</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18144">Timeout not working while regular expression match is running</a>
 </td>
 </tr>
 <tr class=" thread ">
@@ -1147,25 +1014,11 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18080">Syntax error on one-line pattern matching</a>
 </td>
 </tr>
-<tr class=" build os/arch ">
-<td><a href="https://bugs.ruby-lang.org/issues/18073">18073</a>
-</td>
-<td>build os/arch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18073">test/ruby/test_jit.rb: &quot;error: invalid use of &#39;__builtin_va_arg_pack ()&#39;&quot; on Ruby 2.7.4 on gcc 4.8.5</a>
-</td>
-</tr>
 <tr class=" os/arch ">
 <td><a href="https://bugs.ruby-lang.org/issues/18061">18061</a>
 </td>
 <td>os/arch</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18061"> Execshield test: libruby.so.N.N.N: FAIL: property-note test because no .note.gnu.property section found</a>
-</td>
-</tr>
-<tr class=" fiber ">
-<td><a href="https://bugs.ruby-lang.org/issues/18036">18036</a>
-</td>
-<td>fiber</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18036">Pthread fibers become invalid on fork - different from normal fibers.</a>
 </td>
 </tr>
 <tr class=" ractor ">
@@ -1252,13 +1105,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17931">Compile fails setup option nodynamic</a>
 </td>
 </tr>
-<tr class=" os/arch ">
-<td><a href="https://bugs.ruby-lang.org/issues/17926">17926</a>
-</td>
-<td>os/arch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17926">spec/ruby/core/file/atime_spec.rb: a random failing test on Travis ppc64le</a>
-</td>
-</tr>
 <tr class=" parser ">
 <td><a href="https://bugs.ruby-lang.org/issues/17925">17925</a>
 </td>
@@ -1280,20 +1126,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17878">bootstraptest/test_ractor.rb:224 a random failing test with &quot;The outgoing-port is already closed (Ractor::ClosedError)&quot;</a>
 </td>
 </tr>
-<tr class=" ractor ">
-<td><a href="https://bugs.ruby-lang.org/issues/17826">17826</a>
-</td>
-<td>ractor</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17826">Ractor#take hangs if used in multiple Threads</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/17799">17799</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17799">Seg fault in rb_class_clear_method_cache</a>
-</td>
-</tr>
 <tr class=" core os/arch ">
 <td><a href="https://bugs.ruby-lang.org/issues/17792">17792</a>
 </td>
@@ -1309,20 +1141,6 @@
 </td>
 </tr>
 <tr class=" ractor ">
-<td><a href="https://bugs.ruby-lang.org/issues/17722">17722</a>
-</td>
-<td>ractor</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17722">define_method with shareable results in &quot;defined in a different Ractor&quot;</a>
-</td>
-</tr>
-<tr class=" ractor ">
-<td><a href="https://bugs.ruby-lang.org/issues/17679">17679</a>
-</td>
-<td>ractor</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17679">Ractor incoming channel can consume unlimited resources</a>
-</td>
-</tr>
-<tr class=" ractor ">
 <td><a href="https://bugs.ruby-lang.org/issues/17678">17678</a>
 </td>
 <td>ractor</td>
@@ -1334,27 +1152,6 @@
 </td>
 <td>ractor</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17677">Ractor crashes fork when blocking</a>
-</td>
-</tr>
-<tr class=" ractor ">
-<td><a href="https://bugs.ruby-lang.org/issues/17676">17676</a>
-</td>
-<td>ractor</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17676">Accessing ENV from Ractor raises IsolationError</a>
-</td>
-</tr>
-<tr class=" ractor ">
-<td><a href="https://bugs.ruby-lang.org/issues/17667">17667</a>
-</td>
-<td>ractor</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17667">Module#name needs synchronization</a>
-</td>
-</tr>
-<tr class=" patch build ">
-<td><a href="https://bugs.ruby-lang.org/issues/17646">17646</a>
-</td>
-<td>patch build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17646">Check for `__builtin_mul_overflow` with `long long` arguments</a>
 </td>
 </tr>
 <tr class=" ractor ">
@@ -1379,20 +1176,6 @@
 </td>
 </tr>
 <tr class=" ractor ">
-<td><a href="https://bugs.ruby-lang.org/issues/17543">17543</a>
-</td>
-<td>ractor</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17543">Ractor isolation broken by `self` in shareable proc</a>
-</td>
-</tr>
-<tr class=" ractor ">
-<td><a href="https://bugs.ruby-lang.org/issues/17531">17531</a>
-</td>
-<td>ractor</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17531">`did_you_mean` not Ractor friendly</a>
-</td>
-</tr>
-<tr class=" ractor ">
 <td><a href="https://bugs.ruby-lang.org/issues/17516">17516</a>
 </td>
 <td>ractor</td>
@@ -1400,24 +1183,10 @@
 </td>
 </tr>
 <tr class=" ractor ">
-<td><a href="https://bugs.ruby-lang.org/issues/17513">17513</a>
-</td>
-<td>ractor</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17513">Methods of shareable objects and UnboundMethods should be shareable</a>
-</td>
-</tr>
-<tr class=" ractor ">
 <td><a href="https://bugs.ruby-lang.org/issues/17506">17506</a>
 </td>
 <td>ractor</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17506">Ractor isolation broken by ThreadGroup</a>
-</td>
-</tr>
-<tr class=" perf ">
-<td><a href="https://bugs.ruby-lang.org/issues/17478">17478</a>
-</td>
-<td>perf</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17478">Ruby3.0 is slower than Ruby2.7.2 when parsing a large CSV file</a>
 </td>
 </tr>
 <tr class=" ractor ">
@@ -1434,20 +1203,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17400">Incorrect character downcase for Greek Sigma</a>
 </td>
 </tr>
-<tr class=" perf ">
-<td><a href="https://bugs.ruby-lang.org/issues/17383">17383</a>
-</td>
-<td>perf</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17383">3.0 recursion memory|speed issues</a>
-</td>
-</tr>
-<tr class=" perf ">
-<td><a href="https://bugs.ruby-lang.org/issues/17373">17373</a>
-</td>
-<td>perf</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17373">Ruby 3.0 is slower at Discourse bench than Ruby 2.7</a>
-</td>
-</tr>
 <tr class=" ractor ">
 <td><a href="https://bugs.ruby-lang.org/issues/17359">17359</a>
 </td>
@@ -1460,48 +1215,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17354">Module#const_source_location is misleading for constants awaiting autoload</a>
-</td>
-</tr>
-<tr class=" build ">
-<td><a href="https://bugs.ruby-lang.org/issues/17337">17337</a>
-</td>
-<td>build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17337">Don&#39;t embed Ruby build-time configuration in Ruby</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/17289">17289</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17289">Time#strftime occurs Segmentation Fault on ruby-2.7.2p137</a>
-</td>
-</tr>
-<tr class=" fiber perf ">
-<td><a href="https://bugs.ruby-lang.org/issues/17263">17263</a>
-</td>
-<td>fiber perf</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17263">Fiber context switch degrades with number of fibers, limit on number of fibers</a>
-</td>
-</tr>
-<tr class=" ractor ">
-<td><a href="https://bugs.ruby-lang.org/issues/17196">17196</a>
-</td>
-<td>ractor</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17196">Segmentation Fault with Socket#close in Ractors</a>
-</td>
-</tr>
-<tr class=" ractor ">
-<td><a href="https://bugs.ruby-lang.org/issues/17180">17180</a>
-</td>
-<td>ractor</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17180">Ractor and constant referencing</a>
-</td>
-</tr>
-<tr class=" ractor ">
-<td><a href="https://bugs.ruby-lang.org/issues/17159">17159</a>
-</td>
-<td>ractor</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17159">extend `define_method` for Ractor</a>
 </td>
 </tr>
 <tr class=" maybenotbug core ">
@@ -1532,25 +1245,11 @@
 <td><a href="https://bugs.ruby-lang.org/issues/16997">IO#gets converts some \r\n to \n with universal_newline: false</a>
 </td>
 </tr>
-<tr class=" lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/16951">16951</a>
-</td>
-<td>lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16951">Consistently referer dependencies</a>
-</td>
-</tr>
 <tr class=" encoding ">
 <td><a href="https://bugs.ruby-lang.org/issues/16927">16927</a>
 </td>
 <td>encoding</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16927">String#tr won&#39;t return the expected result for some sign with diacritics</a>
-</td>
-</tr>
-<tr class=" os/arch thread ">
-<td><a href="https://bugs.ruby-lang.org/issues/16920">16920</a>
-</td>
-<td>os/arch thread</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16920">TestThread#test_signal_at_join fails on aarch64</a>
 </td>
 </tr>
 <tr class=" build os/arch ">
@@ -1593,27 +1292,6 @@
 </td>
 <td>ext encoding</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16497">StringIO#internal_encoding is broken (more severely in 2.7)</a>
-</td>
-</tr>
-<tr class=" thread os/arch ">
-<td><a href="https://bugs.ruby-lang.org/issues/16493">16493</a>
-</td>
-<td>thread os/arch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16493">TestThreadQueue#test_thr_kill is flaky on AArch64</a>
-</td>
-</tr>
-<tr class=" test os/arch ">
-<td><a href="https://bugs.ruby-lang.org/issues/16492">16492</a>
-</td>
-<td>test os/arch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16492">TestBugReporter#test_bug_reporter_add test failures</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/16288">16288</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16288">Segmentation fault with finalizers, threads</a>
 </td>
 </tr>
 <tr class=" regexp notbug ">
@@ -1670,20 +1348,6 @@
 </td>
 <td>thread</td>
 <td><a href="https://bugs.ruby-lang.org/issues/15499">Breaking behavior on ruby 2.6: rb_thread_call_without_gvl doesn&#39;t invoke unblock_function when used on the main thread </a>
-</td>
-</tr>
-<tr class=" win thread ">
-<td><a href="https://bugs.ruby-lang.org/issues/15438">15438</a>
-</td>
-<td>win thread</td>
-<td><a href="https://bugs.ruby-lang.org/issues/15438">Threads can&#39;t switch faster than TIME_QUANTUM_(NSEC|USEC|MSEC)</a>
-</td>
-</tr>
-<tr class=" core maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/15428">15428</a>
-</td>
-<td>core maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/15428">Refactor Proc#&gt;&gt; and #&lt;&lt;</a>
 </td>
 </tr>
 <tr class=" core os/arch ">
@@ -1749,27 +1413,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/15097">Gem install fails on Ruby 2.5.1 with Cygwin (get_dns_server_list undefined)</a>
 </td>
 </tr>
-<tr class=" cygwin build ">
-<td><a href="https://bugs.ruby-lang.org/issues/14971">14971</a>
-</td>
-<td>cygwin build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/14971">error: implicit declaration of function ‘rb_vm_call0</a>
-</td>
-</tr>
-<tr class=" win thread ">
-<td><a href="https://bugs.ruby-lang.org/issues/14957">14957</a>
-</td>
-<td>win thread</td>
-<td><a href="https://bugs.ruby-lang.org/issues/14957">MinGW, gcc 8.2.0, bootstraptest test_thread.rb - failure ?</a>
-</td>
-</tr>
-<tr class=" win core ">
-<td><a href="https://bugs.ruby-lang.org/issues/14906">14906</a>
-</td>
-<td>win core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/14906">MinGW failure - TestIO#test_copy_stream_no_busy_wait</a>
-</td>
-</tr>
 <tr class=" regexp notbug ">
 <td><a href="https://bugs.ruby-lang.org/issues/14838">14838</a>
 </td>
@@ -1798,13 +1441,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/14681">`syswrite&#39;: stream closed in another thread (IOError)</a>
 </td>
 </tr>
-<tr class=" lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/14679">14679</a>
-</td>
-<td>lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/14679">StdLib gems should properly specify their dependencies</a>
-</td>
-</tr>
 <tr class=" win core ">
 <td><a href="https://bugs.ruby-lang.org/issues/14640">14640</a>
 </td>
@@ -1826,39 +1462,11 @@
 <td><a href="https://bugs.ruby-lang.org/issues/14582">Unable to use `method__entry` and `method_return` tracing probes since 2.5</a>
 </td>
 </tr>
-<tr class=" build ">
-<td><a href="https://bugs.ruby-lang.org/issues/14543">14543</a>
-</td>
-<td>build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/14543">`make commit` show error of `common-srcs`</a>
-</td>
-</tr>
 <tr class=" os/arch build ">
 <td><a href="https://bugs.ruby-lang.org/issues/14480">14480</a>
 </td>
 <td>os/arch build</td>
 <td><a href="https://bugs.ruby-lang.org/issues/14480">miniruby crashing when compiled with -O2 or -O1 on aarch64</a>
-</td>
-</tr>
-<tr class=" test ">
-<td><a href="https://bugs.ruby-lang.org/issues/14474">14474</a>
-</td>
-<td>test</td>
-<td><a href="https://bugs.ruby-lang.org/issues/14474">skip &quot;TestException#test_thread_signal_location&quot; as known bug</a>
-</td>
-</tr>
-<tr class=" build ">
-<td><a href="https://bugs.ruby-lang.org/issues/14422">14422</a>
-</td>
-<td>build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/14422">Ruby configuration options should not be reused for gem builds</a>
-</td>
-</tr>
-<tr class=" regexp perf ">
-<td><a href="https://bugs.ruby-lang.org/issues/14418">14418</a>
-</td>
-<td>regexp perf</td>
-<td><a href="https://bugs.ruby-lang.org/issues/14418">ruby 2.5 slow regexp execution</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -1875,20 +1483,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/14090">`TestGc#test_interrupt_in_finalizer` fails very rarely</a>
 </td>
 </tr>
-<tr class=" test ">
-<td><a href="https://bugs.ruby-lang.org/issues/14064">14064</a>
-</td>
-<td>test</td>
-<td><a href="https://bugs.ruby-lang.org/issues/14064">test-all with and without -j - incorrect assertions and missing test methods</a>
-</td>
-</tr>
-<tr class=" win core ">
-<td><a href="https://bugs.ruby-lang.org/issues/14049">14049</a>
-</td>
-<td>win core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/14049">SEGV svn 60401 require_relative</a>
-</td>
-</tr>
 <tr class=" cygwin ext ">
 <td><a href="https://bugs.ruby-lang.org/issues/13999">13999</a>
 </td>
@@ -1903,27 +1497,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/13671">Regexp with lookbehind and case-insensitivity raises RegexpError only on strings with certain characters</a>
 </td>
 </tr>
-<tr class=" win test ">
-<td><a href="https://bugs.ruby-lang.org/issues/13644">13644</a>
-</td>
-<td>win test</td>
-<td><a href="https://bugs.ruby-lang.org/issues/13644">Windows - Setting Time.now</a>
-</td>
-</tr>
-<tr class=" win encoding ">
-<td><a href="https://bugs.ruby-lang.org/issues/13571">13571</a>
-</td>
-<td>win encoding</td>
-<td><a href="https://bugs.ruby-lang.org/issues/13571">Script arguments, encoding, windows / MinGW</a>
-</td>
-</tr>
-<tr class=" win test ">
-<td><a href="https://bugs.ruby-lang.org/issues/13542">13542</a>
-</td>
-<td>win test</td>
-<td><a href="https://bugs.ruby-lang.org/issues/13542">MinGW trunk Builds - Summary of Issues</a>
-</td>
-</tr>
 <tr class=" patch lib ">
 <td><a href="https://bugs.ruby-lang.org/issues/13513">13513</a>
 </td>
@@ -1931,24 +1504,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/13513">Resolv::DNS::Message.decode hangs after detecting truncation in UDP messages</a>
 </td>
 </tr>
-<tr class=" win test ">
-<td><a href="https://bugs.ruby-lang.org/issues/13500">13500</a>
-</td>
-<td>win test</td>
-<td><a href="https://bugs.ruby-lang.org/issues/13500">MinGW TestArity#test_proc_err_mess stops testing</a>
-</td>
-</tr>
-<tr class=" win test ">
-<td><a href="https://bugs.ruby-lang.org/issues/13269">13269</a>
-</td>
-<td>win test</td>
-<td><a href="https://bugs.ruby-lang.org/issues/13269">test/readline/test_readline.rb and mingw</a>
-</td>
-</tr>
-<tr class=" core ">
+<tr class=" core os/arch ">
 <td><a href="https://bugs.ruby-lang.org/issues/13164">13164</a>
 </td>
-<td>core</td>
+<td>core os/arch</td>
 <td><a href="https://bugs.ruby-lang.org/issues/13164">A second `SystemStackError` exception  results in `Segmentation fault (core dumped)`</a>
 </td>
 </tr>
@@ -1987,20 +1546,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/12506">On cygwin, Feature #5994 does not work</a>
 </td>
 </tr>
-<tr class=" test os/arch ">
-<td><a href="https://bugs.ruby-lang.org/issues/12500">12500</a>
-</td>
-<td>test os/arch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/12500">TestProcess#test_aspawn_too_long_path fails on mips with &quot;argument too big&quot;</a>
-</td>
-</tr>
-<tr class=" test os/arch ">
-<td><a href="https://bugs.ruby-lang.org/issues/12473">12473</a>
-</td>
-<td>test os/arch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/12473">Test failure on fedora with TestTimeExtension#test_huge_precision</a>
-</td>
-</tr>
 <tr class=" cygwin thread ">
 <td><a href="https://bugs.ruby-lang.org/issues/12445">12445</a>
 </td>
@@ -2020,13 +1565,6 @@
 </td>
 <td>cygwin core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/12442">TestArgf#test_textmode fails on cygwin</a>
-</td>
-</tr>
-<tr class=" win core ">
-<td><a href="https://bugs.ruby-lang.org/issues/12280">12280</a>
-</td>
-<td>win core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/12280">IO.copy_stream(IO, IO) fails with &quot;pread() not implemented&quot;</a>
 </td>
 </tr>
 <tr class=" build ">
@@ -2079,13 +1617,6 @@
 </td>
 </tr>
 <tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/11269">11269</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/11269">ruby_init_setproctitle() should be called before require_libraries()</a>
-</td>
-</tr>
-<tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/11183">11183</a>
 </td>
 <td>core</td>
@@ -2093,31 +1624,10 @@
 </td>
 </tr>
 <tr class=" win core ">
-<td><a href="https://bugs.ruby-lang.org/issues/11177">11177</a>
-</td>
-<td>win core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/11177">DATAでEOF文字以降が読めない</a>
-</td>
-</tr>
-<tr class=" thread os/arch ">
-<td><a href="https://bugs.ruby-lang.org/issues/11174">11174</a>
-</td>
-<td>thread os/arch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/11174">threads memory leak</a>
-</td>
-</tr>
-<tr class=" win core ">
 <td><a href="https://bugs.ruby-lang.org/issues/11142">11142</a>
 </td>
 <td>win core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/11142">Command line argument parser on windows handles double quotes inconsistently.</a>
-</td>
-</tr>
-<tr class=" test os/arch ">
-<td><a href="https://bugs.ruby-lang.org/issues/10580">10580</a>
-</td>
-<td>test os/arch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/10580">TestProcess#test_deadlock_by_signal_at_forking fails on ARM</a>
 </td>
 </tr>
 <tr class=" patch ext ">
@@ -2148,32 +1658,11 @@
 <td><a href="https://bugs.ruby-lang.org/issues/10009">IO operation is 10x slower in multi-thread environment</a>
 </td>
 </tr>
-<tr class=" win build ">
-<td><a href="https://bugs.ruby-lang.org/issues/9955">9955</a>
-</td>
-<td>win build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/9955">issue building dll on mingw, library not found</a>
-</td>
-</tr>
 <tr class=" build ">
 <td><a href="https://bugs.ruby-lang.org/issues/9760">9760</a>
 </td>
 <td>build</td>
 <td><a href="https://bugs.ruby-lang.org/issues/9760">mkmf does not allow for linking against custom libraries when a system library is present</a>
-</td>
-</tr>
-<tr class=" core os/arch ">
-<td><a href="https://bugs.ruby-lang.org/issues/9507">9507</a>
-</td>
-<td>core os/arch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/9507">Ruby 2.1.0 is broken on ARMv5: tried to create Proc object without a block</a>
-</td>
-</tr>
-<tr class=" win core ">
-<td><a href="https://bugs.ruby-lang.org/issues/9435">9435</a>
-</td>
-<td>win core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/9435">Kernel.system problem</a>
 </td>
 </tr>
 <tr class=" cygwin encoding ">
@@ -2202,13 +1691,6 @@
 </td>
 <td>build</td>
 <td><a href="https://bugs.ruby-lang.org/issues/9010">./configure --prefix= cannot handle directories with spaces</a>
-</td>
-</tr>
-<tr class=" ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/8782">8782</a>
-</td>
-<td>ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/8782">Don&#39;t set rl_getc_function on editline</a>
 </td>
 </tr>
 <tr class=" patch core ">
@@ -2258,20 +1740,6 @@
 </td>
 <td>ext</td>
 <td><a href="https://bugs.ruby-lang.org/issues/7892">MIME encoding bug of NKF.nkf</a>
-</td>
-</tr>
-<tr class=" ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/7859">7859</a>
-</td>
-<td>ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/7859">Readline: Incorrect arrow key behavior in vi_editing_mode insert mode with Readline 6.2</a>
-</td>
-</tr>
-<tr class=" build ">
-<td><a href="https://bugs.ruby-lang.org/issues/7840">7840</a>
-</td>
-<td>build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/7840">-Wdeclaration-after-statement is valid for C/ObjC but not for C++</a>
 </td>
 </tr>
 <tr class=" encoding ">
