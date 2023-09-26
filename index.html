@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>247 Tagged Open Ruby Bugs as of 2023-08-30 03:12:06 +0900</title>
+<title>240 Tagged Open Ruby Bugs as of 2023-09-27 04:45:59 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -10,19 +10,19 @@
 <input type="submit" value="patch" />
 <input type="submit" value="os/arch" />
 <input type="submit" value="build" />
-<input type="submit" value="ext" />
 <input type="submit" value="encoding" />
+<input type="submit" value="ext" />
 <input type="submit" value="lib" />
 <input type="submit" value="regexp" />
 <input type="submit" value="cygwin" />
 <input type="submit" value="maybenotbug" />
 <input type="submit" value="thread" />
-<input type="submit" value="parser" />
-<input type="submit" value="test" />
 <input type="submit" value="perf" />
+<input type="submit" value="test" />
 <input type="submit" value="tracepoint" />
-<input type="submit" value="fiber" />
+<input type="submit" value="parser" />
 <input type="submit" value="notbug" />
+<input type="submit" value="fiber" />
 <input type="submit" value="autoload" />
 <input type="submit" value="coverage" />
 <input type="submit" value="backport" />
@@ -30,9 +30,9 @@
 <input type="submit" value="yjit" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">247</span> matched)
+(<span id="matched">240</span> matched)
 <table>
-<caption>247 Tagged Open Ruby Bugs as of 2023-08-30 03:12:06 +0900</caption>
+<caption>240 Tagged Open Ruby Bugs as of 2023-09-27 04:45:59 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -41,25 +41,67 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" tracepoint ">
+<td><a href="https://bugs.ruby-lang.org/issues/19891">19891</a>
+</td>
+<td>tracepoint</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19891">rb_mRubyVMFrozenCore is reported by DTrace but ignored by TracePoint</a>
+</td>
+</tr>
+<tr class=" core perf ">
+<td><a href="https://bugs.ruby-lang.org/issues/19890">19890</a>
+</td>
+<td>core perf</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19890">File#realine(chomp: true) slower/more allocations than readline.chomp!</a>
+</td>
+</tr>
+<tr class=" lib ">
+<td><a href="https://bugs.ruby-lang.org/issues/19886">19886</a>
+</td>
+<td>lib</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19886">&quot;default-&gt;bundled gem&quot; warning is not shown under &quot;bundle exec&quot;</a>
+</td>
+</tr>
+<tr class=" lib ">
+<td><a href="https://bugs.ruby-lang.org/issues/19885">19885</a>
+</td>
+<td>lib</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19885">Invalid Warning for Default Gems That Will Move to Bundled Gems</a>
+</td>
+</tr>
+<tr class=" core perf notbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/19875">19875</a>
+</td>
+<td>core perf notbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19875">Ruby 3.0 -&gt; 3.1 Performance regression in String#count</a>
+</td>
+</tr>
+<tr class=" test ">
+<td><a href="https://bugs.ruby-lang.org/issues/19869">19869</a>
+</td>
+<td>test</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19869">Mark skipped test somehow</a>
+</td>
+</tr>
+<tr class=" lib ">
+<td><a href="https://bugs.ruby-lang.org/issues/19866">19866</a>
+</td>
+<td>lib</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19866">Future of `readline.rb`</a>
+</td>
+</tr>
 <tr class=" core patch ">
-<td><a href="https://bugs.ruby-lang.org/issues/19853">19853</a>
+<td><a href="https://bugs.ruby-lang.org/issues/19865">19865</a>
 </td>
 <td>core patch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19853">Segfault when calling `system` from a non-blocking fiber</a>
+<td><a href="https://bugs.ruby-lang.org/issues/19865">Segfault when calling user signal handlers during VM shutdown</a>
 </td>
 </tr>
-<tr class=" build win ">
-<td><a href="https://bugs.ruby-lang.org/issues/19847">19847</a>
+<tr class=" core maybenotbug patch ">
+<td><a href="https://bugs.ruby-lang.org/issues/19857">19857</a>
 </td>
-<td>build win</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19847">Cannot install Ruby 3.2.2 on Windows using Visual Studio 2019</a>
-</td>
-</tr>
-<tr class=" build ">
-<td><a href="https://bugs.ruby-lang.org/issues/19844">19844</a>
-</td>
-<td>build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19844">Ruby 3.2 fails to build with openssl version 3</a>
+<td>core maybenotbug patch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19857">Eval coverage is reset after each `eval`.</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -97,13 +139,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/19779">`eval &quot;return&quot;` at top level raises `LocalJumpError`</a>
 </td>
 </tr>
-<tr class=" lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/19778">19778</a>
-</td>
-<td>lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19778">mkmf.rb pkg_config() interaction with RbConfig::CONFIG[&quot;cflags&quot;]</a>
-</td>
-</tr>
 <tr class=" ractor ">
 <td><a href="https://bugs.ruby-lang.org/issues/19765">19765</a>
 </td>
@@ -123,13 +158,6 @@
 </td>
 <td>lib</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19756">URI::HTTP.build does not accept a host of `_gateway`, but `URI.parse` will.</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/19754">19754</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19754">`IO::Buffer#get_string` raises unsuitable exception for too large offset</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -251,13 +279,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/19557">Deadlock on STDOUT(ERR) lock on signal handler</a>
 </td>
 </tr>
-<tr class=" parser ">
-<td><a href="https://bugs.ruby-lang.org/issues/19549">19549</a>
-</td>
-<td>parser</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19549">Inconsistency in backref parsing</a>
-</td>
-</tr>
 <tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/19542">19542</a>
 </td>
@@ -356,13 +377,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/19407">2 threads taking from current ractor will hang forever</a>
 </td>
 </tr>
-<tr class=" patch ractor ">
-<td><a href="https://bugs.ruby-lang.org/issues/19387">19387</a>
-</td>
-<td>patch ractor</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19387">Issue with ObjectSpace.each_objects not returning objects after starting a ractor</a>
-</td>
-</tr>
 <tr class=" win encoding ">
 <td><a href="https://bugs.ruby-lang.org/issues/19384">19384</a>
 </td>
@@ -454,13 +468,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/19362">#dup on Proc doesn&#39;t call initialize_dup</a>
 </td>
 </tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/19349">19349</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19349">Kernel.Integer silently discards base argument that does not have a #to_int</a>
-</td>
-</tr>
 <tr class=" ractor ">
 <td><a href="https://bugs.ruby-lang.org/issues/19338">19338</a>
 </td>
@@ -487,20 +494,6 @@
 </td>
 <td>ractor perf</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19288">Ractor JSON parsing significantly slower than linear parsing</a>
-</td>
-</tr>
-<tr class=" lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/19287">19287</a>
-</td>
-<td>lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19287">Let DelegateClass respect the original method&#39;s arity in case of 0</a>
-</td>
-</tr>
-<tr class=" parser ">
-<td><a href="https://bugs.ruby-lang.org/issues/19281">19281</a>
-</td>
-<td>parser</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19281">SyntaxError if first argument of command call has semicolon inside parenthesis</a>
 </td>
 </tr>
 <tr class=" build win ">
@@ -536,13 +529,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19231">Integer#step and Float::INFINITY - inconsistent behaviour when called with and without a block</a>
-</td>
-</tr>
-<tr class=" ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/19230">19230</a>
-</td>
-<td>ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19230">The openssl backend of securerandom is no longer needed</a>
 </td>
 </tr>
 <tr class=" core win ">
@@ -643,13 +629,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/19017">Net::HTTP may block when attempting to reuse a persistent connection</a>
 </td>
 </tr>
-<tr class=" patch ext maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/19012">19012</a>
-</td>
-<td>patch ext maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19012">BasicSocket#recv* methods return an empty packet instead of nil on closed connections</a>
-</td>
-</tr>
 <tr class=" encoding ">
 <td><a href="https://bugs.ruby-lang.org/issues/19007">19007</a>
 </td>
@@ -700,31 +679,10 @@
 </td>
 </tr>
 <tr class=" win ">
-<td><a href="https://bugs.ruby-lang.org/issues/18924">18924</a>
-</td>
-<td>win</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18924">lstrlen and lstrcat still in use</a>
-</td>
-</tr>
-<tr class=" win ">
 <td><a href="https://bugs.ruby-lang.org/issues/18923">18923</a>
 </td>
 <td>win</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18923">Dir.glob Errno::ENAMETOOLONG - Caused by outdated logic in open_dir_handle (win32.c)</a>
-</td>
-</tr>
-<tr class=" build ">
-<td><a href="https://bugs.ruby-lang.org/issues/18918">18918</a>
-</td>
-<td>build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18918">Can&#39;t compile ruby master with AFL ASAN</a>
-</td>
-</tr>
-<tr class=" test os/arch ">
-<td><a href="https://bugs.ruby-lang.org/issues/18914">18914</a>
-</td>
-<td>test os/arch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18914">Segmentation fault during Ruby test suite execution</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -760,13 +718,6 @@
 </td>
 <td>fiber</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18818">Thread waitq does not retain referenced objects, can lead to use after free.</a>
-</td>
-</tr>
-<tr class=" maybenotbug core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18810">18810</a>
-</td>
-<td>maybenotbug core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18810">Make `Kernel#p` interruptable.</a>
 </td>
 </tr>
 <tr class=" core ">
