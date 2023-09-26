@@ -141,16 +141,12 @@
 18795,core,Verbose GC debug output with -DRGENGC_DEBUG=5 causes a crash
 18804,core,Invalid line number for putnil instruction
 18805,core,IO::Buffer is inconsistent when returning a string from an empty buffer
-18810,maybenotbug core,Make `Kernel#p` interruptable.
 18818,fiber,"Thread waitq does not retain referenced objects, can lead to use after free."
 18842,lib,Ruby&#39;s Resolv library does not handle correctly the `NODATA` case
 18878,parser,parse.y: Foo::Bar {} is inconsistently rejected
 18886,tracepoint maybenotbug,Struct aref and aset don&#39;t trigger any tracepoints.
 18903,core,Stack overflow signal handling seems to be triggered once and then not working after
-18914,test os/arch,Segmentation fault during Ruby test suite execution
-18918,build,Can&#39;t compile ruby master with AFL ASAN
 18923,win,Dir.glob Errno::ENAMETOOLONG - Caused by outdated logic in open_dir_handle (win32.c)
-18924,win,lstrlen and lstrcat still in use
 18940,ractor,Ruby Ractor fails with IOError when handling higher concurrency
 18947,win core,Unexpected Errno::ENAMETOOLONG on Windows
 18966,parser,Strange behavior when numbered parameters and method definition are both used in a block
@@ -158,7 +154,6 @@
 18993,core,Inconsistent Range#size for Float and Rational
 18995,core,IO#set_encoding sometimes set an IO&#39;s internal encoding to the default external encoding
 19007,encoding,Unicode tables differences from Unicode.org 14.0 data
-19012,patch ext maybenotbug,BasicSocket#recv* methods return an empty packet instead of nil on closed connections
 19017,patch lib,Net::HTTP may block when attempting to reuse a persistent connection
 19039,core,Closing an IO being select&#39;ed in another thread does not resume the thread
 19043,ext,Segfault on macOS 11.7 while using StringScanner in multiple threads
@@ -173,19 +168,15 @@
 19165,perf,"Method (with no param) delegation with *, **, and ... is slow"
 19172,core,`ruby_thread_has_gvl_p` is innacurate sometimes -- document or change?
 19192,core win,"IO has third data mode, document is incomplete."
-19230,ext,The openssl backend of securerandom is no longer needed
 19231,core,Integer#step and Float::INFINITY - inconsistent behaviour when called with and without a block
 19244,patch core win,Windows: USERPROFILE should be preferred over HOMEPATH
 19251,test,Limit amount of test failures due to updates of tzdata
 19266,lib,URI::Generic should use URI::RFC3986_PARSER instead of URI::DEFAULT_PARSER
 19268,build win,Mingw64 Build Failure
-19281,parser,SyntaxError if first argument of command call has semicolon inside parenthesis
-19287,lib,Let DelegateClass respect the original method&#39;s arity in case of 0
 19288,ractor perf,Ractor JSON parsing significantly slower than linear parsing
 19297,test,Don&#39;t download content from internet to execute Ruby test suite
 19313,test os/arch,Leaked file descriptors while running test-all
 19338,ractor,Ruby hangs when ouputting warnings inside ractor with VM lock held
-19349,core,Kernel.Integer silently discards base argument that does not have a #to_int
 19362,core maybenotbug,#dup on Proc doesn&#39;t call initialize_dup
 19363,coverage,Fix rb_transient_heap_mark: wrong header (T_STRUCT) segfault
 19364,ractor tracepoint,Issue with tracepoint enable/disable across ractors
@@ -199,7 +190,6 @@
 19378,patch core win,Windows: Use less syscalls for faster require of big gems
 19383,patch win encoding,Time.now.zone encoding for German display language in Windows is incorrect
 19384,win encoding,ASCII 128..154 characters in IO.popen or %x output do not reflect the proper encoding in Windows
-19387,patch ractor,Issue with ObjectSpace.each_objects not returning objects after starting a ractor
 19407,ractor,2 threads taking from current ractor will hang forever
 19408,ractor,Object no longer frozen after moved from a ractor
 19409,ractor,Object&#39;s shape is reset after a ractor move
@@ -214,7 +204,6 @@
 19473,maybenotbug thread,can&#39;t be called from trap context (ThreadError) is too limiting
 19537,regexp,Regexp caching algorithm since v3.2.0 causes invalid memory access
 19542,core,Operations on zero-sized IO::Buffer are raising
-19549,parser,Inconsistency in backref parsing
 19557,core,Deadlock on STDOUT(ERR) lock on signal handler
 19558,core patch,str.dump.undump crashes when str contains both Unicode and ASCII control characters
 19562,ractor,Setting default_(in|ex)ternal encoding after running an Ractor freezes ruby
@@ -232,16 +221,20 @@
 19738,ext,`ObjectSpace.each_object.to_a` crashes in `make runirb`.
 19749,patch core,Confirm correct behaviour when attaching private method with `#define_method`
 19753,core,IO::Buffer#get_string can&#39;t handle negative offset
-19754,core,`IO::Buffer#get_string` raises unsuitable exception for too large offset
 19756,lib,"URI::HTTP.build does not accept a host of `_gateway`, but `URI.parse` will."
 19761,os/arch core,AddressSanitizer fails with Thread and Process
 19765,ractor,Ractor.make_shareable ignores self of a proc created from a Method
-19778,lib,mkmf.rb pkg_config() interaction with RbConfig::CONFIG[&quot;cflags&quot;]
 19779,maybenotbug core,`eval &quot;return&quot;` at top level raises `LocalJumpError`
 19794,os/arch build,Ruby 3.2.2 fails to build on macOS Sonoma betas
 19828,ext,Segfault when `OpenSSL::X509::Certificate#public_key=` is given a `OpenSSL::PKey::DH` object
 19838,ext,Ripper nested heredocs
 19841,core,Marshal.dump stack overflow with recursive Time
-19844,build,Ruby 3.2 fails to build with openssl version 3
-19847,build win,Cannot install Ruby 3.2.2 on Windows using Visual Studio 2019
-19853,core patch,Segfault when calling `system` from a non-blocking fiber
+19857,core maybenotbug patch,Eval coverage is reset after each `eval`.
+19865,core patch,Segfault when calling user signal handlers during VM shutdown
+19866,lib,Future of `readline.rb`
+19869,test,Mark skipped test somehow
+19875,core perf notbug,Ruby 3.0 -&gt; 3.1 Performance regression in String#count
+19885,lib,Invalid Warning for Default Gems That Will Move to Bundled Gems
+19886,lib,&quot;default-&gt;bundled gem&quot; warning is not shown under &quot;bundle exec&quot;
+19890,core perf,File#realine(chomp: true) slower/more allocations than readline.chomp!
+19891,tracepoint,rb_mRubyVMFrozenCore is reported by DTrace but ignored by TracePoint
