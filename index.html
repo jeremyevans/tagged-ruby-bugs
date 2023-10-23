@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>240 Tagged Open Ruby Bugs as of 2023-09-27 04:45:59 +0900</title>
+<title>243 Tagged Open Ruby Bugs as of 2023-10-24 06:11:22 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -10,15 +10,15 @@
 <input type="submit" value="patch" />
 <input type="submit" value="os/arch" />
 <input type="submit" value="build" />
-<input type="submit" value="encoding" />
 <input type="submit" value="ext" />
+<input type="submit" value="encoding" />
 <input type="submit" value="lib" />
 <input type="submit" value="regexp" />
 <input type="submit" value="cygwin" />
 <input type="submit" value="maybenotbug" />
+<input type="submit" value="test" />
 <input type="submit" value="thread" />
 <input type="submit" value="perf" />
-<input type="submit" value="test" />
 <input type="submit" value="tracepoint" />
 <input type="submit" value="parser" />
 <input type="submit" value="notbug" />
@@ -30,9 +30,9 @@
 <input type="submit" value="yjit" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">240</span> matched)
+(<span id="matched">243</span> matched)
 <table>
-<caption>240 Tagged Open Ruby Bugs as of 2023-09-27 04:45:59 +0900</caption>
+<caption>243 Tagged Open Ruby Bugs as of 2023-10-24 06:11:22 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -41,6 +41,76 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" build ">
+<td><a href="https://bugs.ruby-lang.org/issues/19968">19968</a>
+</td>
+<td>build</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19968">make install - RBS gem is not installed</a>
+</td>
+</tr>
+<tr class=" ext ">
+<td><a href="https://bugs.ruby-lang.org/issues/19928">19928</a>
+</td>
+<td>ext</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19928">IPV6 nameserver issues: &quot;Protocol not supported - socket(2) - udp&quot;</a>
+</td>
+</tr>
+<tr class=" os/arch test ">
+<td><a href="https://bugs.ruby-lang.org/issues/19927">19927</a>
+</td>
+<td>os/arch test</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19927">TestCoverage#test_coverage_suspendable fails on ppc64le</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/19922">19922</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19922">ObjectSpace.dump_all in multiple threads in parallel causes SEGV</a>
+</td>
+</tr>
+<tr class=" os/arch build ">
+<td><a href="https://bugs.ruby-lang.org/issues/19920">19920</a>
+</td>
+<td>os/arch build</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19920">Ruby 3.1 fails to build with --enable-shared on macos-arm64: is an incompatible architecture (have &#39;arm64&#39;, need &#39;&#39;)</a>
+</td>
+</tr>
+<tr class=" maybenotbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/19918">19918</a>
+</td>
+<td>maybenotbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19918">Should `a[&amp;b]=c` be syntax valid?</a>
+</td>
+</tr>
+<tr class=" ractor core ">
+<td><a href="https://bugs.ruby-lang.org/issues/19917">19917</a>
+</td>
+<td>ractor core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19917">Segmentation fault or lost objects when using Ractor.select with moved exceptions</a>
+</td>
+</tr>
+<tr class=" lib ">
+<td><a href="https://bugs.ruby-lang.org/issues/19916">19916</a>
+</td>
+<td>lib</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19916">URI#to_s can serialize to a value that doesn&#39;t deserialize to the original</a>
+</td>
+</tr>
+<tr class=" patch lib maybenotbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/19910">19910</a>
+</td>
+<td>patch lib maybenotbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19910">Set#delete_if behavior inconsistent with Array/Hash</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/19907">19907</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19907">Method calls with keyword arguments in eval leaks callcache and callinfo objects</a>
+</td>
+</tr>
 <tr class=" tracepoint ">
 <td><a href="https://bugs.ruby-lang.org/issues/19891">19891</a>
 </td>
@@ -48,25 +118,11 @@
 <td><a href="https://bugs.ruby-lang.org/issues/19891">rb_mRubyVMFrozenCore is reported by DTrace but ignored by TracePoint</a>
 </td>
 </tr>
-<tr class=" core perf ">
-<td><a href="https://bugs.ruby-lang.org/issues/19890">19890</a>
-</td>
-<td>core perf</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19890">File#realine(chomp: true) slower/more allocations than readline.chomp!</a>
-</td>
-</tr>
 <tr class=" lib ">
 <td><a href="https://bugs.ruby-lang.org/issues/19886">19886</a>
 </td>
 <td>lib</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19886">&quot;default-&gt;bundled gem&quot; warning is not shown under &quot;bundle exec&quot;</a>
-</td>
-</tr>
-<tr class=" lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/19885">19885</a>
-</td>
-<td>lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19885">Invalid Warning for Default Gems That Will Move to Bundled Gems</a>
 </td>
 </tr>
 <tr class=" core perf notbug ">
@@ -81,13 +137,6 @@
 </td>
 <td>test</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19869">Mark skipped test somehow</a>
-</td>
-</tr>
-<tr class=" lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/19866">19866</a>
-</td>
-<td>lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19866">Future of `readline.rb`</a>
 </td>
 </tr>
 <tr class=" core patch ">
@@ -811,13 +860,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18601">Invalid byte sequences in Big5 encodings</a>
 </td>
 </tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18553">18553</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18553">Memory leak on compiling method call with kwargs</a>
-</td>
-</tr>
 <tr class=" win core ">
 <td><a href="https://bugs.ruby-lang.org/issues/18510">18510</a>
 </td>
@@ -1161,20 +1203,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17359">Ractor copy mode is not Ractor-safe</a>
 </td>
 </tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/17354">17354</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17354">Module#const_source_location is misleading for constants awaiting autoload</a>
-</td>
-</tr>
-<tr class=" maybenotbug core ">
-<td><a href="https://bugs.ruby-lang.org/issues/17146">17146</a>
-</td>
-<td>maybenotbug core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17146">Queue operations are allowed after it is frozen</a>
-</td>
-</tr>
 <tr class=" build os/arch ">
 <td><a href="https://bugs.ruby-lang.org/issues/17142">17142</a>
 </td>
@@ -1194,13 +1222,6 @@
 </td>
 <td>core win</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16997">IO#gets converts some \r\n to \n with universal_newline: false</a>
-</td>
-</tr>
-<tr class=" encoding ">
-<td><a href="https://bugs.ruby-lang.org/issues/16927">16927</a>
-</td>
-<td>encoding</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16927">String#tr won&#39;t return the expected result for some sign with diacritics</a>
 </td>
 </tr>
 <tr class=" build os/arch ">
