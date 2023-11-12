@@ -110,7 +110,6 @@
 18132,thread,TODO: fix ccan/list thread safety
 18152,core,Fix theoretical bug with signals + qsort
 18255,core,ioctl zeroes the last buffer byte
-18286,os/arch,Universal arm64/x86_84 binary built on an x86_64 machine segfaults/is killed on arm64
 18337,parser encoding,Ruby allows zero-width characters in identifiers
 18338,encoding,Encoding.default_external = Encoding::UTF_16BE may add a wrongly-encoded string to $LOADED_FEATURES
 18359,win,[Windows MinGW] warning Please include winsock2.h before windows.h
@@ -132,7 +131,6 @@
 18677,ext,BigDecimal#power (**) returns FloatDomainError when passing an infinite parameter
 18733,os/arch,Ruby GC problems cause performance issue with Ractor
 18740,tracepoint,Use of rightward assignment changes line number needed for line-targeted TracePoint
-18743,fiber,Enumerator#next / peek re-use each others stacktraces
 18794,win,Windows - intermittent SEGV TestObjSpace#test_reachable_objects_during_iteration
 18795,core,Verbose GC debug output with -DRGENGC_DEBUG=5 causes a crash
 18804,core,Invalid line number for putnil instruction
@@ -149,7 +147,6 @@
 18988,ext,Ripper cannot parse some code that has regexp named capture
 18993,core,Inconsistent Range#size for Float and Rational
 18995,core,IO#set_encoding sometimes set an IO&#39;s internal encoding to the default external encoding
-19007,encoding,Unicode tables differences from Unicode.org 14.0 data
 19017,patch lib,Net::HTTP may block when attempting to reuse a persistent connection
 19039,core,Closing an IO being select&#39;ed in another thread does not resume the thread
 19043,ext,Segfault on macOS 11.7 while using StringScanner in multiple threads
@@ -165,7 +162,6 @@
 19172,core,`ruby_thread_has_gvl_p` is innacurate sometimes -- document or change?
 19192,core win,"IO has third data mode, document is incomplete."
 19231,core,Integer#step and Float::INFINITY - inconsistent behaviour when called with and without a block
-19244,patch core win,Windows: USERPROFILE should be preferred over HOMEPATH
 19251,test,Limit amount of test failures due to updates of tzdata
 19266,lib,URI::Generic should use URI::RFC3986_PARSER instead of URI::DEFAULT_PARSER
 19268,build win,Mingw64 Build Failure
@@ -173,7 +169,6 @@
 19297,test,Don&#39;t download content from internet to execute Ruby test suite
 19313,test os/arch,Leaked file descriptors while running test-all
 19338,ractor,Ruby hangs when ouputting warnings inside ractor with VM lock held
-19362,core maybenotbug,#dup on Proc doesn&#39;t call initialize_dup
 19363,coverage,Fix rb_transient_heap_mark: wrong header (T_STRUCT) segfault
 19364,ractor tracepoint,Issue with tracepoint enable/disable across ractors
 19365,ractor,Ractors can access non-shareable values through enumerators
@@ -195,19 +190,15 @@
 19413,core,Can&#39;t move object when 2 ivars refer to same object
 19417,patch regexp doc,Regexp \p{Word} and [[:word:]] do not match Unicode Other_Number character
 19438,perf,Ruby 2.7 -&gt; 3.2 Performance Regression in so_k_nucleotide benchmark
-19441,patch lib,Closing an Tempfile#dup behaviour
 19470,perf notbug,Frequent small range-reads from and then writes to a large array are very slow
 19473,maybenotbug thread,can&#39;t be called from trap context (ThreadError) is too limiting
-19537,regexp,Regexp caching algorithm since v3.2.0 causes invalid memory access
 19542,core,Operations on zero-sized IO::Buffer are raising
 19557,core,Deadlock on STDOUT(ERR) lock on signal handler
 19558,core patch,str.dump.undump crashes when str contains both Unicode and ASCII control characters
 19562,ractor,Setting default_(in|ex)ternal encoding after running an Ractor freezes ruby
-19576,backport,Backport request: Gemfile.lock resolving is broken with bundler shipped with Ruby 3.1.4
 19598,tracepoint maybenotbug,Inconsistent behaviour of TracePoint API
 19609,win lib,"net/http ignores open_timeout, read_timeout on Windows"
 19631,maybenotbug core,module_eval does not propulate absolute_path for Kernel.caller_locations
-19632,core,Disable external iterator for frozen enumerator
 19636,encoding,String#encode EUC_JIS_2004で&quot;¥&quot;がEncoding::UndefinedConversionErrorになる
 19683,os/arch build,ruby-3.3.0-preview1 does not build with BSD make without --with-baseruby
 19696,yjit,YJIT panicked - branch stubs should never enlarge branches
@@ -216,13 +207,11 @@
 19716,os/arch,SystemStackError occurs too easily on Alpine Linux (due to small stack size reported by pthread_attr_getstacksize on musl libc)
 19738,ext,`ObjectSpace.each_object.to_a` crashes in `make runirb`.
 19749,patch core,Confirm correct behaviour when attaching private method with `#define_method`
-19753,core,IO::Buffer#get_string can&#39;t handle negative offset
 19756,lib,"URI::HTTP.build does not accept a host of `_gateway`, but `URI.parse` will."
 19761,os/arch core,AddressSanitizer fails with Thread and Process
 19765,ractor,Ractor.make_shareable ignores self of a proc created from a Method
 19779,maybenotbug core,`eval &quot;return&quot;` at top level raises `LocalJumpError`
 19794,os/arch build,Ruby 3.2.2 fails to build on macOS Sonoma betas
-19828,ext,Segfault when `OpenSSL::X509::Certificate#public_key=` is given a `OpenSSL::PKey::DH` object
 19838,ext,Ripper nested heredocs
 19841,core,Marshal.dump stack overflow with recursive Time
 19857,core maybenotbug patch,Eval coverage is reset after each `eval`.
@@ -233,11 +222,22 @@
 19891,tracepoint,rb_mRubyVMFrozenCore is reported by DTrace but ignored by TracePoint
 19907,core,Method calls with keyword arguments in eval leaks callcache and callinfo objects
 19910,patch lib maybenotbug,Set#delete_if behavior inconsistent with Array/Hash
-19916,lib,URI#to_s can serialize to a value that doesn&#39;t deserialize to the original
-19917,ractor core,Segmentation fault or lost objects when using Ractor.select with moved exceptions
-19918,maybenotbug,Should `a[&amp;b]=c` be syntax valid?
+19916,lib patch,URI#to_s can serialize to a value that doesn&#39;t deserialize to the original
+19917,ractor,Segmentation fault or lost objects when using Ractor.select with moved exceptions
+19918,maybenotbug parser,Should `a[&amp;b]=c` be syntax valid?
 19920,os/arch build,"Ruby 3.1 fails to build with --enable-shared on macos-arm64: is an incompatible architecture (have &#39;arm64&#39;, need &#39;&#39;)"
-19922,core,ObjectSpace.dump_all in multiple threads in parallel causes SEGV
-19927,os/arch test,TestCoverage#test_coverage_suspendable fails on ppc64le
-19928,ext,IPV6 nameserver issues: &quot;Protocol not supported - socket(2) - udp&quot;
-19968,build,make install - RBS gem is not installed
+19922,core patch,ObjectSpace.dump_all in multiple threads in parallel causes SEGV
+19928,lib patch,IPV6 nameserver issues: &quot;Protocol not supported - socket(2) - udp&quot;
+19970,core os/arch,Eval leaks callcache and callinfo objects on arm32 (linux)
+19974,ext,OpenSSL::PKCS7 generates SegFault when parsing invalid data
+19975,core,ISeq#to_binary loses hidden local variable indices
+19977,core patch,"(nil..nil) === x can raise an exception, differing from Range#cover?"
+19981,ractor os/arch,bootstraptest/test_ractor.rb: Segmentation fault on arm32
+19983,core,Nested  `*` seems incorrect
+19984,test,`make test-bundler-parallel` fails with ` --enable-shared`
+19986,win,Win32: `HOME` is set to just `HOMEDRIVE` if `HOMEPATH` is unset
+19990,notbug core,Could we reconsider the second argument to Kernel#load?
+19991,core patch,rb_register_postponed_job async-signal-unsafety causes crash in GC
+19994,core patch,Seemingly require causes segfault??
+19996,core,`RUBY_MN_THREADS=1` triggers Action Cable unit test failures
+20001,maybenotbug core,Make Ruby work properly with ASAN enabled
