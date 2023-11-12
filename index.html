@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>243 Tagged Open Ruby Bugs as of 2023-10-24 06:11:22 +0900</title>
+<title>243 Tagged Open Ruby Bugs as of 2023-11-12 09:28:26 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -11,28 +11,27 @@
 <input type="submit" value="os/arch" />
 <input type="submit" value="build" />
 <input type="submit" value="ext" />
-<input type="submit" value="encoding" />
 <input type="submit" value="lib" />
-<input type="submit" value="regexp" />
+<input type="submit" value="encoding" />
 <input type="submit" value="cygwin" />
+<input type="submit" value="regexp" />
 <input type="submit" value="maybenotbug" />
 <input type="submit" value="test" />
 <input type="submit" value="thread" />
+<input type="submit" value="parser" />
 <input type="submit" value="perf" />
 <input type="submit" value="tracepoint" />
-<input type="submit" value="parser" />
 <input type="submit" value="notbug" />
-<input type="submit" value="fiber" />
 <input type="submit" value="autoload" />
 <input type="submit" value="coverage" />
-<input type="submit" value="backport" />
+<input type="submit" value="fiber" />
 <input type="submit" value="doc" />
 <input type="submit" value="yjit" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
 (<span id="matched">243</span> matched)
 <table>
-<caption>243 Tagged Open Ruby Bugs as of 2023-10-24 06:11:22 +0900</caption>
+<caption>243 Tagged Open Ruby Bugs as of 2023-11-12 09:28:26 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -41,31 +40,108 @@
 </tr>
 </thead>
 <tbody>
-<tr class=" build ">
-<td><a href="https://bugs.ruby-lang.org/issues/19968">19968</a>
+<tr class=" maybenotbug core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20001">20001</a>
 </td>
-<td>build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19968">make install - RBS gem is not installed</a>
-</td>
-</tr>
-<tr class=" ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/19928">19928</a>
-</td>
-<td>ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19928">IPV6 nameserver issues: &quot;Protocol not supported - socket(2) - udp&quot;</a>
-</td>
-</tr>
-<tr class=" os/arch test ">
-<td><a href="https://bugs.ruby-lang.org/issues/19927">19927</a>
-</td>
-<td>os/arch test</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19927">TestCoverage#test_coverage_suspendable fails on ppc64le</a>
+<td>maybenotbug core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20001">Make Ruby work properly with ASAN enabled</a>
 </td>
 </tr>
 <tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/19922">19922</a>
+<td><a href="https://bugs.ruby-lang.org/issues/19996">19996</a>
 </td>
 <td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19996">`RUBY_MN_THREADS=1` triggers Action Cable unit test failures</a>
+</td>
+</tr>
+<tr class=" core patch ">
+<td><a href="https://bugs.ruby-lang.org/issues/19994">19994</a>
+</td>
+<td>core patch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19994">Seemingly require causes segfault??</a>
+</td>
+</tr>
+<tr class=" core patch ">
+<td><a href="https://bugs.ruby-lang.org/issues/19991">19991</a>
+</td>
+<td>core patch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19991">rb_register_postponed_job async-signal-unsafety causes crash in GC</a>
+</td>
+</tr>
+<tr class=" notbug core ">
+<td><a href="https://bugs.ruby-lang.org/issues/19990">19990</a>
+</td>
+<td>notbug core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19990">Could we reconsider the second argument to Kernel#load?</a>
+</td>
+</tr>
+<tr class=" win ">
+<td><a href="https://bugs.ruby-lang.org/issues/19986">19986</a>
+</td>
+<td>win</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19986">Win32: `HOME` is set to just `HOMEDRIVE` if `HOMEPATH` is unset</a>
+</td>
+</tr>
+<tr class=" test ">
+<td><a href="https://bugs.ruby-lang.org/issues/19984">19984</a>
+</td>
+<td>test</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19984">`make test-bundler-parallel` fails with ` --enable-shared`</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/19983">19983</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19983">Nested  `*` seems incorrect</a>
+</td>
+</tr>
+<tr class=" ractor os/arch ">
+<td><a href="https://bugs.ruby-lang.org/issues/19981">19981</a>
+</td>
+<td>ractor os/arch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19981">bootstraptest/test_ractor.rb: Segmentation fault on arm32</a>
+</td>
+</tr>
+<tr class=" core patch ">
+<td><a href="https://bugs.ruby-lang.org/issues/19977">19977</a>
+</td>
+<td>core patch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19977">(nil..nil) === x can raise an exception, differing from Range#cover?</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/19975">19975</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19975">ISeq#to_binary loses hidden local variable indices</a>
+</td>
+</tr>
+<tr class=" ext ">
+<td><a href="https://bugs.ruby-lang.org/issues/19974">19974</a>
+</td>
+<td>ext</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19974">OpenSSL::PKCS7 generates SegFault when parsing invalid data</a>
+</td>
+</tr>
+<tr class=" core os/arch ">
+<td><a href="https://bugs.ruby-lang.org/issues/19970">19970</a>
+</td>
+<td>core os/arch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19970">Eval leaks callcache and callinfo objects on arm32 (linux)</a>
+</td>
+</tr>
+<tr class=" lib patch ">
+<td><a href="https://bugs.ruby-lang.org/issues/19928">19928</a>
+</td>
+<td>lib patch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19928">IPV6 nameserver issues: &quot;Protocol not supported - socket(2) - udp&quot;</a>
+</td>
+</tr>
+<tr class=" core patch ">
+<td><a href="https://bugs.ruby-lang.org/issues/19922">19922</a>
+</td>
+<td>core patch</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19922">ObjectSpace.dump_all in multiple threads in parallel causes SEGV</a>
 </td>
 </tr>
@@ -76,24 +152,24 @@
 <td><a href="https://bugs.ruby-lang.org/issues/19920">Ruby 3.1 fails to build with --enable-shared on macos-arm64: is an incompatible architecture (have &#39;arm64&#39;, need &#39;&#39;)</a>
 </td>
 </tr>
-<tr class=" maybenotbug ">
+<tr class=" maybenotbug parser ">
 <td><a href="https://bugs.ruby-lang.org/issues/19918">19918</a>
 </td>
-<td>maybenotbug</td>
+<td>maybenotbug parser</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19918">Should `a[&amp;b]=c` be syntax valid?</a>
 </td>
 </tr>
-<tr class=" ractor core ">
+<tr class=" ractor ">
 <td><a href="https://bugs.ruby-lang.org/issues/19917">19917</a>
 </td>
-<td>ractor core</td>
+<td>ractor</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19917">Segmentation fault or lost objects when using Ractor.select with moved exceptions</a>
 </td>
 </tr>
-<tr class=" lib ">
+<tr class=" lib patch ">
 <td><a href="https://bugs.ruby-lang.org/issues/19916">19916</a>
 </td>
-<td>lib</td>
+<td>lib patch</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19916">URI#to_s can serialize to a value that doesn&#39;t deserialize to the original</a>
 </td>
 </tr>
@@ -167,13 +243,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/19838">Ripper nested heredocs</a>
 </td>
 </tr>
-<tr class=" ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/19828">19828</a>
-</td>
-<td>ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19828">Segfault when `OpenSSL::X509::Certificate#public_key=` is given a `OpenSSL::PKey::DH` object</a>
-</td>
-</tr>
 <tr class=" os/arch build ">
 <td><a href="https://bugs.ruby-lang.org/issues/19794">19794</a>
 </td>
@@ -207,13 +276,6 @@
 </td>
 <td>lib</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19756">URI::HTTP.build does not accept a host of `_gateway`, but `URI.parse` will.</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/19753">19753</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19753">IO::Buffer#get_string can&#39;t handle negative offset</a>
 </td>
 </tr>
 <tr class=" patch core ">
@@ -272,13 +334,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/19636">String#encode EUC_JIS_2004で&quot;¥&quot;がEncoding::UndefinedConversionErrorになる</a>
 </td>
 </tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/19632">19632</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19632">Disable external iterator for frozen enumerator</a>
-</td>
-</tr>
 <tr class=" maybenotbug core ">
 <td><a href="https://bugs.ruby-lang.org/issues/19631">19631</a>
 </td>
@@ -298,13 +353,6 @@
 </td>
 <td>tracepoint maybenotbug</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19598">Inconsistent behaviour of TracePoint API</a>
-</td>
-</tr>
-<tr class=" backport ">
-<td><a href="https://bugs.ruby-lang.org/issues/19576">19576</a>
-</td>
-<td>backport</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19576">Backport request: Gemfile.lock resolving is broken with bundler shipped with Ruby 3.1.4</a>
 </td>
 </tr>
 <tr class=" ractor ">
@@ -335,13 +383,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/19542">Operations on zero-sized IO::Buffer are raising</a>
 </td>
 </tr>
-<tr class=" regexp ">
-<td><a href="https://bugs.ruby-lang.org/issues/19537">19537</a>
-</td>
-<td>regexp</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19537">Regexp caching algorithm since v3.2.0 causes invalid memory access</a>
-</td>
-</tr>
 <tr class=" maybenotbug thread ">
 <td><a href="https://bugs.ruby-lang.org/issues/19473">19473</a>
 </td>
@@ -354,13 +395,6 @@
 </td>
 <td>perf notbug</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19470">Frequent small range-reads from and then writes to a large array are very slow</a>
-</td>
-</tr>
-<tr class=" patch lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/19441">19441</a>
-</td>
-<td>patch lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19441">Closing an Tempfile#dup behaviour</a>
 </td>
 </tr>
 <tr class=" perf ">
@@ -510,13 +544,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/19363">Fix rb_transient_heap_mark: wrong header (T_STRUCT) segfault</a>
 </td>
 </tr>
-<tr class=" core maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/19362">19362</a>
-</td>
-<td>core maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19362">#dup on Proc doesn&#39;t call initialize_dup</a>
-</td>
-</tr>
 <tr class=" ractor ">
 <td><a href="https://bugs.ruby-lang.org/issues/19338">19338</a>
 </td>
@@ -564,13 +591,6 @@
 </td>
 <td>test</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19251">Limit amount of test failures due to updates of tzdata</a>
-</td>
-</tr>
-<tr class=" patch core win ">
-<td><a href="https://bugs.ruby-lang.org/issues/19244">19244</a>
-</td>
-<td>patch core win</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19244">Windows: USERPROFILE should be preferred over HOMEPATH</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -676,13 +696,6 @@
 </td>
 <td>patch lib</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19017">Net::HTTP may block when attempting to reuse a persistent connection</a>
-</td>
-</tr>
-<tr class=" encoding ">
-<td><a href="https://bugs.ruby-lang.org/issues/19007">19007</a>
-</td>
-<td>encoding</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19007">Unicode tables differences from Unicode.org 14.0 data</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -795,13 +808,6 @@
 </td>
 <td>win</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18794">Windows - intermittent SEGV TestObjSpace#test_reachable_objects_during_iteration</a>
-</td>
-</tr>
-<tr class=" fiber ">
-<td><a href="https://bugs.ruby-lang.org/issues/18743">18743</a>
-</td>
-<td>fiber</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18743">Enumerator#next / peek re-use each others stacktraces</a>
 </td>
 </tr>
 <tr class=" tracepoint ">
@@ -949,13 +955,6 @@
 </td>
 <td>parser encoding</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18337">Ruby allows zero-width characters in identifiers</a>
-</td>
-</tr>
-<tr class=" os/arch ">
-<td><a href="https://bugs.ruby-lang.org/issues/18286">18286</a>
-</td>
-<td>os/arch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18286">Universal arm64/x86_84 binary built on an x86_64 machine segfaults/is killed on arm64</a>
 </td>
 </tr>
 <tr class=" core ">
