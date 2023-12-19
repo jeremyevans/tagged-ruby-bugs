@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>243 Tagged Open Ruby Bugs as of 2023-11-12 09:28:26 +0900</title>
+<title>243 Tagged Open Ruby Bugs as of 2023-12-20 02:19:44 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -11,27 +11,28 @@
 <input type="submit" value="os/arch" />
 <input type="submit" value="build" />
 <input type="submit" value="ext" />
-<input type="submit" value="lib" />
 <input type="submit" value="encoding" />
-<input type="submit" value="cygwin" />
+<input type="submit" value="lib" />
 <input type="submit" value="regexp" />
+<input type="submit" value="cygwin" />
 <input type="submit" value="maybenotbug" />
 <input type="submit" value="test" />
 <input type="submit" value="thread" />
 <input type="submit" value="parser" />
 <input type="submit" value="perf" />
-<input type="submit" value="tracepoint" />
 <input type="submit" value="notbug" />
+<input type="submit" value="tracepoint" />
+<input type="submit" value="fiber" />
 <input type="submit" value="autoload" />
 <input type="submit" value="coverage" />
-<input type="submit" value="fiber" />
-<input type="submit" value="doc" />
+<input type="submit" value="mnthreads" />
+<input type="submit" value="prism" />
 <input type="submit" value="yjit" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
 (<span id="matched">243</span> matched)
 <table>
-<caption>243 Tagged Open Ruby Bugs as of 2023-11-12 09:28:26 +0900</caption>
+<caption>243 Tagged Open Ruby Bugs as of 2023-12-20 02:19:44 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -40,6 +41,125 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" prism ">
+<td><a href="https://bugs.ruby-lang.org/issues/20073">20073</a>
+</td>
+<td>prism</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20073">Method lookup incorrect with `--parser=prism`</a>
+</td>
+</tr>
+<tr class=" ext maybenotbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/20072">20072</a>
+</td>
+<td>ext maybenotbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20072">free(): invalid pointer when compiled with --enable-shared --with-jemalloc</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20067">20067</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20067">IO.pipe `int_enc` and `ext_enc` not working as documented?</a>
+</td>
+</tr>
+<tr class=" core notbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/20064">20064</a>
+</td>
+<td>core notbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20064">Inconsistent behavior between array splat *nil and hash splat **nil</a>
+</td>
+</tr>
+<tr class=" core maybenotbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/20063">20063</a>
+</td>
+<td>core maybenotbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20063">Inconsistent behavior with required vs optional parameters</a>
+</td>
+</tr>
+<tr class=" ext ">
+<td><a href="https://bugs.ruby-lang.org/issues/20055">20055</a>
+</td>
+<td>ext</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20055">Ripper seems to skip some checks like `void value expression` and `duplicated variable name`</a>
+</td>
+</tr>
+<tr class=" lib ">
+<td><a href="https://bugs.ruby-lang.org/issues/20052">20052</a>
+</td>
+<td>lib</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20052">reline behaves oddly with redirect (non tty)</a>
+</td>
+</tr>
+<tr class=" thread ">
+<td><a href="https://bugs.ruby-lang.org/issues/20047">20047</a>
+</td>
+<td>thread</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20047">ConditionVariable#wait has spurious wakeups from signal traps</a>
+</td>
+</tr>
+<tr class=" test os/arch ">
+<td><a href="https://bugs.ruby-lang.org/issues/20045">20045</a>
+</td>
+<td>test os/arch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20045">`TestDir#test_home` fails on i686</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20043">20043</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20043">`defined?` checks for method existence but only sometimes</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20041">20041</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20041">Array destructuring and default values in parameters</a>
+</td>
+</tr>
+<tr class=" regexp notbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/20031">20031</a>
+</td>
+<td>regexp notbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20031">Regexp using greedy quantifier and unions on a big string uses a lot of memory</a>
+</td>
+</tr>
+<tr class=" fiber ">
+<td><a href="https://bugs.ruby-lang.org/issues/20029">20029</a>
+</td>
+<td>fiber</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20029">coroutine/arm64/Context.S does not support PAC/BTI</a>
+</td>
+</tr>
+<tr class=" regexp ">
+<td><a href="https://bugs.ruby-lang.org/issues/20020">20020</a>
+</td>
+<td>regexp</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20020">Segfault running regexp match?</a>
+</td>
+</tr>
+<tr class=" mnthreads ">
+<td><a href="https://bugs.ruby-lang.org/issues/20017">20017</a>
+</td>
+<td>mnthreads</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20017">3.3.0dev `rb_thread_profile_frames` crashes when `RUBY_MN_THREADS=1`</a>
+</td>
+</tr>
+<tr class=" mnthreads ">
+<td><a href="https://bugs.ruby-lang.org/issues/20016">20016</a>
+</td>
+<td>mnthreads</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20016">3.3.0dev `rb_postponed_job_register_one` crashes when `RUBY_MN_THREADS=1`</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20009">20009</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20009">Marshal.load raises exception when load dumped class include non-ASCII</a>
+</td>
+</tr>
 <tr class=" maybenotbug core ">
 <td><a href="https://bugs.ruby-lang.org/issues/20001">20001</a>
 </td>
@@ -52,13 +172,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19996">`RUBY_MN_THREADS=1` triggers Action Cable unit test failures</a>
-</td>
-</tr>
-<tr class=" core patch ">
-<td><a href="https://bugs.ruby-lang.org/issues/19994">19994</a>
-</td>
-<td>core patch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19994">Seemingly require causes segfault??</a>
 </td>
 </tr>
 <tr class=" core patch ">
@@ -131,13 +244,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/19970">Eval leaks callcache and callinfo objects on arm32 (linux)</a>
 </td>
 </tr>
-<tr class=" lib patch ">
-<td><a href="https://bugs.ruby-lang.org/issues/19928">19928</a>
-</td>
-<td>lib patch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19928">IPV6 nameserver issues: &quot;Protocol not supported - socket(2) - udp&quot;</a>
-</td>
-</tr>
 <tr class=" core patch ">
 <td><a href="https://bugs.ruby-lang.org/issues/19922">19922</a>
 </td>
@@ -194,13 +300,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/19891">rb_mRubyVMFrozenCore is reported by DTrace but ignored by TracePoint</a>
 </td>
 </tr>
-<tr class=" lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/19886">19886</a>
-</td>
-<td>lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19886">&quot;default-&gt;bundled gem&quot; warning is not shown under &quot;bundle exec&quot;</a>
-</td>
-</tr>
 <tr class=" core perf notbug ">
 <td><a href="https://bugs.ruby-lang.org/issues/19875">19875</a>
 </td>
@@ -236,25 +335,11 @@
 <td><a href="https://bugs.ruby-lang.org/issues/19841">Marshal.dump stack overflow with recursive Time</a>
 </td>
 </tr>
-<tr class=" ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/19838">19838</a>
-</td>
-<td>ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19838">Ripper nested heredocs</a>
-</td>
-</tr>
 <tr class=" os/arch build ">
 <td><a href="https://bugs.ruby-lang.org/issues/19794">19794</a>
 </td>
 <td>os/arch build</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19794">Ruby 3.2.2 fails to build on macOS Sonoma betas</a>
-</td>
-</tr>
-<tr class=" maybenotbug core ">
-<td><a href="https://bugs.ruby-lang.org/issues/19779">19779</a>
-</td>
-<td>maybenotbug core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19779">`eval &quot;return&quot;` at top level raises `LocalJumpError`</a>
 </td>
 </tr>
 <tr class=" ractor ">
@@ -402,13 +487,6 @@
 </td>
 <td>perf</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19438">Ruby 2.7 -&gt; 3.2 Performance Regression in so_k_nucleotide benchmark</a>
-</td>
-</tr>
-<tr class=" patch regexp doc ">
-<td><a href="https://bugs.ruby-lang.org/issues/19417">19417</a>
-</td>
-<td>patch regexp doc</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19417">Regexp \p{Word} and [[:word:]] do not match Unicode Other_Number character</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -621,13 +699,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/19165">Method (with no param) delegation with *, **, and ... is slow</a>
 </td>
 </tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/19160">19160</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19160">cmp_clamp arguments</a>
-</td>
-</tr>
 <tr class=" lib ">
 <td><a href="https://bugs.ruby-lang.org/issues/19157">19157</a>
 </td>
@@ -640,20 +711,6 @@
 </td>
 <td>ractor</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19154">Specify require and autoload guarantees in ractors</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/19147">19147</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19147">`TestFileExhaustive#test_expand_path_for_existent_username` and `TestDir#test_home` fails on i686</a>
-</td>
-</tr>
-<tr class=" tracepoint ">
-<td><a href="https://bugs.ruby-lang.org/issues/19114">19114</a>
-</td>
-<td>tracepoint</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19114">Calling TracePoint#enable multiple times causes TracePoint to be activated multiple times</a>
 </td>
 </tr>
 <tr class=" ractor tracepoint ">
@@ -752,13 +809,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18903">Stack overflow signal handling seems to be triggered once and then not working after</a>
-</td>
-</tr>
-<tr class=" tracepoint maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/18886">18886</a>
-</td>
-<td>tracepoint maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18886">Struct aref and aset don&#39;t trigger any tracepoints.</a>
 </td>
 </tr>
 <tr class=" parser ">
@@ -986,13 +1036,6 @@
 </td>
 </tr>
 <tr class=" ractor ">
-<td><a href="https://bugs.ruby-lang.org/issues/18129">18129</a>
-</td>
-<td>ractor</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18129">Ractor-incompatible global variables can be accessed through alias</a>
-</td>
-</tr>
-<tr class=" ractor ">
 <td><a href="https://bugs.ruby-lang.org/issues/18119">18119</a>
 </td>
 <td>ractor</td>
@@ -1011,13 +1054,6 @@
 </td>
 <td>os/arch</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18061"> Execshield test: libruby.so.N.N.N: FAIL: property-note test because no .note.gnu.property section found</a>
-</td>
-</tr>
-<tr class=" ractor ">
-<td><a href="https://bugs.ruby-lang.org/issues/18024">18024</a>
-</td>
-<td>ractor</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18024">Ractor crashes when connections are closed in multiple Ractors</a>
 </td>
 </tr>
 <tr class=" regexp ">
@@ -1207,13 +1243,6 @@
 </td>
 <td>build os/arch</td>
 <td><a href="https://bugs.ruby-lang.org/issues/17142">Ruby fails to build in AIX </a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/17037">17037</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17037">rounding of Rational#to_f</a>
 </td>
 </tr>
 <tr class=" core win ">
@@ -1468,13 +1497,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/13671">Regexp with lookbehind and case-insensitivity raises RegexpError only on strings with certain characters</a>
 </td>
 </tr>
-<tr class=" patch lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/13513">13513</a>
-</td>
-<td>patch lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/13513">Resolv::DNS::Message.decode hangs after detecting truncation in UDP messages</a>
-</td>
-</tr>
 <tr class=" core os/arch ">
 <td><a href="https://bugs.ruby-lang.org/issues/13164">13164</a>
 </td>
@@ -1573,25 +1595,11 @@
 <td><a href="https://bugs.ruby-lang.org/issues/11526">Streaming HTTP requests are not idempotent and should not be retried</a>
 </td>
 </tr>
-<tr class=" core os/arch ">
-<td><a href="https://bugs.ruby-lang.org/issues/11514">11514</a>
-</td>
-<td>core os/arch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/11514">AIX6.1 - Ruby 2.2.3 - Segmentation fault in :byteslice</a>
-</td>
-</tr>
 <tr class=" win thread ">
 <td><a href="https://bugs.ruby-lang.org/issues/11438">11438</a>
 </td>
 <td>win thread</td>
 <td><a href="https://bugs.ruby-lang.org/issues/11438">native_thread_init_stack() get machine.stack_start unequal to thread&#39;s stack start address, x86 win32</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/11183">11183</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/11183">Cumulative error on Complex::I ** 100000000000000000000000000000000</a>
 </td>
 </tr>
 <tr class=" win core ">
@@ -1676,13 +1684,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/8444">Regexp vars $~ and friends are not thread local</a>
-</td>
-</tr>
-<tr class=" core win ">
-<td><a href="https://bugs.ruby-lang.org/issues/8299">8299</a>
-</td>
-<td>core win</td>
-<td><a href="https://bugs.ruby-lang.org/issues/8299">Minor error in float parsing</a>
 </td>
 </tr>
 <tr class=" thread ">
