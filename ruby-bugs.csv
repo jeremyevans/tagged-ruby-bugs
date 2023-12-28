@@ -188,17 +188,16 @@
 19609,win lib,"net/http ignores open_timeout, read_timeout on Windows"
 19631,maybenotbug core,module_eval does not propulate absolute_path for Kernel.caller_locations
 19636,encoding,String#encode EUC_JIS_2004で&quot;¥&quot;がEncoding::UndefinedConversionErrorになる
-19683,os/arch build,ruby-3.3.0-preview1 does not build with BSD make without --with-baseruby
 19696,yjit,YJIT panicked - branch stubs should never enlarge branches
 19701,core,The rb_classext_t::classpath field is not marked for T_ICLASS
 19703,win core,text/binary mode of parent process fd is not properly inherited on windows
 19716,os/arch,SystemStackError occurs too easily on Alpine Linux (due to small stack size reported by pthread_attr_getstacksize on musl libc)
-19738,ext,`ObjectSpace.each_object.to_a` crashes in `make runirb`.
 19749,patch core,Confirm correct behaviour when attaching private method with `#define_method`
 19756,lib,"URI::HTTP.build does not accept a host of `_gateway`, but `URI.parse` will."
 19761,os/arch core,AddressSanitizer fails with Thread and Process
 19765,ractor,Ractor.make_shareable ignores self of a proc created from a Method
 19794,os/arch build,Ruby 3.2.2 fails to build on macOS Sonoma betas
+19831,os/arch build,warning message of linker with macOS Sonoma beta
 19841,core,Marshal.dump stack overflow with recursive Time
 19857,core maybenotbug patch,Eval coverage is reset after each `eval`.
 19865,core patch,Segfault when calling user signal handlers during VM shutdown
@@ -208,36 +207,40 @@
 19907,core,Method calls with keyword arguments in eval leaks callcache and callinfo objects
 19910,patch lib maybenotbug,Set#delete_if behavior inconsistent with Array/Hash
 19916,lib patch,URI#to_s can serialize to a value that doesn&#39;t deserialize to the original
-19917,ractor,Segmentation fault or lost objects when using Ractor.select with moved exceptions
 19918,maybenotbug parser,Should `a[&amp;b]=c` be syntax valid?
 19920,os/arch build,"Ruby 3.1 fails to build with --enable-shared on macos-arm64: is an incompatible architecture (have &#39;arm64&#39;, need &#39;&#39;)"
 19922,core patch,ObjectSpace.dump_all in multiple threads in parallel causes SEGV
 19970,core os/arch,Eval leaks callcache and callinfo objects on arm32 (linux)
 19974,ext,OpenSSL::PKCS7 generates SegFault when parsing invalid data
 19975,core,ISeq#to_binary loses hidden local variable indices
-19977,core patch,"(nil..nil) === x can raise an exception, differing from Range#cover?"
 19981,ractor os/arch,bootstraptest/test_ractor.rb: Segmentation fault on arm32
 19983,core,Nested  `*` seems incorrect
 19984,test,`make test-bundler-parallel` fails with ` --enable-shared`
 19986,win,Win32: `HOME` is set to just `HOMEDRIVE` if `HOMEPATH` is unset
 19990,notbug core,Could we reconsider the second argument to Kernel#load?
 19991,core patch,rb_register_postponed_job async-signal-unsafety causes crash in GC
-19996,core,`RUBY_MN_THREADS=1` triggers Action Cable unit test failures
+19996,mnthreads,`RUBY_MN_THREADS=1` triggers Action Cable unit test failures
 20001,maybenotbug core,Make Ruby work properly with ASAN enabled
 20009,core,Marshal.load raises exception when load dumped class include non-ASCII
-20016,mnthreads,3.3.0dev `rb_postponed_job_register_one` crashes when `RUBY_MN_THREADS=1`
-20017,mnthreads,3.3.0dev `rb_thread_profile_frames` crashes when `RUBY_MN_THREADS=1`
 20020,regexp,Segfault running regexp match?
-20029,fiber,coroutine/arm64/Context.S does not support PAC/BTI
-20031,regexp notbug,Regexp using greedy quantifier and unions on a big string uses a lot of memory
 20041,core,Array destructuring and default values in parameters
 20043,core,`defined?` checks for method existence but only sometimes
 20045,test os/arch,`TestDir#test_home` fails on i686
 20047,thread,ConditionVariable#wait has spurious wakeups from signal traps
-20052,lib,reline behaves oddly with redirect (non tty)
 20055,ext,Ripper seems to skip some checks like `void value expression` and `duplicated variable name`
-20063,core maybenotbug,Inconsistent behavior with required vs optional parameters
 20064,core notbug,Inconsistent behavior between array splat *nil and hash splat **nil
 20067,core,IO.pipe `int_enc` and `ext_enc` not working as documented?
-20072,ext maybenotbug,free(): invalid pointer when compiled with --enable-shared --with-jemalloc
-20073,prism,Method lookup incorrect with `--parser=prism`
+20076,mnthreads,M:N scheduler is stuck on macOS with RUBY_MN_THREADS=1
+20078,ractor,StringIO cannot be moved between Ractors
+20079,core,alexandria testsuite began to segfault recently
+20081,fiber notbug doc,Transfered Fiber doesn&#39;t return to Fiber that started it
+20082,fiber maybenotbug,Killing fibers across threads: unexpected exception
+20083,regexp patch,String#match? behaving inconsistently with Ruby 3.3.0
+20088,build os/arch,Ruby 3.3.0 does not cross-complie on arm64-darwin
+20089,fiber,Fiber#kill transfers to root fiber
+20095,regexp,Regex lookahead behaving strangely in 3.3.0
+20097,regexp,Regexp#match? with empty capture group repeat is inconsistent
+20098,regexp,Wrong regexp match in ruby 3.2 and 3.3
+20099,os/arch core,Ruby 3.3.0 segfaults on s390x musl libc (Alpine Linux) when built with -O3 (default optflags)
+20101,core patch,rb_file_open and rb_io_fdopen don&#39;t perform CRLF -&gt; LF conversion when encoding is set
+20103,thread,rb_internal_thread_remove_event_hook() hangs when called from within a Thread hook
