@@ -1,23 +1,23 @@
 <html>
 <head>
-<title>243 Tagged Open Ruby Bugs as of 2023-12-20 02:19:44 +0900</title>
+<title>246 Tagged Open Ruby Bugs as of 2023-12-29 08:54:27 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
 <p class="filter-buttons">Available Tags: <input type="submit" value="core" />
 <input type="submit" value="ractor" />
 <input type="submit" value="win" />
-<input type="submit" value="patch" />
 <input type="submit" value="os/arch" />
+<input type="submit" value="patch" />
 <input type="submit" value="build" />
-<input type="submit" value="ext" />
-<input type="submit" value="encoding" />
-<input type="submit" value="lib" />
 <input type="submit" value="regexp" />
+<input type="submit" value="encoding" />
+<input type="submit" value="ext" />
 <input type="submit" value="cygwin" />
-<input type="submit" value="maybenotbug" />
-<input type="submit" value="test" />
+<input type="submit" value="lib" />
 <input type="submit" value="thread" />
+<input type="submit" value="test" />
+<input type="submit" value="maybenotbug" />
 <input type="submit" value="parser" />
 <input type="submit" value="perf" />
 <input type="submit" value="notbug" />
@@ -26,13 +26,13 @@
 <input type="submit" value="autoload" />
 <input type="submit" value="coverage" />
 <input type="submit" value="mnthreads" />
-<input type="submit" value="prism" />
+<input type="submit" value="doc" />
 <input type="submit" value="yjit" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">243</span> matched)
+(<span id="matched">246</span> matched)
 <table>
-<caption>243 Tagged Open Ruby Bugs as of 2023-12-20 02:19:44 +0900</caption>
+<caption>246 Tagged Open Ruby Bugs as of 2023-12-29 08:54:27 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -41,18 +41,102 @@
 </tr>
 </thead>
 <tbody>
-<tr class=" prism ">
-<td><a href="https://bugs.ruby-lang.org/issues/20073">20073</a>
+<tr class=" thread ">
+<td><a href="https://bugs.ruby-lang.org/issues/20103">20103</a>
 </td>
-<td>prism</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20073">Method lookup incorrect with `--parser=prism`</a>
+<td>thread</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20103">rb_internal_thread_remove_event_hook() hangs when called from within a Thread hook</a>
 </td>
 </tr>
-<tr class=" ext maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/20072">20072</a>
+<tr class=" core patch ">
+<td><a href="https://bugs.ruby-lang.org/issues/20101">20101</a>
 </td>
-<td>ext maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20072">free(): invalid pointer when compiled with --enable-shared --with-jemalloc</a>
+<td>core patch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20101">rb_file_open and rb_io_fdopen don&#39;t perform CRLF -&gt; LF conversion when encoding is set</a>
+</td>
+</tr>
+<tr class=" os/arch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20099">20099</a>
+</td>
+<td>os/arch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20099">Ruby 3.3.0 segfaults on s390x musl libc (Alpine Linux) when built with -O3 (default optflags)</a>
+</td>
+</tr>
+<tr class=" regexp ">
+<td><a href="https://bugs.ruby-lang.org/issues/20098">20098</a>
+</td>
+<td>regexp</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20098">Wrong regexp match in ruby 3.2 and 3.3</a>
+</td>
+</tr>
+<tr class=" regexp ">
+<td><a href="https://bugs.ruby-lang.org/issues/20097">20097</a>
+</td>
+<td>regexp</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20097">Regexp#match? with empty capture group repeat is inconsistent</a>
+</td>
+</tr>
+<tr class=" regexp ">
+<td><a href="https://bugs.ruby-lang.org/issues/20095">20095</a>
+</td>
+<td>regexp</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20095">Regex lookahead behaving strangely in 3.3.0</a>
+</td>
+</tr>
+<tr class=" fiber ">
+<td><a href="https://bugs.ruby-lang.org/issues/20089">20089</a>
+</td>
+<td>fiber</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20089">Fiber#kill transfers to root fiber</a>
+</td>
+</tr>
+<tr class=" build os/arch ">
+<td><a href="https://bugs.ruby-lang.org/issues/20088">20088</a>
+</td>
+<td>build os/arch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20088">Ruby 3.3.0 does not cross-complie on arm64-darwin</a>
+</td>
+</tr>
+<tr class=" regexp patch ">
+<td><a href="https://bugs.ruby-lang.org/issues/20083">20083</a>
+</td>
+<td>regexp patch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20083">String#match? behaving inconsistently with Ruby 3.3.0</a>
+</td>
+</tr>
+<tr class=" fiber maybenotbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/20082">20082</a>
+</td>
+<td>fiber maybenotbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20082">Killing fibers across threads: unexpected exception</a>
+</td>
+</tr>
+<tr class=" fiber notbug doc ">
+<td><a href="https://bugs.ruby-lang.org/issues/20081">20081</a>
+</td>
+<td>fiber notbug doc</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20081">Transfered Fiber doesn&#39;t return to Fiber that started it</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20079">20079</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20079">alexandria testsuite began to segfault recently</a>
+</td>
+</tr>
+<tr class=" ractor ">
+<td><a href="https://bugs.ruby-lang.org/issues/20078">20078</a>
+</td>
+<td>ractor</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20078">StringIO cannot be moved between Ractors</a>
+</td>
+</tr>
+<tr class=" mnthreads ">
+<td><a href="https://bugs.ruby-lang.org/issues/20076">20076</a>
+</td>
+<td>mnthreads</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20076">M:N scheduler is stuck on macOS with RUBY_MN_THREADS=1</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -69,25 +153,11 @@
 <td><a href="https://bugs.ruby-lang.org/issues/20064">Inconsistent behavior between array splat *nil and hash splat **nil</a>
 </td>
 </tr>
-<tr class=" core maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/20063">20063</a>
-</td>
-<td>core maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20063">Inconsistent behavior with required vs optional parameters</a>
-</td>
-</tr>
 <tr class=" ext ">
 <td><a href="https://bugs.ruby-lang.org/issues/20055">20055</a>
 </td>
 <td>ext</td>
 <td><a href="https://bugs.ruby-lang.org/issues/20055">Ripper seems to skip some checks like `void value expression` and `duplicated variable name`</a>
-</td>
-</tr>
-<tr class=" lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/20052">20052</a>
-</td>
-<td>lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20052">reline behaves oddly with redirect (non tty)</a>
 </td>
 </tr>
 <tr class=" thread ">
@@ -118,39 +188,11 @@
 <td><a href="https://bugs.ruby-lang.org/issues/20041">Array destructuring and default values in parameters</a>
 </td>
 </tr>
-<tr class=" regexp notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/20031">20031</a>
-</td>
-<td>regexp notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20031">Regexp using greedy quantifier and unions on a big string uses a lot of memory</a>
-</td>
-</tr>
-<tr class=" fiber ">
-<td><a href="https://bugs.ruby-lang.org/issues/20029">20029</a>
-</td>
-<td>fiber</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20029">coroutine/arm64/Context.S does not support PAC/BTI</a>
-</td>
-</tr>
 <tr class=" regexp ">
 <td><a href="https://bugs.ruby-lang.org/issues/20020">20020</a>
 </td>
 <td>regexp</td>
 <td><a href="https://bugs.ruby-lang.org/issues/20020">Segfault running regexp match?</a>
-</td>
-</tr>
-<tr class=" mnthreads ">
-<td><a href="https://bugs.ruby-lang.org/issues/20017">20017</a>
-</td>
-<td>mnthreads</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20017">3.3.0dev `rb_thread_profile_frames` crashes when `RUBY_MN_THREADS=1`</a>
-</td>
-</tr>
-<tr class=" mnthreads ">
-<td><a href="https://bugs.ruby-lang.org/issues/20016">20016</a>
-</td>
-<td>mnthreads</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20016">3.3.0dev `rb_postponed_job_register_one` crashes when `RUBY_MN_THREADS=1`</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -167,10 +209,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/20001">Make Ruby work properly with ASAN enabled</a>
 </td>
 </tr>
-<tr class=" core ">
+<tr class=" mnthreads ">
 <td><a href="https://bugs.ruby-lang.org/issues/19996">19996</a>
 </td>
-<td>core</td>
+<td>mnthreads</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19996">`RUBY_MN_THREADS=1` triggers Action Cable unit test failures</a>
 </td>
 </tr>
@@ -216,13 +258,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/19981">bootstraptest/test_ractor.rb: Segmentation fault on arm32</a>
 </td>
 </tr>
-<tr class=" core patch ">
-<td><a href="https://bugs.ruby-lang.org/issues/19977">19977</a>
-</td>
-<td>core patch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19977">(nil..nil) === x can raise an exception, differing from Range#cover?</a>
-</td>
-</tr>
 <tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/19975">19975</a>
 </td>
@@ -263,13 +298,6 @@
 </td>
 <td>maybenotbug parser</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19918">Should `a[&amp;b]=c` be syntax valid?</a>
-</td>
-</tr>
-<tr class=" ractor ">
-<td><a href="https://bugs.ruby-lang.org/issues/19917">19917</a>
-</td>
-<td>ractor</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19917">Segmentation fault or lost objects when using Ractor.select with moved exceptions</a>
 </td>
 </tr>
 <tr class=" lib patch ">
@@ -336,6 +364,13 @@
 </td>
 </tr>
 <tr class=" os/arch build ">
+<td><a href="https://bugs.ruby-lang.org/issues/19831">19831</a>
+</td>
+<td>os/arch build</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19831">warning message of linker with macOS Sonoma beta</a>
+</td>
+</tr>
+<tr class=" os/arch build ">
 <td><a href="https://bugs.ruby-lang.org/issues/19794">19794</a>
 </td>
 <td>os/arch build</td>
@@ -370,13 +405,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/19749">Confirm correct behaviour when attaching private method with `#define_method`</a>
 </td>
 </tr>
-<tr class=" ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/19738">19738</a>
-</td>
-<td>ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19738">`ObjectSpace.each_object.to_a` crashes in `make runirb`.</a>
-</td>
-</tr>
 <tr class=" os/arch ">
 <td><a href="https://bugs.ruby-lang.org/issues/19716">19716</a>
 </td>
@@ -403,13 +431,6 @@
 </td>
 <td>yjit</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19696">YJIT panicked - branch stubs should never enlarge branches</a>
-</td>
-</tr>
-<tr class=" os/arch build ">
-<td><a href="https://bugs.ruby-lang.org/issues/19683">19683</a>
-</td>
-<td>os/arch build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19683">ruby-3.3.0-preview1 does not build with BSD make without --with-baseruby</a>
 </td>
 </tr>
 <tr class=" encoding ">
