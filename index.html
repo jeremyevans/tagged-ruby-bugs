@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>246 Tagged Open Ruby Bugs as of 2023-12-29 08:54:27 +0900</title>
+<title>254 Tagged Open Ruby Bugs as of 2024-01-09 09:15:40 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -14,25 +14,26 @@
 <input type="submit" value="encoding" />
 <input type="submit" value="ext" />
 <input type="submit" value="cygwin" />
-<input type="submit" value="lib" />
 <input type="submit" value="thread" />
-<input type="submit" value="test" />
+<input type="submit" value="lib" />
 <input type="submit" value="maybenotbug" />
-<input type="submit" value="parser" />
+<input type="submit" value="test" />
 <input type="submit" value="perf" />
+<input type="submit" value="parser" />
+<input type="submit" value="fiber" />
 <input type="submit" value="notbug" />
 <input type="submit" value="tracepoint" />
-<input type="submit" value="fiber" />
 <input type="submit" value="autoload" />
 <input type="submit" value="coverage" />
 <input type="submit" value="mnthreads" />
 <input type="submit" value="doc" />
+<input type="submit" value="prism" />
 <input type="submit" value="yjit" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">246</span> matched)
+(<span id="matched">254</span> matched)
 <table>
-<caption>246 Tagged Open Ruby Bugs as of 2023-12-29 08:54:27 +0900</caption>
+<caption>254 Tagged Open Ruby Bugs as of 2024-01-09 09:15:40 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -41,6 +42,90 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" ractor ">
+<td><a href="https://bugs.ruby-lang.org/issues/20165">20165</a>
+</td>
+<td>ractor</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20165">Ractors moving a Struct breaks beyond the first 3 fields</a>
+</td>
+</tr>
+<tr class=" core patch ">
+<td><a href="https://bugs.ruby-lang.org/issues/20162">20162</a>
+</td>
+<td>core patch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20162">Memory leak when duplicating too complex object</a>
+</td>
+</tr>
+<tr class=" core patch ">
+<td><a href="https://bugs.ruby-lang.org/issues/20161">20161</a>
+</td>
+<td>core patch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20161">Memory leak in regexp grapheme clusters</a>
+</td>
+</tr>
+<tr class=" prism maybenotbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/20159">20159</a>
+</td>
+<td>prism maybenotbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20159">Prism assertion failure even if it is executed with --parser=parse.y</a>
+</td>
+</tr>
+<tr class=" ractor ">
+<td><a href="https://bugs.ruby-lang.org/issues/20158">20158</a>
+</td>
+<td>ractor</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20158">Ractor affects Coverage results</a>
+</td>
+</tr>
+<tr class=" fiber ">
+<td><a href="https://bugs.ruby-lang.org/issues/20155">20155</a>
+</td>
+<td>fiber</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20155">Using value of rb_fiber_scheduler_current() crashes Ruby</a>
+</td>
+</tr>
+<tr class=" fiber os/arch patch ">
+<td><a href="https://bugs.ruby-lang.org/issues/20154">20154</a>
+</td>
+<td>fiber os/arch patch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20154">aarch64: configure overrides `-mbranch-protection` if it was set in CFLAGS via environment</a>
+</td>
+</tr>
+<tr class=" os/arch build ">
+<td><a href="https://bugs.ruby-lang.org/issues/20151">20151</a>
+</td>
+<td>os/arch build</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20151">Can&#39;t build Ruby 3.1 on FreeBSD 14.0</a>
+</td>
+</tr>
+<tr class=" os/arch build ">
+<td><a href="https://bugs.ruby-lang.org/issues/20147">20147</a>
+</td>
+<td>os/arch build</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20147">FreeBSD libyaml</a>
+</td>
+</tr>
+<tr class=" ractor ">
+<td><a href="https://bugs.ruby-lang.org/issues/20146">20146</a>
+</td>
+<td>ractor</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20146">Code using Ractor with env `RUBY_MAX_CPU=1` ends with unreachable</a>
+</td>
+</tr>
+<tr class=" ractor perf ">
+<td><a href="https://bugs.ruby-lang.org/issues/20112">20112</a>
+</td>
+<td>ractor perf</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20112">Ractors not working properly in ruby 3.3.0</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20111">20111</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20111">`defined?` returns `expression` for assignment operators combined with fully qualified constants</a>
+</td>
+</tr>
 <tr class=" thread ">
 <td><a href="https://bugs.ruby-lang.org/issues/20103">20103</a>
 </td>
@@ -214,13 +299,6 @@
 </td>
 <td>mnthreads</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19996">`RUBY_MN_THREADS=1` triggers Action Cable unit test failures</a>
-</td>
-</tr>
-<tr class=" core patch ">
-<td><a href="https://bugs.ruby-lang.org/issues/19991">19991</a>
-</td>
-<td>core patch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19991">rb_register_postponed_job async-signal-unsafety causes crash in GC</a>
 </td>
 </tr>
 <tr class=" notbug core ">
@@ -524,25 +602,11 @@
 <td><a href="https://bugs.ruby-lang.org/issues/19412">Socket starts queueing and not responding after a certain amount of requests</a>
 </td>
 </tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/19411">19411</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19411">GC issue with moved objects</a>
-</td>
-</tr>
 <tr class=" ractor ">
 <td><a href="https://bugs.ruby-lang.org/issues/19410">19410</a>
 </td>
 <td>ractor</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19410">If move from ractor fails with error, some objects are left in broken state</a>
-</td>
-</tr>
-<tr class=" ractor ">
-<td><a href="https://bugs.ruby-lang.org/issues/19409">19409</a>
-</td>
-<td>ractor</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19409">Object&#39;s shape is reset after a ractor move</a>
 </td>
 </tr>
 <tr class=" ractor ">
@@ -557,6 +621,13 @@
 </td>
 <td>ractor</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19407">2 threads taking from current ractor will hang forever</a>
+</td>
+</tr>
+<tr class=" ractor ">
+<td><a href="https://bugs.ruby-lang.org/issues/19387">19387</a>
+</td>
+<td>ractor</td>
+<td><a href="https://bugs.ruby-lang.org/issues/19387">Issue with ObjectSpace.each_objects not returning objects after starting a ractor</a>
 </td>
 </tr>
 <tr class=" win encoding ">
@@ -578,13 +649,6 @@
 </td>
 <td>patch core win</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19378">Windows: Use less syscalls for faster require of big gems</a>
-</td>
-</tr>
-<tr class=" ractor ">
-<td><a href="https://bugs.ruby-lang.org/issues/19375">19375</a>
-</td>
-<td>ractor</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19375">File objects are currently shareable, as are other extension objects that shouldn&#39;t be.</a>
 </td>
 </tr>
 <tr class=" patch ractor ">
@@ -1607,13 +1671,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/11808">Different behavior between Enumerable#grep and Array#grep</a>
-</td>
-</tr>
-<tr class=" patch lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/11526">11526</a>
-</td>
-<td>patch lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/11526">Streaming HTTP requests are not idempotent and should not be retried</a>
 </td>
 </tr>
 <tr class=" win thread ">
