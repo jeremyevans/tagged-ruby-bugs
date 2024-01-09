@@ -19,7 +19,6 @@
 10436,patch ext,ruby -c and ripper inconsistency: m(&amp;nil) {}
 11142,win core,Command line argument parser on windows handles double quotes inconsistently.
 11438,win thread,"native_thread_init_stack() get machine.stack_start unequal to thread&#39;s stack start address, x86 win32"
-11526,patch lib,Streaming HTTP requests are not idempotent and should not be retried
 11808,core,Different behavior between Enumerable#grep and Array#grep
 11840,cygwin test,Error with &quot;make check&quot; on Cygwin
 12040,win core,[Win32] File.stat fails on a mounted volume
@@ -166,15 +165,13 @@
 19369,patch ractor,Small corner-case issue that breaks Ractor isolation: change cloned object from another thread
 19372,patch ractor,Proc objects are not traversed for shareable check during Ractor.make_shareable(prok)
 19374,patch ractor,Issue with Ractor.make_shareable with curried procs
-19375,ractor,"File objects are currently shareable, as are other extension objects that shouldn&#39;t be."
 19378,patch core win,Windows: Use less syscalls for faster require of big gems
 19383,patch win encoding,Time.now.zone encoding for German display language in Windows is incorrect
 19384,win encoding,ASCII 128..154 characters in IO.popen or %x output do not reflect the proper encoding in Windows
+19387,ractor,Issue with ObjectSpace.each_objects not returning objects after starting a ractor
 19407,ractor,2 threads taking from current ractor will hang forever
 19408,ractor,Object no longer frozen after moved from a ractor
-19409,ractor,Object&#39;s shape is reset after a ractor move
 19410,ractor,"If move from ractor fails with error, some objects are left in broken state"
-19411,core,GC issue with moved objects
 19412,ext,Socket starts queueing and not responding after a certain amount of requests
 19413,core,Can&#39;t move object when 2 ivars refer to same object
 19438,perf,Ruby 2.7 -&gt; 3.2 Performance Regression in so_k_nucleotide benchmark
@@ -218,7 +215,6 @@
 19984,test,`make test-bundler-parallel` fails with ` --enable-shared`
 19986,win,Win32: `HOME` is set to just `HOMEDRIVE` if `HOMEPATH` is unset
 19990,notbug core,Could we reconsider the second argument to Kernel#load?
-19991,core patch,rb_register_postponed_job async-signal-unsafety causes crash in GC
 19996,mnthreads,`RUBY_MN_THREADS=1` triggers Action Cable unit test failures
 20001,maybenotbug core,Make Ruby work properly with ASAN enabled
 20009,core,Marshal.load raises exception when load dumped class include non-ASCII
@@ -244,3 +240,15 @@
 20099,os/arch core,Ruby 3.3.0 segfaults on s390x musl libc (Alpine Linux) when built with -O3 (default optflags)
 20101,core patch,rb_file_open and rb_io_fdopen don&#39;t perform CRLF -&gt; LF conversion when encoding is set
 20103,thread,rb_internal_thread_remove_event_hook() hangs when called from within a Thread hook
+20111,core,`defined?` returns `expression` for assignment operators combined with fully qualified constants
+20112,ractor perf,Ractors not working properly in ruby 3.3.0
+20146,ractor,Code using Ractor with env `RUBY_MAX_CPU=1` ends with unreachable
+20147,os/arch build,FreeBSD libyaml
+20151,os/arch build,Can&#39;t build Ruby 3.1 on FreeBSD 14.0
+20154,fiber os/arch patch,aarch64: configure overrides `-mbranch-protection` if it was set in CFLAGS via environment
+20155,fiber,Using value of rb_fiber_scheduler_current() crashes Ruby
+20158,ractor,Ractor affects Coverage results
+20159,prism maybenotbug,Prism assertion failure even if it is executed with --parser=parse.y
+20161,core patch,Memory leak in regexp grapheme clusters
+20162,core patch,Memory leak when duplicating too complex object
+20165,ractor,Ractors moving a Struct breaks beyond the first 3 fields
