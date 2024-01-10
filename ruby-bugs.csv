@@ -238,7 +238,6 @@
 20097,regexp,Regexp#match? with empty capture group repeat is inconsistent
 20098,regexp,Wrong regexp match in ruby 3.2 and 3.3
 20099,os/arch core,Ruby 3.3.0 segfaults on s390x musl libc (Alpine Linux) when built with -O3 (default optflags)
-20101,core patch,rb_file_open and rb_io_fdopen don&#39;t perform CRLF -&gt; LF conversion when encoding is set
 20103,thread,rb_internal_thread_remove_event_hook() hangs when called from within a Thread hook
 20111,core,`defined?` returns `expression` for assignment operators combined with fully qualified constants
 20112,ractor perf,Ractors not working properly in ruby 3.3.0
@@ -247,8 +246,10 @@
 20151,os/arch build,Can&#39;t build Ruby 3.1 on FreeBSD 14.0
 20154,fiber os/arch patch,aarch64: configure overrides `-mbranch-protection` if it was set in CFLAGS via environment
 20155,fiber,Using value of rb_fiber_scheduler_current() crashes Ruby
-20158,ractor,Ractor affects Coverage results
-20159,prism maybenotbug,Prism assertion failure even if it is executed with --parser=parse.y
-20161,core patch,Memory leak in regexp grapheme clusters
-20162,core patch,Memory leak when duplicating too complex object
+20158,ractor coverage,Ractor affects Coverage results
 20165,ractor,Ractors moving a Struct breaks beyond the first 3 fields
+20167,ractor coverage,Code execution isn&#39;t recorded in Ractor
+20168,ractor,Process won&#39;t exit when Ractor.select waiting a Ractor
+20169,core,`GC.compact` can raises `EFAULT` on IO
+20171,lib,ri -i ruby interactive  pressing tab does not autocomplete
+20172,ext,Socket.addrinfo failing randomly
