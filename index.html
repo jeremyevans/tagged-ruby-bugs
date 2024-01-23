@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>255 Tagged Open Ruby Bugs as of 2024-01-11 04:51:31 +0900</title>
+<title>251 Tagged Open Ruby Bugs as of 2024-01-24 05:17:16 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -10,19 +10,19 @@
 <input type="submit" value="os/arch" />
 <input type="submit" value="patch" />
 <input type="submit" value="build" />
-<input type="submit" value="regexp" />
 <input type="submit" value="ext" />
+<input type="submit" value="regexp" />
 <input type="submit" value="encoding" />
 <input type="submit" value="cygwin" />
-<input type="submit" value="lib" />
 <input type="submit" value="thread" />
-<input type="submit" value="test" />
+<input type="submit" value="lib" />
 <input type="submit" value="maybenotbug" />
+<input type="submit" value="test" />
 <input type="submit" value="perf" />
 <input type="submit" value="parser" />
 <input type="submit" value="fiber" />
-<input type="submit" value="notbug" />
 <input type="submit" value="tracepoint" />
+<input type="submit" value="notbug" />
 <input type="submit" value="coverage" />
 <input type="submit" value="autoload" />
 <input type="submit" value="mnthreads" />
@@ -30,9 +30,9 @@
 <input type="submit" value="yjit" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">255</span> matched)
+(<span id="matched">251</span> matched)
 <table>
-<caption>255 Tagged Open Ruby Bugs as of 2024-01-11 04:51:31 +0900</caption>
+<caption>251 Tagged Open Ruby Bugs as of 2024-01-24 05:17:16 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -41,11 +41,67 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" maybenotbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/20203">20203</a>
+</td>
+<td>maybenotbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20203">`TestEnumerable` test failures with GCC 14</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20197">20197</a>
+</td>
+<td>patch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20197">Postponed job invocations are significantly reduced in Ruby 3.3</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20190">20190</a>
+</td>
+<td>patch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20190">`invalid_encoding_string &lt;&lt; number` should be valid encoding in some case, but does not</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20189">20189</a>
+</td>
+<td>patch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20189">`rb_str_resize` does not clear coderange when expanding</a>
+</td>
+</tr>
+<tr class=" core maybenotbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/20188">20188</a>
+</td>
+<td>core maybenotbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20188">`Module#const_source_location` returns wrong information when real constant was defined but autoload is still ongoing</a>
+</td>
+</tr>
 <tr class=" ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/20172">20172</a>
+<td><a href="https://bugs.ruby-lang.org/issues/20186">20186</a>
 </td>
 <td>ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20172">Socket.addrinfo failing randomly</a>
+<td><a href="https://bugs.ruby-lang.org/issues/20186">Ripper does not generate AST for some keywords in Ruby 3.3</a>
+</td>
+</tr>
+<tr class=" ext ">
+<td><a href="https://bugs.ruby-lang.org/issues/20183">20183</a>
+</td>
+<td>ext</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20183">`erb/escape.so` cannot be loaded when `--with-static-linked-ext`</a>
+</td>
+</tr>
+<tr class=" core patch ">
+<td><a href="https://bugs.ruby-lang.org/issues/20180">20180</a>
+</td>
+<td>core patch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20180">Inconsistent evaluation of `**{}` depending on position in array</a>
+</td>
+</tr>
+<tr class=" build maybenotbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/20179">20179</a>
+</td>
+<td>build maybenotbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20179">`--with-ruby-version` configure option is not correctly applied to `rubyhdrdir`</a>
 </td>
 </tr>
 <tr class=" lib ">
@@ -132,13 +188,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/20112">Ractors not working properly in ruby 3.3.0</a>
 </td>
 </tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/20111">20111</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20111">`defined?` returns `expression` for assignment operators combined with fully qualified constants</a>
-</td>
-</tr>
 <tr class=" thread ">
 <td><a href="https://bugs.ruby-lang.org/issues/20103">20103</a>
 </td>
@@ -216,13 +265,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/20079">alexandria testsuite began to segfault recently</a>
 </td>
 </tr>
-<tr class=" ractor ">
-<td><a href="https://bugs.ruby-lang.org/issues/20078">20078</a>
-</td>
-<td>ractor</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20078">StringIO cannot be moved between Ractors</a>
-</td>
-</tr>
 <tr class=" mnthreads ">
 <td><a href="https://bugs.ruby-lang.org/issues/20076">20076</a>
 </td>
@@ -235,13 +277,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/20067">IO.pipe `int_enc` and `ext_enc` not working as documented?</a>
-</td>
-</tr>
-<tr class=" core notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/20064">20064</a>
-</td>
-<td>core notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20064">Inconsistent behavior between array splat *nil and hash splat **nil</a>
 </td>
 </tr>
 <tr class=" ext ">
@@ -293,25 +328,11 @@
 <td><a href="https://bugs.ruby-lang.org/issues/20009">Marshal.load raises exception when load dumped class include non-ASCII</a>
 </td>
 </tr>
-<tr class=" maybenotbug core ">
-<td><a href="https://bugs.ruby-lang.org/issues/20001">20001</a>
-</td>
-<td>maybenotbug core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20001">Make Ruby work properly with ASAN enabled</a>
-</td>
-</tr>
 <tr class=" mnthreads ">
 <td><a href="https://bugs.ruby-lang.org/issues/19996">19996</a>
 </td>
 <td>mnthreads</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19996">`RUBY_MN_THREADS=1` triggers Action Cable unit test failures</a>
-</td>
-</tr>
-<tr class=" notbug core ">
-<td><a href="https://bugs.ruby-lang.org/issues/19990">19990</a>
-</td>
-<td>notbug core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19990">Could we reconsider the second argument to Kernel#load?</a>
 </td>
 </tr>
 <tr class=" win ">
@@ -326,13 +347,6 @@
 </td>
 <td>test</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19984">`make test-bundler-parallel` fails with ` --enable-shared`</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/19983">19983</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19983">Nested  `*` seems incorrect</a>
 </td>
 </tr>
 <tr class=" ractor os/arch ">
@@ -384,13 +398,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/19918">Should `a[&amp;b]=c` be syntax valid?</a>
 </td>
 </tr>
-<tr class=" lib patch ">
-<td><a href="https://bugs.ruby-lang.org/issues/19916">19916</a>
-</td>
-<td>lib patch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19916">URI#to_s can serialize to a value that doesn&#39;t deserialize to the original</a>
-</td>
-</tr>
 <tr class=" patch lib maybenotbug ">
 <td><a href="https://bugs.ruby-lang.org/issues/19910">19910</a>
 </td>
@@ -431,13 +438,6 @@
 </td>
 <td>core patch</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19865">Segfault when calling user signal handlers during VM shutdown</a>
-</td>
-</tr>
-<tr class=" core maybenotbug patch ">
-<td><a href="https://bugs.ruby-lang.org/issues/19857">19857</a>
-</td>
-<td>core maybenotbug patch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19857">Eval coverage is reset after each `eval`.</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -564,13 +564,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19557">Deadlock on STDOUT(ERR) lock on signal handler</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/19542">19542</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19542">Operations on zero-sized IO::Buffer are raising</a>
 </td>
 </tr>
 <tr class=" maybenotbug thread ">
@@ -924,24 +917,10 @@
 </td>
 </tr>
 <tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18805">18805</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18805">IO::Buffer is inconsistent when returning a string from an empty buffer</a>
-</td>
-</tr>
-<tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/18804">18804</a>
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18804">Invalid line number for putnil instruction</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18795">18795</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18795">Verbose GC debug output with -DRGENGC_DEBUG=5 causes a crash</a>
 </td>
 </tr>
 <tr class=" win ">
@@ -1537,13 +1516,6 @@
 </td>
 <td>win core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/14640">[win32] File.realpath treats a relative path with a drive letter as an absolute path.</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/14607">14607</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/14607">Fix use of the rb_profile_frames start parameter</a>
 </td>
 </tr>
 <tr class=" patch tracepoint ">
