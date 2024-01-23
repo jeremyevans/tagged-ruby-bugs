@@ -38,7 +38,6 @@
 14364,core,Regexp last match variable in procs
 14480,os/arch build,miniruby crashing when compiled with -O2 or -O1 on aarch64
 14582,patch tracepoint,Unable to use `method__entry` and `method_return` tracing probes since 2.5
-14607,patch core,Fix use of the rb_profile_frames start parameter
 14640,win core,[win32] File.realpath treats a relative path with a drive letter as an absolute path.
 14681,core,`syswrite&#39;: stream closed in another thread (IOError)
 14727,win thread,TestQueue#test_queue_with_trap always timeout on Windows10
@@ -124,9 +123,7 @@
 18733,os/arch,Ruby GC problems cause performance issue with Ractor
 18740,tracepoint,Use of rightward assignment changes line number needed for line-targeted TracePoint
 18794,win,Windows - intermittent SEGV TestObjSpace#test_reachable_objects_during_iteration
-18795,core,Verbose GC debug output with -DRGENGC_DEBUG=5 causes a crash
 18804,core,Invalid line number for putnil instruction
-18805,core,IO::Buffer is inconsistent when returning a string from an empty buffer
 18818,fiber,"Thread waitq does not retain referenced objects, can lead to use after free."
 18842,lib,Ruby&#39;s Resolv library does not handle correctly the `NODATA` case
 18878,parser,parse.y: Foo::Bar {} is inconsistently rejected
@@ -177,7 +174,6 @@
 19438,perf,Ruby 2.7 -&gt; 3.2 Performance Regression in so_k_nucleotide benchmark
 19470,perf notbug,Frequent small range-reads from and then writes to a large array are very slow
 19473,maybenotbug thread,can&#39;t be called from trap context (ThreadError) is too limiting
-19542,core,Operations on zero-sized IO::Buffer are raising
 19557,core,Deadlock on STDOUT(ERR) lock on signal handler
 19558,core patch,str.dump.undump crashes when str contains both Unicode and ASCII control characters
 19562,ractor,Setting default_(in|ex)ternal encoding after running an Ractor freezes ruby
@@ -196,14 +192,12 @@
 19794,os/arch build,Ruby 3.2.2 fails to build on macOS Sonoma betas
 19831,os/arch build,warning message of linker with macOS Sonoma beta
 19841,core,Marshal.dump stack overflow with recursive Time
-19857,core maybenotbug patch,Eval coverage is reset after each `eval`.
 19865,core patch,Segfault when calling user signal handlers during VM shutdown
 19869,test,Mark skipped test somehow
 19875,core perf notbug,Ruby 3.0 -&gt; 3.1 Performance regression in String#count
 19891,tracepoint,rb_mRubyVMFrozenCore is reported by DTrace but ignored by TracePoint
 19907,core,Method calls with keyword arguments in eval leaks callcache and callinfo objects
 19910,patch lib maybenotbug,Set#delete_if behavior inconsistent with Array/Hash
-19916,lib patch,URI#to_s can serialize to a value that doesn&#39;t deserialize to the original
 19918,maybenotbug parser,Should `a[&amp;b]=c` be syntax valid?
 19920,os/arch build,"Ruby 3.1 fails to build with --enable-shared on macos-arm64: is an incompatible architecture (have &#39;arm64&#39;, need &#39;&#39;)"
 19922,core patch,ObjectSpace.dump_all in multiple threads in parallel causes SEGV
@@ -211,12 +205,9 @@
 19974,ext,OpenSSL::PKCS7 generates SegFault when parsing invalid data
 19975,core,ISeq#to_binary loses hidden local variable indices
 19981,ractor os/arch,bootstraptest/test_ractor.rb: Segmentation fault on arm32
-19983,core,Nested  `*` seems incorrect
 19984,test,`make test-bundler-parallel` fails with ` --enable-shared`
 19986,win,Win32: `HOME` is set to just `HOMEDRIVE` if `HOMEPATH` is unset
-19990,notbug core,Could we reconsider the second argument to Kernel#load?
 19996,mnthreads,`RUBY_MN_THREADS=1` triggers Action Cable unit test failures
-20001,maybenotbug core,Make Ruby work properly with ASAN enabled
 20009,core,Marshal.load raises exception when load dumped class include non-ASCII
 20020,regexp,Segfault running regexp match?
 20041,core,Array destructuring and default values in parameters
@@ -224,10 +215,8 @@
 20045,test os/arch,`TestDir#test_home` fails on i686
 20047,thread,ConditionVariable#wait has spurious wakeups from signal traps
 20055,ext,Ripper seems to skip some checks like `void value expression` and `duplicated variable name`
-20064,core notbug,Inconsistent behavior between array splat *nil and hash splat **nil
 20067,core,IO.pipe `int_enc` and `ext_enc` not working as documented?
 20076,mnthreads,M:N scheduler is stuck on macOS with RUBY_MN_THREADS=1
-20078,ractor,StringIO cannot be moved between Ractors
 20079,core,alexandria testsuite began to segfault recently
 20081,fiber notbug doc,Transfered Fiber doesn&#39;t return to Fiber that started it
 20082,fiber maybenotbug,Killing fibers across threads: unexpected exception
@@ -239,7 +228,6 @@
 20098,regexp,Wrong regexp match in ruby 3.2 and 3.3
 20099,os/arch core,Ruby 3.3.0 segfaults on s390x musl libc (Alpine Linux) when built with -O3 (default optflags)
 20103,thread,rb_internal_thread_remove_event_hook() hangs when called from within a Thread hook
-20111,core,`defined?` returns `expression` for assignment operators combined with fully qualified constants
 20112,ractor perf,Ractors not working properly in ruby 3.3.0
 20146,ractor,Code using Ractor with env `RUBY_MAX_CPU=1` ends with unreachable
 20147,os/arch build,FreeBSD libyaml
@@ -252,4 +240,12 @@
 20168,ractor,Process won&#39;t exit when Ractor.select waiting a Ractor
 20169,core,`GC.compact` can raises `EFAULT` on IO
 20171,lib,ri -i ruby interactive  pressing tab does not autocomplete
-20172,ext,Socket.addrinfo failing randomly
+20179,build maybenotbug,`--with-ruby-version` configure option is not correctly applied to `rubyhdrdir`
+20180,core patch,Inconsistent evaluation of `**{}` depending on position in array
+20183,ext,`erb/escape.so` cannot be loaded when `--with-static-linked-ext`
+20186,ext,Ripper does not generate AST for some keywords in Ruby 3.3
+20188,core maybenotbug,`Module#const_source_location` returns wrong information when real constant was defined but autoload is still ongoing
+20189,patch core,`rb_str_resize` does not clear coderange when expanding
+20190,patch core,"`invalid_encoding_string &lt;&lt; number` should be valid encoding in some case, but does not"
+20197,patch core,Postponed job invocations are significantly reduced in Ruby 3.3
+20203,maybenotbug,`TestEnumerable` test failures with GCC 14
