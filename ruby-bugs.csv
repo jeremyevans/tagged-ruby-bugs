@@ -220,10 +220,8 @@
 20079,core,alexandria testsuite began to segfault recently
 20081,fiber notbug doc,Transfered Fiber doesn&#39;t return to Fiber that started it
 20082,fiber maybenotbug,Killing fibers across threads: unexpected exception
-20083,regexp patch,String#match? behaving inconsistently with Ruby 3.3.0
 20088,build os/arch,Ruby 3.3.0 does not cross-complie on arm64-darwin
 20089,fiber,Fiber#kill transfers to root fiber
-20095,regexp,Regex lookahead behaving strangely in 3.3.0
 20097,regexp,Regexp#match? with empty capture group repeat is inconsistent
 20098,regexp,Wrong regexp match in ruby 3.2 and 3.3
 20099,os/arch core,Ruby 3.3.0 segfaults on s390x musl libc (Alpine Linux) when built with -O3 (default optflags)
@@ -246,6 +244,15 @@
 20186,ext,Ripper does not generate AST for some keywords in Ruby 3.3
 20188,core maybenotbug,`Module#const_source_location` returns wrong information when real constant was defined but autoload is still ongoing
 20189,patch core,`rb_str_resize` does not clear coderange when expanding
-20190,patch core,"`invalid_encoding_string &lt;&lt; number` should be valid encoding in some case, but does not"
-20197,patch core,Postponed job invocations are significantly reduced in Ruby 3.3
 20203,maybenotbug,`TestEnumerable` test failures with GCC 14
+20206,ext,PTY.spawn seems to fail to capture the output of &quot;echo foo&quot; once in a while
+20208,lib ext,Net::HTTP errors with Errno::EAFNOSUPPORT when setting local_host with Addrinfo
+20216,maybenotbug core,Circular parameter reference not checked for assignment
+20218,core,aset/masgn/op_asgn with keyword arguments
+20220,mnthreads,M:N threading needs to tell ASAN about stack switches
+20221,core,ASAN: make test-basic: un-prefixed symbol leakage
+20225,regexp,Inconsistent behavior of regex matching for a regex has a null loop
+20226,notbug,Inconsistent Sort results on 3.3.0 compared to previous versions
+20228,patch regexp,Memory leak in Regexp timeout
+20229,patch core,Empty keyword splat in array not removed in ARGSPUSH case
+20230,patch core,Fix crash when passing large keyword splat to method accepting keywords and keyword splat
