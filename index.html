@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>251 Tagged Open Ruby Bugs as of 2024-01-24 05:17:16 +0900</title>
+<title>258 Tagged Open Ruby Bugs as of 2024-02-01 07:40:43 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -14,25 +14,25 @@
 <input type="submit" value="regexp" />
 <input type="submit" value="encoding" />
 <input type="submit" value="cygwin" />
-<input type="submit" value="thread" />
 <input type="submit" value="lib" />
 <input type="submit" value="maybenotbug" />
+<input type="submit" value="thread" />
 <input type="submit" value="test" />
 <input type="submit" value="perf" />
 <input type="submit" value="parser" />
 <input type="submit" value="fiber" />
-<input type="submit" value="tracepoint" />
 <input type="submit" value="notbug" />
+<input type="submit" value="tracepoint" />
 <input type="submit" value="coverage" />
-<input type="submit" value="autoload" />
 <input type="submit" value="mnthreads" />
+<input type="submit" value="autoload" />
 <input type="submit" value="doc" />
 <input type="submit" value="yjit" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">251</span> matched)
+(<span id="matched">258</span> matched)
 <table>
-<caption>251 Tagged Open Ruby Bugs as of 2024-01-24 05:17:16 +0900</caption>
+<caption>258 Tagged Open Ruby Bugs as of 2024-02-01 07:40:43 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -41,25 +41,88 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" patch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20230">20230</a>
+</td>
+<td>patch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20230">Fix crash when passing large keyword splat to method accepting keywords and keyword splat</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20229">20229</a>
+</td>
+<td>patch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20229">Empty keyword splat in array not removed in ARGSPUSH case</a>
+</td>
+</tr>
+<tr class=" patch regexp ">
+<td><a href="https://bugs.ruby-lang.org/issues/20228">20228</a>
+</td>
+<td>patch regexp</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20228">Memory leak in Regexp timeout</a>
+</td>
+</tr>
+<tr class=" notbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/20226">20226</a>
+</td>
+<td>notbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20226">Inconsistent Sort results on 3.3.0 compared to previous versions</a>
+</td>
+</tr>
+<tr class=" regexp ">
+<td><a href="https://bugs.ruby-lang.org/issues/20225">20225</a>
+</td>
+<td>regexp</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20225">Inconsistent behavior of regex matching for a regex has a null loop</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20221">20221</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20221">ASAN: make test-basic: un-prefixed symbol leakage</a>
+</td>
+</tr>
+<tr class=" mnthreads ">
+<td><a href="https://bugs.ruby-lang.org/issues/20220">20220</a>
+</td>
+<td>mnthreads</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20220">M:N threading needs to tell ASAN about stack switches</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20218">20218</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20218">aset/masgn/op_asgn with keyword arguments</a>
+</td>
+</tr>
+<tr class=" maybenotbug core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20216">20216</a>
+</td>
+<td>maybenotbug core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20216">Circular parameter reference not checked for assignment</a>
+</td>
+</tr>
+<tr class=" lib ext ">
+<td><a href="https://bugs.ruby-lang.org/issues/20208">20208</a>
+</td>
+<td>lib ext</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20208">Net::HTTP errors with Errno::EAFNOSUPPORT when setting local_host with Addrinfo</a>
+</td>
+</tr>
+<tr class=" ext ">
+<td><a href="https://bugs.ruby-lang.org/issues/20206">20206</a>
+</td>
+<td>ext</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20206">PTY.spawn seems to fail to capture the output of &quot;echo foo&quot; once in a while</a>
+</td>
+</tr>
 <tr class=" maybenotbug ">
 <td><a href="https://bugs.ruby-lang.org/issues/20203">20203</a>
 </td>
 <td>maybenotbug</td>
 <td><a href="https://bugs.ruby-lang.org/issues/20203">`TestEnumerable` test failures with GCC 14</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/20197">20197</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20197">Postponed job invocations are significantly reduced in Ruby 3.3</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/20190">20190</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20190">`invalid_encoding_string &lt;&lt; number` should be valid encoding in some case, but does not</a>
 </td>
 </tr>
 <tr class=" patch core ">
@@ -216,13 +279,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/20097">Regexp#match? with empty capture group repeat is inconsistent</a>
 </td>
 </tr>
-<tr class=" regexp ">
-<td><a href="https://bugs.ruby-lang.org/issues/20095">20095</a>
-</td>
-<td>regexp</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20095">Regex lookahead behaving strangely in 3.3.0</a>
-</td>
-</tr>
 <tr class=" fiber ">
 <td><a href="https://bugs.ruby-lang.org/issues/20089">20089</a>
 </td>
@@ -235,13 +291,6 @@
 </td>
 <td>build os/arch</td>
 <td><a href="https://bugs.ruby-lang.org/issues/20088">Ruby 3.3.0 does not cross-complie on arm64-darwin</a>
-</td>
-</tr>
-<tr class=" regexp patch ">
-<td><a href="https://bugs.ruby-lang.org/issues/20083">20083</a>
-</td>
-<td>regexp patch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20083">String#match? behaving inconsistently with Ruby 3.3.0</a>
 </td>
 </tr>
 <tr class=" fiber maybenotbug ">
