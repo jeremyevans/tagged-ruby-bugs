@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>258 Tagged Open Ruby Bugs as of 2024-02-01 07:40:43 +0900</title>
+<title>261 Tagged Open Ruby Bugs as of 2024-03-05 02:47:19 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -10,16 +10,16 @@
 <input type="submit" value="os/arch" />
 <input type="submit" value="patch" />
 <input type="submit" value="build" />
-<input type="submit" value="ext" />
 <input type="submit" value="regexp" />
 <input type="submit" value="encoding" />
-<input type="submit" value="cygwin" />
 <input type="submit" value="lib" />
 <input type="submit" value="maybenotbug" />
-<input type="submit" value="thread" />
+<input type="submit" value="cygwin" />
+<input type="submit" value="ext" />
 <input type="submit" value="test" />
-<input type="submit" value="perf" />
+<input type="submit" value="thread" />
 <input type="submit" value="parser" />
+<input type="submit" value="perf" />
 <input type="submit" value="fiber" />
 <input type="submit" value="notbug" />
 <input type="submit" value="tracepoint" />
@@ -30,9 +30,9 @@
 <input type="submit" value="yjit" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">258</span> matched)
+(<span id="matched">261</span> matched)
 <table>
-<caption>258 Tagged Open Ruby Bugs as of 2024-02-01 07:40:43 +0900</caption>
+<caption>261 Tagged Open Ruby Bugs as of 2024-03-05 02:47:19 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -41,32 +41,137 @@
 </tr>
 </thead>
 <tbody>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/20230">20230</a>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20319">20319</a>
 </td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20230">Fix crash when passing large keyword splat to method accepting keywords and keyword splat</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/20229">20229</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20229">Empty keyword splat in array not removed in ARGSPUSH case</a>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20319">Singleton class is being frozen lazily in some cases</a>
 </td>
 </tr>
-<tr class=" patch regexp ">
-<td><a href="https://bugs.ruby-lang.org/issues/20228">20228</a>
+<tr class=" regexp ">
+<td><a href="https://bugs.ruby-lang.org/issues/20316">20316</a>
 </td>
-<td>patch regexp</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20228">Memory leak in Regexp timeout</a>
+<td>regexp</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20316">Regexp quantifier behavior changes in different syntactic context.</a>
 </td>
 </tr>
-<tr class=" notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/20226">20226</a>
+<tr class=" regexp ">
+<td><a href="https://bugs.ruby-lang.org/issues/20315">20315</a>
 </td>
-<td>notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20226">Inconsistent Sort results on 3.3.0 compared to previous versions</a>
+<td>regexp</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20315">Quantifier expansion leads to different results in Regexp.</a>
+</td>
+</tr>
+<tr class=" lib ">
+<td><a href="https://bugs.ruby-lang.org/issues/20314">20314</a>
+</td>
+<td>lib</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20314">Simultaneous Timeout expires may raise an exception after the block</a>
+</td>
+</tr>
+<tr class=" core patch ">
+<td><a href="https://bugs.ruby-lang.org/issues/20310">20310</a>
+</td>
+<td>core patch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20310">ASAN fake stacks need to be marked during GC for non-current execution context</a>
+</td>
+</tr>
+<tr class=" core patch ">
+<td><a href="https://bugs.ruby-lang.org/issues/20307">20307</a>
+</td>
+<td>core patch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20307">`Hash#update` from compare_by_identity hash can have unfrozen string keys</a>
+</td>
+</tr>
+<tr class=" lib notbug patch ">
+<td><a href="https://bugs.ruby-lang.org/issues/20301">20301</a>
+</td>
+<td>lib notbug patch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20301">`Set#add?` does two hash look-ups</a>
+</td>
+</tr>
+<tr class=" tracepoint ">
+<td><a href="https://bugs.ruby-lang.org/issues/20299">20299</a>
+</td>
+<td>tracepoint</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20299">Tracepoint staying enable after a disable</a>
+</td>
+</tr>
+<tr class=" parser ">
+<td><a href="https://bugs.ruby-lang.org/issues/20294">20294</a>
+</td>
+<td>parser</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20294">Parser no longer warns on some duplicated keys</a>
+</td>
+</tr>
+<tr class=" core patch ">
+<td><a href="https://bugs.ruby-lang.org/issues/20285">20285</a>
+</td>
+<td>core patch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20285">Stale inline method caches when refinement modules are reopened</a>
+</td>
+</tr>
+<tr class=" build os/arch ">
+<td><a href="https://bugs.ruby-lang.org/issues/20283">20283</a>
+</td>
+<td>build os/arch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20283">Build failed since Ruby 3.2.3 if Xcode.app was renamed to space contained name.</a>
+</td>
+</tr>
+<tr class=" notbug test ">
+<td><a href="https://bugs.ruby-lang.org/issues/20277">20277</a>
+</td>
+<td>notbug test</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20277">Remove stale `String` test conditionals</a>
+</td>
+</tr>
+<tr class=" ractor patch ">
+<td><a href="https://bugs.ruby-lang.org/issues/20271">20271</a>
+</td>
+<td>ractor patch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20271">Issue with moving embedded string across ractors</a>
+</td>
+</tr>
+<tr class=" maybenotbug core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20269">20269</a>
+</td>
+<td>maybenotbug core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20269">bignum too big to convert into `long&#39; when running String#byteslice on Windows</a>
+</td>
+</tr>
+<tr class=" ractor patch ">
+<td><a href="https://bugs.ruby-lang.org/issues/20267">20267</a>
+</td>
+<td>ractor patch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20267">Hashes that use ar_table aren&#39;t moved properly across ractors</a>
+</td>
+</tr>
+<tr class=" regexp ">
+<td><a href="https://bugs.ruby-lang.org/issues/20262">20262</a>
+</td>
+<td>regexp</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20262">Regex mismatch between Ruby 3.2.2 and 3.3.0</a>
+</td>
+</tr>
+<tr class=" ractor patch ">
+<td><a href="https://bugs.ruby-lang.org/issues/20255">20255</a>
+</td>
+<td>ractor patch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20255">Embedded arrays aren&#39;t moved correctly across ractors</a>
+</td>
+</tr>
+<tr class=" mnthreads ">
+<td><a href="https://bugs.ruby-lang.org/issues/20243">20243</a>
+</td>
+<td>mnthreads</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20243">M:N threading VM_ASSERT failure in rb_current_execution_context with clang 17 (on Linux)</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20237">20237</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20237">Unable to unshare(CLONE_NEWUSER) in Linux because of timer thread</a>
 </td>
 </tr>
 <tr class=" regexp ">
@@ -74,20 +179,6 @@
 </td>
 <td>regexp</td>
 <td><a href="https://bugs.ruby-lang.org/issues/20225">Inconsistent behavior of regex matching for a regex has a null loop</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/20221">20221</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20221">ASAN: make test-basic: un-prefixed symbol leakage</a>
-</td>
-</tr>
-<tr class=" mnthreads ">
-<td><a href="https://bugs.ruby-lang.org/issues/20220">20220</a>
-</td>
-<td>mnthreads</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20220">M:N threading needs to tell ASAN about stack switches</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -102,20 +193,6 @@
 </td>
 <td>maybenotbug core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/20216">Circular parameter reference not checked for assignment</a>
-</td>
-</tr>
-<tr class=" lib ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/20208">20208</a>
-</td>
-<td>lib ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20208">Net::HTTP errors with Errno::EAFNOSUPPORT when setting local_host with Addrinfo</a>
-</td>
-</tr>
-<tr class=" ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/20206">20206</a>
-</td>
-<td>ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20206">PTY.spawn seems to fail to capture the output of &quot;echo foo&quot; once in a while</a>
 </td>
 </tr>
 <tr class=" maybenotbug ">
@@ -146,20 +223,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/20186">Ripper does not generate AST for some keywords in Ruby 3.3</a>
 </td>
 </tr>
-<tr class=" ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/20183">20183</a>
-</td>
-<td>ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20183">`erb/escape.so` cannot be loaded when `--with-static-linked-ext`</a>
-</td>
-</tr>
-<tr class=" core patch ">
-<td><a href="https://bugs.ruby-lang.org/issues/20180">20180</a>
-</td>
-<td>core patch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20180">Inconsistent evaluation of `**{}` depending on position in array</a>
-</td>
-</tr>
 <tr class=" build maybenotbug ">
 <td><a href="https://bugs.ruby-lang.org/issues/20179">20179</a>
 </td>
@@ -172,13 +235,6 @@
 </td>
 <td>lib</td>
 <td><a href="https://bugs.ruby-lang.org/issues/20171">ri -i ruby interactive  pressing tab does not autocomplete</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/20169">20169</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20169">`GC.compact` can raises `EFAULT` on IO</a>
 </td>
 </tr>
 <tr class=" ractor ">
@@ -326,13 +382,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/20067">IO.pipe `int_enc` and `ext_enc` not working as documented?</a>
-</td>
-</tr>
-<tr class=" ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/20055">20055</a>
-</td>
-<td>ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20055">Ripper seems to skip some checks like `void value expression` and `duplicated variable name`</a>
 </td>
 </tr>
 <tr class=" thread ">
@@ -734,13 +783,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/19367">Issue with ractor local storage API</a>
 </td>
 </tr>
-<tr class=" ractor ">
-<td><a href="https://bugs.ruby-lang.org/issues/19365">19365</a>
-</td>
-<td>ractor</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19365">Ractors can access non-shareable values through enumerators</a>
-</td>
-</tr>
 <tr class=" ractor tracepoint ">
 <td><a href="https://bugs.ruby-lang.org/issues/19364">19364</a>
 </td>
@@ -900,13 +942,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18993">Inconsistent Range#size for Float and Rational</a>
-</td>
-</tr>
-<tr class=" ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/18988">18988</a>
-</td>
-<td>ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18988">Ripper cannot parse some code that has regexp named capture</a>
 </td>
 </tr>
 <tr class=" parser ">
@@ -1714,13 +1749,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/11142">Command line argument parser on windows handles double quotes inconsistently.</a>
 </td>
 </tr>
-<tr class=" patch ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/10436">10436</a>
-</td>
-<td>patch ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/10436">ruby -c and ripper inconsistency: m(&amp;nil) {}</a>
-</td>
-</tr>
 <tr class=" build ">
 <td><a href="https://bugs.ruby-lang.org/issues/10416">10416</a>
 </td>
@@ -1838,13 +1866,6 @@
 </td>
 <td>encoding</td>
 <td><a href="https://bugs.ruby-lang.org/issues/6351">transcode table generator does not support multi characters of Unicode</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/5179">5179</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/5179">Complex#rationalize and to_r with approximate zeros</a>
 </td>
 </tr>
 </tbody>
