@@ -1,4 +1,3 @@
-5179,core,Complex#rationalize and to_r with approximate zeros
 6351,encoding,transcode table generator does not support multi characters of Unicode
 6360,win build,Debug information build even without requesting it
 7742,encoding,System encoding (Windows-1258) is not recognized by Ruby to  convert back to UTF-8 
@@ -16,7 +15,6 @@
 10009,thread perf,IO operation is 10x slower in multi-thread environment
 10128,win core,"Quoting problem for arguments of Kernel.system, Kernel.exec on Windows"
 10416,build,Create mechanism for updating of Unicode data files downstreams when we want
-10436,patch ext,ruby -c and ripper inconsistency: m(&amp;nil) {}
 11142,win core,Command line argument parser on windows handles double quotes inconsistently.
 11438,win thread,"native_thread_init_stack() get machine.stack_start unequal to thread&#39;s stack start address, x86 win32"
 11808,core,Different behavior between Enumerable#grep and Array#grep
@@ -132,7 +130,6 @@
 18940,ractor,Ruby Ractor fails with IOError when handling higher concurrency
 18947,win core,Unexpected Errno::ENAMETOOLONG on Windows
 18966,parser,Strange behavior when numbered parameters and method definition are both used in a block
-18988,ext,Ripper cannot parse some code that has regexp named capture
 18993,core,Inconsistent Range#size for Float and Rational
 18995,core,IO#set_encoding sometimes set an IO&#39;s internal encoding to the default external encoding
 19017,patch lib,Net::HTTP may block when attempting to reuse a persistent connection
@@ -156,7 +153,6 @@
 19338,ractor,Ruby hangs when ouputting warnings inside ractor with VM lock held
 19363,coverage,Fix rb_transient_heap_mark: wrong header (T_STRUCT) segfault
 19364,ractor tracepoint,Issue with tracepoint enable/disable across ractors
-19365,ractor,Ractors can access non-shareable values through enumerators
 19367,patch ractor,Issue with ractor local storage API
 19368,ractor,Small issue with isolated procs and eval
 19369,patch ractor,Small corner-case issue that breaks Ractor isolation: change cloned object from another thread
@@ -214,7 +210,6 @@
 20043,core,`defined?` checks for method existence but only sometimes
 20045,test os/arch,`TestDir#test_home` fails on i686
 20047,thread,ConditionVariable#wait has spurious wakeups from signal traps
-20055,ext,Ripper seems to skip some checks like `void value expression` and `duplicated variable name`
 20067,core,IO.pipe `int_enc` and `ext_enc` not working as documented?
 20076,mnthreads,M:N scheduler is stuck on macOS with RUBY_MN_THREADS=1
 20079,core,alexandria testsuite began to segfault recently
@@ -236,23 +231,31 @@
 20165,ractor,Ractors moving a Struct breaks beyond the first 3 fields
 20167,ractor coverage,Code execution isn&#39;t recorded in Ractor
 20168,ractor,Process won&#39;t exit when Ractor.select waiting a Ractor
-20169,core,`GC.compact` can raises `EFAULT` on IO
 20171,lib,ri -i ruby interactive  pressing tab does not autocomplete
 20179,build maybenotbug,`--with-ruby-version` configure option is not correctly applied to `rubyhdrdir`
-20180,core patch,Inconsistent evaluation of `**{}` depending on position in array
-20183,ext,`erb/escape.so` cannot be loaded when `--with-static-linked-ext`
 20186,ext,Ripper does not generate AST for some keywords in Ruby 3.3
 20188,core maybenotbug,`Module#const_source_location` returns wrong information when real constant was defined but autoload is still ongoing
 20189,patch core,`rb_str_resize` does not clear coderange when expanding
 20203,maybenotbug,`TestEnumerable` test failures with GCC 14
-20206,ext,PTY.spawn seems to fail to capture the output of &quot;echo foo&quot; once in a while
-20208,lib ext,Net::HTTP errors with Errno::EAFNOSUPPORT when setting local_host with Addrinfo
 20216,maybenotbug core,Circular parameter reference not checked for assignment
 20218,core,aset/masgn/op_asgn with keyword arguments
-20220,mnthreads,M:N threading needs to tell ASAN about stack switches
-20221,core,ASAN: make test-basic: un-prefixed symbol leakage
 20225,regexp,Inconsistent behavior of regex matching for a regex has a null loop
-20226,notbug,Inconsistent Sort results on 3.3.0 compared to previous versions
-20228,patch regexp,Memory leak in Regexp timeout
-20229,patch core,Empty keyword splat in array not removed in ARGSPUSH case
-20230,patch core,Fix crash when passing large keyword splat to method accepting keywords and keyword splat
+20237,core,Unable to unshare(CLONE_NEWUSER) in Linux because of timer thread
+20243,mnthreads,M:N threading VM_ASSERT failure in rb_current_execution_context with clang 17 (on Linux)
+20255,ractor patch,Embedded arrays aren&#39;t moved correctly across ractors
+20262,regexp,Regex mismatch between Ruby 3.2.2 and 3.3.0
+20267,ractor patch,Hashes that use ar_table aren&#39;t moved properly across ractors
+20269,maybenotbug core,bignum too big to convert into `long&#39; when running String#byteslice on Windows
+20271,ractor patch,Issue with moving embedded string across ractors
+20277,notbug test,Remove stale `String` test conditionals
+20283,build os/arch,Build failed since Ruby 3.2.3 if Xcode.app was renamed to space contained name.
+20285,core patch,Stale inline method caches when refinement modules are reopened
+20294,parser,Parser no longer warns on some duplicated keys
+20299,tracepoint,Tracepoint staying enable after a disable
+20301,lib notbug patch,`Set#add?` does two hash look-ups
+20307,core patch,`Hash#update` from compare_by_identity hash can have unfrozen string keys
+20310,core patch,ASAN fake stacks need to be marked during GC for non-current execution context
+20314,lib,Simultaneous Timeout expires may raise an exception after the block
+20315,regexp,Quantifier expansion leads to different results in Regexp.
+20316,regexp,Regexp quantifier behavior changes in different syntactic context.
+20319,core,Singleton class is being frozen lazily in some cases
