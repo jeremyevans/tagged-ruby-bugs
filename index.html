@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>261 Tagged Open Ruby Bugs as of 2024-03-05 02:47:19 +0900</title>
+<title>261 Tagged Open Ruby Bugs as of 2024-04-10 04:10:55 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -12,27 +12,27 @@
 <input type="submit" value="build" />
 <input type="submit" value="regexp" />
 <input type="submit" value="encoding" />
+<input type="submit" value="ext" />
 <input type="submit" value="lib" />
 <input type="submit" value="maybenotbug" />
-<input type="submit" value="cygwin" />
-<input type="submit" value="ext" />
-<input type="submit" value="test" />
 <input type="submit" value="thread" />
-<input type="submit" value="parser" />
-<input type="submit" value="perf" />
+<input type="submit" value="cygwin" />
+<input type="submit" value="test" />
 <input type="submit" value="fiber" />
+<input type="submit" value="perf" />
+<input type="submit" value="parser" />
 <input type="submit" value="notbug" />
 <input type="submit" value="tracepoint" />
 <input type="submit" value="coverage" />
-<input type="submit" value="mnthreads" />
-<input type="submit" value="autoload" />
 <input type="submit" value="doc" />
+<input type="submit" value="autoload" />
+<input type="submit" value="mnthreads" />
 <input type="submit" value="yjit" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
 (<span id="matched">261</span> matched)
 <table>
-<caption>261 Tagged Open Ruby Bugs as of 2024-03-05 02:47:19 +0900</caption>
+<caption>261 Tagged Open Ruby Bugs as of 2024-04-10 04:10:55 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -41,6 +41,118 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" ext maybenotbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/20418">20418</a>
+</td>
+<td>ext maybenotbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20418">`StringIO#read(..., buffer)` doesn&#39;t preserve buffer&#39;s encoding</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20417">20417</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20417">RubyVM::AbstractSyntaxTree.parse warns about block local variables</a>
+</td>
+</tr>
+<tr class=" notbug core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20416">20416</a>
+</td>
+<td>notbug core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20416">IO#read doesn&#39;t preserve buffer encoding if `maxlen = nil`</a>
+</td>
+</tr>
+<tr class=" fiber ">
+<td><a href="https://bugs.ruby-lang.org/issues/20414">20414</a>
+</td>
+<td>fiber</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20414">`Fiber#raise` should recurse to `resumed_fiber` rather than failing.</a>
+</td>
+</tr>
+<tr class=" maybenotbug core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20412">20412</a>
+</td>
+<td>maybenotbug core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20412">UTF-8 String encoding behavior differs between 3.2, 3.3 and master</a>
+</td>
+</tr>
+<tr class=" doc ">
+<td><a href="https://bugs.ruby-lang.org/issues/20411">20411</a>
+</td>
+<td>doc</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20411">Kenrel.autoload? behaviour</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20409">20409</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20409">Missing reporting some invalid breaks</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20401">20401</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20401">Duplicated when clause warning line number</a>
+</td>
+</tr>
+<tr class=" ext ">
+<td><a href="https://bugs.ruby-lang.org/issues/20399">20399</a>
+</td>
+<td>ext</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20399">Ripper doesn&#39;t respect implicit -x</a>
+</td>
+</tr>
+<tr class=" doc ">
+<td><a href="https://bugs.ruby-lang.org/issues/20397">20397</a>
+</td>
+<td>doc</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20397">The nkf license in LEGAL file seems to be obsolete</a>
+</td>
+</tr>
+<tr class=" doc ">
+<td><a href="https://bugs.ruby-lang.org/issues/20395">20395</a>
+</td>
+<td>doc</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20395">Invalid license note in vsnprintf.c</a>
+</td>
+</tr>
+<tr class=" fiber ractor ">
+<td><a href="https://bugs.ruby-lang.org/issues/20346">20346</a>
+</td>
+<td>fiber ractor</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20346">FiberScheduler.unblock not called by Thread#join when Thread body contains Ractor.take</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20344">20344</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20344">argument stack underflow (-1)</a>
+</td>
+</tr>
+<tr class=" ractor ">
+<td><a href="https://bugs.ruby-lang.org/issues/20340">20340</a>
+</td>
+<td>ractor</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20340">Ractor comments not applying to constant targets</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20337">20337</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20337">Complex#inspect mutates the string returned by `real.inspect`</a>
+</td>
+</tr>
+<tr class=" maybenotbug core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20325">20325</a>
+</td>
+<td>maybenotbug core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20325">Enumerator.product.size bug with zero * infinite enumerators</a>
+</td>
+</tr>
 <tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/20319">20319</a>
 </td>
@@ -67,20 +179,6 @@
 </td>
 <td>lib</td>
 <td><a href="https://bugs.ruby-lang.org/issues/20314">Simultaneous Timeout expires may raise an exception after the block</a>
-</td>
-</tr>
-<tr class=" core patch ">
-<td><a href="https://bugs.ruby-lang.org/issues/20310">20310</a>
-</td>
-<td>core patch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20310">ASAN fake stacks need to be marked during GC for non-current execution context</a>
-</td>
-</tr>
-<tr class=" core patch ">
-<td><a href="https://bugs.ruby-lang.org/issues/20307">20307</a>
-</td>
-<td>core patch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20307">`Hash#update` from compare_by_identity hash can have unfrozen string keys</a>
 </td>
 </tr>
 <tr class=" lib notbug patch ">
@@ -116,13 +214,6 @@
 </td>
 <td>build os/arch</td>
 <td><a href="https://bugs.ruby-lang.org/issues/20283">Build failed since Ruby 3.2.3 if Xcode.app was renamed to space contained name.</a>
-</td>
-</tr>
-<tr class=" notbug test ">
-<td><a href="https://bugs.ruby-lang.org/issues/20277">20277</a>
-</td>
-<td>notbug test</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20277">Remove stale `String` test conditionals</a>
 </td>
 </tr>
 <tr class=" ractor patch ">
@@ -181,20 +272,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/20225">Inconsistent behavior of regex matching for a regex has a null loop</a>
 </td>
 </tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/20218">20218</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20218">aset/masgn/op_asgn with keyword arguments</a>
-</td>
-</tr>
-<tr class=" maybenotbug core ">
-<td><a href="https://bugs.ruby-lang.org/issues/20216">20216</a>
-</td>
-<td>maybenotbug core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20216">Circular parameter reference not checked for assignment</a>
-</td>
-</tr>
 <tr class=" maybenotbug ">
 <td><a href="https://bugs.ruby-lang.org/issues/20203">20203</a>
 </td>
@@ -207,13 +284,6 @@
 </td>
 <td>patch core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/20189">`rb_str_resize` does not clear coderange when expanding</a>
-</td>
-</tr>
-<tr class=" core maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/20188">20188</a>
-</td>
-<td>core maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20188">`Module#const_source_location` returns wrong information when real constant was defined but autoload is still ongoing</a>
 </td>
 </tr>
 <tr class=" ext ">
@@ -314,20 +384,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/20103">rb_internal_thread_remove_event_hook() hangs when called from within a Thread hook</a>
 </td>
 </tr>
-<tr class=" os/arch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/20099">20099</a>
-</td>
-<td>os/arch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20099">Ruby 3.3.0 segfaults on s390x musl libc (Alpine Linux) when built with -O3 (default optflags)</a>
-</td>
-</tr>
-<tr class=" regexp ">
-<td><a href="https://bugs.ruby-lang.org/issues/20098">20098</a>
-</td>
-<td>regexp</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20098">Wrong regexp match in ruby 3.2 and 3.3</a>
-</td>
-</tr>
 <tr class=" regexp ">
 <td><a href="https://bugs.ruby-lang.org/issues/20097">20097</a>
 </td>
@@ -368,13 +424,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/20079">alexandria testsuite began to segfault recently</a>
-</td>
-</tr>
-<tr class=" mnthreads ">
-<td><a href="https://bugs.ruby-lang.org/issues/20076">20076</a>
-</td>
-<td>mnthreads</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20076">M:N scheduler is stuck on macOS with RUBY_MN_THREADS=1</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -454,13 +503,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/19981">bootstraptest/test_ractor.rb: Segmentation fault on arm32</a>
 </td>
 </tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/19975">19975</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19975">ISeq#to_binary loses hidden local variable indices</a>
-</td>
-</tr>
 <tr class=" ext ">
 <td><a href="https://bugs.ruby-lang.org/issues/19974">19974</a>
 </td>
@@ -489,25 +531,11 @@
 <td><a href="https://bugs.ruby-lang.org/issues/19920">Ruby 3.1 fails to build with --enable-shared on macos-arm64: is an incompatible architecture (have &#39;arm64&#39;, need &#39;&#39;)</a>
 </td>
 </tr>
-<tr class=" maybenotbug parser ">
-<td><a href="https://bugs.ruby-lang.org/issues/19918">19918</a>
-</td>
-<td>maybenotbug parser</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19918">Should `a[&amp;b]=c` be syntax valid?</a>
-</td>
-</tr>
 <tr class=" patch lib maybenotbug ">
 <td><a href="https://bugs.ruby-lang.org/issues/19910">19910</a>
 </td>
 <td>patch lib maybenotbug</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19910">Set#delete_if behavior inconsistent with Array/Hash</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/19907">19907</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19907">Method calls with keyword arguments in eval leaks callcache and callinfo objects</a>
 </td>
 </tr>
 <tr class=" tracepoint ">
@@ -585,13 +613,6 @@
 </td>
 <td>patch core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19749">Confirm correct behaviour when attaching private method with `#define_method`</a>
-</td>
-</tr>
-<tr class=" os/arch ">
-<td><a href="https://bugs.ruby-lang.org/issues/19716">19716</a>
-</td>
-<td>os/arch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19716">SystemStackError occurs too easily on Alpine Linux (due to small stack size reported by pthread_attr_getstacksize on musl libc)</a>
 </td>
 </tr>
 <tr class=" win core ">
@@ -893,13 +914,6 @@
 </td>
 <td>ractor tracepoint</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19112">Ractor garbage collection breaks/disables all active tracepoints</a>
-</td>
-</tr>
-<tr class=" build win ">
-<td><a href="https://bugs.ruby-lang.org/issues/19048">19048</a>
-</td>
-<td>build win</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19048">Install of Ruby 3.1.x fails on Ubuntu 20.04 running on WSL</a>
 </td>
 </tr>
 <tr class=" win build ">
@@ -1259,13 +1273,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/17998">ractor: process hanging (with ractors initialized, but not being used)</a>
 </td>
 </tr>
-<tr class=" cygwin core ">
-<td><a href="https://bugs.ruby-lang.org/issues/17996">17996</a>
-</td>
-<td>cygwin core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/17996">Cygwin: thread + pipe behavior since Ruby 2.6</a>
-</td>
-</tr>
 <tr class=" regexp ">
 <td><a href="https://bugs.ruby-lang.org/issues/17990">17990</a>
 </td>
@@ -1425,13 +1432,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/16819">Line reporting off by one when reporting line of a hash?</a>
-</td>
-</tr>
-<tr class=" os/arch ">
-<td><a href="https://bugs.ruby-lang.org/issues/16810">16810</a>
-</td>
-<td>os/arch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/16810">ruby segfaults on s390x with musl libc</a>
 </td>
 </tr>
 <tr class=" coverage ">
