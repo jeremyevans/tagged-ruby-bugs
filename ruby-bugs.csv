@@ -60,7 +60,6 @@
 16158,regexp notbug,&quot;st&quot; Character Sequence In Regex Look-Behind Causes Illegal Pattern Error When Combined With POSIX Bracket Expressions And Case Insensitivity Flag
 16497,ext encoding,StringIO#internal_encoding is broken (more severely in 2.7)
 16776,coverage,Regression in coverage library
-16810,os/arch,ruby segfaults on s390x with musl libc
 16819,core,Line reporting off by one when reporting line of a hash?
 16829,maybenotbug fiber,Exceptions raised from within an enumerated method lose part of their stacktrace
 16905,build os/arch,Ruby required to build Ruby on Haiku?
@@ -84,7 +83,6 @@
 17931,build win,Compile fails setup option nodynamic
 17989,regexp,Case insensitive Regexps do not handle characters with overlapping case foldings
 17990,regexp,Inconsistent behavior of Regexp quantifiers over characters with complex case foldings
-17996,cygwin core,Cygwin: thread + pipe behavior since Ruby 2.6
 17998,ractor,"ractor: process hanging (with ractors initialized, but not being used)"
 17999,test os/arch,TestMethod#test_zsuper intermittent timeout error on raspbian10-aarch64 CI
 18002,test os/arch,s390x: Tests failing without LC_ALL env
@@ -136,7 +134,6 @@
 19039,core,Closing an IO being select&#39;ed in another thread does not resume the thread
 19043,ext,Segfault on macOS 11.7 while using StringScanner in multiple threads
 19044,win build,Attempting to compile a static ruby 3.1 fails with MinGW
-19048,build win,Install of Ruby 3.1.x fails on Ubuntu 20.04 running on WSL
 19112,ractor tracepoint,Ractor garbage collection breaks/disables all active tracepoints
 19154,ractor,Specify require and autoload guarantees in ractors
 19157,lib,URI bad component validation can be tricked
@@ -180,7 +177,6 @@
 19696,yjit,YJIT panicked - branch stubs should never enlarge branches
 19701,core,The rb_classext_t::classpath field is not marked for T_ICLASS
 19703,win core,text/binary mode of parent process fd is not properly inherited on windows
-19716,os/arch,SystemStackError occurs too easily on Alpine Linux (due to small stack size reported by pthread_attr_getstacksize on musl libc)
 19749,patch core,Confirm correct behaviour when attaching private method with `#define_method`
 19756,lib,"URI::HTTP.build does not accept a host of `_gateway`, but `URI.parse` will."
 19761,os/arch core,AddressSanitizer fails with Thread and Process
@@ -192,14 +188,11 @@
 19869,test,Mark skipped test somehow
 19875,core perf notbug,Ruby 3.0 -&gt; 3.1 Performance regression in String#count
 19891,tracepoint,rb_mRubyVMFrozenCore is reported by DTrace but ignored by TracePoint
-19907,core,Method calls with keyword arguments in eval leaks callcache and callinfo objects
 19910,patch lib maybenotbug,Set#delete_if behavior inconsistent with Array/Hash
-19918,maybenotbug parser,Should `a[&amp;b]=c` be syntax valid?
 19920,os/arch build,"Ruby 3.1 fails to build with --enable-shared on macos-arm64: is an incompatible architecture (have &#39;arm64&#39;, need &#39;&#39;)"
 19922,core patch,ObjectSpace.dump_all in multiple threads in parallel causes SEGV
 19970,core os/arch,Eval leaks callcache and callinfo objects on arm32 (linux)
 19974,ext,OpenSSL::PKCS7 generates SegFault when parsing invalid data
-19975,core,ISeq#to_binary loses hidden local variable indices
 19981,ractor os/arch,bootstraptest/test_ractor.rb: Segmentation fault on arm32
 19984,test,`make test-bundler-parallel` fails with ` --enable-shared`
 19986,win,Win32: `HOME` is set to just `HOMEDRIVE` if `HOMEPATH` is unset
@@ -211,15 +204,12 @@
 20045,test os/arch,`TestDir#test_home` fails on i686
 20047,thread,ConditionVariable#wait has spurious wakeups from signal traps
 20067,core,IO.pipe `int_enc` and `ext_enc` not working as documented?
-20076,mnthreads,M:N scheduler is stuck on macOS with RUBY_MN_THREADS=1
 20079,core,alexandria testsuite began to segfault recently
 20081,fiber notbug doc,Transfered Fiber doesn&#39;t return to Fiber that started it
 20082,fiber maybenotbug,Killing fibers across threads: unexpected exception
 20088,build os/arch,Ruby 3.3.0 does not cross-complie on arm64-darwin
 20089,fiber,Fiber#kill transfers to root fiber
 20097,regexp,Regexp#match? with empty capture group repeat is inconsistent
-20098,regexp,Wrong regexp match in ruby 3.2 and 3.3
-20099,os/arch core,Ruby 3.3.0 segfaults on s390x musl libc (Alpine Linux) when built with -O3 (default optflags)
 20103,thread,rb_internal_thread_remove_event_hook() hangs when called from within a Thread hook
 20112,ractor perf,Ractors not working properly in ruby 3.3.0
 20146,ractor,Code using Ractor with env `RUBY_MAX_CPU=1` ends with unreachable
@@ -234,11 +224,8 @@
 20171,lib,ri -i ruby interactive  pressing tab does not autocomplete
 20179,build maybenotbug,`--with-ruby-version` configure option is not correctly applied to `rubyhdrdir`
 20186,ext,Ripper does not generate AST for some keywords in Ruby 3.3
-20188,core maybenotbug,`Module#const_source_location` returns wrong information when real constant was defined but autoload is still ongoing
 20189,patch core,`rb_str_resize` does not clear coderange when expanding
 20203,maybenotbug,`TestEnumerable` test failures with GCC 14
-20216,maybenotbug core,Circular parameter reference not checked for assignment
-20218,core,aset/masgn/op_asgn with keyword arguments
 20225,regexp,Inconsistent behavior of regex matching for a regex has a null loop
 20237,core,Unable to unshare(CLONE_NEWUSER) in Linux because of timer thread
 20243,mnthreads,M:N threading VM_ASSERT failure in rb_current_execution_context with clang 17 (on Linux)
@@ -247,15 +234,28 @@
 20267,ractor patch,Hashes that use ar_table aren&#39;t moved properly across ractors
 20269,maybenotbug core,bignum too big to convert into `long&#39; when running String#byteslice on Windows
 20271,ractor patch,Issue with moving embedded string across ractors
-20277,notbug test,Remove stale `String` test conditionals
 20283,build os/arch,Build failed since Ruby 3.2.3 if Xcode.app was renamed to space contained name.
 20285,core patch,Stale inline method caches when refinement modules are reopened
 20294,parser,Parser no longer warns on some duplicated keys
 20299,tracepoint,Tracepoint staying enable after a disable
 20301,lib notbug patch,`Set#add?` does two hash look-ups
-20307,core patch,`Hash#update` from compare_by_identity hash can have unfrozen string keys
-20310,core patch,ASAN fake stacks need to be marked during GC for non-current execution context
 20314,lib,Simultaneous Timeout expires may raise an exception after the block
 20315,regexp,Quantifier expansion leads to different results in Regexp.
 20316,regexp,Regexp quantifier behavior changes in different syntactic context.
 20319,core,Singleton class is being frozen lazily in some cases
+20325,maybenotbug core,Enumerator.product.size bug with zero * infinite enumerators
+20337,core,Complex#inspect mutates the string returned by `real.inspect`
+20340,ractor,Ractor comments not applying to constant targets
+20344,core,argument stack underflow (-1)
+20346,fiber ractor,FiberScheduler.unblock not called by Thread#join when Thread body contains Ractor.take
+20395,doc,Invalid license note in vsnprintf.c
+20397,doc,The nkf license in LEGAL file seems to be obsolete
+20399,ext,Ripper doesn&#39;t respect implicit -x
+20401,core,Duplicated when clause warning line number
+20409,core,Missing reporting some invalid breaks
+20411,doc,Kenrel.autoload? behaviour
+20412,maybenotbug core,"UTF-8 String encoding behavior differs between 3.2, 3.3 and master"
+20414,fiber,`Fiber#raise` should recurse to `resumed_fiber` rather than failing.
+20416,notbug core,IO#read doesn&#39;t preserve buffer encoding if `maxlen = nil`
+20417,core,RubyVM::AbstractSyntaxTree.parse warns about block local variables
+20418,ext maybenotbug,"`StringIO#read(..., buffer)` doesn&#39;t preserve buffer&#39;s encoding"
