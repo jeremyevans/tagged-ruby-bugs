@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>261 Tagged Open Ruby Bugs as of 2024-04-10 04:10:55 +0900</title>
+<title>275 Tagged Open Ruby Bugs as of 2024-05-08 01:42:12 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -11,28 +11,29 @@
 <input type="submit" value="patch" />
 <input type="submit" value="build" />
 <input type="submit" value="regexp" />
-<input type="submit" value="encoding" />
 <input type="submit" value="ext" />
-<input type="submit" value="lib" />
 <input type="submit" value="maybenotbug" />
+<input type="submit" value="encoding" />
+<input type="submit" value="lib" />
 <input type="submit" value="thread" />
 <input type="submit" value="cygwin" />
 <input type="submit" value="test" />
-<input type="submit" value="fiber" />
 <input type="submit" value="perf" />
+<input type="submit" value="fiber" />
 <input type="submit" value="parser" />
 <input type="submit" value="notbug" />
 <input type="submit" value="tracepoint" />
 <input type="submit" value="coverage" />
 <input type="submit" value="doc" />
+<input type="submit" value="backport" />
 <input type="submit" value="autoload" />
 <input type="submit" value="mnthreads" />
 <input type="submit" value="yjit" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">261</span> matched)
+(<span id="matched">275</span> matched)
 <table>
-<caption>261 Tagged Open Ruby Bugs as of 2024-04-10 04:10:55 +0900</caption>
+<caption>275 Tagged Open Ruby Bugs as of 2024-05-08 01:42:12 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -41,18 +42,165 @@
 </tr>
 </thead>
 <tbody>
-<tr class=" ext maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/20418">20418</a>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20473">20473</a>
 </td>
-<td>ext maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20418">`StringIO#read(..., buffer)` doesn&#39;t preserve buffer&#39;s encoding</a>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20473">Ractor array/hash literals</a>
 </td>
 </tr>
 <tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/20417">20417</a>
+<td><a href="https://bugs.ruby-lang.org/issues/20472">20472</a>
 </td>
 <td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20417">RubyVM::AbstractSyntaxTree.parse warns about block local variables</a>
+<td><a href="https://bugs.ruby-lang.org/issues/20472">Ractor support for ** into hash literal</a>
+</td>
+</tr>
+<tr class=" core win ">
+<td><a href="https://bugs.ruby-lang.org/issues/20471">20471</a>
+</td>
+<td>core win</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20471">Problem creating a file on a windows share and copy it afterwards</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20468">20468</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20468">Segfault on safe navigation in for target</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20466">20466</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20466">Interpolated regular expressions have different encoding than interpolated strings</a>
+</td>
+</tr>
+<tr class=" core maybenotbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/20465">20465</a>
+</td>
+<td>core maybenotbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20465">parse.y adds an extra empty string to the AST</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20464">20464</a>
+</td>
+<td>patch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20464">Redundant returns are unreachable in coverage</a>
+</td>
+</tr>
+<tr class=" core maybenotbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/20462">20462</a>
+</td>
+<td>core maybenotbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20462">Native threads are no longer reused</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20461">20461</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20461">Unreadable pipe included in the readable IO of IO.select</a>
+</td>
+</tr>
+<tr class=" ractor ">
+<td><a href="https://bugs.ruby-lang.org/issues/20459">20459</a>
+</td>
+<td>ractor</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20459">Ractor.select() deadlock?</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20457">20457</a>
+</td>
+<td>patch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20457">Final `return` is eliminated from the AST</a>
+</td>
+</tr>
+<tr class=" core maybenotbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/20456">20456</a>
+</td>
+<td>core maybenotbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20456">Hash can get stuck marked as iterating through process forking</a>
+</td>
+</tr>
+<tr class=" core maybenotbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/20455">20455</a>
+</td>
+<td>core maybenotbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20455">rb_errinfo() inconsistent with $! in the caller Ruby code</a>
+</td>
+</tr>
+<tr class=" ext backport ">
+<td><a href="https://bugs.ruby-lang.org/issues/20451">20451</a>
+</td>
+<td>ext backport</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20451">Bad Ruby 3.1.5 backport causes fiddle to fail to build</a>
+</td>
+</tr>
+<tr class=" ext backport ">
+<td><a href="https://bugs.ruby-lang.org/issues/20449">20449</a>
+</td>
+<td>ext backport</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20449">Ripper issue in field production on Ruby 3.1.5</a>
+</td>
+</tr>
+<tr class=" build backport ">
+<td><a href="https://bugs.ruby-lang.org/issues/20447">20447</a>
+</td>
+<td>build backport</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20447">Ruby 3.3.1 broken on i686 due to &quot;incompatible pointer type&quot; error</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20439">20439</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20439">Invalid string format with n$ flag is ignored in some case</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20438">20438</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20438">String format &quot;%\n&quot; and &quot;%\0&quot; does not raise format error</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20433">20433</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20433">Hash.inspect for some hash returns syntax invalid representation</a>
+</td>
+</tr>
+<tr class=" ext ">
+<td><a href="https://bugs.ruby-lang.org/issues/20424">20424</a>
+</td>
+<td>ext</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20424">ZLib::GZipReader always double allocates strings when passed outbuf, significantly increasing memory usage</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20421">20421</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20421">String#index and String#byteindex don&#39;t clear `$~` when offset &gt; size (or bytesize)</a>
+</td>
+</tr>
+<tr class=" doc ">
+<td><a href="https://bugs.ruby-lang.org/issues/20420">20420</a>
+</td>
+<td>doc</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20420">benchmark/gc/redblack.rb license clarification</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20419">20419</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20419">[BUG] inconsistent freelist length with cppflags=&#39;-DRGENGC_CHECK_MODE -DUSE_RUBY_DEBUG_LOG=1&#39;</a>
 </td>
 </tr>
 <tr class=" notbug core ">
@@ -62,25 +210,11 @@
 <td><a href="https://bugs.ruby-lang.org/issues/20416">IO#read doesn&#39;t preserve buffer encoding if `maxlen = nil`</a>
 </td>
 </tr>
-<tr class=" fiber ">
-<td><a href="https://bugs.ruby-lang.org/issues/20414">20414</a>
-</td>
-<td>fiber</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20414">`Fiber#raise` should recurse to `resumed_fiber` rather than failing.</a>
-</td>
-</tr>
 <tr class=" maybenotbug core ">
 <td><a href="https://bugs.ruby-lang.org/issues/20412">20412</a>
 </td>
 <td>maybenotbug core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/20412">UTF-8 String encoding behavior differs between 3.2, 3.3 and master</a>
-</td>
-</tr>
-<tr class=" doc ">
-<td><a href="https://bugs.ruby-lang.org/issues/20411">20411</a>
-</td>
-<td>doc</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20411">Kenrel.autoload? behaviour</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -144,13 +278,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/20337">Complex#inspect mutates the string returned by `real.inspect`</a>
-</td>
-</tr>
-<tr class=" maybenotbug core ">
-<td><a href="https://bugs.ruby-lang.org/issues/20325">20325</a>
-</td>
-<td>maybenotbug core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20325">Enumerator.product.size bug with zero * infinite enumerators</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -237,13 +364,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/20267">Hashes that use ar_table aren&#39;t moved properly across ractors</a>
 </td>
 </tr>
-<tr class=" regexp ">
-<td><a href="https://bugs.ruby-lang.org/issues/20262">20262</a>
-</td>
-<td>regexp</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20262">Regex mismatch between Ruby 3.2.2 and 3.3.0</a>
-</td>
-</tr>
 <tr class=" ractor patch ">
 <td><a href="https://bugs.ruby-lang.org/issues/20255">20255</a>
 </td>
@@ -305,13 +425,6 @@
 </td>
 <td>lib</td>
 <td><a href="https://bugs.ruby-lang.org/issues/20171">ri -i ruby interactive  pressing tab does not autocomplete</a>
-</td>
-</tr>
-<tr class=" ractor ">
-<td><a href="https://bugs.ruby-lang.org/issues/20168">20168</a>
-</td>
-<td>ractor</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20168">Process won&#39;t exit when Ractor.select waiting a Ractor</a>
 </td>
 </tr>
 <tr class=" ractor coverage ">
@@ -501,13 +614,6 @@
 </td>
 <td>ractor os/arch</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19981">bootstraptest/test_ractor.rb: Segmentation fault on arm32</a>
-</td>
-</tr>
-<tr class=" ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/19974">19974</a>
-</td>
-<td>ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19974">OpenSSL::PKCS7 generates SegFault when parsing invalid data</a>
 </td>
 </tr>
 <tr class=" core os/arch ">
@@ -949,13 +1055,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18995">IO#set_encoding sometimes set an IO&#39;s internal encoding to the default external encoding</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18993">18993</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18993">Inconsistent Range#size for Float and Rational</a>
 </td>
 </tr>
 <tr class=" parser ">
