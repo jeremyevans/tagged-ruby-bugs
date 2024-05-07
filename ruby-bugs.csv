@@ -128,7 +128,6 @@
 18940,ractor,Ruby Ractor fails with IOError when handling higher concurrency
 18947,win core,Unexpected Errno::ENAMETOOLONG on Windows
 18966,parser,Strange behavior when numbered parameters and method definition are both used in a block
-18993,core,Inconsistent Range#size for Float and Rational
 18995,core,IO#set_encoding sometimes set an IO&#39;s internal encoding to the default external encoding
 19017,patch lib,Net::HTTP may block when attempting to reuse a persistent connection
 19039,core,Closing an IO being select&#39;ed in another thread does not resume the thread
@@ -192,7 +191,6 @@
 19920,os/arch build,"Ruby 3.1 fails to build with --enable-shared on macos-arm64: is an incompatible architecture (have &#39;arm64&#39;, need &#39;&#39;)"
 19922,core patch,ObjectSpace.dump_all in multiple threads in parallel causes SEGV
 19970,core os/arch,Eval leaks callcache and callinfo objects on arm32 (linux)
-19974,ext,OpenSSL::PKCS7 generates SegFault when parsing invalid data
 19981,ractor os/arch,bootstraptest/test_ractor.rb: Segmentation fault on arm32
 19984,test,`make test-bundler-parallel` fails with ` --enable-shared`
 19986,win,Win32: `HOME` is set to just `HOMEDRIVE` if `HOMEPATH` is unset
@@ -220,7 +218,6 @@
 20158,ractor coverage,Ractor affects Coverage results
 20165,ractor,Ractors moving a Struct breaks beyond the first 3 fields
 20167,ractor coverage,Code execution isn&#39;t recorded in Ractor
-20168,ractor,Process won&#39;t exit when Ractor.select waiting a Ractor
 20171,lib,ri -i ruby interactive  pressing tab does not autocomplete
 20179,build maybenotbug,`--with-ruby-version` configure option is not correctly applied to `rubyhdrdir`
 20186,ext,Ripper does not generate AST for some keywords in Ruby 3.3
@@ -230,7 +227,6 @@
 20237,core,Unable to unshare(CLONE_NEWUSER) in Linux because of timer thread
 20243,mnthreads,M:N threading VM_ASSERT failure in rb_current_execution_context with clang 17 (on Linux)
 20255,ractor patch,Embedded arrays aren&#39;t moved correctly across ractors
-20262,regexp,Regex mismatch between Ruby 3.2.2 and 3.3.0
 20267,ractor patch,Hashes that use ar_table aren&#39;t moved properly across ractors
 20269,maybenotbug core,bignum too big to convert into `long&#39; when running String#byteslice on Windows
 20271,ractor patch,Issue with moving embedded string across ractors
@@ -243,7 +239,6 @@
 20315,regexp,Quantifier expansion leads to different results in Regexp.
 20316,regexp,Regexp quantifier behavior changes in different syntactic context.
 20319,core,Singleton class is being frozen lazily in some cases
-20325,maybenotbug core,Enumerator.product.size bug with zero * infinite enumerators
 20337,core,Complex#inspect mutates the string returned by `real.inspect`
 20340,ractor,Ractor comments not applying to constant targets
 20344,core,argument stack underflow (-1)
@@ -253,9 +248,28 @@
 20399,ext,Ripper doesn&#39;t respect implicit -x
 20401,core,Duplicated when clause warning line number
 20409,core,Missing reporting some invalid breaks
-20411,doc,Kenrel.autoload? behaviour
 20412,maybenotbug core,"UTF-8 String encoding behavior differs between 3.2, 3.3 and master"
-20414,fiber,`Fiber#raise` should recurse to `resumed_fiber` rather than failing.
 20416,notbug core,IO#read doesn&#39;t preserve buffer encoding if `maxlen = nil`
-20417,core,RubyVM::AbstractSyntaxTree.parse warns about block local variables
-20418,ext maybenotbug,"`StringIO#read(..., buffer)` doesn&#39;t preserve buffer&#39;s encoding"
+20419,core,[BUG] inconsistent freelist length with cppflags=&#39;-DRGENGC_CHECK_MODE -DUSE_RUBY_DEBUG_LOG=1&#39;
+20420,doc,benchmark/gc/redblack.rb license clarification
+20421,core,String#index and String#byteindex don&#39;t clear `$~` when offset &gt; size (or bytesize)
+20424,ext,"ZLib::GZipReader always double allocates strings when passed outbuf, significantly increasing memory usage"
+20433,core,Hash.inspect for some hash returns syntax invalid representation
+20438,core,String format &quot;%\n&quot; and &quot;%\0&quot; does not raise format error
+20439,core,Invalid string format with n$ flag is ignored in some case
+20447,build backport,Ruby 3.3.1 broken on i686 due to &quot;incompatible pointer type&quot; error
+20449,ext backport,Ripper issue in field production on Ruby 3.1.5
+20451,ext backport,Bad Ruby 3.1.5 backport causes fiddle to fail to build
+20455,core maybenotbug,rb_errinfo() inconsistent with $! in the caller Ruby code
+20456,core maybenotbug,Hash can get stuck marked as iterating through process forking
+20457,patch core,Final `return` is eliminated from the AST
+20459,ractor,Ractor.select() deadlock?
+20461,core,Unreadable pipe included in the readable IO of IO.select
+20462,core maybenotbug,Native threads are no longer reused
+20464,patch core,Redundant returns are unreachable in coverage
+20465,core maybenotbug,parse.y adds an extra empty string to the AST
+20466,core,Interpolated regular expressions have different encoding than interpolated strings
+20468,core,Segfault on safe navigation in for target
+20471,core win,Problem creating a file on a windows share and copy it afterwards
+20472,core,Ractor support for ** into hash literal
+20473,core,Ractor array/hash literals
