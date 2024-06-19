@@ -1,39 +1,38 @@
 <html>
 <head>
-<title>275 Tagged Open Ruby Bugs as of 2024-05-08 01:42:12 +0900</title>
+<title>266 Tagged Open Ruby Bugs as of 2024-06-20 03:53:23 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
 <p class="filter-buttons">Available Tags: <input type="submit" value="core" />
 <input type="submit" value="ractor" />
 <input type="submit" value="win" />
-<input type="submit" value="os/arch" />
 <input type="submit" value="patch" />
+<input type="submit" value="os/arch" />
 <input type="submit" value="build" />
 <input type="submit" value="regexp" />
-<input type="submit" value="ext" />
 <input type="submit" value="maybenotbug" />
 <input type="submit" value="encoding" />
 <input type="submit" value="lib" />
+<input type="submit" value="ext" />
 <input type="submit" value="thread" />
 <input type="submit" value="cygwin" />
 <input type="submit" value="test" />
 <input type="submit" value="perf" />
 <input type="submit" value="fiber" />
-<input type="submit" value="parser" />
 <input type="submit" value="notbug" />
+<input type="submit" value="parser" />
 <input type="submit" value="tracepoint" />
 <input type="submit" value="coverage" />
 <input type="submit" value="doc" />
-<input type="submit" value="backport" />
 <input type="submit" value="autoload" />
 <input type="submit" value="mnthreads" />
 <input type="submit" value="yjit" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">275</span> matched)
+(<span id="matched">266</span> matched)
 <table>
-<caption>275 Tagged Open Ruby Bugs as of 2024-05-08 01:42:12 +0900</caption>
+<caption>266 Tagged Open Ruby Bugs as of 2024-06-20 03:53:23 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -42,6 +41,83 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20587">20587</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20587">dir.c calls blocking filesystem APIs/system calls while holding the GVL</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20586">20586</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20586">Some filesystem calls in dir.c are missing error handling and can return incorrect results if interrupted</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20571">20571</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20571">Compile error on for loop</a>
+</td>
+</tr>
+<tr class=" build ">
+<td><a href="https://bugs.ruby-lang.org/issues/20560">20560</a>
+</td>
+<td>build</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20560">make install - skipped bundled gems - minor issue</a>
+</td>
+</tr>
+<tr class=" win core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20526">20526</a>
+</td>
+<td>win core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20526">File.open(encoding: &quot;bom|utf-8&quot;) converts &quot;\r\n&quot; to &quot;\n&quot; on Windows</a>
+</td>
+</tr>
+<tr class=" maybenotbug core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20514">20514</a>
+</td>
+<td>maybenotbug core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20514">Open3#capture3 does not receive correct exit code from Heroku but Kernel#system does</a>
+</td>
+</tr>
+<tr class=" notbug core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20505">20505</a>
+</td>
+<td>notbug core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20505">Reassigning the block argument in method body keeps old block when calling super with implicit arguments</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20504">20504</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20504">Interpolated string literal in regexp encoding handling</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20501">20501</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20501">ruby SEGV</a>
+</td>
+</tr>
+<tr class=" ractor perf ">
+<td><a href="https://bugs.ruby-lang.org/issues/20489">20489</a>
+</td>
+<td>ractor perf</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20489">Ractor behavior strange in ruby master</a>
+</td>
+</tr>
+<tr class=" win build ">
+<td><a href="https://bugs.ruby-lang.org/issues/20480">20480</a>
+</td>
+<td>win build</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20480">Complie failure for unable to configure NET_LUID using msys2 mingw64-gcc</a>
+</td>
+</tr>
 <tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/20473">20473</a>
 </td>
@@ -61,13 +137,6 @@
 </td>
 <td>core win</td>
 <td><a href="https://bugs.ruby-lang.org/issues/20471">Problem creating a file on a windows share and copy it afterwards</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/20468">20468</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20468">Segfault on safe navigation in for target</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -105,13 +174,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/20461">Unreadable pipe included in the readable IO of IO.select</a>
 </td>
 </tr>
-<tr class=" ractor ">
-<td><a href="https://bugs.ruby-lang.org/issues/20459">20459</a>
-</td>
-<td>ractor</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20459">Ractor.select() deadlock?</a>
-</td>
-</tr>
 <tr class=" patch core ">
 <td><a href="https://bugs.ruby-lang.org/issues/20457">20457</a>
 </td>
@@ -133,60 +195,11 @@
 <td><a href="https://bugs.ruby-lang.org/issues/20455">rb_errinfo() inconsistent with $! in the caller Ruby code</a>
 </td>
 </tr>
-<tr class=" ext backport ">
-<td><a href="https://bugs.ruby-lang.org/issues/20451">20451</a>
-</td>
-<td>ext backport</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20451">Bad Ruby 3.1.5 backport causes fiddle to fail to build</a>
-</td>
-</tr>
-<tr class=" ext backport ">
-<td><a href="https://bugs.ruby-lang.org/issues/20449">20449</a>
-</td>
-<td>ext backport</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20449">Ripper issue in field production on Ruby 3.1.5</a>
-</td>
-</tr>
-<tr class=" build backport ">
-<td><a href="https://bugs.ruby-lang.org/issues/20447">20447</a>
-</td>
-<td>build backport</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20447">Ruby 3.3.1 broken on i686 due to &quot;incompatible pointer type&quot; error</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/20439">20439</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20439">Invalid string format with n$ flag is ignored in some case</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/20438">20438</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20438">String format &quot;%\n&quot; and &quot;%\0&quot; does not raise format error</a>
-</td>
-</tr>
 <tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/20433">20433</a>
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/20433">Hash.inspect for some hash returns syntax invalid representation</a>
-</td>
-</tr>
-<tr class=" ext ">
-<td><a href="https://bugs.ruby-lang.org/issues/20424">20424</a>
-</td>
-<td>ext</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20424">ZLib::GZipReader always double allocates strings when passed outbuf, significantly increasing memory usage</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/20421">20421</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20421">String#index and String#byteindex don&#39;t clear `$~` when offset &gt; size (or bytesize)</a>
 </td>
 </tr>
 <tr class=" doc ">
@@ -203,13 +216,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/20419">[BUG] inconsistent freelist length with cppflags=&#39;-DRGENGC_CHECK_MODE -DUSE_RUBY_DEBUG_LOG=1&#39;</a>
 </td>
 </tr>
-<tr class=" notbug core ">
-<td><a href="https://bugs.ruby-lang.org/issues/20416">20416</a>
-</td>
-<td>notbug core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20416">IO#read doesn&#39;t preserve buffer encoding if `maxlen = nil`</a>
-</td>
-</tr>
 <tr class=" maybenotbug core ">
 <td><a href="https://bugs.ruby-lang.org/issues/20412">20412</a>
 </td>
@@ -224,25 +230,11 @@
 <td><a href="https://bugs.ruby-lang.org/issues/20409">Missing reporting some invalid breaks</a>
 </td>
 </tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/20401">20401</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20401">Duplicated when clause warning line number</a>
-</td>
-</tr>
 <tr class=" ext ">
 <td><a href="https://bugs.ruby-lang.org/issues/20399">20399</a>
 </td>
 <td>ext</td>
 <td><a href="https://bugs.ruby-lang.org/issues/20399">Ripper doesn&#39;t respect implicit -x</a>
-</td>
-</tr>
-<tr class=" doc ">
-<td><a href="https://bugs.ruby-lang.org/issues/20397">20397</a>
-</td>
-<td>doc</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20397">The nkf license in LEGAL file seems to be obsolete</a>
 </td>
 </tr>
 <tr class=" doc ">
@@ -320,20 +312,6 @@
 </td>
 <td>tracepoint</td>
 <td><a href="https://bugs.ruby-lang.org/issues/20299">Tracepoint staying enable after a disable</a>
-</td>
-</tr>
-<tr class=" parser ">
-<td><a href="https://bugs.ruby-lang.org/issues/20294">20294</a>
-</td>
-<td>parser</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20294">Parser no longer warns on some duplicated keys</a>
-</td>
-</tr>
-<tr class=" core patch ">
-<td><a href="https://bugs.ruby-lang.org/issues/20285">20285</a>
-</td>
-<td>core patch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20285">Stale inline method caches when refinement modules are reopened</a>
 </td>
 </tr>
 <tr class=" build os/arch ">
@@ -453,20 +431,6 @@
 </td>
 <td>fiber</td>
 <td><a href="https://bugs.ruby-lang.org/issues/20155">Using value of rb_fiber_scheduler_current() crashes Ruby</a>
-</td>
-</tr>
-<tr class=" fiber os/arch patch ">
-<td><a href="https://bugs.ruby-lang.org/issues/20154">20154</a>
-</td>
-<td>fiber os/arch patch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20154">aarch64: configure overrides `-mbranch-protection` if it was set in CFLAGS via environment</a>
-</td>
-</tr>
-<tr class=" os/arch build ">
-<td><a href="https://bugs.ruby-lang.org/issues/20151">20151</a>
-</td>
-<td>os/arch build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20151">Can&#39;t build Ruby 3.1 on FreeBSD 14.0</a>
 </td>
 </tr>
 <tr class=" os/arch build ">
@@ -630,13 +594,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/19922">ObjectSpace.dump_all in multiple threads in parallel causes SEGV</a>
 </td>
 </tr>
-<tr class=" os/arch build ">
-<td><a href="https://bugs.ruby-lang.org/issues/19920">19920</a>
-</td>
-<td>os/arch build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19920">Ruby 3.1 fails to build with --enable-shared on macos-arm64: is an incompatible architecture (have &#39;arm64&#39;, need &#39;&#39;)</a>
-</td>
-</tr>
 <tr class=" patch lib maybenotbug ">
 <td><a href="https://bugs.ruby-lang.org/issues/19910">19910</a>
 </td>
@@ -712,13 +669,6 @@
 </td>
 <td>lib</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19756">URI::HTTP.build does not accept a host of `_gateway`, but `URI.parse` will.</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/19749">19749</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19749">Confirm correct behaviour when attaching private method with `#define_method`</a>
 </td>
 </tr>
 <tr class=" win core ">
@@ -1153,13 +1103,6 @@
 </td>
 <td>win core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18661">Net::HTTP behavior changed between 2.6 and 3.1 on windows.</a>
-</td>
-</tr>
-<tr class=" maybenotbug core ">
-<td><a href="https://bugs.ruby-lang.org/issues/18622">18622</a>
-</td>
-<td>maybenotbug core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18622">const_get still looks in Object, while lexical constant lookup no longer does</a>
 </td>
 </tr>
 <tr class=" build ">
@@ -1706,13 +1649,6 @@
 </td>
 <td>patch tracepoint</td>
 <td><a href="https://bugs.ruby-lang.org/issues/14582">Unable to use `method__entry` and `method_return` tracing probes since 2.5</a>
-</td>
-</tr>
-<tr class=" os/arch build ">
-<td><a href="https://bugs.ruby-lang.org/issues/14480">14480</a>
-</td>
-<td>os/arch build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/14480">miniruby crashing when compiled with -O2 or -O1 on aarch64</a>
 </td>
 </tr>
 <tr class=" core ">
