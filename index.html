@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>266 Tagged Open Ruby Bugs as of 2024-06-20 03:53:23 +0900</title>
+<title>272 Tagged Open Ruby Bugs as of 2024-07-04 03:26:44 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -8,20 +8,20 @@
 <input type="submit" value="ractor" />
 <input type="submit" value="win" />
 <input type="submit" value="patch" />
-<input type="submit" value="os/arch" />
 <input type="submit" value="build" />
+<input type="submit" value="os/arch" />
 <input type="submit" value="regexp" />
 <input type="submit" value="maybenotbug" />
 <input type="submit" value="encoding" />
 <input type="submit" value="lib" />
 <input type="submit" value="ext" />
+<input type="submit" value="test" />
 <input type="submit" value="thread" />
 <input type="submit" value="cygwin" />
-<input type="submit" value="test" />
 <input type="submit" value="perf" />
+<input type="submit" value="parser" />
 <input type="submit" value="fiber" />
 <input type="submit" value="notbug" />
-<input type="submit" value="parser" />
 <input type="submit" value="tracepoint" />
 <input type="submit" value="coverage" />
 <input type="submit" value="doc" />
@@ -30,9 +30,9 @@
 <input type="submit" value="yjit" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">266</span> matched)
+(<span id="matched">272</span> matched)
 <table>
-<caption>266 Tagged Open Ruby Bugs as of 2024-06-20 03:53:23 +0900</caption>
+<caption>272 Tagged Open Ruby Bugs as of 2024-07-04 03:26:44 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -41,6 +41,62 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20607">20607</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20607">Exception messages are inconsistent when thread-local variables are accessed</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20606">20606</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20606">Thread#thread_variable_get, Thread#thread_variable? and Thread#[] methods handle non-String/Symbol parameter values differently</a>
+</td>
+</tr>
+<tr class=" build ">
+<td><a href="https://bugs.ruby-lang.org/issues/20604">20604</a>
+</td>
+<td>build</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20604">Performance regression in C++ extensions due to lack of optimization flags by default since Ruby 2.7</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20602">20602</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20602">RangeError: integer 128496650801200 too big to convert to &#39;int&#39; without YJIT since cdf33ed5f37f9649c482c3ba1d245f0d80ac01ce</a>
+</td>
+</tr>
+<tr class=" build ">
+<td><a href="https://bugs.ruby-lang.org/issues/20601">20601</a>
+</td>
+<td>build</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20601">Configuration flags are not properly propagated to assembler</a>
+</td>
+</tr>
+<tr class=" parser ">
+<td><a href="https://bugs.ruby-lang.org/issues/20597">20597</a>
+</td>
+<td>parser</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20597">`eval(&#39;break if false&#39;)` should raise SyntaxError but retuns nil</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20593">20593</a>
+</td>
+<td>patch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20593">`Kernel#format` emits a `too many arguments for format string` warning when called with a single hash and no key is used</a>
+</td>
+</tr>
+<tr class=" test ">
+<td><a href="https://bugs.ruby-lang.org/issues/20591">20591</a>
+</td>
+<td>test</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20591">macOS head - all are using OpenSSL 1.1.1?</a>
+</td>
+</tr>
 <tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/20587">20587</a>
 </td>
@@ -172,13 +228,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/20461">Unreadable pipe included in the readable IO of IO.select</a>
-</td>
-</tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/20457">20457</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20457">Final `return` is eliminated from the AST</a>
 </td>
 </tr>
 <tr class=" core maybenotbug ">
@@ -522,13 +571,6 @@
 </td>
 <td>test os/arch</td>
 <td><a href="https://bugs.ruby-lang.org/issues/20045">`TestDir#test_home` fails on i686</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/20043">20043</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20043">`defined?` checks for method existence but only sometimes</a>
 </td>
 </tr>
 <tr class=" core ">
