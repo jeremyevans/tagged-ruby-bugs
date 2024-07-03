@@ -194,7 +194,6 @@
 20009,core,Marshal.load raises exception when load dumped class include non-ASCII
 20020,regexp,Segfault running regexp match?
 20041,core,Array destructuring and default values in parameters
-20043,core,`defined?` checks for method existence but only sometimes
 20045,test os/arch,`TestDir#test_home` fails on i686
 20047,thread,ConditionVariable#wait has spurious wakeups from signal traps
 20067,core,IO.pipe `int_enc` and `ext_enc` not working as documented?
@@ -244,7 +243,6 @@
 20433,core,Hash.inspect for some hash returns syntax invalid representation
 20455,core maybenotbug,rb_errinfo() inconsistent with $! in the caller Ruby code
 20456,core maybenotbug,Hash can get stuck marked as iterating through process forking
-20457,patch core,Final `return` is eliminated from the AST
 20461,core,Unreadable pipe included in the readable IO of IO.select
 20462,core maybenotbug,Native threads are no longer reused
 20464,patch core,Redundant returns are unreachable in coverage
@@ -264,3 +262,11 @@
 20571,core,Compile error on for loop
 20586,core,Some filesystem calls in dir.c are missing error handling and can return incorrect results if interrupted
 20587,core,dir.c calls blocking filesystem APIs/system calls while holding the GVL
+20591,test,macOS head - all are using OpenSSL 1.1.1?
+20593,patch core,`Kernel#format` emits a `too many arguments for format string` warning when called with a single hash and no key is used
+20597,parser,`eval(&#39;break if false&#39;)` should raise SyntaxError but retuns nil
+20601,build,Configuration flags are not properly propagated to assembler
+20602,core,RangeError: integer 128496650801200 too big to convert to &#39;int&#39; without YJIT since cdf33ed5f37f9649c482c3ba1d245f0d80ac01ce
+20604,build,Performance regression in C++ extensions due to lack of optimization flags by default since Ruby 2.7
+20606,core,"Thread#thread_variable_get, Thread#thread_variable? and Thread#[] methods handle non-String/Symbol parameter values differently"
+20607,core,Exception messages are inconsistent when thread-local variables are accessed
