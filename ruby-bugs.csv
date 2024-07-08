@@ -89,7 +89,6 @@
 18010,regexp,Character class with single character gets case-folded with following string
 18012,regexp,Case-insensitive character classes can only match multiple code points when top-level character class is not negated
 18013,regexp,Unexpected results when mxiing negated character classes and case-folding
-18061,os/arch, Execshield test: libruby.so.N.N.N: FAIL: property-note test because no .note.gnu.property section found
 18080,parser,Syntax error on one-line pattern matching
 18119,ractor,Ractor crashes when instantiating classes
 18131,os/arch,addr2line.c: Some inlined functions mistakenly shown
@@ -264,9 +263,11 @@
 20587,core,dir.c calls blocking filesystem APIs/system calls while holding the GVL
 20591,test,macOS head - all are using OpenSSL 1.1.1?
 20593,patch core,`Kernel#format` emits a `too many arguments for format string` warning when called with a single hash and no key is used
-20597,parser,`eval(&#39;break if false&#39;)` should raise SyntaxError but retuns nil
-20601,build,Configuration flags are not properly propagated to assembler
+20597,patch parser,`eval(&#39;break if false&#39;)` should raise SyntaxError but retuns nil
 20602,core,RangeError: integer 128496650801200 too big to convert to &#39;int&#39; without YJIT since cdf33ed5f37f9649c482c3ba1d245f0d80ac01ce
 20604,build,Performance regression in C++ extensions due to lack of optimization flags by default since Ruby 2.7
-20606,core,"Thread#thread_variable_get, Thread#thread_variable? and Thread#[] methods handle non-String/Symbol parameter values differently"
-20607,core,Exception messages are inconsistent when thread-local variables are accessed
+20607,patch core,Exception messages are inconsistent when thread-local variables are accessed
+20608,patch perf,Hash#find always allocates each iterated pair
+20614,win core,Integer#size returns incorrect values on 64-bit Windows
+20616,maybenotbug,&lt;jemalloc&gt;: Error in munmap(): Invalid argument
+20617,encoding,/\pArabic/ character property doesn&#39;t match certain Arabic characters
