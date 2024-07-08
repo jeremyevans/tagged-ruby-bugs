@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>272 Tagged Open Ruby Bugs as of 2024-07-04 03:26:44 +0900</title>
+<title>273 Tagged Open Ruby Bugs as of 2024-07-09 03:41:12 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -10,8 +10,8 @@
 <input type="submit" value="patch" />
 <input type="submit" value="build" />
 <input type="submit" value="os/arch" />
-<input type="submit" value="regexp" />
 <input type="submit" value="maybenotbug" />
+<input type="submit" value="regexp" />
 <input type="submit" value="encoding" />
 <input type="submit" value="lib" />
 <input type="submit" value="ext" />
@@ -30,9 +30,9 @@
 <input type="submit" value="yjit" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">272</span> matched)
+(<span id="matched">273</span> matched)
 <table>
-<caption>272 Tagged Open Ruby Bugs as of 2024-07-04 03:26:44 +0900</caption>
+<caption>273 Tagged Open Ruby Bugs as of 2024-07-09 03:41:12 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -41,18 +41,39 @@
 </tr>
 </thead>
 <tbody>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/20607">20607</a>
+<tr class=" encoding ">
+<td><a href="https://bugs.ruby-lang.org/issues/20617">20617</a>
 </td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20607">Exception messages are inconsistent when thread-local variables are accessed</a>
+<td>encoding</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20617">/\pArabic/ character property doesn&#39;t match certain Arabic characters</a>
 </td>
 </tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/20606">20606</a>
+<tr class=" maybenotbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/20616">20616</a>
 </td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20606">Thread#thread_variable_get, Thread#thread_variable? and Thread#[] methods handle non-String/Symbol parameter values differently</a>
+<td>maybenotbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20616">&lt;jemalloc&gt;: Error in munmap(): Invalid argument</a>
+</td>
+</tr>
+<tr class=" win core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20614">20614</a>
+</td>
+<td>win core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20614">Integer#size returns incorrect values on 64-bit Windows</a>
+</td>
+</tr>
+<tr class=" patch perf ">
+<td><a href="https://bugs.ruby-lang.org/issues/20608">20608</a>
+</td>
+<td>patch perf</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20608">Hash#find always allocates each iterated pair</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20607">20607</a>
+</td>
+<td>patch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20607">Exception messages are inconsistent when thread-local variables are accessed</a>
 </td>
 </tr>
 <tr class=" build ">
@@ -69,17 +90,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/20602">RangeError: integer 128496650801200 too big to convert to &#39;int&#39; without YJIT since cdf33ed5f37f9649c482c3ba1d245f0d80ac01ce</a>
 </td>
 </tr>
-<tr class=" build ">
-<td><a href="https://bugs.ruby-lang.org/issues/20601">20601</a>
-</td>
-<td>build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20601">Configuration flags are not properly propagated to assembler</a>
-</td>
-</tr>
-<tr class=" parser ">
+<tr class=" patch parser ">
 <td><a href="https://bugs.ruby-lang.org/issues/20597">20597</a>
 </td>
-<td>parser</td>
+<td>patch parser</td>
 <td><a href="https://bugs.ruby-lang.org/issues/20597">`eval(&#39;break if false&#39;)` should raise SyntaxError but retuns nil</a>
 </td>
 </tr>
@@ -1299,13 +1313,6 @@
 </td>
 <td>parser</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18080">Syntax error on one-line pattern matching</a>
-</td>
-</tr>
-<tr class=" os/arch ">
-<td><a href="https://bugs.ruby-lang.org/issues/18061">18061</a>
-</td>
-<td>os/arch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18061"> Execshield test: libruby.so.N.N.N: FAIL: property-note test because no .note.gnu.property section found</a>
 </td>
 </tr>
 <tr class=" regexp ">
