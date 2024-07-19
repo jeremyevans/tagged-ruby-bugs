@@ -8,7 +8,6 @@
 8444,core,Regexp vars $~ and friends are not thread local
 8445,patch core,IO.open and IO#set_enconding does not support :fallback option
 9010,build,./configure --prefix= cannot handle directories with spaces
-9115,patch lib,Logger traps all exceptions; breaks Timeout
 9189,win encoding,Build failure on Windows in case of nonascii TEMP environment.
 9409,cygwin encoding,Cygwin で &quot;filesystem&quot; の encoding が正しくないケース
 9760,build,mkmf does not allow for linking against custom libraries when a system library is present
@@ -170,7 +169,6 @@
 19609,win lib,"net/http ignores open_timeout, read_timeout on Windows"
 19631,maybenotbug core,module_eval does not propulate absolute_path for Kernel.caller_locations
 19636,encoding,String#encode EUC_JIS_2004で&quot;¥&quot;がEncoding::UndefinedConversionErrorになる
-19696,yjit,YJIT panicked - branch stubs should never enlarge branches
 19701,core,The rb_classext_t::classpath field is not marked for T_ICLASS
 19703,win core,text/binary mode of parent process fd is not properly inherited on windows
 19756,lib,"URI::HTTP.build does not accept a host of `_gateway`, but `URI.parse` will."
@@ -254,20 +252,22 @@
 20489,ractor perf,Ractor behavior strange in ruby master
 20501,core,ruby SEGV
 20504,core,Interpolated string literal in regexp encoding handling
-20505,notbug core,Reassigning the block argument in method body keeps old block when calling super with implicit arguments
 20514,maybenotbug core,Open3#capture3 does not receive correct exit code from Heroku but Kernel#system does
 20526,win core,File.open(encoding: &quot;bom|utf-8&quot;) converts &quot;\r\n&quot; to &quot;\n&quot; on Windows
 20560,build,make install - skipped bundled gems - minor issue
 20571,core,Compile error on for loop
 20586,core,Some filesystem calls in dir.c are missing error handling and can return incorrect results if interrupted
-20587,core,dir.c calls blocking filesystem APIs/system calls while holding the GVL
 20591,test,macOS head - all are using OpenSSL 1.1.1?
-20593,patch core,`Kernel#format` emits a `too many arguments for format string` warning when called with a single hash and no key is used
 20597,patch parser,`eval(&#39;break if false&#39;)` should raise SyntaxError but retuns nil
-20602,core,RangeError: integer 128496650801200 too big to convert to &#39;int&#39; without YJIT since cdf33ed5f37f9649c482c3ba1d245f0d80ac01ce
-20604,build,Performance regression in C++ extensions due to lack of optimization flags by default since Ruby 2.7
 20607,patch core,Exception messages are inconsistent when thread-local variables are accessed
-20608,patch perf,Hash#find always allocates each iterated pair
 20614,win core,Integer#size returns incorrect values on 64-bit Windows
-20616,maybenotbug,&lt;jemalloc&gt;: Error in munmap(): Invalid argument
-20617,encoding,/\pArabic/ character property doesn&#39;t match certain Arabic characters
+20620,notbug,singleton_method undefined for module using &quot;extend self&quot;
+20623,core,Unexpected behavior of blocks in Enumerator::Lazy#zip
+20631,build os/arch,Build failure with Xcode 16 beta and macOS 15 (Sequoia) Beta
+20634,ractor,ruby uses 1/2 (7 out of 16) cores for 16 ractors with RUBY_MAX_CPU=16 environment variable set
+20635,build os/arch,Can&#39;t build fat binaries on Darwin (Mac OS X)
+20637,notbug,SyntaxError class definition in method body can be bypassed
+20638,mn_threads,Threads not collected by GC under RUBY_MN_THREADS=1
+20640,core patch,"Evaluation Order Issue in f(**h, &amp;h.delete(key))"
+20641,lib perf patch,`lib/bundled_gems.rb` makes `Kernel.require` over 100x slower
+20642,maybenotbug yjit,YJIT prevents hardening
