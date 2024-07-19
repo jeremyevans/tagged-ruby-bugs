@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>273 Tagged Open Ruby Bugs as of 2024-07-09 03:41:12 +0900</title>
+<title>273 Tagged Open Ruby Bugs as of 2024-07-20 03:26:53 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -8,8 +8,8 @@
 <input type="submit" value="ractor" />
 <input type="submit" value="win" />
 <input type="submit" value="patch" />
-<input type="submit" value="build" />
 <input type="submit" value="os/arch" />
+<input type="submit" value="build" />
 <input type="submit" value="maybenotbug" />
 <input type="submit" value="regexp" />
 <input type="submit" value="encoding" />
@@ -19,20 +19,21 @@
 <input type="submit" value="thread" />
 <input type="submit" value="cygwin" />
 <input type="submit" value="perf" />
+<input type="submit" value="notbug" />
 <input type="submit" value="parser" />
 <input type="submit" value="fiber" />
-<input type="submit" value="notbug" />
 <input type="submit" value="tracepoint" />
 <input type="submit" value="coverage" />
 <input type="submit" value="doc" />
 <input type="submit" value="autoload" />
 <input type="submit" value="mnthreads" />
+<input type="submit" value="mn_threads" />
 <input type="submit" value="yjit" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
 (<span id="matched">273</span> matched)
 <table>
-<caption>273 Tagged Open Ruby Bugs as of 2024-07-09 03:41:12 +0900</caption>
+<caption>273 Tagged Open Ruby Bugs as of 2024-07-20 03:26:53 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -41,18 +42,74 @@
 </tr>
 </thead>
 <tbody>
-<tr class=" encoding ">
-<td><a href="https://bugs.ruby-lang.org/issues/20617">20617</a>
+<tr class=" maybenotbug yjit ">
+<td><a href="https://bugs.ruby-lang.org/issues/20642">20642</a>
 </td>
-<td>encoding</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20617">/\pArabic/ character property doesn&#39;t match certain Arabic characters</a>
+<td>maybenotbug yjit</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20642">YJIT prevents hardening</a>
 </td>
 </tr>
-<tr class=" maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/20616">20616</a>
+<tr class=" lib perf patch ">
+<td><a href="https://bugs.ruby-lang.org/issues/20641">20641</a>
 </td>
-<td>maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20616">&lt;jemalloc&gt;: Error in munmap(): Invalid argument</a>
+<td>lib perf patch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20641">`lib/bundled_gems.rb` makes `Kernel.require` over 100x slower</a>
+</td>
+</tr>
+<tr class=" core patch ">
+<td><a href="https://bugs.ruby-lang.org/issues/20640">20640</a>
+</td>
+<td>core patch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20640">Evaluation Order Issue in f(**h, &amp;h.delete(key))</a>
+</td>
+</tr>
+<tr class=" mn_threads ">
+<td><a href="https://bugs.ruby-lang.org/issues/20638">20638</a>
+</td>
+<td>mn_threads</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20638">Threads not collected by GC under RUBY_MN_THREADS=1</a>
+</td>
+</tr>
+<tr class=" notbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/20637">20637</a>
+</td>
+<td>notbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20637">SyntaxError class definition in method body can be bypassed</a>
+</td>
+</tr>
+<tr class=" build os/arch ">
+<td><a href="https://bugs.ruby-lang.org/issues/20635">20635</a>
+</td>
+<td>build os/arch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20635">Can&#39;t build fat binaries on Darwin (Mac OS X)</a>
+</td>
+</tr>
+<tr class=" ractor ">
+<td><a href="https://bugs.ruby-lang.org/issues/20634">20634</a>
+</td>
+<td>ractor</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20634">ruby uses 1/2 (7 out of 16) cores for 16 ractors with RUBY_MAX_CPU=16 environment variable set</a>
+</td>
+</tr>
+<tr class=" build os/arch ">
+<td><a href="https://bugs.ruby-lang.org/issues/20631">20631</a>
+</td>
+<td>build os/arch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20631">Build failure with Xcode 16 beta and macOS 15 (Sequoia) Beta</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20623">20623</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20623">Unexpected behavior of blocks in Enumerator::Lazy#zip</a>
+</td>
+</tr>
+<tr class=" notbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/20620">20620</a>
+</td>
+<td>notbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20620">singleton_method undefined for module using &quot;extend self&quot;</a>
 </td>
 </tr>
 <tr class=" win core ">
@@ -62,32 +119,11 @@
 <td><a href="https://bugs.ruby-lang.org/issues/20614">Integer#size returns incorrect values on 64-bit Windows</a>
 </td>
 </tr>
-<tr class=" patch perf ">
-<td><a href="https://bugs.ruby-lang.org/issues/20608">20608</a>
-</td>
-<td>patch perf</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20608">Hash#find always allocates each iterated pair</a>
-</td>
-</tr>
 <tr class=" patch core ">
 <td><a href="https://bugs.ruby-lang.org/issues/20607">20607</a>
 </td>
 <td>patch core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/20607">Exception messages are inconsistent when thread-local variables are accessed</a>
-</td>
-</tr>
-<tr class=" build ">
-<td><a href="https://bugs.ruby-lang.org/issues/20604">20604</a>
-</td>
-<td>build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20604">Performance regression in C++ extensions due to lack of optimization flags by default since Ruby 2.7</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/20602">20602</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20602">RangeError: integer 128496650801200 too big to convert to &#39;int&#39; without YJIT since cdf33ed5f37f9649c482c3ba1d245f0d80ac01ce</a>
 </td>
 </tr>
 <tr class=" patch parser ">
@@ -97,25 +133,11 @@
 <td><a href="https://bugs.ruby-lang.org/issues/20597">`eval(&#39;break if false&#39;)` should raise SyntaxError but retuns nil</a>
 </td>
 </tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/20593">20593</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20593">`Kernel#format` emits a `too many arguments for format string` warning when called with a single hash and no key is used</a>
-</td>
-</tr>
 <tr class=" test ">
 <td><a href="https://bugs.ruby-lang.org/issues/20591">20591</a>
 </td>
 <td>test</td>
 <td><a href="https://bugs.ruby-lang.org/issues/20591">macOS head - all are using OpenSSL 1.1.1?</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/20587">20587</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20587">dir.c calls blocking filesystem APIs/system calls while holding the GVL</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -151,13 +173,6 @@
 </td>
 <td>maybenotbug core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/20514">Open3#capture3 does not receive correct exit code from Heroku but Kernel#system does</a>
-</td>
-</tr>
-<tr class=" notbug core ">
-<td><a href="https://bugs.ruby-lang.org/issues/20505">20505</a>
-</td>
-<td>notbug core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20505">Reassigning the block argument in method body keeps old block when calling super with implicit arguments</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -739,13 +754,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19701">The rb_classext_t::classpath field is not marked for T_ICLASS</a>
-</td>
-</tr>
-<tr class=" yjit ">
-<td><a href="https://bugs.ruby-lang.org/issues/19696">19696</a>
-</td>
-<td>yjit</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19696">YJIT panicked - branch stubs should never enlarge branches</a>
 </td>
 </tr>
 <tr class=" encoding ">
@@ -1873,13 +1881,6 @@
 </td>
 <td>win encoding</td>
 <td><a href="https://bugs.ruby-lang.org/issues/9189">Build failure on Windows in case of nonascii TEMP environment.</a>
-</td>
-</tr>
-<tr class=" patch lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/9115">9115</a>
-</td>
-<td>patch lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/9115">Logger traps all exceptions; breaks Timeout</a>
 </td>
 </tr>
 <tr class=" build ">
