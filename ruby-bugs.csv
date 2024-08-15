@@ -137,7 +137,6 @@
 19192,core win,"IO has third data mode, document is incomplete."
 19231,core,Integer#step and Float::INFINITY - inconsistent behaviour when called with and without a block
 19251,test,Limit amount of test failures due to updates of tzdata
-19266,lib,URI::Generic should use URI::RFC3986_PARSER instead of URI::DEFAULT_PARSER
 19268,build win,Mingw64 Build Failure
 19288,ractor perf,Ractor JSON parsing significantly slower than linear parsing
 19297,test,Don&#39;t download content from internet to execute Ruby test suite
@@ -197,7 +196,6 @@
 20079,core,alexandria testsuite began to segfault recently
 20081,fiber notbug doc,Transfered Fiber doesn&#39;t return to Fiber that started it
 20082,fiber maybenotbug,Killing fibers across threads: unexpected exception
-20088,build os/arch,Ruby 3.3.0 does not cross-complie on arm64-darwin
 20089,fiber,Fiber#kill transfers to root fiber
 20097,regexp,Regexp#match? with empty capture group repeat is inconsistent
 20103,thread,rb_internal_thread_remove_event_hook() hangs when called from within a Thread hook
@@ -229,7 +227,6 @@
 20319,core,Singleton class is being frozen lazily in some cases
 20337,core,Complex#inspect mutates the string returned by `real.inspect`
 20340,ractor,Ractor comments not applying to constant targets
-20344,core,argument stack underflow (-1)
 20346,fiber ractor,FiberScheduler.unblock not called by Thread#join when Thread body contains Ractor.take
 20395,doc,Invalid license note in vsnprintf.c
 20399,ext,Ripper doesn&#39;t respect implicit -x
@@ -252,22 +249,19 @@
 20489,ractor perf,Ractor behavior strange in ruby master
 20501,core,ruby SEGV
 20504,core,Interpolated string literal in regexp encoding handling
-20514,maybenotbug core,Open3#capture3 does not receive correct exit code from Heroku but Kernel#system does
 20526,win core,File.open(encoding: &quot;bom|utf-8&quot;) converts &quot;\r\n&quot; to &quot;\n&quot; on Windows
 20560,build,make install - skipped bundled gems - minor issue
-20571,core,Compile error on for loop
 20586,core,Some filesystem calls in dir.c are missing error handling and can return incorrect results if interrupted
 20591,test,macOS head - all are using OpenSSL 1.1.1?
 20597,patch parser,`eval(&#39;break if false&#39;)` should raise SyntaxError but retuns nil
 20607,patch core,Exception messages are inconsistent when thread-local variables are accessed
-20614,win core,Integer#size returns incorrect values on 64-bit Windows
 20620,notbug,singleton_method undefined for module using &quot;extend self&quot;
-20623,core,Unexpected behavior of blocks in Enumerator::Lazy#zip
+20623,core patch,Unexpected behavior of blocks in Enumerator::Lazy#zip
 20631,build os/arch,Build failure with Xcode 16 beta and macOS 15 (Sequoia) Beta
-20634,ractor,ruby uses 1/2 (7 out of 16) cores for 16 ractors with RUBY_MAX_CPU=16 environment variable set
-20635,build os/arch,Can&#39;t build fat binaries on Darwin (Mac OS X)
-20637,notbug,SyntaxError class definition in method body can be bypassed
 20638,mn_threads,Threads not collected by GC under RUBY_MN_THREADS=1
 20640,core patch,"Evaluation Order Issue in f(**h, &amp;h.delete(key))"
-20641,lib perf patch,`lib/bundled_gems.rb` makes `Kernel.require` over 100x slower
 20642,maybenotbug yjit,YJIT prevents hardening
+20659,perf maybenotbug,Speed regression of `parse.y` parser after numeric nodes were introduced
+20666,maybenotbug,Segmentation fault instead of LoadError exception
+20675,notbug,Parse error with required kwargs and omitted parens
+20677,build os/arch,error: mach-o section specifier requires a segment whose length is between 1 and 16 characters
