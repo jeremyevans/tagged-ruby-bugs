@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>273 Tagged Open Ruby Bugs as of 2024-07-20 03:26:53 +0900</title>
+<title>267 Tagged Open Ruby Bugs as of 2024-08-16 07:13:07 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -13,11 +13,11 @@
 <input type="submit" value="maybenotbug" />
 <input type="submit" value="regexp" />
 <input type="submit" value="encoding" />
-<input type="submit" value="lib" />
 <input type="submit" value="ext" />
 <input type="submit" value="test" />
 <input type="submit" value="thread" />
 <input type="submit" value="cygwin" />
+<input type="submit" value="lib" />
 <input type="submit" value="perf" />
 <input type="submit" value="notbug" />
 <input type="submit" value="parser" />
@@ -31,9 +31,9 @@
 <input type="submit" value="yjit" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">273</span> matched)
+(<span id="matched">267</span> matched)
 <table>
-<caption>273 Tagged Open Ruby Bugs as of 2024-07-20 03:26:53 +0900</caption>
+<caption>267 Tagged Open Ruby Bugs as of 2024-08-16 07:13:07 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -42,18 +42,39 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" build os/arch ">
+<td><a href="https://bugs.ruby-lang.org/issues/20677">20677</a>
+</td>
+<td>build os/arch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20677">error: mach-o section specifier requires a segment whose length is between 1 and 16 characters</a>
+</td>
+</tr>
+<tr class=" notbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/20675">20675</a>
+</td>
+<td>notbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20675">Parse error with required kwargs and omitted parens</a>
+</td>
+</tr>
+<tr class=" maybenotbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/20666">20666</a>
+</td>
+<td>maybenotbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20666">Segmentation fault instead of LoadError exception</a>
+</td>
+</tr>
+<tr class=" perf maybenotbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/20659">20659</a>
+</td>
+<td>perf maybenotbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20659">Speed regression of `parse.y` parser after numeric nodes were introduced</a>
+</td>
+</tr>
 <tr class=" maybenotbug yjit ">
 <td><a href="https://bugs.ruby-lang.org/issues/20642">20642</a>
 </td>
 <td>maybenotbug yjit</td>
 <td><a href="https://bugs.ruby-lang.org/issues/20642">YJIT prevents hardening</a>
-</td>
-</tr>
-<tr class=" lib perf patch ">
-<td><a href="https://bugs.ruby-lang.org/issues/20641">20641</a>
-</td>
-<td>lib perf patch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20641">`lib/bundled_gems.rb` makes `Kernel.require` over 100x slower</a>
 </td>
 </tr>
 <tr class=" core patch ">
@@ -70,27 +91,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/20638">Threads not collected by GC under RUBY_MN_THREADS=1</a>
 </td>
 </tr>
-<tr class=" notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/20637">20637</a>
-</td>
-<td>notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20637">SyntaxError class definition in method body can be bypassed</a>
-</td>
-</tr>
-<tr class=" build os/arch ">
-<td><a href="https://bugs.ruby-lang.org/issues/20635">20635</a>
-</td>
-<td>build os/arch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20635">Can&#39;t build fat binaries on Darwin (Mac OS X)</a>
-</td>
-</tr>
-<tr class=" ractor ">
-<td><a href="https://bugs.ruby-lang.org/issues/20634">20634</a>
-</td>
-<td>ractor</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20634">ruby uses 1/2 (7 out of 16) cores for 16 ractors with RUBY_MAX_CPU=16 environment variable set</a>
-</td>
-</tr>
 <tr class=" build os/arch ">
 <td><a href="https://bugs.ruby-lang.org/issues/20631">20631</a>
 </td>
@@ -98,10 +98,10 @@
 <td><a href="https://bugs.ruby-lang.org/issues/20631">Build failure with Xcode 16 beta and macOS 15 (Sequoia) Beta</a>
 </td>
 </tr>
-<tr class=" core ">
+<tr class=" core patch ">
 <td><a href="https://bugs.ruby-lang.org/issues/20623">20623</a>
 </td>
-<td>core</td>
+<td>core patch</td>
 <td><a href="https://bugs.ruby-lang.org/issues/20623">Unexpected behavior of blocks in Enumerator::Lazy#zip</a>
 </td>
 </tr>
@@ -110,13 +110,6 @@
 </td>
 <td>notbug</td>
 <td><a href="https://bugs.ruby-lang.org/issues/20620">singleton_method undefined for module using &quot;extend self&quot;</a>
-</td>
-</tr>
-<tr class=" win core ">
-<td><a href="https://bugs.ruby-lang.org/issues/20614">20614</a>
-</td>
-<td>win core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20614">Integer#size returns incorrect values on 64-bit Windows</a>
 </td>
 </tr>
 <tr class=" patch core ">
@@ -147,13 +140,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/20586">Some filesystem calls in dir.c are missing error handling and can return incorrect results if interrupted</a>
 </td>
 </tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/20571">20571</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20571">Compile error on for loop</a>
-</td>
-</tr>
 <tr class=" build ">
 <td><a href="https://bugs.ruby-lang.org/issues/20560">20560</a>
 </td>
@@ -166,13 +152,6 @@
 </td>
 <td>win core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/20526">File.open(encoding: &quot;bom|utf-8&quot;) converts &quot;\r\n&quot; to &quot;\n&quot; on Windows</a>
-</td>
-</tr>
-<tr class=" maybenotbug core ">
-<td><a href="https://bugs.ruby-lang.org/issues/20514">20514</a>
-</td>
-<td>maybenotbug core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20514">Open3#capture3 does not receive correct exit code from Heroku but Kernel#system does</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -327,13 +306,6 @@
 </td>
 <td>fiber ractor</td>
 <td><a href="https://bugs.ruby-lang.org/issues/20346">FiberScheduler.unblock not called by Thread#join when Thread body contains Ractor.take</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/20344">20344</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20344">argument stack underflow (-1)</a>
 </td>
 </tr>
 <tr class=" ractor ">
@@ -551,13 +523,6 @@
 </td>
 <td>fiber</td>
 <td><a href="https://bugs.ruby-lang.org/issues/20089">Fiber#kill transfers to root fiber</a>
-</td>
-</tr>
-<tr class=" build os/arch ">
-<td><a href="https://bugs.ruby-lang.org/issues/20088">20088</a>
-</td>
-<td>build os/arch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20088">Ruby 3.3.0 does not cross-complie on arm64-darwin</a>
 </td>
 </tr>
 <tr class=" fiber maybenotbug ">
@@ -971,13 +936,6 @@
 </td>
 <td>build win</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19268">Mingw64 Build Failure</a>
-</td>
-</tr>
-<tr class=" lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/19266">19266</a>
-</td>
-<td>lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19266">URI::Generic should use URI::RFC3986_PARSER instead of URI::DEFAULT_PARSER</a>
 </td>
 </tr>
 <tr class=" test ">
