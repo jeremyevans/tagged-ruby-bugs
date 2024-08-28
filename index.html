@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>267 Tagged Open Ruby Bugs as of 2024-08-16 07:13:07 +0900</title>
+<title>276 Tagged Open Ruby Bugs as of 2024-08-29 01:23:45 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -8,17 +8,17 @@
 <input type="submit" value="ractor" />
 <input type="submit" value="win" />
 <input type="submit" value="patch" />
-<input type="submit" value="os/arch" />
 <input type="submit" value="build" />
+<input type="submit" value="os/arch" />
 <input type="submit" value="maybenotbug" />
 <input type="submit" value="regexp" />
 <input type="submit" value="encoding" />
 <input type="submit" value="ext" />
+<input type="submit" value="lib" />
 <input type="submit" value="test" />
+<input type="submit" value="perf" />
 <input type="submit" value="thread" />
 <input type="submit" value="cygwin" />
-<input type="submit" value="lib" />
-<input type="submit" value="perf" />
 <input type="submit" value="notbug" />
 <input type="submit" value="parser" />
 <input type="submit" value="fiber" />
@@ -31,9 +31,9 @@
 <input type="submit" value="yjit" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">267</span> matched)
+(<span id="matched">276</span> matched)
 <table>
-<caption>267 Tagged Open Ruby Bugs as of 2024-08-16 07:13:07 +0900</caption>
+<caption>276 Tagged Open Ruby Bugs as of 2024-08-29 01:23:45 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -42,11 +42,81 @@
 </tr>
 </thead>
 <tbody>
-<tr class=" build os/arch ">
-<td><a href="https://bugs.ruby-lang.org/issues/20677">20677</a>
+<tr class=" win ">
+<td><a href="https://bugs.ruby-lang.org/issues/20704">20704</a>
 </td>
-<td>build os/arch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20677">error: mach-o section specifier requires a segment whose length is between 1 and 16 characters</a>
+<td>win</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20704">Windows: `-C` option does not work for multibyte path name</a>
+</td>
+</tr>
+<tr class=" win ">
+<td><a href="https://bugs.ruby-lang.org/issues/20699">20699</a>
+</td>
+<td>win</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20699">On Windows, the `__dir__` keyword is garbled in paths containing Japanese characters, and `require_relative` fails as well</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20697">20697</a>
+</td>
+<td>patch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20697">`Rational(&quot;1r&quot;)` fails while `Complex(&quot;1i&quot;)` succeeds</a>
+</td>
+</tr>
+<tr class=" patch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20696">20696</a>
+</td>
+<td>patch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20696">`IO.read` ignores `err:` option</a>
+</td>
+</tr>
+<tr class=" perf notbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/20695">20695</a>
+</td>
+<td>perf notbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20695">Elevated GC allocations in parse.y parser</a>
+</td>
+</tr>
+<tr class=" patch core maybenotbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/20693">20693</a>
+</td>
+<td>patch core maybenotbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20693">Dir.tmpdir should perform a real access check before warning about writability</a>
+</td>
+</tr>
+<tr class=" lib patch ">
+<td><a href="https://bugs.ruby-lang.org/issues/20690">20690</a>
+</td>
+<td>lib patch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20690">URI.encode_www_form_component method escapes tilde when it&#39;s not supposed to</a>
+</td>
+</tr>
+<tr class=" win test ">
+<td><a href="https://bugs.ruby-lang.org/issues/20689">20689</a>
+</td>
+<td>win test</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20689">TestInvokeVerb#test_invokeverb has warnings on Windows</a>
+</td>
+</tr>
+<tr class=" build maybenotbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/20687">20687</a>
+</td>
+<td>build maybenotbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20687">Does tarball require baseruby?</a>
+</td>
+</tr>
+<tr class=" lib patch ">
+<td><a href="https://bugs.ruby-lang.org/issues/20686">20686</a>
+</td>
+<td>lib patch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20686">URI::HTTPS can build URI with blank, invalid host</a>
+</td>
+</tr>
+<tr class=" ext patch ">
+<td><a href="https://bugs.ruby-lang.org/issues/20682">20682</a>
+</td>
+<td>ext patch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20682">Slave PTY output is lost after a child process exits in macOS</a>
 </td>
 </tr>
 <tr class=" notbug ">
@@ -96,13 +166,6 @@
 </td>
 <td>build os/arch</td>
 <td><a href="https://bugs.ruby-lang.org/issues/20631">Build failure with Xcode 16 beta and macOS 15 (Sequoia) Beta</a>
-</td>
-</tr>
-<tr class=" core patch ">
-<td><a href="https://bugs.ruby-lang.org/issues/20623">20623</a>
-</td>
-<td>core patch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20623">Unexpected behavior of blocks in Enumerator::Lazy#zip</a>
 </td>
 </tr>
 <tr class=" notbug ">
