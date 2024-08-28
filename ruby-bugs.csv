@@ -256,7 +256,6 @@
 20597,patch parser,`eval(&#39;break if false&#39;)` should raise SyntaxError but retuns nil
 20607,patch core,Exception messages are inconsistent when thread-local variables are accessed
 20620,notbug,singleton_method undefined for module using &quot;extend self&quot;
-20623,core patch,Unexpected behavior of blocks in Enumerator::Lazy#zip
 20631,build os/arch,Build failure with Xcode 16 beta and macOS 15 (Sequoia) Beta
 20638,mn_threads,Threads not collected by GC under RUBY_MN_THREADS=1
 20640,core patch,"Evaluation Order Issue in f(**h, &amp;h.delete(key))"
@@ -264,4 +263,14 @@
 20659,perf maybenotbug,Speed regression of `parse.y` parser after numeric nodes were introduced
 20666,maybenotbug,Segmentation fault instead of LoadError exception
 20675,notbug,Parse error with required kwargs and omitted parens
-20677,build os/arch,error: mach-o section specifier requires a segment whose length is between 1 and 16 characters
+20682,ext patch,Slave PTY output is lost after a child process exits in macOS
+20686,lib patch,"URI::HTTPS can build URI with blank, invalid host"
+20687,build maybenotbug,Does tarball require baseruby?
+20689,win test,TestInvokeVerb#test_invokeverb has warnings on Windows
+20690,lib patch,URI.encode_www_form_component method escapes tilde when it&#39;s not supposed to
+20693,patch core maybenotbug,Dir.tmpdir should perform a real access check before warning about writability
+20695,perf notbug,Elevated GC allocations in parse.y parser
+20696,patch core,`IO.read` ignores `err:` option
+20697,patch core,`Rational(&quot;1r&quot;)` fails while `Complex(&quot;1i&quot;)` succeeds
+20699,win,"On Windows, the `__dir__` keyword is garbled in paths containing Japanese characters, and `require_relative` fails as well"
+20704,win,Windows: `-C` option does not work for multibyte path name
