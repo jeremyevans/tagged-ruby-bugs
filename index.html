@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>276 Tagged Open Ruby Bugs as of 2024-08-29 01:23:45 +0900</title>
+<title>278 Tagged Open Ruby Bugs as of 2024-09-21 02:50:10 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -8,32 +8,32 @@
 <input type="submit" value="ractor" />
 <input type="submit" value="win" />
 <input type="submit" value="patch" />
-<input type="submit" value="build" />
 <input type="submit" value="os/arch" />
+<input type="submit" value="build" />
 <input type="submit" value="maybenotbug" />
 <input type="submit" value="regexp" />
 <input type="submit" value="encoding" />
-<input type="submit" value="ext" />
 <input type="submit" value="lib" />
 <input type="submit" value="test" />
-<input type="submit" value="perf" />
+<input type="submit" value="ext" />
 <input type="submit" value="thread" />
 <input type="submit" value="cygwin" />
-<input type="submit" value="notbug" />
+<input type="submit" value="perf" />
 <input type="submit" value="parser" />
 <input type="submit" value="fiber" />
+<input type="submit" value="notbug" />
 <input type="submit" value="tracepoint" />
 <input type="submit" value="coverage" />
 <input type="submit" value="doc" />
 <input type="submit" value="autoload" />
 <input type="submit" value="mnthreads" />
-<input type="submit" value="mn_threads" />
-<input type="submit" value="yjit" /></p>
+<input type="submit" value="yjit" />
+<input type="submit" value="mn_threads" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">276</span> matched)
+(<span id="matched">278</span> matched)
 <table>
-<caption>276 Tagged Open Ruby Bugs as of 2024-08-29 01:23:45 +0900</caption>
+<caption>278 Tagged Open Ruby Bugs as of 2024-09-21 02:50:10 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -42,11 +42,88 @@
 </tr>
 </thead>
 <tbody>
-<tr class=" win ">
-<td><a href="https://bugs.ruby-lang.org/issues/20704">20704</a>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20755">20755</a>
 </td>
-<td>win</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20704">Windows: `-C` option does not work for multibyte path name</a>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20755">IO::Buffer#transfer transfers mutable reference to String&#39;s memory but not lock ownership</a>
+</td>
+</tr>
+<tr class=" doc ">
+<td><a href="https://bugs.ruby-lang.org/issues/20753">20753</a>
+</td>
+<td>doc</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20753">[doc] IO::Buffer examples try to write into readonly buffer returned from IO::Buffer.for</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20752">20752</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20752">IO::Buffer#slice creates mutable IO::Buffer instance that points to readonly memory (e.g. fronzen String)</a>
+</td>
+</tr>
+<tr class=" patch parser ">
+<td><a href="https://bugs.ruby-lang.org/issues/20749">20749</a>
+</td>
+<td>patch parser</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20749">Error message not shown in output with prism</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20745">20745</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20745">IO::Buffer#copy triggers UB when src/dest buffers overlap</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20743">20743</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20743">ruby doesn&#39;t properly split RUBY_DEBUG_LOG_FILTER into items</a>
+</td>
+</tr>
+<tr class=" build os/arch ">
+<td><a href="https://bugs.ruby-lang.org/issues/20733">20733</a>
+</td>
+<td>build os/arch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20733">Build failure OpenSSL extension with FreeBSD 13.3</a>
+</td>
+</tr>
+<tr class=" win test maybenotbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/20729">20729</a>
+</td>
+<td>win test maybenotbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20729">Test failure with 0fc8422a05 and native mswin environment</a>
+</td>
+</tr>
+<tr class=" yjit ">
+<td><a href="https://bugs.ruby-lang.org/issues/20727">20727</a>
+</td>
+<td>yjit</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20727">YJIT segmentation fault inside of invalidate_block_version</a>
+</td>
+</tr>
+<tr class=" ractor ">
+<td><a href="https://bugs.ruby-lang.org/issues/20726">20726</a>
+</td>
+<td>ractor</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20726">Issue with hash without braces when assigned to constant with ractor literals</a>
+</td>
+</tr>
+<tr class=" lib ">
+<td><a href="https://bugs.ruby-lang.org/issues/20722">20722</a>
+</td>
+<td>lib</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20722">curious search result order on docs.ruby-lang.org</a>
+</td>
+</tr>
+<tr class=" patch lib ">
+<td><a href="https://bugs.ruby-lang.org/issues/20714">20714</a>
+</td>
+<td>patch lib</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20714">Handle optional dependencies in `bundled_gems.rb`</a>
 </td>
 </tr>
 <tr class=" win ">
@@ -70,13 +147,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/20696">`IO.read` ignores `err:` option</a>
 </td>
 </tr>
-<tr class=" perf notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/20695">20695</a>
-</td>
-<td>perf notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20695">Elevated GC allocations in parse.y parser</a>
-</td>
-</tr>
 <tr class=" patch core maybenotbug ">
 <td><a href="https://bugs.ruby-lang.org/issues/20693">20693</a>
 </td>
@@ -84,25 +154,11 @@
 <td><a href="https://bugs.ruby-lang.org/issues/20693">Dir.tmpdir should perform a real access check before warning about writability</a>
 </td>
 </tr>
-<tr class=" lib patch ">
-<td><a href="https://bugs.ruby-lang.org/issues/20690">20690</a>
-</td>
-<td>lib patch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20690">URI.encode_www_form_component method escapes tilde when it&#39;s not supposed to</a>
-</td>
-</tr>
 <tr class=" win test ">
 <td><a href="https://bugs.ruby-lang.org/issues/20689">20689</a>
 </td>
 <td>win test</td>
 <td><a href="https://bugs.ruby-lang.org/issues/20689">TestInvokeVerb#test_invokeverb has warnings on Windows</a>
-</td>
-</tr>
-<tr class=" build maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/20687">20687</a>
-</td>
-<td>build maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20687">Does tarball require baseruby?</a>
 </td>
 </tr>
 <tr class=" lib patch ">
@@ -117,13 +173,6 @@
 </td>
 <td>ext patch</td>
 <td><a href="https://bugs.ruby-lang.org/issues/20682">Slave PTY output is lost after a child process exits in macOS</a>
-</td>
-</tr>
-<tr class=" notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/20675">20675</a>
-</td>
-<td>notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20675">Parse error with required kwargs and omitted parens</a>
 </td>
 </tr>
 <tr class=" maybenotbug ">
@@ -147,13 +196,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/20642">YJIT prevents hardening</a>
 </td>
 </tr>
-<tr class=" core patch ">
-<td><a href="https://bugs.ruby-lang.org/issues/20640">20640</a>
-</td>
-<td>core patch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20640">Evaluation Order Issue in f(**h, &amp;h.delete(key))</a>
-</td>
-</tr>
 <tr class=" mn_threads ">
 <td><a href="https://bugs.ruby-lang.org/issues/20638">20638</a>
 </td>
@@ -175,32 +217,11 @@
 <td><a href="https://bugs.ruby-lang.org/issues/20620">singleton_method undefined for module using &quot;extend self&quot;</a>
 </td>
 </tr>
-<tr class=" patch core ">
-<td><a href="https://bugs.ruby-lang.org/issues/20607">20607</a>
-</td>
-<td>patch core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20607">Exception messages are inconsistent when thread-local variables are accessed</a>
-</td>
-</tr>
-<tr class=" patch parser ">
-<td><a href="https://bugs.ruby-lang.org/issues/20597">20597</a>
-</td>
-<td>patch parser</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20597">`eval(&#39;break if false&#39;)` should raise SyntaxError but retuns nil</a>
-</td>
-</tr>
 <tr class=" test ">
 <td><a href="https://bugs.ruby-lang.org/issues/20591">20591</a>
 </td>
 <td>test</td>
 <td><a href="https://bugs.ruby-lang.org/issues/20591">macOS head - all are using OpenSSL 1.1.1?</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/20586">20586</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20586">Some filesystem calls in dir.c are missing error handling and can return incorrect results if interrupted</a>
 </td>
 </tr>
 <tr class=" build ">
@@ -467,13 +488,6 @@
 </td>
 <td>mnthreads</td>
 <td><a href="https://bugs.ruby-lang.org/issues/20243">M:N threading VM_ASSERT failure in rb_current_execution_context with clang 17 (on Linux)</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/20237">20237</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20237">Unable to unshare(CLONE_NEWUSER) in Linux because of timer thread</a>
 </td>
 </tr>
 <tr class=" regexp ">
