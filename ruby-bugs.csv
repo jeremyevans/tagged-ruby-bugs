@@ -212,7 +212,6 @@
 20189,patch core,`rb_str_resize` does not clear coderange when expanding
 20203,maybenotbug,`TestEnumerable` test failures with GCC 14
 20225,regexp,Inconsistent behavior of regex matching for a regex has a null loop
-20237,core,Unable to unshare(CLONE_NEWUSER) in Linux because of timer thread
 20243,mnthreads,M:N threading VM_ASSERT failure in rb_current_execution_context with clang 17 (on Linux)
 20255,ractor patch,Embedded arrays aren&#39;t moved correctly across ractors
 20267,ractor patch,Hashes that use ar_table aren&#39;t moved properly across ractors
@@ -251,26 +250,29 @@
 20504,core,Interpolated string literal in regexp encoding handling
 20526,win core,File.open(encoding: &quot;bom|utf-8&quot;) converts &quot;\r\n&quot; to &quot;\n&quot; on Windows
 20560,build,make install - skipped bundled gems - minor issue
-20586,core,Some filesystem calls in dir.c are missing error handling and can return incorrect results if interrupted
 20591,test,macOS head - all are using OpenSSL 1.1.1?
-20597,patch parser,`eval(&#39;break if false&#39;)` should raise SyntaxError but retuns nil
-20607,patch core,Exception messages are inconsistent when thread-local variables are accessed
 20620,notbug,singleton_method undefined for module using &quot;extend self&quot;
 20631,build os/arch,Build failure with Xcode 16 beta and macOS 15 (Sequoia) Beta
 20638,mn_threads,Threads not collected by GC under RUBY_MN_THREADS=1
-20640,core patch,"Evaluation Order Issue in f(**h, &amp;h.delete(key))"
 20642,maybenotbug yjit,YJIT prevents hardening
 20659,perf maybenotbug,Speed regression of `parse.y` parser after numeric nodes were introduced
 20666,maybenotbug,Segmentation fault instead of LoadError exception
-20675,notbug,Parse error with required kwargs and omitted parens
 20682,ext patch,Slave PTY output is lost after a child process exits in macOS
 20686,lib patch,"URI::HTTPS can build URI with blank, invalid host"
-20687,build maybenotbug,Does tarball require baseruby?
 20689,win test,TestInvokeVerb#test_invokeverb has warnings on Windows
-20690,lib patch,URI.encode_www_form_component method escapes tilde when it&#39;s not supposed to
 20693,patch core maybenotbug,Dir.tmpdir should perform a real access check before warning about writability
-20695,perf notbug,Elevated GC allocations in parse.y parser
 20696,patch core,`IO.read` ignores `err:` option
 20697,patch core,`Rational(&quot;1r&quot;)` fails while `Complex(&quot;1i&quot;)` succeeds
 20699,win,"On Windows, the `__dir__` keyword is garbled in paths containing Japanese characters, and `require_relative` fails as well"
-20704,win,Windows: `-C` option does not work for multibyte path name
+20714,patch lib,Handle optional dependencies in `bundled_gems.rb`
+20722,lib,curious search result order on docs.ruby-lang.org
+20726,ractor,Issue with hash without braces when assigned to constant with ractor literals
+20727,yjit,YJIT segmentation fault inside of invalidate_block_version
+20729,win test maybenotbug,Test failure with 0fc8422a05 and native mswin environment
+20733,build os/arch,Build failure OpenSSL extension with FreeBSD 13.3
+20743,core,ruby doesn&#39;t properly split RUBY_DEBUG_LOG_FILTER into items
+20745,core,IO::Buffer#copy triggers UB when src/dest buffers overlap
+20749,patch parser,Error message not shown in output with prism
+20752,core,IO::Buffer#slice creates mutable IO::Buffer instance that points to readonly memory (e.g. fronzen String)
+20753,doc,[doc] IO::Buffer examples try to write into readonly buffer returned from IO::Buffer.for
+20755,core,IO::Buffer#transfer transfers mutable reference to String&#39;s memory but not lock ownership
