@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>278 Tagged Open Ruby Bugs as of 2024-09-21 02:50:10 +0900</title>
+<title>290 Tagged Open Ruby Bugs as of 2024-11-18 14:07:43 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -11,15 +11,15 @@
 <input type="submit" value="os/arch" />
 <input type="submit" value="build" />
 <input type="submit" value="maybenotbug" />
+<input type="submit" value="ext" />
+<input type="submit" value="lib" />
 <input type="submit" value="regexp" />
 <input type="submit" value="encoding" />
-<input type="submit" value="lib" />
 <input type="submit" value="test" />
-<input type="submit" value="ext" />
+<input type="submit" value="parser" />
+<input type="submit" value="perf" />
 <input type="submit" value="thread" />
 <input type="submit" value="cygwin" />
-<input type="submit" value="perf" />
-<input type="submit" value="parser" />
 <input type="submit" value="fiber" />
 <input type="submit" value="notbug" />
 <input type="submit" value="tracepoint" />
@@ -31,9 +31,9 @@
 <input type="submit" value="mn_threads" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">278</span> matched)
+(<span id="matched">290</span> matched)
 <table>
-<caption>278 Tagged Open Ruby Bugs as of 2024-09-21 02:50:10 +0900</caption>
+<caption>290 Tagged Open Ruby Bugs as of 2024-11-18 14:07:43 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -42,39 +42,172 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" lib patch ">
+<td><a href="https://bugs.ruby-lang.org/issues/20897">20897</a>
+</td>
+<td>lib patch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20897">resolv: not usable across ractors</a>
+</td>
+</tr>
 <tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/20755">20755</a>
+<td><a href="https://bugs.ruby-lang.org/issues/20889">20889</a>
 </td>
 <td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20755">IO::Buffer#transfer transfers mutable reference to String&#39;s memory but not lock ownership</a>
+<td><a href="https://bugs.ruby-lang.org/issues/20889">IO#ungetc and IO#ungetbyte should not cause IO#pos to report an inaccurate position</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20888">20888</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20888">4c270200db breaks TestGemRemoteFetcherLocalSSLServer tests or so </a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20881">20881</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20881">Complex#** returns discontinuous results in Fixnum and Bignum exponents</a>
 </td>
 </tr>
 <tr class=" doc ">
-<td><a href="https://bugs.ruby-lang.org/issues/20753">20753</a>
+<td><a href="https://bugs.ruby-lang.org/issues/20874">20874</a>
 </td>
 <td>doc</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20753">[doc] IO::Buffer examples try to write into readonly buffer returned from IO::Buffer.for</a>
+<td><a href="https://bugs.ruby-lang.org/issues/20874">Difference in documentation for `irb -U` between `man irb` and `irb --help`</a>
+</td>
+</tr>
+<tr class=" build ext ">
+<td><a href="https://bugs.ruby-lang.org/issues/20872">20872</a>
+</td>
+<td>build ext</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20872">Undefined RUBY_API_VERSION_* macros used in &lt;ruby/backward/cxxanyargs.hpp&gt;</a>
+</td>
+</tr>
+<tr class=" parser ">
+<td><a href="https://bugs.ruby-lang.org/issues/20866">20866</a>
+</td>
+<td>parser</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20866">Prism assertion when running simplecov with branch coverage and requiring certain code</a>
+</td>
+</tr>
+<tr class=" ext ">
+<td><a href="https://bugs.ruby-lang.org/issues/20863">20863</a>
+</td>
+<td>ext</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20863">`zlib.c` calls `rb_str_set_len` and `rb_str_modify_expand`(and others) without holding the GVL.</a>
+</td>
+</tr>
+<tr class=" lib patch ">
+<td><a href="https://bugs.ruby-lang.org/issues/20862">20862</a>
+</td>
+<td>lib patch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20862">gem install --document=rdoc,ri fails with some gem</a>
+</td>
+</tr>
+<tr class=" parser notbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/20858">20858</a>
+</td>
+<td>parser notbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20858">multiple parallel assignments are inconsistent</a>
+</td>
+</tr>
+<tr class=" build ">
+<td><a href="https://bugs.ruby-lang.org/issues/20854">20854</a>
+</td>
+<td>build</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20854">Some bundled gems are not installed starting with 007c75ce4c66243e41144c6977e5ccbf4ab71c93</a>
 </td>
 </tr>
 <tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/20752">20752</a>
+<td><a href="https://bugs.ruby-lang.org/issues/20819">20819</a>
 </td>
 <td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20752">IO::Buffer#slice creates mutable IO::Buffer instance that points to readonly memory (e.g. fronzen String)</a>
+<td><a href="https://bugs.ruby-lang.org/issues/20819">IO#readline does not process newlines correctly for wide character encodings</a>
 </td>
 </tr>
-<tr class=" patch parser ">
-<td><a href="https://bugs.ruby-lang.org/issues/20749">20749</a>
+<tr class=" parser ">
+<td><a href="https://bugs.ruby-lang.org/issues/20817">20817</a>
 </td>
-<td>patch parser</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20749">Error message not shown in output with prism</a>
+<td>parser</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20817">Ruby 3.4.0dev emits `warning: possibly useless use of + in void context` while Ruby 3.3.5 does not</a>
+</td>
+</tr>
+<tr class=" perf ">
+<td><a href="https://bugs.ruby-lang.org/issues/20816">20816</a>
+</td>
+<td>perf</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20816">Potential regression in Ruby 3.3.x (compared with 3.1 and 3.2) regarding fast syscalls and multi-threading.</a>
+</td>
+</tr>
+<tr class=" maybenotbug core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20813">20813</a>
+</td>
+<td>maybenotbug core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20813">Segfault in rgengc_check_relation/RVALUE_WB_UNPROTECTED</a>
+</td>
+</tr>
+<tr class=" ext ">
+<td><a href="https://bugs.ruby-lang.org/issues/20809">20809</a>
+</td>
+<td>ext</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20809">Ripper fails to parse/tokenize nested heredocs within embexpr</a>
 </td>
 </tr>
 <tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/20745">20745</a>
+<td><a href="https://bugs.ruby-lang.org/issues/20807">20807</a>
 </td>
 <td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20745">IO::Buffer#copy triggers UB when src/dest buffers overlap</a>
+<td><a href="https://bugs.ruby-lang.org/issues/20807">String#gsub fails when called from string subclass with a block passed</a>
+</td>
+</tr>
+<tr class=" patch lib ">
+<td><a href="https://bugs.ruby-lang.org/issues/20795">20795</a>
+</td>
+<td>patch lib</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20795">Timeout method doesn&#39;t check for negative time values</a>
+</td>
+</tr>
+<tr class=" parser ">
+<td><a href="https://bugs.ruby-lang.org/issues/20790">20790</a>
+</td>
+<td>parser</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20790">Syntax acceptance of `*x = p rescue p 1` is different between parse.y and prism</a>
+</td>
+</tr>
+<tr class=" parser ">
+<td><a href="https://bugs.ruby-lang.org/issues/20785">20785</a>
+</td>
+<td>parser</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20785">Should `a in b, and c` `a in b, or c` `a in b, rescue c` be syntax ok?</a>
+</td>
+</tr>
+<tr class=" os/arch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20780">20780</a>
+</td>
+<td>os/arch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20780">related to #20779 -- crash creating large number of concurrent-ruby promises</a>
+</td>
+</tr>
+<tr class=" os/arch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20779">20779</a>
+</td>
+<td>os/arch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20779">Un-rescuable thread creation limit on Mac</a>
+</td>
+</tr>
+<tr class=" parser ">
+<td><a href="https://bugs.ruby-lang.org/issues/20776">20776</a>
+</td>
+<td>parser</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20776">[PRISM] Pattern matching syntax error message</a>
+</td>
+</tr>
+<tr class=" test core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20772">20772</a>
+</td>
+<td>test core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20772">Test with -O3 is flaky</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -91,13 +224,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/20733">Build failure OpenSSL extension with FreeBSD 13.3</a>
 </td>
 </tr>
-<tr class=" win test maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/20729">20729</a>
-</td>
-<td>win test maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20729">Test failure with 0fc8422a05 and native mswin environment</a>
-</td>
-</tr>
 <tr class=" yjit ">
 <td><a href="https://bugs.ruby-lang.org/issues/20727">20727</a>
 </td>
@@ -110,13 +236,6 @@
 </td>
 <td>ractor</td>
 <td><a href="https://bugs.ruby-lang.org/issues/20726">Issue with hash without braces when assigned to constant with ractor literals</a>
-</td>
-</tr>
-<tr class=" lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/20722">20722</a>
-</td>
-<td>lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20722">curious search result order on docs.ruby-lang.org</a>
 </td>
 </tr>
 <tr class=" patch lib ">
@@ -145,13 +264,6 @@
 </td>
 <td>patch core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/20696">`IO.read` ignores `err:` option</a>
-</td>
-</tr>
-<tr class=" patch core maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/20693">20693</a>
-</td>
-<td>patch core maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20693">Dir.tmpdir should perform a real access check before warning about writability</a>
 </td>
 </tr>
 <tr class=" win test ">
@@ -210,13 +322,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/20631">Build failure with Xcode 16 beta and macOS 15 (Sequoia) Beta</a>
 </td>
 </tr>
-<tr class=" notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/20620">20620</a>
-</td>
-<td>notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20620">singleton_method undefined for module using &quot;extend self&quot;</a>
-</td>
-</tr>
 <tr class=" test ">
 <td><a href="https://bugs.ruby-lang.org/issues/20591">20591</a>
 </td>
@@ -243,13 +348,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/20504">Interpolated string literal in regexp encoding handling</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/20501">20501</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20501">ruby SEGV</a>
 </td>
 </tr>
 <tr class=" ractor perf ">
@@ -336,11 +434,11 @@
 <td><a href="https://bugs.ruby-lang.org/issues/20455">rb_errinfo() inconsistent with $! in the caller Ruby code</a>
 </td>
 </tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/20433">20433</a>
+<tr class=" os/arch core ">
+<td><a href="https://bugs.ruby-lang.org/issues/20452">20452</a>
 </td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20433">Hash.inspect for some hash returns syntax invalid representation</a>
+<td>os/arch core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/20452">Ruby 3.3 on Alpine Linux results in a relatively shallow SystemStackError exception</a>
 </td>
 </tr>
 <tr class=" doc ">
@@ -397,13 +495,6 @@
 </td>
 <td>ractor</td>
 <td><a href="https://bugs.ruby-lang.org/issues/20340">Ractor comments not applying to constant targets</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/20337">20337</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20337">Complex#inspect mutates the string returned by `real.inspect`</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -1006,13 +1097,6 @@
 </td>
 <td>ractor perf</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19288">Ractor JSON parsing significantly slower than linear parsing</a>
-</td>
-</tr>
-<tr class=" build win ">
-<td><a href="https://bugs.ruby-lang.org/issues/19268">19268</a>
-</td>
-<td>build win</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19268">Mingw64 Build Failure</a>
 </td>
 </tr>
 <tr class=" test ">
