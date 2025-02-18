@@ -162,7 +162,6 @@
 19473,maybenotbug thread,can&#39;t be called from trap context (ThreadError) is too limiting
 19557,core,Deadlock on STDOUT(ERR) lock on signal handler
 19558,core patch,str.dump.undump crashes when str contains both Unicode and ASCII control characters
-19562,ractor,Setting default_(in|ex)ternal encoding after running an Ractor freezes ruby
 19598,tracepoint maybenotbug,Inconsistent behaviour of TracePoint API
 19609,win lib,"net/http ignores open_timeout, read_timeout on Windows"
 19631,maybenotbug core,module_eval does not propulate absolute_path for Kernel.caller_locations
@@ -243,15 +242,11 @@
 20472,core,Ractor support for ** into hash literal
 20473,core,Ractor array/hash literals
 20480,win build,Complie failure for unable to configure NET_LUID using msys2 mingw64-gcc
-20489,ractor perf,Ractor behavior strange in ruby master
-20504,core,Interpolated string literal in regexp encoding handling
 20526,win core,File.open(encoding: &quot;bom|utf-8&quot;) converts &quot;\r\n&quot; to &quot;\n&quot; on Windows
 20560,build,make install - skipped bundled gems - minor issue
 20591,test,macOS head - all are using OpenSSL 1.1.1?
 20631,build os/arch,Build failure with Xcode 16 beta and macOS 15 (Sequoia) Beta
-20638,mn_threads,Threads not collected by GC under RUBY_MN_THREADS=1
 20642,maybenotbug yjit,YJIT prevents hardening
-20659,perf maybenotbug,Speed regression of `parse.y` parser after numeric nodes were introduced
 20666,maybenotbug,Segmentation fault instead of LoadError exception
 20682,ext patch,Slave PTY output is lost after a child process exits in macOS
 20686,lib patch,"URI::HTTPS can build URI with blank, invalid host"
@@ -266,25 +261,59 @@
 20743,core,ruby doesn&#39;t properly split RUBY_DEBUG_LOG_FILTER into items
 20772,test core,Test with -O3 is flaky
 20776,parser,[PRISM] Pattern matching syntax error message
-20779,os/arch core,Un-rescuable thread creation limit on Mac
 20780,os/arch core,related to #20779 -- crash creating large number of concurrent-ruby promises
-20785,parser,"Should `a in b, and c` `a in b, or c` `a in b, rescue c` be syntax ok?"
 20790,parser,Syntax acceptance of `*x = p rescue p 1` is different between parse.y and prism
-20795,patch lib,Timeout method doesn&#39;t check for negative time values
 20807,core,String#gsub fails when called from string subclass with a block passed
 20809,ext,Ripper fails to parse/tokenize nested heredocs within embexpr
 20813,maybenotbug core,Segfault in rgengc_check_relation/RVALUE_WB_UNPROTECTED
 20816,perf,Potential regression in Ruby 3.3.x (compared with 3.1 and 3.2) regarding fast syscalls and multi-threading.
-20817,parser,Ruby 3.4.0dev emits `warning: possibly useless use of + in void context` while Ruby 3.3.5 does not
 20819,core,IO#readline does not process newlines correctly for wide character encodings
 20854,build,Some bundled gems are not installed starting with 007c75ce4c66243e41144c6977e5ccbf4ab71c93
-20858,parser notbug,multiple parallel assignments are inconsistent
-20862,lib patch,"gem install --document=rdoc,ri fails with some gem"
-20863,ext,`zlib.c` calls `rb_str_set_len` and `rb_str_modify_expand`(and others) without holding the GVL.
-20866,parser,Prism assertion when running simplecov with branch coverage and requiring certain code
 20872,build ext,Undefined RUBY_API_VERSION_* macros used in &lt;ruby/backward/cxxanyargs.hpp&gt;
 20874,doc,Difference in documentation for `irb -U` between `man irb` and `irb --help`
 20881,core,Complex#** returns discontinuous results in Fixnum and Bignum exponents
 20888,core,4c270200db breaks TestGemRemoteFetcherLocalSSLServer tests or so 
 20889,core,IO#ungetc and IO#ungetbyte should not cause IO#pos to report an inaccurate position
 20897,lib patch,resolv: not usable across ractors
+20904,win build,3.4.0-preview2: Building miniruby.exe fails for mswin32
+20905,patch ractor,Ruby VM hangs while using ractors
+20906,backport,Segmentation Fault in compile_keyword_arg
+20917,parser prism,redo/next in nested begin block causes wrong order of execution
+20919,patch core,IO#seek and IO#pos= do not clear the character buffer in some cases while transcoding
+20920,core,"When loading a file, __FILE__ gets relative paths expanded only when they start with &quot;./&quot;"
+20929,patch core,TestTime have an assertion different from current implementation.
+20934,ractor,`UnboundMethod#bind_call` may cause &quot;double free or corruption&quot; with Ractor
+20943,notbug core,Constant defined in `Data.define` block
+20948,core,Constant references incorrectly cached in `module (expr)::Foo`
+20957,core,RangeError on Array#values_at with negative ranges
+20958,win core,fix ENV.keys encoding on windows
+20965,core,`it` vs `binding.local_variables`
+20968,notbug core,`Array#fetch_values` unexpected method name in stack trace
+20996,embed,Embed Ruby 3.4 Failure
+20998,core,rb_str_locktmp() changes flags of frozen strings and string literals
+21007,patch ractor,Ractor scheduler issue when multiple threads in a ractor
+21016,parser prism,What should massign with `shareable_constant_value: experimental_everything` freeze?
+21023,build os/arch,Unintentional ruby/spec capi extension build twice 
+21026,maybenotbug,`def __FILE__.a; end` should be a syntax error
+21029,parser prism,Prism behavior for `defined? (;x)` differs
+21037,ractor,Ractors hang with multiple threads
+21049,core,Reconsider handling of the numbered parameters and &quot;it&quot; parameter in `Binding#local_variables`
+21083,win,current SystemCallError.new(-1) behavior on windows is not in accordance with the intent of the source code.
+21089,core,Missing methods on enumerators created from Enumerator::product and Enumerator::Chain
+21090,patch ractor,SEGV from require in Thread in Ractor
+21094,patch core,Module#set_temporary_name does not affect a name of a nested module
+21096,maybenotbug core,`Process.fork` hangs up on QEMU when called multiple times.
+21097,parser,`x = a rescue b in c` and `def f = a rescue b in c` parsed differently between parse.y and prism
+21104,ext,Net::HTTP connections failing in Ruby &gt;= 3.4.0 on macOS with Happy Eyeballs enabled
+21108,ractor,C-c (SIGINT) crashes ruby when looping Ractors are not taken?
+21111,build lib,RbConfig::CONFIG[&#39;CXX&#39;] quietly set to &quot;false&quot; when Ruby cannot build C++ programs
+21115,ractor ext,Etc.getgrgid is not Ractor-safe but is marked as such
+21119,perf notbug,Programs containing `Dir.glob` with a thread executing a CPU-heavy task run very slowly.
+21120,mn_threads,Segmentation fault when running Rails with MN threads enabled on 3.4.1
+21125,core,Kernel is called first
+21131,patch core,IO.copy_stream: yielded string changes value when duped
+21139,parser prism,Prism and parse.y parses `it = it` differently
+21141,core,`Time#utc?` does not work with a timezone object
+21142,core,Lazy enumerator `.each_with_index` ignores `.take(0)` before it
+21144,patch win core,Win32: Use Windows time zone ID as the time zone name if TZ is not set
+21146,patch ractor,VM_ASSERT(expr) gives bad bug report results when another ractor fails an assertion during printing of report
