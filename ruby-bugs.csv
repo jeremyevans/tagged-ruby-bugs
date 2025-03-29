@@ -54,7 +54,6 @@
 15599,core autoload,Mixing autoload and require causes deadlock and incomplete definition.
 15764,parser,Whitespace and control characters should not be permitted in tokens
 15993,win encoding,&#39;require&#39; doesn&#39;t work if there are Cyrillic chars in the path to Ruby dir
-16145,regexp,"regexp match error if mixing /i, character classes, and utf8"
 16158,regexp notbug,&quot;st&quot; Character Sequence In Regex Look-Behind Causes Illegal Pattern Error When Combined With POSIX Bracket Expressions And Case Insensitivity Flag
 16497,ext encoding,StringIO#internal_encoding is broken (more severely in 2.7)
 16776,coverage,Regression in coverage library
@@ -146,8 +145,6 @@
 19367,patch ractor,Issue with ractor local storage API
 19368,ractor,Small issue with isolated procs and eval
 19369,patch ractor,Small corner-case issue that breaks Ractor isolation: change cloned object from another thread
-19372,patch ractor,Proc objects are not traversed for shareable check during Ractor.make_shareable(prok)
-19374,patch ractor,Issue with Ractor.make_shareable with curried procs
 19378,patch core win,Windows: Use less syscalls for faster require of big gems
 19383,patch win encoding,Time.now.zone encoding for German display language in Windows is incorrect
 19384,win encoding,ASCII 128..154 characters in IO.popen or %x output do not reflect the proper encoding in Windows
@@ -170,10 +167,8 @@
 19703,win core,text/binary mode of parent process fd is not properly inherited on windows
 19756,lib,"URI::HTTP.build does not accept a host of `_gateway`, but `URI.parse` will."
 19761,os/arch core,AddressSanitizer fails with Thread and Process
-19765,ractor,Ractor.make_shareable ignores self of a proc created from a Method
 19794,os/arch build,Ruby 3.2.2 fails to build on macOS Sonoma betas
 19831,os/arch build,warning message of linker with macOS Sonoma beta
-19841,core,Marshal.dump stack overflow with recursive Time
 19865,core patch,Segfault when calling user signal handlers during VM shutdown
 19869,test,Mark skipped test somehow
 19875,core perf notbug,Ruby 3.0 -&gt; 3.1 Performance regression in String#count
@@ -222,7 +217,6 @@
 20315,regexp,Quantifier expansion leads to different results in Regexp.
 20316,regexp,Regexp quantifier behavior changes in different syntactic context.
 20319,core,Singleton class is being frozen lazily in some cases
-20340,ractor,Ractor comments not applying to constant targets
 20346,fiber ractor,FiberScheduler.unblock not called by Thread#join when Thread body contains Ractor.take
 20395,doc,Invalid license note in vsnprintf.c
 20399,ext,Ripper doesn&#39;t respect implicit -x
@@ -248,7 +242,6 @@
 20631,build os/arch,Build failure with Xcode 16 beta and macOS 15 (Sequoia) Beta
 20642,maybenotbug yjit,YJIT prevents hardening
 20666,maybenotbug,Segmentation fault instead of LoadError exception
-20682,ext patch,Slave PTY output is lost after a child process exits in macOS
 20686,lib patch,"URI::HTTPS can build URI with blank, invalid host"
 20689,win test,TestInvokeVerb#test_invokeverb has warnings on Windows
 20696,patch core,`IO.read` ignores `err:` option
@@ -277,43 +270,40 @@
 20897,lib patch,resolv: not usable across ractors
 20904,win build,3.4.0-preview2: Building miniruby.exe fails for mswin32
 20905,patch ractor,Ruby VM hangs while using ractors
-20906,backport,Segmentation Fault in compile_keyword_arg
 20917,parser prism,redo/next in nested begin block causes wrong order of execution
 20919,patch core,IO#seek and IO#pos= do not clear the character buffer in some cases while transcoding
 20920,core,"When loading a file, __FILE__ gets relative paths expanded only when they start with &quot;./&quot;"
 20929,patch core,TestTime have an assertion different from current implementation.
-20934,ractor,`UnboundMethod#bind_call` may cause &quot;double free or corruption&quot; with Ractor
 20943,notbug core,Constant defined in `Data.define` block
 20948,core,Constant references incorrectly cached in `module (expr)::Foo`
 20957,core,RangeError on Array#values_at with negative ranges
 20958,win core,fix ENV.keys encoding on windows
-20965,core,`it` vs `binding.local_variables`
-20968,notbug core,`Array#fetch_values` unexpected method name in stack trace
-20996,embed,Embed Ruby 3.4 Failure
 20998,core,rb_str_locktmp() changes flags of frozen strings and string literals
 21007,patch ractor,Ractor scheduler issue when multiple threads in a ractor
-21016,parser prism,What should massign with `shareable_constant_value: experimental_everything` freeze?
 21023,build os/arch,Unintentional ruby/spec capi extension build twice 
-21026,maybenotbug,`def __FILE__.a; end` should be a syntax error
-21029,parser prism,Prism behavior for `defined? (;x)` differs
 21037,ractor,Ractors hang with multiple threads
-21049,core,Reconsider handling of the numbered parameters and &quot;it&quot; parameter in `Binding#local_variables`
-21083,win,current SystemCallError.new(-1) behavior on windows is not in accordance with the intent of the source code.
 21089,core,Missing methods on enumerators created from Enumerator::product and Enumerator::Chain
 21090,patch ractor,SEGV from require in Thread in Ractor
-21094,patch core,Module#set_temporary_name does not affect a name of a nested module
-21096,maybenotbug core,`Process.fork` hangs up on QEMU when called multiple times.
 21097,parser,`x = a rescue b in c` and `def f = a rescue b in c` parsed differently between parse.y and prism
 21104,ext,Net::HTTP connections failing in Ruby &gt;= 3.4.0 on macOS with Happy Eyeballs enabled
 21108,ractor,C-c (SIGINT) crashes ruby when looping Ractors are not taken?
 21111,build lib,RbConfig::CONFIG[&#39;CXX&#39;] quietly set to &quot;false&quot; when Ruby cannot build C++ programs
-21115,ractor ext,Etc.getgrgid is not Ractor-safe but is marked as such
 21119,perf notbug,Programs containing `Dir.glob` with a thread executing a CPU-heavy task run very slowly.
-21120,mn_threads,Segmentation fault when running Rails with MN threads enabled on 3.4.1
-21125,core,Kernel is called first
-21131,patch core,IO.copy_stream: yielded string changes value when duped
 21139,parser prism,Prism and parse.y parses `it = it` differently
-21141,core,`Time#utc?` does not work with a timezone object
 21142,core,Lazy enumerator `.each_with_index` ignores `.take(0)` before it
-21144,patch win core,Win32: Use Windows time zone ID as the time zone name if TZ is not set
 21146,patch ractor,VM_ASSERT(expr) gives bad bug report results when another ractor fails an assertion during printing of report
+21158,ractor,Ractor using &#39;receive_if&#39; sits in busy wait when there are skipped messages in the incoming queue 
+21166,fiber,Fiber Scheduler is unable to be interrupted by `IO#close`.
+21168,core,Prism doesn&#39;t require argument parentheses (in some cases) when a block is present but parse.y does
+21169,core, &quot;try to mark T_NONE object&quot; with 3.3.7
+21171,core,Segfault on large stack (RUBY_THREAD_VM_STACK_SIZE) on 3.4.2
+21187,parser,Strings concatenated with `\` getting frozen with literal hashes (PRISM only)
+21188,parser,PRISM does not end reading from tty with ^D twice
+21193,core patch,Inherited callback returns `nil` for `Object.const_source_location`
+21197,parser patch,Prism does not accept newline after defined? keyword
+21198,fiber,Fiber::Scheduler#blocking_operation_wait crash due to stack-use-after-return
+21200,test ractor,"Ractor spuriously hangs, segfaults or errors on TestEtc#test_ractor_parallel"
+21201,perf notbug core,Performance regression when defining methods inside `refine` blocks
+21202,ext patch,Ripper wrongly concats separate tstring_content within nested unterminated heredoc
+21203,test,TestGc#test_gc_parameter_init_slots is flaky results
+21204,test ractor,`TestEtc#test_ractor_parallel` is still flaky result with ModGC/MMTk
