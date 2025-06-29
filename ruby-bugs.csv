@@ -28,7 +28,7 @@
 12689,core,Thread isolation of $~ and $_
 12725,cygwin build,Trying to use ./miniruby before it exists
 13151,win core,File.writable? doesn&#39;t report correctly if a directory is writable on Windows.
-13164,core os/arch,A second `SystemStackError` exception  results in `Segmentation fault (core dumped)`
+13164,core platform,A second `SystemStackError` exception  results in `Segmentation fault (core dumped)`
 13671,regexp,Regexp with lookbehind and case-insensitivity raises RegexpError only on strings with certain characters
 13999,cygwin ext,Cygwin 環境で ripper_state_lex.rb がコアダンプする
 14090,core,`TestGc#test_interrupt_in_finalizer` fails very rarely
@@ -37,7 +37,7 @@
 14640,win core,[win32] File.realpath treats a relative path with a drive letter as an absolute path.
 14681,core,`syswrite&#39;: stream closed in another thread (IOError)
 14727,win thread,TestQueue#test_queue_with_trap always timeout on Windows10
-14761,os/arch thread,TestThread#test_join_limits hangs up on Solaris 10 with gcc
+14761,platform thread,TestThread#test_join_limits hangs up on Solaris 10 with gcc
 14838,regexp notbug,RegexpError with double &quot;s&quot; in look-behind assertion in case-insensitive unicode regexp
 15097,cygwin lib,Gem install fails on Ruby 2.5.1 with Cygwin (get_dns_server_list undefined)
 15247,win test,"Windows - TEMP folder, non 8.3 &amp; drive, fails &amp; errors in test-all (ruby &amp; rdoc)"
@@ -47,11 +47,11 @@
 15334,test cygwin,child_info_fork::abort: address space needed by &#39;emoji_iso2022_kddi.so&#39; on cygwin
 15367,core,IO.select is not resumed when io-object gets closed
 15386,patch core,[PATCH] io.c (rb_io_check_char_readable): do not io_fflush buffered sockets
-15423,core os/arch,fork leapfrog leaks memory on FreeBSD 11.2
+15423,core platform,fork leapfrog leaks memory on FreeBSD 11.2
 15499,thread,Breaking behavior on ruby 2.6: rb_thread_call_without_gvl doesn&#39;t invoke unblock_function when used on the main thread 
 15550,win,Windows - gem bin files - can&#39;t run from bash shell
-15598,core autoload,Deadlock on mutual reference of autoloaded constants
-15599,core autoload,Mixing autoload and require causes deadlock and incomplete definition.
+15598,autoload,Deadlock on mutual reference of autoloaded constants
+15599,autoload,Mixing autoload and require causes deadlock and incomplete definition.
 15764,parser,Whitespace and control characters should not be permitted in tokens
 15993,win encoding,&#39;require&#39; doesn&#39;t work if there are Cyrillic chars in the path to Ruby dir
 16158,regexp notbug,&quot;st&quot; Character Sequence In Regex Look-Behind Causes Illegal Pattern Error When Combined With POSIX Bracket Expressions And Case Insensitivity Flag
@@ -59,37 +59,28 @@
 16776,coverage,Regression in coverage library
 16819,core,Line reporting off by one when reporting line of a hash?
 16829,maybenotbug fiber,Exceptions raised from within an enumerated method lose part of their stacktrace
-16905,build os/arch,Ruby required to build Ruby on Haiku?
+16905,build platform,Ruby required to build Ruby on Haiku?
 16997,core win,IO#gets converts some \r\n to \n with universal_newline: false
-17142,build os/arch,Ruby fails to build in AIX 
+17142,build platform,Ruby fails to build in AIX 
 17359,ractor,Ractor copy mode is not Ractor-safe
 17400,encoding,Incorrect character downcase for Greek Sigma
-17420,ractor,Unsafe mutation of $&quot; when doing non-RubyGems require in Ractor
-17506,ractor,Ractor isolation broken by ThreadGroup
-17516,ractor,forking in a ractor causes Ruby to crash
 17578,lib,mkmf experimental C++ Support
-17617,ractor,"When a Ractor&#39;s incoming port is closed, Ractor.receive_if does not raise Ractor::ClosedError, but instead blocks indefinitely"
-17624,ractor,Ractor.receive is not thread-safe
-17677,ractor,Ractor crashes fork when blocking
-17678,ractor,Ractors do not restart after fork
 17774,regexp,Quantified empty group causes regex to fail
-17792,core os/arch,make notes and make test fail with Ruby3.0.1p64 RaspberryPI 4B Ubuntu 20.10 ARM64
+17792,core platform,make notes and make test fail with Ruby3.0.1p64 RaspberryPI 4B Ubuntu 20.10 ARM64
 17878,ractor,bootstraptest/test_ractor.rb:224 a random failing test with &quot;The outgoing-port is already closed (Ractor::ClosedError)&quot;
 17882,ractor cygwin,bootstraptest/test_ractor.rb:224 segfaults on Cygwin
 17925,parser,Pattern matching syntax using semicolon one-line
 17931,build win,Compile fails setup option nodynamic
 17989,regexp,Case insensitive Regexps do not handle characters with overlapping case foldings
 17990,regexp,Inconsistent behavior of Regexp quantifiers over characters with complex case foldings
-17998,ractor,"ractor: process hanging (with ractors initialized, but not being used)"
-17999,test os/arch,TestMethod#test_zsuper intermittent timeout error on raspbian10-aarch64 CI
-18002,test os/arch,s390x: Tests failing without LC_ALL env
+17999,test platform,TestMethod#test_zsuper intermittent timeout error on raspbian10-aarch64 CI
+18002,test platform,s390x: Tests failing without LC_ALL env
 18009,regexp,Regexps \w and \W with /i option and /u option produce inconsistent results under nested negation and intersection
 18010,regexp,Character class with single character gets case-folded with following string
 18012,regexp,Case-insensitive character classes can only match multiple code points when top-level character class is not negated
 18013,regexp,Unexpected results when mxiing negated character classes and case-folding
 18080,parser,Syntax error on one-line pattern matching
-18119,ractor,Ractor crashes when instantiating classes
-18131,os/arch,addr2line.c: Some inlined functions mistakenly shown
+18131,platform,addr2line.c: Some inlined functions mistakenly shown
 18132,thread,TODO: fix ccan/list thread safety
 18152,core,Fix theoretical bug with signals + qsort
 18255,core,ioctl zeroes the last buffer byte
@@ -97,21 +88,19 @@
 18338,encoding,Encoding.default_external = Encoding::UTF_16BE may add a wrongly-encoded string to $LOADED_FEATURES
 18359,win,[Windows MinGW] warning Please include winsock2.h before windows.h
 18396,parser,An unexpected &quot;hash value omission&quot; syntax error when without parentheses call expr follows
-18412,ractor,Segfault in test_ractor.rb
-18444,os/arch core,Trapped TSTP causes a locking deadlock in 3.0.3 onward
-18455,core perf,`IO#close` has poor performance and difficult to understand semantics.
-18473,os/arch ext,Raw data in Socket::Option#inspect on Amazon Linux 2 
+18444,platform core,Trapped TSTP causes a locking deadlock in 3.0.3 onward
+18473,platform ext,Raw data in Socket::Option#inspect on Amazon Linux 2 
 18476,core,Call to require stuck forever after receiving EAGAIN on writev when running with zeus
 18492,win core,`rb_rescue2` inside `rb_protect` segfaults on Windows
 18506,build,make and make install rebuild items every time unnecessarily - sometimes causing races in parallel installs
-18507,os/arch build,Incorrect target_os detection in configure script
+18507,platform build,Incorrect target_os detection in configure script
 18510,win core,Unexpected waiting for console when starting ruby on windows
 18601,encoding,Invalid byte sequences in Big5 encodings
 18605,win core,Fails to run on (newer) 32bit Windows with ucrt
 18608,build,`require&#39;: cannot load such file -- ripper (LoadError) after `make distclean`
 18661,win core,Net::HTTP behavior changed between 2.6 and 3.1 on windows.
 18677,ext,BigDecimal#power (**) returns FloatDomainError when passing an infinite parameter
-18733,os/arch,Ruby GC problems cause performance issue with Ractor
+18733,platform,Ruby GC problems cause performance issue with Ractor
 18740,tracepoint,Use of rightward assignment changes line number needed for line-targeted TracePoint
 18794,win,Windows - intermittent SEGV TestObjSpace#test_reachable_objects_during_iteration
 18804,core,Invalid line number for putnil instruction
@@ -136,21 +125,17 @@
 19192,core win,"IO has third data mode, document is incomplete."
 19231,core,Integer#step and Float::INFINITY - inconsistent behaviour when called with and without a block
 19251,test,Limit amount of test failures due to updates of tzdata
-19288,ractor perf,Ractor JSON parsing significantly slower than linear parsing
 19297,test,Don&#39;t download content from internet to execute Ruby test suite
-19313,test os/arch,Leaked file descriptors while running test-all
-19338,ractor,Ruby hangs when ouputting warnings inside ractor with VM lock held
+19313,test platform,Leaked file descriptors while running test-all
 19363,coverage,Fix rb_transient_heap_mark: wrong header (T_STRUCT) segfault
 19364,ractor tracepoint,Issue with tracepoint enable/disable across ractors
-19367,patch ractor,Issue with ractor local storage API
 19368,ractor,Small issue with isolated procs and eval
 19369,patch ractor,Small corner-case issue that breaks Ractor isolation: change cloned object from another thread
 19378,patch core win,Windows: Use less syscalls for faster require of big gems
 19383,patch win encoding,Time.now.zone encoding for German display language in Windows is incorrect
 19384,win encoding,ASCII 128..154 characters in IO.popen or %x output do not reflect the proper encoding in Windows
-19387,ractor,Issue with ObjectSpace.each_objects not returning objects after starting a ractor
+19387,ractor,ObjectSpace.each_objects only returns shareable objects after starting a Ractor
 19407,ractor,2 threads taking from current ractor will hang forever
-19408,ractor,Object no longer frozen after moved from a ractor
 19410,ractor,"If move from ractor fails with error, some objects are left in broken state"
 19412,ext,Socket starts queueing and not responding after a certain amount of requests
 19413,core,Can&#39;t move object when 2 ivars refer to same object
@@ -166,24 +151,23 @@
 19701,core,The rb_classext_t::classpath field is not marked for T_ICLASS
 19703,win core,text/binary mode of parent process fd is not properly inherited on windows
 19756,lib,"URI::HTTP.build does not accept a host of `_gateway`, but `URI.parse` will."
-19761,os/arch core,AddressSanitizer fails with Thread and Process
-19794,os/arch build,Ruby 3.2.2 fails to build on macOS Sonoma betas
-19831,os/arch build,warning message of linker with macOS Sonoma beta
+19761,platform core,AddressSanitizer fails with Thread and Process
+19794,platform build,Ruby 3.2.2 fails to build on macOS Sonoma betas
+19831,platform build,warning message of linker with macOS Sonoma beta
 19865,core patch,Segfault when calling user signal handlers during VM shutdown
 19869,test,Mark skipped test somehow
 19875,core perf notbug,Ruby 3.0 -&gt; 3.1 Performance regression in String#count
 19891,tracepoint,rb_mRubyVMFrozenCore is reported by DTrace but ignored by TracePoint
 19910,patch lib maybenotbug,Set#delete_if behavior inconsistent with Array/Hash
 19922,core patch,ObjectSpace.dump_all in multiple threads in parallel causes SEGV
-19970,core os/arch,Eval leaks callcache and callinfo objects on arm32 (linux)
-19981,ractor os/arch,bootstraptest/test_ractor.rb: Segmentation fault on arm32
+19970,core platform,Eval leaks callcache and callinfo objects on arm32 (linux)
+19981,ractor platform,bootstraptest/test_ractor.rb: Segmentation fault on arm32
 19984,test,`make test-bundler-parallel` fails with ` --enable-shared`
 19986,win,Win32: `HOME` is set to just `HOMEDRIVE` if `HOMEPATH` is unset
 19996,mnthreads,`RUBY_MN_THREADS=1` triggers Action Cable unit test failures
-20009,core,Marshal.load raises exception when load dumped class include non-ASCII
 20020,regexp,Segfault running regexp match?
 20041,core,Array destructuring and default values in parameters
-20045,test os/arch,`TestDir#test_home` fails on i686
+20045,test platform,`TestDir#test_home` fails on i686
 20047,thread,ConditionVariable#wait has spurious wakeups from signal traps
 20067,core,IO.pipe `int_enc` and `ext_enc` not working as documented?
 20079,core,alexandria testsuite began to segfault recently
@@ -192,12 +176,10 @@
 20089,fiber,Fiber#kill transfers to root fiber
 20097,regexp,Regexp#match? with empty capture group repeat is inconsistent
 20103,thread,rb_internal_thread_remove_event_hook() hangs when called from within a Thread hook
-20112,ractor perf,Ractors not working properly in ruby 3.3.0
 20146,ractor,Code using Ractor with env `RUBY_MAX_CPU=1` ends with unreachable
-20147,os/arch build,FreeBSD libyaml
+20147,platform build,FreeBSD libyaml
 20155,fiber,Using value of rb_fiber_scheduler_current() crashes Ruby
 20158,ractor coverage,Ractor affects Coverage results
-20165,ractor,Ractors moving a Struct breaks beyond the first 3 fields
 20167,ractor coverage,Code execution isn&#39;t recorded in Ractor
 20171,lib,ri -i ruby interactive  pressing tab does not autocomplete
 20179,build maybenotbug,`--with-ruby-version` configure option is not correctly applied to `rubyhdrdir`
@@ -206,11 +188,8 @@
 20203,maybenotbug,`TestEnumerable` test failures with GCC 14
 20225,regexp,Inconsistent behavior of regex matching for a regex has a null loop
 20243,mnthreads,M:N threading VM_ASSERT failure in rb_current_execution_context with clang 17 (on Linux)
-20255,ractor patch,Embedded arrays aren&#39;t moved correctly across ractors
-20267,ractor patch,Hashes that use ar_table aren&#39;t moved properly across ractors
 20269,maybenotbug core,bignum too big to convert into `long&#39; when running String#byteslice on Windows
-20271,ractor patch,Issue with moving embedded string across ractors
-20283,build os/arch,Build failed since Ruby 3.2.3 if Xcode.app was renamed to space contained name.
+20283,build platform,Build failed since Ruby 3.2.3 if Xcode.app was renamed to space contained name.
 20299,tracepoint,Tracepoint staying enable after a disable
 20301,lib notbug patch,`Set#add?` does two hash look-ups
 20314,lib,Simultaneous Timeout expires may raise an exception after the block
@@ -224,7 +203,7 @@
 20412,maybenotbug core,"UTF-8 String encoding behavior differs between 3.2, 3.3 and master"
 20419,core,[BUG] inconsistent freelist length with cppflags=&#39;-DRGENGC_CHECK_MODE -DUSE_RUBY_DEBUG_LOG=1&#39;
 20420,doc,benchmark/gc/redblack.rb license clarification
-20452,os/arch core,Ruby 3.3 on Alpine Linux results in a relatively shallow SystemStackError exception
+20452,platform core,Ruby 3.3 on Alpine Linux results in a relatively shallow SystemStackError exception
 20455,core maybenotbug,rb_errinfo() inconsistent with $! in the caller Ruby code
 20456,core maybenotbug,Hash can get stuck marked as iterating through process forking
 20461,core,Unreadable pipe included in the readable IO of IO.select
@@ -237,10 +216,8 @@
 20473,core,Ractor array/hash literals
 20480,win build,Complie failure for unable to configure NET_LUID using msys2 mingw64-gcc
 20526,win core,File.open(encoding: &quot;bom|utf-8&quot;) converts &quot;\r\n&quot; to &quot;\n&quot; on Windows
-20560,build,make install - skipped bundled gems - minor issue
 20591,test,macOS head - all are using OpenSSL 1.1.1?
-20631,build os/arch,Build failure with Xcode 16 beta and macOS 15 (Sequoia) Beta
-20642,maybenotbug yjit,YJIT prevents hardening
+20642,maybenotbug jit,YJIT prevents hardening
 20666,maybenotbug,Segmentation fault instead of LoadError exception
 20686,lib patch,"URI::HTTPS can build URI with blank, invalid host"
 20689,win test,TestInvokeVerb#test_invokeverb has warnings on Windows
@@ -248,29 +225,25 @@
 20697,patch core,`Rational(&quot;1r&quot;)` fails while `Complex(&quot;1i&quot;)` succeeds
 20699,win,"On Windows, the `__dir__` keyword is garbled in paths containing Japanese characters, and `require_relative` fails as well"
 20714,patch lib,Handle optional dependencies in `bundled_gems.rb`
-20726,ractor,Issue with hash without braces when assigned to constant with ractor literals
-20727,yjit,YJIT segmentation fault inside of invalidate_block_version
-20733,build os/arch,Build failure OpenSSL extension with FreeBSD 13.3
+20727,jit,YJIT segmentation fault inside of invalidate_block_version
+20733,build platform,Build failure OpenSSL extension with FreeBSD 13.3
 20743,core,ruby doesn&#39;t properly split RUBY_DEBUG_LOG_FILTER into items
 20772,test core,Test with -O3 is flaky
 20776,parser,[PRISM] Pattern matching syntax error message
-20780,os/arch core,related to #20779 -- crash creating large number of concurrent-ruby promises
+20780,platform core,related to #20779 -- crash creating large number of concurrent-ruby promises
 20790,parser,Syntax acceptance of `*x = p rescue p 1` is different between parse.y and prism
 20807,core,String#gsub fails when called from string subclass with a block passed
 20809,ext,Ripper fails to parse/tokenize nested heredocs within embexpr
 20813,maybenotbug core,Segfault in rgengc_check_relation/RVALUE_WB_UNPROTECTED
 20816,perf,Potential regression in Ruby 3.3.x (compared with 3.1 and 3.2) regarding fast syscalls and multi-threading.
 20819,core,IO#readline does not process newlines correctly for wide character encodings
-20854,build,Some bundled gems are not installed starting with 007c75ce4c66243e41144c6977e5ccbf4ab71c93
 20872,build ext,Undefined RUBY_API_VERSION_* macros used in &lt;ruby/backward/cxxanyargs.hpp&gt;
 20874,doc,Difference in documentation for `irb -U` between `man irb` and `irb --help`
 20881,core,Complex#** returns discontinuous results in Fixnum and Bignum exponents
 20888,core,4c270200db breaks TestGemRemoteFetcherLocalSSLServer tests or so 
 20889,core,IO#ungetc and IO#ungetbyte should not cause IO#pos to report an inaccurate position
-20897,lib patch,resolv: not usable across ractors
 20904,win build,3.4.0-preview2: Building miniruby.exe fails for mswin32
-20905,patch ractor,Ruby VM hangs while using ractors
-20917,parser prism,redo/next in nested begin block causes wrong order of execution
+20917,parser,redo/next in nested begin block causes wrong order of execution
 20919,patch core,IO#seek and IO#pos= do not clear the character buffer in some cases while transcoding
 20920,core,"When loading a file, __FILE__ gets relative paths expanded only when they start with &quot;./&quot;"
 20929,patch core,TestTime have an assertion different from current implementation.
@@ -278,32 +251,67 @@
 20948,core,Constant references incorrectly cached in `module (expr)::Foo`
 20957,core,RangeError on Array#values_at with negative ranges
 20958,win core,fix ENV.keys encoding on windows
-20998,core,rb_str_locktmp() changes flags of frozen strings and string literals
-21007,patch ractor,Ractor scheduler issue when multiple threads in a ractor
-21023,build os/arch,Unintentional ruby/spec capi extension build twice 
-21037,ractor,Ractors hang with multiple threads
+21023,build platform,Unintentional ruby/spec capi extension build twice 
 21089,core,Missing methods on enumerators created from Enumerator::product and Enumerator::Chain
-21090,patch ractor,SEGV from require in Thread in Ractor
 21097,parser,`x = a rescue b in c` and `def f = a rescue b in c` parsed differently between parse.y and prism
 21104,ext,Net::HTTP connections failing in Ruby &gt;= 3.4.0 on macOS with Happy Eyeballs enabled
-21108,ractor,C-c (SIGINT) crashes ruby when looping Ractors are not taken?
 21111,build lib,RbConfig::CONFIG[&#39;CXX&#39;] quietly set to &quot;false&quot; when Ruby cannot build C++ programs
 21119,perf notbug,Programs containing `Dir.glob` with a thread executing a CPU-heavy task run very slowly.
-21139,parser prism,Prism and parse.y parses `it = it` differently
+21139,parser,Prism and parse.y parses `it = it` differently
 21142,core,Lazy enumerator `.each_with_index` ignores `.take(0)` before it
 21146,patch ractor,VM_ASSERT(expr) gives bad bug report results when another ractor fails an assertion during printing of report
-21158,ractor,Ractor using &#39;receive_if&#39; sits in busy wait when there are skipped messages in the incoming queue 
-21166,fiber,Fiber Scheduler is unable to be interrupted by `IO#close`.
 21168,core,Prism doesn&#39;t require argument parentheses (in some cases) when a block is present but parse.y does
 21169,core, &quot;try to mark T_NONE object&quot; with 3.3.7
-21171,core,Segfault on large stack (RUBY_THREAD_VM_STACK_SIZE) on 3.4.2
 21187,parser,Strings concatenated with `\` getting frozen with literal hashes (PRISM only)
 21188,parser,PRISM does not end reading from tty with ^D twice
-21193,core patch,Inherited callback returns `nil` for `Object.const_source_location`
-21197,parser patch,Prism does not accept newline after defined? keyword
-21198,fiber,Fiber::Scheduler#blocking_operation_wait crash due to stack-use-after-return
 21200,test ractor,"Ractor spuriously hangs, segfaults or errors on TestEtc#test_ractor_parallel"
-21201,perf notbug core,Performance regression when defining methods inside `refine` blocks
-21202,ext patch,Ripper wrongly concats separate tstring_content within nested unterminated heredoc
 21203,test,TestGc#test_gc_parameter_init_slots is flaky results
 21204,test ractor,`TestEtc#test_ractor_parallel` is still flaky result with ModGC/MMTk
+21206,core,Segmentation fault on ISeq#to_binary
+21208,ractor,"`Ractor#send(move: true)` allow moving objects that are on the stack, and used by C code."
+21212,core,IO::Buffer can be freed while its slice is locked
+21256,parser patch,`it` value is wrapped in an array when that doesn&#39;t happen with numbered parameter
+21259,parser,The Prism compiler wrongly creates a line number of zero
+21265,core,Crash when proc from Symbol#to_proc called outside refinement scope
+21266,jit,YJIT GC safety crash with proc objects as block argument
+21270,ext,init_fast_fallback_inetsock_internal (default for TCPSocket.new/TCPSocket.open) isn&#39;t fiber aware
+21271,build platform,Ruby build failure due to invalid probe specifier for dtrace
+21272,maybenotbug tracepoint,Class.new doesn&#39;t trigger :class TracePoint
+21291,regexp patch,possible bug with /m regexp and $ based on input
+21293,build,C23/GCC 15 build breakage with rb_define_method() and friends
+21294,lib notbug,URI.extract is extracting invalid URIs with a mishmash of IPv6 notation with IPv4 address 
+21295,build platform,macos-13 debug build failures
+21298,patch core,`ObjectSpace.allocation_class_path` returns inconsistent results depending on `TracePoint` state
+21301,core,Invalid Dates Accepted When Using &quot;UTC&quot; in Time.new
+21314,autoload,Kernel#autoload requires the wrong file (?)
+21315,ractor,Finalizers violate the `rb_ractor_confirm_belonging` assertion
+21316,namespace,Namespaces leak with permanent names
+21318,namespace,Namespaces leak with Module.nesting
+21320,namespace,Namespaces leak with constant lookup
+21322,namespace,Namespaces and builtin classes as arguments and return values
+21324,namespace,Namespace loads RubyGems in root Namespace but it should not
+21326,parser,"Instruction generation differences between parse.y and prism for `def a(x, ...); b(...); end`"
+21337,namespace,Using `not` on the RHS of a logical operator becomes valid syntax with Prism
+21339,namespace,Namespace: `RubyVM::InstructionSequence.load_iseq` isn&#39;t called for the root namespace
+21341,namespace,`Namespace is not a module (TypeError)` without enabling the namespace
+21342,thread fiber,Segfault: invalid keeping_mutexes when using Mutex in Thread then Fiber after GC
+21343,namespace,Namespace: singleton classes of root namespace leak between namespaces
+21345,parser patch,"crash on evaluating &#39;a=&gt;a,*,&#39;"
+21348,tracepoint,Should Tracepoint track retry as another &quot;call&quot; event? 
+21360,thread fiber,Inconsistent Support for `Exception#cause` in `Fiber#raise` and `Thread#raise`
+21362,namespace,Namespace: Inline method caches poisoned with builtins
+21363,namespace,`Namespace.current` should always return the Namespace in which it was defined
+21364,namespace,Constant lookup in namespaces should be consistent
+21368,ractor,Moving objects with finalizer between Ractors crashes
+21374,core,FrozenError message is inconsistent when a singleton method is defined on a frozen object
+21375,core notbug,Set[] does not call #initialize
+21376,core notbug,"Inconsistent equality between Sets with different compare_by_identity, different classes"
+21391,lib notbug,Inconsistent trailing slash behavior of File.join and Pathname#join with empty strings
+21396,core notbug,Set#initialize should call Set#add on items passed in
+21398,ractor,Ractor.select hangs when multiple threads submit heavy jobs concurrently
+21402,core patch,ruby2_keywords affects methods/procs with post arguments
+21446,core,StackOverflow when changing visibility in reopened refinement
+21451,ractor,"Ractor.make_shareable(-&gt;{}, copy: true) raises unhelpful error"
+21452,core notbug,ARGS_SPLAT bytecode regression between 3.3 and 3.4
+21456,core,IO.close does not work in a rescue IO::TimeoutError block.
+21457,core,Bundled gems - power_assert is not being installed
