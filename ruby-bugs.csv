@@ -100,7 +100,7 @@
 18608,build,`require&#39;: cannot load such file -- ripper (LoadError) after `make distclean`
 18661,win core,Net::HTTP behavior changed between 2.6 and 3.1 on windows.
 18677,ext,BigDecimal#power (**) returns FloatDomainError when passing an infinite parameter
-18733,platform,Ruby GC problems cause performance issue with Ractor
+18733,platform,Heavy GC allocations cause performance issue with Ractor
 18740,tracepoint,Use of rightward assignment changes line number needed for line-targeted TracePoint
 18794,win,Windows - intermittent SEGV TestObjSpace#test_reachable_objects_during_iteration
 18804,core,Invalid line number for putnil instruction
@@ -109,7 +109,6 @@
 18878,parser,parse.y: Foo::Bar {} is inconsistently rejected
 18903,core,Stack overflow signal handling seems to be triggered once and then not working after
 18923,win,Dir.glob Errno::ENAMETOOLONG - Caused by outdated logic in open_dir_handle (win32.c)
-18940,ractor,Ruby Ractor fails with IOError when handling higher concurrency
 18947,win core,Unexpected Errno::ENAMETOOLONG on Windows
 18966,parser,Strange behavior when numbered parameters and method definition are both used in a block
 18995,core,IO#set_encoding sometimes set an IO&#39;s internal encoding to the default external encoding
@@ -118,7 +117,6 @@
 19043,ext,Segfault on macOS 11.7 while using StringScanner in multiple threads
 19044,win build,Attempting to compile a static ruby 3.1 fails with MinGW
 19112,ractor tracepoint,Ractor garbage collection breaks/disables all active tracepoints
-19154,ractor,Specify require and autoload guarantees in ractors
 19157,lib,URI bad component validation can be tricked
 19165,perf,"Method (with no param) delegation with *, **, and ... is slow"
 19172,core,`ruby_thread_has_gvl_p` is innacurate sometimes -- document or change?
@@ -135,7 +133,6 @@
 19383,patch win encoding,Time.now.zone encoding for German display language in Windows is incorrect
 19384,win encoding,ASCII 128..154 characters in IO.popen or %x output do not reflect the proper encoding in Windows
 19387,ractor,ObjectSpace.each_objects only returns shareable objects after starting a Ractor
-19407,ractor,2 threads taking from current ractor will hang forever
 19410,ractor,"If move from ractor fails with error, some objects are left in broken state"
 19412,ext,Socket starts queueing and not responding after a certain amount of requests
 19413,core,Can&#39;t move object when 2 ivars refer to same object
@@ -161,7 +158,6 @@
 19910,patch lib maybenotbug,Set#delete_if behavior inconsistent with Array/Hash
 19922,core patch,ObjectSpace.dump_all in multiple threads in parallel causes SEGV
 19970,core platform,Eval leaks callcache and callinfo objects on arm32 (linux)
-19981,ractor platform,bootstraptest/test_ractor.rb: Segmentation fault on arm32
 19984,test,`make test-bundler-parallel` fails with ` --enable-shared`
 19986,win,Win32: `HOME` is set to just `HOMEDRIVE` if `HOMEPATH` is unset
 19996,mnthreads,`RUBY_MN_THREADS=1` triggers Action Cable unit test failures
@@ -176,7 +172,6 @@
 20089,fiber,Fiber#kill transfers to root fiber
 20097,regexp,Regexp#match? with empty capture group repeat is inconsistent
 20103,thread,rb_internal_thread_remove_event_hook() hangs when called from within a Thread hook
-20146,ractor,Code using Ractor with env `RUBY_MAX_CPU=1` ends with unreachable
 20147,platform build,FreeBSD libyaml
 20155,fiber,Using value of rb_fiber_scheduler_current() crashes Ruby
 20158,ractor coverage,Ractor affects Coverage results
@@ -196,7 +191,6 @@
 20315,regexp,Quantifier expansion leads to different results in Regexp.
 20316,regexp,Regexp quantifier behavior changes in different syntactic context.
 20319,core,Singleton class is being frozen lazily in some cases
-20346,fiber ractor,FiberScheduler.unblock not called by Thread#join when Thread body contains Ractor.take
 20395,doc,Invalid license note in vsnprintf.c
 20399,ext,Ripper doesn&#39;t respect implicit -x
 20409,core,Missing reporting some invalid breaks
@@ -219,7 +213,6 @@
 20591,test,macOS head - all are using OpenSSL 1.1.1?
 20642,maybenotbug jit,YJIT prevents hardening
 20666,maybenotbug,Segmentation fault instead of LoadError exception
-20686,lib patch,"URI::HTTPS can build URI with blank, invalid host"
 20689,win test,TestInvokeVerb#test_invokeverb has warnings on Windows
 20696,patch core,`IO.read` ignores `err:` option
 20697,patch core,`Rational(&quot;1r&quot;)` fails while `Complex(&quot;1i&quot;)` succeeds
@@ -229,7 +222,6 @@
 20733,build platform,Build failure OpenSSL extension with FreeBSD 13.3
 20743,core,ruby doesn&#39;t properly split RUBY_DEBUG_LOG_FILTER into items
 20772,test core,Test with -O3 is flaky
-20776,parser,[PRISM] Pattern matching syntax error message
 20780,platform core,related to #20779 -- crash creating large number of concurrent-ruby promises
 20790,parser,Syntax acceptance of `*x = p rescue p 1` is different between parse.y and prism
 20807,core,String#gsub fails when called from string subclass with a block passed
@@ -255,15 +247,11 @@
 21089,core,Missing methods on enumerators created from Enumerator::product and Enumerator::Chain
 21097,parser,`x = a rescue b in c` and `def f = a rescue b in c` parsed differently between parse.y and prism
 21104,ext,Net::HTTP connections failing in Ruby &gt;= 3.4.0 on macOS with Happy Eyeballs enabled
-21111,build lib,RbConfig::CONFIG[&#39;CXX&#39;] quietly set to &quot;false&quot; when Ruby cannot build C++ programs
 21119,perf notbug,Programs containing `Dir.glob` with a thread executing a CPU-heavy task run very slowly.
-21139,parser,Prism and parse.y parses `it = it` differently
 21142,core,Lazy enumerator `.each_with_index` ignores `.take(0)` before it
 21146,patch ractor,VM_ASSERT(expr) gives bad bug report results when another ractor fails an assertion during printing of report
 21168,core,Prism doesn&#39;t require argument parentheses (in some cases) when a block is present but parse.y does
 21169,core, &quot;try to mark T_NONE object&quot; with 3.3.7
-21187,parser,Strings concatenated with `\` getting frozen with literal hashes (PRISM only)
-21188,parser,PRISM does not end reading from tty with ^D twice
 21200,test ractor,"Ractor spuriously hangs, segfaults or errors on TestEtc#test_ractor_parallel"
 21203,test,TestGc#test_gc_parameter_init_slots is flaky results
 21204,test ractor,`TestEtc#test_ractor_parallel` is still flaky result with ModGC/MMTk
@@ -271,7 +259,6 @@
 21208,ractor,"`Ractor#send(move: true)` allow moving objects that are on the stack, and used by C code."
 21212,core,IO::Buffer can be freed while its slice is locked
 21256,parser patch,`it` value is wrapped in an array when that doesn&#39;t happen with numbered parameter
-21259,parser,The Prism compiler wrongly creates a line number of zero
 21265,core,Crash when proc from Symbol#to_proc called outside refinement scope
 21266,jit,YJIT GC safety crash with proc objects as block argument
 21270,ext,init_fast_fallback_inetsock_internal (default for TCPSocket.new/TCPSocket.open) isn&#39;t fiber aware
@@ -290,15 +277,11 @@
 21320,namespace,Namespaces leak with constant lookup
 21322,namespace,Namespaces and builtin classes as arguments and return values
 21324,namespace,Namespace loads RubyGems in root Namespace but it should not
-21326,parser,"Instruction generation differences between parse.y and prism for `def a(x, ...); b(...); end`"
-21337,namespace,Using `not` on the RHS of a logical operator becomes valid syntax with Prism
 21339,namespace,Namespace: `RubyVM::InstructionSequence.load_iseq` isn&#39;t called for the root namespace
 21341,namespace,`Namespace is not a module (TypeError)` without enabling the namespace
 21342,thread fiber,Segfault: invalid keeping_mutexes when using Mutex in Thread then Fiber after GC
 21343,namespace,Namespace: singleton classes of root namespace leak between namespaces
-21345,parser patch,"crash on evaluating &#39;a=&gt;a,*,&#39;"
 21348,tracepoint,Should Tracepoint track retry as another &quot;call&quot; event? 
-21360,thread fiber,Inconsistent Support for `Exception#cause` in `Fiber#raise` and `Thread#raise`
 21362,namespace,Namespace: Inline method caches poisoned with builtins
 21363,namespace,`Namespace.current` should always return the Namespace in which it was defined
 21364,namespace,Constant lookup in namespaces should be consistent
@@ -308,10 +291,16 @@
 21376,core notbug,"Inconsistent equality between Sets with different compare_by_identity, different classes"
 21391,lib notbug,Inconsistent trailing slash behavior of File.join and Pathname#join with empty strings
 21396,core notbug,Set#initialize should call Set#add on items passed in
-21398,ractor,Ractor.select hangs when multiple threads submit heavy jobs concurrently
-21402,core patch,ruby2_keywords affects methods/procs with post arguments
 21446,core,StackOverflow when changing visibility in reopened refinement
 21451,ractor,"Ractor.make_shareable(-&gt;{}, copy: true) raises unhelpful error"
-21452,core notbug,ARGS_SPLAT bytecode regression between 3.3 and 3.4
-21456,core,IO.close does not work in a rescue IO::TimeoutError block.
-21457,core,Bundled gems - power_assert is not being installed
+21495,core,IO.read_nonblock does not work under a rescue IO::TimeoutError
+21498,win core,Windows - Ruby Overrides C Library APIs thus breaking them
+21504,ractor,"[Ractor] Process.waitpid blocks ractor, new NT doesn&#39;t pick up other ractors"
+21516,core,Segfault in String#succ! on 32-bit i686
+21522,ractor,Accessing outer locals via eval in a Ractor returns false
+21528,parser,SyntaxError#message may have broken encoding with multibyte source under Prism
+21534,platform,ppc64le bootstraptest/test_ractor.rb aborted (core dumped) on configure cppflags=-DRUBY_DEBUG
+21537,ractor,rb_ractor_sched_barrier_start() hangs on Windows
+21538,core,initialize_dup not called when duping class/module
+21540,parser patch,prism allows `foo &amp;&amp; return bar` when parse.y doesn&#39;t
+21551,ractor,Ractor isolation error points to the wrong place
