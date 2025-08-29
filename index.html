@@ -1,29 +1,29 @@
 <html>
 <head>
-<title>317 Tagged Open Ruby Bugs as of 2025-06-29 14:57:25 +0900</title>
+<title>306 Tagged Open Ruby Bugs as of 2025-08-30 08:27:03 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
 <p class="filter-buttons">Available Tags: <input type="submit" value="core" />
 <input type="submit" value="win" />
-<input type="submit" value="patch" />
 <input type="submit" value="platform" />
+<input type="submit" value="patch" />
 <input type="submit" value="build" />
 <input type="submit" value="ractor" />
 <input type="submit" value="maybenotbug" />
-<input type="submit" value="parser" />
 <input type="submit" value="test" />
 <input type="submit" value="ext" />
-<input type="submit" value="lib" />
 <input type="submit" value="regexp" />
 <input type="submit" value="encoding" />
+<input type="submit" value="lib" />
 <input type="submit" value="notbug" />
+<input type="submit" value="parser" />
 <input type="submit" value="thread" />
-<input type="submit" value="namespace" />
 <input type="submit" value="cygwin" />
-<input type="submit" value="fiber" />
+<input type="submit" value="namespace" />
 <input type="submit" value="tracepoint" />
 <input type="submit" value="perf" />
+<input type="submit" value="fiber" />
 <input type="submit" value="coverage" />
 <input type="submit" value="doc" />
 <input type="submit" value="autoload" />
@@ -31,9 +31,9 @@
 <input type="submit" value="mnthreads" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">317</span> matched)
+(<span id="matched">306</span> matched)
 <table>
-<caption>317 Tagged Open Ruby Bugs as of 2025-06-29 14:57:25 +0900</caption>
+<caption>306 Tagged Open Ruby Bugs as of 2025-08-30 08:27:03 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -42,25 +42,81 @@
 </tr>
 </thead>
 <tbody>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/21457">21457</a>
+<tr class=" ractor ">
+<td><a href="https://bugs.ruby-lang.org/issues/21551">21551</a>
 </td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/21457">Bundled gems - power_assert is not being installed</a>
+<td>ractor</td>
+<td><a href="https://bugs.ruby-lang.org/issues/21551">Ractor isolation error points to the wrong place</a>
+</td>
+</tr>
+<tr class=" parser patch ">
+<td><a href="https://bugs.ruby-lang.org/issues/21540">21540</a>
+</td>
+<td>parser patch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/21540">prism allows `foo &amp;&amp; return bar` when parse.y doesn&#39;t</a>
 </td>
 </tr>
 <tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/21456">21456</a>
+<td><a href="https://bugs.ruby-lang.org/issues/21538">21538</a>
 </td>
 <td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/21456">IO.close does not work in a rescue IO::TimeoutError block.</a>
+<td><a href="https://bugs.ruby-lang.org/issues/21538">initialize_dup not called when duping class/module</a>
 </td>
 </tr>
-<tr class=" core notbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/21452">21452</a>
+<tr class=" ractor ">
+<td><a href="https://bugs.ruby-lang.org/issues/21537">21537</a>
 </td>
-<td>core notbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/21452">ARGS_SPLAT bytecode regression between 3.3 and 3.4</a>
+<td>ractor</td>
+<td><a href="https://bugs.ruby-lang.org/issues/21537">rb_ractor_sched_barrier_start() hangs on Windows</a>
+</td>
+</tr>
+<tr class=" platform ">
+<td><a href="https://bugs.ruby-lang.org/issues/21534">21534</a>
+</td>
+<td>platform</td>
+<td><a href="https://bugs.ruby-lang.org/issues/21534">ppc64le bootstraptest/test_ractor.rb aborted (core dumped) on configure cppflags=-DRUBY_DEBUG</a>
+</td>
+</tr>
+<tr class=" parser ">
+<td><a href="https://bugs.ruby-lang.org/issues/21528">21528</a>
+</td>
+<td>parser</td>
+<td><a href="https://bugs.ruby-lang.org/issues/21528">SyntaxError#message may have broken encoding with multibyte source under Prism</a>
+</td>
+</tr>
+<tr class=" ractor ">
+<td><a href="https://bugs.ruby-lang.org/issues/21522">21522</a>
+</td>
+<td>ractor</td>
+<td><a href="https://bugs.ruby-lang.org/issues/21522">Accessing outer locals via eval in a Ractor returns false</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/21516">21516</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/21516">Segfault in String#succ! on 32-bit i686</a>
+</td>
+</tr>
+<tr class=" ractor ">
+<td><a href="https://bugs.ruby-lang.org/issues/21504">21504</a>
+</td>
+<td>ractor</td>
+<td><a href="https://bugs.ruby-lang.org/issues/21504">[Ractor] Process.waitpid blocks ractor, new NT doesn&#39;t pick up other ractors</a>
+</td>
+</tr>
+<tr class=" win core ">
+<td><a href="https://bugs.ruby-lang.org/issues/21498">21498</a>
+</td>
+<td>win core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/21498">Windows - Ruby Overrides C Library APIs thus breaking them</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/21495">21495</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/21495">IO.read_nonblock does not work under a rescue IO::TimeoutError</a>
 </td>
 </tr>
 <tr class=" ractor ">
@@ -75,20 +131,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/21446">StackOverflow when changing visibility in reopened refinement</a>
-</td>
-</tr>
-<tr class=" core patch ">
-<td><a href="https://bugs.ruby-lang.org/issues/21402">21402</a>
-</td>
-<td>core patch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/21402">ruby2_keywords affects methods/procs with post arguments</a>
-</td>
-</tr>
-<tr class=" ractor ">
-<td><a href="https://bugs.ruby-lang.org/issues/21398">21398</a>
-</td>
-<td>ractor</td>
-<td><a href="https://bugs.ruby-lang.org/issues/21398">Ractor.select hangs when multiple threads submit heavy jobs concurrently</a>
 </td>
 </tr>
 <tr class=" core notbug ">
@@ -154,25 +196,11 @@
 <td><a href="https://bugs.ruby-lang.org/issues/21362">Namespace: Inline method caches poisoned with builtins</a>
 </td>
 </tr>
-<tr class=" thread fiber ">
-<td><a href="https://bugs.ruby-lang.org/issues/21360">21360</a>
-</td>
-<td>thread fiber</td>
-<td><a href="https://bugs.ruby-lang.org/issues/21360">Inconsistent Support for `Exception#cause` in `Fiber#raise` and `Thread#raise`</a>
-</td>
-</tr>
 <tr class=" tracepoint ">
 <td><a href="https://bugs.ruby-lang.org/issues/21348">21348</a>
 </td>
 <td>tracepoint</td>
 <td><a href="https://bugs.ruby-lang.org/issues/21348">Should Tracepoint track retry as another &quot;call&quot; event? </a>
-</td>
-</tr>
-<tr class=" parser patch ">
-<td><a href="https://bugs.ruby-lang.org/issues/21345">21345</a>
-</td>
-<td>parser patch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/21345">crash on evaluating &#39;a=&gt;a,*,&#39;</a>
 </td>
 </tr>
 <tr class=" namespace ">
@@ -201,20 +229,6 @@
 </td>
 <td>namespace</td>
 <td><a href="https://bugs.ruby-lang.org/issues/21339">Namespace: `RubyVM::InstructionSequence.load_iseq` isn&#39;t called for the root namespace</a>
-</td>
-</tr>
-<tr class=" namespace ">
-<td><a href="https://bugs.ruby-lang.org/issues/21337">21337</a>
-</td>
-<td>namespace</td>
-<td><a href="https://bugs.ruby-lang.org/issues/21337">Using `not` on the RHS of a logical operator becomes valid syntax with Prism</a>
-</td>
-</tr>
-<tr class=" parser ">
-<td><a href="https://bugs.ruby-lang.org/issues/21326">21326</a>
-</td>
-<td>parser</td>
-<td><a href="https://bugs.ruby-lang.org/issues/21326">Instruction generation differences between parse.y and prism for `def a(x, ...); b(...); end`</a>
 </td>
 </tr>
 <tr class=" namespace ">
@@ -343,13 +357,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/21265">Crash when proc from Symbol#to_proc called outside refinement scope</a>
 </td>
 </tr>
-<tr class=" parser ">
-<td><a href="https://bugs.ruby-lang.org/issues/21259">21259</a>
-</td>
-<td>parser</td>
-<td><a href="https://bugs.ruby-lang.org/issues/21259">The Prism compiler wrongly creates a line number of zero</a>
-</td>
-</tr>
 <tr class=" parser patch ">
 <td><a href="https://bugs.ruby-lang.org/issues/21256">21256</a>
 </td>
@@ -399,20 +406,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/21200">Ractor spuriously hangs, segfaults or errors on TestEtc#test_ractor_parallel</a>
 </td>
 </tr>
-<tr class=" parser ">
-<td><a href="https://bugs.ruby-lang.org/issues/21188">21188</a>
-</td>
-<td>parser</td>
-<td><a href="https://bugs.ruby-lang.org/issues/21188">PRISM does not end reading from tty with ^D twice</a>
-</td>
-</tr>
-<tr class=" parser ">
-<td><a href="https://bugs.ruby-lang.org/issues/21187">21187</a>
-</td>
-<td>parser</td>
-<td><a href="https://bugs.ruby-lang.org/issues/21187">Strings concatenated with `\` getting frozen with literal hashes (PRISM only)</a>
-</td>
-</tr>
 <tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/21169">21169</a>
 </td>
@@ -441,25 +434,11 @@
 <td><a href="https://bugs.ruby-lang.org/issues/21142">Lazy enumerator `.each_with_index` ignores `.take(0)` before it</a>
 </td>
 </tr>
-<tr class=" parser ">
-<td><a href="https://bugs.ruby-lang.org/issues/21139">21139</a>
-</td>
-<td>parser</td>
-<td><a href="https://bugs.ruby-lang.org/issues/21139">Prism and parse.y parses `it = it` differently</a>
-</td>
-</tr>
 <tr class=" perf notbug ">
 <td><a href="https://bugs.ruby-lang.org/issues/21119">21119</a>
 </td>
 <td>perf notbug</td>
 <td><a href="https://bugs.ruby-lang.org/issues/21119">Programs containing `Dir.glob` with a thread executing a CPU-heavy task run very slowly.</a>
-</td>
-</tr>
-<tr class=" build lib ">
-<td><a href="https://bugs.ruby-lang.org/issues/21111">21111</a>
-</td>
-<td>build lib</td>
-<td><a href="https://bugs.ruby-lang.org/issues/21111">RbConfig::CONFIG[&#39;CXX&#39;] quietly set to &quot;false&quot; when Ruby cannot build C++ programs</a>
 </td>
 </tr>
 <tr class=" ext ">
@@ -637,13 +616,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/20780">related to #20779 -- crash creating large number of concurrent-ruby promises</a>
 </td>
 </tr>
-<tr class=" parser ">
-<td><a href="https://bugs.ruby-lang.org/issues/20776">20776</a>
-</td>
-<td>parser</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20776">[PRISM] Pattern matching syntax error message</a>
-</td>
-</tr>
 <tr class=" test core ">
 <td><a href="https://bugs.ruby-lang.org/issues/20772">20772</a>
 </td>
@@ -705,13 +677,6 @@
 </td>
 <td>win test</td>
 <td><a href="https://bugs.ruby-lang.org/issues/20689">TestInvokeVerb#test_invokeverb has warnings on Windows</a>
-</td>
-</tr>
-<tr class=" lib patch ">
-<td><a href="https://bugs.ruby-lang.org/issues/20686">20686</a>
-</td>
-<td>lib patch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20686">URI::HTTPS can build URI with blank, invalid host</a>
 </td>
 </tr>
 <tr class=" maybenotbug ">
@@ -868,13 +833,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/20395">Invalid license note in vsnprintf.c</a>
 </td>
 </tr>
-<tr class=" fiber ractor ">
-<td><a href="https://bugs.ruby-lang.org/issues/20346">20346</a>
-</td>
-<td>fiber ractor</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20346">FiberScheduler.unblock not called by Thread#join when Thread body contains Ractor.take</a>
-</td>
-</tr>
 <tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/20319">20319</a>
 </td>
@@ -1008,13 +966,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/20147">FreeBSD libyaml</a>
 </td>
 </tr>
-<tr class=" ractor ">
-<td><a href="https://bugs.ruby-lang.org/issues/20146">20146</a>
-</td>
-<td>ractor</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20146">Code using Ractor with env `RUBY_MAX_CPU=1` ends with unreachable</a>
-</td>
-</tr>
 <tr class=" thread ">
 <td><a href="https://bugs.ruby-lang.org/issues/20103">20103</a>
 </td>
@@ -1111,13 +1062,6 @@
 </td>
 <td>test</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19984">`make test-bundler-parallel` fails with ` --enable-shared`</a>
-</td>
-</tr>
-<tr class=" ractor platform ">
-<td><a href="https://bugs.ruby-lang.org/issues/19981">19981</a>
-</td>
-<td>ractor platform</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19981">bootstraptest/test_ractor.rb: Segmentation fault on arm32</a>
 </td>
 </tr>
 <tr class=" core platform ">
@@ -1296,13 +1240,6 @@
 </td>
 </tr>
 <tr class=" ractor ">
-<td><a href="https://bugs.ruby-lang.org/issues/19407">19407</a>
-</td>
-<td>ractor</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19407">2 threads taking from current ractor will hang forever</a>
-</td>
-</tr>
-<tr class=" ractor ">
 <td><a href="https://bugs.ruby-lang.org/issues/19387">19387</a>
 </td>
 <td>ractor</td>
@@ -1414,13 +1351,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/19157">URI bad component validation can be tricked</a>
 </td>
 </tr>
-<tr class=" ractor ">
-<td><a href="https://bugs.ruby-lang.org/issues/19154">19154</a>
-</td>
-<td>ractor</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19154">Specify require and autoload guarantees in ractors</a>
-</td>
-</tr>
 <tr class=" ractor tracepoint ">
 <td><a href="https://bugs.ruby-lang.org/issues/19112">19112</a>
 </td>
@@ -1475,13 +1405,6 @@
 </td>
 <td>win core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/18947">Unexpected Errno::ENAMETOOLONG on Windows</a>
-</td>
-</tr>
-<tr class=" ractor ">
-<td><a href="https://bugs.ruby-lang.org/issues/18940">18940</a>
-</td>
-<td>ractor</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18940">Ruby Ractor fails with IOError when handling higher concurrency</a>
 </td>
 </tr>
 <tr class=" win ">
@@ -1544,7 +1467,7 @@
 <td><a href="https://bugs.ruby-lang.org/issues/18733">18733</a>
 </td>
 <td>platform</td>
-<td><a href="https://bugs.ruby-lang.org/issues/18733">Ruby GC problems cause performance issue with Ractor</a>
+<td><a href="https://bugs.ruby-lang.org/issues/18733">Heavy GC allocations cause performance issue with Ractor</a>
 </td>
 </tr>
 <tr class=" ext ">
