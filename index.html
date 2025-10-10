@@ -1,17 +1,17 @@
 <html>
 <head>
-<title>306 Tagged Open Ruby Bugs as of 2025-08-30 08:27:03 +0900</title>
+<title>312 Tagged Open Ruby Bugs as of 2025-10-11 06:15:09 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
 <p class="filter-buttons">Available Tags: <input type="submit" value="core" />
 <input type="submit" value="win" />
-<input type="submit" value="platform" />
 <input type="submit" value="patch" />
+<input type="submit" value="platform" />
 <input type="submit" value="build" />
 <input type="submit" value="ractor" />
-<input type="submit" value="maybenotbug" />
 <input type="submit" value="test" />
+<input type="submit" value="maybenotbug" />
 <input type="submit" value="ext" />
 <input type="submit" value="regexp" />
 <input type="submit" value="encoding" />
@@ -22,8 +22,8 @@
 <input type="submit" value="cygwin" />
 <input type="submit" value="namespace" />
 <input type="submit" value="tracepoint" />
-<input type="submit" value="perf" />
 <input type="submit" value="fiber" />
+<input type="submit" value="perf" />
 <input type="submit" value="coverage" />
 <input type="submit" value="doc" />
 <input type="submit" value="autoload" />
@@ -31,9 +31,9 @@
 <input type="submit" value="mnthreads" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">306</span> matched)
+(<span id="matched">312</span> matched)
 <table>
-<caption>306 Tagged Open Ruby Bugs as of 2025-08-30 08:27:03 +0900</caption>
+<caption>312 Tagged Open Ruby Bugs as of 2025-10-11 06:15:09 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -42,6 +42,90 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" parser patch ">
+<td><a href="https://bugs.ruby-lang.org/issues/21635">21635</a>
+</td>
+<td>parser patch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/21635">Reading code from STDIN unexpectedly sets $_ in 3.4.6+</a>
+</td>
+</tr>
+<tr class=" core patch ">
+<td><a href="https://bugs.ruby-lang.org/issues/21634">21634</a>
+</td>
+<td>core patch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/21634">Combining read(1) with eof? causes dropout of results unexpectedly on Windows.</a>
+</td>
+</tr>
+<tr class=" fiber patch ">
+<td><a href="https://bugs.ruby-lang.org/issues/21633">21633</a>
+</td>
+<td>fiber patch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/21633">A `rb_thread_call_without_gvl` loop can cause the fiber scheduler to ignore signals.</a>
+</td>
+</tr>
+<tr class=" parser patch ">
+<td><a href="https://bugs.ruby-lang.org/issues/21622">21622</a>
+</td>
+<td>parser patch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/21622">Prism wrongly accepts command call to be a key of keyword argument</a>
+</td>
+</tr>
+<tr class=" test ">
+<td><a href="https://bugs.ruby-lang.org/issues/21621">21621</a>
+</td>
+<td>test</td>
+<td><a href="https://bugs.ruby-lang.org/issues/21621">test-bundled-gems.rb timeouts with csv gem on ci</a>
+</td>
+</tr>
+<tr class=" parser ">
+<td><a href="https://bugs.ruby-lang.org/issues/21618">21618</a>
+</td>
+<td>parser</td>
+<td><a href="https://bugs.ruby-lang.org/issues/21618">Allow to use the build-in prism version to parse code</a>
+</td>
+</tr>
+<tr class=" ractor ">
+<td><a href="https://bugs.ruby-lang.org/issues/21614">21614</a>
+</td>
+<td>ractor</td>
+<td><a href="https://bugs.ruby-lang.org/issues/21614">thread_sched_wait_events race with timer_thread_wakeup</a>
+</td>
+</tr>
+<tr class=" test ">
+<td><a href="https://bugs.ruby-lang.org/issues/21613">21613</a>
+</td>
+<td>test</td>
+<td><a href="https://bugs.ruby-lang.org/issues/21613">TestGc#test_exception_in_finalizer_procs and TestGc#test_exception_in_finalizer_method fail with ASAN</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/21612">21612</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/21612">Make sure we never context switch while holding the VM lock</a>
+</td>
+</tr>
+<tr class=" fiber ">
+<td><a href="https://bugs.ruby-lang.org/issues/21607">21607</a>
+</td>
+<td>fiber</td>
+<td><a href="https://bugs.ruby-lang.org/issues/21607">require &#39;concurrent-ruby&#39; causes segfault with Ruby 3.4.6 on linux/i686 built with GCC 15</a>
+</td>
+</tr>
+<tr class=" mnthreads ">
+<td><a href="https://bugs.ruby-lang.org/issues/21560">21560</a>
+</td>
+<td>mnthreads</td>
+<td><a href="https://bugs.ruby-lang.org/issues/21560">RUBY_MN_THREADS=1 causes large performance regression in Puma 7</a>
+</td>
+</tr>
+<tr class=" encoding ">
+<td><a href="https://bugs.ruby-lang.org/issues/21559">21559</a>
+</td>
+<td>encoding</td>
+<td><a href="https://bugs.ruby-lang.org/issues/21559">Unicode normalization nfd -&gt; nfc -&gt; nfd is not reversible</a>
+</td>
+</tr>
 <tr class=" ractor ">
 <td><a href="https://bugs.ruby-lang.org/issues/21551">21551</a>
 </td>
@@ -49,39 +133,11 @@
 <td><a href="https://bugs.ruby-lang.org/issues/21551">Ractor isolation error points to the wrong place</a>
 </td>
 </tr>
-<tr class=" parser patch ">
-<td><a href="https://bugs.ruby-lang.org/issues/21540">21540</a>
-</td>
-<td>parser patch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/21540">prism allows `foo &amp;&amp; return bar` when parse.y doesn&#39;t</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/21538">21538</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/21538">initialize_dup not called when duping class/module</a>
-</td>
-</tr>
 <tr class=" ractor ">
 <td><a href="https://bugs.ruby-lang.org/issues/21537">21537</a>
 </td>
 <td>ractor</td>
 <td><a href="https://bugs.ruby-lang.org/issues/21537">rb_ractor_sched_barrier_start() hangs on Windows</a>
-</td>
-</tr>
-<tr class=" platform ">
-<td><a href="https://bugs.ruby-lang.org/issues/21534">21534</a>
-</td>
-<td>platform</td>
-<td><a href="https://bugs.ruby-lang.org/issues/21534">ppc64le bootstraptest/test_ractor.rb aborted (core dumped) on configure cppflags=-DRUBY_DEBUG</a>
-</td>
-</tr>
-<tr class=" parser ">
-<td><a href="https://bugs.ruby-lang.org/issues/21528">21528</a>
-</td>
-<td>parser</td>
-<td><a href="https://bugs.ruby-lang.org/issues/21528">SyntaxError#message may have broken encoding with multibyte source under Prism</a>
 </td>
 </tr>
 <tr class=" ractor ">
@@ -208,13 +264,6 @@
 </td>
 <td>namespace</td>
 <td><a href="https://bugs.ruby-lang.org/issues/21343">Namespace: singleton classes of root namespace leak between namespaces</a>
-</td>
-</tr>
-<tr class=" thread fiber ">
-<td><a href="https://bugs.ruby-lang.org/issues/21342">21342</a>
-</td>
-<td>thread fiber</td>
-<td><a href="https://bugs.ruby-lang.org/issues/21342">Segfault: invalid keeping_mutexes when using Mutex in Thread then Fiber after GC</a>
 </td>
 </tr>
 <tr class=" namespace ">
@@ -355,13 +404,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/21265">Crash when proc from Symbol#to_proc called outside refinement scope</a>
-</td>
-</tr>
-<tr class=" parser patch ">
-<td><a href="https://bugs.ruby-lang.org/issues/21256">21256</a>
-</td>
-<td>parser patch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/21256">`it` value is wrapped in an array when that doesn&#39;t happen with numbered parameter</a>
 </td>
 </tr>
 <tr class=" core ">
