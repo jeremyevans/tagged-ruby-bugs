@@ -29,7 +29,6 @@
 12725,cygwin build,Trying to use ./miniruby before it exists
 13151,win core,File.writable? doesn&#39;t report correctly if a directory is writable on Windows.
 13164,core platform,A second `SystemStackError` exception  results in `Segmentation fault (core dumped)`
-13671,regexp,Regexp with lookbehind and case-insensitivity raises RegexpError only on strings with certain characters
 13999,cygwin ext,Cygwin 環境で ripper_state_lex.rb がコアダンプする
 14090,core,`TestGc#test_interrupt_in_finalizer` fails very rarely
 14364,core,Regexp last match variable in procs
@@ -67,7 +66,6 @@
 17578,lib,mkmf experimental C++ Support
 17774,regexp,Quantified empty group causes regex to fail
 17792,core platform,make notes and make test fail with Ruby3.0.1p64 RaspberryPI 4B Ubuntu 20.10 ARM64
-17878,ractor,bootstraptest/test_ractor.rb:224 a random failing test with &quot;The outgoing-port is already closed (Ractor::ClosedError)&quot;
 17882,ractor cygwin,bootstraptest/test_ractor.rb:224 segfaults on Cygwin
 17925,parser,Pattern matching syntax using semicolon one-line
 17931,build win,Compile fails setup option nodynamic
@@ -116,7 +114,6 @@
 19039,core,Closing an IO being select&#39;ed in another thread does not resume the thread
 19043,ext,Segfault on macOS 11.7 while using StringScanner in multiple threads
 19044,win build,Attempting to compile a static ruby 3.1 fails with MinGW
-19112,ractor tracepoint,Ractor garbage collection breaks/disables all active tracepoints
 19157,lib,URI bad component validation can be tricked
 19165,perf,"Method (with no param) delegation with *, **, and ... is slow"
 19172,core,`ruby_thread_has_gvl_p` is innacurate sometimes -- document or change?
@@ -140,7 +137,6 @@
 19470,perf notbug,Frequent small range-reads from and then writes to a large array are very slow
 19473,maybenotbug thread,can&#39;t be called from trap context (ThreadError) is too limiting
 19557,core,Deadlock on STDOUT(ERR) lock on signal handler
-19558,core patch,str.dump.undump crashes when str contains both Unicode and ASCII control characters
 19598,tracepoint maybenotbug,Inconsistent behaviour of TracePoint API
 19609,win lib,"net/http ignores open_timeout, read_timeout on Windows"
 19631,maybenotbug core,module_eval does not propulate absolute_path for Kernel.caller_locations
@@ -258,8 +254,6 @@
 21206,core,Segmentation fault on ISeq#to_binary
 21208,ractor,"`Ractor#send(move: true)` allow moving objects that are on the stack, and used by C code."
 21212,core,IO::Buffer can be freed while its slice is locked
-21265,core,Crash when proc from Symbol#to_proc called outside refinement scope
-21266,jit,YJIT GC safety crash with proc objects as block argument
 21270,ext,init_fast_fallback_inetsock_internal (default for TCPSocket.new/TCPSocket.open) isn&#39;t fiber aware
 21271,build platform,Ruby build failure due to invalid probe specifier for dtrace
 21272,maybenotbug tracepoint,Class.new doesn&#39;t trigger :class TracePoint
@@ -267,46 +261,71 @@
 21293,build,C23/GCC 15 build breakage with rb_define_method() and friends
 21294,lib notbug,URI.extract is extracting invalid URIs with a mishmash of IPv6 notation with IPv4 address 
 21295,build platform,macos-13 debug build failures
-21298,patch core,`ObjectSpace.allocation_class_path` returns inconsistent results depending on `TracePoint` state
 21301,core,Invalid Dates Accepted When Using &quot;UTC&quot; in Time.new
 21314,autoload,Kernel#autoload requires the wrong file (?)
 21315,ractor,Finalizers violate the `rb_ractor_confirm_belonging` assertion
-21316,namespace,Namespaces leak with permanent names
-21318,namespace,Namespaces leak with Module.nesting
-21320,namespace,Namespaces leak with constant lookup
-21322,namespace,Namespaces and builtin classes as arguments and return values
-21324,namespace,Namespace loads RubyGems in root Namespace but it should not
-21339,namespace,Namespace: `RubyVM::InstructionSequence.load_iseq` isn&#39;t called for the root namespace
-21341,namespace,`Namespace is not a module (TypeError)` without enabling the namespace
-21343,namespace,Namespace: singleton classes of root namespace leak between namespaces
+21322,box,Namespaces and builtin classes as arguments and return values
+21324,box,Namespace loads RubyGems in root Namespace but it should not
+21339,box,Namespace: `RubyVM::InstructionSequence.load_iseq` isn&#39;t called for the root namespace
+21343,box,Namespace: singleton classes of root namespace leak between namespaces
 21348,tracepoint,Should Tracepoint track retry as another &quot;call&quot; event? 
-21362,namespace,Namespace: Inline method caches poisoned with builtins
-21363,namespace,`Namespace.current` should always return the Namespace in which it was defined
-21364,namespace,Constant lookup in namespaces should be consistent
+21362,box,Namespace: Inline method caches poisoned with builtins
+21364,box,Constant lookup in namespaces should be consistent
 21368,ractor,Moving objects with finalizer between Ractors crashes
-21374,core,FrozenError message is inconsistent when a singleton method is defined on a frozen object
-21375,core notbug,Set[] does not call #initialize
 21376,core notbug,"Inconsistent equality between Sets with different compare_by_identity, different classes"
 21391,lib notbug,Inconsistent trailing slash behavior of File.join and Pathname#join with empty strings
-21396,core notbug,Set#initialize should call Set#add on items passed in
-21446,core,StackOverflow when changing visibility in reopened refinement
 21451,ractor,"Ractor.make_shareable(-&gt;{}, copy: true) raises unhelpful error"
 21495,core,IO.read_nonblock does not work under a rescue IO::TimeoutError
 21498,win core,Windows - Ruby Overrides C Library APIs thus breaking them
 21504,ractor,"[Ractor] Process.waitpid blocks ractor, new NT doesn&#39;t pick up other ractors"
-21516,core,Segfault in String#succ! on 32-bit i686
-21522,ractor,Accessing outer locals via eval in a Ractor returns false
 21537,ractor,rb_ractor_sched_barrier_start() hangs on Windows
 21551,ractor,Ractor isolation error points to the wrong place
-21559,encoding,Unicode normalization nfd -&gt; nfc -&gt; nfd is not reversible
-21560,mnthreads,RUBY_MN_THREADS=1 causes large performance regression in Puma 7
-21607,fiber,require &#39;concurrent-ruby&#39; causes segfault with Ruby 3.4.6 on linux/i686 built with GCC 15
 21612,core,Make sure we never context switch while holding the VM lock
 21613,test,TestGc#test_exception_in_finalizer_procs and TestGc#test_exception_in_finalizer_method fail with ASAN
-21614,ractor,thread_sched_wait_events race with timer_thread_wakeup
-21618,parser,Allow to use the build-in prism version to parse code
 21621,test,test-bundled-gems.rb timeouts with csv gem on ci
-21622,parser patch,Prism wrongly accepts command call to be a key of keyword argument
 21633,fiber patch,A `rb_thread_call_without_gvl` loop can cause the fiber scheduler to ignore signals.
 21634,core patch,Combining read(1) with eof? causes dropout of results unexpectedly on Windows.
-21635,parser patch,Reading code from STDIN unexpectedly sets $_ in 3.4.6+
+21640,core maybenotbug,Core Pathname is missing 3 methods / is partially-defined
+21649,ractor,Ractors can access non-shareable object through singleton classes
+21663,win core,IO#pos will corrupt the file position in specific situation.
+21669,parser,Thoroughly implement void value expression check
+21672,core,`IO::Buffer.new` does not check that flags are valid
+21674,parser,Possible regression in return case in statement
+21682,core patch,The result of IO#pos is inconsistent after using IO#ungetc.
+21685,perf patch,"Unnecessary context-switching, especially bad on multi-core machines."
+21686,core patch,"In combination with IO#ungetbyte, the write position may become unpredictable."
+21687,core patch,IO＃pos goes wrong after EOF character(ctrl-z) met.
+21691,win core,On Windows some of binary read functions of IO are not functional
+21692,ext maybenotbug,Basic gems like `date` require a compiler
+21697,win build,`nmake up` will update broken `revision.h`
+21702,win ext,`UNIXSocket` on Windows: suprising results in `#recvfrom` and `#remote_address`
+21709,parser,Regexp interpolation is inconsistent with String interpolation
+21711,parser,Prism and parse.y parses private endless method definition with block differently
+21713,parser,Prism accepts pattern matching in modifier rescue followed by operators that shouldn&#39;t be allowed
+21714,parser,Prism and parse.y inconsistency in `def a = a b do 1 end`
+21719,core,Thread deadlock with explicit require of a base clase in Linux Ruby 3.4
+21723,lib patch,`binding.irb` raises a LoadError under `bundle exec` when Gemfile contains `path:` or `git:`
+21756,ext,Ripper fails to parse pathological heredoc
+21760,box,Ruby::Box: a couple of require-related problems
+21761,box,NameError: uninitialized constant only when RUBY_BOX=1 
+21763,win core,Windows: output IO pipe ignores crlf newline conversion specified by set_encoding
+21765,win core patch,stop using the C runtime _read() on Windows
+21786,lib patch,Net::HTTP::Response#read_body crashes on nil body when response_body_encoding is a String
+21789,fiber patch,IO#flush doesn&#39;t invoke fiber scheduler io_write hook
+21790,platform,`Socket.getaddrinfo` hangs after `fork()` on macOS 26.1 (Tahoe) for IPv4-only hosts
+21798,box,`bundle install` command fails if touches `$LOAD_PATH` on `Ruby::Box` enabled
+21801,win build,compile failed at 4.0.0 preview 3 and snapshot issue
+21802,core,segmentation fault when installing gems on CI
+21803,ext,`Addrinfo#connect_internal` should raise `IO::TimeoutError` on user-specified timeouts
+21805,core patch,Wrong &quot;key not found&quot; in NoMatchingPatternKeyError when destructuring Data
+21806,box,`bundler/inline` generates &quot;uninitialized constant Gem::NameTuple&quot; only when RUBY_BOX=1
+21808,notbug,Inconsistency in support of additional newlines with boolean logical operators on new line
+21809,box,Segmentation fault when running RUBY_BOX=1 gem update --system
+21816,maybenotbug,iseq code_location of proc changed
+21817,box,Ruby::Box crashes with refinement + bind_call + Symbol#to_proc combination
+21818,ractor patch,Thread backtraces cannot be communicated over Ractor ports
+21820,build,&quot;vm_call_cfunc: cfp consistency error&quot; occurs during rdoc generation when installing Ruby 4.0.0 via rbenv on Ubuntu 24.04
+21823,box,$! is nil inside rescue block when $! is accessed before raise in Ruby::Box
+21824,pref regexp,performance regression in regexp matching after update to 4.0
+21830,box,Ruby::Box and Kernel#require
+21832,core,"segfault with argument forwarding, when combined with splat &amp; positional arg"
