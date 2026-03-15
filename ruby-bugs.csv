@@ -146,7 +146,6 @@
 19756,lib,"URI::HTTP.build does not accept a host of `_gateway`, but `URI.parse` will."
 19761,platform core,AddressSanitizer fails with Thread and Process
 19794,platform build,Ruby 3.2.2 fails to build on macOS Sonoma betas
-19831,platform build,warning message of linker with macOS Sonoma beta
 19865,core patch,Segfault when calling user signal handlers during VM shutdown
 19869,test,Mark skipped test somehow
 19875,core perf notbug,Ruby 3.0 -&gt; 3.1 Performance regression in String#count
@@ -186,7 +185,6 @@
 20314,lib,Simultaneous Timeout expires may raise an exception after the block
 20315,regexp,Quantifier expansion leads to different results in Regexp.
 20316,regexp,Regexp quantifier behavior changes in different syntactic context.
-20319,core,Singleton class is being frozen lazily in some cases
 20395,doc,Invalid license note in vsnprintf.c
 20399,ext,Ripper doesn&#39;t respect implicit -x
 20409,core,Missing reporting some invalid breaks
@@ -241,7 +239,6 @@
 20958,win core,fix ENV.keys encoding on windows
 21023,build platform,Unintentional ruby/spec capi extension build twice 
 21089,core,Missing methods on enumerators created from Enumerator::product and Enumerator::Chain
-21097,parser,`x = a rescue b in c` and `def f = a rescue b in c` parsed differently between parse.y and prism
 21104,ext,Net::HTTP connections failing in Ruby &gt;= 3.4.0 on macOS with Happy Eyeballs enabled
 21119,perf notbug,Programs containing `Dir.glob` with a thread executing a CPU-heavy task run very slowly.
 21142,core,Lazy enumerator `.each_with_index` ignores `.take(0)` before it
@@ -256,7 +253,6 @@
 21212,core,IO::Buffer can be freed while its slice is locked
 21270,ext,init_fast_fallback_inetsock_internal (default for TCPSocket.new/TCPSocket.open) isn&#39;t fiber aware
 21271,build platform,Ruby build failure due to invalid probe specifier for dtrace
-21272,maybenotbug tracepoint,Class.new doesn&#39;t trigger :class TracePoint
 21291,regexp patch,possible bug with /m regexp and $ based on input
 21293,build,C23/GCC 15 build breakage with rb_define_method() and friends
 21294,lib notbug,URI.extract is extracting invalid URIs with a mishmash of IPv6 notation with IPv4 address 
@@ -277,20 +273,15 @@
 21451,ractor,"Ractor.make_shareable(-&gt;{}, copy: true) raises unhelpful error"
 21495,core,IO.read_nonblock does not work under a rescue IO::TimeoutError
 21498,win core,Windows - Ruby Overrides C Library APIs thus breaking them
-21504,ractor,"[Ractor] Process.waitpid blocks ractor, new NT doesn&#39;t pick up other ractors"
 21537,ractor,rb_ractor_sched_barrier_start() hangs on Windows
-21551,ractor,Ractor isolation error points to the wrong place
 21612,core,Make sure we never context switch while holding the VM lock
 21613,test,TestGc#test_exception_in_finalizer_procs and TestGc#test_exception_in_finalizer_method fail with ASAN
 21621,test,test-bundled-gems.rb timeouts with csv gem on ci
-21633,fiber patch,A `rb_thread_call_without_gvl` loop can cause the fiber scheduler to ignore signals.
 21634,core patch,Combining read(1) with eof? causes dropout of results unexpectedly on Windows.
 21640,core maybenotbug,Core Pathname is missing 3 methods / is partially-defined
 21649,ractor,Ractors can access non-shareable object through singleton classes
 21663,win core,IO#pos will corrupt the file position in specific situation.
-21669,parser,Thoroughly implement void value expression check
 21672,core,`IO::Buffer.new` does not check that flags are valid
-21674,parser,Possible regression in return case in statement
 21682,core patch,The result of IO#pos is inconsistent after using IO#ungetc.
 21685,perf patch,"Unnecessary context-switching, especially bad on multi-core machines."
 21686,core patch,"In combination with IO#ungetbyte, the write position may become unpredictable."
@@ -300,11 +291,7 @@
 21697,win build,`nmake up` will update broken `revision.h`
 21702,win ext,`UNIXSocket` on Windows: suprising results in `#recvfrom` and `#remote_address`
 21709,parser,Regexp interpolation is inconsistent with String interpolation
-21711,parser,Prism and parse.y parses private endless method definition with block differently
-21713,parser,Prism accepts pattern matching in modifier rescue followed by operators that shouldn&#39;t be allowed
-21714,parser,Prism and parse.y inconsistency in `def a = a b do 1 end`
 21719,core,Thread deadlock with explicit require of a base clase in Linux Ruby 3.4
-21723,lib patch,`binding.irb` raises a LoadError under `bundle exec` when Gemfile contains `path:` or `git:`
 21756,ext,Ripper fails to parse pathological heredoc
 21760,box,Ruby::Box: a couple of require-related problems
 21761,box,NameError: uninitialized constant only when RUBY_BOX=1 
@@ -312,7 +299,6 @@
 21765,win core patch,stop using the C runtime _read() on Windows
 21786,lib patch,Net::HTTP::Response#read_body crashes on nil body when response_body_encoding is a String
 21789,fiber patch,IO#flush doesn&#39;t invoke fiber scheduler io_write hook
-21790,platform,`Socket.getaddrinfo` hangs after `fork()` on macOS 26.1 (Tahoe) for IPv4-only hosts
 21798,box,`bundle install` command fails if touches `$LOAD_PATH` on `Ruby::Box` enabled
 21801,win build,compile failed at 4.0.0 preview 3 and snapshot issue
 21802,core,segmentation fault when installing gems on CI
@@ -321,11 +307,25 @@
 21806,box,`bundler/inline` generates &quot;uninitialized constant Gem::NameTuple&quot; only when RUBY_BOX=1
 21808,notbug,Inconsistency in support of additional newlines with boolean logical operators on new line
 21809,box,Segmentation fault when running RUBY_BOX=1 gem update --system
-21816,maybenotbug,iseq code_location of proc changed
 21817,box,Ruby::Box crashes with refinement + bind_call + Symbol#to_proc combination
 21818,ractor patch,Thread backtraces cannot be communicated over Ractor ports
 21820,build,&quot;vm_call_cfunc: cfp consistency error&quot; occurs during rdoc generation when installing Ruby 4.0.0 via rbenv on Ubuntu 24.04
 21823,box,$! is nil inside rescue block when $! is accessed before raise in Ruby::Box
-21824,pref regexp,performance regression in regexp matching after update to 4.0
 21830,box,Ruby::Box and Kernel#require
-21832,core,"segfault with argument forwarding, when combined with splat &amp; positional arg"
+21840,thread patch,Locking a mutex can lead to starvation
+21844,core patch,Inconsistent ArgumentError message for Data::define.new
+21848,core,GC compaction freezes during code reload with 100% CPU in rb_vm_ci_free -&gt; st_general_delete
+21849,ext,Ripper.lex emits two `tstring_content` for single string in edge-case
+21850,build platform,Can&#39;t build on FreeBSD/riscv64
+21856,box perf patch,Massive performance degradation of `rb_obj_free` for `T_CLASS` since Ruby 4.0
+21867,box,enabling Ruby::Box changes puts/warn to no longer use $stdout/$stderr
+21870,regexp,Regexp: Warnings when using slightly overlapping \p{...} classes
+21880,backport,The ultra_safe mode of pstore bundled with Ruby 4.0 is broken.
+21883,core,IO::Buffer can be unlocked and freed by another thread during syscall
+21918,fiber,fiber scheduler: fiber interrupt triggers for IOs that haven&#39;t been closed
+21921,core,"Hash inconsistent ==, &gt;=, &lt;= behavior"
+21933,box, Ruby::Box: named capture local variable can become nil after non-matching lines
+21934,parser,Prism and parse.y inconsistency in command call used with pattern match
+21940,box patch,Ruby::Box: `$_` returns stale value due to gvar_tbl caching
+21941,jit patch,Local variable becomes nil when YJIT enabled mid-method with fork/signal/ensure
+21952,box,Ruby::Box double free at process exit when `fiddle/import` is required in multiple boxes
