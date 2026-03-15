@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>331 Tagged Open Ruby Bugs as of 2026-01-12 09:59:10 +0900</title>
+<title>331 Tagged Open Ruby Bugs as of 2026-03-16 02:26:17 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -9,18 +9,18 @@
 <input type="submit" value="patch" />
 <input type="submit" value="build" />
 <input type="submit" value="platform" />
+<input type="submit" value="ext" />
+<input type="submit" value="box" />
 <input type="submit" value="maybenotbug" />
 <input type="submit" value="ractor" />
-<input type="submit" value="ext" />
 <input type="submit" value="test" />
-<input type="submit" value="lib" />
-<input type="submit" value="parser" />
 <input type="submit" value="regexp" />
-<input type="submit" value="box" />
+<input type="submit" value="lib" />
 <input type="submit" value="encoding" />
-<input type="submit" value="notbug" />
 <input type="submit" value="thread" />
+<input type="submit" value="notbug" />
 <input type="submit" value="cygwin" />
+<input type="submit" value="parser" />
 <input type="submit" value="perf" />
 <input type="submit" value="fiber" />
 <input type="submit" value="tracepoint" />
@@ -29,12 +29,12 @@
 <input type="submit" value="autoload" />
 <input type="submit" value="jit" />
 <input type="submit" value="mnthreads" />
-<input type="submit" value="pref" /></p>
+<input type="submit" value="backport" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
 (<span id="matched">331</span> matched)
 <table>
-<caption>331 Tagged Open Ruby Bugs as of 2026-01-12 09:59:10 +0900</caption>
+<caption>331 Tagged Open Ruby Bugs as of 2026-03-16 02:26:17 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -43,11 +43,123 @@
 </tr>
 </thead>
 <tbody>
+<tr class=" box ">
+<td><a href="https://bugs.ruby-lang.org/issues/21952">21952</a>
+</td>
+<td>box</td>
+<td><a href="https://bugs.ruby-lang.org/issues/21952">Ruby::Box double free at process exit when `fiddle/import` is required in multiple boxes</a>
+</td>
+</tr>
+<tr class=" jit patch ">
+<td><a href="https://bugs.ruby-lang.org/issues/21941">21941</a>
+</td>
+<td>jit patch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/21941">Local variable becomes nil when YJIT enabled mid-method with fork/signal/ensure</a>
+</td>
+</tr>
+<tr class=" box patch ">
+<td><a href="https://bugs.ruby-lang.org/issues/21940">21940</a>
+</td>
+<td>box patch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/21940">Ruby::Box: `$_` returns stale value due to gvar_tbl caching</a>
+</td>
+</tr>
+<tr class=" parser ">
+<td><a href="https://bugs.ruby-lang.org/issues/21934">21934</a>
+</td>
+<td>parser</td>
+<td><a href="https://bugs.ruby-lang.org/issues/21934">Prism and parse.y inconsistency in command call used with pattern match</a>
+</td>
+</tr>
+<tr class=" box ">
+<td><a href="https://bugs.ruby-lang.org/issues/21933">21933</a>
+</td>
+<td>box</td>
+<td><a href="https://bugs.ruby-lang.org/issues/21933"> Ruby::Box: named capture local variable can become nil after non-matching lines</a>
+</td>
+</tr>
 <tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/21832">21832</a>
+<td><a href="https://bugs.ruby-lang.org/issues/21921">21921</a>
 </td>
 <td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/21832">segfault with argument forwarding, when combined with splat &amp; positional arg</a>
+<td><a href="https://bugs.ruby-lang.org/issues/21921">Hash inconsistent ==, &gt;=, &lt;= behavior</a>
+</td>
+</tr>
+<tr class=" fiber ">
+<td><a href="https://bugs.ruby-lang.org/issues/21918">21918</a>
+</td>
+<td>fiber</td>
+<td><a href="https://bugs.ruby-lang.org/issues/21918">fiber scheduler: fiber interrupt triggers for IOs that haven&#39;t been closed</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/21883">21883</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/21883">IO::Buffer can be unlocked and freed by another thread during syscall</a>
+</td>
+</tr>
+<tr class=" backport ">
+<td><a href="https://bugs.ruby-lang.org/issues/21880">21880</a>
+</td>
+<td>backport</td>
+<td><a href="https://bugs.ruby-lang.org/issues/21880">The ultra_safe mode of pstore bundled with Ruby 4.0 is broken.</a>
+</td>
+</tr>
+<tr class=" regexp ">
+<td><a href="https://bugs.ruby-lang.org/issues/21870">21870</a>
+</td>
+<td>regexp</td>
+<td><a href="https://bugs.ruby-lang.org/issues/21870">Regexp: Warnings when using slightly overlapping \p{...} classes</a>
+</td>
+</tr>
+<tr class=" box ">
+<td><a href="https://bugs.ruby-lang.org/issues/21867">21867</a>
+</td>
+<td>box</td>
+<td><a href="https://bugs.ruby-lang.org/issues/21867">enabling Ruby::Box changes puts/warn to no longer use $stdout/$stderr</a>
+</td>
+</tr>
+<tr class=" box perf patch ">
+<td><a href="https://bugs.ruby-lang.org/issues/21856">21856</a>
+</td>
+<td>box perf patch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/21856">Massive performance degradation of `rb_obj_free` for `T_CLASS` since Ruby 4.0</a>
+</td>
+</tr>
+<tr class=" build platform ">
+<td><a href="https://bugs.ruby-lang.org/issues/21850">21850</a>
+</td>
+<td>build platform</td>
+<td><a href="https://bugs.ruby-lang.org/issues/21850">Can&#39;t build on FreeBSD/riscv64</a>
+</td>
+</tr>
+<tr class=" ext ">
+<td><a href="https://bugs.ruby-lang.org/issues/21849">21849</a>
+</td>
+<td>ext</td>
+<td><a href="https://bugs.ruby-lang.org/issues/21849">Ripper.lex emits two `tstring_content` for single string in edge-case</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/21848">21848</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/21848">GC compaction freezes during code reload with 100% CPU in rb_vm_ci_free -&gt; st_general_delete</a>
+</td>
+</tr>
+<tr class=" core patch ">
+<td><a href="https://bugs.ruby-lang.org/issues/21844">21844</a>
+</td>
+<td>core patch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/21844">Inconsistent ArgumentError message for Data::define.new</a>
+</td>
+</tr>
+<tr class=" thread patch ">
+<td><a href="https://bugs.ruby-lang.org/issues/21840">21840</a>
+</td>
+<td>thread patch</td>
+<td><a href="https://bugs.ruby-lang.org/issues/21840">Locking a mutex can lead to starvation</a>
 </td>
 </tr>
 <tr class=" box ">
@@ -55,13 +167,6 @@
 </td>
 <td>box</td>
 <td><a href="https://bugs.ruby-lang.org/issues/21830">Ruby::Box and Kernel#require</a>
-</td>
-</tr>
-<tr class=" pref regexp ">
-<td><a href="https://bugs.ruby-lang.org/issues/21824">21824</a>
-</td>
-<td>pref regexp</td>
-<td><a href="https://bugs.ruby-lang.org/issues/21824">performance regression in regexp matching after update to 4.0</a>
 </td>
 </tr>
 <tr class=" box ">
@@ -90,13 +195,6 @@
 </td>
 <td>box</td>
 <td><a href="https://bugs.ruby-lang.org/issues/21817">Ruby::Box crashes with refinement + bind_call + Symbol#to_proc combination</a>
-</td>
-</tr>
-<tr class=" maybenotbug ">
-<td><a href="https://bugs.ruby-lang.org/issues/21816">21816</a>
-</td>
-<td>maybenotbug</td>
-<td><a href="https://bugs.ruby-lang.org/issues/21816">iseq code_location of proc changed</a>
 </td>
 </tr>
 <tr class=" box ">
@@ -155,13 +253,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/21798">`bundle install` command fails if touches `$LOAD_PATH` on `Ruby::Box` enabled</a>
 </td>
 </tr>
-<tr class=" platform ">
-<td><a href="https://bugs.ruby-lang.org/issues/21790">21790</a>
-</td>
-<td>platform</td>
-<td><a href="https://bugs.ruby-lang.org/issues/21790">`Socket.getaddrinfo` hangs after `fork()` on macOS 26.1 (Tahoe) for IPv4-only hosts</a>
-</td>
-</tr>
 <tr class=" fiber patch ">
 <td><a href="https://bugs.ruby-lang.org/issues/21789">21789</a>
 </td>
@@ -211,39 +302,11 @@
 <td><a href="https://bugs.ruby-lang.org/issues/21756">Ripper fails to parse pathological heredoc</a>
 </td>
 </tr>
-<tr class=" lib patch ">
-<td><a href="https://bugs.ruby-lang.org/issues/21723">21723</a>
-</td>
-<td>lib patch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/21723">`binding.irb` raises a LoadError under `bundle exec` when Gemfile contains `path:` or `git:`</a>
-</td>
-</tr>
 <tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/21719">21719</a>
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/21719">Thread deadlock with explicit require of a base clase in Linux Ruby 3.4</a>
-</td>
-</tr>
-<tr class=" parser ">
-<td><a href="https://bugs.ruby-lang.org/issues/21714">21714</a>
-</td>
-<td>parser</td>
-<td><a href="https://bugs.ruby-lang.org/issues/21714">Prism and parse.y inconsistency in `def a = a b do 1 end`</a>
-</td>
-</tr>
-<tr class=" parser ">
-<td><a href="https://bugs.ruby-lang.org/issues/21713">21713</a>
-</td>
-<td>parser</td>
-<td><a href="https://bugs.ruby-lang.org/issues/21713">Prism accepts pattern matching in modifier rescue followed by operators that shouldn&#39;t be allowed</a>
-</td>
-</tr>
-<tr class=" parser ">
-<td><a href="https://bugs.ruby-lang.org/issues/21711">21711</a>
-</td>
-<td>parser</td>
-<td><a href="https://bugs.ruby-lang.org/issues/21711">Prism and parse.y parses private endless method definition with block differently</a>
 </td>
 </tr>
 <tr class=" parser ">
@@ -309,25 +372,11 @@
 <td><a href="https://bugs.ruby-lang.org/issues/21682">The result of IO#pos is inconsistent after using IO#ungetc.</a>
 </td>
 </tr>
-<tr class=" parser ">
-<td><a href="https://bugs.ruby-lang.org/issues/21674">21674</a>
-</td>
-<td>parser</td>
-<td><a href="https://bugs.ruby-lang.org/issues/21674">Possible regression in return case in statement</a>
-</td>
-</tr>
 <tr class=" core ">
 <td><a href="https://bugs.ruby-lang.org/issues/21672">21672</a>
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/21672">`IO::Buffer.new` does not check that flags are valid</a>
-</td>
-</tr>
-<tr class=" parser ">
-<td><a href="https://bugs.ruby-lang.org/issues/21669">21669</a>
-</td>
-<td>parser</td>
-<td><a href="https://bugs.ruby-lang.org/issues/21669">Thoroughly implement void value expression check</a>
 </td>
 </tr>
 <tr class=" win core ">
@@ -358,13 +407,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/21634">Combining read(1) with eof? causes dropout of results unexpectedly on Windows.</a>
 </td>
 </tr>
-<tr class=" fiber patch ">
-<td><a href="https://bugs.ruby-lang.org/issues/21633">21633</a>
-</td>
-<td>fiber patch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/21633">A `rb_thread_call_without_gvl` loop can cause the fiber scheduler to ignore signals.</a>
-</td>
-</tr>
 <tr class=" test ">
 <td><a href="https://bugs.ruby-lang.org/issues/21621">21621</a>
 </td>
@@ -387,24 +429,10 @@
 </td>
 </tr>
 <tr class=" ractor ">
-<td><a href="https://bugs.ruby-lang.org/issues/21551">21551</a>
-</td>
-<td>ractor</td>
-<td><a href="https://bugs.ruby-lang.org/issues/21551">Ractor isolation error points to the wrong place</a>
-</td>
-</tr>
-<tr class=" ractor ">
 <td><a href="https://bugs.ruby-lang.org/issues/21537">21537</a>
 </td>
 <td>ractor</td>
 <td><a href="https://bugs.ruby-lang.org/issues/21537">rb_ractor_sched_barrier_start() hangs on Windows</a>
-</td>
-</tr>
-<tr class=" ractor ">
-<td><a href="https://bugs.ruby-lang.org/issues/21504">21504</a>
-</td>
-<td>ractor</td>
-<td><a href="https://bugs.ruby-lang.org/issues/21504">[Ractor] Process.waitpid blocks ractor, new NT doesn&#39;t pick up other ractors</a>
 </td>
 </tr>
 <tr class=" win core ">
@@ -547,13 +575,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/21291">possible bug with /m regexp and $ based on input</a>
 </td>
 </tr>
-<tr class=" maybenotbug tracepoint ">
-<td><a href="https://bugs.ruby-lang.org/issues/21272">21272</a>
-</td>
-<td>maybenotbug tracepoint</td>
-<td><a href="https://bugs.ruby-lang.org/issues/21272">Class.new doesn&#39;t trigger :class TracePoint</a>
-</td>
-</tr>
 <tr class=" build platform ">
 <td><a href="https://bugs.ruby-lang.org/issues/21271">21271</a>
 </td>
@@ -650,13 +671,6 @@
 </td>
 <td>ext</td>
 <td><a href="https://bugs.ruby-lang.org/issues/21104">Net::HTTP connections failing in Ruby &gt;= 3.4.0 on macOS with Happy Eyeballs enabled</a>
-</td>
-</tr>
-<tr class=" parser ">
-<td><a href="https://bugs.ruby-lang.org/issues/21097">21097</a>
-</td>
-<td>parser</td>
-<td><a href="https://bugs.ruby-lang.org/issues/21097">`x = a rescue b in c` and `def f = a rescue b in c` parsed differently between parse.y and prism</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -1037,13 +1051,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/20395">Invalid license note in vsnprintf.c</a>
 </td>
 </tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/20319">20319</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20319">Singleton class is being frozen lazily in some cases</a>
-</td>
-</tr>
 <tr class=" regexp ">
 <td><a href="https://bugs.ruby-lang.org/issues/20316">20316</a>
 </td>
@@ -1315,13 +1322,6 @@
 </td>
 <td>core patch</td>
 <td><a href="https://bugs.ruby-lang.org/issues/19865">Segfault when calling user signal handlers during VM shutdown</a>
-</td>
-</tr>
-<tr class=" platform build ">
-<td><a href="https://bugs.ruby-lang.org/issues/19831">19831</a>
-</td>
-<td>platform build</td>
-<td><a href="https://bugs.ruby-lang.org/issues/19831">warning message of linker with macOS Sonoma beta</a>
 </td>
 </tr>
 <tr class=" platform build ">
