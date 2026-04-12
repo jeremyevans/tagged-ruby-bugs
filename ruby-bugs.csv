@@ -234,7 +234,6 @@
 20920,core,"When loading a file, __FILE__ gets relative paths expanded only when they start with &quot;./&quot;"
 20929,patch core,TestTime have an assertion different from current implementation.
 20943,notbug core,Constant defined in `Data.define` block
-20948,core,Constant references incorrectly cached in `module (expr)::Foo`
 20957,core,RangeError on Array#values_at with negative ranges
 20958,win core,fix ENV.keys encoding on windows
 21023,build platform,Unintentional ruby/spec capi extension build twice 
@@ -308,24 +307,26 @@
 21808,notbug,Inconsistency in support of additional newlines with boolean logical operators on new line
 21809,box,Segmentation fault when running RUBY_BOX=1 gem update --system
 21817,box,Ruby::Box crashes with refinement + bind_call + Symbol#to_proc combination
-21818,ractor patch,Thread backtraces cannot be communicated over Ractor ports
 21820,build,&quot;vm_call_cfunc: cfp consistency error&quot; occurs during rdoc generation when installing Ruby 4.0.0 via rbenv on Ubuntu 24.04
 21823,box,$! is nil inside rescue block when $! is accessed before raise in Ruby::Box
 21830,box,Ruby::Box and Kernel#require
 21840,thread patch,Locking a mutex can lead to starvation
-21844,core patch,Inconsistent ArgumentError message for Data::define.new
-21848,core,GC compaction freezes during code reload with 100% CPU in rb_vm_ci_free -&gt; st_general_delete
+21848,core,GC compaction freezes during code reload with 100% CPU in rb_vm_ci_free -&gt; st_general_delete                                                                                                                                         
 21849,ext,Ripper.lex emits two `tstring_content` for single string in edge-case
 21850,build platform,Can&#39;t build on FreeBSD/riscv64
-21856,box perf patch,Massive performance degradation of `rb_obj_free` for `T_CLASS` since Ruby 4.0
 21867,box,enabling Ruby::Box changes puts/warn to no longer use $stdout/$stderr
 21870,regexp,Regexp: Warnings when using slightly overlapping \p{...} classes
-21880,backport,The ultra_safe mode of pstore bundled with Ruby 4.0 is broken.
 21883,core,IO::Buffer can be unlocked and freed by another thread during syscall
 21918,fiber,fiber scheduler: fiber interrupt triggers for IOs that haven&#39;t been closed
 21921,core,"Hash inconsistent ==, &gt;=, &lt;= behavior"
-21933,box, Ruby::Box: named capture local variable can become nil after non-matching lines
-21934,parser,Prism and parse.y inconsistency in command call used with pattern match
 21940,box patch,Ruby::Box: `$_` returns stale value due to gvar_tbl caching
-21941,jit patch,Local variable becomes nil when YJIT enabled mid-method with fork/signal/ensure
-21952,box,Ruby::Box double free at process exit when `fiddle/import` is required in multiple boxes
+21967,ext,`vm_call_cfunc: cfp consistency error` while requiring `nkf.so`
+21970,core,Corrupted `ciobj-&gt;operands` in `compile.c: optimize_checktype`
+21977,box,"Ruby::Box crash with `RUBY_BOX=1` via `Binding` refinement, `UnboundMethod#bind_call`, and `Symbol#to_proc`"
+21980,core,RubyVM::AST offsets are incorrect when BOM
+21984,core maybenotbug,RubyVM::AST can&#39;t tell if an array is passed to break/next/return
+21989,fiber, Fiber initialization failure on WASI/ruby.wasm raises TypeError instead of FiberError
+21990,core,[ruby-talk:444791] Regression: Ruby 4.0 constantly crashing
+21991,box,`$!` stays as the first exception in Ruby Box
+21992,core,Defining BasicObject#initialize causes segmentation fault
+21993,core,"`rb_gc_update_tbl_refs` is incorrectly documented as the dcompact pair for `rb_mark_tbl_no_pin`, and is unsafe for `st_table`s with non-VALUE keys"
