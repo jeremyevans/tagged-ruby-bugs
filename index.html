@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>331 Tagged Open Ruby Bugs as of 2026-03-16 02:26:17 +0900</title>
+<title>332 Tagged Open Ruby Bugs as of 2026-04-12 14:07:37 +0900</title>
 <link rel="stylesheet"  href="app.css" />
 </head>
 <body>
@@ -10,10 +10,10 @@
 <input type="submit" value="build" />
 <input type="submit" value="platform" />
 <input type="submit" value="ext" />
-<input type="submit" value="box" />
 <input type="submit" value="maybenotbug" />
-<input type="submit" value="ractor" />
 <input type="submit" value="test" />
+<input type="submit" value="box" />
+<input type="submit" value="ractor" />
 <input type="submit" value="regexp" />
 <input type="submit" value="lib" />
 <input type="submit" value="encoding" />
@@ -21,20 +21,19 @@
 <input type="submit" value="notbug" />
 <input type="submit" value="cygwin" />
 <input type="submit" value="parser" />
-<input type="submit" value="perf" />
 <input type="submit" value="fiber" />
+<input type="submit" value="perf" />
 <input type="submit" value="tracepoint" />
 <input type="submit" value="coverage" />
 <input type="submit" value="doc" />
 <input type="submit" value="autoload" />
 <input type="submit" value="jit" />
-<input type="submit" value="mnthreads" />
-<input type="submit" value="backport" /></p>
+<input type="submit" value="mnthreads" /></p>
 <label for="filter">Filter Tags:</label>
 <input id="filter" type="text" size="80" />
-(<span id="matched">331</span> matched)
+(<span id="matched">332</span> matched)
 <table>
-<caption>331 Tagged Open Ruby Bugs as of 2026-03-16 02:26:17 +0900</caption>
+<caption>332 Tagged Open Ruby Bugs as of 2026-04-12 14:07:37 +0900</caption>
 <thead>
 <tr class=" Tags ">
 <th>Bug ID</th>
@@ -43,18 +42,74 @@
 </tr>
 </thead>
 <tbody>
-<tr class=" box ">
-<td><a href="https://bugs.ruby-lang.org/issues/21952">21952</a>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/21993">21993</a>
 </td>
-<td>box</td>
-<td><a href="https://bugs.ruby-lang.org/issues/21952">Ruby::Box double free at process exit when `fiddle/import` is required in multiple boxes</a>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/21993">`rb_gc_update_tbl_refs` is incorrectly documented as the dcompact pair for `rb_mark_tbl_no_pin`, and is unsafe for `st_table`s with non-VALUE keys</a>
 </td>
 </tr>
-<tr class=" jit patch ">
-<td><a href="https://bugs.ruby-lang.org/issues/21941">21941</a>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/21992">21992</a>
 </td>
-<td>jit patch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/21941">Local variable becomes nil when YJIT enabled mid-method with fork/signal/ensure</a>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/21992">Defining BasicObject#initialize causes segmentation fault</a>
+</td>
+</tr>
+<tr class=" box ">
+<td><a href="https://bugs.ruby-lang.org/issues/21991">21991</a>
+</td>
+<td>box</td>
+<td><a href="https://bugs.ruby-lang.org/issues/21991">`$!` stays as the first exception in Ruby Box</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/21990">21990</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/21990">[ruby-talk:444791] Regression: Ruby 4.0 constantly crashing</a>
+</td>
+</tr>
+<tr class=" fiber ">
+<td><a href="https://bugs.ruby-lang.org/issues/21989">21989</a>
+</td>
+<td>fiber</td>
+<td><a href="https://bugs.ruby-lang.org/issues/21989"> Fiber initialization failure on WASI/ruby.wasm raises TypeError instead of FiberError</a>
+</td>
+</tr>
+<tr class=" core maybenotbug ">
+<td><a href="https://bugs.ruby-lang.org/issues/21984">21984</a>
+</td>
+<td>core maybenotbug</td>
+<td><a href="https://bugs.ruby-lang.org/issues/21984">RubyVM::AST can&#39;t tell if an array is passed to break/next/return</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/21980">21980</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/21980">RubyVM::AST offsets are incorrect when BOM</a>
+</td>
+</tr>
+<tr class=" box ">
+<td><a href="https://bugs.ruby-lang.org/issues/21977">21977</a>
+</td>
+<td>box</td>
+<td><a href="https://bugs.ruby-lang.org/issues/21977">Ruby::Box crash with `RUBY_BOX=1` via `Binding` refinement, `UnboundMethod#bind_call`, and `Symbol#to_proc`</a>
+</td>
+</tr>
+<tr class=" core ">
+<td><a href="https://bugs.ruby-lang.org/issues/21970">21970</a>
+</td>
+<td>core</td>
+<td><a href="https://bugs.ruby-lang.org/issues/21970">Corrupted `ciobj-&gt;operands` in `compile.c: optimize_checktype`</a>
+</td>
+</tr>
+<tr class=" ext ">
+<td><a href="https://bugs.ruby-lang.org/issues/21967">21967</a>
+</td>
+<td>ext</td>
+<td><a href="https://bugs.ruby-lang.org/issues/21967">`vm_call_cfunc: cfp consistency error` while requiring `nkf.so`</a>
 </td>
 </tr>
 <tr class=" box patch ">
@@ -62,20 +117,6 @@
 </td>
 <td>box patch</td>
 <td><a href="https://bugs.ruby-lang.org/issues/21940">Ruby::Box: `$_` returns stale value due to gvar_tbl caching</a>
-</td>
-</tr>
-<tr class=" parser ">
-<td><a href="https://bugs.ruby-lang.org/issues/21934">21934</a>
-</td>
-<td>parser</td>
-<td><a href="https://bugs.ruby-lang.org/issues/21934">Prism and parse.y inconsistency in command call used with pattern match</a>
-</td>
-</tr>
-<tr class=" box ">
-<td><a href="https://bugs.ruby-lang.org/issues/21933">21933</a>
-</td>
-<td>box</td>
-<td><a href="https://bugs.ruby-lang.org/issues/21933"> Ruby::Box: named capture local variable can become nil after non-matching lines</a>
 </td>
 </tr>
 <tr class=" core ">
@@ -99,13 +140,6 @@
 <td><a href="https://bugs.ruby-lang.org/issues/21883">IO::Buffer can be unlocked and freed by another thread during syscall</a>
 </td>
 </tr>
-<tr class=" backport ">
-<td><a href="https://bugs.ruby-lang.org/issues/21880">21880</a>
-</td>
-<td>backport</td>
-<td><a href="https://bugs.ruby-lang.org/issues/21880">The ultra_safe mode of pstore bundled with Ruby 4.0 is broken.</a>
-</td>
-</tr>
 <tr class=" regexp ">
 <td><a href="https://bugs.ruby-lang.org/issues/21870">21870</a>
 </td>
@@ -118,13 +152,6 @@
 </td>
 <td>box</td>
 <td><a href="https://bugs.ruby-lang.org/issues/21867">enabling Ruby::Box changes puts/warn to no longer use $stdout/$stderr</a>
-</td>
-</tr>
-<tr class=" box perf patch ">
-<td><a href="https://bugs.ruby-lang.org/issues/21856">21856</a>
-</td>
-<td>box perf patch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/21856">Massive performance degradation of `rb_obj_free` for `T_CLASS` since Ruby 4.0</a>
 </td>
 </tr>
 <tr class=" build platform ">
@@ -145,14 +172,7 @@
 <td><a href="https://bugs.ruby-lang.org/issues/21848">21848</a>
 </td>
 <td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/21848">GC compaction freezes during code reload with 100% CPU in rb_vm_ci_free -&gt; st_general_delete</a>
-</td>
-</tr>
-<tr class=" core patch ">
-<td><a href="https://bugs.ruby-lang.org/issues/21844">21844</a>
-</td>
-<td>core patch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/21844">Inconsistent ArgumentError message for Data::define.new</a>
+<td><a href="https://bugs.ruby-lang.org/issues/21848">GC compaction freezes during code reload with 100% CPU in rb_vm_ci_free -&gt; st_general_delete                                                                                                                                         </a>
 </td>
 </tr>
 <tr class=" thread patch ">
@@ -181,13 +201,6 @@
 </td>
 <td>build</td>
 <td><a href="https://bugs.ruby-lang.org/issues/21820">&quot;vm_call_cfunc: cfp consistency error&quot; occurs during rdoc generation when installing Ruby 4.0.0 via rbenv on Ubuntu 24.04</a>
-</td>
-</tr>
-<tr class=" ractor patch ">
-<td><a href="https://bugs.ruby-lang.org/issues/21818">21818</a>
-</td>
-<td>ractor patch</td>
-<td><a href="https://bugs.ruby-lang.org/issues/21818">Thread backtraces cannot be communicated over Ractor ports</a>
 </td>
 </tr>
 <tr class=" box ">
@@ -699,13 +712,6 @@
 </td>
 <td>core</td>
 <td><a href="https://bugs.ruby-lang.org/issues/20957">RangeError on Array#values_at with negative ranges</a>
-</td>
-</tr>
-<tr class=" core ">
-<td><a href="https://bugs.ruby-lang.org/issues/20948">20948</a>
-</td>
-<td>core</td>
-<td><a href="https://bugs.ruby-lang.org/issues/20948">Constant references incorrectly cached in `module (expr)::Foo`</a>
 </td>
 </tr>
 <tr class=" notbug core ">
